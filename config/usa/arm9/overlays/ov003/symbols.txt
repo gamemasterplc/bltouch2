@@ -1,0 +1,128 @@
+func_ov003_02112340 kind:function(arm,size=0x5c) addr:0x02112340
+func_ov003_0211239c kind:function(arm,size=0x10) addr:0x0211239c
+func_ov003_021123ac kind:function(arm,size=0x24) addr:0x021123ac
+func_ov003_021123d0 kind:function(arm,size=0xc8) addr:0x021123d0
+func_ov003_02112498 kind:function(arm,size=0x10) addr:0x02112498
+func_ov003_021124a8 kind:function(arm,size=0x14) addr:0x021124a8
+func_ov003_021124bc kind:function(arm,size=0x2c) addr:0x021124bc
+func_ov003_021124e8 kind:function(arm,size=0x48) addr:0x021124e8
+func_ov003_02112530 kind:function(arm,size=0x9c) addr:0x02112530
+func_ov003_021125cc kind:function(arm,size=0x14) addr:0x021125cc
+func_ov003_021125e0 kind:function(arm,size=0x10) addr:0x021125e0
+func_ov003_021125f0 kind:function(arm,size=0x50) addr:0x021125f0
+func_ov003_02112640 kind:function(arm,size=0x54) addr:0x02112640
+func_ov003_02112694 kind:function(arm,size=0x30) addr:0x02112694
+func_ov003_021126c4 kind:function(arm,size=0x168) addr:0x021126c4
+func_ov003_0211282c kind:function(arm,size=0x14) addr:0x0211282c
+func_ov003_02112840 kind:function(arm,size=0x218) addr:0x02112840
+func_ov003_02112a58 kind:function(arm,size=0x20) addr:0x02112a58
+func_ov003_02112a78 kind:function(arm,size=0x20) addr:0x02112a78
+func_ov003_02112a98 kind:function(arm,size=0x34) addr:0x02112a98
+func_ov003_02112acc kind:function(arm,size=0xcc) addr:0x02112acc
+func_ov003_02112b98 kind:function(arm,size=0x44) addr:0x02112b98
+func_ov003_02112bdc kind:function(arm,size=0x144) addr:0x02112bdc
+func_ov003_02112d20 kind:function(arm,size=0x380) addr:0x02112d20
+func_ov003_021130a0 kind:function(arm,size=0xb8) addr:0x021130a0
+func_ov003_02113158 kind:function(arm,size=0xb4) addr:0x02113158
+func_ov003_0211320c kind:function(arm,size=0x118) addr:0x0211320c
+func_ov003_02113324 kind:function(arm,size=0xe8) addr:0x02113324
+func_ov003_0211340c kind:function(arm,size=0x54) addr:0x0211340c
+func_ov003_02113460 kind:function(arm,size=0xf0) addr:0x02113460
+func_ov003_02113550 kind:function(arm,size=0x60) addr:0x02113550
+func_ov003_021135b0 kind:function(arm,size=0x1c) addr:0x021135b0
+func_ov003_021135cc kind:function(arm,size=0x250) addr:0x021135cc
+func_ov003_0211381c kind:function(arm,size=0x20) addr:0x0211381c
+func_ov003_0211383c kind:function(arm,size=0xd0) addr:0x0211383c
+func_ov003_0211390c kind:function(arm,size=0x124) addr:0x0211390c
+func_ov003_02113a30 kind:function(arm,size=0x44) addr:0x02113a30
+func_ov003_02113a74 kind:function(arm,size=0x18) addr:0x02113a74
+func_ov003_02113a8c kind:function(arm,size=0x18) addr:0x02113a8c
+func_ov003_02113aa4 kind:function(arm,size=0x14) addr:0x02113aa4
+func_ov003_02113ab8 kind:function(arm,size=0xc8) addr:0x02113ab8
+func_ov003_02113b80 kind:function(arm,size=0x84) addr:0x02113b80
+func_ov003_02113c04 kind:function(arm,size=0x38) addr:0x02113c04
+func_ov003_02113c3c kind:function(arm,size=0x11c) addr:0x02113c3c
+func_ov003_02113d58 kind:function(arm,size=0x24) addr:0x02113d58
+func_ov003_02113d7c kind:function(arm,size=0x18) addr:0x02113d7c
+func_ov003_02113d94 kind:function(arm,size=0x1f8) addr:0x02113d94
+func_ov003_02113f8c kind:function(arm,size=0x224) addr:0x02113f8c
+func_ov003_021141b0 kind:function(arm,size=0x18) addr:0x021141b0
+func_ov003_021141c8 kind:function(arm,size=0x1c) addr:0x021141c8
+func_ov003_021141e4 kind:function(arm,size=0x3cc) addr:0x021141e4
+func_ov003_021145b0 kind:function(arm,size=0xc) addr:0x021145b0
+func_ov003_021145bc kind:function(arm,size=0x10) addr:0x021145bc
+func_ov003_021145cc kind:function(arm,size=0x18) addr:0x021145cc
+func_ov003_021145e4 kind:function(arm,size=0xc) addr:0x021145e4
+func_ov003_021145f0 kind:function(arm,size=0x28) addr:0x021145f0
+func_ov003_02114618 kind:function(arm,size=0x44c) addr:0x02114618
+func_ov003_02114a64 kind:function(arm,size=0x18) addr:0x02114a64
+func_ov003_02114a7c kind:function(arm,size=0xc) addr:0x02114a7c
+func_ov003_02114a88 kind:function(arm,size=0x94) addr:0x02114a88
+func_ov003_02114b1c kind:function(arm,size=0x10) addr:0x02114b1c
+func_ov003_02114b2c kind:function(arm,size=0x10) addr:0x02114b2c
+func_ov003_02114b3c kind:function(arm,size=0x8c) addr:0x02114b3c
+func_ov003_02114bc8 kind:function(arm,size=0x98) addr:0x02114bc8
+func_ov003_02114c60 kind:function(arm,size=0x3c) addr:0x02114c60
+func_ov003_02114c9c kind:function(arm,size=0xc8) addr:0x02114c9c
+func_ov003_02114d64 kind:function(arm,size=0xb4) addr:0x02114d64
+func_ov003_02114e18 kind:function(arm,size=0x1a8) addr:0x02114e18
+func_ov003_02114fc0 kind:function(arm,size=0x40) addr:0x02114fc0
+func_ov003_02115000 kind:function(arm,size=0x8c) addr:0x02115000
+func_ov003_0211508c kind:function(arm,size=0x1a4) addr:0x0211508c
+func_ov003_02115230 kind:function(arm,size=0x104) addr:0x02115230
+func_ov003_02115334 kind:function(arm,size=0x1e0) addr:0x02115334
+func_ov003_02115514 kind:function(arm,size=0x30) addr:0x02115514
+func_ov003_02115544 kind:function(arm,size=0x164) addr:0x02115544
+func_ov003_021156a8 kind:function(arm,size=0xd8) addr:0x021156a8
+func_ov003_02115780 kind:function(arm,size=0x4) addr:0x02115780
+func_ov003_02115784 kind:function(arm,size=0x14c) addr:0x02115784
+func_ov003_021158d0 kind:function(arm,size=0x6d0) addr:0x021158d0
+func_ov003_02115fa0 kind:function(arm,size=0x18) addr:0x02115fa0
+func_ov003_02115fb8 kind:function(arm,size=0x118) addr:0x02115fb8
+func_ov003_021160d0 kind:function(arm,size=0xf0) addr:0x021160d0
+func_ov003_021161c0 kind:function(arm,size=0xc) addr:0x021161c0
+func_ov003_021161cc kind:function(arm,size=0x3c) addr:0x021161cc
+func_ov003_02116208 kind:function(arm,size=0xdc) addr:0x02116208
+func_ov003_021162e4 kind:function(arm,size=0x15c) addr:0x021162e4
+func_ov003_02116440 kind:function(arm,size=0x24) addr:0x02116440
+func_ov003_02116464 kind:function(arm,size=0xec) addr:0x02116464
+func_ov003_02116550 kind:function(arm,size=0x40) addr:0x02116550
+func_ov003_02116590 kind:function(arm,size=0x24) addr:0x02116590
+func_ov003_021165b4 kind:function(arm,size=0x54) addr:0x021165b4
+data_ov003_02116608 kind:data(any) addr:0x02116608
+data_ov003_02116618 kind:data(any) addr:0x02116618
+data_ov003_02116628 kind:data(any) addr:0x02116628
+data_ov003_02116638 kind:data(any) addr:0x02116638
+data_ov003_02116648 kind:data(any) addr:0x02116648
+data_ov003_02116688 kind:data(any) addr:0x02116688
+data_ov003_021166dc kind:data(any) addr:0x021166dc ambiguous
+data_ov003_021167ac kind:data(any) addr:0x021167ac ambiguous
+data_ov003_021167c0 kind:data(any) addr:0x021167c0 ambiguous
+data_ov003_021168d4 kind:data(any) addr:0x021168d4
+data_ov003_021168e8 kind:data(any) addr:0x021168e8 ambiguous
+data_ov003_02116968 kind:data(any) addr:0x02116968 ambiguous
+data_ov003_021169f4 kind:data(any) addr:0x021169f4 ambiguous
+data_ov003_021169fc kind:data(any) addr:0x021169fc ambiguous
+data_ov003_02116b20 kind:data(any) addr:0x02116b20
+data_ov003_02116b2c kind:data(any) addr:0x02116b2c
+data_ov003_02116b40 kind:data(any) addr:0x02116b40 ambiguous
+data_ov003_02116b6c kind:data(any) addr:0x02116b6c ambiguous
+data_ov003_02116bac kind:data(any) addr:0x02116bac ambiguous
+data_ov003_02116bd4 kind:data(any) addr:0x02116bd4 ambiguous
+data_ov003_02116bf0 kind:data(any) addr:0x02116bf0 ambiguous
+data_ov003_02116c8c kind:data(any) addr:0x02116c8c ambiguous
+data_ov003_02116ccc kind:data(any) addr:0x02116ccc ambiguous
+data_ov003_02116d2c kind:data(any) addr:0x02116d2c ambiguous
+data_ov003_02116d78 kind:data(any) addr:0x02116d78
+data_ov003_02116d84 kind:data(any) addr:0x02116d84
+data_ov003_02116d94 kind:data(any) addr:0x02116d94
+data_ov003_02116dbc kind:data(any) addr:0x02116dbc
+data_ov003_02116de4 kind:data(any) addr:0x02116de4
+data_ov003_02116e0c kind:data(any) addr:0x02116e0c
+data_ov003_02116e18 kind:data(any) addr:0x02116e18 ambiguous
+data_ov003_02116e34 kind:data(any) addr:0x02116e34
+data_ov003_02116e74 kind:data(any) addr:0x02116e74
+data_ov003_02116eb4 kind:data(any) addr:0x02116eb4
+data_ov003_02116ef4 kind:data(any) addr:0x02116ef4
+data_ov003_02116f40 kind:data(any) addr:0x02116f40
+data_ov003_02116f60 kind:bss addr:0x02116f60

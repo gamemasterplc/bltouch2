@@ -1,0 +1,27 @@
+# Editor Configurations
+.vscode/
+*.code-workspace
+
+# Original ROM files
+bltouch2_*/
+*.nds
+*bios.bin
+
+# Build Output
+build/
+*.sav
+*.mch
+*.xMAP
+
+# Tools
+/m2ctx
+/objdiff*
+dsd*
+build.ninja
+.ninja_*
+/wibo
+*ghidra*
+update*
+/compile_commands.json
+/nonmatchings
+ctx.c
