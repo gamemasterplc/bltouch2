@@ -4543,10 +4543,6 @@ from:0x02036930 kind:arm_call to:0x020560a0 module:overlay(0)
 from:0x02036938 kind:load to:0x020ac930 module:overlay(0)
 from:0x02036950 kind:load to:0x020ac930 module:overlay(0)
 from:0x02036954 kind:load to:0x020537c4 module:overlay(0)
-from:0x02037808 kind:load to:0x020e0fde module:overlays(1,48)
-from:0x0203780c kind:load to:0x02080fdf module:overlay(0)
-from:0x02039aa4 kind:load to:0x0208f021 module:overlay(0)
-from:0x02039aa8 kind:load to:0x020ef022 module:overlay(1)
 from:0x0203b6a4 kind:load to:0x02009d30 module:main
 from:0x0203b6a8 kind:load to:0x02009d5c module:main
 from:0x0203b6ac kind:load to:0x02009d88 module:main

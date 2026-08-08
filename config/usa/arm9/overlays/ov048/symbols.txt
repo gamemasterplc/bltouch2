@@ -3705,10 +3705,7 @@ data_ov048_020d1688 kind:data(any) addr:0x020d1688
 data_ov048_020d1988 kind:data(any) addr:0x020d1988
 data_ov048_020d198c kind:data(any) addr:0x020d198c
 data_ov048_020d199c kind:data(any) addr:0x020d199c
-data_ov048_020d1bf4 kind:data(any) addr:0x020d1bf4 ambiguous
-data_ov048_020d1c28 kind:data(any) addr:0x020d1c28 ambiguous
 data_ov048_020d1c60 kind:data(any) addr:0x020d1c60
-data_ov048_020d1c90 kind:data(any) addr:0x020d1c90 ambiguous
 data_ov048_020d1f28 kind:data(any) addr:0x020d1f28
 data_ov048_020d1f2c kind:data(any) addr:0x020d1f2c
 data_ov048_020d1f44 kind:data(any) addr:0x020d1f44
@@ -5512,7 +5509,6 @@ data_ov048_020e0bc4 kind:bss addr:0x020e0bc4
 data_ov048_020e0bc8 kind:bss addr:0x020e0bc8
 data_ov048_020e0be4 kind:bss addr:0x020e0be4
 data_ov048_020e0e64 kind:bss addr:0x020e0e64
-data_ov048_020e0fde kind:bss addr:0x020e0fde ambiguous
 data_ov048_020e1264 kind:bss addr:0x020e1264
 data_ov048_020e126c kind:bss addr:0x020e126c
 data_ov048_020e139c kind:bss addr:0x020e139c
@@ -5687,7 +5683,7 @@ data_ov048_020e3bf1 kind:bss addr:0x020e3bf1
 data_ov048_020e3bf2 kind:bss addr:0x020e3bf2
 data_ov048_020e3bf6 kind:bss addr:0x020e3bf6
 data_ov048_020e3c04 kind:bss addr:0x020e3c04
-data_ov048_020e3c06 kind:bss addr:0x020e3c06 ambiguous
+data_ov048_020e3c06 kind:bss addr:0x020e3c06
 data_ov048_020e3c34 kind:bss addr:0x020e3c34
 data_ov048_020e3c64 kind:bss addr:0x020e3c64
 data_ov048_020e3c74 kind:bss addr:0x020e3c74
@@ -5714,17 +5710,17 @@ data_ov048_020e3e48 kind:bss addr:0x020e3e48
 data_ov048_020e3e60 kind:bss addr:0x020e3e60
 data_ov048_020e3e64 kind:bss addr:0x020e3e64
 data_ov048_020e3e6c kind:bss addr:0x020e3e6c
-data_ov048_020e3e70 kind:bss addr:0x020e3e70 ambiguous
+data_ov048_020e3e70 kind:bss addr:0x020e3e70
 data_ov048_020e3e74 kind:bss addr:0x020e3e74
 data_ov048_020e3e94 kind:bss addr:0x020e3e94
 data_ov048_020e3f34 kind:bss addr:0x020e3f34
 data_ov048_020e3f3c kind:bss addr:0x020e3f3c
 data_ov048_020e3f4a kind:bss addr:0x020e3f4a
-data_ov048_020e3f4c kind:bss addr:0x020e3f4c ambiguous
+data_ov048_020e3f4c kind:bss addr:0x020e3f4c
 data_ov048_020e3f98 kind:bss addr:0x020e3f98
 data_ov048_020e3fa8 kind:bss addr:0x020e3fa8
 data_ov048_020e4028 kind:bss addr:0x020e4028
 data_ov048_020e4074 kind:bss addr:0x020e4074
-data_ov048_020e4078 kind:bss addr:0x020e4078 ambiguous
+data_ov048_020e4078 kind:bss addr:0x020e4078
 data_ov048_020e413c kind:bss addr:0x020e413c
 data_ov048_020e4140 kind:bss addr:0x020e4140
