@@ -86,8 +86,6 @@ void OS_InitAlarm(void);
 void OS_Terminate(void);
 void OS_SetIrqFunction(u32 type, void (*function)());
 
-void OS_EnableIrqMask(u32 mask);
-
 void        OS_WaitVBlankIntr(void);
 void        _OS_SpinWait(u32 param1);
 inline void OS_SpinWait(u32 param1) {
@@ -113,8 +111,8 @@ void OS_Panic(const char* message) {}
 void OS_ResetSystem(u32);
 
 void* OS_InitAlloc(u32 arena, u32 addrLo, u32 addrHi, u32);
-u32   OS_GetArenaLo(u32 arena);
-u32   OS_GetArenaHi(u32 arena);
+void *OS_GetArenaLo(u32 arena);
+void *OS_GetArenaHi(u32 arena);
 
 void  OS_SetArenaLo(u32 arena, void* addr);
 void* OS_AllocFromArenaLo(u32 arena, u32 size, u32 num);
@@ -149,8 +147,10 @@ OSTime OS_GetTick(void);
 u32 OS_GetConsoleType(void);
 
 u32 OS_GetLockID(void);
+void OS_ReleaseLockID(u16);
 
-u32  OS_DisableInterrupts_Irq(void);
+u32 OS_DisableInterrupts(void);
+u32 OS_EnableInterrupts(void);
 void OS_RestoreInterrupts(u32);
 
 BOOL OS_func_0206d5ac(u16, u32);
@@ -166,32 +166,22 @@ s32  OS_func_0171(u32, u32, u32);
 s32  OS_func_0174(void);
 BOOL OS_func_0065(void);
 
-inline void OS_SetIrqCheckFlag(void) {
-    REG_IRQ |= 1;
-}
-
-inline u16 OS_EnableIrq(void) {
-    u16 oldVal = REG_IME;
-    REG_IME    = 1;
-    return oldVal;
-}
-
-inline u32 OS_GetMainArenaLo() {
+inline void *OS_GetMainArenaLo() {
     return OS_GetArenaLo(OS_ARENA_MAIN);
 }
-inline u32 OS_GetMainArenaHi(void) {
+inline void *OS_GetMainArenaHi(void) {
     return OS_GetArenaHi(OS_ARENA_MAIN);
 }
-inline u32 OS_GetITCMArenaLo() {
+inline void *OS_GetITCMArenaLo() {
     return OS_GetArenaLo(OS_ARENA_ITCM);
 }
-inline u32 OS_GetITCMArenaHi() {
+inline void *OS_GetITCMArenaHi() {
     return OS_GetArenaHi(OS_ARENA_ITCM);
 }
-inline u32 OS_GetDTCMArenaLo() {
+inline void *OS_GetDTCMArenaLo() {
     return OS_GetArenaLo(OS_ARENA_DTCM);
 }
-inline u32 OS_GetDTCMArenaHi() {
+inline void *OS_GetDTCMArenaHi() {
     return OS_GetArenaHi(OS_ARENA_DTCM);
 }
 

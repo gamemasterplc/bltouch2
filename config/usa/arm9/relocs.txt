@@ -45,7 +45,11 @@ from:0x02000df0 kind:arm_call to:0x0200b16c module:main
 from:0x02000e10 kind:arm_call to:0x020077bc module:main
 from:0x02000e18 kind:arm_call to:0x0200791c module:main
 from:0x02000e28 kind:load to:0x0204b29c module:main
-from:0x02000e3c kind:load to:0x0204b2ac module:main
+from:0x02000e2c kind:overlay_id to:0
+from:0x02000e30 kind:overlay_id to:49
+from:0x02000e34 kind:overlay_id to:50
+from:0x02000e38 kind:overlay_id to:48
+from:0x02000e3c kind:load to:0x0204b29c add:0x10 module:main
 from:0x02000e9c kind:arm_call to:0x02000fa4 module:main
 from:0x02000ea0 kind:arm_call to:0x02000f10 module:main
 from:0x02000eac kind:arm_call to:0x02000f48 module:main

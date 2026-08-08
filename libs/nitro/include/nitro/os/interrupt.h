@@ -93,14 +93,14 @@ OS_IRQMask OS_SetIRQMask(OS_IRQMask mask);
  * @param mask IRQ mask to enable.
  * @return Previous IRQ mask value.
  */
-OS_IRQMask OS_EnableInterrupts(OS_IRQMask mask);
+OS_IRQMask OS_EnableIrqMask(OS_IRQMask mask);
 
 /**
  * @brief Disables interrupts specified by the mask.
  * @param mask IRQ mask to disable.
  * @return Previous IRQ mask value.
  */
-OS_IRQMask OS_DisableInterrupts(OS_IRQMask mask);
+OS_IRQMask OS_DisableIrqMask(OS_IRQMask mask);
 
 /**
  * @brief Resets IRQ request flags for the given mask.
@@ -111,13 +111,19 @@ OS_IRQMask OS_ResetIRQRequestFlags(OS_IRQMask mask);
 
 /// MARK: Inlines
 
-static inline BOOL OS_DisableIME(void) {
+static inline BOOL OS_DisableIrq(void) {
     u16 prev = REG_IME;
     REG_IME  = 0;
     return (BOOL)prev;
 }
 
-static inline BOOL OS_RestoreIME(BOOL enable) {
+inline u16 OS_EnableIrq(void) {
+    u16 oldVal = REG_IME;
+    REG_IME    = 1;
+    return oldVal;
+}
+
+static inline BOOL OS_RestoreIrq(BOOL enable) {
     u16 prev = REG_IME;
     REG_IME  = (vu16)enable;
     return (BOOL)prev;

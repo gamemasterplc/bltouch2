@@ -60,9 +60,9 @@ void FS_StartOverlay(FSOverlay* overlay);
 
 BOOL FS_StopOverlay(FSOverlay* overlay);
 
-BOOL FS_LoadOverlay(FSOverlay* overlay, u32 overlayID);
+BOOL FS_LoadOverlay(u32 param1, u32 overlayID);
 
-BOOL FS_UnloadOverlay(FSOverlay* overlay, u32 overlayID);
+BOOL FS_UnloadOverlay(u32 param1, u32 overlayID);
 
 static inline FS_IsOverlayCompressed(FSOverlay* info) {
     return (info->flags & 1) != 0;
