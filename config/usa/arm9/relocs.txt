@@ -4523,10 +4523,10 @@ from:0x020367dc kind:arm_call to:0x02056068 module:overlay(0)
 from:0x020367e0 kind:arm_call to:0x0204dcb0 module:overlay(0)
 from:0x020367ec kind:arm_call to:0x0204e2fc module:overlay(0)
 from:0x020367f8 kind:arm_call to:0x0204e2fc module:overlay(0)
-from:0x02036804 kind:load to:0x020ac70c add:0x4 module:overlay(0)
+from:0x02036804 kind:load to:0x020ac710 module:overlay(0)
 from:0x02036808 kind:load to:0x0203c018 module:main
 from:0x02036810 kind:load to:0x02145fdc module:overlay(47)
-from:0x02036814 kind:load to:0x020ac70c add:0x8 module:overlay(0)
+from:0x02036814 kind:load to:0x020ac714 module:overlay(0)
 from:0x02036818 kind:load to:0x0203693c module:main
 from:0x0203681c kind:load to:0x02036820 module:main
 from:0x02036854 kind:arm_call to:0x0204e3ec module:overlay(0)

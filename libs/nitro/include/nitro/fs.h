@@ -132,6 +132,8 @@ typedef struct FSDirEntry {
 } FSDirEntry;
 
 void        FS_Init(u32 dmaCount);
+void        FS_Close(void);
+
 void        FS_InitFile(FSFile* file);
 BOOL        FS_OpenFile(FSFile* file, const char* path);
 BOOL        FS_OpenFileEx(FSFile* file, const char* path, u32 flags);

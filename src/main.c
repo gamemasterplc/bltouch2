@@ -1,9 +1,6 @@
 #include "sys_mode.h"
 #include <nitro.h>
 
-//TODO: Find better name for this function
-extern void func_0200b16c(void);
-
 EXTERN_OVERLAY_ID(0);
 EXTERN_OVERLAY_ID(48);
 EXTERN_OVERLAY_ID(49);
@@ -37,11 +34,11 @@ void NitroMain(void)
         SysModeParam.isBBP = FALSE;
         FS_Init(-1);
         FS_LoadOverlay(0, OVERLAY_ID(0));
-        func_0200b16c();
+        FS_Close();
         BL_Main(SysModeParam.heapStart, ((u32)SysModeParam.heapEnd-(u32)SysModeParam.heapStart));
         FS_Init(-1);
         FS_UnloadOverlay(0, OVERLAY_ID(0));
-        func_0200b16c();
+        FS_Close();
         if(!SysIsModeBBP()) {
             resetCode = 1;
             break;
@@ -56,14 +53,14 @@ void NitroMain(void)
         
         FS_Init(-1);
         FS_LoadOverlay(0, OVERLAY_ID(48));
-        func_0200b16c();
+        FS_Close();
         if(BBP_Main(&SysModeParam.bbp) == TRUE) {
             resetCode = 1;
             break;
         }
         FS_Init(-1);
         FS_UnloadOverlay(0, OVERLAY_ID(48));
-        func_0200b16c();
+        FS_Close();
         SysModeParam.exitBBP = TRUE;
     }
     OS_EnableIrq();
