@@ -17,7 +17,7 @@ extern "C" {
 
 #define GX_POWER_ALL 0x20e
 
-#define GX_DISP_SELECT_MAIN_SUB 0x8000
+#define GX_DISP_SELECT_MAIN_SUB 1
 #define GX_DISP_SELECT_SUB_MAIN 0
 #define GX_DISPMODE_GRAPHICS    1
 #define GX_DISPMODE_VRAM_C      0xa
@@ -416,7 +416,7 @@ inline void GX_SetPower(u32 value) {
 }
 
 inline void GX_SetDispSelect(u32 value) {
-    REG_POWER_CNT = (REG_POWER_CNT & ~0x8000) | value;
+    REG_POWER_CNT = (value << 15) | (REG_POWER_CNT & ~0x8000);
 }
 
 inline void GX_SetOBJVRamModeChar(u32 value) {
@@ -468,6 +468,15 @@ inline void GXS_SetVisibleWindows(s32 windows) {
     REG_DISPCNT_SUB = (REG_DISPCNT_SUB & ~0xE000) | (windows << 13);
 }
 
+inline void GX_SetMasterBrightness(u32 value)
+{
+    GXx_SetMasterBrightness_(&REG_MASTER_BRIGHT, value);
+}
+
+inline void GXS_SetMasterBrightness(u32 value)
+{
+    GXx_SetMasterBrightness_(&REG_MASTER_BRIGHT_SUB, value);
+}
 #ifdef __cplusplus
 } // extern "C"
 #endif

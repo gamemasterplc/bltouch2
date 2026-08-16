@@ -79,6 +79,10 @@ DEFAULT_CC_FLAGS = " ".join(
     (*COMMON_CC_FLAGS, "-ipa file", "-str noreuse", "-Cpp_exceptions off")
 )
 
+BBP_CC_FLAGS = " ".join(
+    (*COMMON_CC_FLAGS, "-ipa file", "-str noreuse", "-Cpp_exceptions off", "-DSYS_BBP")
+)
+
 STR_REUSE_CC_FLAGS = " ".join(
     (*COMMON_CC_FLAGS, "-ipa file", "-str reuse", "-Cpp_exceptions off")
 )
@@ -103,6 +107,11 @@ DEFAULT_COMPILER_CONFIG = CompilerConfig(
     flags=DEFAULT_CC_FLAGS,
 )
 
+BBP_COMPILER_CONFIG = CompilerConfig(
+    version=MWCC_DEFAULT_VERSION,
+    flags=BBP_CC_FLAGS,
+)
+
 MSL_COMPILER_CONFIG = CompilerConfig(
     version=MWCC_DEFAULT_VERSION,
     flags=MSL_CC_FLAGS,
@@ -118,6 +127,7 @@ COMPILER_CONFIGS: dict[Path, CompilerConfig] = {
     Path("libs/c"): MSL_COMPILER_CONFIG,
     Path("libs/cpp"): MSL_COMPILER_CONFIG,
     Path("libs/runtime"): MSL_RUNTIME_COMPILER_CONFIG,
+    Path("src/bbp"): BBP_COMPILER_CONFIG,
 }
 
 # Passed to all modules and final arm9.o link

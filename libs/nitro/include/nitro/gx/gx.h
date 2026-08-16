@@ -105,7 +105,7 @@ void GXs_SetGraphicsMode(GXBGMode bgMode);
  *
  * This function adjusts the master brightness by setting the appropriate bits in the register.
  */
-void GXx_SetMasterBrightness(u16* arg0, s32 arg1);
+void GXx_SetMasterBrightness_(u16* arg0, s32 arg1);
 
 /**
  * @brief Gets the master brightness from a display register.
