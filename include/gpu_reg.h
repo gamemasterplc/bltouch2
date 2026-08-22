@@ -2,10 +2,7 @@
 #define GPU_REG_H
 
 #include <nitro.h>
-
-#define GPU_DISPLAY_MAIN 0
-#define GPU_DISPLAY_SUB 1
-#define GPU_DISPLAY_MAX 2
+#include "display.h"
 
 typedef struct GpuRegScroll_s {
     s16 BG0HOFS;
@@ -59,11 +56,11 @@ typedef struct GpuRegBlend_s {
 
 
 extern int GpuDispSelect;
-extern s16 GpuMasterBrightness[GPU_DISPLAY_MAX];
-extern int GpuPlaneMask[GPU_DISPLAY_MAX];
-extern GPU_REG_BLEND GpuRegBlend[GPU_DISPLAY_MAX];
-extern GPU_REG_WINDOW GpuRegWindow[GPU_DISPLAY_MAX];
-extern GPU_REG_SCROLL GpuRegScroll[GPU_DISPLAY_MAX];
+extern s16 GpuMasterBrightness[DISPLAY_MAX];
+extern int GpuPlaneMask[DISPLAY_MAX];
+extern GPU_REG_BLEND GpuRegBlend[DISPLAY_MAX];
+extern GPU_REG_WINDOW GpuRegWindow[DISPLAY_MAX];
+extern GPU_REG_SCROLL GpuRegScroll[DISPLAY_MAX];
 
 void GpuRegInit(void);
 void GpuRegExec(void);

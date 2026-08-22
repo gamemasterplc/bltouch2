@@ -8,6 +8,7 @@
 #include "nitro/g2.h"
 #include "nitro/gx.h"
 #include "nitro/hw.h"
+
 #include "nitro/mi.h"
 #include "nitro/os.h"
 #include "nitro/pad.h"
@@ -19,3 +20,4 @@
 #include "nitro/svc.h"
 #include "nitro/tp.h"
 #include "nitro/types.h"
+#include "nitro/mb.h"

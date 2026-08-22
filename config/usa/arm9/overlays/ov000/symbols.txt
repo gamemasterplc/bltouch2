@@ -6,8 +6,8 @@ BL_Main kind:function(arm,size=0x150) addr:0x0204db38
 BL_SysGetFrame kind:function(arm,size=0x10) addr:0x0204dc88
 BL_SysResetEnable kind:function(arm,size=0x18) addr:0x0204dc98
 BL_SysResetDisable kind:function(arm,size=0x18) addr:0x0204dcb0
-BL_SysSetMBBusy kind:function(arm,size=0x18) addr:0x0204dcc8
-BL_SysResetMBBusy kind:function(arm,size=0x18) addr:0x0204dce0
+BL_SysSetWirelessBusy kind:function(arm,size=0x18) addr:0x0204dcc8
+BL_SysResetWirelessBusy kind:function(arm,size=0x18) addr:0x0204dce0
 BL_SysStopSleep kind:function(arm,size=0x18) addr:0x0204dcf8
 BL_SysStartSleep kind:function(arm,size=0x18) addr:0x0204dd10
 BL_SysCheckSleep kind:function(arm,size=0x18) addr:0x0204dd28
@@ -38,33 +38,33 @@ BL_FileLoad kind:function(arm,size=0x218) addr:0x0204e5d4
 BL_FileUnload kind:function(arm,size=0x5c) addr:0x0204e7ec
 BL_FileInit kind:function(arm,size=0x14) addr:0x0204e848
 BL_FileClose kind:function(arm,size=0x20) addr:0x0204e85c
-BL_MBInit kind:function(arm,size=0x24) addr:0x0204e87c
-BL_MBExec kind:function(arm,size=0x2c) addr:0x0204e8a0
-BL_MBGetCommState kind:function(arm,size=0x14) addr:0x0204e8cc
-BL_MBStartClientSearch kind:function(arm,size=0x24) addr:0x0204e8e0
-BL_MBStartParentSearch kind:function(arm,size=0x20) addr:0x0204e904
-BL_MBStopLink kind:function(arm,size=0x10) addr:0x0204e924
-BL_MBIsCommBusy kind:function(arm,size=0x10) addr:0x0204e934
+BL_WLInit kind:function(arm,size=0x24) addr:0x0204e87c
+BL_WLExec kind:function(arm,size=0x2c) addr:0x0204e8a0
+BL_WLGetCommState kind:function(arm,size=0x14) addr:0x0204e8cc
+BL_WLStartClientSearch kind:function(arm,size=0x24) addr:0x0204e8e0
+BL_WLStartParentSearch kind:function(arm,size=0x20) addr:0x0204e904
+BL_WLStopLink kind:function(arm,size=0x10) addr:0x0204e924
+BL_WLIsCommBusy kind:function(arm,size=0x10) addr:0x0204e934
 func_ov000_0204e944 kind:function(arm,size=0x10) addr:0x0204e944
 func_ov000_0204e954 kind:function(arm,size=0x48) addr:0x0204e954
-BL_MBIsDelaySceneLoad kind:function(arm,size=0x10) addr:0x0204e99c
-BL_MBStartLoad kind:function(arm,size=0x34) addr:0x0204e9ac
-BL_MBIsDispLinkIcon kind:function(arm,size=0x14) addr:0x0204e9e0
-BL_MBCheckInputSync kind:function(arm,size=0x14) addr:0x0204e9f4
-BL_MBGetLinkLevel kind:function(arm,size=0x1c) addr:0x0204ea08
+BL_WLIsDelaySceneLoad kind:function(arm,size=0x10) addr:0x0204e99c
+BL_WLStartLoad kind:function(arm,size=0x34) addr:0x0204e9ac
+BL_WLIsDispLinkIcon kind:function(arm,size=0x14) addr:0x0204e9e0
+BL_WLCheckInputSync kind:function(arm,size=0x14) addr:0x0204e9f4
+BL_WLGetLinkLevel kind:function(arm,size=0x1c) addr:0x0204ea08
 func_ov000_0204ea24 kind:function(arm,size=0x14) addr:0x0204ea24
-BL_MBGetClientData kind:function(arm,size=0x1c) addr:0x0204ea38
-BL_MBGetParentData kind:function(arm,size=0x1c) addr:0x0204ea54
-BL_MBGetPadData kind:function(arm,size=0x18) addr:0x0204ea70
-BL_MBGetTPData kind:function(arm,size=0x34) addr:0x0204ea88
+BL_WLGetClientData kind:function(arm,size=0x1c) addr:0x0204ea38
+BL_WLGetParentData kind:function(arm,size=0x1c) addr:0x0204ea54
+BL_WLGetPadData kind:function(arm,size=0x18) addr:0x0204ea70
+BL_WLGetTPData kind:function(arm,size=0x34) addr:0x0204ea88
 func_ov000_0204eabc kind:function(arm,size=0x1c) addr:0x0204eabc
 func_ov000_0204ead8 kind:function(arm,size=0x34) addr:0x0204ead8
-BL_MBGetPlayerNum kind:function(arm,size=0x28) addr:0x0204eb0c
-BL_MBGetPlayer kind:function(arm,size=0x18) addr:0x0204eb34
-BL_MBGetLocalPlayer kind:function(arm,size=0x14) addr:0x0204eb4c
-BL_MBIsMultibootStart kind:function(arm,size=0x14) addr:0x0204eb60
-BL_MBGetLoadProgress kind:function(arm,size=0x38) addr:0x0204eb74
-BL_MBGetMgUnlockFlag kind:function(arm,size=0x14) addr:0x0204ebac
+BL_WLGetPlayerNum kind:function(arm,size=0x28) addr:0x0204eb0c
+BL_WLGetPlayer kind:function(arm,size=0x18) addr:0x0204eb34
+BL_WLGetLocalPlayer kind:function(arm,size=0x14) addr:0x0204eb4c
+BL_WLIsMultibootStart kind:function(arm,size=0x14) addr:0x0204eb60
+BL_WLGetLoadProgress kind:function(arm,size=0x38) addr:0x0204eb74
+BL_WLGetMgUnlockFlag kind:function(arm,size=0x14) addr:0x0204ebac
 func_ov000_0204ebc0 kind:function(arm,size=0x3c) addr:0x0204ebc0
 func_ov000_0204ebfc kind:function(arm,size=0x1c) addr:0x0204ebfc
 func_ov000_0204ec18 kind:function(arm,size=0x38) addr:0x0204ec18
@@ -152,8 +152,8 @@ BL_GfxHeapFree kind:function(arm,size=0x1bc) addr:0x020540a4
 BL_GfxHeapKill kind:function(arm,size=0x5c) addr:0x02054260
 BL_OamInit kind:function(arm,size=0x28) addr:0x020542bc
 BL_OamExec kind:function(arm,size=0x48) addr:0x020542e4
-func_ov000_0205432c kind:function(arm,size=0x4c) addr:0x0205432c
-BL_OamAllocRotMtx kind:function(arm,size=0x314) addr:0x02054378
+OamClear kind:function(arm,size=0x4c) local addr:0x0205432c
+BL_OamAddAffine kind:function(arm,size=0x314) addr:0x02054378
 BL_OverlayInit kind:function(arm,size=0x44) addr:0x0205468c
 BL_OverlayLoad kind:function(arm,size=0x74) addr:0x020546d0
 BL_OverlayMgLoad kind:function(arm,size=0x30) addr:0x02054744
@@ -1297,10 +1297,10 @@ data_ov000_0207dfb8 kind:data(any) addr:0x0207dfb8
 data_ov000_0207dfcc kind:data(any) addr:0x0207dfcc
 data_ov000_0207dfe0 kind:data(any) addr:0x0207dfe0
 data_ov000_0207dff8 kind:data(any) addr:0x0207dff8
-data_ov000_0207e010 kind:data(any) addr:0x0207e010
-data_ov000_0207e018 kind:data(any) addr:0x0207e018
-data_ov000_0207e024 kind:data(any) addr:0x0207e024
-data_ov000_0207e038 kind:data(any) addr:0x0207e038
+ModeOverlay kind:data(any) local addr:0x0207e010
+OverlayTable kind:data(any) local addr:0x0207e018
+MessOverlay kind:data(any) local addr:0x0207e024
+SceneOverlay kind:data(any) local addr:0x0207e038
 data_ov000_0207e0fc kind:data(any) addr:0x0207e0fc
 data_ov000_0207e110 kind:data(any) addr:0x0207e110
 data_ov000_0207e11c kind:data(any) addr:0x0207e11c
@@ -5752,7 +5752,7 @@ data_ov000_020ac6d8 kind:bss addr:0x020ac6d8
 data_ov000_020ac6ec kind:bss addr:0x020ac6ec
 data_ov000_020ac6f0 kind:bss addr:0x020ac6f0
 BL_OamData kind:bss addr:0x020ac6fc
-data_ov000_020ac700 kind:bss addr:0x020ac700
+LoadedOverlay kind:bss local addr:0x020ac700
 BL_GpuMasterBrightness kind:bss addr:0x020ac70c
 BL_GpuDispSelect kind:bss addr:0x020ac710
 BL_GpuPlaneMask kind:bss addr:0x020ac714
