@@ -5,6 +5,56 @@
     .bss        start:0x020ac660 end:0x020b26e0 kind:bss align:32
 
 
+src/bl/menu/logo.c:
+    .text       start:0x0204d760 end:0x0204d9e8
+
+src/bl/bl_system.c:
+    .text       start:0x0204d9e8 end:0x0204de78
+    .data       start:0x0207dd60 end:0x0207def4
+    .bss        start:0x020ac660 end:0x020ac6c4
+
+src/bl/bl_res.c:
+    .text       start:0x0204de78 end:0x0204e2a8
+
+src/bl/bl_fade.c:
+    .text       start:0x0204e2a8 end:0x0204e3f4
+    .bss        start:0x020ac6c4 end:0x020ac6cc
+
+src/bl/bl_pad.c:
+    .text       start:0x0204e3f4 end:0x0204e5d4
+    .bss        start:0x020ac6cc end:0x020ac6d0
+
+src/bl/bl_file.c:
+    .text       start:0x0204e5d4 end:0x0204e87c
+    .bss        start:0x020ac6d0 end:0x020ac6d4
+
+src/bl/bl_wireless.c:
+    .text       start:0x0204e87c end:0x020534f0
+    .rodata     start:0x020784fc end:0x02078528
+    .data       start:0x0207def4 end:0x0207e010
+    .bss        start:0x020ac6d4 end:0x020ac6d8
+
+src/bl/bl_hdma.c:
+    .text       start:0x020534f0 end:0x020535e4
+    .bss        start:0x020ac6d8 end:0x020ac6ec
+
+src/bl/bl_memory.c:
+    .text       start:0x020535e4 end:0x02053cc0
+    .bss        start:0x020ac6ec end:0x020ac6f0
+
+src/bl/bl_sortlist.c:
+    .text       start:0x02053cc0 end:0x02053e2c
+
+src/bl/bl_random.c:
+    .text       start:0x02053e2c end:0x02053ed8
+    .bss        start:0x020ac6f0 end:0x020ac6fc
+
+src/bl/bl_bitset.c:
+    .text       start:0x02053ed8 end:0x02053f48
+
+src/bl/bl_gfxheap.c:
+    .text       start:0x02053f48 end:0x020542bc
+
 src/bl/bl_oam.c:
     .text       start:0x020542bc end:0x0205468c
     .bss        start:0x020ac6fc end:0x020ac700
@@ -19,3 +69,20 @@ src/bl/bl_gpu_reg.c:
     complete
     .text       start:0x020547ec end:0x02054a20
     .bss        start:0x020ac70c end:0x020ac7a8
+
+src/bl/bl_sleep.c:
+    .text       start:0x02054a20 end:0x02054c90
+    .bss        start:0x020ac7a8 end:0x020ac7d0
+
+src/bl/bl_touch.c:
+    .text       start:0x02054c90 end:0x020550e0
+    .bss        start:0x020ac7d0 end:0x020ac7d4
+
+src/bl/bl_vram.c:
+    .text       start:0x020550e0 end:0x02055dc0
+    .rodata     start:0x02078528 end:0x02078560
+    .bss        start:0x020ac7d4 end:0x020ac7dc
+
+src/bl/bl_scene.c:
+    .text       start:0x02055dc0 end:0x020565a8
+    .bss        start:0x020ac7dc end:0x020ac7fc

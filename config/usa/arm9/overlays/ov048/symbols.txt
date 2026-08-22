@@ -2726,15 +2726,15 @@ func_ov048_020b59d0 kind:function(arm,size=0x90) addr:0x020b59d0
 func_ov048_020b5a60 kind:function(arm,size=0x90) addr:0x020b5a60
 func_ov048_020b5af0 kind:function(arm,size=0x38) addr:0x020b5af0
 BBP_BackupIsBusy kind:function(arm,size=0x1c) addr:0x020b5b28
-func_ov048_020b5b44 kind:function(arm,size=0x1c) addr:0x020b5b44
-func_ov048_020b5b60 kind:function(arm,size=0x1c) addr:0x020b5b60
-func_ov048_020b5b7c kind:function(arm,size=0x1c) addr:0x020b5b7c
+BBP_BackupIsLoadFail kind:function(arm,size=0x1c) addr:0x020b5b44
+BBP_BackupIsCorrupt kind:function(arm,size=0x1c) addr:0x020b5b60
+BBP_BackupForceErase kind:function(arm,size=0x1c) addr:0x020b5b7c
 func_ov048_020b5b98 kind:function(arm,size=0x24) addr:0x020b5b98
 func_ov048_020b5bbc kind:function(arm,size=0x1c) addr:0x020b5bbc
 func_ov048_020b5bd8 kind:function(arm,size=0x1c) addr:0x020b5bd8
 func_ov048_020b5bf4 kind:function(arm,size=0x1c) addr:0x020b5bf4
-func_ov048_020b5c10 kind:function(arm,size=0x1c) addr:0x020b5c10
-func_ov048_020b5c2c kind:function(arm,size=0x1c) addr:0x020b5c2c
+BBP_BackupIsClean kind:function(arm,size=0x1c) addr:0x020b5c10
+BBP_BackupSetClean kind:function(arm,size=0x1c) addr:0x020b5c2c
 BBP_BackupRead kind:function(arm,size=0x1c8) addr:0x020b5c48
 func_ov048_020b5e10 kind:function(arm,size=0x94) addr:0x020b5e10
 func_ov048_020b5ea4 kind:function(arm,size=0xcc) addr:0x020b5ea4
@@ -2753,7 +2753,7 @@ BBP_FadeGetMaxTime kind:function(arm,size=0x8) addr:0x020b6524
 BBP_PadInit kind:function(arm,size=0x28) addr:0x020b652c
 BBP_PadRead kind:function(arm,size=0x4c) addr:0x020b6554
 BBP_PadExec kind:function(arm,size=0x64) addr:0x020b65a0
-func_ov048_020b6604 kind:function(arm,size=0xd0) addr:0x020b6604
+PadSetData kind:function(arm,size=0xd0) local addr:0x020b6604
 BBP_PadGetPlayer kind:function(arm,size=0x38) addr:0x020b66d4
 BBP_FileLoad kind:function(arm,size=0x218) addr:0x020b670c
 BBP_FileUnload kind:function(arm,size=0x5c) addr:0x020b6924
@@ -2774,7 +2774,7 @@ func_ov048_020b6afc kind:function(arm,size=0x10) addr:0x020b6afc
 BBP_WLIsDispLinkIcon kind:function(arm,size=0x14) addr:0x020b6b0c
 BBP_WLCheckInputSync kind:function(arm,size=0x14) addr:0x020b6b20
 BBP_WLGetLinkLevel kind:function(arm,size=0x3c) addr:0x020b6b34
-func_ov048_020b6b70 kind:function(arm,size=0x14) addr:0x020b6b70
+BBP_WLGetFilePtr kind:function(arm,size=0x14) addr:0x020b6b70
 func_ov048_020b6b84 kind:function(arm,size=0x1c) addr:0x020b6b84
 func_ov048_020b6ba0 kind:function(arm,size=0x1c) addr:0x020b6ba0
 func_ov048_020b6bbc kind:function(arm,size=0x14) addr:0x020b6bbc
@@ -2782,8 +2782,8 @@ func_ov048_020b6bd0 kind:function(arm,size=0x28) addr:0x020b6bd0
 func_ov048_020b6bf8 kind:function(arm,size=0x14) addr:0x020b6bf8
 func_ov048_020b6c0c kind:function(arm,size=0x1c) addr:0x020b6c0c
 func_ov048_020b6c28 kind:function(arm,size=0x18) addr:0x020b6c28
-func_ov048_020b6c40 kind:function(arm,size=0x18) addr:0x020b6c40
-func_ov048_020b6c58 kind:function(arm,size=0x30) addr:0x020b6c58
+BBP_WLGetPadData kind:function(arm,size=0x18) addr:0x020b6c40
+BBP_WLGetTPData kind:function(arm,size=0x30) addr:0x020b6c58
 func_ov048_020b6c88 kind:function(arm,size=0x30) addr:0x020b6c88
 func_ov048_020b6cb8 kind:function(arm,size=0x34) addr:0x020b6cb8
 func_ov048_020b6cec kind:function(arm,size=0x44) addr:0x020b6cec
@@ -2847,20 +2847,20 @@ BBP_MemFree kind:function(arm,size=0x8c) addr:0x020bb4d4
 BBP_MemFreeTag kind:function(arm,size=0x70) addr:0x020bb560
 BBP_MemShrink kind:function(arm,size=0x50) addr:0x020bb5d0
 BBP_MemGetAllocSize kind:function(arm,size=0x8) addr:0x020bb620
-func_ov048_020bb628 kind:function(arm,size=0x140) addr:0x020bb628
-func_ov048_020bb768 kind:function(arm,size=0x6c) addr:0x020bb768
+MemAddBlock kind:function(arm,size=0x140) local addr:0x020bb628
+MemRemoveBlock kind:function(arm,size=0x6c) local addr:0x020bb768
 BBP_SortListCreate kind:function(arm,size=0x1c) addr:0x020bb7d4
 BBP_SortListNodeInsert kind:function(arm,size=0x10) addr:0x020bb7f0
 BBP_SortListNodeSetOrder kind:function(arm,size=0x24) addr:0x020bb800
 BBP_SortListNodeRemove kind:function(arm,size=0xc) addr:0x020bb824
 BBP_SortListForEach kind:function(arm,size=0x2c) addr:0x020bb830
-func_ov048_020bb85c kind:function(arm,size=0xb0) addr:0x020bb85c
-func_ov048_020bb90c kind:function(arm,size=0x3c) addr:0x020bb90c
+SortListAdd kind:function(arm,size=0xb0) local addr:0x020bb85c
+SortListRemove kind:function(arm,size=0x3c) local addr:0x020bb90c
 BBP_RandomInit kind:function(arm,size=0x40) addr:0x020bb948
 BBP_RandomSetSeed kind:function(arm,size=0x28) addr:0x020bb988
 BBP_RandomInt kind:function(arm,size=0x34) addr:0x020bb9b0
 BBP_RandomGetSeed kind:function(arm,size=0x10) addr:0x020bb9e4
-func_ov048_020bb9f4 kind:function(arm,size=0x20) addr:0x020bb9f4
+IsBitSet kind:function(arm,size=0x20) local addr:0x020bb9f4
 BBP_BitSetCountSet kind:function(arm,size=0x50) addr:0x020bba14
 func_ov048_020bba64 kind:function(arm,size=0x5c) addr:0x020bba64
 BBP_GfxHeapCreate kind:function(arm,size=0x58) addr:0x020bbac0
@@ -2875,23 +2875,23 @@ BBP_GpuRegInit kind:function(arm,size=0xf8) addr:0x020bc2a0
 BBP_GpuRegExec kind:function(arm,size=0x13c) addr:0x020bc398
 BBP_SleepInit kind:function(arm,size=0x80) addr:0x020bc4d4
 BBP_SleepExec kind:function(arm,size=0x10) addr:0x020bc554
-func_ov048_020bc564 kind:function(arm,size=0x14) addr:0x020bc564
-func_ov048_020bc578 kind:function(arm,size=0x1c) addr:0x020bc578
-func_ov048_020bc594 kind:function(arm,size=0xfc) addr:0x020bc594
-func_ov048_020bc690 kind:function(arm,size=0x94) addr:0x020bc690
+PreSleepCallback kind:function(arm,size=0x14) local addr:0x020bc564
+PostSleepCallback kind:function(arm,size=0x1c) local addr:0x020bc578
+CheckSleepMode kind:function(arm,size=0xfc) local addr:0x020bc594
+StartSleepMode kind:function(arm,size=0x94) local addr:0x020bc690
 BBP_SleepClose kind:function(arm,size=0x20) addr:0x020bc724
 BBP_TouchInit kind:function(arm,size=0x54) addr:0x020bc744
 BBP_TouchExec kind:function(arm,size=0x80) addr:0x020bc798
-func_ov048_020bc818 kind:function(arm,size=0x108) addr:0x020bc818
+TouchSetData kind:function(arm,size=0x108) local addr:0x020bc818
 BBP_TouchGetDown kind:function(arm,size=0x24) addr:0x020bc920
 BBP_TouchGetDownPlayer kind:function(arm,size=0x5c) addr:0x020bc944
-func_ov048_020bc9a0 kind:function(arm,size=0x34) addr:0x020bc9a0
-BBP_TouchGetDrag kind:function(arm,size=0x38) addr:0x020bc9d4
-BBP_TouchGetDragPlayer kind:function(arm,size=0x5c) addr:0x020bca0c
-func_ov048_020bca68 kind:function(arm,size=0x28) addr:0x020bca68
-BBP_TouchCheckCircleDrag kind:function(arm,size=0x60) addr:0x020bca90
+TouchGetDownData kind:function(arm,size=0x34) local addr:0x020bc9a0
+BBP_TouchGetHold kind:function(arm,size=0x38) addr:0x020bc9d4
+BBP_TouchGetHoldPlayer kind:function(arm,size=0x5c) addr:0x020bca0c
+TouchGetHoldData kind:function(arm,size=0x28) local addr:0x020bca68
+BBP_TouchCheckCircleHold kind:function(arm,size=0x60) addr:0x020bca90
 BBP_TouchCheckCircleDown kind:function(arm,size=0x60) addr:0x020bcaf0
-BBP_TouchCheckRectDrag kind:function(arm,size=0x88) addr:0x020bcb50
+BBP_TouchCheckRectHold kind:function(arm,size=0x88) addr:0x020bcb50
 BBP_TouchCheckRectDown kind:function(arm,size=0x88) addr:0x020bcbd8
 BBP_TouchRead kind:function(arm,size=0x6c) addr:0x020bcc60
 BBP_VramInit kind:function(arm,size=0x3c) addr:0x020bcccc
@@ -2911,21 +2911,21 @@ BBP_VramColorWrite kind:function(arm,size=0x18) addr:0x020bd748
 BBP_VramColorWriteEx kind:function(arm,size=0x178) addr:0x020bd760
 BBP_SceneInit kind:function(arm,size=0xb4) addr:0x020bd8d8
 BBP_SceneExec kind:function(arm,size=0x1d8) addr:0x020bd98c
-func_ov048_020bdb64 kind:function(arm,size=0x20) addr:0x020bdb64
+SceneFree kind:function(arm,size=0x20) local addr:0x020bdb64
 BBP_SceneCreateObj kind:function(arm,size=0x38) addr:0x020bdb84
 BBP_SceneEnd kind:function(arm,size=0x24) addr:0x020bdbbc
 BBP_SceneCall kind:function(arm,size=0x14) addr:0x020bdbe0
 BBP_SceneCallError kind:function(arm,size=0x54) addr:0x020bdbf4
 BBP_SceneIsRunning kind:function(arm,size=0x1c) addr:0x020bdc48
-BBP_SceneGetOvrlayId kind:function(arm,size=0x10) addr:0x020bdc64
+BBP_SceneGetOverlayId kind:function(arm,size=0x10) addr:0x020bdc64
 BBP_SceneDestroy kind:function(arm,size=0x14) addr:0x020bdc74
-func_ov048_020bdc88 kind:function(arm,size=0x84) addr:0x020bdc88
-func_ov048_020bdd0c kind:function(arm,size=0xb0) addr:0x020bdd0c
+SceneCallFirst kind:function(arm,size=0x84) local addr:0x020bdc88
+LinkIconInit kind:function(arm,size=0xb0) local addr:0x020bdd0c
 BBP_LinkIconCreate kind:function(arm,size=0x40) addr:0x020bddbc
 BBP_LinkIconExec kind:function(arm,size=0x2fc) addr:0x020bddfc
 BBP_LinkIconDestroy kind:function(arm,size=0x28) addr:0x020be0f8
-func_ov048_020be120 kind:function(arm,size=0x44) addr:0x020be120
-func_ov048_020be164 kind:function(arm,size=0x10) addr:0x020be164
+BBP_LinkIconSetPos kind:function(arm,size=0x44) addr:0x020be120
+BBP_LinkIconSetBlendOn kind:function(arm,size=0x10) addr:0x020be164
 BBP_SprInit kind:function(arm,size=0xa0) addr:0x020be174
 func_ov048_020be214 kind:function(arm,size=0xc) addr:0x020be214
 BBP_SprClose kind:function(arm,size=0x2c) addr:0x020be220
@@ -3030,8 +3030,8 @@ BBP_SysStartMain kind:function(arm,size=0x18) addr:0x020c2388
 BBP_SysStopMain kind:function(arm,size=0x18) addr:0x020c23a0
 BBP_SysGetBootParam kind:function(arm,size=0xc) addr:0x020c23b8
 BBP_SysCancelMain kind:function(arm,size=0x18) addr:0x020c23c4
-func_ov048_020c23dc kind:function(arm,size=0x40) addr:0x020c23dc
-BBP_SysInitLanguage kind:function(arm,size=0x48) addr:0x020c241c
+SysVBlank kind:function(arm,size=0x40) local addr:0x020c23dc
+BBP_SysWorkInit kind:function(arm,size=0x48) addr:0x020c241c
 BBP_SysCheckReset kind:function(arm,size=0x88) addr:0x020c2464
 BBP_SndInit kind:function(arm,size=0x134) addr:0x020c24ec
 BBP_SndExec kind:function(arm,size=0x14) addr:0x020c2620
@@ -3054,10 +3054,10 @@ func_ov048_020c29b8 kind:function(arm,size=0xc0) addr:0x020c29b8
 func_ov048_020c2a78 kind:function(arm,size=0x74) addr:0x020c2a78
 func_ov048_020c2aec kind:function(arm,size=0x190) addr:0x020c2aec
 func_ov048_020c2c7c kind:function(arm,size=0x44) addr:0x020c2c7c
-func_ov048_020c2cc0 kind:function(arm,size=0x28) addr:0x020c2cc0
-func_ov048_020c2ce8 kind:function(arm,size=0x24) addr:0x020c2ce8
-func_ov048_020c2d0c kind:function(arm,size=0x40) addr:0x020c2d0c
-func_ov048_020c2d4c kind:function(arm,size=0x1c) addr:0x020c2d4c
+BBP_MicInit kind:function(arm,size=0x28) addr:0x020c2cc0
+BBP_MicExec kind:function(arm,size=0x24) addr:0x020c2ce8
+BBP_MicAmpOff kind:function(arm,size=0x40) addr:0x020c2d0c
+BBP_MicResetTimer kind:function(arm,size=0x1c) addr:0x020c2d4c
 func_ov048_020c2d68 kind:function(arm,size=0x14) addr:0x020c2d68
 func_ov048_020c2d7c kind:function(arm,size=0x10) addr:0x020c2d7c
 func_ov048_020c2d8c kind:function(arm,size=0x54) addr:0x020c2d8c
@@ -3694,7 +3694,7 @@ data_ov048_020d1558 kind:data(any) addr:0x020d1558
 data_ov048_020d1560 kind:data(any) addr:0x020d1560
 data_ov048_020d1568 kind:data(any) addr:0x020d1568
 data_ov048_020d1580 kind:data(any) addr:0x020d1580
-data_ov048_020d15b0 kind:data(any) addr:0x020d15b0
+ColorTransferTypeTbl kind:data(any) local addr:0x020d15b0
 data_ov048_020d15e8 kind:data(any) addr:0x020d15e8
 data_ov048_020d15ec kind:data(any) addr:0x020d15ec
 data_ov048_020d15f4 kind:data(any) addr:0x020d15f4
@@ -5659,13 +5659,13 @@ data_ov048_020e3b74 kind:bss addr:0x020e3b74
 SBNullServer kind:bss addr:0x020e3b78
 data_ov048_020e3b80 kind:bss addr:0x020e3b80
 data_ov048_020e3b88 kind:bss addr:0x020e3b88
-data_ov048_020e3b8c kind:bss addr:0x020e3b8c
+FadeTime kind:bss local addr:0x020e3b8c
 BBP_PadWork kind:bss addr:0x020e3b94
-data_ov048_020e3b98 kind:bss addr:0x020e3b98
+FilePtr kind:bss local addr:0x020e3b98
 data_ov048_020e3b9c kind:bss addr:0x020e3b9c
 data_ov048_020e3ba0 kind:bss addr:0x020e3ba0
 data_ov048_020e3bb4 kind:bss addr:0x020e3bb4
-data_ov048_020e3bb8 kind:bss addr:0x020e3bb8
+RandomData kind:bss local addr:0x020e3bb8
 BBP_OamData kind:bss addr:0x020e3bc4
 BBP_GpuMasterBrightness kind:bss addr:0x020e3bc8
 BBP_GpuDispSelect kind:bss addr:0x020e3bcc
@@ -5673,14 +5673,14 @@ BBP_GpuPlaneMask kind:bss addr:0x020e3bd0
 BBP_GpuRegBlend kind:bss addr:0x020e3bd8
 BBP_GpuRegWindow kind:bss addr:0x020e3be8
 BBP_GpuRegScroll kind:bss addr:0x020e3c04
-data_ov048_020e3c64 kind:bss addr:0x020e3c64
-data_ov048_020e3c74 kind:bss addr:0x020e3c74
-data_ov048_020e3c80 kind:bss addr:0x020e3c80
-data_ov048_020e3c8c kind:bss addr:0x020e3c8c
-data_ov048_020e3c90 kind:bss addr:0x020e3c90
-data_ov048_020e3c94 kind:bss addr:0x020e3c94
-data_ov048_020e3c98 kind:bss addr:0x020e3c98
-data_ov048_020e3ca0 kind:bss addr:0x020e3ca0
+SleepWork kind:bss local addr:0x020e3c64
+PreSleepCbData kind:bss local addr:0x020e3c74
+PostSleepCbData kind:bss local addr:0x020e3c80
+TouchWork kind:bss local addr:0x020e3c8c
+VramWork kind:bss local addr:0x020e3c90
+VramColorWork kind:bss local addr:0x020e3c94
+LinkIconWork kind:bss local addr:0x020e3c98
+SceneWork kind:bss local addr:0x020e3ca0
 data_ov048_020e3cd0 kind:bss addr:0x020e3cd0
 data_ov048_020e3cd4 kind:bss addr:0x020e3cd4
 data_ov048_020e3ce8 kind:bss addr:0x020e3ce8
@@ -5692,9 +5692,8 @@ data_ov048_020e3e14 kind:bss addr:0x020e3e14
 data_ov048_020e3e24 kind:bss addr:0x020e3e24
 data_ov048_020e3e28 kind:bss addr:0x020e3e28
 data_ov048_020e3e2c kind:bss addr:0x020e3e2c
-data_ov048_020e3e38 kind:bss addr:0x020e3e38
-data_ov048_020e3e3c kind:bss addr:0x020e3e3c
-data_ov048_020e3e48 kind:bss addr:0x020e3e48
+OldVBlankIrq kind:bss local addr:0x020e3e38
+SysWork kind:bss local addr:0x020e3e3c
 data_ov048_020e3e60 kind:bss addr:0x020e3e60
 data_ov048_020e3e64 kind:bss addr:0x020e3e64
 data_ov048_020e3e6c kind:bss addr:0x020e3e6c

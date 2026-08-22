@@ -4,6 +4,48 @@
     .data       start:0x020d2080 end:0x020de540 kind:data align:32
     .bss        start:0x020de540 end:0x020e41c0 kind:bss align:32
 
+src/bbp/bbp_res.c:
+    .text       start:0x020b5ff8 end:0x020b63e0
+
+src/bbp/bbp_fade.c:
+    .text       start:0x020b63e0 end:0x020b652c
+    .bss        start:0x020e3b8c end:0x020e3b94
+
+src/bbp/bbp_pad.c:
+    .text       start:0x020b652c end:0x020b670c
+    .bss        start:0x020e3b94 end:0x020e3b98
+
+src/bbp/bbp_file.c:
+    .text       start:0x020b670c end:0x020b69b4
+    .bss        start:0x020e3b98 end:0x020e3b9c
+
+src/bbp/bbp_wireless.c:
+    .text       start:0x020b69b4 end:0x020bb244
+    .rodata     start:0x020d1580 end:0x020d15b0
+    .data       start:0x020de278 end:0x020de2f8
+    .bss        start:0x020e3b9c end:0x020e3ba0
+
+src/bbp/bbp_hdma.c:
+    .text       start:0x020bb244 end:0x020bb360
+    .bss        start:0x020e3ba0 end:0x020e3bb4
+
+src/bbp/bbp_memory.c:
+    .text       start:0x020bb360 end:0x020bb7d4
+    .bss        start:0x020e3bb4 end:0x020e3bb8
+
+src/bbp/bbp_sortlist.c:
+    .text       start:0x020bb7d4 end:0x020bb948
+
+src/bbp/bbp_random.c:
+    .text       start:0x020bb948 end:0x020bb9f4
+    .bss        start:0x020e3bb8 end:0x020e3bc4
+
+src/bbp/bbp_bitset.c:
+    .text       start:0x020bb9f4 end:0x020bbac0
+
+src/bbp/bbp_gfxheap.c:
+    .text       start:0x020bbac0 end:0x020bbe34
+
 src/bbp/bbp_oam.c:
     .text       start:0x020bbe34 end:0x020bc2a0
     .bss        start:0x020e3bc4 end:0x020e3bc8
@@ -12,3 +54,25 @@ src/bbp/bbp_gpu_reg.c:
     complete
     .text       start:0x020bc2a0 end:0x020bc4d4
     .bss        start:0x020e3bc8 end:0x020e3c64
+
+src/bbp/bbp_sleep.c:
+    .text       start:0x020bc4d4 end:0x020bc744
+    .bss        start:0x020e3c64 end:0x020e3c8c
+
+src/bbp/bbp_touch.c:
+    .text       start:0x020bc744 end:0x020bcccc
+    .bss        start:0x020e3c8c end:0x020e3c90
+
+src/bbp/bbp_vram.c:
+    .text       start:0x020bcccc end:0x020bd8d8
+    .rodata     start:0x020d15b0 end:0x020d15e8
+    .bss        start:0x020e3c90 end:0x020e3c98
+
+src/bbp/bbp_scene.c:
+    .text       start:0x020bd8d8 end:0x020be174
+    .bss        start:0x020e3c98 end:0x020e3cd0
+
+src/bbp/bbp_system.c:
+    .text       start:0x020c1fec end:0x020c24ec
+    .data       start:0x020de464 end:0x020de4f4
+    .bss        start:0x020e3e38 end:0x020e3e60

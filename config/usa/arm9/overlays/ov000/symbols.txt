@@ -1,6 +1,6 @@
 MenuLogoCreate kind:function(arm,size=0x15c) addr:0x0204d760
-func_ov000_0204d8bc kind:function(arm,size=0x128) addr:0x0204d8bc
-func_ov000_0204d9e4 kind:function(arm,size=0x4) addr:0x0204d9e4
+MenuLogoExec kind:function(arm,size=0x128) local addr:0x0204d8bc
+MenuLogoDestroy kind:function(arm,size=0x4) local addr:0x0204d9e4
 BL_Init kind:function(arm,size=0x150) addr:0x0204d9e8
 BL_Main kind:function(arm,size=0x150) addr:0x0204db38
 BL_SysGetFrame kind:function(arm,size=0x10) addr:0x0204dc88
@@ -14,8 +14,8 @@ BL_SysCheckSleep kind:function(arm,size=0x18) addr:0x0204dd28
 BL_SysGetLanguage kind:function(arm,size=0x18) addr:0x0204dd40
 BL_SysStopMain kind:function(arm,size=0x18) addr:0x0204dd58
 BL_SysStartMain kind:function(arm,size=0x18) addr:0x0204dd70
-func_ov000_0204dd88 kind:function(arm,size=0x2c) addr:0x0204dd88
-BL_SysInitLanguage kind:function(arm,size=0x3c) addr:0x0204ddb4
+SysVBlank kind:function(arm,size=0x2c) local addr:0x0204dd88
+BL_SysWorkInit kind:function(arm,size=0x3c) addr:0x0204ddb4
 BL_SysCheckReset kind:function(arm,size=0x88) addr:0x0204ddf0
 BL_ResGetAnimVRamSize kind:function(arm,size=0x10) addr:0x0204de78
 BL_ResGetAnimMaxVRamSize kind:function(arm,size=0x38) addr:0x0204de88
@@ -32,7 +32,7 @@ BL_FadeGetMaxTime kind:function(arm,size=0x8) addr:0x0204e3ec
 BL_PadInit kind:function(arm,size=0x28) addr:0x0204e3f4
 BL_PadRead kind:function(arm,size=0x4c) addr:0x0204e41c
 BL_PadExec kind:function(arm,size=0x64) addr:0x0204e468
-func_ov000_0204e4cc kind:function(arm,size=0xd0) addr:0x0204e4cc
+PadSetData kind:function(arm,size=0xd0) local addr:0x0204e4cc
 BL_PadGetPlayer kind:function(arm,size=0x38) addr:0x0204e59c
 BL_FileLoad kind:function(arm,size=0x218) addr:0x0204e5d4
 BL_FileUnload kind:function(arm,size=0x5c) addr:0x0204e7ec
@@ -52,7 +52,7 @@ BL_WLStartLoad kind:function(arm,size=0x34) addr:0x0204e9ac
 BL_WLIsDispLinkIcon kind:function(arm,size=0x14) addr:0x0204e9e0
 BL_WLCheckInputSync kind:function(arm,size=0x14) addr:0x0204e9f4
 BL_WLGetLinkLevel kind:function(arm,size=0x1c) addr:0x0204ea08
-func_ov000_0204ea24 kind:function(arm,size=0x14) addr:0x0204ea24
+BL_WLGetFilePtr kind:function(arm,size=0x14) addr:0x0204ea24
 BL_WLGetClientData kind:function(arm,size=0x1c) addr:0x0204ea38
 BL_WLGetParentData kind:function(arm,size=0x1c) addr:0x0204ea54
 BL_WLGetPadData kind:function(arm,size=0x18) addr:0x0204ea70
@@ -129,22 +129,22 @@ BL_MemFree kind:function(arm,size=0xd4) addr:0x020537c4
 BL_MemFreeTag kind:function(arm,size=0x50) addr:0x02053898
 BL_MemShrink kind:function(arm,size=0x74) addr:0x020538e8
 BL_MemGetAllocSize kind:function(arm,size=0x8) addr:0x0205395c
-func_ov000_02053964 kind:function(arm,size=0x11c) addr:0x02053964
-func_ov000_02053a80 kind:function(arm,size=0x4c) addr:0x02053a80
-func_ov000_02053acc kind:function(arm,size=0x110) addr:0x02053acc
-func_ov000_02053bdc kind:function(arm,size=0xe4) addr:0x02053bdc
+MemAddBlock kind:function(arm,size=0x11c) local addr:0x02053964
+MemRemoveBlock kind:function(arm,size=0x4c) local addr:0x02053a80
+MemCheckAlloc kind:function(arm,size=0x110) local addr:0x02053acc
+MemCheckFree kind:function(arm,size=0xe4) local addr:0x02053bdc
 BL_SortListCreate kind:function(arm,size=0x1c) addr:0x02053cc0
 BL_SortListNodeInsert kind:function(arm,size=0x10) addr:0x02053cdc
 BL_SortListNodeSetOrder kind:function(arm,size=0x24) addr:0x02053cec
 BL_SortListNodeRemove kind:function(arm,size=0xc) addr:0x02053d10
 BL_SortListForEach kind:function(arm,size=0x2c) addr:0x02053d1c
-func_ov000_02053d48 kind:function(arm,size=0xa8) addr:0x02053d48
-func_ov000_02053df0 kind:function(arm,size=0x3c) addr:0x02053df0
+SortListAdd kind:function(arm,size=0xa8) local addr:0x02053d48
+SortListRemove kind:function(arm,size=0x3c) local addr:0x02053df0
 BL_RandomInit kind:function(arm,size=0x40) addr:0x02053e2c
 BL_RandomSetSeed kind:function(arm,size=0x28) addr:0x02053e6c
 BL_RandomInt kind:function(arm,size=0x34) addr:0x02053e94
 BL_RandomGetSeed kind:function(arm,size=0x10) addr:0x02053ec8
-func_ov000_02053ed8 kind:function(arm,size=0x20) addr:0x02053ed8
+IsBitSet kind:function(arm,size=0x20) local addr:0x02053ed8
 BL_BitSetCountSet kind:function(arm,size=0x50) addr:0x02053ef8
 BL_GfxHeapCreate kind:function(arm,size=0x58) addr:0x02053f48
 BL_GfxHeapAlloc kind:function(arm,size=0x104) addr:0x02053fa0
@@ -163,20 +163,20 @@ BL_GpuRegInit kind:function(arm,size=0xf8) addr:0x020547ec
 BL_GpuRegExec kind:function(arm,size=0x13c) addr:0x020548e4
 BL_SleepInit kind:function(arm,size=0x80) addr:0x02054a20
 BL_SleepExec kind:function(arm,size=0x10) addr:0x02054aa0
-func_ov000_02054ab0 kind:function(arm,size=0x14) addr:0x02054ab0
-func_ov000_02054ac4 kind:function(arm,size=0x1c) addr:0x02054ac4
-func_ov000_02054ae0 kind:function(arm,size=0xfc) addr:0x02054ae0
-func_ov000_02054bdc kind:function(arm,size=0x94) addr:0x02054bdc
+PreSleepCallback kind:function(arm,size=0x14) local addr:0x02054ab0
+PostSleepCallback kind:function(arm,size=0x1c) local addr:0x02054ac4
+CheckSleepMode kind:function(arm,size=0xfc) local addr:0x02054ae0
+StartSleepMode kind:function(arm,size=0x94) local addr:0x02054bdc
 BL_SleepClose kind:function(arm,size=0x20) addr:0x02054c70
 BL_TouchInit kind:function(arm,size=0x54) addr:0x02054c90
 BL_TouchExec kind:function(arm,size=0x80) addr:0x02054ce4
-func_ov000_02054d64 kind:function(arm,size=0x108) addr:0x02054d64
+TouchSetData kind:function(arm,size=0x108) local addr:0x02054d64
 BL_TouchGetDown kind:function(arm,size=0x24) addr:0x02054e6c
 BL_TouchGetDownPlayer kind:function(arm,size=0x5c) addr:0x02054e90
-func_ov000_02054eec kind:function(arm,size=0x34) addr:0x02054eec
+TouchGetDownData kind:function(arm,size=0x34) local addr:0x02054eec
 BL_TouchGetHold kind:function(arm,size=0x38) addr:0x02054f20
 BL_TouchGetHoldPlayer kind:function(arm,size=0x5c) addr:0x02054f58
-func_ov000_02054fb4 kind:function(arm,size=0x28) addr:0x02054fb4
+TouchGetHoldData kind:function(arm,size=0x28) local addr:0x02054fb4
 BL_TouchGetHis kind:function(arm,size=0x34) addr:0x02054fdc
 BL_TouchGetHisPlayer kind:function(arm,size=0x64) addr:0x02055010
 BL_TouchRead kind:function(arm,size=0x6c) addr:0x02055074
@@ -200,7 +200,7 @@ BL_VramColorWrite kind:function(arm,size=0x18) addr:0x02055c30
 BL_VramColorWriteEx kind:function(arm,size=0x178) addr:0x02055c48
 BL_SceneInit kind:function(arm,size=0xcc) addr:0x02055dc0
 BL_SceneExec kind:function(arm,size=0x1bc) addr:0x02055e8c
-func_ov000_02056048 kind:function(arm,size=0x20) addr:0x02056048
+SceneFree kind:function(arm,size=0x20) local addr:0x02056048
 BL_SceneCreateObj kind:function(arm,size=0x38) addr:0x02056068
 BL_SceneEnd kind:function(arm,size=0x1c) addr:0x020560a0
 BL_SceneCall kind:function(arm,size=0x14) addr:0x020560bc
@@ -209,8 +209,8 @@ BL_SceneGetCur kind:function(arm,size=0x10) addr:0x02056118
 BL_SceneDestroy kind:function(arm,size=0x14) addr:0x02056128
 BL_SceneGetArg kind:function(arm,size=0x10) addr:0x0205613c
 BL_SceneIsRunning kind:function(arm,size=0x1c) addr:0x0205614c
-func_ov000_02056168 kind:function(arm,size=0x74) addr:0x02056168
-func_ov000_020561dc kind:function(arm,size=0xac) addr:0x020561dc
+SceneCallFirst kind:function(arm,size=0x74) local addr:0x02056168
+LinkIconInit kind:function(arm,size=0xac) local addr:0x020561dc
 BL_LinkIconCreate kind:function(arm,size=0x40) addr:0x02056288
 BL_LinkIconExec kind:function(arm,size=0x274) addr:0x020562c8
 BL_LinkIconDestroy kind:function(arm,size=0x28) addr:0x0205653c
@@ -991,7 +991,7 @@ func_ov000_020782cc kind:function(arm,size=0x18) addr:0x020782cc
 func_ov000_020782e4 kind:function(arm,size=0x90) addr:0x020782e4
 func_ov000_02078374 kind:function(arm,size=0x188) addr:0x02078374
 data_ov000_020784fc kind:data(any) addr:0x020784fc
-data_ov000_02078528 kind:data(any) addr:0x02078528
+ColorTransferTypeTbl kind:data(any) local addr:0x02078528
 data_ov000_02078560 kind:data(any) addr:0x02078560
 data_ov000_02078584 kind:data(any) addr:0x02078584
 data_ov000_020785a8 kind:data(any) addr:0x020785a8
@@ -1151,9 +1151,9 @@ data_ov000_0207b3fc kind:data(any) addr:0x0207b3fc
 data_ov000_0207b434 kind:data(any) addr:0x0207b434
 data_ov000_0207b46c kind:data(any) addr:0x0207b46c
 data_ov000_0207b4a4 kind:data(any) addr:0x0207b4a4
-data_ov000_0207b4dc kind:data(any) addr:0x0207b4dc
-data_ov000_0207b570 kind:data(any) addr:0x0207b570
-data_ov000_0207b778 kind:data(any) addr:0x0207b778
+BL_LinkIconAnime kind:data(any) addr:0x0207b4dc
+BL_LinkIconImage kind:data(any) addr:0x0207b570
+BL_LinkIconColor kind:data(any) addr:0x0207b778
 data_ov000_0207b7a8 kind:data(any) addr:0x0207b7a8
 data_ov000_0207b7cc kind:data(any) addr:0x0207b7cc
 data_ov000_0207b7d8 kind:data(any) addr:0x0207b7d8
@@ -5741,16 +5741,16 @@ data_ov000_020abdfc kind:data(any) addr:0x020abdfc
 data_ov000_020abe54 kind:data(any) addr:0x020abe54
 data_ov000_020abeac kind:data(any) addr:0x020abeac
 data_ov000_020abf04 kind:data(any) addr:0x020abf04
-data_ov000_020ac660 kind:bss addr:0x020ac660
-data_ov000_020ac664 kind:bss addr:0x020ac664
-data_ov000_020ac668 kind:bss addr:0x020ac668
-data_ov000_020ac6c4 kind:bss addr:0x020ac6c4
+BL_SceneFirst kind:bss addr:0x020ac660
+OldVBlankIrq kind:bss local addr:0x020ac664
+SysWork kind:bss local addr:0x020ac668
+FadeTime kind:bss local addr:0x020ac6c4
 BL_PadWork kind:bss addr:0x020ac6cc
-data_ov000_020ac6d0 kind:bss addr:0x020ac6d0
+FilePtr kind:bss local addr:0x020ac6d0
 data_ov000_020ac6d4 kind:bss addr:0x020ac6d4
 data_ov000_020ac6d8 kind:bss addr:0x020ac6d8
 data_ov000_020ac6ec kind:bss addr:0x020ac6ec
-data_ov000_020ac6f0 kind:bss addr:0x020ac6f0
+RandomData kind:bss local addr:0x020ac6f0
 BL_OamData kind:bss addr:0x020ac6fc
 LoadedOverlay kind:bss local addr:0x020ac700
 BL_GpuMasterBrightness kind:bss addr:0x020ac70c
@@ -5759,14 +5759,14 @@ BL_GpuPlaneMask kind:bss addr:0x020ac714
 BL_GpuRegBlend kind:bss addr:0x020ac71c
 BL_GpuRegWindow kind:bss addr:0x020ac72c
 BL_GpuRegScroll kind:bss addr:0x020ac748
-data_ov000_020ac7a8 kind:bss addr:0x020ac7a8
-data_ov000_020ac7b8 kind:bss addr:0x020ac7b8
-data_ov000_020ac7c4 kind:bss addr:0x020ac7c4
-data_ov000_020ac7d0 kind:bss addr:0x020ac7d0
-data_ov000_020ac7d4 kind:bss addr:0x020ac7d4
-data_ov000_020ac7d8 kind:bss addr:0x020ac7d8
-data_ov000_020ac7dc kind:bss addr:0x020ac7dc
-data_ov000_020ac7e0 kind:bss addr:0x020ac7e0
+SleepWork kind:bss local addr:0x020ac7a8
+PreSleepCbData kind:bss local addr:0x020ac7b8
+PostSleepCbData kind:bss local addr:0x020ac7c4
+TouchWork kind:bss local addr:0x020ac7d0
+VramWork kind:bss local addr:0x020ac7d4
+VramColorWork kind:bss local addr:0x020ac7d8
+LinkIconWork kind:bss local addr:0x020ac7dc
+SceneWork kind:bss local addr:0x020ac7e0
 data_ov000_020ac7fc kind:bss addr:0x020ac7fc
 data_ov000_020ac800 kind:bss addr:0x020ac800
 data_ov000_020ac804 kind:bss addr:0x020ac804
