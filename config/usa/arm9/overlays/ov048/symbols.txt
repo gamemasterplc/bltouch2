@@ -5664,7 +5664,7 @@ BBP_PadWork kind:bss addr:0x020e3b94
 FilePtr kind:bss local addr:0x020e3b98
 data_ov048_020e3b9c kind:bss addr:0x020e3b9c
 data_ov048_020e3ba0 kind:bss addr:0x020e3ba0
-data_ov048_020e3bb4 kind:bss addr:0x020e3bb4
+HeapWork kind:bss local addr:0x020e3bb4
 RandomData kind:bss local addr:0x020e3bb8
 BBP_OamData kind:bss addr:0x020e3bc4
 BBP_GpuMasterBrightness kind:bss addr:0x020e3bc8

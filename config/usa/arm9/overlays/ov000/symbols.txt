@@ -131,8 +131,8 @@ BL_MemShrink kind:function(arm,size=0x74) addr:0x020538e8
 BL_MemGetAllocSize kind:function(arm,size=0x8) addr:0x0205395c
 MemAddBlock kind:function(arm,size=0x11c) local addr:0x02053964
 MemRemoveBlock kind:function(arm,size=0x4c) local addr:0x02053a80
-MemCheckAlloc kind:function(arm,size=0x110) local addr:0x02053acc
-MemCheckFree kind:function(arm,size=0xe4) local addr:0x02053bdc
+MemAddAllocList kind:function(arm,size=0x110) local addr:0x02053acc
+MemRemoveAllocList kind:function(arm,size=0xe4) local addr:0x02053bdc
 BL_SortListCreate kind:function(arm,size=0x1c) addr:0x02053cc0
 BL_SortListNodeInsert kind:function(arm,size=0x10) addr:0x02053cdc
 BL_SortListNodeSetOrder kind:function(arm,size=0x24) addr:0x02053cec
@@ -5749,7 +5749,7 @@ BL_PadWork kind:bss addr:0x020ac6cc
 FilePtr kind:bss local addr:0x020ac6d0
 data_ov000_020ac6d4 kind:bss addr:0x020ac6d4
 data_ov000_020ac6d8 kind:bss addr:0x020ac6d8
-data_ov000_020ac6ec kind:bss addr:0x020ac6ec
+HeapWork kind:bss local addr:0x020ac6ec
 RandomData kind:bss local addr:0x020ac6f0
 BL_OamData kind:bss addr:0x020ac6fc
 LoadedOverlay kind:bss local addr:0x020ac700

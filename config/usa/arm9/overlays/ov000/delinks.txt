@@ -39,6 +39,7 @@ src/bl/bl_hdma.c:
     .bss        start:0x020ac6d8 end:0x020ac6ec
 
 src/bl/bl_memory.c:
+    complete
     .text       start:0x020535e4 end:0x02053cc0
     .bss        start:0x020ac6ec end:0x020ac6f0
 
