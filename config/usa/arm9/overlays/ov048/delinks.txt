@@ -34,6 +34,7 @@ src/bbp/bbp_memory.c:
     .bss        start:0x020e3bb4 end:0x020e3bb8
 
 src/bbp/bbp_sortlist.c:
+    complete
     .text       start:0x020bb7d4 end:0x020bb948
 
 src/bbp/bbp_random.c:

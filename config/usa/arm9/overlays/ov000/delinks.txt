@@ -44,6 +44,7 @@ src/bl/bl_memory.c:
     .bss        start:0x020ac6ec end:0x020ac6f0
 
 src/bl/bl_sortlist.c:
+    complete
     .text       start:0x02053cc0 end:0x02053e2c
 
 src/bl/bl_random.c:
