@@ -4,6 +4,25 @@
     .data       start:0x020d2080 end:0x020de540 kind:data align:32
     .bss        start:0x020de540 end:0x020e41c0 kind:bss align:32
 
+src/bbp/message/bbp_message_e.c:
+    .rodata     start:0x020cbc80 end:0x020d0e48
+
+src/bbp/bbp_message.c:
+    .text       start:0x020b2e08 end:0x020b2e18
+
+src/bbp/bbp_filetbl.c:
+    .text       start:0x020b2e18 end:0x020b2e48
+    .data       start:0x020d8bbc end:0x020d8bdc
+
+src/bbp/filetbl/bbp_filetbl_battle.c:
+    .data       start:0x020d8bdc end:0x020dad34
+
+src/bbp/filetbl/bbp_filetbl_linkicon.c:
+    .data       start:0x020dad34 end:0x020dadb8
+
+src/bbp/filetbl/bbp_filetbl_menu.c:
+    .data       start:0x020dadb8 end:0x020de278
+
 src/bbp/bbp_res.c:
     .text       start:0x020b5ff8 end:0x020b63e0
 
@@ -73,7 +92,37 @@ src/bbp/bbp_scene.c:
     .text       start:0x020bd8d8 end:0x020be174
     .bss        start:0x020e3c98 end:0x020e3cd0
 
+src/bbp/bbp_sprite.c:
+    .text       start:0x020be174 end:0x020bfb90
+    .rodata     start:0x020d15e8 end:0x020d1684
+    .data       start:0x020de2f8 end:0x020de304
+    .bss        start:0x020e3cd0 end:0x020e3e00
+
+src/bbp/bbp_object.c:
+    .text       start:0x020bfb90 end:0x020c0044
+    .bss        start:0x020e3e00 end:0x020e3e10
+
+src/bbp/bbp_windowmask.c:
+    .text       start:0x020c0044 end:0x020c0680
+    .rodata     start:0x020d1684 end:0x020d1988
+
+src/bbp/bbp_coloranim.c:
+    .text       start:0x020c0680 end:0x020c10f8
+    .bss        start:0x020e3e10 end:0x020e3e24
+
+src/bbp/bbp_vblankqueue.c:
+    .text       start:0x020c10f8 end:0x020c1424
+    .bss        start:0x020e3e24 end:0x020e3e38
+
 src/bbp/bbp_system.c:
     .text       start:0x020c1fec end:0x020c24ec
-    .data       start:0x020de464 end:0x020de4f4
+    .data       start:0x020de3a8 end:0x020de3ac
     .bss        start:0x020e3e38 end:0x020e3e60
+
+src/bbp/bbp_sound.c:
+    .text       start:0x020c24ec end:0x020c2cc0
+    .data       start:0x020de3ac end:0x020de3c8
+    .bss        start:0x020e3e60 end:0x020e3e60
+
+src/bbp/bbp_scenetbl.c:
+    .data       start:0x020de464 end:0x020de4f4

@@ -3672,7 +3672,7 @@ data_ov048_020d0530 kind:data(any) addr:0x020d0530
 data_ov048_020d0638 kind:data(any) addr:0x020d0638
 data_ov048_020d0754 kind:data(any) addr:0x020d0754
 data_ov048_020d0870 kind:data(any) addr:0x020d0870
-data_ov048_020d0990 kind:data(any) addr:0x020d0990
+BBP_MessageTbl_E kind:data(any) addr:0x020d0990
 data_ov048_020d0e48 kind:data(any) addr:0x020d0e48
 data_ov048_020d0e50 kind:data(any) addr:0x020d0e50
 data_ov048_020d0f18 kind:data(any) addr:0x020d0f18
@@ -4953,8 +4953,8 @@ data_ov048_020d8b8c kind:data(any) addr:0x020d8b8c
 data_ov048_020d8b90 kind:data(any) addr:0x020d8b90
 data_ov048_020d8b98 kind:data(any) addr:0x020d8b98
 data_ov048_020d8ba4 kind:data(any) addr:0x020d8ba4
-data_ov048_020d8bbc kind:data(any) addr:0x020d8bbc
-data_ov048_020d8bc8 kind:data(any) addr:0x020d8bc8
+FileTbl_E kind:data(any) local addr:0x020d8bbc
+FileTbl kind:data(any) local addr:0x020d8bc8
 data_ov048_020d8bdc kind:data(any) addr:0x020d8bdc
 data_ov048_020d8c08 kind:data(any) addr:0x020d8c08
 data_ov048_020d8c34 kind:data(any) addr:0x020d8c34
@@ -5105,8 +5105,8 @@ data_ov048_020da9ec kind:data(any) addr:0x020da9ec
 data_ov048_020daa28 kind:data(any) addr:0x020daa28
 data_ov048_020daa64 kind:data(any) addr:0x020daa64
 data_ov048_020daaa0 kind:data(any) addr:0x020daaa0
-BBP2Battle_FileTbl kind:data(any) addr:0x020daadc
-BBP2LinkIcon_FileTbl kind:data(any) addr:0x020dad34
+BBP_Battle_FileTbl kind:data(any) addr:0x020daadc
+BBP_LinkIcon_FileTbl kind:data(any) addr:0x020dad34
 data_ov048_020dad40 kind:data(any) addr:0x020dad40
 data_ov048_020dad68 kind:data(any) addr:0x020dad68
 data_ov048_020dad90 kind:data(any) addr:0x020dad90
@@ -5387,7 +5387,7 @@ data_ov048_020ddd64 kind:data(any) addr:0x020ddd64
 data_ov048_020ddd94 kind:data(any) addr:0x020ddd94
 data_ov048_020dddc4 kind:data(any) addr:0x020dddc4
 data_ov048_020dddf4 kind:data(any) addr:0x020dddf4
-BBP2Menu_FileTbl kind:data(any) addr:0x020dde24
+BBP_Menu_FileTbl kind:data(any) addr:0x020dde24
 data_ov048_020de278 kind:data(any) addr:0x020de278
 data_ov048_020de298 kind:data(any) addr:0x020de298
 data_ov048_020de2b8 kind:data(any) addr:0x020de2b8

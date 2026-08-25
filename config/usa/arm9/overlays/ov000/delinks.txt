@@ -8,10 +8,14 @@
 src/bl/menu/logo.c:
     .text       start:0x0204d760 end:0x0204d9e8
 
+src/bl/bl_scenetbl.c:
+    .data       start:0x0207dd60 end:0x0207def0
+    .bss        start:0x020ac660 end:0x020ac664
+
 src/bl/bl_system.c:
     .text       start:0x0204d9e8 end:0x0204de78
-    .data       start:0x0207dd60 end:0x0207def4
-    .bss        start:0x020ac660 end:0x020ac6c4
+    .data       start:0x0207def0 end:0x0207def4
+    .bss        start:0x020ac664 end:0x020ac6c4
 
 src/bl/bl_res.c:
     .text       start:0x0204de78 end:0x0204e2a8
@@ -88,3 +92,53 @@ src/bl/bl_vram.c:
 src/bl/bl_scene.c:
     .text       start:0x02055dc0 end:0x020565a8
     .bss        start:0x020ac7dc end:0x020ac7fc
+
+src/bl/bl_sound.c:
+    .text       start:0x020565a8 end:0x02056f34
+    .rodata     start:0x02078560 end:0x02078608
+    .data       start:0x0207e0fc end:0x0207e110
+    .bss        start:0x020ac7fc end:0x020ac800
+
+src/bl/bl_sprite.c:
+    .text       start:0x02056f34 end:0x02058c18
+    .rodata     start:0x02078608 end:0x020786a4
+    .data       start:0x0207e110 end:0x0207e11c
+    .bss        start:0x020ac800 end:0x020ac930
+
+src/bl/bl_object.c:
+    .text       start:0x02058c18 end:0x02059128
+    .bss        start:0x020ac930 end:0x020ac940
+
+src/bl/bl_windowmask.c:
+    .text       start:0x02059128 end:0x02059660
+    .rodata     start:0x020786a4 end:0x0207a7d0
+
+src/bl/bl_coloranim.c:
+    .text       start:0x02059660 end:0x0205a124
+    .bss        start:0x020ac940 end:0x020ac950
+
+src/bl/bl_vblankqueue.c:
+    .text       start:0x0205a124 end:0x0205a434
+    .bss        start:0x020ac950 end:0x020ac964
+
+src/bl/bl_fadeshape.c:
+    .text       start:0x0205a434 end:0x0205a704
+    .rodata     start:0x0207a7d0 end:0x0207a7fc
+    .bss        start:0x020ac964 end:0x020ac97c
+
+src/bl/bl_filetbl.c:
+    .text       start:0x0205a704 end:0x0205a764
+    .data       start:0x0207e11c end:0x0207e240
+
+src/bl/filetbl/bl_filetbl_house.c:
+    .data       start:0x0207e240 end:0x0207f36c
+
+src/bl/filetbl/bl_filetbl_mg03.c:
+    .data       start:0x0207f36c end:0x0207f964
+
+src/bl/filetbl/bl_filetbl_mb.c:
+    .rodata     start:0x0207a7fc end:0x0207b4dc
+    .data       start:0x0207f964 end:0x0207fa1c
+
+src/bl/bl_linkicon.c:
+    .rodata     start:0x0207b4dc end:0x0207b7a8
