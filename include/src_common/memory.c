@@ -66,7 +66,7 @@ static BOOL MemRemoveAllocList(u32 baseBlockNum, u32 blockNum, HEAP_BLOCK *block
 #define EXIT_CRITICAL_SECTION() OS_EnableIrq(); }
 #endif
 
-void MemInit(void *heapBase, u32 size)
+void BL_MemInit(void *heapBase, u32 size)
 {
     u32 initHeapSize;
     void *newHeapPtr;
@@ -89,7 +89,7 @@ void MemInit(void *heapBase, u32 size)
 }
 
 //TODO: Reg Swaps in BBP
-void *MemAlloc(MEM_TAG tag, size_t size, u32 flag)
+void *BL_MemAlloc(BLMemTag tag, size_t size, u32 flag)
 {
     void *ret;
     HEAP_BLOCK *newBlock;
@@ -161,7 +161,7 @@ void *MemAlloc(MEM_TAG tag, size_t size, u32 flag)
     return ret;
 }
 
-void MemFree(void *ptr)
+void BL_MemFree(void *ptr)
 {
     HEAP_BLOCK *block;
     #ifdef SYS_BBP
@@ -197,11 +197,11 @@ void MemFree(void *ptr)
     EXIT_CRITICAL_SECTION();
 }
 
-void MemFreeTag(MEM_TAG tag)
+void BL_MemFreeTag(BLMemTag tag)
 {
     HEAP_BLOCK *block;
     
-    if(tag >= MEM_TAG_MAX) {
+    if(tag >= BL_MEM_TAG_MAX) {
         return;
     }
     #ifdef SYS_BBP
@@ -210,7 +210,7 @@ void MemFreeTag(MEM_TAG tag)
     for(block=HeapWork->firstBlock; block;) {
         HEAP_BLOCK *next = block->next;
         if(block->tag == tag) {
-            MemFree((u8 *)block+HEAP_BLOCK_SIZE);
+            BL_MemFree((u8 *)block+HEAP_BLOCK_SIZE);
         }
         block = next;
     }
@@ -219,7 +219,7 @@ void MemFreeTag(MEM_TAG tag)
     #endif
 }
 
-void MemShrink(void *ptr, u32 amount)
+void BL_MemShrink(void *ptr, u32 amount)
 {
     HEAP_BLOCK *block;
     #ifndef SYS_BBP
@@ -246,7 +246,7 @@ void MemShrink(void *ptr, u32 amount)
     #endif
 }
 
-u32 MemGetAllocSize(void *ptr)
+u32 BL_MemGetAllocSize(void *ptr)
 {
     HEAP_BLOCK *block = (HEAP_BLOCK *)((u8 *)ptr-HEAP_BLOCK_SIZE);
     return block->allocSize;
@@ -267,7 +267,7 @@ static void MemAddBlock(HEAP_BLOCK *block, u32 blockSize)
     #ifndef SYS_BBP
     block->serialNum = 0;
     #endif
-    block->tag = MEM_TAG_MAX;
+    block->tag = BL_MEM_TAG_MAX;
     block->prev = NULL;
     block->next = NULL;
     block->blockSize = blockSize;

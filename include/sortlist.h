@@ -1,48 +1,42 @@
-#ifndef SORTLIST_H
-#define SORTLIST_H
+#ifndef BL_SORTLIST_H
+#define BL_SORTLIST_H
 
 #include <nitro/types.h>
 
-#define SORT_LIST_CMP_GREATER 0
-#define SORT_LIST_CMP_LESS 1
-#define SORT_LIST_CMP_EQUAL 2
+#define BL_SORTLIST_CMP_GREATER 0
+#define BL_SORTLIST_CMP_LESS 1
+#define BL_SORTLIST_CMP_EQUAL 2
 
-typedef struct SortListNode_s SORTLIST_NODE;
+typedef struct BLSortListNode_s BLSortListNode;
 
-typedef void (*SORTLIST_FUNC)(SORTLIST_NODE *node);
+typedef void (*BLSortListFunc)(BLSortListNode *node);
 
-typedef struct SortList_s {
+typedef struct BLSortList_s {
     u8 cmp;
     u8 preserveOrder;
-    SORTLIST_NODE *head;
-    SORTLIST_NODE *tail;
-    SORTLIST_NODE *unk;
-} SORTLIST;
+    BLSortListNode *head;
+    BLSortListNode *tail;
+    BLSortListNode *unk;
+} BLSortList;
 
-struct SortListNode_s {
+struct BLSortListNode_s {
     int order;
-    SORTLIST_NODE *prev;
-    SORTLIST_NODE *next;
+    BLSortListNode *prev;
+    BLSortListNode *next;
 };
 
-#ifndef SYS_BBP
-#define SortListCreate BL_SortListCreate
-#define SortListNodeInsert BL_SortListNodeInsert
-#define SortListNodeSetOrder BL_SortListNodeSetOrder
-#define SortListNodeRemove BL_SortListNodeRemove
-#define SortListForEach BL_SortListForEach
-#else
-#define SortListCreate BBP_SortListCreate
-#define SortListNodeInsert BBP_SortListNodeInsert
-#define SortListNodeSetOrder BBP_SortListNodeSetOrder
-#define SortListNodeRemove BBP_SortListNodeRemove
-#define SortListForEach BBP_SortListForEach
+#ifdef SYS_BBP
+#define BL_SortListCreate BBP_SortListCreate
+#define BL_SortListNodeInsert BBP_SortListNodeInsert
+#define BL_SortListNodeSetOrder BBP_SortListNodeSetOrder
+#define BL_SortListNodeRemove BBP_SortListNodeRemove
+#define BL_SortListForEach BBP_SortListForEach
 #endif
 
-void SortListCreate(SORTLIST *list, u8 cmp, u8 preserveOrder);
-void SortListNodeInsert(SORTLIST *list, SORTLIST_NODE *node, int order);
-void SortListNodeSetOrder(SORTLIST *list, SORTLIST_NODE *node, int order);
-void SortListNodeRemove(SORTLIST *list, SORTLIST_NODE *node);
-void SortListForEach(SORTLIST *list, SORTLIST_FUNC func);
+void BL_SortListCreate(BLSortList *list, u8 cmp, u8 preserveOrder);
+void BL_SortListNodeInsert(BLSortList *list, BLSortListNode *node, int order);
+void BL_SortListNodeSetOrder(BLSortList *list, BLSortListNode *node, int order);
+void BL_SortListNodeRemove(BLSortList *list, BLSortListNode *node);
+void BL_SortListForEach(BLSortList *list, BLSortListFunc func);
 
 #endif

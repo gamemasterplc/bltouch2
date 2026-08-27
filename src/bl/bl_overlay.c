@@ -139,7 +139,7 @@ void BL_OverlayInit(void)
     }
 }
 
-void BL_OverlayLoad(BL_OVERLAY_TYPE type, int index)
+void BL_OverlayLoad(BLOverlayType type, int index)
 {
     int old = LoadedOverlay[type];
     if(index == old) {

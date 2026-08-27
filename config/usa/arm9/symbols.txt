@@ -1405,9 +1405,9 @@ NNSi_SndFaderSet kind:function(arm,size=0x28) addr:0x02032028
 func_02032050 kind:function(arm,size=0x34) addr:0x02032050
 func_02032084 kind:function(arm,size=0x18) addr:0x02032084
 func_0203209c kind:function(arm,size=0x18) addr:0x0203209c
-SysIsExitBBP kind:function(arm,size=0x10) addr:0x020320b4
-SysIsModeBBP kind:function(arm,size=0x10) addr:0x020320c4
-SysSetModeBBP kind:function(arm,size=0x14) addr:0x020320d4
+Sys_IsExitBBP kind:function(arm,size=0x10) addr:0x020320b4
+Sys_IsModeBBP kind:function(arm,size=0x10) addr:0x020320c4
+Sys_SetModeBBP kind:function(arm,size=0x14) addr:0x020320d4
 func_020320e8 kind:function(arm,size=0x154) addr:0x020320e8
 func_0203223c kind:function(arm,size=0x18c) addr:0x0203223c
 func_020323c8 kind:function(arm,size=0x494) addr:0x020323c8
@@ -1809,7 +1809,7 @@ data_0204a63c kind:bss addr:0x0204a63c
 data_0204aca8 kind:bss addr:0x0204aca8
 data_0204acc0 kind:bss addr:0x0204acc0
 data_0204accc kind:bss addr:0x0204accc
-SysModeParam kind:bss addr:0x0204b29c
+Sys_ModeParam kind:bss addr:0x0204b29c
 data_0204b2e0 kind:bss addr:0x0204b2e0
 data_0204b2f0 kind:bss addr:0x0204b2f0
 data_0204b30c kind:bss addr:0x0204b30c

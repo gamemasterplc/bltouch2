@@ -1,59 +1,59 @@
 #include "sortlist.h"
 
-static void InsertNode(SORTLIST *list, SORTLIST_NODE *node);
-static void RemoveNode(SORTLIST *list, SORTLIST_NODE *node);
+static void InsertNode(BLSortList *list, BLSortListNode *node);
+static void RemoveNode(BLSortList *list, BLSortListNode *node);
 
-void SortListCreate(SORTLIST *list, u8 cmp, u8 preserveOrder)
+void BL_SortListCreate(BLSortList *list, u8 cmp, u8 preserveOrder)
 {
     list->cmp = cmp;
     list->preserveOrder = preserveOrder;
     list->head = list->tail = list->unk = NULL;
 }
 
-void SortListNodeInsert(SORTLIST *list, SORTLIST_NODE *node, int order)
+void BL_SortListNodeInsert(BLSortList *list, BLSortListNode *node, int order)
 {
     node->order = order;
     InsertNode(list, node);
 }
 
-void SortListNodeSetOrder(SORTLIST *list, SORTLIST_NODE *node, int order)
+void BL_SortListNodeSetOrder(BLSortList *list, BLSortListNode *node, int order)
 {
     node->order = order;
     RemoveNode(list, node);
     InsertNode(list, node);
 }
 
-void SortListNodeRemove(SORTLIST *list, SORTLIST_NODE *node)
+void BL_SortListNodeRemove(BLSortList *list, BLSortListNode *node)
 {
     RemoveNode(list, node);
 }
 
-void SortListForEach(SORTLIST *list, SORTLIST_FUNC func)
+void BL_SortListForEach(BLSortList *list, BLSortListFunc func)
 {
-    SORTLIST_NODE *node = list->head;
+    BLSortListNode *node = list->head;
     while(node) {
-        SORTLIST_NODE *next = node->next;
+        BLSortListNode *next = node->next;
         func(node);
         node = next;
     }
 }
 
-static void InsertNode(SORTLIST *list, SORTLIST_NODE *node)
+static void InsertNode(BLSortList *list, BLSortListNode *node)
 {
-    SORTLIST_NODE *prev;
-    SORTLIST_NODE *temp;
-    SORTLIST_NODE *cur;
+    BLSortListNode *prev;
+    BLSortListNode *temp;
+    BLSortListNode *cur;
     node->prev = node->next = NULL;
     prev = NULL;
     #ifndef SYS_BBP
     for(cur=list->head; cur; prev=cur, cur=cur->next) {
-        if(list->cmp == SORT_LIST_CMP_GREATER && node->order > cur->order) {
+        if(list->cmp == BL_SORTLIST_CMP_GREATER && node->order > cur->order) {
             continue;
         }
-        if(list->cmp == SORT_LIST_CMP_LESS && node->order < cur->order) {
+        if(list->cmp == BL_SORTLIST_CMP_LESS && node->order < cur->order) {
             continue;
         }
-        if(node->order != cur->order && list->cmp != SORT_LIST_CMP_EQUAL) {
+        if(node->order != cur->order && list->cmp != BL_SORTLIST_CMP_EQUAL) {
             break;
         }
         if(list->preserveOrder) {
@@ -63,13 +63,13 @@ static void InsertNode(SORTLIST *list, SORTLIST_NODE *node)
     #else
     for(cur=list->head; cur; prev=cur, cur=temp) {
         temp = cur->next;
-        if(list->cmp == SORT_LIST_CMP_GREATER && node->order > cur->order) {
+        if(list->cmp == BL_SORTLIST_CMP_GREATER && node->order > cur->order) {
             continue;
         }
-        if(list->cmp == SORT_LIST_CMP_LESS && node->order < cur->order) {
+        if(list->cmp == BL_SORTLIST_CMP_LESS && node->order < cur->order) {
             continue;
         }
-        if(node->order != cur->order && list->cmp != SORT_LIST_CMP_EQUAL) {
+        if(node->order != cur->order && list->cmp != BL_SORTLIST_CMP_EQUAL) {
             break;
         }
         if(list->preserveOrder) {
@@ -91,7 +91,7 @@ static void InsertNode(SORTLIST *list, SORTLIST_NODE *node)
     }
 }
 
-static void RemoveNode(SORTLIST *list, SORTLIST_NODE *node)
+static void RemoveNode(BLSortList *list, BLSortListNode *node)
 {
     if(node->prev) {
         node->prev->next = node->next;

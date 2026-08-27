@@ -10,7 +10,7 @@ typedef struct SysBBPParam_s {
     u32 unkC;
     u32 ovlMenu;
     u32 ovlBattle;
-} SYS_BBP_PARAM;
+} SysBBPParam;
 
 
 typedef struct SysModeParam_s {
@@ -18,11 +18,11 @@ typedef struct SysModeParam_s {
     BOOL exitBBP;
     void *heapStart;
     void *heapEnd;
-    SYS_BBP_PARAM bbp;
-} SYS_MODE_PARAM;
+    SysBBPParam bbp;
+} SysModeParam;
 
-extern SYS_MODE_PARAM SysModeParam;
+extern SysModeParam Sys_ModeParam;
 
-BOOL SysIsModeBBP(void);
+BOOL Sys_IsModeBBP(void);
 
 #endif

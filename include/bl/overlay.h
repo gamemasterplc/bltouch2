@@ -8,14 +8,14 @@ typedef enum {
     BL_OVERLAY_TYPE_SCENE, //1
     BL_OVERLAY_TYPE_MESS, //2
     BL_OVERLAY_TYPE_MAX //3
-} BL_OVERLAY_TYPE;
+} BLOverlayType;
 
 
 typedef enum {
     BL_OVERLAY_MODE_MG, //0
     BL_OVERLAY_MODE_FIELD, //1
     BL_OVERLAY_MODE_MAX //2
-} BL_OVERLAY_MODE;
+} BLOverlayMode;
 
 typedef enum {
     BL_OVERLAY_SCENE_MG01, //0
@@ -70,10 +70,10 @@ typedef enum {
     BL_OVERLAY_SCENE_FIELD_EARTH, //48
     
     BL_OVERLAY_SCENE_MAX, //49
-} BL_OVERLAY_SCENE;
+} BLOverlayScene;
 
 void BL_OverlayInit(void);
-void BL_OverlayLoad(BL_OVERLAY_TYPE type, int index);
+void BL_OverlayLoad(BLOverlayType type, int index);
 void BL_OverlayMgLoad(int no);
 void BL_OverlayFieldLoad(int no);
 void BL_OverlayClose(void);

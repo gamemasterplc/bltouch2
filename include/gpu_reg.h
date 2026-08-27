@@ -1,10 +1,10 @@
-#ifndef GPU_REG_H
-#define GPU_REG_H
+#ifndef BL_GPU_REG_H
+#define BL_GPU_REG_H
 
 #include <nitro.h>
 #include "display.h"
 
-typedef struct GpuRegScroll_s {
+typedef struct BLGpuRegScroll_s {
     s16 BG0HOFS;
     s16 BG0VOFS;
     s16 BG1HOFS;
@@ -15,9 +15,9 @@ typedef struct GpuRegScroll_s {
     s16 BG3VOFS;
     u32 BG2AFFINE[4];
     u32 BG3AFFINE[4];
-} GPU_REG_SCROLL;
+} BLGpuRegScroll;
 
-typedef struct GpuRegWindow_s {
+typedef struct BLGpuRegWindow_s {
     u16 WIN0H;
     u16 WIN1H;
     u16 WIN0V;
@@ -25,44 +25,35 @@ typedef struct GpuRegWindow_s {
     u16 WININ;
     u16 WINOUT;
     u16 MOSAIC;
-} GPU_REG_WINDOW;
+} BLGpuRegWindow;
 
-typedef struct GpuRegBlend_s {
+typedef struct BLGpuRegBlend_s {
     u16 BLDCNT;
     u16 BLDALPHA;
     u16 BLDY;
     u16 pad;
-} GPU_REG_BLEND;
+} BLGpuRegBlend;
 
 #ifdef SYS_BBP
-#define GpuMasterBrightness BBP_GpuMasterBrightness
-#define GpuDispSelect BBP_GpuDispSelect
-#define GpuPlaneMask BBP_GpuPlaneMask
-#define GpuRegBlend BBP_GpuRegBlend
-#define GpuRegWindow BBP_GpuRegWindow
-#define GpuRegScroll BBP_GpuRegScroll
-#define GpuRegInit BBP_GpuRegInit
-#define GpuRegExec BBP_GpuRegExec
-#else
-#define GpuMasterBrightness BL_GpuMasterBrightness
-#define GpuDispSelect BL_GpuDispSelect
-#define GpuPlaneMask BL_GpuPlaneMask
-#define GpuRegBlend BL_GpuRegBlend
-#define GpuRegWindow BL_GpuRegWindow
-#define GpuRegScroll BL_GpuRegScroll
-#define GpuRegInit BL_GpuRegInit
-#define GpuRegExec BL_GpuRegExec
+#define BL_GpuMasterBrightness BBP_GpuMasterBrightness
+#define BL_GpuDispSelect BBP_GpuDispSelect
+#define BL_GpuPlaneMask BBP_GpuPlaneMask
+#define BL_GpuRegBlend BBP_GpuRegBlend
+#define BL_GpuRegWindow BBP_GpuRegWindow
+#define BL_GpuRegScroll BBP_GpuRegScroll
+#define BL_GpuRegInit BBP_GpuRegInit
+#define BL_GpuRegExec BBP_GpuRegExec
 #endif
 
 
-extern int GpuDispSelect;
-extern s16 GpuMasterBrightness[DISPLAY_MAX];
-extern int GpuPlaneMask[DISPLAY_MAX];
-extern GPU_REG_BLEND GpuRegBlend[DISPLAY_MAX];
-extern GPU_REG_WINDOW GpuRegWindow[DISPLAY_MAX];
-extern GPU_REG_SCROLL GpuRegScroll[DISPLAY_MAX];
+extern int BL_GpuDispSelect;
+extern s16 BL_GpuMasterBrightness[DISPLAY_MAX];
+extern int BL_GpuPlaneMask[DISPLAY_MAX];
+extern BLGpuRegBlend BL_GpuRegBlend[DISPLAY_MAX];
+extern BLGpuRegWindow BL_GpuRegWindow[DISPLAY_MAX];
+extern BLGpuRegScroll BL_GpuRegScroll[DISPLAY_MAX];
 
-void GpuRegInit(void);
-void GpuRegExec(void);
+void BL_GpuRegInit(void);
+void BL_GpuRegExec(void);
 
 #endif
