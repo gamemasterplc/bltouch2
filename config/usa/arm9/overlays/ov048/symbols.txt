@@ -2927,23 +2927,23 @@ BBP_LinkIconDestroy kind:function(arm,size=0x28) addr:0x020be0f8
 BBP_LinkIconSetPos kind:function(arm,size=0x44) addr:0x020be120
 BBP_LinkIconSetBlendOn kind:function(arm,size=0x10) addr:0x020be164
 BBP_SprInit kind:function(arm,size=0xa0) addr:0x020be174
-func_ov048_020be214 kind:function(arm,size=0xc) addr:0x020be214
+SprDelete kind:function(arm,size=0xc) local addr:0x020be214
 BBP_SprClose kind:function(arm,size=0x2c) addr:0x020be220
 BBP_SprCreate kind:function(arm,size=0xcc) addr:0x020be24c
 BBP_SprKill kind:function(arm,size=0x1ac) addr:0x020be318
 BBP_SprSetAnim kind:function(arm,size=0x6c) addr:0x020be4c4
 BBP_SprSetPrio kind:function(arm,size=0x50) addr:0x020be530
 BBP_SprSetLayerPrio kind:function(arm,size=0x64) addr:0x020be580
-func_ov048_020be5e4 kind:function(arm,size=0x64) addr:0x020be5e4
-func_ov048_020be648 kind:function(arm,size=0x38) addr:0x020be648
+SprNew kind:function(arm,size=0x64) local addr:0x020be5e4
+SprFree kind:function(arm,size=0x38) local addr:0x020be648
 BBP_SprExec kind:function(arm,size=0x74) addr:0x020be680
-func_ov048_020be6f4 kind:function(arm,size=0x24) addr:0x020be6f4
-func_ov048_020be718 kind:function(arm,size=0xb8) addr:0x020be718
-func_ov048_020be7d0 kind:function(arm,size=0x1e0) addr:0x020be7d0
-func_ov048_020be9b0 kind:function(arm,size=0xb4c) addr:0x020be9b0
-func_ov048_020bf4fc kind:function(arm,size=0x244) addr:0x020bf4fc
-func_ov048_020bf740 kind:function(arm,size=0x27c) addr:0x020bf740
-func_ov048_020bf9bc kind:function(arm,size=0x1d4) addr:0x020bf9bc
+SprDraw kind:function(arm,size=0x24) local addr:0x020be6f4
+SprForceAnimReset kind:function(arm,size=0xb8) local addr:0x020be718
+SprUpdateAnim kind:function(arm,size=0x1e0) local addr:0x020be7d0
+SprDrawMain kind:function(arm,size=0xb4c) local addr:0x020be9b0
+SprDrawText kind:function(arm,size=0x244) local addr:0x020bf4fc
+DrawQuad kind:function(arm,size=0x27c) local addr:0x020bf740
+TransformCellPos kind:function(arm,size=0x1d4) local addr:0x020bf9bc
 BBP_ObjInit kind:function(arm,size=0x4c) addr:0x020bfb90
 BBP_ObjExec kind:function(arm,size=0xd4) addr:0x020bfbdc
 BBP_ObjCreate kind:function(arm,size=0x5c) addr:0x020bfcb0
@@ -2954,20 +2954,20 @@ BBP_ObjKillChild kind:function(arm,size=0x40) addr:0x020bfe08
 BBP_ObjCurSetFunc kind:function(arm,size=0x1c) addr:0x020bfe48
 BBP_ObjSetFunc kind:function(arm,size=0x28) addr:0x020bfe64
 BBP_ObjResetPauseFlag kind:function(arm,size=0x1c) addr:0x020bfe8c
-func_ov048_020bfea8 kind:function(arm,size=0x18) addr:0x020bfea8
-func_ov048_020bfec0 kind:function(arm,size=0xc) addr:0x020bfec0
-func_ov048_020bfecc kind:function(arm,size=0x50) addr:0x020bfecc
-func_ov048_020bff1c kind:function(arm,size=0xe8) addr:0x020bff1c
-func_ov048_020c0004 kind:function(arm,size=0x3c) addr:0x020c0004
+NewObj kind:function(arm,size=0x18) local addr:0x020bfea8
+FreeObj kind:function(arm,size=0xc) local addr:0x020bfec0
+InsertObj kind:function(arm,size=0x50) local addr:0x020bfecc
+KillObj kind:function(arm,size=0xe8) local addr:0x020bff1c
+SortObj kind:function(arm,size=0x3c) local addr:0x020c0004
 BBP_ObjNullExec kind:function(arm,size=0x4) addr:0x020c0040
-BBP_WindowMaskCreate kind:function(arm,size=0x1e8) addr:0x020c0044
-BBP_WindowMaskSetCenter kind:function(arm,size=0x14) addr:0x020c022c
-BBP_WindowMaskSetRadius kind:function(arm,size=0x10) addr:0x020c0240
-BBP_WindowMaskKill kind:function(arm,size=0x18) addr:0x020c0250
-BBP_WindowMaskDestroy kind:function(arm,size=0x94) addr:0x020c0268
-BBP_WindowMaskExec kind:function(arm,size=0x234) addr:0x020c02fc
-BBP_WindowMaskStartDmaMain kind:function(arm,size=0xa8) addr:0x020c0530
-BBP_WindowMaskStartDmaSub kind:function(arm,size=0xa8) addr:0x020c05d8
+BBP_WinMaskCreate kind:function(arm,size=0x1e8) addr:0x020c0044
+BBP_WinMaskSetCenter kind:function(arm,size=0x14) addr:0x020c022c
+BBP_WinMaskSetRadius kind:function(arm,size=0x10) addr:0x020c0240
+BBP_WinMaskKill kind:function(arm,size=0x18) addr:0x020c0250
+BBP_WinMaskDestroy kind:function(arm,size=0x94) addr:0x020c0268
+BBP_WinMaskExec kind:function(arm,size=0x234) addr:0x020c02fc
+StartDmaMain kind:function(arm,size=0xa8) local addr:0x020c0530
+StartDmaSub kind:function(arm,size=0xa8) local addr:0x020c05d8
 BBP_ColorAnimInit kind:function(arm,size=0x7c) addr:0x020c0680
 BBP_ColorAnimClose kind:function(arm,size=0x64) addr:0x020c06fc
 BBP_ColorAnimCreate kind:function(arm,size=0x14) addr:0x020c0760
@@ -2975,21 +2975,21 @@ BBP_ColorAnimCreateFlag kind:function(arm,size=0x1c0) addr:0x020c0774
 BBP_ColorAnimKill kind:function(arm,size=0x18) addr:0x020c0934
 BBP_ColorAnimGetData kind:function(arm,size=0x3c) addr:0x020c094c
 BBP_ColorAnimExec kind:function(arm,size=0x54) addr:0x020c0988
-func_ov048_020c09dc kind:function(arm,size=0x48) addr:0x020c09dc
-func_ov048_020c0a24 kind:function(arm,size=0x18) addr:0x020c0a24
-func_ov048_020c0a3c kind:function(arm,size=0x50) addr:0x020c0a3c
-func_ov048_020c0a8c kind:function(arm,size=0x198) addr:0x020c0a8c
-func_ov048_020c0c24 kind:function(arm,size=0x1e8) addr:0x020c0c24
-func_ov048_020c0e0c kind:function(arm,size=0x24) addr:0x020c0e0c
-func_ov048_020c0e30 kind:function(arm,size=0x30) addr:0x020c0e30
-func_ov048_020c0e60 kind:function(arm,size=0x30) addr:0x020c0e60
-func_ov048_020c0e90 kind:function(arm,size=0x68) addr:0x020c0e90
-func_ov048_020c0ef8 kind:function(arm,size=0x44) addr:0x020c0ef8
-func_ov048_020c0f3c kind:function(arm,size=0x2c) addr:0x020c0f3c
-func_ov048_020c0f68 kind:function(arm,size=0x30) addr:0x020c0f68
-func_ov048_020c0f98 kind:function(arm,size=0x98) addr:0x020c0f98
-func_ov048_020c1030 kind:function(arm,size=0x44) addr:0x020c1030
-func_ov048_020c1074 kind:function(arm,size=0x84) addr:0x020c1074
+InsertColorAnim kind:function(arm,size=0x48) local addr:0x020c09dc
+UnlinkColorAnim kind:function(arm,size=0x18) local addr:0x020c0a24
+RemoveColorAnim kind:function(arm,size=0x50) local addr:0x020c0a3c
+GetNextColorAnim kind:function(arm,size=0x198) local addr:0x020c0a8c
+SetPlttTransfer kind:function(arm,size=0x1e8) local addr:0x020c0c24
+AddTransferQueue kind:function(arm,size=0x24) local addr:0x020c0e0c
+TransferPlttOBJ kind:function(arm,size=0x30) local addr:0x020c0e30
+TransferPlttOBJSub kind:function(arm,size=0x30) local addr:0x020c0e60
+TransferPlttOBJExt kind:function(arm,size=0x68) local addr:0x020c0e90
+TransferPlttOBJExtSub kind:function(arm,size=0x44) local addr:0x020c0ef8
+TransferPlttBG kind:function(arm,size=0x2c) local addr:0x020c0f3c
+TransferPlttBGSub kind:function(arm,size=0x30) local addr:0x020c0f68
+TransferPlttBGExt kind:function(arm,size=0x98) local addr:0x020c0f98
+TransferPlttBGExtSub kind:function(arm,size=0x44) local addr:0x020c1030
+TransferPlttTex kind:function(arm,size=0x84) local addr:0x020c1074
 BBP_VBlankQueueInit kind:function(arm,size=0x3c) addr:0x020c10f8
 BBP_VBlankQueueCreate kind:function(arm,size=0xb8) addr:0x020c1134
 BBP_VBlankQueueExec kind:function(arm,size=0x74) addr:0x020c11ec
@@ -2997,24 +2997,24 @@ BBP_VBlankQueueClose kind:function(arm,size=0xa0) addr:0x020c1260
 BBP_VBlankQueueAdd kind:function(arm,size=0x84) addr:0x020c1300
 BBP_VBlankQueueRemove kind:function(arm,size=0x40) addr:0x020c1384
 BBP_VBlankQueueRemoveCur kind:function(arm,size=0x18) addr:0x020c13c4
-func_ov048_020c13dc kind:function(arm,size=0x48) addr:0x020c13dc
-func_ov048_020c1424 kind:function(arm,size=0xa8) addr:0x020c1424
-func_ov048_020c14cc kind:function(arm,size=0xac) addr:0x020c14cc
-func_ov048_020c1578 kind:function(arm,size=0x1c) addr:0x020c1578
-func_ov048_020c1594 kind:function(arm,size=0x38) addr:0x020c1594
-func_ov048_020c15cc kind:function(arm,size=0x24) addr:0x020c15cc
-func_ov048_020c15f0 kind:function(arm,size=0x30) addr:0x020c15f0
-func_ov048_020c1620 kind:function(arm,size=0x8) addr:0x020c1620
-func_ov048_020c1628 kind:function(arm,size=0xc) addr:0x020c1628
-func_ov048_020c1634 kind:function(arm,size=0x10) addr:0x020c1634
-func_ov048_020c1644 kind:function(arm,size=0x8) addr:0x020c1644
-func_ov048_020c164c kind:function(arm,size=0x4d4) addr:0x020c164c
-func_ov048_020c1b20 kind:function(arm,size=0x10c) addr:0x020c1b20
-func_ov048_020c1c2c kind:function(arm,size=0xc0) addr:0x020c1c2c
-func_ov048_020c1cec kind:function(arm,size=0x18) addr:0x020c1cec
-func_ov048_020c1d04 kind:function(arm,size=0x80) addr:0x020c1d04
-func_ov048_020c1d84 kind:function(arm,size=0x208) addr:0x020c1d84
-func_ov048_020c1f8c kind:function(arm,size=0x60) addr:0x020c1f8c
+GetQueueInsertPos kind:function(arm,size=0x48) local addr:0x020c13dc
+BBP_TextWriteInit kind:function(arm,size=0xa8) addr:0x020c1424
+BBP_TextWriteCreate kind:function(arm,size=0xac) addr:0x020c14cc
+BBP_TextWriteKill kind:function(arm,size=0x1c) addr:0x020c1578
+BBP_TextWriteClear kind:function(arm,size=0x38) addr:0x020c1594
+BBP_TextWriteSetText kind:function(arm,size=0x24) addr:0x020c15cc
+BBP_TextWriteSetFont kind:function(arm,size=0x30) addr:0x020c15f0
+BBP_TextWriteSetColor kind:function(arm,size=0x8) addr:0x020c1620
+BBP_TextWriteSetPos kind:function(arm,size=0xc) addr:0x020c1628
+BBP_TextWriteSetInsertText kind:function(arm,size=0x10) addr:0x020c1634
+BBP_TextWriteSetFixedWidth kind:function(arm,size=0x8) addr:0x020c1644
+BBP_TextWriteWriteChar kind:function(arm,size=0x4d4) addr:0x020c164c
+DecodeChar kind:function(arm,size=0x10c) local addr:0x020c1b20
+GetCharEnd kind:function(arm,size=0xc0) local addr:0x020c1c2c
+GetColor kind:function(arm,size=0x18) local addr:0x020c1cec
+SearchGlyphMap kind:function(arm,size=0x80) local addr:0x020c1d04
+WriteChar kind:function(arm,size=0x208) local addr:0x020c1d84
+SearchAdvance kind:function(arm,size=0x60) local addr:0x020c1f8c
 BBP_Init kind:function(arm,size=0x158) addr:0x020c1fec
 BBP_Main kind:function(arm,size=0x174) addr:0x020c2144
 BBP_SysGetFrame kind:function(arm,size=0x10) addr:0x020c22b8
@@ -3038,22 +3038,22 @@ BBP_SndExec kind:function(arm,size=0x14) addr:0x020c2620
 BBP_SndClose kind:function(arm,size=0x98) addr:0x020c2634
 BBP_SndArcRestore kind:function(arm,size=0x1c) addr:0x020c26cc
 BBP_SndSeqInit kind:function(arm,size=0x54) addr:0x020c26e8
-BBP_SndStartMusic kind:function(arm,size=0x88) addr:0x020c273c
+BBP_SndPlayMusic kind:function(arm,size=0x88) addr:0x020c273c
 BBP_SndFadeMusic kind:function(arm,size=0x30) addr:0x020c27c4
 BBP_SndFadeInMusic kind:function(arm,size=0x44) addr:0x020c27f4
 BBP_SndFadeOutMusic kind:function(arm,size=0x44) addr:0x020c2838
 BBP_SndSetMusicVolume kind:function(arm,size=0x34) addr:0x020c287c
 BBP_SndGetMusicHandle kind:function(arm,size=0x14) addr:0x020c28b0
-BBP_SndStartJingle kind:function(arm,size=0x30) addr:0x020c28c4
-BBP_SndStartSeqArc kind:function(arm,size=0x68) addr:0x020c28f4
-BBP_SndStartSingleSeqArc kind:function(arm,size=0x10) addr:0x020c295c
-BBP_SndStopSingleSeqArc kind:function(arm,size=0xc) addr:0x020c296c
-BBP_SndStartDynamicSeqArc kind:function(arm,size=0x10) addr:0x020c2978
-BBP_SndStopDynamicSeqArc kind:function(arm,size=0x30) addr:0x020c2988
-func_ov048_020c29b8 kind:function(arm,size=0xc0) addr:0x020c29b8
-func_ov048_020c2a78 kind:function(arm,size=0x74) addr:0x020c2a78
-func_ov048_020c2aec kind:function(arm,size=0x190) addr:0x020c2aec
-func_ov048_020c2c7c kind:function(arm,size=0x44) addr:0x020c2c7c
+BBP_SndPlayJingle kind:function(arm,size=0x30) addr:0x020c28c4
+BBP_SndPlaySE kind:function(arm,size=0x68) addr:0x020c28f4
+BBP_SndPlaySELoop kind:function(arm,size=0x10) addr:0x020c295c
+BBP_SndStopSELoop kind:function(arm,size=0xc) addr:0x020c296c
+BBP_SndPlaySELoopMulti kind:function(arm,size=0x10) addr:0x020c2978
+BBP_SndStopSELoopMulti kind:function(arm,size=0x30) addr:0x020c2988
+StartSELoop kind:function(arm,size=0xc0) local addr:0x020c29b8
+StopSELoop kind:function(arm,size=0x74) local addr:0x020c2a78
+ExecMusic kind:function(arm,size=0x190) local addr:0x020c2aec
+ExecSE kind:function(arm,size=0x44) local addr:0x020c2c7c
 BBP_MicInit kind:function(arm,size=0x28) addr:0x020c2cc0
 BBP_MicExec kind:function(arm,size=0x24) addr:0x020c2ce8
 BBP_MicAmpOff kind:function(arm,size=0x40) addr:0x020c2d0c
@@ -3693,17 +3693,17 @@ data_ov048_020d1490 kind:data(any) addr:0x020d1490
 data_ov048_020d1558 kind:data(any) addr:0x020d1558
 data_ov048_020d1560 kind:data(any) addr:0x020d1560
 data_ov048_020d1568 kind:data(any) addr:0x020d1568
-data_ov048_020d1580 kind:data(any) addr:0x020d1580
+WLFuncTbl kind:data(any) local addr:0x020d1580
 ColorTransferTypeTbl kind:data(any) local addr:0x020d15b0
-data_ov048_020d15e8 kind:data(any) addr:0x020d15e8
-data_ov048_020d15ec kind:data(any) addr:0x020d15ec
-data_ov048_020d15f4 kind:data(any) addr:0x020d15f4
-data_ov048_020d1684 kind:data(any) addr:0x020d1684
-data_ov048_020d1688 kind:data(any) addr:0x020d1688
-data_ov048_020d1988 kind:data(any) addr:0x020d1988
-data_ov048_020d198c kind:data(any) addr:0x020d198c
-data_ov048_020d199c kind:data(any) addr:0x020d199c
-data_ov048_020d1c60 kind:data(any) addr:0x020d1c60
+ImageAddrMask kind:data(any) local addr:0x020d15e8
+ImageTransferType kind:data(any) local addr:0x020d15ec
+SprSizeTbl kind:data(any) local addr:0x020d15f4
+WinMaskTbl kind:data(any) local addr:0x020d1684
+WinMaskCircle kind:data(any) local addr:0x020d1688
+ShiftTbl kind:data(any) local addr:0x020d1988
+CharReplaceTbl kind:data(any) local addr:0x020d198c
+AdvanceTbl_IPL88 kind:data(any) local addr:0x020d199c
+AdvanceTbl_IPL1012 kind:data(any) local addr:0x020d1c60
 data_ov048_020d1f28 kind:data(any) addr:0x020d1f28
 data_ov048_020d1f2c kind:data(any) addr:0x020d1f2c
 data_ov048_020d1f44 kind:data(any) addr:0x020d1f44
@@ -5392,13 +5392,10 @@ data_ov048_020de278 kind:data(any) addr:0x020de278
 data_ov048_020de298 kind:data(any) addr:0x020de298
 data_ov048_020de2b8 kind:data(any) addr:0x020de2b8
 data_ov048_020de2d8 kind:data(any) addr:0x020de2d8
-data_ov048_020de2f8 kind:data(any) addr:0x020de2f8
-data_ov048_020de304 kind:data(any) addr:0x020de304
-data_ov048_020de30c kind:data(any) addr:0x020de30c
-data_ov048_020de334 kind:data(any) addr:0x020de334
-data_ov048_020de33d kind:data(any) addr:0x020de33d
-data_ov048_020de340 kind:data(any) addr:0x020de340
-data_ov048_020de350 kind:data(any) addr:0x020de350
+SprFuncTbl kind:data(any) local addr:0x020de2f8
+FontFileTbl kind:data(any) local addr:0x020de304
+Pow10Tbl kind:data(any) local addr:0x020de30c
+FontTbl kind:data(any) local addr:0x020de334
 data_ov048_020de36c kind:data(any) addr:0x020de36c
 data_ov048_020de388 kind:data(any) addr:0x020de388
 data_ov048_020de3a8 kind:data(any) addr:0x020de3a8
@@ -5662,10 +5659,10 @@ data_ov048_020e3b88 kind:bss addr:0x020e3b88
 FadeTime kind:bss local addr:0x020e3b8c
 BBP_PadWork kind:bss addr:0x020e3b94
 FilePtr kind:bss local addr:0x020e3b98
-data_ov048_020e3b9c kind:bss addr:0x020e3b9c
-data_ov048_020e3ba0 kind:bss addr:0x020e3ba0
+WLWork kind:bss local addr:0x020e3b9c
+HDmaWork kind:bss local addr:0x020e3ba0
 HeapWork kind:bss local addr:0x020e3bb4
-RandomData kind:bss local addr:0x020e3bb8
+RandomWork kind:bss local addr:0x020e3bb8
 BBP_OamData kind:bss addr:0x020e3bc4
 BBP_GpuMasterBrightness kind:bss addr:0x020e3bc8
 BBP_GpuDispSelect kind:bss addr:0x020e3bcc
@@ -5681,20 +5678,18 @@ VramWork kind:bss local addr:0x020e3c90
 VramColorWork kind:bss local addr:0x020e3c94
 LinkIconWork kind:bss local addr:0x020e3c98
 SceneWork kind:bss local addr:0x020e3ca0
-data_ov048_020e3cd0 kind:bss addr:0x020e3cd0
-data_ov048_020e3cd4 kind:bss addr:0x020e3cd4
-data_ov048_020e3ce8 kind:bss addr:0x020e3ce8
-data_ov048_020e3cfc kind:bss addr:0x020e3cfc
+CurSprZ kind:bss local addr:0x020e3cd0
+SprList kind:bss local addr:0x020e3cd4
+CurSprTile kind:bss local addr:0x020e3cfc
 BBP_ObjCur kind:bss addr:0x020e3e00
-data_ov048_020e3e04 kind:bss addr:0x020e3e04
+ObjList kind:bss local addr:0x020e3e04
 data_ov048_020e3e10 kind:bss addr:0x020e3e10
-data_ov048_020e3e14 kind:bss addr:0x020e3e14
-data_ov048_020e3e24 kind:bss addr:0x020e3e24
-data_ov048_020e3e28 kind:bss addr:0x020e3e28
-data_ov048_020e3e2c kind:bss addr:0x020e3e2c
+ColorAnimList kind:bss local addr:0x020e3e14
+VBlankCur kind:bss local addr:0x020e3e24
+VBlankQueue kind:bss local addr:0x020e3e28
 OldVBlankIrq kind:bss local addr:0x020e3e38
 SysWork kind:bss local addr:0x020e3e3c
-data_ov048_020e3e60 kind:bss addr:0x020e3e60
+SndWork kind:bss local addr:0x020e3e60
 data_ov048_020e3e64 kind:bss addr:0x020e3e64
 data_ov048_020e3e6c kind:bss addr:0x020e3e6c
 data_ov048_020e3e70 kind:bss addr:0x020e3e70

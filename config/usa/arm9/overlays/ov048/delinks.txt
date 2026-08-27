@@ -105,14 +105,20 @@ src/bbp/bbp_object.c:
 src/bbp/bbp_windowmask.c:
     .text       start:0x020c0044 end:0x020c0680
     .rodata     start:0x020d1684 end:0x020d1988
+    .bss        start:0x020e3e10 end:0x020e3e14
 
 src/bbp/bbp_coloranim.c:
     .text       start:0x020c0680 end:0x020c10f8
-    .bss        start:0x020e3e10 end:0x020e3e24
+    .bss        start:0x020e3e14 end:0x020e3e24
 
 src/bbp/bbp_vblankqueue.c:
     .text       start:0x020c10f8 end:0x020c1424
     .bss        start:0x020e3e24 end:0x020e3e38
+
+src/bbp/bbp_textwrite.c:
+    .text       start:0x020c1424 end:0x020c1fec
+    .rodata     start:0x020d1988 end:0x020d1f28
+    .data       start:0x020de304 end:0x020de3a8
 
 src/bbp/bbp_system.c:
     .text       start:0x020c1fec end:0x020c24ec
@@ -122,7 +128,7 @@ src/bbp/bbp_system.c:
 src/bbp/bbp_sound.c:
     .text       start:0x020c24ec end:0x020c2cc0
     .data       start:0x020de3ac end:0x020de3c8
-    .bss        start:0x020e3e60 end:0x020e3e60
+    .bss        start:0x020e3e60 end:0x020e3e64
 
 src/bbp/bbp_scenetbl.c:
     .data       start:0x020de464 end:0x020de4f4

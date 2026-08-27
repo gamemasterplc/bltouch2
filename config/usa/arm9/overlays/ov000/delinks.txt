@@ -5,7 +5,7 @@
     .bss        start:0x020ac660 end:0x020b26e0 kind:bss align:32
 
 
-src/bl/menu/logo.c:
+src/bl/menu/bl_menu_logo.c:
     .text       start:0x0204d760 end:0x0204d9e8
 
 src/bl/bl_scenetbl.c:
@@ -142,3 +142,124 @@ src/bl/filetbl/bl_filetbl_mb.c:
 
 src/bl/bl_linkicon.c:
     .rodata     start:0x0207b4dc end:0x0207b7a8
+
+src/mg/mg.c:
+    .text       start:0x0205a764 end:0x0205c820
+    .rodata     start:0x0207b7a8 end:0x0207c5dc
+    .bss        start:0x020ac97c end:0x020aca18
+
+src/bl/bl_textwrite.c:
+    .text       start:0x0205c820 end:0x0205d2f4
+    .rodata     start:0x0207c5dc end:0x0207c8bc
+    .data       start:0x0207fa1c end:0x0207faac
+
+src/bl/filetbl/bl_filetbl_field_star.c:
+    .data       start:0x0207faac end:0x020813c4
+
+src/bl/filetbl/bl_filetbl_field_menu.c:
+    .data       start:0x020813c4 end:0x020831ac
+
+src/bl/filetbl/bl_filetbl_field_player.c:
+    .data       start:0x020831ac end:0x0208419c
+
+src/bl/filetbl/bl_filetbl_field.c:
+    .data       start:0x0208419c end:0x02087368
+
+src/bl/filetbl/bl_filetbl_mg01.c:
+    .rodata     start:0x0207c8bc end:0x0207c940
+    .data       start:0x02087368 end:0x020877fc
+
+src/bl/filetbl/bl_filetbl_mg02.c:
+    .rodata     start:0x0207c940 end:0x0207c9f4
+    .data       start:0x020877fc end:0x02087e24
+
+src/bl/filetbl/bl_filetbl_mg05.c:
+    .data       start:0x02087e24 end:0x02088814
+
+src/bl/filetbl/bl_filetbl_mg40.c:
+    .rodata     start:0x0207c9f4 end:0x0207ca94
+    .data       start:0x02088814 end:0x02088d74
+
+src/bl/filetbl/bl_filetbl_mg31.c:
+    .data       start:0x02088d74 end:0x020892d0
+
+src/bl/filetbl/bl_filetbl_mg35.c:
+    .data       start:0x020892d0 end:0x0208983c
+
+src/bl/filetbl/bl_filetbl_mg36.c:
+    .data       start:0x0208983c end:0x02089ec4
+
+src/bl/filetbl/bl_filetbl_mg37.c:
+    .data       start:0x02089ec4 end:0x0208a3f0
+
+src/bl/filetbl/bl_filetbl_mg39.c:
+    .data       start:0x0208a3f0 end:0x0208a96c
+
+src/bl/filetbl/bl_filetbl_mg04.c:
+    .data       start:0x0208a96c end:0x0208ad50
+
+src/bl/filetbl/bl_filetbl_mg38.c:
+    .rodata     start:0x0207ca94 end:0x0207cb6c
+    .data       start:0x0208ad50 end:0x0208b450
+
+src/bl/filetbl/bl_filetbl_mg34.c:
+    .rodata     start:0x0207cb6c end:0x0207cc2c
+    .data       start:0x0208b450 end:0x0208bb18
+
+src/bl/filetbl/bl_filetbl_mg06.c:
+    .rodata     start:0x0207cc2c end:0x0207ccb0
+    .data       start:0x0208bb18 end:0x0208bfb4
+
+src/bl/filetbl/bl_filetbl_field_bustup.c:
+    .data       start:0x0208bfb4 end:0x0208dc6c
+
+src/bl/filetbl/bl_filetbl_field_event.c:
+    .data       start:0x0208dc6c end:0x0208e81c
+
+src/bl/bl_error.c:
+    .text       start:0x0205d2f4 end:0x0205d5dc
+    .data       start:0x0208e81c end:0x0208e83c
+
+src/bl/filetbl/bl_filetbl_mg08.c:
+    .rodata     start:0x0207ccb0 end:0x0207cd60
+    .data       start:0x0208e83c end:0x0208ee2c
+
+src/bl/bl_mic.c:
+    .text       start:0x0205d5dc end:0x0205d854
+    .data       start:0x0208ee2c end:0x0208ee5c
+    .bss        start:0x020aca18 end:0x020aca20
+
+src/bl/filetbl/bl_filetbl_mg09.c:
+    .rodata     start:0x0207cd60 end:0x0207ce14
+    .data       start:0x0208ee5c end:0x0208f474
+
+src/bl/filetbl/bl_filetbl_field_atrc.c:
+    .data       start:0x0208f474 end:0x0208fcc8
+
+src/bl/filetbl/bl_filetbl_mg23.c:
+    .data       start:0x0208fcc8 end:0x0208ffe8
+
+src/bl/filetbl/bl_filetbl_mg10.c:
+    .rodata     start:0x0207ce14 end:0x0207ce40
+    .data       start:0x0208ffe8 end:0x02090164
+
+src/bl/filetbl/bl_filetbl_mg24.c:
+    .data       start:0x02090164 end:0x02090568
+
+src/bl/filetbl/bl_filetbl_mg13.c:
+    .rodata     start:0x0207ce40 end:0x0207cec8
+    .data       start:0x02090568 end:0x02090a0c
+
+src/bl/filetbl/bl_filetbl_field_sub.c:
+    .data       start:0x02090a0c end:0x02093388
+
+src/bl/filetbl/bl_filetbl_field_moon.c:
+    .data       start:0x02093388 end:0x02094984
+
+src/bl/filetbl/bl_filetbl_mg15.c:
+    .rodata     start:0x0207cec8 end:0x0207cf58
+    .data       start:0x02094984 end:0x02094e90
+
+src/mg/mg23_touchguide.c:
+    .text       start:0x0205d854 end:0x0205da9c
+    .rodata     start:0x0207cf58 end:0x0207cf98
