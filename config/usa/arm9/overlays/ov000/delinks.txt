@@ -59,6 +59,7 @@ src/bl/bl_bitset.c:
     .text       start:0x02053ed8 end:0x02053f48
 
 src/bl/bl_gfxheap.c:
+    complete
     .text       start:0x02053f48 end:0x020542bc
 
 src/bl/bl_oam.c:

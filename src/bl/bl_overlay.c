@@ -133,8 +133,8 @@ void BL_OverlayInit(void)
     for(i=0; i<3; i++) {
         LoadedOverlay[i] = BL_OVERLAY_NONE;
     }
-    language = SysGetLanguage();
-    if(language != SYS_LANGUAGE_NONE) {
+    language = BL_SysGetLanguage();
+    if(language != BL_SYS_LANGUAGE_NONE) {
         BL_OverlayLoad(BL_OVERLAY_TYPE_MESS, language);
     }
 }

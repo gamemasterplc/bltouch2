@@ -64,6 +64,7 @@ src/bbp/bbp_bitset.c:
     .text       start:0x020bb9f4 end:0x020bbac0
 
 src/bbp/bbp_gfxheap.c:
+    complete
     .text       start:0x020bbac0 end:0x020bbe34
 
 src/bbp/bbp_oam.c:

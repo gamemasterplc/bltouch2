@@ -135,7 +135,7 @@ void *BL_MemAlloc(BLMemTag tag, size_t size, u32 flag)
         goto end;
     }
     #endif
-    if(flag & MEM_FLAG_CLEAR) {
+    if(flag & BL_MEM_FLAG_CLEAR) {
         MI_CpuClearFast(newBlock, blockSize+HEAP_BLOCK_SIZE);
     }
     newBlock->magic = 'HEAP';

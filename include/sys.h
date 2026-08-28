@@ -1,14 +1,12 @@
 #ifndef SYS_H
 #define SYS_H
 
-#define SYS_LANGUAGE_NONE -1
+#define BL_SYS_LANGUAGE_NONE -1
 
 #ifdef SYS_BBP
-#define SysGetLanguage BBP_SysGetLanguage
-#else
-#define SysGetLanguage BL_SysGetLanguage
+#define BL_SysGetLanguage BBP_SysGetLanguage
 #endif
 
-int SysGetLanguage(void);
+int BL_SysGetLanguage(void);
 
 #endif
