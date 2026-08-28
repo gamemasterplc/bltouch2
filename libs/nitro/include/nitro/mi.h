@@ -25,6 +25,7 @@ void MIi_CpuCopy32(void* src, void* dst, u32 size);
 void MIi_CpuClear16(int value, void* dst, size_t size);
 void MIi_CpuClear32(u32 value, void* ptr, u32 size);
 void MI_Swap(u32* a, u32* b);
+void MI_UncompressLZ8(void *src, void *dst);
 
 inline void MI_CpuCopy16(void* src, void* dst, u32 size)
 {

@@ -35,6 +35,7 @@ src/bbp/bbp_pad.c:
     .bss        start:0x020e3b94 end:0x020e3b98
 
 src/bbp/bbp_file.c:
+    complete
     .text       start:0x020b670c end:0x020b69b4
     .bss        start:0x020e3b98 end:0x020e3b9c
 

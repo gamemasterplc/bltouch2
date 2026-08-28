@@ -29,6 +29,7 @@ src/bl/bl_pad.c:
     .bss        start:0x020ac6cc end:0x020ac6d0
 
 src/bl/bl_file.c:
+    complete
     .text       start:0x0204e5d4 end:0x0204e87c
     .bss        start:0x020ac6d0 end:0x020ac6d4
 

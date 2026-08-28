@@ -138,11 +138,15 @@ void        FS_InitFile(FSFile* file);
 BOOL        FS_OpenFile(FSFile* file, const char* path);
 BOOL        FS_OpenFileEx(FSFile* file, const char* path, u32 flags);
 BOOL        FS_SeekFile(FSFile* file, s32 pos, u32 mode);
-u32         FS_GetLength(FSFile* file);
 u32         FS_ReadFile(FSFile* file, void* buf, u32 size);
 BOOL        FS_CloseFile(FSFile* file);
 inline BOOL FS_IsFile(FSFile* file) {
     return !!(file->flags & FS_FILE_FLAG_FILE);
+}
+
+static inline u32 FS_GetLength(FSFile* file)
+{
+    return file->endRomOffset-file->startRomOffset;
 }
 
 BOOL FS_FindDir(FSFile* file, const char* path);
