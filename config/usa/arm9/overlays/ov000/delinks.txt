@@ -24,6 +24,7 @@ src/bl/bl_fade.c:
     .bss        start:0x020ac6c4 end:0x020ac6cc
 
 src/bl/bl_pad.c:
+    complete
     .text       start:0x0204e3f4 end:0x0204e5d4
     .bss        start:0x020ac6cc end:0x020ac6d0
 
@@ -82,6 +83,7 @@ src/bl/bl_sleep.c:
     .bss        start:0x020ac7a8 end:0x020ac7d0
 
 src/bl/bl_touch.c:
+    complete
     .text       start:0x02054c90 end:0x020550e0
     .bss        start:0x020ac7d0 end:0x020ac7d4
 

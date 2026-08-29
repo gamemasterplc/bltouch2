@@ -41,9 +41,10 @@ void TP_SetCallback(void (*callback)(TPRequestCommand command, TPRequestResult r
 BOOL TP_GetUserInfo(TPCalibrateParam* calibrate);
 void TP_SetCalibrateParam(const TPCalibrateParam* calibrate);
 
-void func_020711c0(void);
-BOOL func_02071254(TPData* data);
-BOOL TP_GetData(TPData* data);
+void TP_RequestSamplingAsync(void);
+BOOL TP_WaitRawResult(TPData* data);
+
+BOOL TP_WaitCalibratedResult(TPData* data);
 
 void TP_GetCalibratedPoint(TPData*, TPData*);
 
@@ -53,9 +54,15 @@ void TP_func_0203271c(u32 param1);
 void TP_GetLatestCalibratedPointInAuto(TPData* data);
 
 inline BOOL TP_RequestRawSampling(TPData* data) {
-    func_020711c0();
-    return func_02071254(data);
+    TP_RequestSamplingAsync();
+    return TP_WaitRawResult(data);
 }
+
+inline BOOL TP_RequestCalibratedSampling(TPData* data) {
+    TP_RequestSamplingAsync();
+    return TP_WaitCalibratedResult(data);
+}
+
 
 inline void TP_RequestAutoSamplingStart(u32 param1, u32 param2, TPData* sampleBuf, u32 sampleBufSize) {
     _TP_RequestAutoSamplingStart(param1, param2, sampleBuf, sampleBufSize);

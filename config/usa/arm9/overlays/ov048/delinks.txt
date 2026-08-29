@@ -31,6 +31,7 @@ src/bbp/bbp_fade.c:
     .bss        start:0x020e3b8c end:0x020e3b94
 
 src/bbp/bbp_pad.c:
+    complete
     .text       start:0x020b652c end:0x020b670c
     .bss        start:0x020e3b94 end:0x020e3b98
 
@@ -82,6 +83,7 @@ src/bbp/bbp_sleep.c:
     .bss        start:0x020e3c64 end:0x020e3c8c
 
 src/bbp/bbp_touch.c:
+    complete
     .text       start:0x020bc744 end:0x020bcccc
     .bss        start:0x020e3c8c end:0x020e3c90
 

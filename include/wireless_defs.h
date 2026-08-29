@@ -1,0 +1,13 @@
+#ifndef WIRELESS_DEFS_H
+#define WIRELESS_DEFS_H
+
+#ifdef SYS_BBP
+#define BL_WIRELESS_MAX_PLAYERS 8
+#define BL_WIRELESS_PLAYER_BUF_SIZE 16
+#else
+#define BL_WIRELESS_MAX_PLAYERS 4
+#define BL_WIRELESS_PLAYER_BUF_SIZE 32
+
+#endif
+
+#endif
