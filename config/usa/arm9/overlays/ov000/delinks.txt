@@ -4,7 +4,6 @@
     .data       start:0x0207dd60 end:0x020ac660 kind:data align:32
     .bss        start:0x020ac660 end:0x020b26e0 kind:bss align:32
 
-
 src/bl/menu/bl_menu_logo.c:
     .text       start:0x0204d760 end:0x0204d9e8
 
@@ -138,7 +137,7 @@ src/bl/filetbl/bl_filetbl_house.c:
 src/bl/filetbl/bl_filetbl_mg03.c:
     .data       start:0x0207f36c end:0x0207f964
 
-src/bl/filetbl/bl_filetbl_mb.c:
+src/bl/filetbl/bl_filetbl_download.c:
     .rodata     start:0x0207a7fc end:0x0207b4dc
     .data       start:0x0207f964 end:0x0207fa1c
 
@@ -265,3 +264,154 @@ src/bl/filetbl/bl_filetbl_mg15.c:
 src/mg/mg23_touchguide.c:
     .text       start:0x0205d854 end:0x0205da9c
     .rodata     start:0x0207cf58 end:0x0207cf98
+
+src/bl/menu/bl_menu.c:
+    .text       start:0x0205da9c end:0x0205e5e0
+    .rodata     start:0x0207cf98 end:0x0207d15c
+    .data       start:0x02094e90 end:0x020950b4
+
+src/bl/menu/bl_menu_music.c:
+    .text       start:0x0205e5e0 end:0x0205e698
+    .data       start:0x020950b4 end:0x02095134
+
+src/bl/menu/bl_menu_bg.c:
+    .text       start:0x0205e698 end:0x0205f438
+    .data       start:0x02095134 end:0x02095144
+
+src/bl/menu/bl_menu_sprite.c:
+    .text       start:0x0205f438 end:0x0205f97c
+
+src/bl/menu/bl_menu_touchobj.c:
+    .text       start:0x0205f97c end:0x0205fcd8
+
+src/bl/menu/bl_menu_playmode.c:
+    .text       start:0x0205fcd8 end:0x020607cc
+    .rodata     start:0x0207d15c end:0x0207d170
+    .data       start:0x02095144 end:0x02095230
+
+src/bl/menu/bl_menu_landmode.c:
+    .text       start:0x020607cc end:0x0206187c
+    .rodata     start:0x0207d170 end:0x0207d17c
+    .data       start:0x02095230 end:0x02095410
+
+src/bl/menu/bl_menu_atrcmode.c:
+    .text       start:0x0206187c end:0x020620dc
+    .data       start:0x02095410 end:0x020954b4
+
+src/bl/menu/bl_menu_charasel.c:
+    .text       start:0x020620dc end:0x020631e8
+    .rodata     start:0x0207d17c end:0x0207d1ac
+    .data       start:0x020954b4 end:0x020955c0
+    .bss        start:0x020aca20 end:0x020aca24
+
+src/bl/menu/bl_menu_continue.c:
+    .text       start:0x020631e8 end:0x020642b0
+    .data       start:0x020955c0 end:0x0209581c
+
+src/bl/menu/bl_menu_message.c:
+    .text       start:0x020642b0 end:0x02064608
+    .rodata     start:0x0207d1ac end:0x0207d1bc
+
+src/bl/filetbl/bl_filetbl_mg20.c:
+    .rodata     start:0x0207d1bc end:0x0207d27c
+    .data       start:0x0209581c end:0x02095edc
+
+src/bl/filetbl/bl_filetbl_mg21.c:
+    .rodata     start:0x0207d27c end:0x0207d31c
+    .data       start:0x02095edc end:0x02096480
+
+src/bl/filetbl/bl_filetbl_field_sun.c:
+    .data       start:0x02096480 end:0x02097c08
+
+src/bl/menu/bl_menu_multimode.c:
+    .text       start:0x02064608 end:0x02064e00
+    .data       start:0x02097c08 end:0x02097cc0
+    .bss        start:0x020aca24 end:0x020aca28
+
+src/bl/menu/bl_menu_multimode_parent.c:
+    .text       start:0x02064e00 end:0x0206584c
+    .data       start:0x02097cc0 end:0x02097d48
+    .bss        start:0x020aca28 end:0x020aca2c
+
+src/bl/menu/bl_menu_multimode_child.c:
+    .text       start:0x0206584c end:0x020663fc
+    .rodata     start:0x0207d31c end:0x0207d324
+    .data       start:0x02097d48 end:0x02097dd0
+    .bss        start:0x020aca2c end:0x020aca30
+
+src/bl/menu/bl_menu_cardcollect.c:
+    .text       start:0x020663fc end:0x020675c8
+    .data       start:0x02097dd0 end:0x020984ac
+    .bss        start:0x020aca30 end:0x020aca34
+
+src/bl/filetbl/bl_filetbl_mg16.c:
+    .rodata     start:0x0207d324 end:0x0207d398
+    .data       start:0x020984ac end:0x020988c8
+
+src/bl/filetbl/bl_filetbl_mg14.c:
+    .rodata     start:0x0207d398 end:0x0207d44c
+    .data       start:0x020988c8 end:0x02098f54
+
+src/bl/filetbl/bl_filetbl_mg27.c:
+    .rodata     start:0x0207d44c end:0x0207d58c
+    .data       start:0x02098f54 end:0x02099a48
+
+src/bl/filetbl/bl_filetbl_mg28.c:
+    .rodata     start:0x0207d58c end:0x0207d614
+    .data       start:0x02099a48 end:0x02099f18
+
+src/bl/filetbl/bl_filetbl_mg12.c:
+    .data       start:0x02099f18 end:0x0209a238
+
+src/bl/filetbl/bl_filetbl_mg19.c:
+    .rodata     start:0x0207d614 end:0x0207d694
+    .data       start:0x0209a238 end:0x0209a6c0
+
+src/bl/filetbl/bl_filetbl_mg17.c:
+    .rodata     start:0x0207d694 end:0x0207d708
+    .data       start:0x0209a6c0 end:0x0209aac4
+
+src/bl/filetbl/bl_filetbl_mg29.c:
+    .rodata     start:0x0207d708 end:0x0207d77c
+    .data       start:0x0209aac4 end:0x0209aecc
+
+src/bl/filetbl/bl_filetbl_field_earth.c:
+    .data       start:0x0209aecc end:0x0209c5f8
+
+src/mg/mgcall.c:
+    .text       start:0x020675c8 end:0x020677ec
+
+src/bhouse/bhouse.c:
+    .text       start:0x020677ec end:0x02068e80
+    .rodata     start:0x0207d77c end:0x0207d8cc
+    .data       start:0x0209c5f8 end:0x0209c658
+    .bss        start:0x020aca34 end:0x020ad058
+
+src/bl/filetbl/bl_filetbl_field_zonebg.c:
+    .data       start:0x0209c658 end:0x0209d400
+
+src/bl/filetbl/bl_filetbl_mg30.c:
+    .rodata     start:0x0207d8cc end:0x0207d94c
+    .data       start:0x0209d400 end:0x0209d85c
+
+src/bl/filetbl/bl_filetbl_mg33.c:
+    .rodata     start:0x0207d94c end:0x0207d9b8
+    .data       start:0x0209d85c end:0x0209dc50
+
+src/bl/filetbl/bl_filetbl_mg22.c:
+    .rodata     start:0x0207d9b8 end:0x0207da40
+    .data       start:0x0209dc50 end:0x0209e13c
+
+src/bl/filetbl/bl_filetbl_mg26.c:
+    .rodata     start:0x0207da40 end:0x0207dc5c
+    .data       start:0x0209e13c end:0x0209f518
+
+src/field/field.c:
+    .text       start:0x02068e80 end:0x02069f78
+    .bss        start:0x020ad058 end:0x020b1220
+
+src/bl/bl_download.c:
+    .text       start:0x02069f78 end:0x0206c0f8
+    .rodata     start:0x0207dc5c end:0x0207dc7c
+    .data       start:0x0209f518 end:0x0209f51c
+    .bss        start:0x020b1220 end:0x020b1700
