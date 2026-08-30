@@ -3,10 +3,11 @@
 
 #include <nitro/types.h>
 
-#define BL_RES_ANIM_GET_END(anim) (BLResAnimData *)((anim)->animFrameOfs+((u8 *)(anim)))
-#define BL_RES_ANIM_GET_FRAME(anim) (BLResAnimFrame *)((anim)->animFrameOfs+((u8 *)(anim)))
-#define BL_RES_ANIM_GET_CELL(anim) (BLResAnimCell *)((anim)->cellOfs+((u8 *)(anim)))
-#define BL_RES_ANIM_GET_OBJ(anim) (BLResAnimObj *)((anim)->objOfs+((u8 *)(anim)))
+#define BL_RES_ANIM_GET_END(anim) ((BLResAnimData *)((anim)->animFrameOfs+((u8 *)(anim))))
+#define BL_RES_ANIM_GET_XFORM(anim) ((BLResAnimXForm *)((anim)->xformOfs+((u8 *)(anim))))
+#define BL_RES_ANIM_GET_FRAME(anim) ((BLResAnimFrame *)((anim)->animFrameOfs+((u8 *)(anim))))
+#define BL_RES_ANIM_GET_CELL(anim) ((BLResAnimCell *)((anim)->cellOfs+((u8 *)(anim))))
+#define BL_RES_ANIM_GET_OBJ(anim) ((BLResAnimObj *)((anim)->objOfs+((u8 *)(anim))))
 
 #define BL_RES_ANIM_TILE_SIZE 32
 
@@ -20,9 +21,17 @@ typedef struct BLResAnimData_s {
 typedef struct BLResAnimFrame_s {
     u16 cell;
     u16 delay;
-    u16 affine;
+    u16 xformIdx;
     u16 pad;
 } BLResAnimFrame;
+
+typedef struct BLResAnimXForm_s {
+    s16 ofsX;
+    s16 ofsY;
+    s32 scaleX;
+    s32 scaleY;
+    u16 rot;
+} BLResAnimXForm;
 
 typedef struct BLResAnimCell_s {
     u16 objBase;
@@ -41,13 +50,13 @@ typedef struct BLResAnimObj_s {
     u16 flipY : 1;
     u16 layerFlag : 2;
     u16 doubleSize : 1;
-    u16 nextOamIdx;
+    u16 tileObjIdx;
     u16 nextObj;
 } BLResAnimObj;
 
 typedef struct BLResAnim_s {
     u32 animFrameOfs;
-    u32 unk4;
+    u32 xformOfs;
     u32 cellOfs;
     u32 objOfs;
     u32 endOfs;
