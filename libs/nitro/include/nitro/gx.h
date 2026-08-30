@@ -447,6 +447,10 @@ inline void GX_SetBGScrOffset(u32 offset) {
     REG_DISPCNT = (REG_DISPCNT & ~0x38000000) | offset;
 }
 
+inline u32 GX_GetBGScrOffset(void) {
+    return ((REG_DISPCNT & 0x38000000) >> 27) << 16;
+}
+
 inline void GX_SetCapture(u32 size, u32 mode, u32 srcA, GXCaptureSrcB srcB, u32 dest, u32 param6, u32 param7) {
     // Unclear how to combine the arguments
     //   size = GX_CAPTURE_SIZE_256x192,

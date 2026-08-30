@@ -11,6 +11,8 @@
 #define BL_FileClose BBP_FileClose
 #endif
 
+#define BL_FILE_GET_DATA_AS(file, type) ((type *)&file->data[0])
+
 typedef struct BLFile_s BLFile;
 
 struct BLFile_s {

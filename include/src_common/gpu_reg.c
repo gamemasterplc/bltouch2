@@ -1,16 +1,16 @@
 #include "gpu_reg.h"
 
 int BL_GpuDispSelect;
-s16 BL_GpuMasterBrightness[DISPLAY_MAX];
-int BL_GpuPlaneMask[DISPLAY_MAX];
-BLGpuRegBlend BL_GpuRegBlend[DISPLAY_MAX];
-BLGpuRegWindow BL_GpuRegWindow[DISPLAY_MAX];
-BLGpuRegScroll BL_GpuRegScroll[DISPLAY_MAX];
+s16 BL_GpuMasterBrightness[BL_DISPLAY_MAX];
+int BL_GpuPlaneMask[BL_DISPLAY_MAX];
+BLGpuRegBlend BL_GpuRegBlend[BL_DISPLAY_MAX];
+BLGpuRegWindow BL_GpuRegWindow[BL_DISPLAY_MAX];
+BLGpuRegScroll BL_GpuRegScroll[BL_DISPLAY_MAX];
 
 void BL_GpuRegInit(void)
 {
     int i;
-    for(i=0; i<DISPLAY_MAX; i++) {
+    for(i=0; i<BL_DISPLAY_MAX; i++) {
         BL_GpuPlaneMask[i] = GX_PLANEMASK_NONE;
         MI_CpuFill16(0, &BL_GpuRegScroll[i], sizeof(BLGpuRegScroll));
         MI_CpuFill16(0, &BL_GpuRegWindow[i], sizeof(BLGpuRegWindow));
@@ -34,20 +34,20 @@ void BL_GpuRegExec(void)
     GX_SetDispSelect(BL_GpuDispSelect);
     
     DISPCNT = (REG_DISPCNT & ~0xFF00);
-    DISPCNT |= (BL_GpuPlaneMask[DISPLAY_MAIN] & 0xFF00);
+    DISPCNT |= (BL_GpuPlaneMask[BL_DISPLAY_MAIN] & 0xFF00);
     REG_DISPCNT = DISPCNT;
     
-    MI_CpuCopy16(&BL_GpuRegScroll[DISPLAY_MAIN], (void *)(&REG_BG0OFS), sizeof(BLGpuRegScroll));
-    MI_CpuCopy16(&BL_GpuRegWindow[DISPLAY_MAIN], (void *)(&REG_WIN0H), sizeof(BLGpuRegWindow));
-    MI_CpuCopy16(&BL_GpuRegBlend[DISPLAY_MAIN], (void *)(&REG_BLDCNT), 6);
-    GX_SetMasterBrightness(BL_GpuMasterBrightness[DISPLAY_MAIN]);
+    MI_CpuCopy16(&BL_GpuRegScroll[BL_DISPLAY_MAIN], (void *)(&REG_BG0OFS), sizeof(BLGpuRegScroll));
+    MI_CpuCopy16(&BL_GpuRegWindow[BL_DISPLAY_MAIN], (void *)(&REG_WIN0H), sizeof(BLGpuRegWindow));
+    MI_CpuCopy16(&BL_GpuRegBlend[BL_DISPLAY_MAIN], (void *)(&REG_BLDCNT), 6);
+    GX_SetMasterBrightness(BL_GpuMasterBrightness[BL_DISPLAY_MAIN]);
     
     DISPCNT = (REG_DISPCNT_SUB & ~0xFF00);
-    DISPCNT |= (BL_GpuPlaneMask[DISPLAY_SUB] & 0xFF00);
+    DISPCNT |= (BL_GpuPlaneMask[BL_DISPLAY_SUB] & 0xFF00);
     REG_DISPCNT_SUB = DISPCNT;
     
-    MI_CpuCopy16(&BL_GpuRegScroll[DISPLAY_SUB], (void *)(&REG_BG0OFS_SUB), sizeof(BLGpuRegScroll));
-    MI_CpuCopy16(&BL_GpuRegWindow[DISPLAY_SUB], (void *)(&REG_WIN0H_SUB), sizeof(BLGpuRegWindow));
-    MI_CpuCopy16(&BL_GpuRegBlend[DISPLAY_SUB], (void *)(&REG_BLDCNT_SUB), 6);
-    GXS_SetMasterBrightness(BL_GpuMasterBrightness[DISPLAY_SUB]);
+    MI_CpuCopy16(&BL_GpuRegScroll[BL_DISPLAY_SUB], (void *)(&REG_BG0OFS_SUB), sizeof(BLGpuRegScroll));
+    MI_CpuCopy16(&BL_GpuRegWindow[BL_DISPLAY_SUB], (void *)(&REG_WIN0H_SUB), sizeof(BLGpuRegWindow));
+    MI_CpuCopy16(&BL_GpuRegBlend[BL_DISPLAY_SUB], (void *)(&REG_BLDCNT_SUB), 6);
+    GXS_SetMasterBrightness(BL_GpuMasterBrightness[BL_DISPLAY_SUB]);
 }

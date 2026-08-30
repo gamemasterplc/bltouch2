@@ -47,11 +47,11 @@ typedef struct BLGpuRegBlend_s {
 
 
 extern int BL_GpuDispSelect;
-extern s16 BL_GpuMasterBrightness[DISPLAY_MAX];
-extern int BL_GpuPlaneMask[DISPLAY_MAX];
-extern BLGpuRegBlend BL_GpuRegBlend[DISPLAY_MAX];
-extern BLGpuRegWindow BL_GpuRegWindow[DISPLAY_MAX];
-extern BLGpuRegScroll BL_GpuRegScroll[DISPLAY_MAX];
+extern s16 BL_GpuMasterBrightness[BL_DISPLAY_MAX];
+extern int BL_GpuPlaneMask[BL_DISPLAY_MAX];
+extern BLGpuRegBlend BL_GpuRegBlend[BL_DISPLAY_MAX];
+extern BLGpuRegWindow BL_GpuRegWindow[BL_DISPLAY_MAX];
+extern BLGpuRegScroll BL_GpuRegScroll[BL_DISPLAY_MAX];
 
 void BL_GpuRegInit(void);
 void BL_GpuRegExec(void);
