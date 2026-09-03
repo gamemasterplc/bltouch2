@@ -7,7 +7,7 @@ void BL_SortListCreate(BLSortList *list, u8 cmp, u8 preserveOrder)
 {
     list->cmp = cmp;
     list->preserveOrder = preserveOrder;
-    list->head = list->tail = list->unk = NULL;
+    list->head = list->tail = list->unk1 = NULL;
 }
 
 void BL_SortListNodeInsert(BLSortList *list, BLSortListNode *node, int order)

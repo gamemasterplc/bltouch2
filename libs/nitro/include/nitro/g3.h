@@ -109,10 +109,20 @@ inline BOOL G3X_IsGeometryBusy(void) {
 }
 
 inline void G3X_AntiAlias(BOOL param1) {
-    REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 0x4);
+    if(!param1) {
+        REG_DISP3DCNT = REG_DISP3DCNT & (u16)~0x3010;
+    } else {
+        REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 0x4);
+    }
+    
 }
 inline void G3X_AlphaBlend(BOOL param1) {
     REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 0x3);
+}
+
+static inline void G3_MaterialColorDiffAmb(u16 diffCol, u16 ambCol, BOOL setVtxColor)
+{
+    REG_GFX_FIFO_MATERIAL_DIFFUSE_AMBIENT = (diffCol & 0x7FFF) | (setVtxColor << 15) | (ambCol << 16);
 }
 
 #ifdef __cplusplus

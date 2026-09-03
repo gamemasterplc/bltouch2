@@ -2934,14 +2934,14 @@ BBP_SprKill kind:function(arm,size=0x1ac) addr:0x020be318
 BBP_SprSetAnim kind:function(arm,size=0x6c) addr:0x020be4c4
 BBP_SprSetPrio kind:function(arm,size=0x50) addr:0x020be530
 BBP_SprSetLayerPrio kind:function(arm,size=0x64) addr:0x020be580
-SprNew kind:function(arm,size=0x64) local addr:0x020be5e4
-SprFree kind:function(arm,size=0x38) local addr:0x020be648
+NewSpr kind:function(arm,size=0x64) local addr:0x020be5e4
+FreeSpr kind:function(arm,size=0x38) local addr:0x020be648
 BBP_SprExec kind:function(arm,size=0x74) addr:0x020be680
 SprDraw kind:function(arm,size=0x24) local addr:0x020be6f4
-SprForceAnimReset kind:function(arm,size=0xb8) local addr:0x020be718
+SprLoopAnim kind:function(arm,size=0xb8) local addr:0x020be718
 SprUpdateAnim kind:function(arm,size=0x1e0) local addr:0x020be7d0
-SprDrawMain kind:function(arm,size=0xb4c) local addr:0x020be9b0
-SprDrawText kind:function(arm,size=0x244) local addr:0x020bf4fc
+SprDrawAnim kind:function(arm,size=0xb4c) local addr:0x020be9b0
+SprDrawRaw kind:function(arm,size=0x244) local addr:0x020bf4fc
 DrawQuad kind:function(arm,size=0x27c) local addr:0x020bf740
 TransformCellPos kind:function(arm,size=0x1d4) local addr:0x020bf9bc
 BBP_ObjInit kind:function(arm,size=0x4c) addr:0x020bfb90
@@ -5392,7 +5392,7 @@ data_ov048_020de278 kind:data(any) addr:0x020de278
 data_ov048_020de298 kind:data(any) addr:0x020de298
 data_ov048_020de2b8 kind:data(any) addr:0x020de2b8
 data_ov048_020de2d8 kind:data(any) addr:0x020de2d8
-SprFuncTbl kind:data(any) local addr:0x020de2f8
+DrawFunc kind:data(any) local addr:0x020de2f8
 FontFileTbl kind:data(any) local addr:0x020de304
 Pow10Tbl kind:data(any) local addr:0x020de30c
 FontTbl kind:data(any) local addr:0x020de334

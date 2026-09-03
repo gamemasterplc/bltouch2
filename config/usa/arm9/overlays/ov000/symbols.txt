@@ -251,21 +251,21 @@ BL_SprSetAnim kind:function(arm,size=0x6c) addr:0x02057284
 BL_SprSetLayer kind:function(arm,size=0x48) addr:0x020572f0
 BL_SprSetPrio kind:function(arm,size=0x50) addr:0x02057338
 BL_SprSetLayerPrio kind:function(arm,size=0x64) addr:0x02057388
-BL_SprGetLayer kind:function(arm,size=0x10) addr:0x020573ec
-BL_SprCreate3D kind:function(arm,size=0xac) addr:0x020573fc
-BL_SprKill3D kind:function(arm,size=0x18) addr:0x020574a8
-BL_SprSetAnim3D kind:function(arm,size=0x50) addr:0x020574c0
-BL_SprSetPrio2 kind:function(arm,size=0x50) addr:0x02057510
-BL_SprCreateText kind:function(arm,size=0xd0) addr:0x02057560
-BL_SprKillText kind:function(arm,size=0x18) addr:0x02057630
+BL_SprGetPrio kind:function(arm,size=0x10) addr:0x020573ec
+BL_Spr3DCreate kind:function(arm,size=0xac) addr:0x020573fc
+BL_Spr3DKill kind:function(arm,size=0x18) addr:0x020574a8
+BL_Spr3DSetAnim kind:function(arm,size=0x50) addr:0x020574c0
+BL_Spr3DSetPrio kind:function(arm,size=0x50) addr:0x02057510
+BL_SprRawCreate kind:function(arm,size=0xd0) addr:0x02057560
+BL_SprRawKill kind:function(arm,size=0x18) addr:0x02057630
 NewSpr kind:function(arm,size=0x64) local addr:0x02057648
 FreeSpr kind:function(arm,size=0x38) local addr:0x020576ac
 BL_SprExec kind:function(arm,size=0x7c) addr:0x020576e4
 SprDraw kind:function(arm,size=0x24) local addr:0x02057760
-SprForceAnimReset kind:function(arm,size=0xb8) local addr:0x02057784
+SprLoopAnim kind:function(arm,size=0xb8) local addr:0x02057784
 SprUpdateAnim kind:function(arm,size=0x1e0) local addr:0x0205783c
-SprDrawMain kind:function(arm,size=0xb44) local addr:0x02057a1c
-SprDrawText kind:function(arm,size=0x244) local addr:0x02058560
+SprDrawAnim kind:function(arm,size=0xb44) local addr:0x02057a1c
+SprDrawRaw kind:function(arm,size=0x244) local addr:0x02058560
 DrawQuad kind:function(arm,size=0x2a0) local addr:0x020587a4
 TransformCellPos kind:function(arm,size=0x1d4) local addr:0x02058a44
 BL_ObjInit kind:function(arm,size=0x4c) addr:0x02058c18
@@ -1301,7 +1301,7 @@ OverlayTable kind:data(any) local addr:0x0207e018
 MessOverlay kind:data(any) local addr:0x0207e024
 SceneOverlay kind:data(any) local addr:0x0207e038
 data_ov000_0207e0fc kind:data(any) addr:0x0207e0fc
-SprFuncTbl kind:data(any) local addr:0x0207e110
+DrawFunc kind:data(any) local addr:0x0207e110
 FileTbl kind:data(any) local addr:0x0207e11c
 FileTbl_E kind:data(any) local addr:0x0207e130
 data_ov000_0207e240 kind:data(any) addr:0x0207e240

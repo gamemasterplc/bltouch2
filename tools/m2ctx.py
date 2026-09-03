@@ -24,6 +24,7 @@ CXX_FLAGS = [
     '-Ilibs/c/include',
     '-Ilibs/cpp/include',
     '-Ilibs/nitro/include',
+    '-Ilibs/nnsys/include',
     '-Ilibs/runtime/include',
 ]
 

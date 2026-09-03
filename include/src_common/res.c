@@ -21,7 +21,7 @@ u32 BL_ResGetAnimMaxVRamSize(void *res)
     BLResAnim *resAnim = res;
     u32 size = 0;
     BLResAnimData *iter;
-    for(iter=&resAnim->anim[0]; iter<BL_RES_ANIM_GET_END(resAnim); iter++) {
+    for(iter=&resAnim->anim[0]; iter<BL_RES_ANIM_GET_ANIM_END(resAnim); iter++) {
         if(size < iter->numTiles*BL_RES_ANIM_TILE_SIZE) {
             size = iter->numTiles*BL_RES_ANIM_TILE_SIZE;
         }

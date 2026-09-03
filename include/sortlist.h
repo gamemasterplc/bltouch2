@@ -16,7 +16,8 @@ typedef struct BLSortList_s {
     u8 preserveOrder;
     BLSortListNode *head;
     BLSortListNode *tail;
-    BLSortListNode *unk;
+    BLSortListNode *unk1;
+    BLSortListNode *unk2;
 } BLSortList;
 
 struct BLSortListNode_s {

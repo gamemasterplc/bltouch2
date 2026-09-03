@@ -3,13 +3,18 @@
 
 #include <nitro/types.h>
 
-#define BL_RES_ANIM_GET_END(anim) ((BLResAnimData *)((anim)->animFrameOfs+((u8 *)(anim))))
-#define BL_RES_ANIM_GET_XFORM(anim) ((BLResAnimXForm *)((anim)->xformOfs+((u8 *)(anim))))
-#define BL_RES_ANIM_GET_FRAME(anim) ((BLResAnimFrame *)((anim)->animFrameOfs+((u8 *)(anim))))
-#define BL_RES_ANIM_GET_CELL(anim) ((BLResAnimCell *)((anim)->cellOfs+((u8 *)(anim))))
-#define BL_RES_ANIM_GET_OBJ(anim) ((BLResAnimObj *)((anim)->objOfs+((u8 *)(anim))))
+//Must be done this way to prevent signedness issues
+#define BL_RES_ANIM_GET_ANIM_MAX(res) ((((res)->animFrameOfs+((u8 *)(res)))-(u8 *)(&(res)->anim[0]))/sizeof(BLResAnimData))
+
+#define BL_RES_ANIM_GET_ANIM_END(res) ((BLResAnimData *)((res)->animFrameOfs+((u8 *)(res))))
+#define BL_RES_ANIM_GET_XFORM(res) ((BLResAnimXForm *)((res)->xformOfs+((u8 *)(res))))
+#define BL_RES_ANIM_GET_FRAME(res) ((BLResAnimFrame *)((res)->animFrameOfs+((u8 *)(res))))
+#define BL_RES_ANIM_GET_CELL(res) ((BLResAnimCell *)((res)->cellOfs+((u8 *)(res))))
+#define BL_RES_ANIM_GET_OBJ(res) ((BLResAnimObj *)((res)->objOfs+((u8 *)(res))))
+#define BL_RES_ANIM_GET_OBJ_XFORM(res) ((BLResAnimObjXForm *)((res)->objXFormOfs+((u8 *)(res))))
 
 #define BL_RES_ANIM_TILE_SIZE 32
+#define BL_RES_ANIM_IDX_NULL 0xFFFF
 
 typedef struct BLResAnimData_s {
     u16 baseFrame;
@@ -51,16 +56,23 @@ typedef struct BLResAnimObj_s {
     u16 layerFlag : 2;
     u16 doubleSize : 1;
     u16 tileObjIdx;
-    u16 nextObj;
+    u16 objXFormIdx;
 } BLResAnimObj;
 
+typedef struct BLResAnimObjXForm_s {
+    s32 scaleX;
+    s32 scaleY;
+    u16 rot;
+} BLResAnimObjXForm;
+
 typedef struct BLResAnim_s {
-    u32 animFrameOfs;
+    vu32 animFrameOfs;
     u32 xformOfs;
     u32 cellOfs;
     u32 objOfs;
-    u32 endOfs;
+    u32 objXFormOfs;
     BLResAnimData anim[];
 } BLResAnim;
+
 
 #endif

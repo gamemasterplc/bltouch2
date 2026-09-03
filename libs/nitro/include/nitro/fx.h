@@ -19,8 +19,29 @@ extern "C" {
 #define FX32_ONE (fx32)(1 << FX32_SHIFT)
 #define FX16_ONE (fx16)(1 << FX16_SHIFT)
 
+#define FX32_CONVERT(x) (fx32)(((x) > 0) ? (((x) << 12)+0.5f) : (((x) << 12)-0.5f))
+
+
 typedef s32 fx32;
 typedef s16 fx16;
+
+extern const fx16 FX_SinCosTable_[];
+
+static inline fx32 FX_Mul(fx32 x, fx32 y)
+{
+    return (((s64)x*(s64)y)+0x800) >> FX32_SHIFT;
+}
+
+static inline fx32 FX_SinIdx(u16 angle)
+{
+    return FX_SinCosTable_[(angle >> 4)*2];
+}
+
+static inline fx32 FX_CosIdx(u16 angle)
+{
+    return FX_SinCosTable_[((angle >> 4)*2)+1];
+}
+
 
 typedef union VecFx32 {
     struct {

@@ -6,6 +6,8 @@
 #include "nitro/fs.h"
 #include "nitro/fx.h"
 #include "nitro/g2.h"
+#include "nitro/g3.h"
+
 #include "nitro/gx.h"
 #include "nitro/hw.h"
 
