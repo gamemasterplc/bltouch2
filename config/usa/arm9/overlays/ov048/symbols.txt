@@ -585,7 +585,7 @@ DWCi_GsFree kind:function(arm,size=0x18) addr:0x02065070
 DWC_InitAuthServer kind:function(arm,size=0x60) addr:0x02065088
 DWC_SetAuthServer kind:function(arm,size=0x50) addr:0x020650e8
 DWC_ConnectInetAsync kind:function(arm,size=0xb0) addr:0x02065138
-func_ov048_020651e8 kind:function(arm,size=0x40) addr:0x020651e8
+DWC_CheckInet kind:function(arm,size=0x40) addr:0x020651e8
 DWC_ProcessInet kind:function(arm,size=0x78) addr:0x02065228
 DWC_GetInetStatus kind:function(arm,size=0xb0) addr:0x020652a0
 DWC_CleanupInet kind:function(arm,size=0x60) addr:0x02065350
@@ -2729,9 +2729,9 @@ BBP_BackupIsBusy kind:function(arm,size=0x1c) addr:0x020b5b28
 BBP_BackupIsLoadFail kind:function(arm,size=0x1c) addr:0x020b5b44
 BBP_BackupIsCorrupt kind:function(arm,size=0x1c) addr:0x020b5b60
 BBP_BackupForceErase kind:function(arm,size=0x1c) addr:0x020b5b7c
-func_ov048_020b5b98 kind:function(arm,size=0x24) addr:0x020b5b98
-func_ov048_020b5bbc kind:function(arm,size=0x1c) addr:0x020b5bbc
-func_ov048_020b5bd8 kind:function(arm,size=0x1c) addr:0x020b5bd8
+BBP_BackupIsSaveFail kind:function(arm,size=0x24) addr:0x020b5b98
+BBP_BackupIsNeedDWCWiFiId kind:function(arm,size=0x1c) addr:0x020b5bbc
+BBP_BackupClearNeedDWCWiFiId kind:function(arm,size=0x1c) addr:0x020b5bd8
 func_ov048_020b5bf4 kind:function(arm,size=0x1c) addr:0x020b5bf4
 BBP_BackupIsClean kind:function(arm,size=0x1c) addr:0x020b5c10
 BBP_BackupSetClean kind:function(arm,size=0x1c) addr:0x020b5c2c
@@ -3039,7 +3039,7 @@ BBP_SndClose kind:function(arm,size=0x98) addr:0x020c2634
 BBP_SndArcRestore kind:function(arm,size=0x1c) addr:0x020c26cc
 BBP_SndSeqInit kind:function(arm,size=0x54) addr:0x020c26e8
 BBP_SndPlayMusic kind:function(arm,size=0x88) addr:0x020c273c
-BBP_SndFadeMusic kind:function(arm,size=0x30) addr:0x020c27c4
+BBP_SndStopMusic kind:function(arm,size=0x30) addr:0x020c27c4
 BBP_SndFadeInMusic kind:function(arm,size=0x44) addr:0x020c27f4
 BBP_SndFadeOutMusic kind:function(arm,size=0x44) addr:0x020c2838
 BBP_SndSetMusicVolume kind:function(arm,size=0x34) addr:0x020c287c
@@ -3060,10 +3060,10 @@ BBP_MicAmpOff kind:function(arm,size=0x40) addr:0x020c2d0c
 BBP_MicResetTimer kind:function(arm,size=0x1c) addr:0x020c2d4c
 func_ov048_020c2d68 kind:function(arm,size=0x14) addr:0x020c2d68
 func_ov048_020c2d7c kind:function(arm,size=0x10) addr:0x020c2d7c
-func_ov048_020c2d8c kind:function(arm,size=0x54) addr:0x020c2d8c
-func_ov048_020c2de0 kind:function(arm,size=0x28) addr:0x020c2de0
-func_ov048_020c2e08 kind:function(arm,size=0xbc) addr:0x020c2e08
-func_ov048_020c2ec4 kind:function(arm,size=0x14) addr:0x020c2ec4
+BBP_DWCInit kind:function(arm,size=0x54) addr:0x020c2d8c
+BBP_DWCCreate kind:function(arm,size=0x28) addr:0x020c2de0
+BBP_DWCExec kind:function(arm,size=0xbc) addr:0x020c2e08
+BBP_DWCGetState kind:function(arm,size=0x14) addr:0x020c2ec4
 func_ov048_020c2ed8 kind:function(arm,size=0x10) addr:0x020c2ed8
 func_ov048_020c2ee8 kind:function(arm,size=0x10) addr:0x020c2ee8
 func_ov048_020c2ef8 kind:function(arm,size=0x10) addr:0x020c2ef8
@@ -3078,7 +3078,7 @@ func_ov048_020c2fc0 kind:function(arm,size=0x10) addr:0x020c2fc0
 func_ov048_020c2fd0 kind:function(arm,size=0x10) addr:0x020c2fd0
 func_ov048_020c2fe0 kind:function(arm,size=0x10) addr:0x020c2fe0
 func_ov048_020c2ff0 kind:function(arm,size=0x10) addr:0x020c2ff0
-func_ov048_020c3000 kind:function(arm,size=0x14) addr:0x020c3000
+BBP_DWCGetMyAID kind:function(arm,size=0x14) addr:0x020c3000
 func_ov048_020c3014 kind:function(arm,size=0x14) addr:0x020c3014
 func_ov048_020c3028 kind:function(arm,size=0x14) addr:0x020c3028
 func_ov048_020c303c kind:function(arm,size=0x1c) addr:0x020c303c
@@ -3106,7 +3106,7 @@ func_ov048_020c34c8 kind:function(arm,size=0x24) addr:0x020c34c8
 func_ov048_020c34ec kind:function(arm,size=0x20) addr:0x020c34ec
 func_ov048_020c350c kind:function(arm,size=0x20) addr:0x020c350c
 func_ov048_020c352c kind:function(arm,size=0x1c) addr:0x020c352c
-func_ov048_020c3548 kind:function(arm,size=0x24) addr:0x020c3548
+BBP_DWCCheckAIDBitmap kind:function(arm,size=0x24) addr:0x020c3548
 func_ov048_020c356c kind:function(arm,size=0x20) addr:0x020c356c
 func_ov048_020c358c kind:function(arm,size=0x20) addr:0x020c358c
 func_ov048_020c35ac kind:function(arm,size=0x6c) addr:0x020c35ac
@@ -5399,7 +5399,7 @@ FontTbl kind:data(any) local addr:0x020de334
 data_ov048_020de36c kind:data(any) addr:0x020de36c
 data_ov048_020de388 kind:data(any) addr:0x020de388
 data_ov048_020de3a8 kind:data(any) addr:0x020de3a8
-data_ov048_020de3ac kind:data(any) addr:0x020de3ac
+@2273 kind:data(any) local addr:0x020de3ac
 data_ov048_020de3c8 kind:data(any) addr:0x020de3c8
 data_ov048_020de3d4 kind:data(any) addr:0x020de3d4
 data_ov048_020de3dc kind:data(any) addr:0x020de3dc

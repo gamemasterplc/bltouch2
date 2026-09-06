@@ -5,10 +5,10 @@
 #include <nitro/os/thread.h>
 #include <nitro/types.h>
 
-typedef struct FS_FileIdentifier {
+typedef struct {
     /* 0x00 */ struct FS_Record* record;
     /* 0x04 */ u32               fileID;
-} FS_FileIdentifier;
+} FSFileID;
 
 typedef struct FS_FilePosition {
     /* 0x00 */ struct FS_Record* record;
@@ -22,7 +22,7 @@ typedef struct FS_FileArgs_NormalizePath {
     const char*     path;
     BOOL            isDirectory;
     union {
-        FS_FileIdentifier* file;
+        FSFileID* file;
         FS_FilePosition*   directory;
     } response;
 } FS_FileArgs_PathNormalize;
@@ -44,7 +44,7 @@ typedef struct FS_FileArgs_OpenImmediate {
 } FS_FileArgs_OpenImmediate;
 
 typedef struct FS_FileArgs_OpenFromID {
-    FS_FileIdentifier iden;
+    FSFileID iden;
 } FS_FileArgs_OpenFromID;
 
 typedef struct FS_File {
@@ -69,13 +69,13 @@ typedef struct FS_File {
 
 void FS_FileInit(FS_File* file);
 
-BOOL FS_FilePathNormalize(FS_File* file, const char* path, FS_FileIdentifier* iden, FS_FilePosition* dirPosition);
+BOOL FS_FilePathNormalize(FS_File* file, const char* path, FSFileID* iden, FS_FilePosition* dirPosition);
 
-BOOL FS_FilePathAsIden(FS_FileIdentifier* iden, const char* path);
+BOOL FS_ConvertPathToFileID(FSFileID* id, const char* path);
 
 BOOL FS_FileOpenImmediate(FS_File* file, FS_Record* record, u32 startPos, u32 endPos, u32 fileIdx);
 
-BOOL FS_FileOpenFromIden(FS_File* file, FS_FileIdentifier iden);
+BOOL FS_OpenFileFast(FS_File* file, FSFileID id);
 
 BOOL FS_FileOpen(FS_File* file, const char* path);
 

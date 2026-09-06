@@ -226,7 +226,7 @@ BL_SndPause kind:function(arm,size=0x88) addr:0x02056864
 BL_SndSeqInit kind:function(arm,size=0x58) addr:0x020568ec
 BL_SndGetHeapFreeSize kind:function(arm,size=0x38) addr:0x02056944
 BL_SndPlayMusic kind:function(arm,size=0x88) addr:0x0205697c
-BL_SndFadeMusic kind:function(arm,size=0x30) addr:0x02056a04
+BL_SndStopMusic kind:function(arm,size=0x30) addr:0x02056a04
 BL_SndFadeInMusic kind:function(arm,size=0x44) addr:0x02056a34
 BL_SndFadeOutMusic kind:function(arm,size=0x44) addr:0x02056a78
 BL_SndTempoFadeMusic kind:function(arm,size=0x44) addr:0x02056abc
@@ -992,10 +992,10 @@ func_ov000_020782e4 kind:function(arm,size=0x90) addr:0x020782e4
 func_ov000_02078374 kind:function(arm,size=0x188) addr:0x02078374
 WLFuncTbl kind:data(any) local addr:0x020784fc
 ColorTransferTypeTbl kind:data(any) local addr:0x02078528
-GrpZoneTbl kind:data(any) local addr:0x02078560
-GrpZoneEvilTbl kind:data(any) local addr:0x02078584
-GrpMgTbl kind:data(any) local addr:0x020785a8
-MusicMgTbl kind:data(any) local addr:0x020785d8
+grpTbl$2014 kind:data(any) local addr:0x02078560
+grpTbl$2022 kind:data(any) local addr:0x02078584
+grpTbl$2030 kind:data(any) local addr:0x020785a8
+musTbl$2109 kind:data(any) local addr:0x020785d8
 ImageAddrMask kind:data(any) local addr:0x02078608
 ImageTransferType kind:data(any) local addr:0x0207860c
 SprSizeTbl kind:data(any) local addr:0x02078614
@@ -1300,7 +1300,7 @@ ModeOverlay kind:data(any) local addr:0x0207e010
 OverlayTable kind:data(any) local addr:0x0207e018
 MessOverlay kind:data(any) local addr:0x0207e024
 SceneOverlay kind:data(any) local addr:0x0207e038
-data_ov000_0207e0fc kind:data(any) addr:0x0207e0fc
+@2350 kind:data(any) local addr:0x0207e0fc
 DrawFunc kind:data(any) local addr:0x0207e110
 FileTbl kind:data(any) local addr:0x0207e11c
 FileTbl_E kind:data(any) local addr:0x0207e130
