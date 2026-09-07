@@ -393,7 +393,7 @@ void BL_SndPlaySE(s32 seqArcNo, s32 seNo)
     NNS_SndArcPlayerStartSeqArc(&SndWork->seHandle, seqArcNo, seNo);
     #ifdef SYS_BBP
     NNS_SndPlayerSetVolume(&SndWork->seHandle, 127);
-    if(BBP_DWCGetState() == 5 && BBP_DWCCheckAIDBitmap(BBP_DWCGetMyAID())) {
+    if(BBP_DWCGetState() == 5 && BBP_DWCCheckVoiceBitmap(BBP_DWCGetMyAID())) {
         NNS_SndPlayerSetVolume(&SndWork->seHandle, 32);
     }
     #endif

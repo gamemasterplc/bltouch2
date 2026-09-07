@@ -5,6 +5,6 @@
 
 int BBP_DWCGetState(void);
 int BBP_DWCGetMyAID(void);
-BOOL BBP_DWCCheckAIDBitmap(int aid);
+BOOL BBP_DWCCheckVoiceBitmap(int aid);
 
 #endif

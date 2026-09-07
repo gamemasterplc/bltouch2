@@ -26,10 +26,10 @@ FldChr_GetBossBaseAnim kind:function(arm,size=0x134) addr:0x020b4148
 FldChr_GetSpecial1BaseAnim kind:function(arm,size=0x118) addr:0x020b427c
 FldChr_GetSpecial2BaseAnim kind:function(arm,size=0xac) addr:0x020b4394
 FldChr_GetSpecial3BaseAnim kind:function(arm,size=0xc4) addr:0x020b4440
-FldCol_SetCollision kind:function(arm,size=0x70) addr:0x020b4504
-FldCol_SetSideCollision kind:function(arm,size=0x80) addr:0x020b4574
+FldCol_SetFlagCollision kind:function(arm,size=0x70) addr:0x020b4504
+FldCol_SetMgCollision kind:function(arm,size=0x80) addr:0x020b4574
 func_ov002_020b45f4 kind:function(arm,size=0xfc) addr:0x020b45f4
-FldCol_RemoveCollision kind:function(arm,size=0x68) addr:0x020b46f0
+FldCol_RemoveFlagCollision kind:function(arm,size=0x68) addr:0x020b46f0
 func_ov002_020b4758 kind:function(arm,size=0xfc) addr:0x020b4758
 FldCol_GetType kind:function(arm,size=0x58) addr:0x020b4854
 FldCol_IsExit kind:function(arm,size=0x1c) addr:0x020b48ac
@@ -99,7 +99,7 @@ FldChr_SetSpeed kind:function(arm,size=0x28) addr:0x020b7d2c
 FldChr_Move kind:function(arm,size=0x184) addr:0x020b7d54
 FldChr_Move8Dir kind:function(arm,size=0xb8) addr:0x020b7ed8
 FldChr_MoveSlide kind:function(arm,size=0x130) addr:0x020b7f90
-FldChr_MovePath kind:function(arm,size=0x78) addr:0x020b80c0
+FldChr_SetPathSpeed kind:function(arm,size=0x78) addr:0x020b80c0
 FldChr_MoveAuto kind:function(arm,size=0x188) addr:0x020b8138
 FldChr_MoveExitStart kind:function(arm,size=0x158) addr:0x020b82c0
 FldChr_MoveExit kind:function(arm,size=0x5b4) addr:0x020b8418
@@ -145,7 +145,7 @@ Fld_StartMGBonus kind:function(arm,size=0x254) addr:0x020bb978
 Fld_StartBHouseBonus kind:function(arm,size=0x254) addr:0x020bbbcc
 FldMus_IsAfterAtrc kind:function(arm,size=0xb0) addr:0x020bbe20
 FldMus_IsAfterBHouse kind:function(arm,size=0xcc) addr:0x020bbed0
-FldMus_IsEarthElgPre kind:function(arm,size=0xb4) addr:0x020bbf9c
+FldMus_IsElgPre kind:function(arm,size=0xb4) addr:0x020bbf9c
 FldTouch_Init kind:function(arm,size=0x20c) addr:0x020bc050
 FldTouch_Close kind:function(arm,size=0xd0) addr:0x020bc25c
 FldTouch_Exec kind:function(arm,size=0xd4) addr:0x020bc32c
@@ -541,8 +541,8 @@ func_ov002_020d6fe0 kind:function(arm,size=0x170) addr:0x020d6fe0
 func_ov002_020d7150 kind:function(arm,size=0x78) addr:0x020d7150
 FldEv_ExecBonus kind:function(arm,size=0x2fc) addr:0x020d71c8
 FldEv_ExecTreasureBoxOpen kind:function(arm,size=0x3f4) addr:0x020d74c4
-func_ov002_020d78b8 kind:function(arm,size=0x310) addr:0x020d78b8
-func_ov002_020d7bc8 kind:function(arm,size=0x1e4) addr:0x020d7bc8
+FldEv_ExecTreasureBoxSwimOpen kind:function(arm,size=0x310) addr:0x020d78b8
+FldEv_Exec3PieceBonus kind:function(arm,size=0x1e4) addr:0x020d7bc8
 FldEv_ExecCupOpen kind:function(arm,size=0x794) addr:0x020d7dac
 func_ov002_020d8540 kind:function(arm,size=0x60) addr:0x020d8540
 func_ov002_020d85a0 kind:function(arm,size=0x60) addr:0x020d85a0
@@ -551,26 +551,26 @@ FldEv_ExecStamp kind:function(arm,size=0x264) addr:0x020d8694
 FldEv_ExecBombExplode kind:function(arm,size=0x7b4) addr:0x020d88f8
 FldEv_ExecBombPedestal kind:function(arm,size=0x3b4) addr:0x020d90ac
 FldEv_ExecSandSweepStart kind:function(arm,size=0x34) addr:0x020d9460
-FldEv_ExecSandSweepEnd kind:function(arm,size=0x14c) addr:0x020d9494
-func_ov002_020d95e0 kind:function(arm,size=0xd8) addr:0x020d95e0
+FldEv_ExecSandSweepLose kind:function(arm,size=0x14c) addr:0x020d9494
+FldEv_ExecSandSweepWin kind:function(arm,size=0xd8) addr:0x020d95e0
 FldEv_ExecTruck kind:function(arm,size=0x164) addr:0x020d96b8
-func_ov002_020d981c kind:function(arm,size=0x1e4) addr:0x020d981c
+FldEv_ExecTruckDropOff kind:function(arm,size=0x1e4) addr:0x020d981c
 FldEv_ExecZoneWarp kind:function(arm,size=0x214) addr:0x020d9a00
 FldEv_ExecTreeShakeStart kind:function(arm,size=0x5c) addr:0x020d9c14
-FldEv_ExecTreeShakeEnd kind:function(arm,size=0xb4) addr:0x020d9c70
+FldEv_ExecTreeShakeFail kind:function(arm,size=0xb4) addr:0x020d9c70
 FldEv_ExecTBBMUp kind:function(arm,size=0x670) addr:0x020d9d24
 FldEv_ExecTBBMDown kind:function(arm,size=0x4b0) addr:0x020da394
 FldEv_ExecTBBMLongStart kind:function(arm,size=0x3c0) addr:0x020da844
 FldEv_ExecTBBMLongUp kind:function(arm,size=0x3f8) addr:0x020dac04
 FldEv_ExecTBBMLongDown kind:function(arm,size=0x3bc) addr:0x020daffc
 FldEv_ExecTightrope kind:function(arm,size=0x438) addr:0x020db3b8
-func_ov002_020db7f0 kind:function(arm,size=0x1dc) addr:0x020db7f0
+FldEv_ExecDisguiseEnd kind:function(arm,size=0x1dc) addr:0x020db7f0
 FldEv_ExecEvilOut kind:function(arm,size=0x1a4) addr:0x020db9cc
-func_ov002_020dbb70 kind:function(arm,size=0x1f4) addr:0x020dbb70
+FldEv_ExecEvilStart kind:function(arm,size=0x1f4) addr:0x020dbb70
 func_ov002_020dbd64 kind:function(arm,size=0x1ec) addr:0x020dbd64
 func_ov002_020dbf50 kind:function(arm,size=0xcc) addr:0x020dbf50
 func_ov002_020dc01c kind:function(arm,size=0x90) addr:0x020dc01c
-func_ov002_020dc0ac kind:function(arm,size=0x32c) addr:0x020dc0ac
+FldEv_ExecEvent kind:function(arm,size=0x32c) addr:0x020dc0ac
 func_ov002_020dc3d8 kind:function(arm,size=0x28) addr:0x020dc3d8
 func_ov002_020dc400 kind:function(arm,size=0x1b0) addr:0x020dc400
 func_ov002_020dc5b0 kind:function(arm,size=0x104) addr:0x020dc5b0
@@ -582,39 +582,39 @@ func_ov002_020dc8d4 kind:function(arm,size=0x20) addr:0x020dc8d4
 func_ov002_020dc8f4 kind:function(arm,size=0x94) addr:0x020dc8f4
 func_ov002_020dc988 kind:function(arm,size=0x5c) addr:0x020dc988
 FldEv_CameraMoveTo kind:function(arm,size=0x44) addr:0x020dc9e4
-func_ov002_020dca28 kind:function(arm,size=0x8) addr:0x020dca28
+FldEv_ExecNull kind:function(arm,size=0x8) addr:0x020dca28
 func_ov002_020dca30 kind:function(arm,size=0x28c) addr:0x020dca30
 func_ov002_020dccbc kind:function(arm,size=0x90) addr:0x020dccbc
 func_ov002_020dcd4c kind:function(arm,size=0x40) addr:0x020dcd4c
 func_ov002_020dcd8c kind:function(arm,size=0x80) addr:0x020dcd8c
 FldEvStar_ExecSwimStart kind:function(arm,size=0x1ac) addr:0x020dce0c
 FldEvStar_ExecSwimEnd kind:function(arm,size=0x218) addr:0x020dcfb8
-FldEvStar_HorseScare kind:function(arm,size=0x44c) addr:0x020dd1d0
-FldEvStar_HorseScareEnd kind:function(arm,size=0x10c) addr:0x020dd61c
+FldEvStar_ExecHorseRunStart kind:function(arm,size=0x44c) addr:0x020dd1d0
+FldEvStar_ExecHorseRunEnd kind:function(arm,size=0x10c) addr:0x020dd61c
 FldEvStar_ExecFlyStart kind:function(arm,size=0x40c) addr:0x020dd728
 FldEvStar_ExecFly kind:function(arm,size=0x130) addr:0x020ddb34
 FldEvStar_ExecBallKick kind:function(arm,size=0x3c4) addr:0x020ddc64
 FldEvStar_ExecBallLose kind:function(arm,size=0x11c) addr:0x020de028
 FldEvStar_ExecAquaEscape kind:function(arm,size=0x270) addr:0x020de144
 FldEvStar_ExecNinjaSand kind:function(arm,size=0xdc) addr:0x020de3b4
-func_ov002_020de490 kind:function(arm,size=0x8c) addr:0x020de490
-func_ov002_020de51c kind:function(arm,size=0xf8) addr:0x020de51c
+FldEvStar_ExecGateTutorialStart kind:function(arm,size=0x8c) addr:0x020de490
+FldEvStar_ExecGateTutorialEnd kind:function(arm,size=0xf8) addr:0x020de51c
 FldEvStar_ExecStarFocus kind:function(arm,size=0x134) addr:0x020de614
 FldEvStar_ExecPlayerReFocus kind:function(arm,size=0xec) addr:0x020de748
-func_ov002_020de834 kind:function(arm,size=0x204) addr:0x020de834
-func_ov002_020dea38 kind:function(arm,size=0x240) addr:0x020dea38
+FldEvStar_ExecPlayerMiniStart kind:function(arm,size=0x204) addr:0x020de834
+FldEvStar_ExecPlayerMiniEnd kind:function(arm,size=0x240) addr:0x020dea38
 FldEvStar_ExecRockKickStart kind:function(arm,size=0x194) addr:0x020dec78
 FldEvStar_ExecRockKick kind:function(arm,size=0x13c) addr:0x020dee0c
 FldEvStar_ExecRockMove kind:function(arm,size=0x424) addr:0x020def48
-func_ov002_020df36c kind:function(arm,size=0x1ec) addr:0x020df36c
-func_ov002_020df558 kind:function(arm,size=0x17c) addr:0x020df558
-func_ov002_020df6d4 kind:function(arm,size=0xc0) addr:0x020df6d4
-func_ov002_020df794 kind:function(arm,size=0x32c) addr:0x020df794
+FldEvStar_ExecPinkTileRoom kind:function(arm,size=0x1ec) addr:0x020df36c
+FldEvStar_ExecStarSageHint kind:function(arm,size=0x17c) addr:0x020df558
+FldEvStar_ExecCastleFocus kind:function(arm,size=0xc0) addr:0x020df6d4
+FldEvStar_ExecJetEnter kind:function(arm,size=0x32c) addr:0x020df794
 FldEvStar_ExecUzuDrown kind:function(arm,size=0x114) addr:0x020dfac0
-func_ov002_020dfbd4 kind:function(arm,size=0xdc) addr:0x020dfbd4
+FldEvStar_ExecRockOpenEnter kind:function(arm,size=0xdc) addr:0x020dfbd4
 func_ov002_020dfcb0 kind:function(arm,size=0xc64) addr:0x020dfcb0
 func_ov002_020e0914 kind:function(arm,size=0x4c8) addr:0x020e0914
-func_ov002_020e0ddc kind:function(arm,size=0x238) addr:0x020e0ddc
+FldEv_EnterExec kind:function(arm,size=0x238) addr:0x020e0ddc
 func_ov002_020e1014 kind:function(arm,size=0xc0) addr:0x020e1014
 func_ov002_020e10d4 kind:function(arm,size=0xa0) addr:0x020e10d4
 func_ov002_020e1174 kind:function(arm,size=0x74) addr:0x020e1174
@@ -622,33 +622,33 @@ func_ov002_020e11e8 kind:function(arm,size=0x28) addr:0x020e11e8
 func_ov002_020e1210 kind:function(arm,size=0x28) addr:0x020e1210
 func_ov002_020e1238 kind:function(arm,size=0x28) addr:0x020e1238
 func_ov002_020e1260 kind:function(arm,size=0x58) addr:0x020e1260
-func_ov002_020e12b8 kind:function(arm,size=0x8) addr:0x020e12b8
-FldEv_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
+FldEv_EnterNull kind:function(arm,size=0x8) addr:0x020e12b8
+Fld_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
 func_ov002_020e13f4 kind:function(arm,size=0xdc) addr:0x020e13f4
 func_ov002_020e14d0 kind:function(arm,size=0xd4) addr:0x020e14d0
 func_ov002_020e15a4 kind:function(arm,size=0x218) addr:0x020e15a4
-func_ov002_020e17bc kind:function(arm,size=0x2f8) addr:0x020e17bc
+FldEvStar_ExecTileTouch kind:function(arm,size=0x2f8) addr:0x020e17bc
 func_ov002_020e1ab4 kind:function(arm,size=0xf0) addr:0x020e1ab4
 FldEv_TouchInit kind:function(arm,size=0x28) addr:0x020e1ba4
 FldEv_TouchExec kind:function(arm,size=0x218) addr:0x020e1bcc
 FldEv_TouchClose kind:function(arm,size=0x2c) addr:0x020e1de4
 func_ov002_020e1e10 kind:function(arm,size=0x3c) addr:0x020e1e10
-func_ov002_020e1e4c kind:function(arm,size=0x28) addr:0x020e1e4c
-func_ov002_020e1e74 kind:function(arm,size=0x2c) addr:0x020e1e74
-func_ov002_020e1ea0 kind:function(arm,size=0xe4) addr:0x020e1ea0
+FldEv_TouchSwipeCreate kind:function(arm,size=0x28) addr:0x020e1e4c
+FldEv_TouchSwipeKill kind:function(arm,size=0x2c) addr:0x020e1e74
+FldEv_TouchSwipeExec kind:function(arm,size=0xe4) addr:0x020e1ea0
 func_ov002_020e1f84 kind:function(arm,size=0x15c) addr:0x020e1f84
 func_ov002_020e20e0 kind:function(arm,size=0x8c) addr:0x020e20e0
-func_ov002_020e216c kind:function(arm,size=0x78) addr:0x020e216c
-func_ov002_020e21e4 kind:function(arm,size=0x34) addr:0x020e21e4
-func_ov002_020e2218 kind:function(arm,size=0x40) addr:0x020e2218
+FldEv_TouchGetSwipe kind:function(arm,size=0x78) addr:0x020e216c
+FldEv_TouchSwipeIsDisable kind:function(arm,size=0x34) addr:0x020e21e4
+FldEv_TouchGetSwipeSpeed kind:function(arm,size=0x40) addr:0x020e2218
 func_ov002_020e2258 kind:function(arm,size=0x124) addr:0x020e2258
 func_ov002_020e237c kind:function(arm,size=0x6c) addr:0x020e237c
-func_ov002_020e23e8 kind:function(arm,size=0x44c) addr:0x020e23e8
-func_ov002_020e2834 kind:function(arm,size=0xb48) addr:0x020e2834
-func_ov002_020e337c kind:function(arm,size=0xe40) addr:0x020e337c
-func_ov002_020e41bc kind:function(arm,size=0xe0) addr:0x020e41bc
-func_ov002_020e429c kind:function(arm,size=0x210) addr:0x020e429c
-func_ov002_020e44ac kind:function(arm,size=0xac) addr:0x020e44ac
+FldEvStar_ExecTreeShakeTouch kind:function(arm,size=0x44c) addr:0x020e23e8
+FldEvSun_ExecTreeShakeTouch kind:function(arm,size=0xb48) addr:0x020e2834
+FldEvMoon_ExecBasketballTouch kind:function(arm,size=0xe40) addr:0x020e337c
+FldEvMoon_ExecBasketballStart kind:function(arm,size=0xe0) addr:0x020e41bc
+FldEvMoon_ExecBasketballLose kind:function(arm,size=0x210) addr:0x020e429c
+FldEvMoon_ExecBasketballWin kind:function(arm,size=0xac) addr:0x020e44ac
 FldEvMoon_ExecTightropeWin kind:function(arm,size=0x17c) addr:0x020e4558
 FldEvMoon_ExecTightropeLose kind:function(arm,size=0xc0) addr:0x020e46d4
 FldEvMoon_ExecWaterBomb kind:function(arm,size=0x24c) addr:0x020e4794
@@ -669,10 +669,10 @@ func_ov002_020e6404 kind:function(arm,size=0xa0) addr:0x020e6404
 func_ov002_020e64a4 kind:function(arm,size=0x74) addr:0x020e64a4
 FldEvMoon_ExecBigBallMove kind:function(arm,size=0x1cc) addr:0x020e6518
 FldEvMoon_ExecTrampolineJumpStart kind:function(arm,size=0x1d0) addr:0x020e66e4
-func_ov002_020e68b4 kind:function(arm,size=0x8c) addr:0x020e68b4
+FldEvMoon_ExecTrampolineJumpEnd kind:function(arm,size=0x8c) addr:0x020e68b4
 FldEvMoon_ExecTrampolineFall kind:function(arm,size=0x164) addr:0x020e6940
-FldEvMoon_ExecBalloon kind:function(arm,size=0x14c) addr:0x020e6aa4
-func_ov002_020e6bf0 kind:function(arm,size=0x10c) addr:0x020e6bf0
+FldEvMoon_ExecInflate kind:function(arm,size=0x14c) addr:0x020e6aa4
+FldChr_PathExec kind:function(arm,size=0x10c) addr:0x020e6bf0
 func_ov002_020e6cfc kind:function(arm,size=0x1d0) addr:0x020e6cfc
 func_ov002_020e6ecc kind:function(arm,size=0x98) addr:0x020e6ecc
 func_ov002_020e6f64 kind:function(arm,size=0x13c) addr:0x020e6f64
@@ -724,9 +724,9 @@ func_ov002_020ea994 kind:function(arm,size=0x9c) addr:0x020ea994
 func_ov002_020eaa30 kind:function(arm,size=0x4) addr:0x020eaa30
 func_ov002_020eaa34 kind:function(arm,size=0x1c) addr:0x020eaa34
 FldEv_CreateInformeMes kind:function(arm,size=0xa4) addr:0x020eaa50
-func_ov002_020eaaf4 kind:function(arm,size=0x674) addr:0x020eaaf4
+FldEv_ExecInformeMes kind:function(arm,size=0x674) addr:0x020eaaf4
 func_ov002_020eb168 kind:function(arm,size=0x760) addr:0x020eb168
-func_ov002_020eb8c8 kind:function(arm,size=0x3c) addr:0x020eb8c8
+FldEv_KillInformeMes kind:function(arm,size=0x3c) addr:0x020eb8c8
 func_ov002_020eb904 kind:function(arm,size=0x708) addr:0x020eb904
 func_ov002_020ec00c kind:function(arm,size=0x7c) addr:0x020ec00c
 func_ov002_020ec088 kind:function(arm,size=0x168) addr:0x020ec088
@@ -747,10 +747,10 @@ func_ov002_020ed7d8 kind:function(arm,size=0x18c) addr:0x020ed7d8
 func_ov002_020ed964 kind:function(arm,size=0xfc) addr:0x020ed964
 func_ov002_020eda60 kind:function(arm,size=0x8c) addr:0x020eda60
 func_ov002_020edaec kind:function(arm,size=0x40) addr:0x020edaec
-func_ov002_020edb2c kind:function(arm,size=0x448) addr:0x020edb2c
-func_ov002_020edf74 kind:function(arm,size=0x270) addr:0x020edf74
-func_ov002_020ee1e4 kind:function(arm,size=0x354) addr:0x020ee1e4
-func_ov002_020ee538 kind:function(arm,size=0x180) addr:0x020ee538
+FldEv_ExecSandSweepTouch kind:function(arm,size=0x448) addr:0x020edb2c
+FldEvMoon_ExecEnterSlide kind:function(arm,size=0x270) addr:0x020edf74
+FldEvMoon_ExecEnterDeflate kind:function(arm,size=0x354) addr:0x020ee1e4
+FldEvMoon_ExecTrampolineRecover kind:function(arm,size=0x180) addr:0x020ee538
 func_ov002_020ee6b8 kind:function(arm,size=0x10c) addr:0x020ee6b8
 func_ov002_020ee7c4 kind:function(arm,size=0x2c) addr:0x020ee7c4
 func_ov002_020ee7f0 kind:function(arm,size=0x1fc) addr:0x020ee7f0
@@ -773,10 +773,10 @@ FldEvSun_ExecTreeThief kind:function(arm,size=0x5c) addr:0x020efb84
 FldEvSun_ExecThiefHat kind:function(arm,size=0x5c) addr:0x020efbe0
 FldEvSun_ExecTreeNinja kind:function(arm,size=0x5c) addr:0x020efc3c
 FldEvSun_ExecNinjaFind kind:function(arm,size=0x5c) addr:0x020efc98
-func_ov002_020efcf4 kind:function(arm,size=0x8c) addr:0x020efcf4
+FldEvSun_ExecDelayExit kind:function(arm,size=0x8c) addr:0x020efcf4
 FldEvSun_ExecRideJetStart kind:function(arm,size=0x244) addr:0x020efd80
 FldEvSun_ExecBasketball kind:function(arm,size=0x678) addr:0x020effc4
-func_ov002_020f063c kind:function(arm,size=0x70) addr:0x020f063c
+FldEvSun_ExecPlayerExplode kind:function(arm,size=0x70) addr:0x020f063c
 FldEvSun_ExecSeesaw kind:function(arm,size=0x490) addr:0x020f06ac
 FldEvSun_ExecCannon kind:function(arm,size=0x238) addr:0x020f0b3c
 FldEvSun_ExecMagnetOn kind:function(arm,size=0x884) addr:0x020f0d74
@@ -794,9 +794,9 @@ FldEvSun_ExecSeesawEnterEnd kind:function(arm,size=0x1c4) addr:0x020f2c6c
 FldEvSun_ExecCannonEnterEnd kind:function(arm,size=0x1a4) addr:0x020f2e30
 FldEv_ExecCountdown kind:function(arm,size=0x1d0) addr:0x020f2fd4
 FldEv_ExecFallImpact kind:function(arm,size=0x204) addr:0x020f31a4
-FldEv_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
-FldEv_ExecEvilStart kind:function(arm,size=0x130) addr:0x020f35a0
-func_ov002_020f36d0 kind:function(arm,size=0x6f4) addr:0x020f36d0
+FldEvStar_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
+FldEvStar_ExecEvilRecover kind:function(arm,size=0x130) addr:0x020f35a0
+FldEv_ExecTouchTampoline kind:function(arm,size=0x6f4) addr:0x020f36d0
 func_ov002_020f3dc4 kind:function(arm,size=0x9c) addr:0x020f3dc4
 func_ov002_020f3e60 kind:function(arm,size=0x244) addr:0x020f3e60
 func_ov002_020f40a4 kind:function(arm,size=0x80) addr:0x020f40a4
@@ -898,7 +898,7 @@ func_ov002_020fa24c kind:function(arm,size=0x1b0) addr:0x020fa24c
 func_ov002_020fa3fc kind:function(arm,size=0x1f0) addr:0x020fa3fc
 func_ov002_020fa5ec kind:function(arm,size=0x18c) addr:0x020fa5ec
 func_ov002_020fa778 kind:function(arm,size=0x3c) addr:0x020fa778
-func_ov002_020fa7b4 kind:function(arm,size=0x404) addr:0x020fa7b4
+FldEvSun_ExecTouchFishing kind:function(arm,size=0x404) addr:0x020fa7b4
 func_ov002_020fabb8 kind:function(arm,size=0x17c) addr:0x020fabb8
 func_ov002_020fad34 kind:function(arm,size=0x2c) addr:0x020fad34
 func_ov002_020fad60 kind:function(arm,size=0x2c) addr:0x020fad60
@@ -907,9 +907,9 @@ func_ov002_020faf38 kind:function(arm,size=0x194) addr:0x020faf38
 func_ov002_020fb0cc kind:function(arm,size=0xb8) addr:0x020fb0cc
 func_ov002_020fb184 kind:function(arm,size=0x104) addr:0x020fb184
 func_ov002_020fb288 kind:function(arm,size=0x9c) addr:0x020fb288
-func_ov002_020fb324 kind:function(arm,size=0x190) addr:0x020fb324
-func_ov002_020fb4b4 kind:function(arm,size=0x40c) addr:0x020fb4b4
-func_ov002_020fb8c0 kind:function(arm,size=0x350) addr:0x020fb8c0
+FldEv_IsZoneEvil kind:function(arm,size=0x190) addr:0x020fb324
+FldEv_PlayZoneMusic kind:function(arm,size=0x40c) addr:0x020fb4b4
+FldEvMoon_ExecTouchTightrope kind:function(arm,size=0x350) addr:0x020fb8c0
 FldEvEarth_ExecBombPut kind:function(arm,size=0x518) addr:0x020fbc10
 FldEvEarth_ExecGrave kind:function(arm,size=0x1ec) addr:0x020fc128
 FldEvEarth_ExecGraveMummy kind:function(arm,size=0x28c) addr:0x020fc314
@@ -939,27 +939,27 @@ func_ov002_020fecf8 kind:function(arm,size=0x74) addr:0x020fecf8
 FldEvEarth_ExecBombWaterThrow kind:function(arm,size=0x534) addr:0x020fed6c
 FldEvEarth_ExecBombWaterDrop kind:function(arm,size=0x394) addr:0x020ff2a0
 func_ov002_020ff634 kind:function(arm,size=0xbc) addr:0x020ff634
-func_ov002_020ff6f0 kind:function(arm,size=0x27c) addr:0x020ff6f0
-func_ov002_020ff96c kind:function(arm,size=0x2d0) addr:0x020ff96c
-func_ov002_020ffc3c kind:function(arm,size=0x2dc) addr:0x020ffc3c
-func_ov002_020fff18 kind:function(arm,size=0x128) addr:0x020fff18
+FldEvMoon_ExecCycle kind:function(arm,size=0x27c) addr:0x020ff6f0
+FldEvEarth_ExecEnterBounce kind:function(arm,size=0x2d0) addr:0x020ff96c
+FldEvEarth_ExecEnterDeflate kind:function(arm,size=0x2dc) addr:0x020ffc3c
+FldEvEarth_ExecDraBombRecover kind:function(arm,size=0x128) addr:0x020fff18
 FldEvEarth_ExecEnterFly kind:function(arm,size=0x198) addr:0x02100040
 FldEvEarth_ExecEnterFlyFail kind:function(arm,size=0x174) addr:0x021001d8
 FldEvEarth_ExecEnterFlyThrough kind:function(arm,size=0x288) addr:0x0210034c
 func_ov002_021005d4 kind:function(arm,size=0xdc) addr:0x021005d4
 func_ov002_021006b0 kind:function(arm,size=0xc0) addr:0x021006b0
 func_ov002_02100770 kind:function(arm,size=0xc0) addr:0x02100770
-func_ov002_02100830 kind:function(arm,size=0xc4) addr:0x02100830
+FldEvSun_ExecAceWrestleLose kind:function(arm,size=0xc4) addr:0x02100830
 func_ov002_021008f4 kind:function(arm,size=0xb8) addr:0x021008f4
 func_ov002_021009ac kind:function(arm,size=0x16c) addr:0x021009ac
 func_ov002_02100b18 kind:function(arm,size=0x130) addr:0x02100b18
 func_ov002_02100c48 kind:function(arm,size=0x598) addr:0x02100c48
 func_ov002_021011e0 kind:function(arm,size=0x64) addr:0x021011e0
-func_ov002_02101244 kind:function(arm,size=0x250) addr:0x02101244
+FldUranai_InsertStarAreaMes kind:function(arm,size=0x250) addr:0x02101244
 func_ov002_02101494 kind:function(arm,size=0x64) addr:0x02101494
-func_ov002_021014f8 kind:function(arm,size=0x268) addr:0x021014f8
+FldUranai_InsertMoonAreaMes kind:function(arm,size=0x268) addr:0x021014f8
 func_ov002_02101760 kind:function(arm,size=0x64) addr:0x02101760
-func_ov002_021017c4 kind:function(arm,size=0x22c) addr:0x021017c4
+FldUranai_InsertSunAreaMes kind:function(arm,size=0x22c) addr:0x021017c4
 func_ov002_021019f0 kind:function(arm,size=0x30) addr:0x021019f0
 func_ov002_02101a20 kind:function(arm,size=0x58) addr:0x02101a20
 func_ov002_02101a78 kind:function(arm,size=0x128) addr:0x02101a78
@@ -1038,7 +1038,7 @@ func_ov002_02105768 kind:function(arm,size=0x4c) addr:0x02105768
 func_ov002_021057b4 kind:function(arm,size=0x48) addr:0x021057b4
 func_ov002_021057fc kind:function(arm,size=0x30) addr:0x021057fc
 func_ov002_0210582c kind:function(arm,size=0x38) addr:0x0210582c
-func_ov002_02105864 kind:function(arm,size=0x12c) addr:0x02105864
+FldProepi_SetBG kind:function(arm,size=0x12c) addr:0x02105864
 func_ov002_02105990 kind:function(arm,size=0x4c) addr:0x02105990
 func_ov002_021059dc kind:function(arm,size=0x64) addr:0x021059dc
 func_ov002_02105a40 kind:function(arm,size=0x124) addr:0x02105a40
@@ -1500,13 +1500,13 @@ data_ov002_0210ad84 kind:data(any) addr:0x0210ad84
 data_ov002_0210ad94 kind:data(any) addr:0x0210ad94
 data_ov002_0210ada4 kind:data(any) addr:0x0210ada4
 data_ov002_0210adb4 kind:data(any) addr:0x0210adb4
-data_ov002_0210adc4 kind:data(any) addr:0x0210adc4
-data_ov002_0210addc kind:data(any) addr:0x0210addc
-data_ov002_0210adf4 kind:data(any) addr:0x0210adf4
-data_ov002_0210ae0c kind:data(any) addr:0x0210ae0c
-data_ov002_0210ae30 kind:data(any) addr:0x0210ae30
-data_ov002_0210ae58 kind:data(any) addr:0x0210ae58
-data_ov002_0210ae80 kind:data(any) addr:0x0210ae80
+FldScr_StarBomMagic kind:data(any) addr:0x0210adc4
+FldScr_PinkQuestHelp kind:data(any) addr:0x0210addc
+FldScr_AquaQuestHelp kind:data(any) addr:0x0210adf4
+FldScr_FaceMaskEnd kind:data(any) addr:0x0210ae0c
+FldScr_Ninja1Remain kind:data(any) addr:0x0210ae30
+FldScr_Ninja2Remain kind:data(any) addr:0x0210ae58
+FldScr_NinjaLast kind:data(any) addr:0x0210ae80
 data_ov002_0210aeac kind:data(any) addr:0x0210aeac
 data_ov002_0210aeb4 kind:data(any) addr:0x0210aeb4
 data_ov002_0210aec8 kind:data(any) addr:0x0210aec8
@@ -1594,11 +1594,11 @@ data_ov002_0210bb58 kind:data(any) addr:0x0210bb58
 data_ov002_0210bb68 kind:data(any) addr:0x0210bb68
 data_ov002_0210bb78 kind:data(any) addr:0x0210bb78
 data_ov002_0210bb88 kind:data(any) addr:0x0210bb88
-data_ov002_0210bb98 kind:data(any) addr:0x0210bb98
-data_ov002_0210bbb0 kind:data(any) addr:0x0210bbb0
-data_ov002_0210bbc8 kind:data(any) addr:0x0210bbc8
-data_ov002_0210bbe0 kind:data(any) addr:0x0210bbe0
-data_ov002_0210bbf8 kind:data(any) addr:0x0210bbf8
+FldScr_MgReplay kind:data(any) addr:0x0210bb98
+FldScr_DrbHatMgReplay kind:data(any) addr:0x0210bbb0
+FldScr_BHouseReplay kind:data(any) addr:0x0210bbc8
+FldScr_MgPlayToken kind:data(any) addr:0x0210bbe0
+FldScr_DrbHatMgPlayToken kind:data(any) addr:0x0210bbf8
 data_ov002_0210bc10 kind:data(any) addr:0x0210bc10 ambiguous
 data_ov002_0210bc30 kind:data(any) addr:0x0210bc30 ambiguous
 data_ov002_0210bc50 kind:data(any) addr:0x0210bc50 ambiguous
@@ -1734,7 +1734,7 @@ data_ov002_0210cc58 kind:data(any) addr:0x0210cc58
 data_ov002_0210cc68 kind:data(any) addr:0x0210cc68
 data_ov002_0210cc78 kind:data(any) addr:0x0210cc78
 data_ov002_0210cc90 kind:data(any) addr:0x0210cc90
-data_ov002_0210cca8 kind:data(any) addr:0x0210cca8
+FldScr_FluteBonus kind:data(any) addr:0x0210cca8
 data_ov002_0210ccc0 kind:data(any) addr:0x0210ccc0
 data_ov002_0210ccd8 kind:data(any) addr:0x0210ccd8
 data_ov002_0210ccf0 kind:data(any) addr:0x0210ccf0
@@ -1753,20 +1753,20 @@ data_ov002_0210ce10 kind:data(any) addr:0x0210ce10
 data_ov002_0210ce28 kind:data(any) addr:0x0210ce28
 data_ov002_0210ce40 kind:data(any) addr:0x0210ce40
 data_ov002_0210ce58 kind:data(any) addr:0x0210ce58
-data_ov002_0210ce70 kind:data(any) addr:0x0210ce70
+FldScr_BombBonus kind:data(any) addr:0x0210ce70
 data_ov002_0210ce88 kind:data(any) addr:0x0210ce88
-data_ov002_0210cea0 kind:data(any) addr:0x0210cea0
+FldScr_PieceEarthBonus kind:data(any) addr:0x0210cea0
 data_ov002_0210ceb8 kind:data(any) addr:0x0210ceb8
 data_ov002_0210ced0 kind:data(any) addr:0x0210ced0
 data_ov002_0210cee8 kind:data(any) addr:0x0210cee8
 data_ov002_0210cf00 kind:data(any) addr:0x0210cf00
-data_ov002_0210cf18 kind:data(any) addr:0x0210cf18
+FldScr_TokenBonus kind:data(any) addr:0x0210cf18
 data_ov002_0210cf30 kind:data(any) addr:0x0210cf30
 data_ov002_0210cf48 kind:data(any) addr:0x0210cf48
 data_ov002_0210cf60 kind:data(any) addr:0x0210cf60
-data_ov002_0210cf78 kind:data(any) addr:0x0210cf78
-data_ov002_0210cf90 kind:data(any) addr:0x0210cf90
-data_ov002_0210cfa8 kind:data(any) addr:0x0210cfa8
+FldScr_PieceStarBonus kind:data(any) addr:0x0210cf78
+FldScr_SoccerTicketBonus kind:data(any) addr:0x0210cf90
+FldScr_PieceMoonBonus kind:data(any) addr:0x0210cfa8
 data_ov002_0210cfc0 kind:data(any) addr:0x0210cfc0
 data_ov002_0210cfdc kind:data(any) addr:0x0210cfdc
 data_ov002_0210cff8 kind:data(any) addr:0x0210cff8
@@ -1786,22 +1786,22 @@ data_ov002_0210d190 kind:data(any) addr:0x0210d190
 data_ov002_0210d1b0 kind:data(any) addr:0x0210d1b0
 data_ov002_0210d1d0 kind:data(any) addr:0x0210d1d0
 data_ov002_0210d1f4 kind:data(any) addr:0x0210d1f4
-data_ov002_0210d218 kind:data(any) addr:0x0210d218
-data_ov002_0210d244 kind:data(any) addr:0x0210d244
-data_ov002_0210d270 kind:data(any) addr:0x0210d270
-data_ov002_0210d29c kind:data(any) addr:0x0210d29c
-data_ov002_0210d2c8 kind:data(any) addr:0x0210d2c8
-data_ov002_0210d2f8 kind:data(any) addr:0x0210d2f8
-data_ov002_0210d328 kind:data(any) addr:0x0210d328
-data_ov002_0210d358 kind:data(any) addr:0x0210d358
-data_ov002_0210d388 kind:data(any) addr:0x0210d388
-data_ov002_0210d3b8 kind:data(any) addr:0x0210d3b8
-data_ov002_0210d3e8 kind:data(any) addr:0x0210d3e8
-data_ov002_0210d420 kind:data(any) addr:0x0210d420
-data_ov002_0210d458 kind:data(any) addr:0x0210d458
-data_ov002_0210d490 kind:data(any) addr:0x0210d490
-data_ov002_0210d4c8 kind:data(any) addr:0x0210d4c8
-data_ov002_0210d510 kind:data(any) addr:0x0210d510
+FldScr_3SunBonus kind:data(any) addr:0x0210d218
+FldScr_SunMoonBonus kind:data(any) addr:0x0210d244
+FldScr_UranaiTokenBonus kind:data(any) addr:0x0210d270
+FldScr_3StarBonus kind:data(any) addr:0x0210d29c
+FldScrStar_LightningBonusPink kind:data(any) addr:0x0210d2c8
+FldScrMoon_LightningBonusPink kind:data(any) addr:0x0210d2f8
+FldScrMoon_LightningBonusAqua kind:data(any) addr:0x0210d328
+FldScrSun_LightningBonus kind:data(any) addr:0x0210d358
+FldScr_WaterBombBonus kind:data(any) addr:0x0210d388
+FldScr_3MoonBonus kind:data(any) addr:0x0210d3b8
+FldScr_SunMoonStarBonus kind:data(any) addr:0x0210d3e8
+FldScr_SagePieceBonus kind:data(any) addr:0x0210d420
+FldScr_DrbHatPieceBonus kind:data(any) addr:0x0210d458
+FldScr_DrbHatTokenBonus kind:data(any) addr:0x0210d490
+FldScr_WaterBroomBonus kind:data(any) addr:0x0210d4c8
+FldScr_FireBroomBonus kind:data(any) addr:0x0210d510
 data_ov002_0210d558 kind:data(any) addr:0x0210d558
 data_ov002_0210d568 kind:data(any) addr:0x0210d568
 data_ov002_0210d578 kind:data(any) addr:0x0210d578
@@ -1977,44 +1977,44 @@ data_ov002_0210ed68 kind:data(any) addr:0x0210ed68
 data_ov002_0210ed78 kind:data(any) addr:0x0210ed78
 data_ov002_0210ed88 kind:data(any) addr:0x0210ed88
 data_ov002_0210ed98 kind:data(any) addr:0x0210ed98
-data_ov002_0210eda8 kind:data(any) addr:0x0210eda8
-data_ov002_0210edc0 kind:data(any) addr:0x0210edc0
-data_ov002_0210ede4 kind:data(any) addr:0x0210ede4
-data_ov002_0210ee08 kind:data(any) addr:0x0210ee08
-data_ov002_0210ee2c kind:data(any) addr:0x0210ee2c
-data_ov002_0210ee50 kind:data(any) addr:0x0210ee50
-data_ov002_0210ee74 kind:data(any) addr:0x0210ee74
-data_ov002_0210ee98 kind:data(any) addr:0x0210ee98
-data_ov002_0210eebc kind:data(any) addr:0x0210eebc
-data_ov002_0210eee0 kind:data(any) addr:0x0210eee0
-data_ov002_0210ef04 kind:data(any) addr:0x0210ef04
-data_ov002_0210ef28 kind:data(any) addr:0x0210ef28
-data_ov002_0210ef4c kind:data(any) addr:0x0210ef4c
-data_ov002_0210ef70 kind:data(any) addr:0x0210ef70
-data_ov002_0210ef94 kind:data(any) addr:0x0210ef94
-data_ov002_0210efb8 kind:data(any) addr:0x0210efb8
-data_ov002_0210efdc kind:data(any) addr:0x0210efdc
-data_ov002_0210f000 kind:data(any) addr:0x0210f000
-data_ov002_0210f024 kind:data(any) addr:0x0210f024
-data_ov002_0210f048 kind:data(any) addr:0x0210f048
-data_ov002_0210f06c kind:data(any) addr:0x0210f06c
-data_ov002_0210f090 kind:data(any) addr:0x0210f090
-data_ov002_0210f0b4 kind:data(any) addr:0x0210f0b4
-data_ov002_0210f0d8 kind:data(any) addr:0x0210f0d8
-data_ov002_0210f0fc kind:data(any) addr:0x0210f0fc
-data_ov002_0210f120 kind:data(any) addr:0x0210f120
-data_ov002_0210f144 kind:data(any) addr:0x0210f144
-data_ov002_0210f168 kind:data(any) addr:0x0210f168
-data_ov002_0210f18c kind:data(any) addr:0x0210f18c
-data_ov002_0210f1b0 kind:data(any) addr:0x0210f1b0
-data_ov002_0210f1d4 kind:data(any) addr:0x0210f1d4
-data_ov002_0210f1f8 kind:data(any) addr:0x0210f1f8
-data_ov002_0210f21c kind:data(any) addr:0x0210f21c
-data_ov002_0210f240 kind:data(any) addr:0x0210f240
-data_ov002_0210f264 kind:data(any) addr:0x0210f264
-data_ov002_0210f288 kind:data(any) addr:0x0210f288
-data_ov002_0210f2ac kind:data(any) addr:0x0210f2ac
-data_ov002_0210f2d0 kind:data(any) addr:0x0210f2d0
+FldScrUranai_FirstUse kind:data(any) addr:0x0210eda8
+FldScrUranaiMoon_NextAreaA1P3 kind:data(any) addr:0x0210edc0
+FldScrUranai_NextEarthCave kind:data(any) addr:0x0210ede4
+FldScrUranaiSun_NextAreaA1P2 kind:data(any) addr:0x0210ee08
+FldScrUranaiMoon_NextAreaA1P4 kind:data(any) addr:0x0210ee2c
+FldScrUranai_StarSecretHint kind:data(any) addr:0x0210ee50
+FldScrUranaiSun_NextAreaA2P2 kind:data(any) addr:0x0210ee74
+FldScrUranaiMoon_NextAreaA1P5 kind:data(any) addr:0x0210ee98
+FldScrUranaiStar_NextAreaA1P2 kind:data(any) addr:0x0210eebc
+FldScrUranaiSun_NextAreaA1P3 kind:data(any) addr:0x0210eee0
+FldScrUranaiStar_NextAreaA1P3 kind:data(any) addr:0x0210ef04
+FldScrUranaiMoon_NextAreaA2P1 kind:data(any) addr:0x0210ef28
+FldScrUranaiStar_NextAreaA1P4 kind:data(any) addr:0x0210ef4c
+FldScrUranaiSun_NextAreaA2P4 kind:data(any) addr:0x0210ef70
+FldScrUranaiStar_NextAreaA2P1 kind:data(any) addr:0x0210ef94
+FldScrUranaiStar_NextAreaA1P1 kind:data(any) addr:0x0210efb8
+FldScrUranaiMoon_NextAreaA2P2 kind:data(any) addr:0x0210efdc
+FldScrUranaiStar_NextAreaA2P2 kind:data(any) addr:0x0210f000
+FldScrUranaiSun_NextAreaA1P4 kind:data(any) addr:0x0210f024
+FldScrUranai_DarkSky kind:data(any) addr:0x0210f048
+FldScrUranaiStar_NextAreaA2P3 kind:data(any) addr:0x0210f06c
+FldScrUranaiMoon_NextAreaA2P3 kind:data(any) addr:0x0210f090
+FldScrUranaiStar_NextAreaA2P4 kind:data(any) addr:0x0210f0b4
+FldScrUranai_NextEarthGrave kind:data(any) addr:0x0210f0d8
+FldScrUranaiSun_NextAreaA2P3 kind:data(any) addr:0x0210f0fc
+FldScrUranaiStar_NextAreaA2P5 kind:data(any) addr:0x0210f120
+FldScrUranai_MoonProtect kind:data(any) addr:0x0210f144
+FldScrUranai_StarGuidance kind:data(any) addr:0x0210f168
+FldScrUranai_TokenBonus kind:data(any) addr:0x0210f18c
+FldScrUranaiSun_NextAreaA2P1 kind:data(any) addr:0x0210f1b0
+FldScrUranai_TokenBonusFirst kind:data(any) addr:0x0210f1d4
+FldScrUranaiMoon_NextAreaA1P1 kind:data(any) addr:0x0210f1f8
+FldScrUranai_PeaceToken kind:data(any) addr:0x0210f21c
+FldScrUranaiSun_NextAreaA1P1 kind:data(any) addr:0x0210f240
+FldScrUranaiMoon_NextAreaA1P2 kind:data(any) addr:0x0210f264
+FldScrUranai_OtherArea kind:data(any) addr:0x0210f288
+FldScrUranai_SunWarmth kind:data(any) addr:0x0210f2ac
+FldScrUranai_NextArea kind:data(any) addr:0x0210f2d0
 data_ov002_0210f2fc kind:data(any) addr:0x0210f2fc
 data_ov002_0210f31c kind:data(any) addr:0x0210f31c
 data_ov002_0210f33c kind:data(any) addr:0x0210f33c
@@ -2133,25 +2133,25 @@ data_ov002_0210fb00 kind:data(any) addr:0x0210fb00 ambiguous
 data_ov002_0210fb18 kind:data(any) addr:0x0210fb18 ambiguous
 data_ov002_0210fb30 kind:data(any) addr:0x0210fb30 ambiguous
 data_ov002_0210fb48 kind:data(any) addr:0x0210fb48 ambiguous
-data_ov002_0210fb60 kind:data(any) addr:0x0210fb60
+FldScrEarth_ShurikenSet kind:data(any) addr:0x0210fb60
 data_ov002_0210fb78 kind:data(any) addr:0x0210fb78 ambiguous
 data_ov002_0210fb90 kind:data(any) addr:0x0210fb90 ambiguous
 data_ov002_0210fba8 kind:data(any) addr:0x0210fba8 ambiguous
 data_ov002_0210fbc0 kind:data(any) addr:0x0210fbc0 ambiguous
-data_ov002_0210fbd8 kind:data(any) addr:0x0210fbd8
+FldScr_BombPedestalResult kind:data(any) addr:0x0210fbd8
 data_ov002_0210fbf0 kind:data(any) addr:0x0210fbf0 ambiguous
 data_ov002_0210fc08 kind:data(any) addr:0x0210fc08 ambiguous
 data_ov002_0210fc20 kind:data(any) addr:0x0210fc20 ambiguous
 data_ov002_0210fc38 kind:data(any) addr:0x0210fc38 ambiguous
 data_ov002_0210fc50 kind:data(any) addr:0x0210fc50 ambiguous
 data_ov002_0210fc68 kind:data(any) addr:0x0210fc68 ambiguous
-data_ov002_0210fc80 kind:data(any) addr:0x0210fc80
+FldScr_GateUnknownOpen kind:data(any) addr:0x0210fc80
 data_ov002_0210fc98 kind:data(any) addr:0x0210fc98 ambiguous
 data_ov002_0210fcb0 kind:data(any) addr:0x0210fcb0 ambiguous
-data_ov002_0210fcc8 kind:data(any) addr:0x0210fcc8
-data_ov002_0210fce0 kind:data(any) addr:0x0210fce0
+FldScr_EmptyCup kind:data(any) addr:0x0210fcc8
+FldScr_GateNeedKey kind:data(any) addr:0x0210fce0
 data_ov002_0210fcf8 kind:data(any) addr:0x0210fcf8 ambiguous
-data_ov002_0210fd10 kind:data(any) addr:0x0210fd10
+FldScrEarth_Hashi1Down kind:data(any) addr:0x0210fd10
 data_ov002_0210fd28 kind:data(any) addr:0x0210fd28 ambiguous
 data_ov002_0210fd40 kind:data(any) addr:0x0210fd40 ambiguous
 data_ov002_0210fd58 kind:data(any) addr:0x0210fd58 ambiguous
@@ -2160,51 +2160,51 @@ data_ov002_0210fd88 kind:data(any) addr:0x0210fd88 ambiguous
 data_ov002_0210fda0 kind:data(any) addr:0x0210fda0 ambiguous
 data_ov002_0210fdb8 kind:data(any) addr:0x0210fdb8 ambiguous
 data_ov002_0210fdd0 kind:data(any) addr:0x0210fdd0 ambiguous
-data_ov002_0210fde8 kind:data(any) addr:0x0210fde8
+FldSunScript_MagnetOnAttract kind:data(any) addr:0x0210fde8
 data_ov002_0210fe00 kind:data(any) addr:0x0210fe00 ambiguous
-data_ov002_0210fe18 kind:data(any) addr:0x0210fe18
-data_ov002_0210fe30 kind:data(any) addr:0x0210fe30
-data_ov002_0210fe48 kind:data(any) addr:0x0210fe48
-data_ov002_0210fe60 kind:data(any) addr:0x0210fe60
-data_ov002_0210fe78 kind:data(any) addr:0x0210fe78
-data_ov002_0210fe90 kind:data(any) addr:0x0210fe90
+FldScr_FallTruck kind:data(any) addr:0x0210fe18
+FldScr_GateKeyhole kind:data(any) addr:0x0210fe30
+FldScr_GateNeedPieces kind:data(any) addr:0x0210fe48
+FldSunScript_MagnetOnRepel kind:data(any) addr:0x0210fe60
+FldScr_WaterFailFirst kind:data(any) addr:0x0210fe78
+FldScr_WaterFail kind:data(any) addr:0x0210fe90
 data_ov002_0210fea8 kind:data(any) addr:0x0210fea8 ambiguous
-data_ov002_0210fec0 kind:data(any) addr:0x0210fec0
+FldScr_FallTightrope kind:data(any) addr:0x0210fec0
 data_ov002_0210fed8 kind:data(any) addr:0x0210fed8 ambiguous
-data_ov002_0210fef0 kind:data(any) addr:0x0210fef0
+FldScr_UzuRecover kind:data(any) addr:0x0210fef0
 data_ov002_0210ff08 kind:data(any) addr:0x0210ff08 ambiguous
-data_ov002_0210ff20 kind:data(any) addr:0x0210ff20
+FldScrMoon_DiceRoll kind:data(any) addr:0x0210ff20
 data_ov002_0210ff38 kind:data(any) addr:0x0210ff38 ambiguous
 data_ov002_0210ff50 kind:data(any) addr:0x0210ff50 ambiguous
 data_ov002_0210ff68 kind:data(any) addr:0x0210ff68 ambiguous
 data_ov002_0210ff80 kind:data(any) addr:0x0210ff80 ambiguous
 data_ov002_0210ff98 kind:data(any) addr:0x0210ff98 ambiguous
-data_ov002_0210ffb0 kind:data(any) addr:0x0210ffb0
+FldScrStar_FlyFail kind:data(any) addr:0x0210ffb0
 data_ov002_0210ffc8 kind:data(any) addr:0x0210ffc8 ambiguous
 data_ov002_0210ffe0 kind:data(any) addr:0x0210ffe0 ambiguous
-data_ov002_0210fff8 kind:data(any) addr:0x0210fff8
+FldScr_TreeShakeEmpty kind:data(any) addr:0x0210fff8
 data_ov002_02110010 kind:data(any) addr:0x02110010 ambiguous
 data_ov002_02110028 kind:data(any) addr:0x02110028 ambiguous
 data_ov002_02110040 kind:data(any) addr:0x02110040 ambiguous
 data_ov002_02110058 kind:data(any) addr:0x02110058 ambiguous
 data_ov002_02110068 kind:data(any) addr:0x02110068 ambiguous
 data_ov002_02110070 kind:data(any) addr:0x02110070 ambiguous
-data_ov002_02110088 kind:data(any) addr:0x02110088
+FldScr_TreeShakeLose kind:data(any) addr:0x02110088
 data_ov002_021100a0 kind:data(any) addr:0x021100a0 ambiguous
 data_ov002_021100b8 kind:data(any) addr:0x021100b8 ambiguous
 data_ov002_021100d0 kind:data(any) addr:0x021100d0 ambiguous
-data_ov002_021100e8 kind:data(any) addr:0x021100e8
+FldScr_SandSweepLose kind:data(any) addr:0x021100e8
 data_ov002_02110100 kind:data(any) addr:0x02110100 ambiguous
-data_ov002_02110118 kind:data(any) addr:0x02110118
-data_ov002_02110134 kind:data(any) addr:0x02110134
+FldScrEarth_EvilMansion kind:data(any) addr:0x02110118
+FldScr_GateOpenFirst kind:data(any) addr:0x02110134
 data_ov002_02110150 kind:data(any) addr:0x02110150 ambiguous
-data_ov002_0211016c kind:data(any) addr:0x0211016c
-data_ov002_02110188 kind:data(any) addr:0x02110188
-data_ov002_021101a4 kind:data(any) addr:0x021101a4
-data_ov002_021101c0 kind:data(any) addr:0x021101c0
-data_ov002_021101dc kind:data(any) addr:0x021101dc
+FldScr_GateOpenFirst2 kind:data(any) addr:0x0211016c
+FldScr_ReadMail kind:data(any) addr:0x02110188
+FldScrEarth_Hashi2Down kind:data(any) addr:0x021101a4
+FldScrEarth_DiceRollFirst kind:data(any) addr:0x021101c0
+FldScrMoon_DiceRollFirst kind:data(any) addr:0x021101dc
 data_ov002_021101f8 kind:data(any) addr:0x021101f8 ambiguous
-data_ov002_02110214 kind:data(any) addr:0x02110214
+FldScrStar_FlySucceed kind:data(any) addr:0x02110214
 data_ov002_02110230 kind:data(any) addr:0x02110230 ambiguous
 data_ov002_0211024c kind:data(any) addr:0x0211024c ambiguous
 data_ov002_02110268 kind:data(any) addr:0x02110268 ambiguous
@@ -2218,7 +2218,7 @@ data_ov002_0211033c kind:data(any) addr:0x0211033c ambiguous
 data_ov002_0211035c kind:data(any) addr:0x0211035c ambiguous
 data_ov002_0211037c kind:data(any) addr:0x0211037c ambiguous
 data_ov002_0211039c kind:data(any) addr:0x0211039c ambiguous
-data_ov002_021103bc kind:data(any) addr:0x021103bc
+FldScr_RemainingTicket kind:data(any) addr:0x021103bc
 data_ov002_021103dc kind:data(any) addr:0x021103dc ambiguous
 data_ov002_021103fc kind:data(any) addr:0x021103fc ambiguous
 data_ov002_0211041c kind:data(any) addr:0x0211041c ambiguous
@@ -2360,14 +2360,14 @@ data_ov002_021110bc kind:data(any) addr:0x021110bc
 data_ov002_021110cc kind:data(any) addr:0x021110cc
 data_ov002_021110dc kind:data(any) addr:0x021110dc
 data_ov002_021110ec kind:data(any) addr:0x021110ec
-data_ov002_021110fc kind:data(any) addr:0x021110fc
-data_ov002_02111114 kind:data(any) addr:0x02111114
-data_ov002_021111c8 kind:data(any) addr:0x021111c8
-data_ov002_02111294 kind:data(any) addr:0x02111294
-data_ov002_02111458 kind:data(any) addr:0x02111458
-data_ov002_02111658 kind:data(any) addr:0x02111658
-data_ov002_02111858 kind:data(any) addr:0x02111858
-data_ov002_02111a7c kind:data(any) addr:0x02111a7c
+FldProepiScript_SkipProlog kind:data(any) addr:0x021110fc
+FldProepiScript_EpilogAqua kind:data(any) addr:0x02111114
+FldProepiScript_EpilogPink kind:data(any) addr:0x021111c8
+FldProepiScript_Result kind:data(any) addr:0x02111294
+FldProepiScript_EndEvilAqua kind:data(any) addr:0x02111458
+FldProepiScript_EndEvilPink kind:data(any) addr:0x02111658
+FldProepiScript_StartEvil kind:data(any) addr:0x02111858
+FldProepiScript_Prolog kind:data(any) addr:0x02111a7c
 data_ov002_02112040 kind:bss addr:0x02112040
 data_ov002_02112050 kind:bss addr:0x02112050
 data_ov002_02112054 kind:bss addr:0x02112054
