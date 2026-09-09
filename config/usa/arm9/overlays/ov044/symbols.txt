@@ -65,7 +65,6 @@ func_ov044_021189cc kind:function(arm,size=0xbc) addr:0x021189cc
 func_ov044_02118a88 kind:function(arm,size=0x27c) addr:0x02118a88
 data_ov044_02118d20 kind:data(any) addr:0x02118d20
 data_ov044_02118d30 kind:data(any) addr:0x02118d30
-data_ov044_02118d3c kind:data(any) addr:0x02118d3c ambiguous
 data_ov044_02118d40 kind:data(any) addr:0x02118d40
 data_ov044_02118d50 kind:data(any) addr:0x02118d50
 data_ov044_02118d60 kind:data(any) addr:0x02118d60
@@ -74,7 +73,6 @@ data_ov044_02118d80 kind:data(any) addr:0x02118d80
 data_ov044_02118d90 kind:data(any) addr:0x02118d90
 data_ov044_02118da0 kind:data(any) addr:0x02118da0
 data_ov044_02118db0 kind:data(any) addr:0x02118db0
-data_ov044_02118db4 kind:data(any) addr:0x02118db4 ambiguous
 data_ov044_02118dc0 kind:data(any) addr:0x02118dc0
 data_ov044_02118dd0 kind:data(any) addr:0x02118dd0
 data_ov044_02118de0 kind:data(any) addr:0x02118de0
@@ -83,29 +81,24 @@ data_ov044_02118e00 kind:data(any) addr:0x02118e00
 data_ov044_02118e10 kind:data(any) addr:0x02118e10
 data_ov044_02118e20 kind:data(any) addr:0x02118e20
 data_ov044_02118e30 kind:data(any) addr:0x02118e30
-data_ov044_02118e38 kind:data(any) addr:0x02118e38 ambiguous
 data_ov044_02118e40 kind:data(any) addr:0x02118e40
 data_ov044_02118e50 kind:data(any) addr:0x02118e50
 data_ov044_02118e58 kind:data(any) addr:0x02118e58 ambiguous
 data_ov044_02118e60 kind:data(any) addr:0x02118e60
 data_ov044_02118e70 kind:data(any) addr:0x02118e70
 data_ov044_02118e80 kind:data(any) addr:0x02118e80
-data_ov044_02118e84 kind:data(any) addr:0x02118e84 ambiguous
 data_ov044_02118e90 kind:data(any) addr:0x02118e90
 data_ov044_02118ea0 kind:data(any) addr:0x02118ea0
 data_ov044_02118eb0 kind:data(any) addr:0x02118eb0
 data_ov044_02118ec0 kind:data(any) addr:0x02118ec0
 data_ov044_02118ed0 kind:data(any) addr:0x02118ed0
-data_ov044_02118edc kind:data(any) addr:0x02118edc ambiguous
 data_ov044_02118ee0 kind:data(any) addr:0x02118ee0
 data_ov044_02118ef0 kind:data(any) addr:0x02118ef0
 data_ov044_02118f00 kind:data(any) addr:0x02118f00
-data_ov044_02118f0c kind:data(any) addr:0x02118f0c ambiguous
 data_ov044_02118f10 kind:data(any) addr:0x02118f10
 data_ov044_02118f20 kind:data(any) addr:0x02118f20
 data_ov044_02118f30 kind:data(any) addr:0x02118f30
 data_ov044_02118f40 kind:data(any) addr:0x02118f40
-data_ov044_02118f44 kind:data(any) addr:0x02118f44 ambiguous
 data_ov044_02118f50 kind:data(any) addr:0x02118f50
 data_ov044_02118f60 kind:data(any) addr:0x02118f60
 data_ov044_02118f70 kind:data(any) addr:0x02118f70
@@ -123,7 +116,6 @@ data_ov044_02119020 kind:data(any) addr:0x02119020
 data_ov044_02119030 kind:data(any) addr:0x02119030
 data_ov044_02119040 kind:data(any) addr:0x02119040
 data_ov044_02119050 kind:data(any) addr:0x02119050
-data_ov044_0211905c kind:data(any) addr:0x0211905c ambiguous
 data_ov044_02119060 kind:data(any) addr:0x02119060
 data_ov044_02119070 kind:data(any) addr:0x02119070
 data_ov044_02119080 kind:data(any) addr:0x02119080
@@ -144,11 +136,9 @@ data_ov044_02119150 kind:data(any) addr:0x02119150
 data_ov044_02119160 kind:data(any) addr:0x02119160
 data_ov044_02119170 kind:data(any) addr:0x02119170
 data_ov044_02119180 kind:data(any) addr:0x02119180
-data_ov044_0211918c kind:data(any) addr:0x0211918c ambiguous
 data_ov044_02119190 kind:data(any) addr:0x02119190
 data_ov044_021191a0 kind:data(any) addr:0x021191a0
 data_ov044_021191b0 kind:data(any) addr:0x021191b0
-data_ov044_021191bc kind:data(any) addr:0x021191bc ambiguous
 data_ov044_021191c0 kind:data(any) addr:0x021191c0
 data_ov044_021191d0 kind:data(any) addr:0x021191d0
 data_ov044_021191e0 kind:data(any) addr:0x021191e0
@@ -178,7 +168,6 @@ data_ov044_02119350 kind:data(any) addr:0x02119350
 data_ov044_02119360 kind:data(any) addr:0x02119360
 data_ov044_02119370 kind:data(any) addr:0x02119370
 data_ov044_02119380 kind:data(any) addr:0x02119380
-data_ov044_02119384 kind:data(any) addr:0x02119384 ambiguous
 data_ov044_02119390 kind:data(any) addr:0x02119390
 data_ov044_021193a0 kind:data(any) addr:0x021193a0
 data_ov044_021193b0 kind:data(any) addr:0x021193b0
@@ -199,7 +188,6 @@ data_ov044_02119490 kind:data(any) addr:0x02119490
 data_ov044_021194a0 kind:data(any) addr:0x021194a0
 data_ov044_021194b0 kind:data(any) addr:0x021194b0
 data_ov044_021194c0 kind:data(any) addr:0x021194c0
-data_ov044_021194c8 kind:data(any) addr:0x021194c8 ambiguous
 data_ov044_021194d0 kind:data(any) addr:0x021194d0
 data_ov044_021194e0 kind:data(any) addr:0x021194e0
 data_ov044_021194f0 kind:data(any) addr:0x021194f0
@@ -214,13 +202,11 @@ data_ov044_02119570 kind:data(any) addr:0x02119570
 data_ov044_0211957c kind:data(any) addr:0x0211957c ambiguous
 data_ov044_02119580 kind:data(any) addr:0x02119580
 data_ov044_02119590 kind:data(any) addr:0x02119590
-data_ov044_0211959c kind:data(any) addr:0x0211959c ambiguous
 data_ov044_021195a0 kind:data(any) addr:0x021195a0
 data_ov044_021195b0 kind:data(any) addr:0x021195b0
 data_ov044_021195c0 kind:data(any) addr:0x021195c0
 data_ov044_021195d0 kind:data(any) addr:0x021195d0
 data_ov044_021195e0 kind:data(any) addr:0x021195e0
-data_ov044_021195e4 kind:data(any) addr:0x021195e4 ambiguous
 data_ov044_021195f0 kind:data(any) addr:0x021195f0
 data_ov044_02119600 kind:data(any) addr:0x02119600
 data_ov044_02119610 kind:data(any) addr:0x02119610
@@ -233,7 +219,6 @@ data_ov044_02119670 kind:data(any) addr:0x02119670
 data_ov044_02119680 kind:data(any) addr:0x02119680
 data_ov044_02119690 kind:data(any) addr:0x02119690
 data_ov044_021196a0 kind:data(any) addr:0x021196a0
-data_ov044_021196ac kind:data(any) addr:0x021196ac ambiguous
 data_ov044_021196b0 kind:data(any) addr:0x021196b0
 data_ov044_021196c0 kind:data(any) addr:0x021196c0
 data_ov044_021196d0 kind:data(any) addr:0x021196d0
@@ -257,7 +242,6 @@ data_ov044_021197d0 kind:data(any) addr:0x021197d0
 data_ov044_021197e0 kind:data(any) addr:0x021197e0
 data_ov044_021197f0 kind:data(any) addr:0x021197f0
 data_ov044_02119800 kind:data(any) addr:0x02119800
-data_ov044_02119808 kind:data(any) addr:0x02119808 ambiguous
 data_ov044_02119810 kind:data(any) addr:0x02119810
 data_ov044_02119820 kind:data(any) addr:0x02119820
 data_ov044_02119830 kind:data(any) addr:0x02119830
@@ -265,28 +249,24 @@ data_ov044_02119840 kind:data(any) addr:0x02119840
 data_ov044_02119850 kind:data(any) addr:0x02119850
 data_ov044_0211985c kind:data(any) addr:0x0211985c ambiguous
 data_ov044_02119860 kind:data(any) addr:0x02119860
-data_ov044_02119864 kind:data(any) addr:0x02119864 ambiguous
 data_ov044_02119870 kind:data(any) addr:0x02119870
 data_ov044_02119880 kind:data(any) addr:0x02119880
 data_ov044_02119890 kind:data(any) addr:0x02119890
 data_ov044_021198a0 kind:data(any) addr:0x021198a0
 data_ov044_021198b0 kind:data(any) addr:0x021198b0
 data_ov044_021198c0 kind:data(any) addr:0x021198c0
-data_ov044_021198c4 kind:data(any) addr:0x021198c4 ambiguous
 data_ov044_021198d0 kind:data(any) addr:0x021198d0
 data_ov044_021198e0 kind:data(any) addr:0x021198e0
 data_ov044_021198f0 kind:data(any) addr:0x021198f0
 data_ov044_02119900 kind:data(any) addr:0x02119900
 data_ov044_02119910 kind:data(any) addr:0x02119910
 data_ov044_02119920 kind:data(any) addr:0x02119920
-data_ov044_02119928 kind:data(any) addr:0x02119928 ambiguous
 data_ov044_02119930 kind:data(any) addr:0x02119930
 data_ov044_02119940 kind:data(any) addr:0x02119940
 data_ov044_02119950 kind:data(any) addr:0x02119950
 data_ov044_02119960 kind:data(any) addr:0x02119960
 data_ov044_02119970 kind:data(any) addr:0x02119970
 data_ov044_02119980 kind:data(any) addr:0x02119980
-data_ov044_0211998c kind:data(any) addr:0x0211998c ambiguous
 data_ov044_02119990 kind:data(any) addr:0x02119990
 data_ov044_0211999c kind:data(any) addr:0x0211999c ambiguous
 data_ov044_021199a0 kind:data(any) addr:0x021199a0
@@ -311,21 +291,21 @@ data_ov044_02119ac0 kind:data(any) addr:0x02119ac0
 data_ov044_02119ad0 kind:data(any) addr:0x02119ad0
 data_ov044_02119ae0 kind:data(any) addr:0x02119ae0
 data_ov044_02119af0 kind:data(any) addr:0x02119af0
-data_ov044_02119b00 kind:data(any) addr:0x02119b00 ambiguous
+FldScrMoon_EvilOut kind:data(any) addr:0x02119b00
 data_ov044_02119b18 kind:data(any) addr:0x02119b18
-data_ov044_02119b30 kind:data(any) addr:0x02119b30 ambiguous
+FldScrMoon_GateAquaKeyOpen kind:data(any) addr:0x02119b30
 data_ov044_02119b44 kind:data(any) addr:0x02119b44 ambiguous
-data_ov044_02119b48 kind:data(any) addr:0x02119b48 ambiguous
+FldScrMoon_TrampolineRecover kind:data(any) addr:0x02119b48
 data_ov044_02119b60 kind:data(any) addr:0x02119b60
 data_ov044_02119b78 kind:data(any) addr:0x02119b78
 data_ov044_02119b90 kind:data(any) addr:0x02119b90 ambiguous
-data_ov044_02119ba8 kind:data(any) addr:0x02119ba8 ambiguous
+FldScrMoon_FishingNinja kind:data(any) addr:0x02119ba8
 data_ov044_02119bc4 kind:data(any) addr:0x02119bc4
 data_ov044_02119be0 kind:data(any) addr:0x02119be0
 data_ov044_02119bfc kind:data(any) addr:0x02119bfc
 data_ov044_02119c18 kind:data(any) addr:0x02119c18
 data_ov044_02119c28 kind:data(any) addr:0x02119c28 ambiguous
-data_ov044_02119c34 kind:data(any) addr:0x02119c34 ambiguous
+FldScrMoon_Fishing kind:data(any) addr:0x02119c34
 data_ov044_02119c50 kind:data(any) addr:0x02119c50
 data_ov044_02119c70 kind:data(any) addr:0x02119c70
 data_ov044_02119c90 kind:data(any) addr:0x02119c90
@@ -334,28 +314,24 @@ data_ov044_02119cd0 kind:data(any) addr:0x02119cd0
 data_ov044_02119cf0 kind:data(any) addr:0x02119cf0
 data_ov044_02119d10 kind:data(any) addr:0x02119d10
 data_ov044_02119d30 kind:data(any) addr:0x02119d30
-data_ov044_02119d48 kind:data(any) addr:0x02119d48 ambiguous
 data_ov044_02119d50 kind:data(any) addr:0x02119d50
 data_ov044_02119d70 kind:data(any) addr:0x02119d70
 data_ov044_02119d90 kind:data(any) addr:0x02119d90
 data_ov044_02119db0 kind:data(any) addr:0x02119db0
 data_ov044_02119dd0 kind:data(any) addr:0x02119dd0
 data_ov044_02119df0 kind:data(any) addr:0x02119df0
-data_ov044_02119e04 kind:data(any) addr:0x02119e04 ambiguous
 data_ov044_02119e10 kind:data(any) addr:0x02119e10
 data_ov044_02119e30 kind:data(any) addr:0x02119e30
 data_ov044_02119e50 kind:data(any) addr:0x02119e50
 data_ov044_02119e70 kind:data(any) addr:0x02119e70
 data_ov044_02119e90 kind:data(any) addr:0x02119e90
 data_ov044_02119eb0 kind:data(any) addr:0x02119eb0
-data_ov044_02119ec4 kind:data(any) addr:0x02119ec4 ambiguous
 data_ov044_02119ed0 kind:data(any) addr:0x02119ed0
 data_ov044_02119ef0 kind:data(any) addr:0x02119ef0
 data_ov044_02119f10 kind:data(any) addr:0x02119f10
 data_ov044_02119f30 kind:data(any) addr:0x02119f30
 data_ov044_02119f50 kind:data(any) addr:0x02119f50
 data_ov044_02119f70 kind:data(any) addr:0x02119f70
-data_ov044_02119f8c kind:data(any) addr:0x02119f8c ambiguous
 data_ov044_02119f90 kind:data(any) addr:0x02119f90
 data_ov044_02119fb0 kind:data(any) addr:0x02119fb0
 data_ov044_02119fd0 kind:data(any) addr:0x02119fd0
@@ -363,36 +339,32 @@ data_ov044_02119ff0 kind:data(any) addr:0x02119ff0
 data_ov044_0211a010 kind:data(any) addr:0x0211a010
 data_ov044_0211a030 kind:data(any) addr:0x0211a030
 data_ov044_0211a050 kind:data(any) addr:0x0211a050
-data_ov044_0211a05c kind:data(any) addr:0x0211a05c ambiguous
-data_ov044_0211a070 kind:data(any) addr:0x0211a070 ambiguous
+FldScrMoon_BasketballLose kind:data(any) addr:0x0211a070
 data_ov044_0211a090 kind:data(any) addr:0x0211a090
 data_ov044_0211a0b0 kind:data(any) addr:0x0211a0b0
 data_ov044_0211a0d4 kind:data(any) addr:0x0211a0d4
 data_ov044_0211a0f8 kind:data(any) addr:0x0211a0f8
 data_ov044_0211a11c kind:data(any) addr:0x0211a11c
 data_ov044_0211a140 kind:data(any) addr:0x0211a140
-data_ov044_0211a148 kind:data(any) addr:0x0211a148 ambiguous
 data_ov044_0211a164 kind:data(any) addr:0x0211a164
 data_ov044_0211a188 kind:data(any) addr:0x0211a188
 data_ov044_0211a1ac kind:data(any) addr:0x0211a1ac
 data_ov044_0211a1d0 kind:data(any) addr:0x0211a1d0
-data_ov044_0211a1f4 kind:data(any) addr:0x0211a1f4 ambiguous
+FldScrMoon_BasketballWin kind:data(any) addr:0x0211a1f4
 data_ov044_0211a218 kind:data(any) addr:0x0211a218
-data_ov044_0211a234 kind:data(any) addr:0x0211a234 ambiguous
 data_ov044_0211a23c kind:data(any) addr:0x0211a23c ambiguous
 data_ov044_0211a264 kind:data(any) addr:0x0211a264
 data_ov044_0211a28c kind:data(any) addr:0x0211a28c
-data_ov044_0211a2b4 kind:data(any) addr:0x0211a2b4 ambiguous
-data_ov044_0211a2dc kind:data(any) addr:0x0211a2dc ambiguous
+FldScrMoon_BossDefeat kind:data(any) addr:0x0211a2b4
+FldScrMoon_Mg04RivalDefeat kind:data(any) addr:0x0211a2dc
 data_ov044_0211a304 kind:data(any) addr:0x0211a304
 data_ov044_0211a32c kind:data(any) addr:0x0211a32c
-data_ov044_0211a340 kind:data(any) addr:0x0211a340 ambiguous
-data_ov044_0211a354 kind:data(any) addr:0x0211a354 ambiguous
+FldScrMoon_Mg16RivalDefeat kind:data(any) addr:0x0211a354
 data_ov044_0211a37c kind:data(any) addr:0x0211a37c ambiguous
-data_ov044_0211a3a4 kind:data(any) addr:0x0211a3a4 ambiguous
-data_ov044_0211a3d0 kind:data(any) addr:0x0211a3d0 ambiguous
+FldScrMoon_NinjaFind kind:data(any) addr:0x0211a3a4
+FldScrMoon_BigBallMove kind:data(any) addr:0x0211a3d0
 data_ov044_0211a3fc kind:data(any) addr:0x0211a3fc
-data_ov044_0211a428 kind:data(any) addr:0x0211a428 ambiguous
+FldScrMoon_NinjaBalloon kind:data(any) addr:0x0211a428
 data_ov044_0211a458 kind:data(any) addr:0x0211a458
 data_ov044_0211a488 kind:data(any) addr:0x0211a488
 data_ov044_0211a4bc kind:data(any) addr:0x0211a4bc
@@ -401,7 +373,7 @@ data_ov044_0211a524 kind:data(any) addr:0x0211a524
 data_ov044_0211a558 kind:data(any) addr:0x0211a558
 data_ov044_0211a58c kind:data(any) addr:0x0211a58c
 data_ov044_0211a5c4 kind:data(any) addr:0x0211a5c4
-data_ov044_0211a5fc kind:data(any) addr:0x0211a5fc ambiguous
+FldScrMoon_EnterSageFirst kind:data(any) addr:0x0211a5fc
 data_ov044_0211a634 kind:data(any) addr:0x0211a634
 data_ov044_0211a66c kind:data(any) addr:0x0211a66c
 data_ov044_0211a6a4 kind:data(any) addr:0x0211a6a4
@@ -411,7 +383,7 @@ data_ov044_0211a74c kind:data(any) addr:0x0211a74c
 data_ov044_0211a784 kind:data(any) addr:0x0211a784
 data_ov044_0211a7bc kind:data(any) addr:0x0211a7bc
 data_ov044_0211a7f4 kind:data(any) addr:0x0211a7f4
-data_ov044_0211a830 kind:data(any) addr:0x0211a830 ambiguous
+FldScrMoon_Expand kind:data(any) addr:0x0211a830
 data_ov044_0211a86c kind:data(any) addr:0x0211a86c
 data_ov044_0211a8a8 kind:data(any) addr:0x0211a8a8
 data_ov044_0211a8e4 kind:data(any) addr:0x0211a8e4
@@ -436,13 +408,13 @@ data_ov044_0211a98c kind:data(any) addr:0x0211a98c ambiguous
 data_ov044_0211a994 kind:data(any) addr:0x0211a994 ambiguous
 data_ov044_0211a99c kind:data(any) addr:0x0211a99c ambiguous
 data_ov044_0211a9a0 kind:data(any) addr:0x0211a9a0
-data_ov044_0211a9a4 kind:data(any) addr:0x0211a9a4 ambiguous
+FldScrMoon_StartCycle kind:data(any) addr:0x0211a9a4
 data_ov044_0211a9ac kind:data(any) addr:0x0211a9ac ambiguous
 data_ov044_0211a9bc kind:data(any) addr:0x0211a9bc ambiguous
 data_ov044_0211a9c4 kind:data(any) addr:0x0211a9c4 ambiguous
 data_ov044_0211a9d4 kind:data(any) addr:0x0211a9d4 ambiguous
 data_ov044_0211a9dc kind:data(any) addr:0x0211a9dc ambiguous
-data_ov044_0211a9e0 kind:data(any) addr:0x0211a9e0 ambiguous
+FldScrMoon_Mg23RivalDefeat kind:data(any) addr:0x0211a9e0
 data_ov044_0211a9e4 kind:data(any) addr:0x0211a9e4 ambiguous
 data_ov044_0211a9ec kind:data(any) addr:0x0211a9ec ambiguous
 data_ov044_0211a9fc kind:data(any) addr:0x0211a9fc ambiguous
@@ -485,23 +457,23 @@ data_ov044_0211abec kind:data(any) addr:0x0211abec ambiguous
 data_ov044_0211ac34 kind:data(any) addr:0x0211ac34
 data_ov044_0211ac7c kind:data(any) addr:0x0211ac7c
 data_ov044_0211acc4 kind:data(any) addr:0x0211acc4
-data_ov044_0211ad0c kind:data(any) addr:0x0211ad0c ambiguous
-data_ov044_0211ad58 kind:data(any) addr:0x0211ad58 ambiguous
-data_ov044_0211ada4 kind:data(any) addr:0x0211ada4 ambiguous
+FldScrMoon_TightropeLoseFall kind:data(any) addr:0x0211ad0c
+FldScrMoon_TightropeLoseTimeUp kind:data(any) addr:0x0211ad58
+FldScrMoon_Mg24RivalDefeat kind:data(any) addr:0x0211ada4
 data_ov044_0211adf0 kind:data(any) addr:0x0211adf0
-data_ov044_0211ae3c kind:data(any) addr:0x0211ae3c ambiguous
+FldScrMoon_TightropeWin kind:data(any) addr:0x0211ae3c
 data_ov044_0211ae90 kind:data(any) addr:0x0211ae90
 data_ov044_0211aee8 kind:data(any) addr:0x0211aee8
-data_ov044_0211af40 kind:data(any) addr:0x0211af40 ambiguous
+FldScrMoon_TrampolineWin kind:data(any) addr:0x0211af40
 data_ov044_0211af98 kind:data(any) addr:0x0211af98
-data_ov044_0211aff0 kind:data(any) addr:0x0211aff0 ambiguous
+FldScrMoon_WaterBomb kind:data(any) addr:0x0211aff0
 data_ov044_0211b04c kind:data(any) addr:0x0211b04c
 data_ov044_0211b0a8 kind:data(any) addr:0x0211b0a8
 data_ov044_0211b10c kind:data(any) addr:0x0211b10c
 data_ov044_0211b170 kind:data(any) addr:0x0211b170
-data_ov044_0211b1d8 kind:data(any) addr:0x0211b1d8 ambiguous
+FldScrMoon_Mg13RivalDefeat kind:data(any) addr:0x0211b1d8
 data_ov044_0211b240 kind:data(any) addr:0x0211b240
-data_ov044_0211b2a8 kind:data(any) addr:0x0211b2a8 ambiguous
+FldScrMoon_AquaCycleEnd kind:data(any) addr:0x0211b2a8
 data_ov044_0211b314 kind:data(any) addr:0x0211b314
 data_ov044_0211b370 kind:data(any) addr:0x0211b370 ambiguous
 data_ov044_0211b378 kind:data(any) addr:0x0211b378 ambiguous
@@ -546,7 +518,7 @@ data_ov044_0211b4e8 kind:data(any) addr:0x0211b4e8 ambiguous
 data_ov044_0211b4f0 kind:data(any) addr:0x0211b4f0 ambiguous
 data_ov044_0211b500 kind:data(any) addr:0x0211b500 ambiguous
 data_ov044_0211b508 kind:data(any) addr:0x0211b508 ambiguous
-data_ov044_0211b510 kind:data(any) addr:0x0211b510 ambiguous
+FldScrMoon_PinkCliffHelp kind:data(any) addr:0x0211b510
 data_ov044_0211b518 kind:data(any) addr:0x0211b518 ambiguous
 data_ov044_0211b520 kind:data(any) addr:0x0211b520 ambiguous
 data_ov044_0211b528 kind:data(any) addr:0x0211b528 ambiguous

@@ -4576,13 +4576,13 @@ data_ov000_0209f494 kind:data(any) addr:0x0209f494
 data_ov000_0209f4c0 kind:data(any) addr:0x0209f4c0
 data_ov000_0209f4ec kind:data(any) addr:0x0209f4ec
 data_ov000_0209f518 kind:data(any) addr:0x0209f518
-data_ov000_0209f51c kind:data(any) addr:0x0209f51c
-data_ov000_0209f524 kind:data(any) addr:0x0209f524
-data_ov000_0209f52c kind:data(any) addr:0x0209f52c
+FldSave_ItemHatBitTbl kind:data(any) addr:0x0209f51c
+FldSave_ItemHatOrderTbl kind:data(any) addr:0x0209f524
+FldSave_ItemBodyOrderTbl kind:data(any) addr:0x0209f52c
 data_ov000_0209f534 kind:data(any) addr:0x0209f534
-data_ov000_0209f53c kind:data(any) addr:0x0209f53c
-data_ov000_0209f544 kind:data(any) addr:0x0209f544
-data_ov000_0209f54c kind:data(any) addr:0x0209f54c
+FldSave_ItemBombBitTbl kind:data(any) addr:0x0209f53c
+FldSave_ItemBodyBitTbl kind:data(any) addr:0x0209f544
+FldSave_ItemBombOrderTbl kind:data(any) addr:0x0209f54c
 data_ov000_0209f554 kind:data(any) addr:0x0209f554
 data_ov000_0209f570 kind:data(any) addr:0x0209f570
 data_ov000_0209f58c kind:data(any) addr:0x0209f58c
@@ -5784,7 +5784,7 @@ data_ov000_020aca24 kind:bss addr:0x020aca24
 data_ov000_020aca28 kind:bss addr:0x020aca28
 data_ov000_020aca2c kind:bss addr:0x020aca2c
 CardCollect kind:bss local addr:0x020aca30
-data_ov000_020aca34 kind:bss addr:0x020aca34
+BHouse_Result kind:bss addr:0x020aca34
 data_ov000_020aca38 kind:bss addr:0x020aca38
 BHouse_Work kind:bss addr:0x020aca3c
 Fld_ChrSpawn kind:bss addr:0x020ad058

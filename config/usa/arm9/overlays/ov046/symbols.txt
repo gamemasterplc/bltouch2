@@ -272,18 +272,15 @@ data_ov046_021185f0 kind:data(any) addr:0x021185f0
 data_ov046_02118600 kind:data(any) addr:0x02118600
 data_ov046_02118610 kind:data(any) addr:0x02118610
 data_ov046_02118620 kind:data(any) addr:0x02118620
-data_ov046_0211862c kind:data(any) addr:0x0211862c ambiguous
 data_ov046_02118630 kind:data(any) addr:0x02118630
 data_ov046_02118640 kind:data(any) addr:0x02118640
 data_ov046_02118650 kind:data(any) addr:0x02118650
 data_ov046_02118660 kind:data(any) addr:0x02118660
 data_ov046_02118670 kind:data(any) addr:0x02118670
-data_ov046_02118674 kind:data(any) addr:0x02118674 ambiguous
 data_ov046_02118680 kind:data(any) addr:0x02118680
 data_ov046_02118690 kind:data(any) addr:0x02118690
 data_ov046_021186a0 kind:data(any) addr:0x021186a0
 data_ov046_021186b0 kind:data(any) addr:0x021186b0
-data_ov046_021186bc kind:data(any) addr:0x021186bc ambiguous
 data_ov046_021186c0 kind:data(any) addr:0x021186c0
 data_ov046_021186cc kind:data(any) addr:0x021186cc ambiguous
 data_ov046_021186d0 kind:data(any) addr:0x021186d0
@@ -298,23 +295,22 @@ data_ov046_02118750 kind:data(any) addr:0x02118750
 data_ov046_02118760 kind:data(any) addr:0x02118760
 data_ov046_02118770 kind:data(any) addr:0x02118770
 data_ov046_02118780 kind:data(any) addr:0x02118780
-data_ov046_02118790 kind:data(any) addr:0x02118790 ambiguous
-data_ov046_021187a8 kind:data(any) addr:0x021187a8 ambiguous
-data_ov046_021187b4 kind:data(any) addr:0x021187b4 ambiguous
-data_ov046_021187c0 kind:data(any) addr:0x021187c0 ambiguous
-data_ov046_021187d8 kind:data(any) addr:0x021187d8 ambiguous
+FldScrEarth_NinBombMultiStart kind:data(any) addr:0x02118790
+FldScrEarth_DraBombRecover kind:data(any) addr:0x021187a8
+FldScrEarth_EvilOutCavern kind:data(any) addr:0x021187c0
+FldScrEarth_GraveMummyAttack kind:data(any) addr:0x021187d8
 data_ov046_021187f0 kind:data(any) addr:0x021187f0 ambiguous
 data_ov046_02118808 kind:data(any) addr:0x02118808 ambiguous
 data_ov046_02118820 kind:data(any) addr:0x02118820
-data_ov046_02118838 kind:data(any) addr:0x02118838 ambiguous
-data_ov046_02118850 kind:data(any) addr:0x02118850 ambiguous
+FldScrEarth_TBBMKeyFail kind:data(any) addr:0x02118838
+FldScrEarth_GateLastOpen kind:data(any) addr:0x02118850
 data_ov046_02118868 kind:data(any) addr:0x02118868 ambiguous
-data_ov046_02118880 kind:data(any) addr:0x02118880 ambiguous
-data_ov046_02118898 kind:data(any) addr:0x02118898 ambiguous
-data_ov046_021188b0 kind:data(any) addr:0x021188b0 ambiguous
+FldScrEarth_ScreamPink kind:data(any) addr:0x02118880
+FldScrEarth_ScreamAqua kind:data(any) addr:0x02118898
+FldScrEarth_EvilOut kind:data(any) addr:0x021188b0
 data_ov046_021188cc kind:data(any) addr:0x021188cc
 data_ov046_021188e8 kind:data(any) addr:0x021188e8
-data_ov046_02118908 kind:data(any) addr:0x02118908 ambiguous
+FldScrEarth_EvilHatForceExit kind:data(any) addr:0x02118908
 data_ov046_02118928 kind:data(any) addr:0x02118928
 data_ov046_02118948 kind:data(any) addr:0x02118948
 data_ov046_02118968 kind:data(any) addr:0x02118968
@@ -325,68 +321,55 @@ data_ov046_021189cc kind:data(any) addr:0x021189cc ambiguous
 data_ov046_021189e8 kind:data(any) addr:0x021189e8
 data_ov046_02118a08 kind:data(any) addr:0x02118a08
 data_ov046_02118a28 kind:data(any) addr:0x02118a28
-data_ov046_02118a48 kind:data(any) addr:0x02118a48 ambiguous
+FldScrEarth_EvilHatGuardFirst kind:data(any) addr:0x02118a48
 data_ov046_02118a68 kind:data(any) addr:0x02118a68
 data_ov046_02118a88 kind:data(any) addr:0x02118a88
-data_ov046_02118aa8 kind:data(any) addr:0x02118aa8 ambiguous
+FldScrEarth_ItemForceExit kind:data(any) addr:0x02118aa8
 data_ov046_02118ac8 kind:data(any) addr:0x02118ac8
 data_ov046_02118ae8 kind:data(any) addr:0x02118ae8
 data_ov046_02118b08 kind:data(any) addr:0x02118b08
 data_ov046_02118b28 kind:data(any) addr:0x02118b28
-data_ov046_02118b34 kind:data(any) addr:0x02118b34 ambiguous
 data_ov046_02118b48 kind:data(any) addr:0x02118b48
 data_ov046_02118b68 kind:data(any) addr:0x02118b68
 data_ov046_02118b8c kind:data(any) addr:0x02118b8c
-data_ov046_02118ba0 kind:data(any) addr:0x02118ba0 ambiguous
-data_ov046_02118bb0 kind:data(any) addr:0x02118bb0 ambiguous
+FldScrEarth_MiniBomReturn kind:data(any) addr:0x02118bb0
 data_ov046_02118bd4 kind:data(any) addr:0x02118bd4
 data_ov046_02118bf8 kind:data(any) addr:0x02118bf8
 data_ov046_02118c1c kind:data(any) addr:0x02118c1c
 data_ov046_02118c40 kind:data(any) addr:0x02118c40
 data_ov046_02118c54 kind:data(any) addr:0x02118c54 ambiguous
 data_ov046_02118c64 kind:data(any) addr:0x02118c64
-data_ov046_02118c78 kind:data(any) addr:0x02118c78 ambiguous
 data_ov046_02118c88 kind:data(any) addr:0x02118c88
 data_ov046_02118c9c kind:data(any) addr:0x02118c9c ambiguous
 data_ov046_02118cac kind:data(any) addr:0x02118cac ambiguous
 data_ov046_02118cd0 kind:data(any) addr:0x02118cd0
-data_ov046_02118cec kind:data(any) addr:0x02118cec ambiguous
 data_ov046_02118cf4 kind:data(any) addr:0x02118cf4
-data_ov046_02118d14 kind:data(any) addr:0x02118d14 ambiguous
 data_ov046_02118d18 kind:data(any) addr:0x02118d18
-data_ov046_02118d3c kind:data(any) addr:0x02118d3c ambiguous
-data_ov046_02118d40 kind:data(any) addr:0x02118d40 ambiguous
+FldScrEarth_DraBomb kind:data(any) addr:0x02118d40
 data_ov046_02118d68 kind:data(any) addr:0x02118d68
 data_ov046_02118d90 kind:data(any) addr:0x02118d90
-data_ov046_02118db4 kind:data(any) addr:0x02118db4 ambiguous
 data_ov046_02118db8 kind:data(any) addr:0x02118db8
 data_ov046_02118de0 kind:data(any) addr:0x02118de0
 data_ov046_02118e08 kind:data(any) addr:0x02118e08
 data_ov046_02118e30 kind:data(any) addr:0x02118e30
-data_ov046_02118e38 kind:data(any) addr:0x02118e38 ambiguous
 data_ov046_02118e58 kind:data(any) addr:0x02118e58 ambiguous
-data_ov046_02118e84 kind:data(any) addr:0x02118e84 ambiguous
-data_ov046_02118eb0 kind:data(any) addr:0x02118eb0 ambiguous
-data_ov046_02118edc kind:data(any) addr:0x02118edc
+FldScrEarth_EvilHatGuardReject kind:data(any) addr:0x02118e84
+FldScrEarth_TBBMLongStart kind:data(any) addr:0x02118eb0
+FldScrEarth_EvilHatCollide kind:data(any) addr:0x02118edc
 data_ov046_02118f08 kind:data(any) addr:0x02118f08
-data_ov046_02118f0c kind:data(any) addr:0x02118f0c ambiguous
 data_ov046_02118f38 kind:data(any) addr:0x02118f38
-data_ov046_02118f44 kind:data(any) addr:0x02118f44 ambiguous
 data_ov046_02118f68 kind:data(any) addr:0x02118f68
 data_ov046_02118f98 kind:data(any) addr:0x02118f98
 data_ov046_02118fcc kind:data(any) addr:0x02118fcc
 data_ov046_02119000 kind:data(any) addr:0x02119000
 data_ov046_02119038 kind:data(any) addr:0x02119038
-data_ov046_0211905c kind:data(any) addr:0x0211905c ambiguous
 data_ov046_02119070 kind:data(any) addr:0x02119070
 data_ov046_021190a8 kind:data(any) addr:0x021190a8
 data_ov046_021190e0 kind:data(any) addr:0x021190e0
 data_ov046_02119104 kind:data(any) addr:0x02119104 ambiguous
 data_ov046_02119118 kind:data(any) addr:0x02119118
-data_ov046_02119140 kind:data(any) addr:0x02119140 ambiguous
-data_ov046_02119150 kind:data(any) addr:0x02119150 ambiguous
-data_ov046_0211918c kind:data(any) addr:0x0211918c ambiguous
-data_ov046_021191bc kind:data(any) addr:0x021191bc ambiguous
+FldScrEarth_GraveMummyAccept kind:data(any) addr:0x02119150
+FldScrEarth_GraveMummyGame kind:data(any) addr:0x0211918c
 data_ov046_021191c8 kind:data(any) addr:0x021191c8
 data_ov046_021191d0 kind:data(any) addr:0x021191d0 ambiguous
 data_ov046_02119204 kind:data(any) addr:0x02119204
@@ -396,65 +379,50 @@ data_ov046_02119284 kind:data(any) addr:0x02119284
 data_ov046_021192c4 kind:data(any) addr:0x021192c4
 data_ov046_02119304 kind:data(any) addr:0x02119304
 data_ov046_02119344 kind:data(any) addr:0x02119344
-data_ov046_02119384 kind:data(any) addr:0x02119384 ambiguous
+FldScrEarth_BossWin kind:data(any) addr:0x02119384
 data_ov046_021193c4 kind:data(any) addr:0x021193c4 ambiguous
 data_ov046_02119404 kind:data(any) addr:0x02119404
 data_ov046_02119444 kind:data(any) addr:0x02119444
 data_ov046_02119484 kind:data(any) addr:0x02119484
-data_ov046_021194c8 kind:data(any) addr:0x021194c8 ambiguous
+FldScrEarth_Mg22RivalDefeat kind:data(any) addr:0x021194c8
 data_ov046_0211950c kind:data(any) addr:0x0211950c
 data_ov046_02119554 kind:data(any) addr:0x02119554
 data_ov046_0211957c kind:data(any) addr:0x0211957c ambiguous
-data_ov046_0211959c kind:data(any) addr:0x0211959c ambiguous
-data_ov046_021195e4 kind:data(any) addr:0x021195e4 ambiguous
+FldScrEarth_GraveMummyOK kind:data(any) addr:0x0211959c
+FldScrEarth_GraveMummyNG kind:data(any) addr:0x021195e4
 data_ov046_0211962c kind:data(any) addr:0x0211962c
 data_ov046_02119674 kind:data(any) addr:0x02119674
-data_ov046_021196ac kind:data(any) addr:0x021196ac ambiguous
 data_ov046_021196c0 kind:data(any) addr:0x021196c0
-data_ov046_02119710 kind:data(any) addr:0x02119710 ambiguous
+FldScrEarth_EvilHatGuardPass kind:data(any) addr:0x02119710
 data_ov046_02119760 kind:data(any) addr:0x02119760 ambiguous
 data_ov046_021197b4 kind:data(any) addr:0x021197b4 ambiguous
-data_ov046_02119808 kind:data(any) addr:0x02119808 ambiguous
+FldScrEarth_TBBMLongDown kind:data(any) addr:0x02119808
 data_ov046_0211985c kind:data(any) addr:0x0211985c ambiguous
-data_ov046_02119864 kind:data(any) addr:0x02119864 ambiguous
+FldScrEarth_GraveDisturb kind:data(any) addr:0x02119864
 data_ov046_021198c0 kind:data(any) addr:0x021198c0 ambiguous
-data_ov046_021198c4 kind:data(any) addr:0x021198c4 ambiguous
-data_ov046_02119928 kind:data(any) addr:0x02119928 ambiguous
-data_ov046_0211998c kind:data(any) addr:0x0211998c ambiguous
-data_ov046_02119990 kind:data(any) addr:0x02119990 ambiguous
+FldScrEarth_GraveDisturbLonely kind:data(any) addr:0x021198c4
+FldScrEarth_BossDefeatPink kind:data(any) addr:0x02119928
+FldScrEarth_BossDefeatAqua kind:data(any) addr:0x0211998c
 data_ov046_0211999c kind:data(any) addr:0x0211999c ambiguous
 data_ov046_021199f0 kind:data(any) addr:0x021199f0
 data_ov046_02119a6c kind:data(any) addr:0x02119a6c
 data_ov046_02119af0 kind:data(any) addr:0x02119af0
-data_ov046_02119b00 kind:data(any) addr:0x02119b00 ambiguous
-data_ov046_02119b30 kind:data(any) addr:0x02119b30 ambiguous
 data_ov046_02119b44 kind:data(any) addr:0x02119b44 ambiguous
-data_ov046_02119b48 kind:data(any) addr:0x02119b48 ambiguous
 data_ov046_02119b80 kind:data(any) addr:0x02119b80
 data_ov046_02119b90 kind:data(any) addr:0x02119b90 ambiguous
-data_ov046_02119ba8 kind:data(any) addr:0x02119ba8 ambiguous
 data_ov046_02119c10 kind:data(any) addr:0x02119c10
 data_ov046_02119c28 kind:data(any) addr:0x02119c28 ambiguous
-data_ov046_02119c34 kind:data(any) addr:0x02119c34 ambiguous
 data_ov046_02119cac kind:data(any) addr:0x02119cac
-data_ov046_02119d48 kind:data(any) addr:0x02119d48 ambiguous
-data_ov046_02119e04 kind:data(any) addr:0x02119e04 ambiguous
-data_ov046_02119ec4 kind:data(any) addr:0x02119ec4 ambiguous
-data_ov046_02119f8c kind:data(any) addr:0x02119f8c ambiguous
-data_ov046_0211a05c kind:data(any) addr:0x0211a05c ambiguous
-data_ov046_0211a070 kind:data(any) addr:0x0211a070 ambiguous
-data_ov046_0211a148 kind:data(any) addr:0x0211a148 ambiguous
-data_ov046_0211a1f4 kind:data(any) addr:0x0211a1f4 ambiguous
-data_ov046_0211a234 kind:data(any) addr:0x0211a234 ambiguous
+FldScrEarth_Mg27RestoreBonus kind:data(any) addr:0x02119d48
+FldScrEarth_Mg02RestoreBonusPink kind:data(any) addr:0x02119e04
+FldScrEarth_EndingStartAqua kind:data(any) addr:0x02119ec4
+FldScrEarth_EndingStartPink kind:data(any) addr:0x02119f8c
+FldScrEarth_Mg02RivalDefeat kind:data(any) addr:0x0211a05c
+FldScrEarth_Mg02RestoreBonusAqua kind:data(any) addr:0x0211a148
+FldScrEarth_Mg27RivalDefeat kind:data(any) addr:0x0211a234
 data_ov046_0211a23c kind:data(any) addr:0x0211a23c ambiguous
-data_ov046_0211a2b4 kind:data(any) addr:0x0211a2b4 ambiguous
-data_ov046_0211a2dc kind:data(any) addr:0x0211a2dc ambiguous
-data_ov046_0211a340 kind:data(any) addr:0x0211a340 ambiguous
-data_ov046_0211a354 kind:data(any) addr:0x0211a354 ambiguous
+FldScrEarth_Mg27RivalDefeatHypontize kind:data(any) addr:0x0211a340
 data_ov046_0211a37c kind:data(any) addr:0x0211a37c ambiguous
-data_ov046_0211a3a4 kind:data(any) addr:0x0211a3a4 ambiguous
-data_ov046_0211a3d0 kind:data(any) addr:0x0211a3d0 ambiguous
-data_ov046_0211a428 kind:data(any) addr:0x0211a428 ambiguous
 data_ov046_0211a44c kind:data(any) addr:0x0211a44c
 data_ov046_0211a450 kind:data(any) addr:0x0211a450
 data_ov046_0211a454 kind:data(any) addr:0x0211a454
@@ -487,7 +455,6 @@ data_ov046_0211a596 kind:data(any) addr:0x0211a596
 data_ov046_0211a5af kind:data(any) addr:0x0211a5af
 data_ov046_0211a5c8 kind:data(any) addr:0x0211a5c8
 data_ov046_0211a5e6 kind:data(any) addr:0x0211a5e6
-data_ov046_0211a5fc kind:data(any) addr:0x0211a5fc ambiguous
 data_ov046_0211a606 kind:data(any) addr:0x0211a606
 data_ov046_0211a626 kind:data(any) addr:0x0211a626
 data_ov046_0211a646 kind:data(any) addr:0x0211a646
@@ -511,7 +478,6 @@ data_ov046_0211a798 kind:data(any) addr:0x0211a798
 data_ov046_0211a7c8 kind:data(any) addr:0x0211a7c8
 data_ov046_0211a7f8 kind:data(any) addr:0x0211a7f8
 data_ov046_0211a828 kind:data(any) addr:0x0211a828
-data_ov046_0211a830 kind:data(any) addr:0x0211a830 ambiguous
 data_ov046_0211a858 kind:data(any) addr:0x0211a858
 data_ov046_0211a888 kind:data(any) addr:0x0211a888
 data_ov046_0211a8c0 kind:data(any) addr:0x0211a8c0
@@ -536,14 +502,12 @@ data_ov046_0211a984 kind:data(any) addr:0x0211a984 ambiguous
 data_ov046_0211a98c kind:data(any) addr:0x0211a98c ambiguous
 data_ov046_0211a994 kind:data(any) addr:0x0211a994 ambiguous
 data_ov046_0211a99c kind:data(any) addr:0x0211a99c ambiguous
-data_ov046_0211a9a4 kind:data(any) addr:0x0211a9a4 ambiguous
 data_ov046_0211a9ac kind:data(any) addr:0x0211a9ac ambiguous
 data_ov046_0211a9bc kind:data(any) addr:0x0211a9bc ambiguous
 data_ov046_0211a9c4 kind:data(any) addr:0x0211a9c4 ambiguous
 data_ov046_0211a9c8 kind:data(any) addr:0x0211a9c8
 data_ov046_0211a9d4 kind:data(any) addr:0x0211a9d4 ambiguous
 data_ov046_0211a9dc kind:data(any) addr:0x0211a9dc ambiguous
-data_ov046_0211a9e0 kind:data(any) addr:0x0211a9e0 ambiguous
 data_ov046_0211a9e4 kind:data(any) addr:0x0211a9e4 ambiguous
 data_ov046_0211a9ec kind:data(any) addr:0x0211a9ec ambiguous
 data_ov046_0211a9fc kind:data(any) addr:0x0211a9fc ambiguous
@@ -590,12 +554,8 @@ data_ov046_0211abf8 kind:data(any) addr:0x0211abf8
 data_ov046_0211ac04 kind:data(any) addr:0x0211ac04
 data_ov046_0211ac74 kind:data(any) addr:0x0211ac74
 data_ov046_0211acec kind:data(any) addr:0x0211acec
-data_ov046_0211ad0c kind:data(any) addr:0x0211ad0c ambiguous
-data_ov046_0211ad58 kind:data(any) addr:0x0211ad58 ambiguous
 data_ov046_0211ad6c kind:data(any) addr:0x0211ad6c
-data_ov046_0211ada4 kind:data(any) addr:0x0211ada4 ambiguous
 data_ov046_0211adec kind:data(any) addr:0x0211adec
-data_ov046_0211ae3c kind:data(any) addr:0x0211ae3c ambiguous
 data_ov046_0211ae74 kind:data(any) addr:0x0211ae74
 data_ov046_0211ae88 kind:data(any) addr:0x0211ae88
 data_ov046_0211ae9c kind:data(any) addr:0x0211ae9c
@@ -606,13 +566,9 @@ data_ov046_0211aeec kind:data(any) addr:0x0211aeec
 data_ov046_0211af00 kind:data(any) addr:0x0211af00
 data_ov046_0211af14 kind:data(any) addr:0x0211af14
 data_ov046_0211af28 kind:data(any) addr:0x0211af28
-data_ov046_0211af40 kind:data(any) addr:0x0211af40 ambiguous
 data_ov046_0211afe0 kind:data(any) addr:0x0211afe0
-data_ov046_0211aff0 kind:data(any) addr:0x0211aff0 ambiguous
 data_ov046_0211b0e8 kind:data(any) addr:0x0211b0e8
-data_ov046_0211b1d8 kind:data(any) addr:0x0211b1d8 ambiguous
 data_ov046_0211b218 kind:data(any) addr:0x0211b218
-data_ov046_0211b2a8 kind:data(any) addr:0x0211b2a8 ambiguous
 data_ov046_0211b370 kind:data(any) addr:0x0211b370 ambiguous
 data_ov046_0211b378 kind:data(any) addr:0x0211b378 ambiguous
 data_ov046_0211b380 kind:data(any) addr:0x0211b380 ambiguous
