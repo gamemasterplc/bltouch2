@@ -1540,7 +1540,6 @@ data_ov047_0214015c kind:data(any) addr:0x0214015c
 data_ov047_021401bc kind:data(any) addr:0x021401bc
 data_ov047_0214021c kind:data(any) addr:0x0214021c
 data_ov047_0214027c kind:data(any) addr:0x0214027c
-data_ov047_02140280 kind:data(any) addr:0x02140280
 data_ov047_021402dc kind:data(any) addr:0x021402dc
 data_ov047_0214033c kind:data(any) addr:0x0214033c
 data_ov047_021403a0 kind:data(any) addr:0x021403a0

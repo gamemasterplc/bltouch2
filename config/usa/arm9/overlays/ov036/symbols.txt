@@ -65,24 +65,16 @@ data_ov036_02117154 kind:data(any) addr:0x02117154
 data_ov036_0211717c kind:data(any) addr:0x0211717c
 data_ov036_021171a4 kind:data(any) addr:0x021171a4
 data_ov036_021171cc kind:data(any) addr:0x021171cc
-data_ov036_021171e8 kind:data(any) addr:0x021171e8 ambiguous
-data_ov036_02117200 kind:data(any) addr:0x02117200 ambiguous
 data_ov036_0211720c kind:data(any) addr:0x0211720c
 data_ov036_0211724c kind:data(any) addr:0x0211724c
-data_ov036_02117274 kind:data(any) addr:0x02117274 ambiguous
 data_ov036_0211728c kind:data(any) addr:0x0211728c
-data_ov036_02117298 kind:data(any) addr:0x02117298 ambiguous
 data_ov036_021172cc kind:data(any) addr:0x021172cc
 data_ov036_0211730c kind:data(any) addr:0x0211730c
 data_ov036_0211734c kind:data(any) addr:0x0211734c
-data_ov036_02117368 kind:data(any) addr:0x02117368 ambiguous
 data_ov036_0211738c kind:data(any) addr:0x0211738c
 data_ov036_021173cc kind:data(any) addr:0x021173cc
 data_ov036_021173d0 kind:data(any) addr:0x021173d0
-data_ov036_02117404 kind:data(any) addr:0x02117404 ambiguous
-data_ov036_02117418 kind:data(any) addr:0x02117418 ambiguous
 data_ov036_021174a4 kind:data(any) addr:0x021174a4
-data_ov036_021174cc kind:data(any) addr:0x021174cc ambiguous
 data_ov036_02117500 kind:data(any) addr:0x02117500
 data_ov036_02117504 kind:data(any) addr:0x02117504
 data_ov036_0211750c kind:data(any) addr:0x0211750c
@@ -90,14 +82,11 @@ data_ov036_02117514 kind:data(any) addr:0x02117514
 data_ov036_02117520 kind:data(any) addr:0x02117520
 data_ov036_02117530 kind:data(any) addr:0x02117530
 data_ov036_02117540 kind:data(any) addr:0x02117540
-data_ov036_0211754c kind:data(any) addr:0x0211754c ambiguous
 data_ov036_02117550 kind:data(any) addr:0x02117550
 data_ov036_02117560 kind:data(any) addr:0x02117560
 data_ov036_02117570 kind:data(any) addr:0x02117570
-data_ov036_02117574 kind:data(any) addr:0x02117574 ambiguous
 data_ov036_02117588 kind:data(any) addr:0x02117588
 data_ov036_021175a8 kind:data(any) addr:0x021175a8
-data_ov036_021175e4 kind:data(any) addr:0x021175e4 ambiguous
 data_ov036_02117650 kind:data(any) addr:0x02117650
 data_ov036_02117654 kind:data(any) addr:0x02117654
 data_ov036_0211766c kind:data(any) addr:0x0211766c

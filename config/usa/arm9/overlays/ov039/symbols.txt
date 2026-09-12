@@ -62,28 +62,16 @@ data_ov039_02115b68 kind:data(any) addr:0x02115b68
 data_ov039_02115ba8 kind:data(any) addr:0x02115ba8
 data_ov039_02115be8 kind:data(any) addr:0x02115be8
 data_ov039_02115c28 kind:data(any) addr:0x02115c28
-data_ov039_02115c50 kind:data(any) addr:0x02115c50 ambiguous
 data_ov039_02115c68 kind:data(any) addr:0x02115c68
-data_ov039_02115c70 kind:data(any) addr:0x02115c70 ambiguous
-data_ov039_02115c8c kind:data(any) addr:0x02115c8c ambiguous
-data_ov039_02115c94 kind:data(any) addr:0x02115c94 ambiguous
 data_ov039_02115ca8 kind:data(any) addr:0x02115ca8
 data_ov039_02115ce8 kind:data(any) addr:0x02115ce8
-data_ov039_02115d0c kind:data(any) addr:0x02115d0c ambiguous
-data_ov039_02115d18 kind:data(any) addr:0x02115d18 ambiguous
 data_ov039_02115d28 kind:data(any) addr:0x02115d28
 data_ov039_02115d68 kind:data(any) addr:0x02115d68
-data_ov039_02115d6c kind:data(any) addr:0x02115d6c ambiguous
-data_ov039_02115d9c kind:data(any) addr:0x02115d9c ambiguous
 data_ov039_02115da8 kind:data(any) addr:0x02115da8
-data_ov039_02115db0 kind:data(any) addr:0x02115db0 ambiguous
 data_ov039_02115de8 kind:data(any) addr:0x02115de8
-data_ov039_02115df0 kind:data(any) addr:0x02115df0 ambiguous
 data_ov039_02115e28 kind:data(any) addr:0x02115e28
 data_ov039_02115e68 kind:data(any) addr:0x02115e68
-data_ov039_02115e78 kind:data(any) addr:0x02115e78 ambiguous
 data_ov039_02115ea8 kind:data(any) addr:0x02115ea8
-data_ov039_02115ecc kind:data(any) addr:0x02115ecc ambiguous
 data_ov039_02115ed0 kind:data(any) addr:0x02115ed0
 data_ov039_02115ef8 kind:data(any) addr:0x02115ef8
 data_ov039_02115f20 kind:data(any) addr:0x02115f20
@@ -92,12 +80,8 @@ data_ov039_02115f70 kind:data(any) addr:0x02115f70
 data_ov039_02115fb0 kind:data(any) addr:0x02115fb0
 data_ov039_02116000 kind:data(any) addr:0x02116000
 data_ov039_02116014 kind:data(any) addr:0x02116014
-data_ov039_02116028 kind:data(any) addr:0x02116028 ambiguous
-data_ov039_02116038 kind:data(any) addr:0x02116038 ambiguous
 data_ov039_02116060 kind:data(any) addr:0x02116060
-data_ov039_0211606c kind:data(any) addr:0x0211606c ambiguous
 data_ov039_021160b4 kind:data(any) addr:0x021160b4
-data_ov039_021160c0 kind:data(any) addr:0x021160c0 ambiguous
 data_ov039_021160c4 kind:data(any) addr:0x021160c4
 data_ov039_021160d4 kind:data(any) addr:0x021160d4
 data_ov039_021160f4 kind:data(any) addr:0x021160f4

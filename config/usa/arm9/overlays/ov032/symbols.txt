@@ -116,6 +116,5 @@ data_ov032_02118524 kind:data(any) addr:0x02118524
 data_ov032_02118564 kind:data(any) addr:0x02118564
 data_ov032_021185a4 kind:data(any) addr:0x021185a4
 data_ov032_021185e4 kind:data(any) addr:0x021185e4
-data_ov032_021185f0 kind:data(any) addr:0x021185f0 ambiguous
 data_ov032_02118624 kind:data(any) addr:0x02118624
 data_ov032_02118660 kind:bss addr:0x02118660

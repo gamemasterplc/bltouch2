@@ -71,20 +71,14 @@ func_ov011_02114e14 kind:function(arm,size=0x28) addr:0x02114e14
 data_ov011_02114e3c kind:data(any) addr:0x02114e3c
 data_ov011_02114e4c kind:data(any) addr:0x02114e4c
 data_ov011_02114e74 kind:data(any) addr:0x02114e74
-data_ov011_02114e98 kind:data(any) addr:0x02114e98 ambiguous
 data_ov011_02114e9c kind:data(any) addr:0x02114e9c
 data_ov011_02114ec4 kind:data(any) addr:0x02114ec4
 data_ov011_02114eec kind:data(any) addr:0x02114eec
-data_ov011_02114ef0 kind:data(any) addr:0x02114ef0 ambiguous
 data_ov011_02114f14 kind:data(any) addr:0x02114f14
-data_ov011_02114f20 kind:data(any) addr:0x02114f20 ambiguous
-data_ov011_02114f48 kind:data(any) addr:0x02114f48 ambiguous
 data_ov011_02114f54 kind:data(any) addr:0x02114f54
-data_ov011_02114f6c kind:data(any) addr:0x02114f6c ambiguous
 data_ov011_02114f94 kind:data(any) addr:0x02114f94
 data_ov011_02114fd4 kind:data(any) addr:0x02114fd4
 data_ov011_02115014 kind:data(any) addr:0x02115014
-data_ov011_0211503c kind:data(any) addr:0x0211503c ambiguous
 data_ov011_02115048 kind:data(any) addr:0x02115048
 data_ov011_02115050 kind:data(any) addr:0x02115050
 data_ov011_0211505c kind:data(any) addr:0x0211505c
@@ -94,5 +88,4 @@ data_ov011_02115088 kind:data(any) addr:0x02115088
 data_ov011_02115098 kind:data(any) addr:0x02115098
 data_ov011_021150b4 kind:data(any) addr:0x021150b4
 data_ov011_021150d4 kind:data(any) addr:0x021150d4
-data_ov011_021150f0 kind:data(any) addr:0x021150f0 ambiguous
 data_ov011_02115120 kind:bss addr:0x02115120

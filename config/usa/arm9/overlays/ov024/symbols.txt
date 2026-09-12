@@ -56,17 +56,12 @@ func_ov024_02115b24 kind:function(arm,size=0x234) addr:0x02115b24
 func_ov024_02115d58 kind:function(arm,size=0xc) addr:0x02115d58
 func_ov024_02115d64 kind:function(arm,size=0x30) addr:0x02115d64
 data_ov024_02115d94 kind:data(any) addr:0x02115d94
-data_ov024_02115d9c kind:data(any) addr:0x02115d9c ambiguous
 data_ov024_02115da4 kind:data(any) addr:0x02115da4
-data_ov024_02115db0 kind:data(any) addr:0x02115db0 ambiguous
 data_ov024_02115dcc kind:data(any) addr:0x02115dcc
-data_ov024_02115df0 kind:data(any) addr:0x02115df0 ambiguous
 data_ov024_02115df4 kind:data(any) addr:0x02115df4
 data_ov024_02115e1c kind:data(any) addr:0x02115e1c
 data_ov024_02115e5c kind:data(any) addr:0x02115e5c
-data_ov024_02115e78 kind:data(any) addr:0x02115e78 ambiguous
 data_ov024_02115e9c kind:data(any) addr:0x02115e9c
-data_ov024_02115ecc kind:data(any) addr:0x02115ecc ambiguous
 data_ov024_02115edc kind:data(any) addr:0x02115edc
 data_ov024_02115f1c kind:data(any) addr:0x02115f1c
 data_ov024_02115f5c kind:data(any) addr:0x02115f5c
@@ -74,13 +69,9 @@ data_ov024_02115f9c kind:data(any) addr:0x02115f9c
 data_ov024_02115fa0 kind:data(any) addr:0x02115fa0
 data_ov024_02115fa4 kind:data(any) addr:0x02115fa4
 data_ov024_02115fa6 kind:data(any) addr:0x02115fa6
-data_ov024_02115ff4 kind:data(any) addr:0x02115ff4 ambiguous
-data_ov024_02116028 kind:data(any) addr:0x02116028 ambiguous
 data_ov024_02116038 kind:data(any) addr:0x02116038
-data_ov024_0211606c kind:data(any) addr:0x0211606c ambiguous
 data_ov024_02116078 kind:data(any) addr:0x02116078
 data_ov024_021160b8 kind:data(any) addr:0x021160b8
-data_ov024_021160c0 kind:data(any) addr:0x021160c0 ambiguous
 data_ov024_02116100 kind:data(any) addr:0x02116100
 data_ov024_02116118 kind:data(any) addr:0x02116118
 data_ov024_02116124 kind:data(any) addr:0x02116124
@@ -89,5 +80,4 @@ data_ov024_0211613c kind:data(any) addr:0x0211613c
 data_ov024_0211614c kind:data(any) addr:0x0211614c
 data_ov024_0211615c kind:data(any) addr:0x0211615c
 data_ov024_0211616c kind:data(any) addr:0x0211616c
-data_ov024_02116180 kind:data(any) addr:0x02116180 ambiguous
 data_ov024_02116184 kind:data(any) addr:0x02116184
