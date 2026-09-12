@@ -29,7 +29,7 @@ parser.add_argument(
     dest="wine",
     required=False,
     help="Path to Wine/Wibo (linux only)",
-)
+) 
 parser.add_argument(
     "--compiler",
     type=Path,
