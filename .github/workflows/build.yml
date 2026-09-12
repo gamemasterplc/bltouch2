@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    container: ghcr.io/gamemasterplc/bltouch2-build:latest
+    container: ghcr.io/gamemasterplc/bltouch2-build:main
 
     runs-on: ubuntu-latest
     strategy:
