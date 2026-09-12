@@ -491,7 +491,7 @@ ModeTouch kind:function(arm,size=0x10) local addr:0x0206029c
 ModeUpdateSpr kind:function(arm,size=0x220) local addr:0x020602ac
 ModeUpdateNameSpr kind:function(arm,size=0x138) local addr:0x020604cc
 ReturnTouch kind:function(arm,size=0x4c) local addr:0x02060604
-ReturnSprReset kind:function(arm,size=0x28) local addr:0x02060650
+ReturnTouchEnd kind:function(arm,size=0x28) local addr:0x02060650
 CallScene kind:function(arm,size=0x88) local addr:0x02060678
 CreateHelpMes kind:function(arm,size=0x4c) local addr:0x02060700
 UpdateHelpMes kind:function(arm,size=0x80) local addr:0x0206074c
@@ -601,18 +601,18 @@ MessageDestroy kind:function(arm,size=0x28) local addr:0x020645bc
 MessageGetScreenBuf kind:function(arm,size=0xc) local addr:0x020645e4
 MessageGetScreenSize kind:function(arm,size=0x18) local addr:0x020645f0
 BLMenu_MultiModeCreate kind:function(arm,size=0x144) addr:0x02064608
-func_ov000_0206474c kind:function(arm,size=0x1a4) addr:0x0206474c
-func_ov000_020648f0 kind:function(arm,size=0x50) addr:0x020648f0
-func_ov000_02064940 kind:function(arm,size=0x24) addr:0x02064940
-func_ov000_02064964 kind:function(arm,size=0xc8) addr:0x02064964
-func_ov000_02064a2c kind:function(arm,size=0x10) addr:0x02064a2c
-func_ov000_02064a3c kind:function(arm,size=0x16c) addr:0x02064a3c
-func_ov000_02064ba8 kind:function(arm,size=0xc0) addr:0x02064ba8
-func_ov000_02064c68 kind:function(arm,size=0x5c) addr:0x02064c68
-func_ov000_02064cc4 kind:function(arm,size=0x44) addr:0x02064cc4
-func_ov000_02064d08 kind:function(arm,size=0x2c) addr:0x02064d08
-func_ov000_02064d34 kind:function(arm,size=0x80) addr:0x02064d34
-func_ov000_02064db4 kind:function(arm,size=0x4c) addr:0x02064db4
+MultiMenuExec kind:function(arm,size=0x1a4) local addr:0x0206474c
+CallNextScene kind:function(arm,size=0x50) local addr:0x020648f0
+CreateSpr kind:function(arm,size=0x24) local addr:0x02064940
+CreateTouchBomb kind:function(arm,size=0xc8) local addr:0x02064964
+ModeTouch kind:function(arm,size=0x10) local addr:0x02064a2c
+ModeUpdateSpr kind:function(arm,size=0x16c) local addr:0x02064a3c
+ModeUnselect kind:function(arm,size=0xc0) local addr:0x02064ba8
+CreateReturn kind:function(arm,size=0x5c) local addr:0x02064c68
+ReturnTouch kind:function(arm,size=0x44) local addr:0x02064cc4
+ReturnTouchEnd kind:function(arm,size=0x2c) local addr:0x02064d08
+CreateHelpMes kind:function(arm,size=0x80) local addr:0x02064d34
+WriteHelpMes kind:function(arm,size=0x4c) local addr:0x02064db4
 BLMenu_MultiModeParentCreate kind:function(arm,size=0xfc) addr:0x02064e00
 func_ov000_02064efc kind:function(arm,size=0x3f0) addr:0x02064efc
 func_ov000_020652ec kind:function(arm,size=0x24) addr:0x020652ec
@@ -836,69 +836,69 @@ func_ov000_02071830 kind:function(arm,size=0x13c) addr:0x02071830
 func_ov000_0207196c kind:function(arm,size=0x13c) addr:0x0207196c
 BLMenu_BTowerStartCreate kind:function(arm,size=0x23c) addr:0x02071aa8
 BLMenu_BTowerVsCreate kind:function(arm,size=0x380) addr:0x02071ce4
-BLMenu_BTowerMgEndCreate kind:function(arm,size=0x1d0) addr:0x02072064
-func_ov000_02072234 kind:function(arm,size=0x100) addr:0x02072234
-func_ov000_02072334 kind:function(arm,size=0x100) addr:0x02072334
-func_ov000_02072434 kind:function(arm,size=0x100) addr:0x02072434
-func_ov000_02072534 kind:function(arm,size=0xe4) addr:0x02072534
-func_ov000_02072618 kind:function(arm,size=0x10) addr:0x02072618
-func_ov000_02072628 kind:function(arm,size=0x20) addr:0x02072628
-func_ov000_02072648 kind:function(arm,size=0x4c) addr:0x02072648
-func_ov000_02072694 kind:function(arm,size=0x20) addr:0x02072694
-func_ov000_020726b4 kind:function(arm,size=0x20) addr:0x020726b4
-func_ov000_020726d4 kind:function(arm,size=0x70) addr:0x020726d4
-func_ov000_02072744 kind:function(arm,size=0x120) addr:0x02072744
-func_ov000_02072864 kind:function(arm,size=0x144) addr:0x02072864
-func_ov000_020729a8 kind:function(arm,size=0x3c) addr:0x020729a8
-func_ov000_020729e4 kind:function(arm,size=0x10) addr:0x020729e4
-func_ov000_020729f4 kind:function(arm,size=0x10) addr:0x020729f4
-func_ov000_02072a04 kind:function(arm,size=0xc4) addr:0x02072a04
+BLMenu_BTowerOverCreate kind:function(arm,size=0x1d0) addr:0x02072064
+BTowerStartExec kind:function(arm,size=0x100) local addr:0x02072234
+BTowerVsExec kind:function(arm,size=0x100) local addr:0x02072334
+BTowerMgEndExec kind:function(arm,size=0x100) local addr:0x02072434
+CreateBustupSpr kind:function(arm,size=0xe4) local addr:0x02072534
+CreateSpr kind:function(arm,size=0x10) local addr:0x02072618
+CreateVsSpr kind:function(arm,size=0x20) local addr:0x02072628
+CreateVsNameSpr kind:function(arm,size=0x4c) local addr:0x02072648
+CreateVsScoreSpr kind:function(arm,size=0x20) local addr:0x02072694
+CreateOverSpr kind:function(arm,size=0x20) local addr:0x020726b4
+CreateConCharSpr kind:function(arm,size=0x70) local addr:0x020726d4
+CreateCurScoreSpr kind:function(arm,size=0x120) local addr:0x02072744
+CreateMaxScoreSpr kind:function(arm,size=0x144) local addr:0x02072864
+GetNextMgData kind:function(arm,size=0x3c) local addr:0x020729a8
+GetNextMgNo kind:function(arm,size=0x10) local addr:0x020729e4
+GetNextChar kind:function(arm,size=0x10) local addr:0x020729f4
+GetRareCardWin kind:function(arm,size=0xc4) local addr:0x02072a04
 Demo_TitleCreate kind:function(arm,size=0x1f4) addr:0x02072ac8
-func_ov000_02072cbc kind:function(arm,size=0x28c) addr:0x02072cbc
-func_ov000_02072f48 kind:function(arm,size=0xc) addr:0x02072f48
-func_ov000_02072f54 kind:function(arm,size=0x34) addr:0x02072f54
-func_ov000_02072f88 kind:function(arm,size=0x2c) addr:0x02072f88
+TitleExec kind:function(arm,size=0x28c) local addr:0x02072cbc
+IsOMTitle kind:function(arm,size=0xc) local addr:0x02072f48
+FadeOutExec kind:function(arm,size=0x34) local addr:0x02072f54
+FadeInExec kind:function(arm,size=0x2c) local addr:0x02072f88
 Demo_Create kind:function(arm,size=0xb8) addr:0x02072fb4
-func_ov000_0207306c kind:function(arm,size=0x16c) addr:0x0207306c
-func_ov000_020731d8 kind:function(arm,size=0x14c) addr:0x020731d8
-func_ov000_02073324 kind:function(arm,size=0x258) addr:0x02073324
-func_ov000_0207357c kind:function(arm,size=0x7c) addr:0x0207357c
-func_ov000_020735f8 kind:function(arm,size=0x28) addr:0x020735f8
-func_ov000_02073620 kind:function(arm,size=0xb8) addr:0x02073620
-func_ov000_020736d8 kind:function(arm,size=0x80) addr:0x020736d8
-func_ov000_02073758 kind:function(arm,size=0x28) addr:0x02073758
-func_ov000_02073780 kind:function(arm,size=0xc0) addr:0x02073780
-func_ov000_02073840 kind:function(arm,size=0x70) addr:0x02073840
-func_ov000_020738b0 kind:function(arm,size=0x134) addr:0x020738b0
-func_ov000_020739e4 kind:function(arm,size=0x9c) addr:0x020739e4
-func_ov000_02073a80 kind:function(arm,size=0x54) addr:0x02073a80
-func_ov000_02073ad4 kind:function(arm,size=0x28) addr:0x02073ad4
-func_ov000_02073afc kind:function(arm,size=0x9c) addr:0x02073afc
-func_ov000_02073b98 kind:function(arm,size=0xf0) addr:0x02073b98
-func_ov000_02073c88 kind:function(arm,size=0x5c) addr:0x02073c88
-func_ov000_02073ce4 kind:function(arm,size=0x5c) addr:0x02073ce4
-func_ov000_02073d40 kind:function(arm,size=0x58) addr:0x02073d40
-func_ov000_02073d98 kind:function(arm,size=0xa4) addr:0x02073d98
-func_ov000_02073e3c kind:function(arm,size=0xac) addr:0x02073e3c
-func_ov000_02073ee8 kind:function(arm,size=0xe8) addr:0x02073ee8
-func_ov000_02073fd0 kind:function(arm,size=0x30) addr:0x02073fd0
-func_ov000_02074000 kind:function(arm,size=0x1c) addr:0x02074000
-func_ov000_0207401c kind:function(arm,size=0x6c) addr:0x0207401c
-func_ov000_02074088 kind:function(arm,size=0x40) addr:0x02074088
-func_ov000_020740c8 kind:function(arm,size=0x14) addr:0x020740c8
-func_ov000_020740dc kind:function(arm,size=0x30c) addr:0x020740dc
-func_ov000_020743e8 kind:function(arm,size=0x38) addr:0x020743e8
-func_ov000_02074420 kind:function(arm,size=0x10c) addr:0x02074420
+DemoExec kind:function(arm,size=0x16c) local addr:0x0207306c
+DemoCreateScroll kind:function(arm,size=0x14c) local addr:0x020731d8
+DemoExecScroll kind:function(arm,size=0x258) local addr:0x02073324
+DemoCreateChar kind:function(arm,size=0x7c) local addr:0x0207357c
+DemoDestroyChar kind:function(arm,size=0x28) local addr:0x020735f8
+DemoExecChar kind:function(arm,size=0xb8) local addr:0x02073620
+DemoCreateCharName kind:function(arm,size=0x80) local addr:0x020736d8
+DemoKillCharName kind:function(arm,size=0x28) local addr:0x02073758
+DemoExecCharName kind:function(arm,size=0xc0) local addr:0x02073780
+DemoCreateStarScene kind:function(arm,size=0x70) local addr:0x02073840
+DemoExecStarScene kind:function(arm,size=0x134) local addr:0x020738b0
+DemoCreateStarBomSpr kind:function(arm,size=0x9c) local addr:0x020739e4
+DemoExecStarBomSpr kind:function(arm,size=0x54) local addr:0x02073a80
+DemoDestroyStarBomSpr kind:function(arm,size=0x28) local addr:0x02073ad4
+DemoCreateEvilScene kind:function(arm,size=0x9c) local addr:0x02073afc
+DemoExecEvilScene kind:function(arm,size=0xf0) local addr:0x02073b98
+DemoCreateEvilBomSpr kind:function(arm,size=0x5c) local addr:0x02073c88
+DemoCreateEvilBomFade kind:function(arm,size=0x5c) local addr:0x02073ce4
+DemoExecEvilBomFadeCtrl kind:function(arm,size=0x58) local addr:0x02073d40
+DemoExecEvilBomFade kind:function(arm,size=0xa4) local addr:0x02073d98
+Demo_SetGpuMode kind:function(arm,size=0xac) addr:0x02073e3c
+Demo_BalloonCreate kind:function(arm,size=0xe8) addr:0x02073ee8
+BalloonDestroy kind:function(arm,size=0x30) local addr:0x02073fd0
+BalloonObjExec kind:function(arm,size=0x1c) local addr:0x02074000
+BalloonExec kind:function(arm,size=0x6c) local addr:0x0207401c
+BalloonUpdateSpawn kind:function(arm,size=0x40) local addr:0x02074088
+ExecBalloonAll kind:function(arm,size=0x14) local addr:0x020740c8
+AddBalloon kind:function(arm,size=0x30c) local addr:0x020740dc
+RemoveBallloon kind:function(arm,size=0x38) local addr:0x020743e8
+ExecBalloon kind:function(arm,size=0x10c) local addr:0x02074420
 BLMenu_LandClearCreate kind:function(arm,size=0x128) addr:0x0207452c
-func_ov000_02074654 kind:function(arm,size=0x15c) addr:0x02074654
-func_ov000_020747b0 kind:function(arm,size=0x1ac) addr:0x020747b0
-func_ov000_0207495c kind:function(arm,size=0x30) addr:0x0207495c
-func_ov000_0207498c kind:function(arm,size=0x20) addr:0x0207498c
-func_ov000_020749ac kind:function(arm,size=0xcc) addr:0x020749ac
+LandClearExec kind:function(arm,size=0x15c) local addr:0x02074654
+ReadSaveFlags kind:function(arm,size=0x1ac) local addr:0x020747b0
+GetMessageIdx kind:function(arm,size=0x30) local addr:0x0207495c
+GetMessageStr kind:function(arm,size=0x20) local addr:0x0207498c
+WriteMessage kind:function(arm,size=0xcc) local addr:0x020749ac
 BL_BackupInit kind:function(arm,size=0x29c) addr:0x02074a78
 BL_BackupRead kind:function(arm,size=0x1c4) addr:0x02074d14
-func_ov000_02074ed8 kind:function(arm,size=0x84) addr:0x02074ed8
-func_ov000_02074f5c kind:function(arm,size=0x88) addr:0x02074f5c
+CheckBackupMagic kind:function(arm,size=0x84) local addr:0x02074ed8
+VerifyChecksum kind:function(arm,size=0x88) local addr:0x02074f5c
 BL_BackupWrite kind:function(arm,size=0x24c) addr:0x02074fe4
 BL_BackupIsBusy kind:function(arm,size=0x18) addr:0x02075230
 BL_BackupIsLoadFail kind:function(arm,size=0x18) addr:0x02075248
@@ -938,58 +938,58 @@ BL_BackupSetLandSlot kind:function(arm,size=0x3c) addr:0x02075c08
 BL_BackupGetLandSlot kind:function(arm,size=0x20) addr:0x02075c44
 BL_BackupGetLandAutoSlot kind:function(arm,size=0x20) addr:0x02075c64
 BLMenu_LicensedCreate kind:function(arm,size=0x15c) addr:0x02075c84
-func_ov000_02075de0 kind:function(arm,size=0x12c) addr:0x02075de0
-func_ov000_02075f0c kind:function(arm,size=0x4) addr:0x02075f0c
+LicensedExec kind:function(arm,size=0x12c) local addr:0x02075de0
+LicensedDestroy kind:function(arm,size=0x4) local addr:0x02075f0c
 BLMenu_ESRBCreate kind:function(arm,size=0x15c) addr:0x02075f10
-func_ov000_0207606c kind:function(arm,size=0x12c) addr:0x0207606c
-func_ov000_02076198 kind:function(arm,size=0x4) addr:0x02076198
+ESRBExec kind:function(arm,size=0x12c) local addr:0x0207606c
+ESRBDestroy kind:function(arm,size=0x4) local addr:0x02076198
 BLMenu_AtrcSelCreate kind:function(arm,size=0x14) addr:0x0207619c
 BLMenu_AtrcSelMultiCreate kind:function(arm,size=0x24) addr:0x020761b0
-func_ov000_020761d4 kind:function(arm,size=0x39c) addr:0x020761d4
-func_ov000_02076570 kind:function(arm,size=0x1a4) addr:0x02076570
-func_ov000_02076714 kind:function(arm,size=0xa4) addr:0x02076714
-func_ov000_020767b8 kind:function(arm,size=0x40) addr:0x020767b8
-func_ov000_020767f8 kind:function(arm,size=0x20) addr:0x020767f8
-func_ov000_02076818 kind:function(arm,size=0x7c) addr:0x02076818
-func_ov000_02076894 kind:function(arm,size=0x34) addr:0x02076894
-func_ov000_020768c8 kind:function(arm,size=0x70) addr:0x020768c8
-func_ov000_02076938 kind:function(arm,size=0x8c) addr:0x02076938
-func_ov000_020769c4 kind:function(arm,size=0x44) addr:0x020769c4
-func_ov000_02076a08 kind:function(arm,size=0x44) addr:0x02076a08
-func_ov000_02076a4c kind:function(arm,size=0x3c) addr:0x02076a4c
-func_ov000_02076a88 kind:function(arm,size=0x10) addr:0x02076a88
-func_ov000_02076a98 kind:function(arm,size=0x190) addr:0x02076a98
-func_ov000_02076c28 kind:function(arm,size=0xa0) addr:0x02076c28
-func_ov000_02076cc8 kind:function(arm,size=0x10) addr:0x02076cc8
-func_ov000_02076cd8 kind:function(arm,size=0xe8) addr:0x02076cd8
-func_ov000_02076dc0 kind:function(arm,size=0x50) addr:0x02076dc0
-func_ov000_02076e10 kind:function(arm,size=0x34) addr:0x02076e10
-func_ov000_02076e44 kind:function(arm,size=0xd0) addr:0x02076e44
-func_ov000_02076f14 kind:function(arm,size=0x184) addr:0x02076f14
-func_ov000_02077098 kind:function(arm,size=0x27c) addr:0x02077098
-func_ov000_02077314 kind:function(arm,size=0x24) addr:0x02077314
-func_ov000_02077338 kind:function(arm,size=0xa4) addr:0x02077338
-func_ov000_020773dc kind:function(arm,size=0x84) addr:0x020773dc
-func_ov000_02077460 kind:function(arm,size=0x338) addr:0x02077460
-func_ov000_02077798 kind:function(arm,size=0xd4) addr:0x02077798
-func_ov000_0207786c kind:function(arm,size=0x30) addr:0x0207786c
-func_ov000_0207789c kind:function(arm,size=0x40) addr:0x0207789c
+CreateAtrcSel kind:function(arm,size=0x39c) local addr:0x020761d4
+ExecAtrcSel kind:function(arm,size=0x1a4) local addr:0x02076570
+CallMgScene kind:function(arm,size=0xa4) local addr:0x02076714
+GetMgSelectIndex kind:function(arm,size=0x40) local addr:0x020767b8
+GetMgSelectData kind:function(arm,size=0x20) local addr:0x020767f8
+InitMgUnlockFlag kind:function(arm,size=0x7c) local addr:0x02076818
+GetMgUnlockFlag kind:function(arm,size=0x34) local addr:0x02076894
+CheckBeatStaffRecord kind:function(arm,size=0x70) local addr:0x020768c8
+CreateTouchBomb kind:function(arm,size=0x8c) local addr:0x02076938
+SelectTouchBomb kind:function(arm,size=0x44) local addr:0x020769c4
+UnselectTouchBomb kind:function(arm,size=0x44) local addr:0x02076a08
+CreateMgTypeTouch kind:function(arm,size=0x3c) local addr:0x02076a4c
+TouchMgName kind:function(arm,size=0x10) local addr:0x02076a88
+UpdateMgNameSpr kind:function(arm,size=0x190) local addr:0x02076a98
+SetMgNameUnSelect kind:function(arm,size=0xa0) local addr:0x02076c28
+MgTypeTouch kind:function(arm,size=0x10) local addr:0x02076cc8
+UpdateMgTypeSpr kind:function(arm,size=0xe8) local addr:0x02076cd8
+ReturnTouch kind:function(arm,size=0x50) local addr:0x02076dc0
+ReturnTouchEnd kind:function(arm,size=0x34) local addr:0x02076e10
+CreateMgNameSpr kind:function(arm,size=0xd0) local addr:0x02076e44
+UpdateMgNameSpr kind:function(arm,size=0x184) local addr:0x02076f14
+CreateNumber kind:function(arm,size=0x27c) local addr:0x02077098
+CreateEmptyScoreSpr kind:function(arm,size=0x24) local addr:0x02077314
+SetStatMg kind:function(arm,size=0xa4) local addr:0x02077338
+KillMgStat kind:function(arm,size=0x84) local addr:0x020773dc
+WriteMgNumber kind:function(arm,size=0x338) local addr:0x02077460
+CreateMgIcon kind:function(arm,size=0xd4) local addr:0x02077798
+CreateHelpMes kind:function(arm,size=0x30) local addr:0x0207786c
+WriteHelpMes kind:function(arm,size=0x40) local addr:0x0207789c
 Demo_StaffCreate kind:function(arm,size=0x130) addr:0x020778dc
-func_ov000_02077a0c kind:function(arm,size=0x1fc) addr:0x02077a0c
-func_ov000_02077c08 kind:function(arm,size=0xd0) addr:0x02077c08
-func_ov000_02077cd8 kind:function(arm,size=0x54) addr:0x02077cd8
-func_ov000_02077d2c kind:function(arm,size=0xe8) addr:0x02077d2c
-func_ov000_02077e14 kind:function(arm,size=0x10) addr:0x02077e14
-func_ov000_02077e24 kind:function(arm,size=0x8c) addr:0x02077e24
-func_ov000_02077eb0 kind:function(arm,size=0xc4) addr:0x02077eb0
-func_ov000_02077f74 kind:function(arm,size=0xb4) addr:0x02077f74
-func_ov000_02078028 kind:function(arm,size=0x94) addr:0x02078028
-func_ov000_020780bc kind:function(arm,size=0xc8) addr:0x020780bc
-func_ov000_02078184 kind:function(arm,size=0x138) addr:0x02078184
-func_ov000_020782bc kind:function(arm,size=0x10) addr:0x020782bc
-func_ov000_020782cc kind:function(arm,size=0x18) addr:0x020782cc
-func_ov000_020782e4 kind:function(arm,size=0x90) addr:0x020782e4
-func_ov000_02078374 kind:function(arm,size=0x188) addr:0x02078374
+StaffExec kind:function(arm,size=0x1fc) local addr:0x02077a0c
+StaffCreateBG kind:function(arm,size=0xd0) local addr:0x02077c08
+StaffExecBG kind:function(arm,size=0x54) local addr:0x02077cd8
+StaffCharObjCreate kind:function(arm,size=0xe8) local addr:0x02077d2c
+SprDispOff kind:function(arm,size=0x10) local addr:0x02077e14
+StaffCharObjExec kind:function(arm,size=0x8c) local addr:0x02077e24
+StaffCharCreate kind:function(arm,size=0xc4) local addr:0x02077eb0
+StaffCharExec kind:function(arm,size=0xb4) local addr:0x02077f74
+StaffNameObjCreate kind:function(arm,size=0x94) local addr:0x02078028
+StaffNameObjExec kind:function(arm,size=0xc8) local addr:0x020780bc
+StaffNameCreate kind:function(arm,size=0x138) local addr:0x02078184
+StaffNameSprSetAnim kind:function(arm,size=0x10) local addr:0x020782bc
+StaffNameSprSetColor kind:function(arm,size=0x18) local addr:0x020782cc
+StaffNameExec kind:function(arm,size=0x90) local addr:0x020782e4
+CreateEndSpr kind:function(arm,size=0x188) local addr:0x02078374
 WLFuncTbl kind:data(any) local addr:0x020784fc
 ColorTransferTypeTbl kind:data(any) local addr:0x02078528
 grpTbl$2014 kind:data(any) local addr:0x02078560
@@ -1279,14 +1279,14 @@ BL_Mg26_FileTbl kind:data(any) addr:0x0207da40
 data_ov000_0207dc5c kind:data(any) addr:0x0207dc5c
 data_ov000_0207dc7c kind:data(any) addr:0x0207dc7c
 data_ov000_0207dc98 kind:data(any) addr:0x0207dc98
-data_ov000_0207dcb4 kind:data(any) addr:0x0207dcb4
-data_ov000_0207dcdc kind:data(any) addr:0x0207dcdc
+MessageIdx kind:data(any) local addr:0x0207dcb4
+BackupMagic kind:data(any) local addr:0x0207dcdc
 data_ov000_0207dce4 kind:data(any) addr:0x0207dce4
 data_ov000_0207dcf0 kind:data(any) addr:0x0207dcf0
 data_ov000_0207dd04 kind:data(any) addr:0x0207dd04
 data_ov000_0207dd18 kind:data(any) addr:0x0207dd18
 data_ov000_0207dd2c kind:data(any) addr:0x0207dd2c
-data_ov000_0207dd4c kind:data(any) addr:0x0207dd4c
+MapParams kind:data(any) local addr:0x0207dd4c
 BL_SceneTbl kind:data(any) addr:0x0207dd60
 data_ov000_0207def0 kind:data(any) addr:0x0207def0
 data_ov000_0207def4 kind:data(any) addr:0x0207def4
@@ -3821,12 +3821,12 @@ data_ov000_0209797c kind:data(any) addr:0x0209797c
 data_ov000_020979a8 kind:data(any) addr:0x020979a8
 BL_Field_Sun_FileTbl kind:data(any) addr:0x020979d8
 BL_Field_Sun_BG_FileTbl kind:data(any) addr:0x02097aec
-data_ov000_02097c08 kind:data(any) addr:0x02097c08
-data_ov000_02097c10 kind:data(any) addr:0x02097c10
-data_ov000_02097c30 kind:data(any) addr:0x02097c30
-data_ov000_02097c50 kind:data(any) addr:0x02097c50
-data_ov000_02097c74 kind:data(any) addr:0x02097c74
-data_ov000_02097c98 kind:data(any) addr:0x02097c98
+HelpMesTbl kind:data(any) local addr:0x02097c08
+ModeTouchInfo kind:data(any) local addr:0x02097c10
+ReturnTouchInfo kind:data(any) local addr:0x02097c30
+MultiModeSprInfo kind:data(any) local addr:0x02097c50
+WLIconSprInfo kind:data(any) local addr:0x02097c74
+TouchBomb kind:data(any) local addr:0x02097c98
 data_ov000_02097cc0 kind:data(any) addr:0x02097cc0
 data_ov000_02097ce0 kind:data(any) addr:0x02097ce0
 data_ov000_02097d00 kind:data(any) addr:0x02097d00
@@ -4579,52 +4579,52 @@ data_ov000_0209f518 kind:data(any) addr:0x0209f518
 FldSave_ItemHatBitTbl kind:data(any) addr:0x0209f51c
 FldSave_ItemHatOrderTbl kind:data(any) addr:0x0209f524
 FldSave_ItemBodyOrderTbl kind:data(any) addr:0x0209f52c
-data_ov000_0209f534 kind:data(any) addr:0x0209f534
+FldSave_ItemUnkBitTbl kind:data(any) addr:0x0209f534
 FldSave_ItemBombBitTbl kind:data(any) addr:0x0209f53c
 FldSave_ItemBodyBitTbl kind:data(any) addr:0x0209f544
 FldSave_ItemBombOrderTbl kind:data(any) addr:0x0209f54c
-data_ov000_0209f554 kind:data(any) addr:0x0209f554
-data_ov000_0209f570 kind:data(any) addr:0x0209f570
-data_ov000_0209f58c kind:data(any) addr:0x0209f58c
-data_ov000_0209f5b0 kind:data(any) addr:0x0209f5b0
-data_ov000_0209f5d4 kind:data(any) addr:0x0209f5d4
-data_ov000_0209f5f8 kind:data(any) addr:0x0209f5f8
-data_ov000_0209f61c kind:data(any) addr:0x0209f61c
-data_ov000_0209f640 kind:data(any) addr:0x0209f640
-data_ov000_0209f664 kind:data(any) addr:0x0209f664
-data_ov000_0209f6a0 kind:data(any) addr:0x0209f6a0
-data_ov000_0209f6dc kind:data(any) addr:0x0209f6dc
-data_ov000_0209f718 kind:data(any) addr:0x0209f718
-data_ov000_0209f754 kind:data(any) addr:0x0209f754
-data_ov000_0209f790 kind:data(any) addr:0x0209f790
-data_ov000_0209f818 kind:data(any) addr:0x0209f818
-data_ov000_0209f834 kind:data(any) addr:0x0209f834
-data_ov000_0209f858 kind:data(any) addr:0x0209f858
-data_ov000_0209f87c kind:data(any) addr:0x0209f87c
-data_ov000_0209f8a0 kind:data(any) addr:0x0209f8a0
-data_ov000_0209f8dc kind:data(any) addr:0x0209f8dc
-data_ov000_0209f918 kind:data(any) addr:0x0209f918
-data_ov000_0209f954 kind:data(any) addr:0x0209f954
-data_ov000_0209f990 kind:data(any) addr:0x0209f990
-data_ov000_0209f9cc kind:data(any) addr:0x0209f9cc
-data_ov000_0209fa08 kind:data(any) addr:0x0209fa08
-data_ov000_0209fa44 kind:data(any) addr:0x0209fa44
-data_ov000_0209fa80 kind:data(any) addr:0x0209fa80
-data_ov000_0209fabc kind:data(any) addr:0x0209fabc
-data_ov000_0209fac4 kind:data(any) addr:0x0209fac4
-data_ov000_0209fae0 kind:data(any) addr:0x0209fae0
-data_ov000_0209fb04 kind:data(any) addr:0x0209fb04
-data_ov000_0209fb40 kind:data(any) addr:0x0209fb40
-data_ov000_0209fb7c kind:data(any) addr:0x0209fb7c
-data_ov000_0209fbb8 kind:data(any) addr:0x0209fbb8
-data_ov000_0209fbf4 kind:data(any) addr:0x0209fbf4
-data_ov000_0209fc30 kind:data(any) addr:0x0209fc30
-data_ov000_0209fc6c kind:data(any) addr:0x0209fc6c
-data_ov000_0209fca8 kind:data(any) addr:0x0209fca8
-data_ov000_0209fce4 kind:data(any) addr:0x0209fce4
-data_ov000_0209fd20 kind:data(any) addr:0x0209fd20
-data_ov000_0209fd44 kind:data(any) addr:0x0209fd44
-data_ov000_0209fd8c kind:data(any) addr:0x0209fd8c
+BustupImageFileTbl kind:data(any) local addr:0x0209f554
+BustupAnimeFileTbl kind:data(any) local addr:0x0209f570
+OverSprInfo kind:data(any) local addr:0x0209f58c
+ConCharSprInfo kind:data(any) local addr:0x0209f5b0
+VsSprInfo kind:data(any) local addr:0x0209f5d4
+VsNameSprInfo kind:data(any) local addr:0x0209f5f8
+VsScoreSprInfo kind:data(any) local addr:0x0209f61c
+BTowerSprInfo kind:data(any) local addr:0x0209f640
+BTowerVsBGInfo kind:data(any) local addr:0x0209f664
+BTowerOverBG00Info kind:data(any) local addr:0x0209f6a0
+BTowerOverBG10Info kind:data(any) local addr:0x0209f6dc
+ZoneBGSunDownInfo kind:data(any) local addr:0x0209f718
+ZoneBGSunUpInfo kind:data(any) local addr:0x0209f754
+BTowerMgData kind:data(any) local addr:0x0209f790
+BalloonData kind:data(any) local addr:0x0209f818
+TitleButtonSprInfo kind:data(any) local addr:0x0209f834
+OMTitleButtonSprInfo kind:data(any) local addr:0x0209f858
+TitleSprInfo kind:data(any) local addr:0x0209f87c
+OMTitleBG02Info kind:data(any) local addr:0x0209f8a0
+OMTitleBG01Info kind:data(any) local addr:0x0209f8dc
+OMTitleBG12Info kind:data(any) local addr:0x0209f918
+OMTitleBG10Info kind:data(any) local addr:0x0209f954
+OMTitleBG00Info kind:data(any) local addr:0x0209f990
+TitleHBGInfo kind:data(any) local addr:0x0209f9cc
+TitleBG01DownInfo kind:data(any) local addr:0x0209fa08
+TitleBG01UpInfo kind:data(any) local addr:0x0209fa44
+OMTitleBG11Info kind:data(any) local addr:0x0209fa80
+EvilFadeTime kind:data(any) local addr:0x0209fabc
+BalloonData kind:data(any) local addr:0x0209fac4
+LoopCharSprInfo kind:data(any) local addr:0x0209fae0
+CharNameBGInfo kind:data(any) local addr:0x0209fb04
+EvilBGUpInfo kind:data(any) local addr:0x0209fb40
+StarBGDownInfo kind:data(any) local addr:0x0209fb7c
+EvilBGDownInfo kind:data(any) local addr:0x0209fbb8
+DemoBG00DownInfo kind:data(any) local addr:0x0209fbf4
+DemoBG00UpInfo kind:data(any) local addr:0x0209fc30
+DemoBG01DownInfo kind:data(any) local addr:0x0209fc6c
+DemoBG01UpInfo kind:data(any) local addr:0x0209fca8
+StarBGUpInfo kind:data(any) local addr:0x0209fce4
+BalloonSprInfo kind:data(any) local addr:0x0209fd20
+AnimTbl kind:data(any) local addr:0x0209fd44
+LandClearItaBGInfo kind:data(any) local addr:0x0209fd8c
 data_ov000_0209fdc8 kind:data(any) addr:0x0209fdc8
 data_ov000_0209fde8 kind:data(any) addr:0x0209fde8
 data_ov000_0209fe08 kind:data(any) addr:0x0209fe08
@@ -5630,23 +5630,23 @@ data_ov000_020aa990 kind:data(any) addr:0x020aa990
 data_ov000_020aa9a4 kind:data(any) addr:0x020aa9a4
 data_ov000_020aa9b8 kind:data(any) addr:0x020aa9b8
 data_ov000_020aa9cc kind:data(any) addr:0x020aa9cc
-data_ov000_020aa9e0 kind:data(any) addr:0x020aa9e0
-data_ov000_020aaa00 kind:data(any) addr:0x020aaa00
-data_ov000_020aaa20 kind:data(any) addr:0x020aaa20
-data_ov000_020aaa40 kind:data(any) addr:0x020aaa40
-data_ov000_020aaa64 kind:data(any) addr:0x020aaa64
-data_ov000_020aaa88 kind:data(any) addr:0x020aaa88
-data_ov000_020aaaac kind:data(any) addr:0x020aaaac
-data_ov000_020aaad0 kind:data(any) addr:0x020aaad0
-data_ov000_020aaaf4 kind:data(any) addr:0x020aaaf4
-data_ov000_020aab18 kind:data(any) addr:0x020aab18
-data_ov000_020aab3c kind:data(any) addr:0x020aab3c
-data_ov000_020aab60 kind:data(any) addr:0x020aab60
-data_ov000_020aab9c kind:data(any) addr:0x020aab9c
-data_ov000_020aabd8 kind:data(any) addr:0x020aabd8
-data_ov000_020aac14 kind:data(any) addr:0x020aac14
-data_ov000_020aacc8 kind:data(any) addr:0x020aacc8
-data_ov000_020aade0 kind:data(any) addr:0x020aade0
+MgSelectTouchInfo kind:data(any) local addr:0x020aa9e0
+ReturnTouchInfo kind:data(any) local addr:0x020aaa00
+MgTypeTouchInfo kind:data(any) local addr:0x020aaa20
+MgIconSprInfo kind:data(any) local addr:0x020aaa40
+BombSprInfo kind:data(any) local addr:0x020aaa64
+BombFuseSprInfo kind:data(any) local addr:0x020aaa88
+ReturnSprInfo kind:data(any) local addr:0x020aaaac
+MgTypeCursorSprInfo kind:data(any) local addr:0x020aaad0
+AtrcSelSprInfo kind:data(any) local addr:0x020aaaf4
+MgNameSprInfo kind:data(any) local addr:0x020aab18
+MgStarSprInfo kind:data(any) local addr:0x020aab3c
+MgTypeBGInfo kind:data(any) local addr:0x020aab60
+MgDataSingleBGInfo kind:data(any) local addr:0x020aab9c
+MgDataMultiBGInfo kind:data(any) local addr:0x020aabd8
+SelectMgFileTbl kind:data(any) local addr:0x020aac14
+TouchBomb kind:data(any) local addr:0x020aacc8
+MgSelectData kind:data(any) local addr:0x020aade0
 data_ov000_020ab020 kind:data(any) addr:0x020ab020
 data_ov000_020ab040 kind:data(any) addr:0x020ab040
 data_ov000_020ab060 kind:data(any) addr:0x020ab060
@@ -5724,18 +5724,18 @@ data_ov000_020abb60 kind:data(any) addr:0x020abb60
 data_ov000_020abb8c kind:data(any) addr:0x020abb8c
 data_ov000_020abbb8 kind:data(any) addr:0x020abbb8
 BL_Mg18_FileTbl kind:data(any) addr:0x020abbe4
-data_ov000_020abc9c kind:data(any) addr:0x020abc9c
-data_ov000_020abcac kind:data(any) addr:0x020abcac
-data_ov000_020abcbc kind:data(any) addr:0x020abcbc
-data_ov000_020abce0 kind:data(any) addr:0x020abce0
-data_ov000_020abd04 kind:data(any) addr:0x020abd04
-data_ov000_020abd40 kind:data(any) addr:0x020abd40
-data_ov000_020abd7c kind:data(any) addr:0x020abd7c
-data_ov000_020abdbc kind:data(any) addr:0x020abdbc
-data_ov000_020abdfc kind:data(any) addr:0x020abdfc
-data_ov000_020abe54 kind:data(any) addr:0x020abe54
-data_ov000_020abeac kind:data(any) addr:0x020abeac
-data_ov000_020abf04 kind:data(any) addr:0x020abf04
+NamePosX kind:data(any) local addr:0x020abc9c
+NamePosY kind:data(any) local addr:0x020abcac
+EndSprInfo kind:data(any) local addr:0x020abcbc
+CharSprInfo kind:data(any) local addr:0x020abce0
+StaffRollBGPinkInfo kind:data(any) local addr:0x020abd04
+StaffRollBGAquaInfo kind:data(any) local addr:0x020abd40
+TitleMapSprInfo kind:data(any) local addr:0x020abd7c
+NameMapSprInfo kind:data(any) local addr:0x020abdbc
+CharData1 kind:data(any) local addr:0x020abdfc
+CharData2 kind:data(any) local addr:0x020abe54
+CharData3 kind:data(any) local addr:0x020abeac
+NameData kind:data(any) local addr:0x020abf04
 BL_SceneFirst kind:bss addr:0x020ac660
 OldVBlankIrq kind:bss local addr:0x020ac664
 SysWork kind:bss local addr:0x020ac668
@@ -5780,9 +5780,9 @@ Mg_CallParams kind:bss addr:0x020ac9e8
 Mg_BTowerOrder kind:bss addr:0x020aca04
 data_ov000_020aca18 kind:bss addr:0x020aca18
 CharaSel kind:bss local addr:0x020aca20
-data_ov000_020aca24 kind:bss addr:0x020aca24
-data_ov000_020aca28 kind:bss addr:0x020aca28
-data_ov000_020aca2c kind:bss addr:0x020aca2c
+MultiMenu kind:bss local addr:0x020aca24
+MultiMenu kind:bss local addr:0x020aca28
+MultiMenu kind:bss local addr:0x020aca2c
 CardCollect kind:bss local addr:0x020aca30
 BHouse_Result kind:bss addr:0x020aca34
 data_ov000_020aca38 kind:bss addr:0x020aca38
@@ -5795,7 +5795,7 @@ data_ov000_020b1220 kind:bss addr:0x020b1220
 data_ov000_020b122c kind:bss addr:0x020b122c
 data_ov000_020b162c kind:bss addr:0x020b162c
 data_ov000_020b16f4 kind:bss addr:0x020b16f4
-data_ov000_020b1700 kind:bss addr:0x020b1700
-data_ov000_020b1704 kind:bss addr:0x020b1704
-data_ov000_020b1714 kind:bss addr:0x020b1714
-data_ov000_020b26c4 kind:bss addr:0x020b26c4
+ObjPtr kind:bss local addr:0x020b1700
+BackupInfo kind:bss local addr:0x020b1704
+BackupBuffer kind:bss local addr:0x020b1714
+StaffObj kind:bss local addr:0x020b26c4

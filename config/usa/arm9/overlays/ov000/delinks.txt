@@ -418,3 +418,79 @@ src/bl/bl_download.c:
     .rodata     start:0x0207dc5c end:0x0207dc7c
     .data       start:0x0209f518 end:0x0209f51c
     .bss        start:0x020b1220 end:0x020b1700
+
+src/field/field_save.c:
+    .text       start:0x0206c0f8 end:0x02071aa8
+    .data       start:0x0209f51c end:0x0209f554
+
+src/bl/menu/bl_menu_btower.c:
+    .text       start:0x02071aa8 end:0x02072ac8
+    .rodata     start:0x0207dc7c end:0x0207dcb4
+    .data       start:0x0209f554 end:0x0209f818
+
+src/demo/demo_title.c:
+    .text       start:0x02072ac8 end:0x02072f54
+    .data       start:0x0209f818 end:0x0209fabc
+
+src/demo/demo.c:
+    .text       start:0x02072f54 end:0x02073ee8
+    .data       start:0x0209fabc end:0x0209fd20
+
+src/demo/demo_balloon.c:
+    .text       start:0x02073ee8 end:0x0207452c
+    .data       start:0x0209fd20 end:0x0209fd8c
+    .bss        start:0x020b1700 end:0x020b1704
+
+src/bl/menu/bl_menu_landclear.c:
+    .text       start:0x0207452c end:0x02074a78
+    .rodata     start:0x0207dcb4 end:0x0207dcdc
+    .data       start:0x0209fd8c end:0x0209fdc8
+
+src/bl/bl_backup.c:
+    .text       start:0x02074a78 end:0x02075c84
+    .rodata     start:0x0207dcdc end:0x0207dce4
+    .bss        start:0x020b1704 end:0x020b26c4
+
+src/bl/filetbl/bl_filetbl_mg07.c:
+    .data       start:0x0209fdc8 end:0x020a02bc
+
+src/bl/filetbl/bl_filetbl_mg25.c:
+    .data       start:0x020a02bc end:0x020a09bc
+
+src/bl/filetbl/bl_filetbl_mg32.c:
+    .data       start:0x020a09bc end:0x020a0fb4
+
+src/bl/filetbl/bl_filetbl_mgsys.c:
+    .data       start:0x020a0fb4 end:0x020a2164
+
+src/bl/filetbl/bl_filetbl_mgtitle.c:
+    .data       start:0x020a2164 end:0x020a3b88
+
+src/bl/filetbl/bl_filetbl_demo.c:
+    .data       start:0x020a3b88 end:0x020a47c4
+
+src/bl/filetbl/bl_filetbl_menu.c:
+    .data       start:0x020a47c4 end:0x020aa79c
+
+src/bl/menu/bl_menu_licensed.c:
+    .text       start:0x02075c84 end:0x02075f10
+
+src/bl/menu/bl_menu_esrb.c:
+    .text       start:0x02075f10 end:0x0207619c
+
+src/bl/menu/bl_menu_atrcsel.c:
+    .text       start:0x0207619c end:0x020778dc
+    .rodata     start:0x0207dce4 end:0x0207dd4c
+    .data       start:0x020aa79c end:0x020ab020
+
+src/bl/filetbl/bl_filetbl_mg11.c:
+    .data       start:0x020ab020 end:0x020ab4e8
+
+src/bl/filetbl/bl_filetbl_mg18.c:
+    .data       start:0x020ab4e8 end:0x020abc9c
+
+src/demo/demo_staff.c:
+    .text       start:0x020778dc end:0x020784fc
+    .rodata     start:0x0207dd4c end:0x0207dd5c
+    .data       start:0x020abc9c end:0x020ac660
+    .bss        start:0x020b26c4 end:0x020b26e0
