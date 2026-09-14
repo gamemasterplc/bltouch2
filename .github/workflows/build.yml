@@ -35,11 +35,11 @@ jobs:
 
       - name: Download wibo
         run: |
-          python tools/download_tool.py wibo 1.2.0 --path wibo
+          python tools/download_tool.py wibo 1.1.0 --path wibo
 
       - name: Build
         run: |
-          python tools/configure.py --version ${{ matrix.version }} -w wibo --compiler /mwccarm --no-extract
+          python tools/configure.py --version ${{ matrix.version }} -w ./wibo --compiler /mwccarm --no-extract
           ninja
 
       - name: Upload report
