@@ -918,7 +918,7 @@ BL_BackupGetLastMgScore kind:function(arm,size=0x14) addr:0x02075738
 BL_BackupGetTop3MgScore kind:function(arm,size=0x10) addr:0x0207574c
 BL_BackupGetMgScore kind:function(arm,size=0x58) addr:0x0207575c
 BL_BackupIsMgScoreLast kind:function(arm,size=0x40) addr:0x020757b4
-BL_BackupSetMgScoreLast kind:function(arm,size=0x48) addr:0x020757f4
+BL_BackupSetMgUnlock kind:function(arm,size=0x48) addr:0x020757f4
 BL_BackupIsMgUnlock kind:function(arm,size=0x2c) addr:0x0207583c
 BL_BackupSetCardCollect kind:function(arm,size=0x90) addr:0x02075868
 BL_BackupIsCardCollect kind:function(arm,size=0x54) addr:0x020758f8
@@ -5788,8 +5788,8 @@ BHouse_Result kind:bss addr:0x020aca34
 data_ov000_020aca38 kind:bss addr:0x020aca38
 BHouse_Work kind:bss addr:0x020aca3c
 Fld_ChrSpawn kind:bss addr:0x020ad058
-FldSave kind:bss addr:0x020ad15c
-FldWork kind:bss addr:0x020ad480
+Fld_Save kind:bss addr:0x020ad15c
+Fld_Work kind:bss addr:0x020ad480
 BackupData kind:bss local addr:0x020b0efc
 data_ov000_020b1220 kind:bss addr:0x020b1220
 data_ov000_020b122c kind:bss addr:0x020b122c

@@ -53,6 +53,7 @@ src/bl/bl_sortlist.c:
     .text       start:0x02053cc0 end:0x02053e2c
 
 src/bl/bl_random.c:
+    complete
     .text       start:0x02053e2c end:0x02053ed8
     .bss        start:0x020ac6f0 end:0x020ac6fc
 
