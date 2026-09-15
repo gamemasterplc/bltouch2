@@ -58,6 +58,7 @@ src/bl/bl_random.c:
     .bss        start:0x020ac6f0 end:0x020ac6fc
 
 src/bl/bl_bitset.c:
+    complete
     .text       start:0x02053ed8 end:0x02053f48
 
 src/bl/bl_gfxheap.c:

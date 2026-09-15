@@ -64,6 +64,7 @@ src/bbp/bbp_random.c:
     .bss        start:0x020e3bb8 end:0x020e3bc4
 
 src/bbp/bbp_bitset.c:
+    complete
     .text       start:0x020bb9f4 end:0x020bbac0
 
 src/bbp/bbp_gfxheap.c:
