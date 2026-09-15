@@ -22,7 +22,7 @@ BL_ResGetAnimMaxVRamSize kind:function(arm,size=0x38) addr:0x0204de88
 BL_ResLoadBackground kind:function(arm,size=0x180) addr:0x0204dec0
 BL_ResLoadBackgroundAffine kind:function(arm,size=0x108) addr:0x0204e040
 BL_ResLoadImage kind:function(arm,size=0x118) addr:0x0204e148
-BL_ResLoadImage3D kind:function(arm,size=0x48) addr:0x0204e260
+BL_ResLoadTex kind:function(arm,size=0x48) addr:0x0204e260
 BL_FadeInit kind:function(arm,size=0x54) addr:0x0204e2a8
 BL_FadeSetTime kind:function(arm,size=0x28) addr:0x0204e2fc
 BL_FadeReset kind:function(arm,size=0x14) addr:0x0204e324
@@ -182,22 +182,22 @@ BL_TouchGetHisPlayer kind:function(arm,size=0x64) addr:0x02055010
 BL_TouchRead kind:function(arm,size=0x6c) addr:0x02055074
 BL_VramInit kind:function(arm,size=0x3c) addr:0x020550e0
 BL_VramClear kind:function(arm,size=0x9c) addr:0x0205511c
-BL_VramKill kind:function(arm,size=0x9c) addr:0x020551b8
-BL_VramClose kind:function(arm,size=0x70) addr:0x02055254
+BL_VramKillMain kind:function(arm,size=0x9c) addr:0x020551b8
+BL_VramKillSub kind:function(arm,size=0x70) addr:0x02055254
 BL_VramImageInit kind:function(arm,size=0x114) addr:0x020552c4
 BL_VramImageAlloc kind:function(arm,size=0x78) addr:0x020553d8
 BL_VramImageFree kind:function(arm,size=0x68) addr:0x02055450
-BL_VramImage3DAlloc kind:function(arm,size=0x44) addr:0x020554b8
-BL_VramImage3DFree kind:function(arm,size=0x54) addr:0x020554fc
+BL_VramTexAlloc kind:function(arm,size=0x44) addr:0x020554b8
+BL_VramTexFree kind:function(arm,size=0x54) addr:0x020554fc
 BL_VramImageGetOfs kind:function(arm,size=0x14) addr:0x02055550
-BL_VramColorInit kind:function(arm,size=0x134) addr:0x02055564
-BL_VramColorClose kind:function(arm,size=0x84) addr:0x02055698
-BL_VramColorAlloc kind:function(arm,size=0x368) addr:0x0205571c
-BL_VramColorFree kind:function(arm,size=0x114) addr:0x02055a84
-BL_VramColorGetOfs kind:function(arm,size=0x5c) addr:0x02055b98
-BL_VramColorGet3DOfs kind:function(arm,size=0x3c) addr:0x02055bf4
-BL_VramColorWrite kind:function(arm,size=0x18) addr:0x02055c30
-BL_VramColorWriteEx kind:function(arm,size=0x178) addr:0x02055c48
+BL_ColorInit kind:function(arm,size=0x134) addr:0x02055564
+BL_ColorClose kind:function(arm,size=0x84) addr:0x02055698
+BL_ColorAlloc kind:function(arm,size=0x368) addr:0x0205571c
+BL_ColorFree kind:function(arm,size=0x114) addr:0x02055a84
+BL_ColorGetOfs kind:function(arm,size=0x5c) addr:0x02055b98
+BL_ColorGetTexOfs kind:function(arm,size=0x3c) addr:0x02055bf4
+BL_ColorWrite kind:function(arm,size=0x18) addr:0x02055c30
+BL_ColorWriteEx kind:function(arm,size=0x178) addr:0x02055c48
 BL_SceneInit kind:function(arm,size=0xcc) addr:0x02055dc0
 BL_SceneExec kind:function(arm,size=0x1bc) addr:0x02055e8c
 SceneFree kind:function(arm,size=0x20) local addr:0x02056048
@@ -252,10 +252,10 @@ BL_SprSetLayer kind:function(arm,size=0x48) addr:0x020572f0
 BL_SprSetPrio kind:function(arm,size=0x50) addr:0x02057338
 BL_SprSetLayerPrio kind:function(arm,size=0x64) addr:0x02057388
 BL_SprGetPrio kind:function(arm,size=0x10) addr:0x020573ec
-BL_Spr3DCreate kind:function(arm,size=0xac) addr:0x020573fc
-BL_Spr3DKill kind:function(arm,size=0x18) addr:0x020574a8
-BL_Spr3DSetAnim kind:function(arm,size=0x50) addr:0x020574c0
-BL_Spr3DSetPrio kind:function(arm,size=0x50) addr:0x02057510
+BL_SprTexCreate kind:function(arm,size=0xac) addr:0x020573fc
+BL_SprTexKill kind:function(arm,size=0x18) addr:0x020574a8
+BL_SprTexSetAnim kind:function(arm,size=0x50) addr:0x020574c0
+BL_SprTexSetPrio kind:function(arm,size=0x50) addr:0x02057510
 BL_SprRawCreate kind:function(arm,size=0xd0) addr:0x02057560
 BL_SprRawKill kind:function(arm,size=0x18) addr:0x02057630
 NewSpr kind:function(arm,size=0x64) local addr:0x02057648
@@ -5759,7 +5759,7 @@ PreSleepCbData kind:bss local addr:0x020ac7b8
 PostSleepCbData kind:bss local addr:0x020ac7c4
 TouchWork kind:bss local addr:0x020ac7d0
 VramWork kind:bss local addr:0x020ac7d4
-VramColorWork kind:bss local addr:0x020ac7d8
+ColorWork kind:bss local addr:0x020ac7d8
 LinkIconWork kind:bss local addr:0x020ac7dc
 SceneWork kind:bss local addr:0x020ac7e0
 SndWork kind:bss local addr:0x020ac7fc

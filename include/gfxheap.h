@@ -26,7 +26,7 @@ typedef struct BLGfxHeap_s {
     BLGfxAlloc *tail;
 } BLGfxHeap;
 
-void BL_GfxHeapCreate(BLGfxHeap *heap, u32 size, u32 numBit);
+void BL_GfxHeapCreate(BLGfxHeap *heap, u32 size, u16 numBit);
 BLGfxAlloc *BL_GfxHeapAlloc(BLGfxHeap *heap, u32 size);
 void BL_GfxHeapFree(BLGfxHeap *heap, BLGfxAlloc *alloc);
 void BL_GfxHeapKill(BLGfxHeap *heap);

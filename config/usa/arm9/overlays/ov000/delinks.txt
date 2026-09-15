@@ -89,9 +89,13 @@ src/bl/bl_touch.c:
     .bss        start:0x020ac7d0 end:0x020ac7d4
 
 src/bl/bl_vram.c:
-    .text       start:0x020550e0 end:0x02055dc0
+    .text       start:0x020550e0 end:0x02055564
+    .bss        start:0x020ac7d4 end:0x020ac7d8
+
+src/bl/bl_color.c:
+    .text       start:0x02055564 end:0x02055dc0
     .rodata     start:0x02078528 end:0x02078560
-    .bss        start:0x020ac7d4 end:0x020ac7dc
+    .bss        start:0x020ac7d8 end:0x020ac7dc
 
 src/bl/bl_scene.c:
     .text       start:0x02055dc0 end:0x020565a8

@@ -207,7 +207,7 @@ void BL_ResLoadImage(BLFile *file, int type, u32 ofs)
 }
 
 #ifndef SYS_BBP
-void BL_ResLoadImage3D(BLFile *file, u32 ofs)
+void BL_ResLoadTex(BLFile *file, u32 ofs)
 {
     BLResImage *res;
     res = BL_FILE_GET_DATA_AS(file, BLResImage);

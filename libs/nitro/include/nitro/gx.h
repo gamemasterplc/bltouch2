@@ -320,8 +320,6 @@ void GX_DispOn(void);
 // u16 GX_VBlankIntr(BOOL);
 // u16 GX_HBlankIntr(BOOL);
 
-void GX_SetBankForLCDC(s32);
-void GX_DisableBankForLCDC(void);
 void GX_SetBankForBG(s32);
 void GX_SetBankForOBJ(s32);
 void GX_SetBankForSubBG(s32);
@@ -365,10 +363,6 @@ BOOL GX_TrySetBankForBGExtPltt(s32);
 BOOL GX_TrySetBankForSubBGExtPltt(s32);
 BOOL GX_TrySetBankForOBJExtPltt(s32);
 BOOL GX_TrySetBankForSubOBJExtPltt(s32);
-u16  GX_ResetBankForBGExtPltt(void);
-u16  GX_ResetBankForSubBGExtPltt(void);
-u16  GX_ResetBankForOBJExtPltt(void);
-u16  GX_ResetBankForSubOBJExtPltt(void);
 
 void GX_BeginLoadBGExtPltt(void);
 void GX_LoadBGExtPltt(void* ptr, u32 offset, u32 size);
@@ -426,6 +420,17 @@ inline void GX_SetOBJVRamModeChar(u32 value) {
 inline void GXS_SetOBJVRamModeChar(u32 value) {
     REG_DISPCNT_SUB = (REG_DISPCNT_SUB & 0xFFCFFFEF) | (value);
 }
+
+static inline u32 GX_GetOBJVRamCharShift(void)
+{
+    return ((REG_DISPCNT & 0x300000) >> 20)+5;
+}
+
+static inline u32 GXS_GetOBJVRamCharShift(void)
+{
+    return ((REG_DISPCNT_SUB & 0x300000) >> 20)+5;
+}
+
 
 inline u16 GX_GetVCount(void) {
     return REG_VCOUNT;

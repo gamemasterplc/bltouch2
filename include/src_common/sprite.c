@@ -6,14 +6,14 @@
 #include "memory.h"
 
 #define SPR_TYPE_NORMAL 0
-#define SPR_TYPE_3D 1
+#define SPR_TYPE_TEX 1
 #define SPR_TYPE_RAW 2
 
 typedef struct SpriteData_s {
     BLSortListNode node;
     union {
         BLSprite sprite;
-        BLSpr3D spr3D;
+        BLSprTex sprTex;
         BLSprRaw sprRaw;
         BLSprAnim sprAnim;
     };
@@ -26,7 +26,7 @@ typedef struct SpriteData_s {
         u16 order;
     };
     u8 type : 2;
-    u8 screen : 1;
+    u8 display : 1;
 } SpriteData;
 
 typedef struct SprTileData_s {
@@ -43,7 +43,7 @@ static s16 CurSprZ;
 static BLSortList SprList[BL_DISPLAY_MAX];
 static SprTileData CurSprTile;
 
-static SpriteData *NewSpr(u16 order, u8 screen);
+static SpriteData *NewSpr(u16 order, u8 display);
 
 static void FreeSpr(SpriteData *spr);
 
@@ -72,13 +72,13 @@ void BL_SprClose(void)
     BL_SortListForEach(&SprList[BL_DISPLAY_SUB], SprDelete);
 }
 
-BLSprite *BL_SprCreate(int screen, u8 layer, u16 prio, u32 imageAddr, u8 palette, BLResAnim *animRes, BLResImage *imageRes)
+BLSprite *BL_SprCreate(int display, u8 layer, u16 prio, u32 imageAddr, u8 palette, BLResAnim *animRes, BLResImage *imageRes)
 {
     SpriteData *sprData;
     u16 prioValue;
     BLSprite *spr;
     prioValue = 0x8000|(layer << 13)|(prio & 0x1FFF);
-    sprData = NewSpr(prioValue, screen & 0x1);
+    sprData = NewSpr(prioValue, display & 0x1);
     if(!sprData) {
         return NULL;
     }
@@ -163,7 +163,7 @@ void BL_SprSetAnim(BLSprite *spr, u16 animNo, u8 animFrame)
 
 static inline void ResortSprite(SpriteData *sprData)
 {
-    BL_SortListNodeSetOrder(&SprList[sprData->screen], (BLSortListNode *)sprData, sprData->order);
+    BL_SortListNodeSetOrder(&SprList[sprData->display], (BLSortListNode *)sprData, sprData->order);
 }
 
 #ifndef SYS_BBP
@@ -198,19 +198,19 @@ u16 BL_SprGetPrio(BLSprite *spr)
 
 #ifndef SYS_BBP
 
-BLSpr3D *BL_Spr3DCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animRes)
+BLSprTex *BL_SprTexCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animRes)
 {
     SpriteData *sprData;
     u16 prioValue;
-    BLSpr3D *spr;
+    BLSprTex *spr;
     prioValue = prio & 0x1FFF;
     sprData = NewSpr(prioValue, 0);
     if(!sprData) {
         return NULL;
     }
-    sprData->type = SPR_TYPE_3D;
-    spr = &sprData->spr3D;
-    MI_CpuFill8(spr, 0, sizeof(BLSpr3D));
+    sprData->type = SPR_TYPE_TEX;
+    spr = &sprData->sprTex;
+    MI_CpuFill8(spr, 0, sizeof(BLSprTex));
     spr->base.animSpeed = 1 << 6;
     spr->base.imageAddr = imageAddr;
     spr->base.animRes = animRes;
@@ -225,7 +225,7 @@ BLSpr3D *BL_Spr3DCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animR
     return spr;
 }
 
-void BL_Spr3DKill(BLSpr3D *spr)
+void BL_SprTexKill(BLSprTex *spr)
 {
     if(!spr) {
         return;
@@ -233,7 +233,7 @@ void BL_Spr3DKill(BLSpr3D *spr)
     FreeSpr(GET_SPRDATA(spr));
 }
 
-void BL_Spr3DSetAnim(BLSpr3D *spr, u16 animNo, u8 animFrame)
+void BL_SprTexSetAnim(BLSprTex *spr, u16 animNo, u8 animFrame)
 {
     spr->base.animNo = animNo;
     spr->base.animFrame = animFrame;
@@ -250,7 +250,7 @@ void BL_Spr3DSetAnim(BLSpr3D *spr, u16 animNo, u8 animFrame)
     }
 }
 
-void BL_Spr3DSetPrio(BLSpr3D *spr, u16 prio)
+void BL_SprTexSetPrio(BLSprTex *spr, u16 prio)
 {
     SpriteData *sprData = GET_SPRDATA(spr);
     sprData->prio = prio;
@@ -292,21 +292,21 @@ void BL_SprRawKill(BLSprRaw *spr)
 
 #endif
 
-static SpriteData *NewSpr(u16 order, u8 screen)
+static SpriteData *NewSpr(u16 order, u8 display)
 {
     SpriteData *spr = BL_MemAlloc(BL_MEM_TAG_SCENE_SPRITE, sizeof(SpriteData), 0);
     if(!spr) {
         return NULL;
     }
-    spr->screen = screen;
+    spr->display = display;
     spr->order = order;
-    BL_SortListNodeInsert(&SprList[screen], (BLSortListNode *)spr, order);
+    BL_SortListNodeInsert(&SprList[display], (BLSortListNode *)spr, order);
     return spr;
 }
 
 static void FreeSpr(SpriteData *spr)
 {
-    BL_SortListNodeRemove(&SprList[spr->screen], (BLSortListNode *)spr);
+    BL_SortListNodeRemove(&SprList[spr->display], (BLSortListNode *)spr);
     BL_MemFree(spr);
 }
 
@@ -354,10 +354,10 @@ static inline BLSprite *GetBLSprite(SpriteData *sprData)
     }
 }
 
-static inline BLSpr3D *GetBLSpr3D(SpriteData *sprData)
+static inline BLSprTex *GetBLSprTex(SpriteData *sprData)
 {
-    if(sprData->type == SPR_TYPE_3D) {
-        return &sprData->spr3D;
+    if(sprData->type == SPR_TYPE_TEX) {
+        return &sprData->sprTex;
     } else {
         return NULL;
     }
@@ -368,7 +368,7 @@ static void SprLoopAnim(BLSortListNode *node)
     SpriteData *sprData = (SpriteData *)node;
     BLSprAnim *sprAnim;
     BLSprite *spr;
-    if(sprData->type != SPR_TYPE_NORMAL && sprData->type != SPR_TYPE_3D) {
+    if(sprData->type != SPR_TYPE_NORMAL && sprData->type != SPR_TYPE_TEX) {
         return;
     }
     sprAnim = &sprData->sprAnim;
@@ -409,7 +409,7 @@ static void SprUpdateAnim(BLSortListNode *node)
     BLResAnimFrame *animFrame;
     
     u16 animMax;
-    if(sprData->type != SPR_TYPE_NORMAL && sprData->type != SPR_TYPE_3D) {
+    if(sprData->type != SPR_TYPE_NORMAL && sprData->type != SPR_TYPE_TEX) {
         return;
     }
     sprAnim = &sprData->sprAnim;

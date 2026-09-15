@@ -2896,19 +2896,19 @@ BBP_TouchCheckRectDown kind:function(arm,size=0x88) addr:0x020bcbd8
 BBP_TouchRead kind:function(arm,size=0x6c) addr:0x020bcc60
 BBP_VramInit kind:function(arm,size=0x3c) addr:0x020bcccc
 BBP_VramClear kind:function(arm,size=0x9c) addr:0x020bcd08
-BBP_VramKill kind:function(arm,size=0x9c) addr:0x020bcda4
-BBP_VramClose kind:function(arm,size=0x70) addr:0x020bce40
+BBP_VramKillMain kind:function(arm,size=0x9c) addr:0x020bcda4
+BBP_VramKillSub kind:function(arm,size=0x70) addr:0x020bce40
 BBP_VramImageInit kind:function(arm,size=0x114) addr:0x020bceb0
 BBP_VramImageAlloc kind:function(arm,size=0x78) addr:0x020bcfc4
 BBP_VramImageFree kind:function(arm,size=0x68) addr:0x020bd03c
 BBP_VramImageGetOfs kind:function(arm,size=0x14) addr:0x020bd0a4
-BBP_VramColorInit kind:function(arm,size=0x134) addr:0x020bd0b8
-BBP_VramColorClose kind:function(arm,size=0x84) addr:0x020bd1ec
-BBP_VramColorAlloc kind:function(arm,size=0x368) addr:0x020bd270
-BBP_VramColorFree kind:function(arm,size=0x114) addr:0x020bd5d8
-BBP_VramColorGetOfs kind:function(arm,size=0x5c) addr:0x020bd6ec
-BBP_VramColorWrite kind:function(arm,size=0x18) addr:0x020bd748
-BBP_VramColorWriteEx kind:function(arm,size=0x178) addr:0x020bd760
+BBP_ColorInit kind:function(arm,size=0x134) addr:0x020bd0b8
+BBP_ColorClose kind:function(arm,size=0x84) addr:0x020bd1ec
+BBP_ColorAlloc kind:function(arm,size=0x368) addr:0x020bd270
+BBP_ColorFree kind:function(arm,size=0x114) addr:0x020bd5d8
+BBP_ColorGetOfs kind:function(arm,size=0x5c) addr:0x020bd6ec
+BBP_ColorWrite kind:function(arm,size=0x18) addr:0x020bd748
+BBP_ColorWriteEx kind:function(arm,size=0x178) addr:0x020bd760
 BBP_SceneInit kind:function(arm,size=0xb4) addr:0x020bd8d8
 BBP_SceneExec kind:function(arm,size=0x1d8) addr:0x020bd98c
 SceneFree kind:function(arm,size=0x20) local addr:0x020bdb64
@@ -5674,7 +5674,7 @@ PreSleepCbData kind:bss local addr:0x020e3c74
 PostSleepCbData kind:bss local addr:0x020e3c80
 TouchWork kind:bss local addr:0x020e3c8c
 VramWork kind:bss local addr:0x020e3c90
-VramColorWork kind:bss local addr:0x020e3c94
+ColorWork kind:bss local addr:0x020e3c94
 LinkIconWork kind:bss local addr:0x020e3c98
 SceneWork kind:bss local addr:0x020e3ca0
 CurSprZ kind:bss local addr:0x020e3cd0

@@ -11,7 +11,7 @@ static inline BLGfxAlloc *GfxAlloc()
     return node;
 }
 
-void BL_GfxHeapCreate(BLGfxHeap *heap, u32 size, u32 numBit)
+void BL_GfxHeapCreate(BLGfxHeap *heap, u32 size, u16 numBit)
 {
     BLGfxAlloc *head;
     heap->size = size;

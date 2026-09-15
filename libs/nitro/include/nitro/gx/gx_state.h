@@ -203,7 +203,7 @@ void GX_SetBankForClearImage(GXVRam clearImage);
  *
  * @param lcdc Bitmask of VRAM banks to allocate for LCDC access.
  */
-void GX_SetBankForLcdc(GXVRam lcdc);
+void GX_SetBankForLCDC(GXVRam lcdc);
 
 /**
  * @brief Allocates VRAM banks for background graphics on the sub-display.
@@ -231,7 +231,7 @@ void GX_SetBankForSubObj(GXVRam subObj);
  *
  * @param subBgExtPltt Bitmask of VRAM banks to allocate for sub-display background extended palettes (e.g., GX_VRAM_H).
  */
-void GX_SetBankForSubBgExtPltt(GXVRam subBgExtPltt);
+void GX_SetBankForSubBGExtPltt(GXVRam subBgExtPltt);
 
 /**
  * @brief Allocates VRAM banks for object extended palettes on the sub-display.
@@ -241,7 +241,25 @@ void GX_SetBankForSubBgExtPltt(GXVRam subBgExtPltt);
  *
  * @param subObjExtPltt Bitmask of VRAM banks to allocate for sub-display object extended palettes (e.g., GX_VRAM_I).
  */
-void GX_SetBankForSubObjExtPltt(GXVRam subObjExtPltt);
+void GX_SetBankForSubOBJExtPltt(GXVRam subObjExtPltt);
+
+/**
+ * @brief Resets VRAM bank allocation for main-display backgrounds.
+ *
+ * Deallocates any banks previously allocated for main-display backgrounds. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for main-display backgrounds.
+ */
+GXVRam GX_ResetBankForBG(void);
+
+/**
+ * @brief Resets VRAM bank allocation for main-display objects.
+ *
+ * Deallocates any banks previously allocated for main-display objects. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for main-display objects.
+ */
+GXVRam GX_ResetBankForOBJ(void);
 
 /**
  * @brief Resets VRAM bank allocation for background extended palettes on the main display.
@@ -251,7 +269,7 @@ void GX_SetBankForSubObjExtPltt(GXVRam subObjExtPltt);
  *
  * @return Bitmask of VRAM banks that were previously allocated for background extended palettes.
  */
-GXVRam GX_ResetBankForBgExtPltt(void);
+GXVRam GX_ResetBankForBGExtPltt(void);
 
 /**
  * @brief Resets VRAM bank allocation for object extended palettes on the main display.
@@ -261,7 +279,7 @@ GXVRam GX_ResetBankForBgExtPltt(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for object extended palettes.
  */
-GXVRam GX_ResetBankForObjExtPltt(void);
+GXVRam GX_ResetBankForOBJExtPltt(void);
 
 /**
  * @brief Resets VRAM bank allocation for textures.
@@ -297,7 +315,7 @@ GXVRam GX_ResetBankForClearImage(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for sub-display backgrounds.
  */
-GXVRam GX_ResetBankForSubBg(void);
+GXVRam GX_ResetBankForSubBG(void);
 
 /**
  * @brief Resets VRAM bank allocation for sub-display objects.
@@ -306,7 +324,7 @@ GXVRam GX_ResetBankForSubBg(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for sub-display objects.
  */
-GXVRam GX_ResetBankForSubObj(void);
+GXVRam GX_ResetBankForSubOBJ(void);
 
 /**
  * @brief Resets VRAM bank allocation for sub-display background extended palettes.
@@ -316,7 +334,7 @@ GXVRam GX_ResetBankForSubObj(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for sub-display background extended palettes.
  */
-GXVRam GX_ResetBankForSubBgExtPltt(void);
+GXVRam GX_ResetBankForSubBGExtPltt(void);
 
 /**
  * @brief Resets VRAM bank allocation for sub-display object extended palettes.
@@ -326,7 +344,7 @@ GXVRam GX_ResetBankForSubBgExtPltt(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for sub-display object extended palettes.
  */
-GXVRam GX_ResetBankForSubObjExtPltt(void);
+GXVRam GX_ResetBankForSubOBJExtPltt(void);
 
 /**
  * @brief Disables VRAM bank allocation for backgrounds on the main display.
@@ -336,7 +354,7 @@ GXVRam GX_ResetBankForSubObjExtPltt(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for backgrounds.
  */
-GXVRam GX_DisableBankForBg(void);
+GXVRam GX_DisableBankForBG(void);
 
 /**
  * @brief Disables VRAM bank allocation for objects on the main display.
@@ -346,7 +364,17 @@ GXVRam GX_DisableBankForBg(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for objects.
  */
-GXVRam GX_DisableBankForObj(void);
+GXVRam GX_DisableBankForOBJ(void);
+
+/**
+ * @brief Disables VRAM bank allocation for background extended palettes on the main display.
+ *
+ * Deallocates any banks previously allocated for background extended palettes, disables
+ * extended palette mode, and resets hardware registers. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for background extended palettes.
+ */
+GXVRam GX_DisableBankForBGExtPltt(void);
 
 /**
  * @brief Disables VRAM bank allocation for object extended palettes on the main display.
@@ -356,7 +384,47 @@ GXVRam GX_DisableBankForObj(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for object extended palettes.
  */
-GXVRam GX_DisableBankForObjExtPltt(void);
+GXVRam GX_DisableBankForOBJExtPltt(void);
+
+/**
+ * @brief Disables VRAM bank allocation for backgrounds on the main display.
+ *
+ * Deallocates any banks previously allocated for backgrounds and resets the corresponding
+ * hardware registers to disabled state. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for backgrounds.
+ */
+GXVRam GX_DisableBankForSubBG(void);
+
+/**
+ * @brief Disables VRAM bank allocation for objects on the main display.
+ *
+ * Deallocates any banks previously allocated for objects and resets the corresponding
+ * hardware registers to disabled state. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for objects.
+ */
+GXVRam GX_DisableBankForSubOBJ(void);
+
+/**
+ * @brief Disables VRAM bank allocation for background extended palettes on the main display.
+ *
+ * Deallocates any banks previously allocated for background extended palettes, disables
+ * extended palette mode, and resets hardware registers. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for background extended palettes.
+ */
+GXVRam GX_DisableBankForSubBGExtPltt(void);
+
+/**
+ * @brief Disables VRAM bank allocation for object extended palettes on the main display.
+ *
+ * Deallocates any banks previously allocated for object extended palettes, disables
+ * extended palette mode, and resets hardware registers. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for object extended palettes.
+ */
+GXVRam GX_DisableBankForSubOBJExtPltt(void);
 
 /**
  * @brief Disables VRAM bank allocation for textures.
@@ -379,6 +447,16 @@ GXVRam GX_DisableBankForTex(void);
 GXVRam GX_DisableBankForTexPltt(void);
 
 /**
+ * @brief Disables VRAM bank allocation for clear image.
+ *
+ * Deallocates any banks previously allocated for clear image and resets the corresponding
+ * hardware registers to disabled state. Returns the previously allocated banks.
+ *
+ * @return Bitmask of VRAM banks that were previously allocated for clear image.
+ */
+GXVRam GX_DisableBankForClearImage(void);
+
+/**
  * @brief Disables VRAM bank allocation for LCDC access.
  *
  * Deallocates any banks previously allocated for LCDC access and resets the corresponding
@@ -386,7 +464,7 @@ GXVRam GX_DisableBankForTexPltt(void);
  *
  * @return Bitmask of VRAM banks that were previously allocated for LCDC access.
  */
-GXVRam GX_DisableBankForLcdc(void);
+GXVRam GX_DisableBankForLCDC(void);
 
 /**
  * @brief Gets the current VRAM bank allocation for backgrounds on the main display.
@@ -458,7 +536,16 @@ GXVRam GX_GetBankForSubObjExtPltt(void);
  *
  * @return Total size in bytes of background VRAM allocation.
  */
-u32 GX_GetSizeOfBg(void);
+u32 GX_GetBankSizeForBG(void);
+
+/**
+ * @brief Gets the total size in bytes of VRAM allocated for objects on the main display.
+ *
+ * Calculates the combined size of all VRAM banks currently allocated for objects.
+ *
+ * @return Total size in bytes of object VRAM allocation.
+ */
+u32 GX_GetBankSizeForOBJ(void);
 
 /**
  * @brief Gets the total size in bytes of VRAM allocated for backgrounds on the sub-display.
@@ -467,6 +554,24 @@ u32 GX_GetSizeOfBg(void);
  *
  * @return Total size in bytes of sub-display background VRAM allocation.
  */
-u32 GX_GetSizeOfSubBg(void);
+u32 GX_GetBankSizeForSubBG(void);
+
+/**
+ * @brief Gets the total size in bytes of VRAM allocated for objects on the sub display.
+ *
+ * Calculates the combined size of all VRAM banks currently allocated for objects.
+ *
+ * @return Total size in bytes of object VRAM allocation.
+ */
+u32 GX_GetBankSizeForSubOBJ(void);
+
+/**
+ * @brief Gets the total size in bytes of VRAM allocated for textures.
+ *
+ * Calculates the combined size of all VRAM banks currently allocated for textures.
+ *
+ * @return Total size in bytes of textures VRAM allocation.
+ */
+u32 GX_GetBankSizeForTex(void);
 
 #endif // _NITRO_GX_GX_STATE_H

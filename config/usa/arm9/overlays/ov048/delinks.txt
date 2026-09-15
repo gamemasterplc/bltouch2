@@ -89,9 +89,13 @@ src/bbp/bbp_touch.c:
     .bss        start:0x020e3c8c end:0x020e3c90
 
 src/bbp/bbp_vram.c:
-    .text       start:0x020bcccc end:0x020bd8d8
+    .text       start:0x020bcccc end:0x020bd0b8
+    .bss        start:0x020e3c90 end:0x020e3c94
+
+src/bbp/bbp_color.c:
+    .text       start:0x020bd0b8 end:0x020bd8d8
     .rodata     start:0x020d15b0 end:0x020d15e8
-    .bss        start:0x020e3c90 end:0x020e3c98
+    .bss        start:0x020e3c94 end:0x020e3c98
 
 src/bbp/bbp_scene.c:
     .text       start:0x020bd8d8 end:0x020be174

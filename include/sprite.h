@@ -65,11 +65,11 @@ struct BLSprite_s {
 	
 };
 
-typedef struct BLSpr3D_s {
+typedef struct BLSprTex_s {
 	BLSprAnim base; //Must be at 0x00
 	u32 colorAddr; //0x28
 	u8 alpha : 5; //0x2C
-} BLSpr3D;
+} BLSprTex;
 
 typedef struct BLSprRaw_s {
 	s16 x; //0x0
@@ -93,7 +93,7 @@ typedef struct BLSprRaw_s {
 
 void BL_SprInit(void);
 void BL_SprClose(void);
-BLSprite *BL_SprCreate(int screen, u8 layer, u16 prio, u32 imageAddr, u8 palette, BLResAnim *animRes, BLResImage *imageRes);
+BLSprite *BL_SprCreate(int display, u8 layer, u16 prio, u32 imageAddr, u8 palette, BLResAnim *animRes, BLResImage *imageRes);
 void BL_SprKill(BLSprite *spr);
 void BL_SprSetAnim(BLSprite *spr, u16 animNo, u8 animFrame);
 
@@ -103,10 +103,10 @@ u16 BL_SprGetPrio(BLSprite *spr);
 
 #ifndef SYS_BBP
 void BL_SprSetLayer(BLSprite *spr, u8 layer);
-BLSpr3D *BL_Spr3DCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animRes);
-void BL_Spr3DKill(BLSpr3D *spr);
-void BL_Spr3DSetAnim(BLSpr3D *spr, u16 animNo, u8 animFrame);
-void BL_Spr3DSetPrio(BLSpr3D *spr, u16 prio);
+BLSprTex *BL_SprTexCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animRes);
+void BL_SprTexKill(BLSprTex *spr);
+void BL_SprTexSetAnim(BLSprTex *spr, u16 animNo, u8 animFrame);
+void BL_SprTexSetPrio(BLSprTex *spr, u16 prio);
 BLSprRaw *BL_SprRawCreate(u16 prio, u32 imageAddr, u32 colorAddr, u8 width, u8 height, u8 is8BPP);
 void BL_SprRawKill(BLSprRaw *spr);
 #endif

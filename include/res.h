@@ -23,7 +23,7 @@ void BL_ResLoadBackground(BLFile *file, int display, int scrBase, int tileOfs, u
 void BL_ResLoadBackgroundAffine(BLFile *file, int display, int scrBase, int tileOfs, u8 palOfs);
 void BL_ResLoadImage(BLFile *file, int type, u32 ofs);
 #ifndef SYS_BBP
-void BL_ResLoadImage3D(BLFile *file, u32 ofs);
+void BL_ResLoadTex(BLFile *file, u32 ofs);
 #endif
 
 #endif
