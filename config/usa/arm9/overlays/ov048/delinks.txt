@@ -109,6 +109,7 @@ src/bbp/bbp_sprite.c:
     .bss        start:0x020e3cd0 end:0x020e3e00
 
 src/bbp/bbp_object.c:
+    complete
     .text       start:0x020bfb90 end:0x020c0044
     .bss        start:0x020e3e00 end:0x020e3e10
 
