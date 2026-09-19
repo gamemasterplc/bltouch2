@@ -435,7 +435,7 @@ FldSun_PathDataA1P2 kind:data(any) addr:0x0211a914
 FldSun_ObjResA1P4 kind:data(any) addr:0x0211a91c
 FldSun_ObjResA2P2 kind:data(any) addr:0x0211a924
 FldSun_GateDataA2P1 kind:data(any) addr:0x0211a92c
-FldSun_MoveSprA1P2 kind:data(any) addr:0x0211a934
+FldSun_ObjDynA1P2 kind:data(any) addr:0x0211a934
 FldSun_MgColA1P2 kind:data(any) addr:0x0211a93c
 data_ov045_0211a944 kind:data(any) addr:0x0211a944
 FldSun_ObjResIdxA2P2 kind:data(any) addr:0x0211a94c
@@ -446,7 +446,7 @@ FldSun_GateDataA1P1 kind:data(any) addr:0x0211a96c
 FldSun_ObjResA2P4 kind:data(any) addr:0x0211a974
 FldSun_PathDataA1P1 kind:data(any) addr:0x0211a97c
 FldSun_ObjPosA1P1 kind:data(any) addr:0x0211a984
-FldSun_MoveSprA1P1 kind:data(any) addr:0x0211a98c
+FldSun_ObjDynA1P1 kind:data(any) addr:0x0211a98c
 FldSun_TouchObjA2P1 kind:data(any) addr:0x0211a994
 FldSun_TouchObjA2P4 kind:data(any) addr:0x0211a99c
 FldSun_ObjPosA1P2 kind:data(any) addr:0x0211a9a4
@@ -455,7 +455,7 @@ data_ov045_0211a9b4 kind:data(any) addr:0x0211a9b4
 FldSun_ObjResIdxA2P1 kind:data(any) addr:0x0211a9bc
 FldSun_TouchObjA1P2 kind:data(any) addr:0x0211a9c4
 data_ov045_0211a9cc kind:data(any) addr:0x0211a9cc
-FldSun_MoveSprA2P2 kind:data(any) addr:0x0211a9d4
+FldSun_ObjDynA2P2 kind:data(any) addr:0x0211a9d4
 FldSun_ObjPosA2P4 kind:data(any) addr:0x0211a9dc
 FldSun_ObjResA1P1 kind:data(any) addr:0x0211a9e4
 FldSun_MgColA2P3 kind:data(any) addr:0x0211a9ec
@@ -480,10 +480,10 @@ data_ov045_0211aa7c kind:data(any) addr:0x0211aa7c
 FldSun_ObjResA2P1 kind:data(any) addr:0x0211aa84
 FldSun_ObjPosA2P1 kind:data(any) addr:0x0211aa8c
 FldSun_ObjResIdxA2P4 kind:data(any) addr:0x0211aa94
-FldSun_MoveSprA1P3 kind:data(any) addr:0x0211aa9c
+FldSun_ObjDynA1P3 kind:data(any) addr:0x0211aa9c
 FldSun_MgColA1P1 kind:data(any) addr:0x0211aaa4
 data_ov045_0211aaac kind:data(any) addr:0x0211aaac
-FldSun_MoveSprA1P4 kind:data(any) addr:0x0211aab4
+FldSun_ObjDynA1P4 kind:data(any) addr:0x0211aab4
 FldSun_ObjPosA1P4 kind:data(any) addr:0x0211aabc
 FldSun_FlagColA2P2 kind:data(any) addr:0x0211aac4
 FldSun_ObjResIdxA1P4 kind:data(any) addr:0x0211aacc

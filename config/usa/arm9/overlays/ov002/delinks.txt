@@ -3,3 +3,90 @@
     .ctor       start:0x021070c8 end:0x021070c8 kind:rodata align:4
     .data       start:0x021070e0 end:0x02112040 kind:data align:32
     .bss        start:0x02112040 end:0x02112340 kind:bss align:32
+
+src/field/earth/earth_evilhat.c:
+    .text       start:0x020b26e0 end:0x020b3208
+    .data       start:0x021070e0 end:0x02107250
+
+src/field/field_screen.c:
+    .text       start:0x020b3208 end:0x020b37d8
+    .bss        start:0x02112040 end:0x02112050
+
+src/field/field_baseanim.c:
+    .text       start:0x020b37d8 end:0x020b4504
+
+src/field/field_col.c:
+    .text       start:0x020b4504 end:0x020b4960
+    .rodata     start:0x02105c0c end:0x02105d0c
+    .data       start:0x02107250 end:0x02107360
+
+src/field/field_bg.c:
+    .text       start:0x020b4960 end:0x020b61a8
+    .data       start:0x02107360 end:0x02107368
+
+src/field/field_chrcol.c:
+    .text       start:0x020b61a8 end:0x020b6c60
+    .rodata     start:0x02105d0c end:0x02106004
+
+src/field/field_util.c:
+    .text       start:0x020b6c60 end:0x020b6e94
+    .rodata     start:0x02106004 end:0x02106014
+
+src/field/field_gatecheck.c:
+    .text       start:0x020b6e94 end:0x020b74f8
+    .data       start:0x02107368 end:0x021073f0
+
+src/field/field_pad.c:
+    .text       start:0x020b74f8 end:0x020b7714
+
+src/field/field_window.c:
+    .text       start:0x020b7714 end:0x020b79dc
+    .bss        start:0x02112050 end:0x02112054
+
+src/field/field_zonereject.c:
+    .text       start:0x020b79dc end:0x020b7b58
+
+src/field/field_chrmove.c:
+    .text       start:0x020b7b58 end:0x020b8a28
+
+src/field/field_filetbl.c:
+    .data       start:0x021073f0 end:0x02107a74
+
+src/field/field_gpu.c:
+    .text       start:0x020b8a28 end:0x020b9270
+
+src/field/field_scene.c:
+    .text       start:0x020b9270 end:0x020bc050
+    .data       start:0x02107a74 end:0x02107eb4
+    .bss        start:0x02112054 end:0x0211205c
+
+src/field/field_touch.c:
+    .text       start:0x020bc050 end:0x020bd170
+    .rodata     start:0x02106014 end:0x02106448
+    .data       start:0x02107eb4 end:0x02108274
+    .bss        start:0x0211205c end:0x02112060
+
+src/field/field_touchspr.c:
+    .text       start:0x020bd170 end:0x020be058
+    .rodata     start:0x02106448 end:0x021064a4
+
+src/field/field_obj.c:
+    .text       start:0x020be058 end:0x020bf668
+    .data       start:0x02108274 end:0x0210840c
+    .bss        start:0x02112060 end:0x02112064
+
+src/field/field_dynobj.c:
+    .text       start:0x020bf668 end:0x020bfb24
+    .data       start:0x0210840c end:0x02108494
+
+src/field/field_bgobj.c:
+    .text       start:0x020bfb24 end:0x020bfd44
+    .data       start:0x02108494 end:0x0210851c
+
+src/field/field_chr.c:
+    .text       start:0x020bfd44 end:0x020c2748
+
+src/field/field_gate.c:
+    .text       start:0x020c2748 end:0x020c2f84
+    .data       start:0x0210851c end:0x021085a4
+    .bss        start:0x02112064 end:0x02112068

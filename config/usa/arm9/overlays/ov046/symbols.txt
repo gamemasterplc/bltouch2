@@ -524,7 +524,7 @@ FldEarth_ObjResA2P1 kind:data(any) addr:0x0211b440
 FldEarth_MgColA2P3 kind:data(any) addr:0x0211b448
 FldEarth_GateDataA2P2 kind:data(any) addr:0x0211b450
 FldEarth_MgColA1P2 kind:data(any) addr:0x0211b458
-FldEarth_MoveSprA2P2 kind:data(any) addr:0x0211b460
+FldEarth_ObjDynA2P2 kind:data(any) addr:0x0211b460
 FldEarth_GateDataA1P1 kind:data(any) addr:0x0211b468
 FldEarth_ObjResA1P2 kind:data(any) addr:0x0211b470
 FldEarth_ObjResIdxA2P3 kind:data(any) addr:0x0211b478
@@ -534,7 +534,7 @@ data_ov046_0211b490 kind:data(any) addr:0x0211b490
 data_ov046_0211b498 kind:data(any) addr:0x0211b498
 FldEarth_ObjPosA1P2 kind:data(any) addr:0x0211b4a0
 FldEarth_ObjPosA2P3 kind:data(any) addr:0x0211b4a8
-FldEarth_MoveSprA2P1 kind:data(any) addr:0x0211b4b0
+FldEarth_ObjDynA2P1 kind:data(any) addr:0x0211b4b0
 FldEarth_ObjPosA2P1 kind:data(any) addr:0x0211b4b8
 FldEarth_FlagColA1P2 kind:data(any) addr:0x0211b4c0
 FldEarth_ObjResIdxA2P4 kind:data(any) addr:0x0211b4c8

@@ -231,7 +231,7 @@ data_ov043_0211b44c kind:data(any) addr:0x0211b44c
 FldStar_MgColA2P3 kind:data(any) addr:0x0211b454
 FldStar_TouchObjA2P4 kind:data(any) addr:0x0211b45c
 data_ov043_0211b464 kind:data(any) addr:0x0211b464
-FldStar_MoveSprA1P2 kind:data(any) addr:0x0211b46c
+FldStar_ObjDynA1P2 kind:data(any) addr:0x0211b46c
 FldStar_GateDataA2P1 kind:data(any) addr:0x0211b474
 FldStar_ObjPosA2P4 kind:data(any) addr:0x0211b47c
 data_ov043_0211b484 kind:data(any) addr:0x0211b484

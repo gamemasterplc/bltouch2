@@ -528,7 +528,7 @@ FldMoon_PathDataA1P2 kind:data(any) addr:0x0211c478
 FldMoon_ObjPosA1P3 kind:data(any) addr:0x0211c480
 FldMoon_ObjResA1P2 kind:data(any) addr:0x0211c488
 FldMoon_ObjResIdxA1P3 kind:data(any) addr:0x0211c490
-FldMoon_MoveSprA2P2 kind:data(any) addr:0x0211c498
+FldMoon_ObjDynA2P2 kind:data(any) addr:0x0211c498
 FldMoon_ObjResIdxA1P2 kind:data(any) addr:0x0211c4a0
 FldMoon_ObjResA2P1 kind:data(any) addr:0x0211c4a8
 FldMoon_TouchObjA1P2 kind:data(any) addr:0x0211c4b0
@@ -547,9 +547,9 @@ FldMoon_TouchObjA1P5 kind:data(any) addr:0x0211c510
 FldMoon_FlagColA1P1 kind:data(any) addr:0x0211c518
 FldMoon_MgColA2P2 kind:data(any) addr:0x0211c520
 FldMoon_ObjResIdxA1P5 kind:data(any) addr:0x0211c528
-FldMoon_MoveSprA1P2 kind:data(any) addr:0x0211c530
+FldMoon_ObjDynA1P2 kind:data(any) addr:0x0211c530
 FldMoon_MgColA1P5 kind:data(any) addr:0x0211c538
-FldMoon_MoveSprA2P3 kind:data(any) addr:0x0211c540
+FldMoon_ObjDynA2P3 kind:data(any) addr:0x0211c540
 FldMoon_FlagColA2P2 kind:data(any) addr:0x0211c548
 FldMoon_TouchObjA2P2 kind:data(any) addr:0x0211c550
 FldMoon_MgColA1P4 kind:data(any) addr:0x0211c558
@@ -578,9 +578,9 @@ data_ov044_0211c608 kind:data(any) addr:0x0211c608
 FldMoon_TouchObjA1P4 kind:data(any) addr:0x0211c610
 data_ov044_0211c618 kind:data(any) addr:0x0211c618
 FldMoon_PathDataA2P2 kind:data(any) addr:0x0211c620
-FldMoon_BGSprPosA1P4 kind:data(any) addr:0x0211c628
+FldMoon_ObjBGPosA1P4 kind:data(any) addr:0x0211c628
 FldMoon_TouchObjA2P1 kind:data(any) addr:0x0211c630
-FldMoon_MoveSprA1P4 kind:data(any) addr:0x0211c638
+FldMoon_ObjDynA1P4 kind:data(any) addr:0x0211c638
 FldMoon_PathDataA1P1 kind:data(any) addr:0x0211c640
 FldMoon_ObjResIdxA1P4 kind:data(any) addr:0x0211c648
 FldMoon_ObjResA1P3 kind:data(any) addr:0x0211c650
@@ -591,7 +591,7 @@ FldMoon_TouchObjA1P1 kind:data(any) addr:0x0211c670
 data_ov044_0211c678 kind:data(any) addr:0x0211c678
 data_ov044_0211c680 kind:data(any) addr:0x0211c680
 FldMoon_TouchObjA1P3 kind:data(any) addr:0x0211c688
-FldMoon_MoveSprA1P3 kind:data(any) addr:0x0211c690
+FldMoon_ObjDynA1P3 kind:data(any) addr:0x0211c690
 FldMoon_MgColA1P3 kind:data(any) addr:0x0211c698
 FldMoon_GateDataA1P3 kind:data(any) addr:0x0211c6a0
 data_ov044_0211c6a8 kind:data(any) addr:0x0211c6a8
