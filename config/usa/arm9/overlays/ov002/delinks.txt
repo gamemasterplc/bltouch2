@@ -90,3 +90,68 @@ src/field/field_gate.c:
     .text       start:0x020c2748 end:0x020c2f84
     .data       start:0x0210851c end:0x021085a4
     .bss        start:0x02112064 end:0x02112068
+
+src/field/menu/field_menu_padopt.c:
+    .text       start:0x020c2f84 end:0x020c373c
+    .data       start:0x021085a4 end:0x021086d0
+
+src/field/menu/field_menu_padsave.c:
+    .text       start:0x020c373c end:0x020c4384
+    .data       start:0x021086d0 end:0x02108858
+
+src/field/menu/field_menu_padsoubi.c:
+    .text       start:0x020c4384 end:0x020c5c10
+    .data       start:0x02108858 end:0x02108c50
+
+src/field/menu/field_menu_padmail.c:
+    .text       start:0x020c5c10 end:0x020c7abc
+    .data       start:0x02108c50 end:0x02109004
+
+src/field/menu/field_menu.c:
+    .text       start:0x020c7abc end:0x020c8b20
+    .data       start:0x02109004 end:0x021090fc
+    .bss        start:0x02112068 end:0x0211206c
+
+src/field/menu/field_menu_padpiece.c:
+    .text       start:0x020c8b20 end:0x020c983c
+    .data       start:0x021090fc end:0x0210938c
+
+src/field/menu/field_menu_pad.c:
+    .text       start:0x020c983c end:0x020cab2c
+    .data       start:0x0210938c end:0x02109498
+
+src/field/field_script.c:
+    .text       start:0x020cab2c end:0x020cfd64
+    .rodata     start:0x021064a4 end:0x021064c8
+    .data       start:0x02109498 end:0x021094e0
+    .bss        start:0x0211206c end:0x02112070
+
+src/field/field_mes.c:
+    .text       start:0x020cfd64 end:0x020d1918
+    .data       start:0x021094e0 end:0x0210956c
+    .bss        start:0x02112070 end:0x02112074
+
+src/field/field_screenmask.c:
+    .text       start:0x020d1918 end:0x020d1c30
+    .bss        start:0x02112074 end:0x02112078
+
+src/field/event/field_event_chr.c:
+    .text       start:0x020d1c30 end:0x020d23a8
+    .data       start:0x0210956c end:0x02109614
+
+src/field/menu/field_menu_stamp.c:
+    .text       start:0x020d23a8 end:0x020d2a2c
+    .data       start:0x02109614 end:0x021097d0
+
+src/field/menu/field_menu_stamp_over.c:
+    .text       start:0x020d2a2c end:0x020d3174
+    .rodata     start:0x021064c8 end:0x021064dc
+    .data       start:0x021097d0 end:0x0210992c
+
+src/field/event/field_event_spr.c:
+    .text       start:0x020d3174 end:0x020d36a4
+    .data       start:0x0210992c end:0x0210997c
+
+src/field/event/field_event_item.c:
+    .text       start:0x020d36a4 end:0x020d3c78
+    .data       start:0x0210997c end:0x02109a38

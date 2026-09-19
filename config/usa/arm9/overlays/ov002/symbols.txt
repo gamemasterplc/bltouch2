@@ -267,64 +267,64 @@ GateCreateSpr kind:function(arm,size=0x2ec) local addr:0x020c2a6c
 FldGate_SetOpen kind:function(arm,size=0x1a8) addr:0x020c2d58
 GateKill kind:function(arm,size=0x44) local addr:0x020c2f00
 FldGate_KillAll kind:function(arm,size=0x40) addr:0x020c2f44
-func_ov002_020c2f84 kind:function(arm,size=0x16c) addr:0x020c2f84
-FldMenu_Settings kind:function(arm,size=0x138) addr:0x020c30f0
-FldMenu_SettingsKill kind:function(arm,size=0x50) addr:0x020c3228
-func_ov002_020c3278 kind:function(arm,size=0x134) addr:0x020c3278
-func_ov002_020c33ac kind:function(arm,size=0x70) addr:0x020c33ac
-func_ov002_020c341c kind:function(arm,size=0x20) addr:0x020c341c
-func_ov002_020c343c kind:function(arm,size=0x64) addr:0x020c343c
-func_ov002_020c34a0 kind:function(arm,size=0x210) addr:0x020c34a0
-func_ov002_020c36b0 kind:function(arm,size=0x8c) addr:0x020c36b0
-func_ov002_020c373c kind:function(arm,size=0x1b4) addr:0x020c373c
-FldMenu_SaveMenu kind:function(arm,size=0x4dc) addr:0x020c38f0
-FldMenu_SaveMenuKill kind:function(arm,size=0x50) addr:0x020c3dcc
-func_ov002_020c3e1c kind:function(arm,size=0x134) addr:0x020c3e1c
-func_ov002_020c3f50 kind:function(arm,size=0x70) addr:0x020c3f50
-func_ov002_020c3fc0 kind:function(arm,size=0x20) addr:0x020c3fc0
-func_ov002_020c3fe0 kind:function(arm,size=0x9c) addr:0x020c3fe0
-func_ov002_020c407c kind:function(arm,size=0x27c) addr:0x020c407c
-func_ov002_020c42f8 kind:function(arm,size=0x8c) addr:0x020c42f8
-func_ov002_020c4384 kind:function(arm,size=0xd8) addr:0x020c4384
-FldMenu_Item kind:function(arm,size=0x398) addr:0x020c445c
-FldMenu_ItemKill kind:function(arm,size=0x60) addr:0x020c47f4
-func_ov002_020c4854 kind:function(arm,size=0x190) addr:0x020c4854
-func_ov002_020c49e4 kind:function(arm,size=0x70) addr:0x020c49e4
-func_ov002_020c4a54 kind:function(arm,size=0x20) addr:0x020c4a54
-func_ov002_020c4a74 kind:function(arm,size=0x140) addr:0x020c4a74
-func_ov002_020c4bb4 kind:function(arm,size=0x148) addr:0x020c4bb4
-func_ov002_020c4cfc kind:function(arm,size=0x16c) addr:0x020c4cfc
-func_ov002_020c4e68 kind:function(arm,size=0xc4) addr:0x020c4e68
-func_ov002_020c4f2c kind:function(arm,size=0x1f4) addr:0x020c4f2c
-func_ov002_020c5120 kind:function(arm,size=0x2cc) addr:0x020c5120
-func_ov002_020c53ec kind:function(arm,size=0x1d8) addr:0x020c53ec
-func_ov002_020c55c4 kind:function(arm,size=0x64) addr:0x020c55c4
-func_ov002_020c5628 kind:function(arm,size=0x55c) addr:0x020c5628
-func_ov002_020c5b84 kind:function(arm,size=0x8c) addr:0x020c5b84
-func_ov002_020c5c10 kind:function(arm,size=0x18c) addr:0x020c5c10
-FldMenu_Mail kind:function(arm,size=0x328) addr:0x020c5d9c
-FldMenu_MailKill kind:function(arm,size=0x50) addr:0x020c60c4
-func_ov002_020c6114 kind:function(arm,size=0x1a0) addr:0x020c6114
-func_ov002_020c62b4 kind:function(arm,size=0x70) addr:0x020c62b4
-func_ov002_020c6324 kind:function(arm,size=0x20) addr:0x020c6324
-func_ov002_020c6344 kind:function(arm,size=0x74) addr:0x020c6344
-func_ov002_020c63b8 kind:function(arm,size=0x190) addr:0x020c63b8
-func_ov002_020c6548 kind:function(arm,size=0x68) addr:0x020c6548
-func_ov002_020c65b0 kind:function(arm,size=0xd5c) addr:0x020c65b0
-func_ov002_020c730c kind:function(arm,size=0x64) addr:0x020c730c
-func_ov002_020c7370 kind:function(arm,size=0x330) addr:0x020c7370
-func_ov002_020c76a0 kind:function(arm,size=0x8c) addr:0x020c76a0
-func_ov002_020c772c kind:function(arm,size=0xbc) addr:0x020c772c
-func_ov002_020c77e8 kind:function(arm,size=0x154) addr:0x020c77e8
-func_ov002_020c793c kind:function(arm,size=0x180) addr:0x020c793c
+FldMenu_PadOptInit kind:function(arm,size=0x16c) addr:0x020c2f84
+FldMenu_PadOptExec kind:function(arm,size=0x138) addr:0x020c30f0
+FldMenu_PadOptKill kind:function(arm,size=0x50) addr:0x020c3228
+LoadRes kind:function(arm,size=0x134) local addr:0x020c3278
+InitSpr kind:function(arm,size=0x70) local addr:0x020c33ac
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020c341c
+GetMenuClick kind:function(arm,size=0x64) local addr:0x020c343c
+GetClick kind:function(arm,size=0x210) local addr:0x020c34a0
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c36b0
+FldMenu_PadSaveInit kind:function(arm,size=0x1b4) addr:0x020c373c
+FldMenu_PadSaveExec kind:function(arm,size=0x4dc) addr:0x020c38f0
+FldMenu_PadSaveKill kind:function(arm,size=0x50) addr:0x020c3dcc
+LoadRes kind:function(arm,size=0x134) local addr:0x020c3e1c
+InitSpr kind:function(arm,size=0x70) local addr:0x020c3f50
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020c3fc0
+GetMenuClick kind:function(arm,size=0x9c) local addr:0x020c3fe0
+GetClick kind:function(arm,size=0x27c) local addr:0x020c407c
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c42f8
+FldMenu_PadSoubiInit kind:function(arm,size=0xd8) addr:0x020c4384
+FldMenu_PadSoubiExec kind:function(arm,size=0x398) addr:0x020c445c
+FldMenu_PadSoubiKill kind:function(arm,size=0x60) addr:0x020c47f4
+LoadRes kind:function(arm,size=0x190) local addr:0x020c4854
+InitSpr kind:function(arm,size=0x70) local addr:0x020c49e4
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020c4a54
+IsItemValid kind:function(arm,size=0x140) local addr:0x020c4a74
+SetHatLockSpr kind:function(arm,size=0x148) local addr:0x020c4bb4
+SetBodyLockSpr kind:function(arm,size=0x16c) local addr:0x020c4cfc
+SetBombLockSpr kind:function(arm,size=0xc4) local addr:0x020c4e68
+SetDefautSel kind:function(arm,size=0x1f4) local addr:0x020c4f2c
+UpdateHilite kind:function(arm,size=0x2cc) local addr:0x020c5120
+UpdateItem kind:function(arm,size=0x1d8) local addr:0x020c53ec
+GetMenuClick kind:function(arm,size=0x64) local addr:0x020c55c4
+GetClick kind:function(arm,size=0x55c) local addr:0x020c5628
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c5b84
+FldMenu_PadMailInit kind:function(arm,size=0x18c) addr:0x020c5c10
+FldMenu_PadMailExec kind:function(arm,size=0x328) addr:0x020c5d9c
+FldMenu_PadMailKill kind:function(arm,size=0x50) addr:0x020c60c4
+LoadRes kind:function(arm,size=0x1a0) local addr:0x020c6114
+InitSpr kind:function(arm,size=0x70) local addr:0x020c62b4
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020c6324
+OnMailClick kind:function(arm,size=0x74) local addr:0x020c6344
+UpdateMailSpr kind:function(arm,size=0x190) local addr:0x020c63b8
+UpdateCursor kind:function(arm,size=0x68) local addr:0x020c6548
+GetMailIcon kind:function(arm,size=0xd5c) local addr:0x020c65b0
+GetMenuClick kind:function(arm,size=0x64) local addr:0x020c730c
+GetClick kind:function(arm,size=0x330) local addr:0x020c7370
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c76a0
+InitMailOrder kind:function(arm,size=0xbc) local addr:0x020c772c
+SortMailReceive kind:function(arm,size=0x154) local addr:0x020c77e8
+SortMailName kind:function(arm,size=0x180) local addr:0x020c793c
 FldMenu_Init kind:function(arm,size=0xb8) addr:0x020c7abc
 FldMenu_Exec kind:function(arm,size=0x58) addr:0x020c7b74
 FldMenu_Close kind:function(arm,size=0xc0) addr:0x020c7bcc
 FldMenu_SetMenu kind:function(arm,size=0x4c) addr:0x020c7c8c
 FldMenu_ResKill kind:function(arm,size=0x8c) addr:0x020c7cd8
 FldMenu_HowaExec kind:function(arm,size=0x3c) addr:0x020c7d64
-func_ov002_020c7da0 kind:function(arm,size=0x188) addr:0x020c7da0
-func_ov002_020c7f28 kind:function(arm,size=0x70) addr:0x020c7f28
+LoadHowaRes kind:function(arm,size=0x188) local addr:0x020c7da0
+InitHowaSprite kind:function(arm,size=0x70) local addr:0x020c7f28
 FldMenu_HowaCreate kind:function(arm,size=0xa8) addr:0x020c7f98
 FldMenu_HowaKill kind:function(arm,size=0x7c) addr:0x020c8040
 FldMenu_HowaCreateColorAnim kind:function(arm,size=0x64) addr:0x020c80bc
@@ -336,24 +336,24 @@ FldMenu_HowaSetPosY kind:function(arm,size=0x24) addr:0x020c81ec
 FldMenu_HowaSetPos kind:function(arm,size=0x20) addr:0x020c8210
 FldMenu_HowaSetAnim kind:function(arm,size=0x30) addr:0x020c8230
 FldMenu_HowaSetPrio kind:function(arm,size=0x2c) addr:0x020c8260
-FldMenuSpr_Create kind:function(arm,size=0xac) addr:0x020c828c
-FldMenuSpr_Kill kind:function(arm,size=0x80) addr:0x020c8338
-FldMenuSpr_CreateColorAnim kind:function(arm,size=0x94) addr:0x020c83b8
-FldMenuSpr_KillColorAnim kind:function(arm,size=0x7c) addr:0x020c844c
-FldMenuSpr_SetColor kind:function(arm,size=0x54) addr:0x020c84c8
-FldMenuSpr_CreateColorAnim2 kind:function(arm,size=0x68) addr:0x020c851c
-FldMenuSpr_KillColorAnim2 kind:function(arm,size=0x54) addr:0x020c8584
-FldMenuSpr_DispOn kind:function(arm,size=0x2c) addr:0x020c85d8
-FldMenuSpr_DispOff kind:function(arm,size=0x2c) addr:0x020c8604
-FldMenuSpr_SetPosX kind:function(arm,size=0x24) addr:0x020c8630
-FldMenuSpr_SetPosY kind:function(arm,size=0x24) addr:0x020c8654
-FldMenuSpr_SetPos kind:function(arm,size=0x20) addr:0x020c8678
-FldMenuSpr_MovePosX kind:function(arm,size=0x34) addr:0x020c8698
-FldMenuSpr_MovePosY kind:function(arm,size=0x34) addr:0x020c86cc
-FldMenuSpr_MovePos kind:function(arm,size=0x20) addr:0x020c8700
-FldMenuSpr_SetAnim kind:function(arm,size=0x30) addr:0x020c8720
-FldMenuSpr_SetPrio kind:function(arm,size=0x2c) addr:0x020c8750
-FldMenuSpr_SetScale kind:function(arm,size=0x28) addr:0x020c877c
+FldMenu_SprCreate kind:function(arm,size=0xac) addr:0x020c828c
+FldMenu_SprKill kind:function(arm,size=0x80) addr:0x020c8338
+FldMenu_SprCreateColorAnim kind:function(arm,size=0x94) addr:0x020c83b8
+FldMenu_SprKillColorAnim kind:function(arm,size=0x7c) addr:0x020c844c
+FldMenu_SprSetColor kind:function(arm,size=0x54) addr:0x020c84c8
+FldMenu_SprCreateColorAnim2 kind:function(arm,size=0x68) addr:0x020c851c
+FldMenu_SprKillColorAnim2 kind:function(arm,size=0x54) addr:0x020c8584
+FldMenu_SprDispOn kind:function(arm,size=0x2c) addr:0x020c85d8
+FldMenu_SprDispOff kind:function(arm,size=0x2c) addr:0x020c8604
+FldMenu_SprSetPosX kind:function(arm,size=0x24) addr:0x020c8630
+FldMenu_SprSetPosY kind:function(arm,size=0x24) addr:0x020c8654
+FldMenu_SprSetPos kind:function(arm,size=0x20) addr:0x020c8678
+FldMenu_SprMovePosX kind:function(arm,size=0x34) addr:0x020c8698
+FldMenu_SprMovePosY kind:function(arm,size=0x34) addr:0x020c86cc
+FldMenu_SprMovePos kind:function(arm,size=0x20) addr:0x020c8700
+FldMenu_SprSetAnim kind:function(arm,size=0x30) addr:0x020c8720
+FldMenu_SprSetPrio kind:function(arm,size=0x2c) addr:0x020c8750
+FldMenu_SprSetScale kind:function(arm,size=0x28) addr:0x020c877c
 FldMenu_HowaCreateBase kind:function(arm,size=0x38) addr:0x020c87a4
 FldMenu_HowaKillBase kind:function(arm,size=0x10) addr:0x020c87dc
 FldMenu_SetBackground kind:function(arm,size=0x118) addr:0x020c87ec
@@ -363,27 +363,27 @@ FldMenu_FadeFastInExec kind:function(arm,size=0x6c) addr:0x020c8970
 FldMenu_FadeFastOutExec kind:function(arm,size=0x6c) addr:0x020c89dc
 FldMenu_FadeSlowInExec kind:function(arm,size=0x6c) addr:0x020c8a48
 FldMenu_FadeSlowOutExec kind:function(arm,size=0x6c) addr:0x020c8ab4
-func_ov002_020c8b20 kind:function(arm,size=0x20c) addr:0x020c8b20
-FldMenu_Piece kind:function(arm,size=0x488) addr:0x020c8d2c
+FldMenu_PieceInit kind:function(arm,size=0x20c) addr:0x020c8b20
+FldMenu_PieceExec kind:function(arm,size=0x488) addr:0x020c8d2c
 FldMenu_PieceKill kind:function(arm,size=0x50) addr:0x020c91b4
-func_ov002_020c9204 kind:function(arm,size=0x144) addr:0x020c9204
-func_ov002_020c9348 kind:function(arm,size=0x7c) addr:0x020c9348
-func_ov002_020c93c4 kind:function(arm,size=0x20) addr:0x020c93c4
-func_ov002_020c93e4 kind:function(arm,size=0x64) addr:0x020c93e4
-func_ov002_020c9448 kind:function(arm,size=0x1e0) addr:0x020c9448
-func_ov002_020c9628 kind:function(arm,size=0x8c) addr:0x020c9628
-func_ov002_020c96b4 kind:function(arm,size=0x188) addr:0x020c96b4
-func_ov002_020c983c kind:function(arm,size=0x218) addr:0x020c983c
-FldMenu_Pad kind:function(arm,size=0x198) addr:0x020c9a54
+LoadRes kind:function(arm,size=0x144) local addr:0x020c9204
+InitSpr kind:function(arm,size=0x7c) local addr:0x020c9348
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020c93c4
+GetMenuClick kind:function(arm,size=0x64) local addr:0x020c93e4
+GetClick kind:function(arm,size=0x1e0) local addr:0x020c9448
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c9628
+InitPieceAnim kind:function(arm,size=0x188) local addr:0x020c96b4
+FldMenu_PadInit kind:function(arm,size=0x218) addr:0x020c983c
+FldMenu_PadExec kind:function(arm,size=0x198) addr:0x020c9a54
 FldMenu_PadKill kind:function(arm,size=0x50) addr:0x020c9bec
-func_ov002_020c9c3c kind:function(arm,size=0x160) addr:0x020c9c3c
-func_ov002_020c9d9c kind:function(arm,size=0x70) addr:0x020c9d9c
-func_ov002_020c9e0c kind:function(arm,size=0x30) addr:0x020c9e0c
-func_ov002_020c9e3c kind:function(arm,size=0x258) addr:0x020c9e3c
-func_ov002_020ca094 kind:function(arm,size=0x1dc) addr:0x020ca094
-func_ov002_020ca270 kind:function(arm,size=0x94) addr:0x020ca270
-func_ov002_020ca304 kind:function(arm,size=0x24) addr:0x020ca304
-func_ov002_020ca328 kind:function(arm,size=0x3f4) addr:0x020ca328
+LoadRes kind:function(arm,size=0x160) local addr:0x020c9c3c
+InitSpr kind:function(arm,size=0x70) local addr:0x020c9d9c
+FldMenu_PadDispOn kind:function(arm,size=0x30) addr:0x020c9e0c
+GetMenuClick kind:function(arm,size=0x258) local addr:0x020c9e3c
+GetClick kind:function(arm,size=0x1dc) local addr:0x020ca094
+CheckNewMail kind:function(arm,size=0x94) local addr:0x020ca270
+CheckStampOver kind:function(arm,size=0x24) local addr:0x020ca304
+UpdateDisp kind:function(arm,size=0x3f4) local addr:0x020ca328
 FldMenu_PadSetPosIn kind:function(arm,size=0x6c) addr:0x020ca71c
 FldMenu_PadMoveOut kind:function(arm,size=0x84) addr:0x020ca788
 FldMenu_PadSetPosOut kind:function(arm,size=0x9c) addr:0x020ca80c
@@ -398,26 +398,26 @@ FldScr_CheckPieceFull kind:function(arm,size=0x448) addr:0x020cafe4
 FldScr_Create kind:function(arm,size=0xcc) addr:0x020cb42c
 FldScr_Exec kind:function(arm,size=0x1c4) addr:0x020cb4f8
 FldScr_Kill kind:function(arm,size=0x40) addr:0x020cb6bc
-func_ov002_020cb6fc kind:function(arm,size=0x3c) addr:0x020cb6fc
+KillBustup kind:function(arm,size=0x3c) local addr:0x020cb6fc
 FldScr_GotoScript kind:function(arm,size=0x38) addr:0x020cb738
-func_ov002_020cb770 kind:function(arm,size=0x48) addr:0x020cb770
-func_ov002_020cb7b8 kind:function(arm,size=0x1030) addr:0x020cb7b8
-func_ov002_020cc7e8 kind:function(arm,size=0x26c) addr:0x020cc7e8
-func_ov002_020cca54 kind:function(arm,size=0x28) addr:0x020cca54
-func_ov002_020cca7c kind:function(arm,size=0x34) addr:0x020cca7c
-func_ov002_020ccab0 kind:function(arm,size=0x43c) addr:0x020ccab0
-func_ov002_020cceec kind:function(arm,size=0x8c8) addr:0x020cceec
-func_ov002_020cd7b4 kind:function(arm,size=0x4) addr:0x020cd7b4
-func_ov002_020cd7b8 kind:function(arm,size=0x1f4) addr:0x020cd7b8
-func_ov002_020cd9ac kind:function(arm,size=0x197c) addr:0x020cd9ac
-func_ov002_020cf328 kind:function(arm,size=0x228) addr:0x020cf328
-FldEv_ExecMgRivalDefeat kind:function(arm,size=0x814) addr:0x020cf550
+ScrExec kind:function(arm,size=0x48) local addr:0x020cb770
+ScrExecOp kind:function(arm,size=0x1030) local addr:0x020cb7b8
+ScrSetChrAnim kind:function(arm,size=0x26c) local addr:0x020cc7e8
+FldScr_StopSELoop kind:function(arm,size=0x28) addr:0x020cca54
+ScrResetState kind:function(arm,size=0x34) local addr:0x020cca7c
+ScrExecMes kind:function(arm,size=0x43c) local addr:0x020ccab0
+ScrCheckBusy kind:function(arm,size=0x8c8) local addr:0x020cceec
+ScrGetAltMes kind:function(arm,size=0x4) local addr:0x020cd7b4
+ScrCallMg kind:function(arm,size=0x1f4) local addr:0x020cd7b8
+ScrCallSpecial kind:function(arm,size=0x197c) local addr:0x020cd9ac
+ScrSetMgFlag kind:function(arm,size=0x228) local addr:0x020cf328
+FldScr_ExecMgRivalDefeat kind:function(arm,size=0x814) addr:0x020cf550
 FldMes_Init kind:function(arm,size=0x2c8) addr:0x020cfd64
-func_ov002_020d002c kind:function(arm,size=0x34) addr:0x020d002c
-func_ov002_020d0060 kind:function(arm,size=0x2d0) addr:0x020d0060
-func_ov002_020d0330 kind:function(arm,size=0x128) addr:0x020d0330
+SetEndSoundFlag kind:function(arm,size=0x34) local addr:0x020d002c
+ExecMes kind:function(arm,size=0x2d0) local addr:0x020d0060
+DestroyMes kind:function(arm,size=0x128) local addr:0x020d0330
 FldMes_Close kind:function(arm,size=0x20) addr:0x020d0458
-func_ov002_020d0478 kind:function(arm,size=0x54) addr:0x020d0478
+TransferImage kind:function(arm,size=0x54) local addr:0x020d0478
 FldMes_IsAdvance kind:function(arm,size=0x38) addr:0x020d04cc
 FldMes_EndSprOn kind:function(arm,size=0x28) addr:0x020d0504
 FldMes_EndSprOff kind:function(arm,size=0x2c) addr:0x020d052c
@@ -428,41 +428,41 @@ FldMes_SetInsertNum kind:function(arm,size=0x28) addr:0x020d05d8
 FldMes_SetInsertNum1 kind:function(arm,size=0x1c) addr:0x020d0600
 FldMes_SetInsertNum2 kind:function(arm,size=0x1c) addr:0x020d061c
 FldMes_SetInsertNum3 kind:function(arm,size=0x1c) addr:0x020d0638
-func_ov002_020d0654 kind:function(arm,size=0x28) addr:0x020d0654
+FldMes_SetUnkFlag kind:function(arm,size=0x28) addr:0x020d0654
 FldMes_SetMessage kind:function(arm,size=0x10) addr:0x020d067c
 FldMes_SetMessageEx kind:function(arm,size=0x144) addr:0x020d068c
-func_ov002_020d07d0 kind:function(arm,size=0x1d0) addr:0x020d07d0
+WriteMessageInsert kind:function(arm,size=0x1d0) local addr:0x020d07d0
 FldMes_AdvanceOff kind:function(arm,size=0x3c) addr:0x020d09a0
-func_ov002_020d09dc kind:function(arm,size=0x78) addr:0x020d09dc
-func_ov002_020d0a54 kind:function(arm,size=0x44) addr:0x020d0a54
-func_ov002_020d0a98 kind:function(arm,size=0x8c) addr:0x020d0a98
+WriteMessage kind:function(arm,size=0x78) local addr:0x020d09dc
+CheckTextTouch kind:function(arm,size=0x44) local addr:0x020d0a54
+SetSpecialTextCont kind:function(arm,size=0x8c) local addr:0x020d0a98
 FldMes_SetSaveMes kind:function(arm,size=0x3c) addr:0x020d0b24
-func_ov002_020d0b60 kind:function(arm,size=0x128) addr:0x020d0b60
-func_ov002_020d0c88 kind:function(arm,size=0x80) addr:0x020d0c88
+CreateNameSpr kind:function(arm,size=0x128) local addr:0x020d0b60
+KillNameSpr kind:function(arm,size=0x80) local addr:0x020d0c88
 FldMes_SetName kind:function(arm,size=0x40) addr:0x020d0d08
 FldMes_SetNameDispOn kind:function(arm,size=0x2c) addr:0x020d0d48
 FldMes_SetNameDispOff kind:function(arm,size=0x2c) addr:0x020d0d74
-FldMes_SetShuryoColorAnim kind:function(arm,size=0x5c) addr:0x020d0da0
-func_ov002_020d0dfc kind:function(arm,size=0x48) addr:0x020d0dfc
-func_ov002_020d0e44 kind:function(arm,size=0x1bc) addr:0x020d0e44
-func_ov002_020d1000 kind:function(arm,size=0xa0) addr:0x020d1000
-func_ov002_020d10a0 kind:function(arm,size=0x68) addr:0x020d10a0
-func_ov002_020d1108 kind:function(arm,size=0x54) addr:0x020d1108
-func_ov002_020d115c kind:function(arm,size=0x38) addr:0x020d115c
-func_ov002_020d1194 kind:function(arm,size=0x38) addr:0x020d1194
-func_ov002_020d11cc kind:function(arm,size=0x180) addr:0x020d11cc
-func_ov002_020d134c kind:function(arm,size=0x90) addr:0x020d134c
-func_ov002_020d13dc kind:function(arm,size=0x44) addr:0x020d13dc
-func_ov002_020d1420 kind:function(arm,size=0x17c) addr:0x020d1420
-func_ov002_020d159c kind:function(arm,size=0xac) addr:0x020d159c
-func_ov002_020d1648 kind:function(arm,size=0x6c) addr:0x020d1648
-func_ov002_020d16b4 kind:function(arm,size=0x58) addr:0x020d16b4
-func_ov002_020d170c kind:function(arm,size=0x38) addr:0x020d170c
-func_ov002_020d1744 kind:function(arm,size=0x38) addr:0x020d1744
-func_ov002_020d177c kind:function(arm,size=0x19c) addr:0x020d177c
+FldMes_StartShuryo kind:function(arm,size=0x5c) addr:0x020d0da0
+FldMes_GetShuryoResult kind:function(arm,size=0x48) addr:0x020d0dfc
+CreateShuryoSpr kind:function(arm,size=0x1bc) local addr:0x020d0e44
+KillShuryoSpr kind:function(arm,size=0xa0) local addr:0x020d1000
+CreateShuryoColorAnim kind:function(arm,size=0x68) local addr:0x020d10a0
+KillShuryoColorAnim kind:function(arm,size=0x54) local addr:0x020d1108
+ShuryoDispOn kind:function(arm,size=0x38) local addr:0x020d115c
+ShuryoDispOff kind:function(arm,size=0x38) local addr:0x020d1194
+ShuryoIsDone kind:function(arm,size=0x180) local addr:0x020d11cc
+FldMes_StartHensinKao kind:function(arm,size=0x90) addr:0x020d134c
+FldMes_GetHensinKaoResult kind:function(arm,size=0x44) addr:0x020d13dc
+CreateHensinKaoSpr kind:function(arm,size=0x17c) local addr:0x020d1420
+KillHensinKaoSpr kind:function(arm,size=0xac) local addr:0x020d159c
+CreateHensinKaoColorAnim kind:function(arm,size=0x6c) local addr:0x020d1648
+KillHensinKaoColorAnim kind:function(arm,size=0x58) local addr:0x020d16b4
+HensinKaoDispOn kind:function(arm,size=0x38) local addr:0x020d170c
+HensinKaoDispOff kind:function(arm,size=0x38) local addr:0x020d1744
+HensinKaoIsDone kind:function(arm,size=0x19c) local addr:0x020d177c
 FldEv_ScreenMaskCreate kind:function(arm,size=0x140) addr:0x020d1918
-FldEv_ScreenMaskExec kind:function(arm,size=0x124) addr:0x020d1a58
-FldEv_ScreenMaskDestroy kind:function(arm,size=0x38) addr:0x020d1b7c
+ScreenMaskExec kind:function(arm,size=0x124) local addr:0x020d1a58
+ScreenMaskDestroy kind:function(arm,size=0x38) local addr:0x020d1b7c
 FldEv_ScreenMaskKill kind:function(arm,size=0x20) addr:0x020d1bb4
 FldEv_ScreenMaskOn kind:function(arm,size=0x4) addr:0x020d1bd4
 FldEv_ScreenMaskBG2SetOut kind:function(arm,size=0x2c) addr:0x020d1bd8
@@ -470,39 +470,39 @@ FldEv_ScreenMaskBG2SetIn kind:function(arm,size=0x2c) addr:0x020d1c04
 FldEvChr_StartEscort kind:function(arm,size=0x30) addr:0x020d1c30
 FldEvChr_InitEscort kind:function(arm,size=0x24) addr:0x020d1c60
 FldEvChr_EndEscort kind:function(arm,size=0x40) addr:0x020d1c84
-FldEvChr_SpawnEscort kind:function(arm,size=0xac) addr:0x020d1cc4
+SpawnEscort kind:function(arm,size=0xac) local addr:0x020d1cc4
 FldEvChr_MoveEscort kind:function(arm,size=0x148) addr:0x020d1d70
-func_ov002_020d1eb8 kind:function(arm,size=0x184) addr:0x020d1eb8
-func_ov002_020d203c kind:function(arm,size=0x3c) addr:0x020d203c
+EscortUpdate kind:function(arm,size=0x184) local addr:0x020d1eb8
+EscortSetSpeed kind:function(arm,size=0x3c) local addr:0x020d203c
 FldEvChr_InitEscortHis kind:function(arm,size=0xf8) addr:0x020d2078
 FldEvChr_AddEscortHis kind:function(arm,size=0xb4) addr:0x020d2170
 FldEvChr_Create kind:function(arm,size=0x30) addr:0x020d2224
 FldEvChr_Spawn kind:function(arm,size=0x80) addr:0x020d2254
 FldEvChr_SetPath kind:function(arm,size=0x3c) addr:0x020d22d4
-FldEvChr_InitSpawn kind:function(arm,size=0x3c) addr:0x020d2310
-FldEvChr_InitSpawnAll kind:function(arm,size=0x5c) addr:0x020d234c
-func_ov002_020d23a8 kind:function(arm,size=0xfc) addr:0x020d23a8
-FldMenu_Stamp kind:function(arm,size=0x1cc) addr:0x020d24a4
+ResetEvChr kind:function(arm,size=0x3c) local addr:0x020d2310
+InitEvChr kind:function(arm,size=0x5c) local addr:0x020d234c
+FldMenu_StampInit kind:function(arm,size=0xfc) addr:0x020d23a8
+FldMenu_StampExec kind:function(arm,size=0x1cc) addr:0x020d24a4
 FldMenu_StampKill kind:function(arm,size=0x50) addr:0x020d2670
-func_ov002_020d26c0 kind:function(arm,size=0xfc) addr:0x020d26c0
-func_ov002_020d27bc kind:function(arm,size=0x70) addr:0x020d27bc
-func_ov002_020d282c kind:function(arm,size=0x20) addr:0x020d282c
-func_ov002_020d284c kind:function(arm,size=0x64) addr:0x020d284c
-func_ov002_020d28b0 kind:function(arm,size=0xf0) addr:0x020d28b0
-func_ov002_020d29a0 kind:function(arm,size=0x8c) addr:0x020d29a0
-func_ov002_020d2a2c kind:function(arm,size=0x140) addr:0x020d2a2c
-FldMenu_StampOver kind:function(arm,size=0x338) addr:0x020d2b6c
+LoadRes kind:function(arm,size=0xfc) local addr:0x020d26c0
+InitSpr kind:function(arm,size=0x70) local addr:0x020d27bc
+RemoveSpr kind:function(arm,size=0x20) local addr:0x020d282c
+GetMenuClick kind:function(arm,size=0x64) local addr:0x020d284c
+GetClick kind:function(arm,size=0xf0) local addr:0x020d28b0
+CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020d29a0
+FldMenu_StampOverInit kind:function(arm,size=0x140) addr:0x020d2a2c
+FldMenu_StampOverExec kind:function(arm,size=0x338) addr:0x020d2b6c
 FldMenu_StampOverKill kind:function(arm,size=0x50) addr:0x020d2ea4
-func_ov002_020d2ef4 kind:function(arm,size=0xfc) addr:0x020d2ef4
-func_ov002_020d2ff0 kind:function(arm,size=0x70) addr:0x020d2ff0
-func_ov002_020d3060 kind:function(arm,size=0x58) addr:0x020d3060
-func_ov002_020d30b8 kind:function(arm,size=0xbc) addr:0x020d30b8
+LoadRes kind:function(arm,size=0xfc) local addr:0x020d2ef4
+InitSpr kind:function(arm,size=0x70) local addr:0x020d2ff0
+GetClick kind:function(arm,size=0x58) local addr:0x020d3060
+StartStampMes kind:function(arm,size=0xbc) local addr:0x020d30b8
 FldEvSpr_Init kind:function(arm,size=0x34) addr:0x020d3174
 FldEvSpr_Create kind:function(arm,size=0x20c) addr:0x020d31a8
-FldEvSpr_Kill kind:function(arm,size=0xa4) addr:0x020d33b4
+KillEvSpr kind:function(arm,size=0xa4) local addr:0x020d33b4
 FldEvSpr_Close kind:function(arm,size=0x2c) addr:0x020d3458
 FldEvSpr_Exec kind:function(arm,size=0x20) addr:0x020d3484
-FldEvSpr_Update kind:function(arm,size=0x64) addr:0x020d34a4
+UpdateEvSpr kind:function(arm,size=0x64) local addr:0x020d34a4
 FldEvSpr_DispOn kind:function(arm,size=0x28) addr:0x020d3508
 FldEvSpr_DispOff kind:function(arm,size=0x28) addr:0x020d3530
 FldEvSpr_SetPos kind:function(arm,size=0x24) addr:0x020d3558
@@ -515,10 +515,10 @@ FldEvSpr_SetScale kind:function(arm,size=0x24) addr:0x020d3680
 FldEvItem_Init kind:function(arm,size=0x34) addr:0x020d36a4
 FldEvItem_Create kind:function(arm,size=0x218) addr:0x020d36d8
 FldEvItem_StartJingle kind:function(arm,size=0x160) addr:0x020d38f0
-FldEvItem_Kill kind:function(arm,size=0x8c) addr:0x020d3a50
+KillEvItem kind:function(arm,size=0x8c) local addr:0x020d3a50
 FldEvItem_Close kind:function(arm,size=0x2c) addr:0x020d3adc
-FldEvItem_ExecSpr kind:function(arm,size=0x20) addr:0x020d3b08
-FldEvItem_UpdateSpr kind:function(arm,size=0x64) addr:0x020d3b28
+FldEvItem_Exec kind:function(arm,size=0x20) addr:0x020d3b08
+UpdateEvItem kind:function(arm,size=0x64) local addr:0x020d3b28
 FldEvItem_DispOff kind:function(arm,size=0x28) addr:0x020d3b8c
 FldEvItem_SetPos kind:function(arm,size=0x24) addr:0x020d3bb4
 FldEvItem_AddPos kind:function(arm,size=0x38) addr:0x020d3bd8
@@ -1077,8 +1077,8 @@ PalFile kind:data(any) local addr:0x02106044
 TouchRectTbl kind:data(any) local addr:0x021060d8
 PliconPalTbl kind:data(any) local addr:0x02106448
 Fld_PliconIdxTbl kind:data(any) addr:0x0210646c
-data_ov002_021064a4 kind:data(any) addr:0x021064a4
-data_ov002_021064c8 kind:data(any) addr:0x021064c8
+DummyScrMes_J kind:data(any) local addr:0x021064a4
+StampTestMes_J kind:data(any) local addr:0x021064c8
 data_ov002_021064dc kind:data(any) addr:0x021064dc
 data_ov002_021064e0 kind:data(any) addr:0x021064e0
 data_ov002_021064e6 kind:data(any) addr:0x021064e6
@@ -1213,120 +1213,87 @@ ObjResTbl kind:data(any) local addr:0x02108384
 ObjDynTbl kind:data(any) local addr:0x0210840c
 ObjBGTbl kind:data(any) local addr:0x02108494
 Fld_GateDataTbl kind:data(any) addr:0x0210851c
-data_ov002_021085a4 kind:data(any) addr:0x021085a4
-data_ov002_021085ac kind:data(any) addr:0x021085ac
-data_ov002_021085c0 kind:data(any) addr:0x021085c0
-data_ov002_021085d6 kind:data(any) addr:0x021085d6
-data_ov002_021085d8 kind:data(any) addr:0x021085d8
-data_ov002_021085da kind:data(any) addr:0x021085da
-data_ov002_021085dc kind:data(any) addr:0x021085dc
-data_ov002_02108610 kind:data(any) addr:0x02108610
-data_ov002_02108670 kind:data(any) addr:0x02108670
-data_ov002_021086d0 kind:data(any) addr:0x021086d0
-data_ov002_021086d8 kind:data(any) addr:0x021086d8
-data_ov002_021086da kind:data(any) addr:0x021086da
-data_ov002_021086e8 kind:data(any) addr:0x021086e8
-data_ov002_02108708 kind:data(any) addr:0x02108708
-data_ov002_02108738 kind:data(any) addr:0x02108738
-data_ov002_0210873a kind:data(any) addr:0x0210873a
-data_ov002_0210873c kind:data(any) addr:0x0210873c
-data_ov002_0210873e kind:data(any) addr:0x0210873e
-data_ov002_02108788 kind:data(any) addr:0x02108788
-data_ov002_021087e8 kind:data(any) addr:0x021087e8
-data_ov002_02108858 kind:data(any) addr:0x02108858
-data_ov002_02108860 kind:data(any) addr:0x02108860
-data_ov002_0210888c kind:data(any) addr:0x0210888c
-data_ov002_0210888e kind:data(any) addr:0x0210888e
-data_ov002_021088dc kind:data(any) addr:0x021088dc
-data_ov002_0210893c kind:data(any) addr:0x0210893c
-data_ov002_021089b8 kind:data(any) addr:0x021089b8
-data_ov002_021089ba kind:data(any) addr:0x021089ba
-data_ov002_021089bc kind:data(any) addr:0x021089bc
-data_ov002_021089be kind:data(any) addr:0x021089be
-data_ov002_02108b00 kind:data(any) addr:0x02108b00
-data_ov002_02108c50 kind:data(any) addr:0x02108c50
-data_ov002_02108c58 kind:data(any) addr:0x02108c58
-data_ov002_02108c68 kind:data(any) addr:0x02108c68
-data_ov002_02108c78 kind:data(any) addr:0x02108c78
-data_ov002_02108c88 kind:data(any) addr:0x02108c88
-data_ov002_02108c98 kind:data(any) addr:0x02108c98
-data_ov002_02108cd0 kind:data(any) addr:0x02108cd0
-data_ov002_02108d30 kind:data(any) addr:0x02108d30
-data_ov002_02108dac kind:data(any) addr:0x02108dac
-data_ov002_02108ebc kind:data(any) addr:0x02108ebc
-data_ov002_02108ebe kind:data(any) addr:0x02108ebe
-data_ov002_02108ec0 kind:data(any) addr:0x02108ec0
-data_ov002_02108ec2 kind:data(any) addr:0x02108ec2
-data_ov002_02109004 kind:data(any) addr:0x02109004
-data_ov002_0210900a kind:data(any) addr:0x0210900a
-data_ov002_0210900c kind:data(any) addr:0x0210900c
-data_ov002_0210900e kind:data(any) addr:0x0210900e
-data_ov002_02109010 kind:data(any) addr:0x02109010
-data_ov002_0210901c kind:data(any) addr:0x0210901c
-data_ov002_02109034 kind:data(any) addr:0x02109034
-data_ov002_0210905c kind:data(any) addr:0x0210905c
-data_ov002_02109084 kind:data(any) addr:0x02109084
-data_ov002_02109088 kind:data(any) addr:0x02109088
-data_ov002_0210908c kind:data(any) addr:0x0210908c
-data_ov002_021090fc kind:data(any) addr:0x021090fc
-data_ov002_021090ff kind:data(any) addr:0x021090ff
-data_ov002_02109104 kind:data(any) addr:0x02109104
-data_ov002_02109118 kind:data(any) addr:0x02109118
-data_ov002_02109134 kind:data(any) addr:0x02109134
-data_ov002_02109194 kind:data(any) addr:0x02109194
-data_ov002_02109254 kind:data(any) addr:0x02109254
-data_ov002_02109256 kind:data(any) addr:0x02109256
-data_ov002_02109258 kind:data(any) addr:0x02109258
-data_ov002_0210925a kind:data(any) addr:0x0210925a
-data_ov002_02109374 kind:data(any) addr:0x02109374
-data_ov002_0210937c kind:data(any) addr:0x0210937c
-data_ov002_02109384 kind:data(any) addr:0x02109384
-data_ov002_0210938c kind:data(any) addr:0x0210938c
-data_ov002_02109398 kind:data(any) addr:0x02109398
-data_ov002_021093b0 kind:data(any) addr:0x021093b0
-data_ov002_021093d2 kind:data(any) addr:0x021093d2
-data_ov002_02109400 kind:data(any) addr:0x02109400
-data_ov002_02109440 kind:data(any) addr:0x02109440
-data_ov002_02109442 kind:data(any) addr:0x02109442
-data_ov002_02109444 kind:data(any) addr:0x02109444
-data_ov002_02109446 kind:data(any) addr:0x02109446
-data_ov002_02109498 kind:data(any) addr:0x02109498
-data_ov002_0210949c kind:data(any) addr:0x0210949c
-FldScr_DefaultScript kind:data(any) addr:0x021094ac
-data_ov002_021094c0 kind:data(any) addr:0x021094c0
-data_ov002_021094e0 kind:data(any) addr:0x021094e0
-data_ov002_021094e4 kind:data(any) addr:0x021094e4
-data_ov002_021094f4 kind:data(any) addr:0x021094f4
-data_ov002_02109508 kind:data(any) addr:0x02109508
-data_ov002_0210951c kind:data(any) addr:0x0210951c
-data_ov002_0210953c kind:data(any) addr:0x0210953c
-data_ov002_0210955c kind:data(any) addr:0x0210955c
-data_ov002_0210956c kind:data(any) addr:0x0210956c
-data_ov002_0210956e kind:data(any) addr:0x0210956e
-data_ov002_0210958c kind:data(any) addr:0x0210958c
-data_ov002_02109614 kind:data(any) addr:0x02109614
-data_ov002_0210961c kind:data(any) addr:0x0210961c
-data_ov002_02109628 kind:data(any) addr:0x02109628
-data_ov002_0210963c kind:data(any) addr:0x0210963c
-data_ov002_02109660 kind:data(any) addr:0x02109660
-data_ov002_02109662 kind:data(any) addr:0x02109662
-data_ov002_02109664 kind:data(any) addr:0x02109664
-data_ov002_02109666 kind:data(any) addr:0x02109666
-data_ov002_021096c0 kind:data(any) addr:0x021096c0
-data_ov002_02109720 kind:data(any) addr:0x02109720
-data_ov002_021097d0 kind:data(any) addr:0x021097d0
-data_ov002_021097e0 kind:data(any) addr:0x021097e0
-data_ov002_021097f4 kind:data(any) addr:0x021097f4
-data_ov002_02109808 kind:data(any) addr:0x02109808
-data_ov002_0210982c kind:data(any) addr:0x0210982c
-data_ov002_0210982e kind:data(any) addr:0x0210982e
-data_ov002_02109830 kind:data(any) addr:0x02109830
-data_ov002_02109832 kind:data(any) addr:0x02109832
-data_ov002_0210988c kind:data(any) addr:0x0210988c
-data_ov002_0210992c kind:data(any) addr:0x0210992c
-data_ov002_0210992e kind:data(any) addr:0x0210992e
-data_ov002_0210997c kind:data(any) addr:0x0210997c
-data_ov002_0210997e kind:data(any) addr:0x0210997e
+MenuIdxTbl kind:data(any) local addr:0x021085a4
+FileTbl kind:data(any) local addr:0x021085ac
+MenuSprData kind:data(any) local addr:0x021085c0
+SprPos kind:data(any) local addr:0x021085d6
+MenuClickRectTbl kind:data(any) local addr:0x02108610
+ClickRectTbl kind:data(any) local addr:0x02108670
+MenuIdxTbl kind:data(any) local addr:0x021086d0
+BombPosTbl kind:data(any) local addr:0x021086d8
+MenuSprData kind:data(any) local addr:0x021086e8
+FileTbl kind:data(any) local addr:0x02108708
+SprPos kind:data(any) local addr:0x02108738
+MenuClickRectTbl kind:data(any) local addr:0x02108788
+ClickRectTbl kind:data(any) local addr:0x021087e8
+MenuIdxTbl kind:data(any) local addr:0x02108858
+FileTbl kind:data(any) local addr:0x02108860
+ItemPosTbl kind:data(any) local addr:0x0210888c
+MenuClickRectTbl kind:data(any) local addr:0x021088dc
+MenuSprData kind:data(any) local addr:0x0210893c
+SprPos kind:data(any) local addr:0x021089b8
+ClickRectTbl kind:data(any) local addr:0x02108b00
+MenuIdxTbl kind:data(any) local addr:0x02108c50
+IconTbl1 kind:data(any) local addr:0x02108c58
+IconTbl2 kind:data(any) local addr:0x02108c68
+IconTbl3 kind:data(any) local addr:0x02108c78
+IconTbl4 kind:data(any) local addr:0x02108c88
+FileTbl kind:data(any) local addr:0x02108c98
+MenuClickRectTbl kind:data(any) local addr:0x02108cd0
+MenuSprData kind:data(any) local addr:0x02108d30
+ClickRectTbl kind:data(any) local addr:0x02108dac
+SprPos kind:data(any) local addr:0x02108ebc
+HowaSprTbl kind:data(any) local addr:0x02109004
+HowaSprPosTbl kind:data(any) local addr:0x0210900a
+HowaFileTbl kind:data(any) local addr:0x0210901c
+MenuExecFunc kind:data(any) local addr:0x02109034
+MenuKillFunc kind:data(any) local addr:0x0210905c
+BGFileTbl kind:data(any) local addr:0x02109084
+MenuSprDataSelect kind:data(any) local addr:0x021090fc
+MenuSprDataPiece kind:data(any) local addr:0x021090ff
+FileTbl kind:data(any) local addr:0x02109104
+BaseAnimTbl kind:data(any) local addr:0x02109118
+MenuClickRectTbl kind:data(any) local addr:0x02109134
+ClickRectTbl kind:data(any) local addr:0x02109194
+SprPos kind:data(any) local addr:0x02109254
+MenuIdxTbl kind:data(any) local addr:0x02109374
+FullPieceColorTbl kind:data(any) local addr:0x0210937c
+PieceColorTbl kind:data(any) local addr:0x02109384
+TicketAnimTbl kind:data(any) local addr:0x0210938c
+FileTbl kind:data(any) local addr:0x02109398
+MenuSprData kind:data(any) local addr:0x021093b0
+SprOutPos kind:data(any) local addr:0x021093d2
+ClickRectTbl kind:data(any) local addr:0x02109400
+SprPos kind:data(any) local addr:0x02109440
+DummyScrMes kind:data(any) local addr:0x02109498
+DummyScrDlg kind:data(any) local addr:0x0210949c
+ScrDummy kind:data(any) local addr:0x021094ac
+BustupTbl kind:data(any) local addr:0x021094c0
+CharDelayTbl kind:data(any) local addr:0x021094e0
+MessWinRect kind:data(any) local addr:0x021094e4
+HensinKaoOnColorAnimTbl kind:data(any) local addr:0x021094f4
+HensinKaoOffColorAnimTbl kind:data(any) local addr:0x02109508
+MesPal kind:data(any) local addr:0x0210951c
+ShuryoRectTbl kind:data(any) local addr:0x0210953c
+UnkData kind:data(any) local addr:0x0210955c
+EscortOfs kind:data(any) local addr:0x0210956c
+ChrCreateFunc kind:data(any) local addr:0x0210958c
+MenuIdxTbl kind:data(any) local addr:0x02109614
+FileTbl kind:data(any) local addr:0x0210961c
+StampFlagTbl kind:data(any) local addr:0x02109628
+MenuSprData kind:data(any) local addr:0x0210963c
+SprPos kind:data(any) local addr:0x02109660
+MenuClickRectTbl kind:data(any) local addr:0x021096c0
+ClickRectTbl kind:data(any) local addr:0x02109720
+StampTestMes kind:data(any) local addr:0x021097d0
+FileTbl kind:data(any) local addr:0x021097d4
+NextFlagTbl kind:data(any) local addr:0x021097e0
+FlagTbl kind:data(any) local addr:0x021097f4
+MenuSprData kind:data(any) local addr:0x02109808
+SprPos kind:data(any) local addr:0x0210982c
+ClickRectTbl kind:data(any) local addr:0x0210988c
+SprData kind:data(any) local addr:0x0210992c
+ItemSprData kind:data(any) local addr:0x0210997c
 data_ov002_02109a38 kind:data(any) addr:0x02109a38
 data_ov002_02109a3a kind:data(any) addr:0x02109a3a
 data_ov002_02109a48 kind:data(any) addr:0x02109a48
@@ -2367,8 +2334,8 @@ ObjWork kind:bss local addr:0x02112060
 GateWork kind:bss local addr:0x02112064
 Fld_Menu kind:bss addr:0x02112068
 Fld_Script kind:bss addr:0x0211206c
-data_ov002_02112070 kind:bss addr:0x02112070
-data_ov002_02112074 kind:bss addr:0x02112074
+MesWork kind:bss local addr:0x02112070
+ScreenMaskWork kind:bss local addr:0x02112074
 FldEv_Touch kind:bss addr:0x02112078
 data_ov002_0211207c kind:bss addr:0x0211207c
 data_ov002_02112080 kind:bss addr:0x02112080
