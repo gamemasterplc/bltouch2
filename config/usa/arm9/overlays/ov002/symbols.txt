@@ -1,20 +1,20 @@
-FldEarth_CreateEvilHat kind:function(arm,size=0x130) addr:0x020b26e0
-FldEarth_ExecEvilHat kind:function(arm,size=0xb0) addr:0x020b2810
+MapEarth_CreateEvilHat kind:function(arm,size=0x130) addr:0x020b26e0
+MapEarth_ExecEvilHat kind:function(arm,size=0xb0) addr:0x020b2810
 UpdateEvilHat kind:function(arm,size=0x170) local addr:0x020b28c0
 MoveEvilHat kind:function(arm,size=0x118) local addr:0x020b2a30
 UpdateEvilHatAnim kind:function(arm,size=0x370) local addr:0x020b2b48
 SetEvilHatPath kind:function(arm,size=0x118) local addr:0x020b2eb8
 SetEvilHatPath2 kind:function(arm,size=0x238) local addr:0x020b2fd0
-Fld_ScreenClose kind:function(arm,size=0x20) addr:0x020b3208
-Fld_ScreenKill kind:function(arm,size=0x30) addr:0x020b3228
-Fld_ScreenCreate kind:function(arm,size=0x26c) addr:0x020b3258
+Map_ScreenClose kind:function(arm,size=0x20) addr:0x020b3208
+Map_ScreenKill kind:function(arm,size=0x30) addr:0x020b3228
+Map_ScreenCreate kind:function(arm,size=0x26c) addr:0x020b3258
 ExecScreen kind:function(arm,size=0x4c) local addr:0x020b34c4
 DestroyScreen kind:function(arm,size=0x30) local addr:0x020b3510
 WriteScreen kind:function(arm,size=0x1ec) local addr:0x020b3540
-Fld_ScreenSetOfs kind:function(arm,size=0x6c) addr:0x020b372c
-Fld_ScreenGetOfsX kind:function(arm,size=0x20) addr:0x020b3798
-Fld_ScreenGetOfsY kind:function(arm,size=0x20) addr:0x020b37b8
-FldChr_GetBaseAnim kind:function(arm,size=0x380) addr:0x020b37d8
+Map_ScreenSetOfs kind:function(arm,size=0x6c) addr:0x020b372c
+Map_ScreenGetOfsX kind:function(arm,size=0x20) addr:0x020b3798
+Map_ScreenGetOfsY kind:function(arm,size=0x20) addr:0x020b37b8
+MapChr_GetBaseAnim kind:function(arm,size=0x380) addr:0x020b37d8
 GetShiroBaseAnim kind:function(arm,size=0x1ec) local addr:0x020b3b58
 GetKuroBaseAnim kind:function(arm,size=0xe0) local addr:0x020b3d44
 GetPrettyBaseAnim kind:function(arm,size=0x174) local addr:0x020b3e24
@@ -26,24 +26,24 @@ GetBossBaseAnim kind:function(arm,size=0x134) local addr:0x020b4148
 GetSpecial1BaseAnim kind:function(arm,size=0x118) local addr:0x020b427c
 GetSpecial2BaseAnim kind:function(arm,size=0xac) local addr:0x020b4394
 GetSpecial3BaseAnim kind:function(arm,size=0xc4) local addr:0x020b4440
-Fld_ColAddFlag kind:function(arm,size=0x70) addr:0x020b4504
-Fld_ColAddMg kind:function(arm,size=0x80) addr:0x020b4574
+Map_ColAddFlag kind:function(arm,size=0x70) addr:0x020b4504
+Map_ColAddMg kind:function(arm,size=0x80) addr:0x020b4574
 AddCollision kind:function(arm,size=0xfc) local addr:0x020b45f4
-Fld_ColRemoveFlag kind:function(arm,size=0x68) addr:0x020b46f0
+Map_ColRemoveFlag kind:function(arm,size=0x68) addr:0x020b46f0
 RemoveCollision kind:function(arm,size=0xfc) local addr:0x020b4758
-Fld_ColGetType kind:function(arm,size=0x58) addr:0x020b4854
-Fld_ColIsExit kind:function(arm,size=0x1c) addr:0x020b48ac
-Fld_ColSetTreasureBox kind:function(arm,size=0x98) addr:0x020b48c8
-FldBG_Init kind:function(arm,size=0x6a8) addr:0x020b4960
-FldBG_CreateColorAnim kind:function(arm,size=0x68) addr:0x020b5008
-FldBG_Close kind:function(arm,size=0x11c) addr:0x020b5070
-FldBG_CameraUpdate kind:function(arm,size=0x51c) addr:0x020b518c
-FldBG_LoadImage kind:function(arm,size=0x374) addr:0x020b56a8
-FldBG_KillImage kind:function(arm,size=0xb0) addr:0x020b5a1c
-FldBG_RestorePrio kind:function(arm,size=0x7c) addr:0x020b5acc
-FldBG_SetCameraLock kind:function(arm,size=0x10) addr:0x020b5b48
-FldBG_SetCameraPos kind:function(arm,size=0x1d4) addr:0x020b5b58
-FldBG_SetCameraLockPos kind:function(arm,size=0x30) addr:0x020b5d2c
+Map_ColGetType kind:function(arm,size=0x58) addr:0x020b4854
+Map_ColIsExit kind:function(arm,size=0x1c) addr:0x020b48ac
+Map_ColSetTreasureBox kind:function(arm,size=0x98) addr:0x020b48c8
+MapBG_Init kind:function(arm,size=0x6a8) addr:0x020b4960
+MapBG_CreateColorAnim kind:function(arm,size=0x68) addr:0x020b5008
+MapBG_Close kind:function(arm,size=0x11c) addr:0x020b5070
+MapBG_CameraUpdate kind:function(arm,size=0x51c) addr:0x020b518c
+MapBG_LoadImage kind:function(arm,size=0x374) addr:0x020b56a8
+MapBG_KillImage kind:function(arm,size=0xb0) addr:0x020b5a1c
+MapBG_RestorePrio kind:function(arm,size=0x7c) addr:0x020b5acc
+MapBG_SetCameraLock kind:function(arm,size=0x10) addr:0x020b5b48
+MapBG_SetCameraPos kind:function(arm,size=0x1d4) addr:0x020b5b58
+MapBG_SetCameraLockPos kind:function(arm,size=0x30) addr:0x020b5d2c
 SetBGOfs kind:function(arm,size=0xdc) local addr:0x020b5d5c
 SetSunRideBGOfs kind:function(arm,size=0x78) local addr:0x020b5e38
 SetEarthRideBGOfs kind:function(arm,size=0xa0) local addr:0x020b5eb0
@@ -52,79 +52,79 @@ UpdateBGMoonA1P5 kind:function(arm,size=0x4c) local addr:0x020b5fb4
 UpdateBGMoonA1P3 kind:function(arm,size=0x88) local addr:0x020b6000
 UpdateBGSunA1P1 kind:function(arm,size=0x38) local addr:0x020b6088
 UpdateBGSunRide kind:function(arm,size=0x74) local addr:0x020b60c0
-FldBG_UpdateBGTruck kind:function(arm,size=0x74) addr:0x020b6134
-FldChr_CheckColAtr kind:function(arm,size=0x18c) addr:0x020b61a8
-FldChr_WriteColPos kind:function(arm,size=0x30) addr:0x020b6334
+MapBG_UpdateBGTruck kind:function(arm,size=0x74) addr:0x020b6134
+MapChr_CheckColAtr kind:function(arm,size=0x18c) addr:0x020b61a8
+MapChr_WriteColPos kind:function(arm,size=0x30) addr:0x020b6334
 FixChrCol kind:function(arm,size=0x2a8) local addr:0x020b6364
 CheckChrCol kind:function(arm,size=0x5c) local addr:0x020b660c
 InitChrCol kind:function(arm,size=0x444) local addr:0x020b6668
 GetColMaskData kind:function(arm,size=0x1c) local addr:0x020b6aac
 CheckOtherChrPlayer kind:function(arm,size=0xdc) local addr:0x020b6ac8
 CheckOtherChr kind:function(arm,size=0xbc) local addr:0x020b6ba4
-Fld_UtilAbs kind:function(arm,size=0xc) addr:0x020b6c60
-Fld_UtilMag2 kind:function(arm,size=0x2c) addr:0x020b6c6c
-Fld_UtilIVecMag2 kind:function(arm,size=0x24) addr:0x020b6c98
-Fld_UtilVecAngle kind:function(arm,size=0x34) addr:0x020b6cbc
-Fld_UtilIVecAngle kind:function(arm,size=0x2c) addr:0x020b6cf0
-Fld_UtilWorldToScreen kind:function(arm,size=0x3c) addr:0x020b6d1c
-Fld_UtilGetDir16 kind:function(arm,size=0x3c) addr:0x020b6d58
-Fld_UtilGetDir8 kind:function(arm,size=0x14) addr:0x020b6d94
-Fld_UtilRectSetBounds kind:function(arm,size=0x14) addr:0x020b6da8
-Fld_UtilRectTestPoint kind:function(arm,size=0x40) addr:0x020b6dbc
-Fld_UtilCircleTestIntPoint kind:function(arm,size=0x3c) addr:0x020b6dfc
-Fld_UtilCircleTestPoint kind:function(arm,size=0x40) addr:0x020b6e38
-Fld_UtilLerp kind:function(arm,size=0x1c) addr:0x020b6e78
-FldGate_CheckUnlock kind:function(arm,size=0x2c) addr:0x020b6e94
+Map_UtilAbs kind:function(arm,size=0xc) addr:0x020b6c60
+Map_UtilMag2 kind:function(arm,size=0x2c) addr:0x020b6c6c
+Map_UtilIVecMag2 kind:function(arm,size=0x24) addr:0x020b6c98
+Map_UtilVecAngle kind:function(arm,size=0x34) addr:0x020b6cbc
+Map_UtilIVecAngle kind:function(arm,size=0x2c) addr:0x020b6cf0
+Map_UtilWorldToScreen kind:function(arm,size=0x3c) addr:0x020b6d1c
+Map_UtilGetDir16 kind:function(arm,size=0x3c) addr:0x020b6d58
+Map_UtilGetDir8 kind:function(arm,size=0x14) addr:0x020b6d94
+Map_UtilRectSetBounds kind:function(arm,size=0x14) addr:0x020b6da8
+Map_UtilRectTestPoint kind:function(arm,size=0x40) addr:0x020b6dbc
+Map_UtilCircleTestIntPoint kind:function(arm,size=0x3c) addr:0x020b6dfc
+Map_UtilCircleTestPoint kind:function(arm,size=0x40) addr:0x020b6e38
+Map_UtilLerp kind:function(arm,size=0x1c) addr:0x020b6e78
+MapGate_CheckUnlock kind:function(arm,size=0x2c) addr:0x020b6e94
 CheckGateUnlock kind:function(arm,size=0x44) local addr:0x020b6ec0
-FldGate_CheckPieceStar kind:function(arm,size=0x1bc) addr:0x020b6f04
-FldGate_CheckPieceMoon kind:function(arm,size=0x154) addr:0x020b70c0
-FldGate_CheckPieceSun kind:function(arm,size=0x124) addr:0x020b7214
-FldGate_CheckPieceEarth kind:function(arm,size=0x1c0) addr:0x020b7338
-Fld_PadRead kind:function(arm,size=0x84) addr:0x020b74f8
-Fld_TouchRead kind:function(arm,size=0x78) addr:0x020b757c
-Fld_TouchMoveRead kind:function(arm,size=0x120) addr:0x020b75f4
-FldMes_WindowInit kind:function(arm,size=0x3c) addr:0x020b7714
+MapGate_CheckPieceStar kind:function(arm,size=0x1bc) addr:0x020b6f04
+MapGate_CheckPieceMoon kind:function(arm,size=0x154) addr:0x020b70c0
+MapGate_CheckPieceSun kind:function(arm,size=0x124) addr:0x020b7214
+MapGate_CheckPieceEarth kind:function(arm,size=0x1c0) addr:0x020b7338
+Map_PadRead kind:function(arm,size=0x84) addr:0x020b74f8
+Map_TouchRead kind:function(arm,size=0x78) addr:0x020b757c
+Map_TouchMoveRead kind:function(arm,size=0x120) addr:0x020b75f4
+MapMes_WindowInit kind:function(arm,size=0x3c) addr:0x020b7714
 CreateWinSpr kind:function(arm,size=0x110) local addr:0x020b7750
-FldMes_WindowClose kind:function(arm,size=0xd4) addr:0x020b7860
-FldMes_WindowDispOn kind:function(arm,size=0x28) addr:0x020b7934
-FldMes_WindowDispOff kind:function(arm,size=0x30) addr:0x020b795c
-FldMes_WindowSetPosX kind:function(arm,size=0x1c) addr:0x020b798c
-FldMes_WindowSetPosY kind:function(arm,size=0x1c) addr:0x020b79a8
-FldMes_WindowSetPosXY kind:function(arm,size=0x18) addr:0x020b79c4
-Fld_CheckZoneReject kind:function(arm,size=0x17c) addr:0x020b79dc
-FldChr_SetMove kind:function(arm,size=0xc8) addr:0x020b7b58
-FldChr_InitPos kind:function(arm,size=0x44) addr:0x020b7c20
-FldChr_UpdateSpeed kind:function(arm,size=0xc8) addr:0x020b7c64
-FldChr_SetSpeed kind:function(arm,size=0x28) addr:0x020b7d2c
-FldChr_Move kind:function(arm,size=0x184) addr:0x020b7d54
+MapMes_WindowClose kind:function(arm,size=0xd4) addr:0x020b7860
+MapMes_WindowDispOn kind:function(arm,size=0x28) addr:0x020b7934
+MapMes_WindowDispOff kind:function(arm,size=0x30) addr:0x020b795c
+MapMes_WindowSetPosX kind:function(arm,size=0x1c) addr:0x020b798c
+MapMes_WindowSetPosY kind:function(arm,size=0x1c) addr:0x020b79a8
+MapMes_WindowSetPosXY kind:function(arm,size=0x18) addr:0x020b79c4
+Map_CheckZoneReject kind:function(arm,size=0x17c) addr:0x020b79dc
+MapChr_SetMove kind:function(arm,size=0xc8) addr:0x020b7b58
+MapChr_InitPos kind:function(arm,size=0x44) addr:0x020b7c20
+MapChr_UpdateSpeed kind:function(arm,size=0xc8) addr:0x020b7c64
+MapChr_SetSpeed kind:function(arm,size=0x28) addr:0x020b7d2c
+MapChr_Move kind:function(arm,size=0x184) addr:0x020b7d54
 ChrMove8Dir kind:function(arm,size=0xb8) local addr:0x020b7ed8
 ChrMoveSlide kind:function(arm,size=0x130) local addr:0x020b7f90
 ChrSetPathSpeed kind:function(arm,size=0x78) local addr:0x020b80c0
-FldChr_MovePath kind:function(arm,size=0x188) addr:0x020b8138
-FldChr_MoveExitStart kind:function(arm,size=0x158) addr:0x020b82c0
-FldChr_MoveExit kind:function(arm,size=0x5b4) addr:0x020b8418
-FldChr_SetPos kind:function(arm,size=0x24) addr:0x020b89cc
-FldChr_AddPos kind:function(arm,size=0x38) addr:0x020b89f0
-FldGpu_Kill kind:function(arm,size=0xc) addr:0x020b8a28
-FldGpu_Init kind:function(arm,size=0x238) addr:0x020b8a34
-FldGpu_ZoneCutInit kind:function(arm,size=0x154) addr:0x020b8c6c
-FldGpu_DemoInit kind:function(arm,size=0x174) addr:0x020b8dc0
-FldGpu_MenuInit kind:function(arm,size=0x44) addr:0x020b8f34
-FldGpu_BG2Restore kind:function(arm,size=0xe0) addr:0x020b8f78
-FldGpu_SetMainBGControl kind:function(arm,size=0xe4) addr:0x020b9058
-FldGpu_SetSubBGControl kind:function(arm,size=0x10c) addr:0x020b913c
-FldGpu_DispOff kind:function(arm,size=0x28) addr:0x020b9248
-Fld_GetLanguage kind:function(arm,size=0x8) addr:0x020b9270
-Fld_SetScreenFade kind:function(arm,size=0x88) addr:0x020b9278
-Fld_CheckTouch kind:function(arm,size=0x2c0) addr:0x020b9300
+MapChr_MovePath kind:function(arm,size=0x188) addr:0x020b8138
+MapChr_MoveExitStart kind:function(arm,size=0x158) addr:0x020b82c0
+MapChr_MoveExit kind:function(arm,size=0x5b4) addr:0x020b8418
+MapChr_SetPos kind:function(arm,size=0x24) addr:0x020b89cc
+MapChr_AddPos kind:function(arm,size=0x38) addr:0x020b89f0
+MapGpu_Kill kind:function(arm,size=0xc) addr:0x020b8a28
+MapGpu_Init kind:function(arm,size=0x238) addr:0x020b8a34
+MapGpu_ZoneCutInit kind:function(arm,size=0x154) addr:0x020b8c6c
+MapGpu_DemoInit kind:function(arm,size=0x174) addr:0x020b8dc0
+MapGpu_MenuInit kind:function(arm,size=0x44) addr:0x020b8f34
+MapGpu_BG2Restore kind:function(arm,size=0xe0) addr:0x020b8f78
+MapGpu_SetMainBGControl kind:function(arm,size=0xe4) addr:0x020b9058
+MapGpu_SetSubBGControl kind:function(arm,size=0x10c) addr:0x020b913c
+MapGpu_DispOff kind:function(arm,size=0x28) addr:0x020b9248
+Map_GetLanguage kind:function(arm,size=0x8) addr:0x020b9270
+Map_SetScreenFade kind:function(arm,size=0x88) addr:0x020b9278
+Map_CheckTouch kind:function(arm,size=0x2c0) addr:0x020b9300
 CheckTouch kind:function(arm,size=0x190) local addr:0x020b95c0
-Fld_SceneNewGameCreate kind:function(arm,size=0x28) addr:0x020b9750
-Fld_SceneCreate kind:function(arm,size=0x274) addr:0x020b9778
-FldInit kind:function(arm,size=0x294) local addr:0x020b99ec
-FldExec kind:function(arm,size=0x810) local addr:0x020b9c80
+Map_SceneNewGameCreate kind:function(arm,size=0x28) addr:0x020b9750
+Map_SceneCreate kind:function(arm,size=0x274) addr:0x020b9778
+MapInit kind:function(arm,size=0x294) local addr:0x020b99ec
+MapExec kind:function(arm,size=0x810) local addr:0x020b9c80
 CallSceneEnd kind:function(arm,size=0x30) local addr:0x020ba490
-FldDestroy kind:function(arm,size=0x74) local addr:0x020ba4c0
-Fld_SceneSetMode kind:function(arm,size=0x3ac) addr:0x020ba534
+MapDestroy kind:function(arm,size=0x74) local addr:0x020ba4c0
+Map_SceneSetMode kind:function(arm,size=0x3ac) addr:0x020ba534
 StartAmbSE kind:function(arm,size=0x128) local addr:0x020ba8e0
 StopAmbSE kind:function(arm,size=0x11c) local addr:0x020baa08
 UpdatePathChr kind:function(arm,size=0x80) local addr:0x020bab24
@@ -140,154 +140,154 @@ ExecZoneExit kind:function(arm,size=0x880) local addr:0x020baef0
 ExecSlowFade kind:function(arm,size=0x148) local addr:0x020bb770
 StartShapeFade kind:function(arm,size=0x34) local addr:0x020bb8b8
 ExecShapeFade kind:function(arm,size=0x68) local addr:0x020bb8ec
-Fld_CallScene kind:function(arm,size=0x24) addr:0x020bb954
+Map_CallScene kind:function(arm,size=0x24) addr:0x020bb954
 StartMGBonus kind:function(arm,size=0x254) local addr:0x020bb978
 StartBHouseBonus kind:function(arm,size=0x254) local addr:0x020bbbcc
-Fld_MusIsBonusAtrc kind:function(arm,size=0xb0) addr:0x020bbe20
-Fld_MusIsBonusBHouse kind:function(arm,size=0xcc) addr:0x020bbed0
-Fld_MusIsDemoElgPre kind:function(arm,size=0xb4) addr:0x020bbf9c
-FldTouch_Init kind:function(arm,size=0x20c) addr:0x020bc050
-FldTouch_Close kind:function(arm,size=0xd0) addr:0x020bc25c
-FldTouch_Exec kind:function(arm,size=0xd4) addr:0x020bc32c
-FldTouch_SetType kind:function(arm,size=0x70) addr:0x020bc400
-FldTouch_SetTypeMulti kind:function(arm,size=0x70) addr:0x020bc470
-FldTouch_ResetType kind:function(arm,size=0x3c) addr:0x020bc4e0
+Map_MusIsBonusAtrc kind:function(arm,size=0xb0) addr:0x020bbe20
+Map_MusIsBonusBHouse kind:function(arm,size=0xcc) addr:0x020bbed0
+Map_MusIsDemoElgPre kind:function(arm,size=0xb4) addr:0x020bbf9c
+MapTouch_Init kind:function(arm,size=0x20c) addr:0x020bc050
+MapTouch_Close kind:function(arm,size=0xd0) addr:0x020bc25c
+MapTouch_Exec kind:function(arm,size=0xd4) addr:0x020bc32c
+MapTouch_SetType kind:function(arm,size=0x70) addr:0x020bc400
+MapTouch_SetTypeMulti kind:function(arm,size=0x70) addr:0x020bc470
+MapTouch_ResetType kind:function(arm,size=0x3c) addr:0x020bc4e0
 CheckSprDispOff kind:function(arm,size=0x8c) local addr:0x020bc51c
 SetupTouchIcon kind:function(arm,size=0x3a4) local addr:0x020bc5a8
 ExecGateTouch kind:function(arm,size=0x170) local addr:0x020bc94c
 ExecPliconTouch kind:function(arm,size=0x230) local addr:0x020bcabc
 GetPlicon kind:function(arm,size=0x484) local addr:0x020bccec
-FldTouchSpr_PliconCreate kind:function(arm,size=0xf8) addr:0x020bd170
-FldTouchSpr_PliconObjCreate kind:function(arm,size=0xe8) addr:0x020bd268
-FldTouchSpr_GateCreateAll kind:function(arm,size=0x40c) addr:0x020bd350
-FldTouchSpr_GateCreate kind:function(arm,size=0x124) addr:0x020bd75c
-FldTouchSpr_AticonCreateAll kind:function(arm,size=0x7c) addr:0x020bd880
-FldTouchSpr_AticonCreate kind:function(arm,size=0x348) addr:0x020bd8fc
-FldTouchSpr_Destroy kind:function(arm,size=0xec) addr:0x020bdc44
-FldTouchSpr_Close kind:function(arm,size=0x24) addr:0x020bdd30
-FldTouchSpr_ColorAnimCreate kind:function(arm,size=0x78) addr:0x020bdd54
-FldTouchSpr_ColorAnimKill kind:function(arm,size=0x58) addr:0x020bddcc
-FldTouchSpr_SetTouchType kind:function(arm,size=0x44) addr:0x020bde24
-FldTouchSpr_SetPos kind:function(arm,size=0x1f0) addr:0x020bde68
-FldObj_ResInit kind:function(arm,size=0x850) addr:0x020be058
-FldObj_ResClose kind:function(arm,size=0x94) addr:0x020be8a8
+MapTouchSpr_PliconCreate kind:function(arm,size=0xf8) addr:0x020bd170
+MapTouchSpr_PliconObjCreate kind:function(arm,size=0xe8) addr:0x020bd268
+MapTouchSpr_GateCreateAll kind:function(arm,size=0x40c) addr:0x020bd350
+MapTouchSpr_GateCreate kind:function(arm,size=0x124) addr:0x020bd75c
+MapTouchSpr_AticonCreateAll kind:function(arm,size=0x7c) addr:0x020bd880
+MapTouchSpr_AticonCreate kind:function(arm,size=0x348) addr:0x020bd8fc
+MapTouchSpr_Destroy kind:function(arm,size=0xec) addr:0x020bdc44
+MapTouchSpr_Close kind:function(arm,size=0x24) addr:0x020bdd30
+MapTouchSpr_ColorAnimCreate kind:function(arm,size=0x78) addr:0x020bdd54
+MapTouchSpr_ColorAnimKill kind:function(arm,size=0x58) addr:0x020bddcc
+MapTouchSpr_SetTouchType kind:function(arm,size=0x44) addr:0x020bde24
+MapTouchSpr_SetPos kind:function(arm,size=0x1f0) addr:0x020bde68
+MapObj_ResInit kind:function(arm,size=0x850) addr:0x020be058
+MapObj_ResClose kind:function(arm,size=0x94) addr:0x020be8a8
 ObjLoadRes kind:function(arm,size=0x274) local addr:0x020be93c
 ObjKillRes kind:function(arm,size=0xb0) local addr:0x020bebb0
-FldObj_ResCreateColorAnim kind:function(arm,size=0x78) addr:0x020bec60
+MapObj_ResCreateColorAnim kind:function(arm,size=0x78) addr:0x020bec60
 SprSetObj kind:function(arm,size=0x50) local addr:0x020becd8
 SprDelObj kind:function(arm,size=0x50) local addr:0x020bed28
 SprAlloc kind:function(arm,size=0x3c) local addr:0x020bed78
-FldObj_Exec kind:function(arm,size=0x6c) addr:0x020bedb4
+MapObj_Exec kind:function(arm,size=0x6c) addr:0x020bedb4
 ObjUpdate kind:function(arm,size=0x1a8) local addr:0x020bee20
-FldObj_Create kind:function(arm,size=0x1f0) addr:0x020befc8
-FldObj_Kill kind:function(arm,size=0x74) addr:0x020bf1b8
-FldObj_Close kind:function(arm,size=0x2c) addr:0x020bf22c
-FldObj_DispOn kind:function(arm,size=0x38) addr:0x020bf258
-FldObj_DispOff kind:function(arm,size=0x38) addr:0x020bf290
-FldObj_SetLayer kind:function(arm,size=0x3c) addr:0x020bf2c8
-FldObj_SetPrio kind:function(arm,size=0x50) addr:0x020bf304
-FldObj_SetAnim kind:function(arm,size=0x78) addr:0x020bf354
-FldObj_SetAnim2 kind:function(arm,size=0x84) addr:0x020bf3cc
-FldObj_IsAnimDone kind:function(arm,size=0x4c) addr:0x020bf450
-FldObj_GetCurAnim kind:function(arm,size=0x3c) addr:0x020bf49c
-FldObj_CreateColorAnim kind:function(arm,size=0x74) addr:0x020bf4d8
-FldObj_CreateColorAnim2 kind:function(arm,size=0x74) addr:0x020bf54c
-FldObj_KillColorAnim kind:function(arm,size=0x60) addr:0x020bf5c0
-FldObj_IsColorAnimDone kind:function(arm,size=0x48) addr:0x020bf620
-FldObj_DynExec kind:function(arm,size=0x6c) addr:0x020bf668
+MapObj_Create kind:function(arm,size=0x1f0) addr:0x020befc8
+MapObj_Kill kind:function(arm,size=0x74) addr:0x020bf1b8
+MapObj_Close kind:function(arm,size=0x2c) addr:0x020bf22c
+MapObj_DispOn kind:function(arm,size=0x38) addr:0x020bf258
+MapObj_DispOff kind:function(arm,size=0x38) addr:0x020bf290
+MapObj_SetLayer kind:function(arm,size=0x3c) addr:0x020bf2c8
+MapObj_SetPrio kind:function(arm,size=0x50) addr:0x020bf304
+MapObj_SetAnim kind:function(arm,size=0x78) addr:0x020bf354
+MapObj_SetAnim2 kind:function(arm,size=0x84) addr:0x020bf3cc
+MapObj_IsAnimDone kind:function(arm,size=0x4c) addr:0x020bf450
+MapObj_GetCurAnim kind:function(arm,size=0x3c) addr:0x020bf49c
+MapObj_CreateColorAnim kind:function(arm,size=0x74) addr:0x020bf4d8
+MapObj_CreateColorAnim2 kind:function(arm,size=0x74) addr:0x020bf54c
+MapObj_KillColorAnim kind:function(arm,size=0x60) addr:0x020bf5c0
+MapObj_IsColorAnimDone kind:function(arm,size=0x48) addr:0x020bf620
+MapObj_DynExec kind:function(arm,size=0x6c) addr:0x020bf668
 DynUpdate kind:function(arm,size=0x12c) local addr:0x020bf6d4
-FldObj_DynSetObj kind:function(arm,size=0xc) addr:0x020bf800
+MapObj_DynSetObj kind:function(arm,size=0xc) addr:0x020bf800
 KillObj kind:function(arm,size=0xc) local addr:0x020bf80c
-FldObj_DynClose kind:function(arm,size=0x2c) addr:0x020bf818
-FldObj_DynDispOn kind:function(arm,size=0x28) addr:0x020bf844
-FldObj_DynDispOff kind:function(arm,size=0x28) addr:0x020bf86c
-FldObj_DynAnimUnpause kind:function(arm,size=0x30) addr:0x020bf894
-FldObj_DynAnimPause kind:function(arm,size=0x30) addr:0x020bf8c4
-FldObj_DynSetLayer kind:function(arm,size=0x28) addr:0x020bf8f4
-FldObj_DynSetPrio kind:function(arm,size=0x30) addr:0x020bf91c
-FldObj_DynSetAnim kind:function(arm,size=0x68) addr:0x020bf94c
-FldObj_DynGetPrio kind:function(arm,size=0x2c) addr:0x020bf9b4
-FldObj_DynGetScale kind:function(arm,size=0x24) addr:0x020bf9e0
-FldObj_DynCreateColorAnim kind:function(arm,size=0x60) addr:0x020bfa04
-FldObj_DynKillColorAnim kind:function(arm,size=0x54) addr:0x020bfa64
-FldObj_DynSetPos kind:function(arm,size=0x1c) addr:0x020bfab8
-FldObj_DynAddPos kind:function(arm,size=0x30) addr:0x020bfad4
-FldObj_DynGetPosX kind:function(arm,size=0x10) addr:0x020bfb04
-FldObj_DynGetPosY kind:function(arm,size=0x10) addr:0x020bfb14
-FldObj_BGExec kind:function(arm,size=0x6c) addr:0x020bfb24
+MapObj_DynClose kind:function(arm,size=0x2c) addr:0x020bf818
+MapObj_DynDispOn kind:function(arm,size=0x28) addr:0x020bf844
+MapObj_DynDispOff kind:function(arm,size=0x28) addr:0x020bf86c
+MapObj_DynAnimUnpause kind:function(arm,size=0x30) addr:0x020bf894
+MapObj_DynAnimPause kind:function(arm,size=0x30) addr:0x020bf8c4
+MapObj_DynSetLayer kind:function(arm,size=0x28) addr:0x020bf8f4
+MapObj_DynSetPrio kind:function(arm,size=0x30) addr:0x020bf91c
+MapObj_DynSetAnim kind:function(arm,size=0x68) addr:0x020bf94c
+MapObj_DynGetPrio kind:function(arm,size=0x2c) addr:0x020bf9b4
+MapObj_DynGetScale kind:function(arm,size=0x24) addr:0x020bf9e0
+MapObj_DynCreateColorAnim kind:function(arm,size=0x60) addr:0x020bfa04
+MapObj_DynKillColorAnim kind:function(arm,size=0x54) addr:0x020bfa64
+MapObj_DynSetPos kind:function(arm,size=0x1c) addr:0x020bfab8
+MapObj_DynAddPos kind:function(arm,size=0x30) addr:0x020bfad4
+MapObj_DynGetPosX kind:function(arm,size=0x10) addr:0x020bfb04
+MapObj_DynGetPosY kind:function(arm,size=0x10) addr:0x020bfb14
+MapObj_BGExec kind:function(arm,size=0x6c) addr:0x020bfb24
 UpdateBGObj kind:function(arm,size=0x3c) local addr:0x020bfb90
 KillBGObj kind:function(arm,size=0xc) local addr:0x020bfbcc
-FldObj_BGClose kind:function(arm,size=0x2c) addr:0x020bfbd8
+MapObj_BGClose kind:function(arm,size=0x2c) addr:0x020bfbd8
 ExecBGObj kind:function(arm,size=0x3c) local addr:0x020bfc04
 MoveBGObj kind:function(arm,size=0x104) local addr:0x020bfc40
-FldChr_Init kind:function(arm,size=0x2c) addr:0x020bfd44
+MapChr_Init kind:function(arm,size=0x2c) addr:0x020bfd44
 SprKill kind:function(arm,size=0xd4) local addr:0x020bfd70
-FldChr_Create kind:function(arm,size=0x5c) addr:0x020bfe44
+MapChr_Create kind:function(arm,size=0x5c) addr:0x020bfe44
 SprPlayerCreate kind:function(arm,size=0xd88) local addr:0x020bfea0
 GetPlayerSprIdx kind:function(arm,size=0xbc) local addr:0x020c0c28
 SprBossCreate kind:function(arm,size=0x208) local addr:0x020c0ce4
 SprZoneCreate kind:function(arm,size=0x1d8) local addr:0x020c0eec
 GetZoneSprIdx kind:function(arm,size=0x1b4) local addr:0x020c10c4
 CreateOthSpr kind:function(arm,size=0x158) local addr:0x020c1278
-FldChr_Destroy kind:function(arm,size=0x40) addr:0x020c13d0
-FldChr_Exec kind:function(arm,size=0x504) addr:0x020c1410
+MapChr_Destroy kind:function(arm,size=0x40) addr:0x020c13d0
+MapChr_Exec kind:function(arm,size=0x504) addr:0x020c1410
 PlaySE kind:function(arm,size=0x110) local addr:0x020c1914
 PlayMoveSE kind:function(arm,size=0x15c) local addr:0x020c1a24
 PlayDribbleSE kind:function(arm,size=0x44) local addr:0x020c1b80
 PlayMiniMoveSE kind:function(arm,size=0x15c) local addr:0x020c1bc4
 PlayMoveSE2 kind:function(arm,size=0x15c) local addr:0x020c1d20
-FldChr_MoveEscort kind:function(arm,size=0x1e0) addr:0x020c1e7c
+MapChr_MoveEscort kind:function(arm,size=0x1e0) addr:0x020c1e7c
 UpdateSpr kind:function(arm,size=0x118) local addr:0x020c205c
-FldChr_DispOn kind:function(arm,size=0x58) addr:0x020c2174
-FldChr_DispOff kind:function(arm,size=0x58) addr:0x020c21cc
-FldChr_ShadowDispOn kind:function(arm,size=0x3c) addr:0x020c2224
-FldChr_ShadowDispOff kind:function(arm,size=0x3c) addr:0x020c2260
-FldChr_SetLayer kind:function(arm,size=0x54) addr:0x020c229c
-FldChr_SetScale kind:function(arm,size=0x50) addr:0x020c22f0
-FldChr_SetScaleX kind:function(arm,size=0x54) addr:0x020c2340
-FldChr_SetState kind:function(arm,size=0x28) addr:0x020c2394
-FldChr_GetState kind:function(arm,size=0x2c) addr:0x020c23bc
-FldChr_SetAnim kind:function(arm,size=0x60) addr:0x020c23e8
-FldChr_IsAnimDone kind:function(arm,size=0x54) addr:0x020c2448
-FldChr_AnimUnpause kind:function(arm,size=0x40) addr:0x020c249c
-FldChr_AnimUnpauseAll kind:function(arm,size=0x20) addr:0x020c24dc
-FldChr_AnimPause kind:function(arm,size=0x40) addr:0x020c24fc
-FldChr_AnimPauseAll kind:function(arm,size=0x28) addr:0x020c253c
-FldChr_SetFlipX kind:function(arm,size=0x3c) addr:0x020c2564
-FldChr_ResetFlipX kind:function(arm,size=0x3c) addr:0x020c25a0
-FldChr_SetOfs kind:function(arm,size=0x38) addr:0x020c25dc
-FldChr_CreateColorAnim kind:function(arm,size=0x7c) addr:0x020c2614
-FldChr_KillColorAnim kind:function(arm,size=0x7c) addr:0x020c2690
-FldChr_ResetPlayer kind:function(arm,size=0x3c) addr:0x020c270c
-FldGate_Init kind:function(arm,size=0xac) addr:0x020c2748
-FldGate_Close kind:function(arm,size=0xa4) addr:0x020c27f4
-FldGate_Exec kind:function(arm,size=0x6c) addr:0x020c2898
+MapChr_DispOn kind:function(arm,size=0x58) addr:0x020c2174
+MapChr_DispOff kind:function(arm,size=0x58) addr:0x020c21cc
+MapChr_ShadowDispOn kind:function(arm,size=0x3c) addr:0x020c2224
+MapChr_ShadowDispOff kind:function(arm,size=0x3c) addr:0x020c2260
+MapChr_SetLayer kind:function(arm,size=0x54) addr:0x020c229c
+MapChr_SetScale kind:function(arm,size=0x50) addr:0x020c22f0
+MapChr_SetScaleX kind:function(arm,size=0x54) addr:0x020c2340
+MapChr_SetState kind:function(arm,size=0x28) addr:0x020c2394
+MapChr_GetState kind:function(arm,size=0x2c) addr:0x020c23bc
+MapChr_SetAnim kind:function(arm,size=0x60) addr:0x020c23e8
+MapChr_IsAnimDone kind:function(arm,size=0x54) addr:0x020c2448
+MapChr_AnimUnpause kind:function(arm,size=0x40) addr:0x020c249c
+MapChr_AnimUnpauseAll kind:function(arm,size=0x20) addr:0x020c24dc
+MapChr_AnimPause kind:function(arm,size=0x40) addr:0x020c24fc
+MapChr_AnimPauseAll kind:function(arm,size=0x28) addr:0x020c253c
+MapChr_SetFlipX kind:function(arm,size=0x3c) addr:0x020c2564
+MapChr_ResetFlipX kind:function(arm,size=0x3c) addr:0x020c25a0
+MapChr_SetOfs kind:function(arm,size=0x38) addr:0x020c25dc
+MapChr_CreateColorAnim kind:function(arm,size=0x7c) addr:0x020c2614
+MapChr_KillColorAnim kind:function(arm,size=0x7c) addr:0x020c2690
+MapChr_ResetPlayer kind:function(arm,size=0x3c) addr:0x020c270c
+MapGate_Init kind:function(arm,size=0xac) addr:0x020c2748
+MapGate_Close kind:function(arm,size=0xa4) addr:0x020c27f4
+MapGate_Exec kind:function(arm,size=0x6c) addr:0x020c2898
 GateUpdate kind:function(arm,size=0x168) local addr:0x020c2904
 GateCreateSpr kind:function(arm,size=0x2ec) local addr:0x020c2a6c
-FldGate_SetOpen kind:function(arm,size=0x1a8) addr:0x020c2d58
+MapGate_SetOpen kind:function(arm,size=0x1a8) addr:0x020c2d58
 GateKill kind:function(arm,size=0x44) local addr:0x020c2f00
-FldGate_KillAll kind:function(arm,size=0x40) addr:0x020c2f44
-FldMenu_PadOptInit kind:function(arm,size=0x16c) addr:0x020c2f84
-FldMenu_PadOptExec kind:function(arm,size=0x138) addr:0x020c30f0
-FldMenu_PadOptKill kind:function(arm,size=0x50) addr:0x020c3228
+MapGate_KillAll kind:function(arm,size=0x40) addr:0x020c2f44
+MapMenu_PadOptInit kind:function(arm,size=0x16c) addr:0x020c2f84
+MapMenu_PadOptExec kind:function(arm,size=0x138) addr:0x020c30f0
+MapMenu_PadOptKill kind:function(arm,size=0x50) addr:0x020c3228
 LoadRes kind:function(arm,size=0x134) local addr:0x020c3278
 InitSpr kind:function(arm,size=0x70) local addr:0x020c33ac
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020c341c
 GetMenuClick kind:function(arm,size=0x64) local addr:0x020c343c
 GetClick kind:function(arm,size=0x210) local addr:0x020c34a0
 CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c36b0
-FldMenu_PadSaveInit kind:function(arm,size=0x1b4) addr:0x020c373c
-FldMenu_PadSaveExec kind:function(arm,size=0x4dc) addr:0x020c38f0
-FldMenu_PadSaveKill kind:function(arm,size=0x50) addr:0x020c3dcc
+MapMenu_PadSaveInit kind:function(arm,size=0x1b4) addr:0x020c373c
+MapMenu_PadSaveExec kind:function(arm,size=0x4dc) addr:0x020c38f0
+MapMenu_PadSaveKill kind:function(arm,size=0x50) addr:0x020c3dcc
 LoadRes kind:function(arm,size=0x134) local addr:0x020c3e1c
 InitSpr kind:function(arm,size=0x70) local addr:0x020c3f50
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020c3fc0
 GetMenuClick kind:function(arm,size=0x9c) local addr:0x020c3fe0
 GetClick kind:function(arm,size=0x27c) local addr:0x020c407c
 CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c42f8
-FldMenu_PadSoubiInit kind:function(arm,size=0xd8) addr:0x020c4384
-FldMenu_PadSoubiExec kind:function(arm,size=0x398) addr:0x020c445c
-FldMenu_PadSoubiKill kind:function(arm,size=0x60) addr:0x020c47f4
+MapMenu_PadSoubiInit kind:function(arm,size=0xd8) addr:0x020c4384
+MapMenu_PadSoubiExec kind:function(arm,size=0x398) addr:0x020c445c
+MapMenu_PadSoubiKill kind:function(arm,size=0x60) addr:0x020c47f4
 LoadRes kind:function(arm,size=0x190) local addr:0x020c4854
 InitSpr kind:function(arm,size=0x70) local addr:0x020c49e4
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020c4a54
@@ -301,9 +301,9 @@ UpdateItem kind:function(arm,size=0x1d8) local addr:0x020c53ec
 GetMenuClick kind:function(arm,size=0x64) local addr:0x020c55c4
 GetClick kind:function(arm,size=0x55c) local addr:0x020c5628
 CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c5b84
-FldMenu_PadMailInit kind:function(arm,size=0x18c) addr:0x020c5c10
-FldMenu_PadMailExec kind:function(arm,size=0x328) addr:0x020c5d9c
-FldMenu_PadMailKill kind:function(arm,size=0x50) addr:0x020c60c4
+MapMenu_PadMailInit kind:function(arm,size=0x18c) addr:0x020c5c10
+MapMenu_PadMailExec kind:function(arm,size=0x328) addr:0x020c5d9c
+MapMenu_PadMailKill kind:function(arm,size=0x50) addr:0x020c60c4
 LoadRes kind:function(arm,size=0x1a0) local addr:0x020c6114
 InitSpr kind:function(arm,size=0x70) local addr:0x020c62b4
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020c6324
@@ -317,55 +317,55 @@ CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c76a0
 InitMailOrder kind:function(arm,size=0xbc) local addr:0x020c772c
 SortMailReceive kind:function(arm,size=0x154) local addr:0x020c77e8
 SortMailName kind:function(arm,size=0x180) local addr:0x020c793c
-FldMenu_Init kind:function(arm,size=0xb8) addr:0x020c7abc
-FldMenu_Exec kind:function(arm,size=0x58) addr:0x020c7b74
-FldMenu_Close kind:function(arm,size=0xc0) addr:0x020c7bcc
-FldMenu_SetMenu kind:function(arm,size=0x4c) addr:0x020c7c8c
-FldMenu_ResKill kind:function(arm,size=0x8c) addr:0x020c7cd8
-FldMenu_HowaExec kind:function(arm,size=0x3c) addr:0x020c7d64
+MapMenu_Init kind:function(arm,size=0xb8) addr:0x020c7abc
+MapMenu_Exec kind:function(arm,size=0x58) addr:0x020c7b74
+MapMenu_Close kind:function(arm,size=0xc0) addr:0x020c7bcc
+MapMenu_SetMenu kind:function(arm,size=0x4c) addr:0x020c7c8c
+MapMenu_ResKill kind:function(arm,size=0x8c) addr:0x020c7cd8
+MapMenu_HowaExec kind:function(arm,size=0x3c) addr:0x020c7d64
 LoadHowaRes kind:function(arm,size=0x188) local addr:0x020c7da0
 InitHowaSprite kind:function(arm,size=0x70) local addr:0x020c7f28
-FldMenu_HowaCreate kind:function(arm,size=0xa8) addr:0x020c7f98
-FldMenu_HowaKill kind:function(arm,size=0x7c) addr:0x020c8040
-FldMenu_HowaCreateColorAnim kind:function(arm,size=0x64) addr:0x020c80bc
-FldMenu_HowaKillColorAnim kind:function(arm,size=0x50) addr:0x020c8120
-FldMenu_HowaDispOn kind:function(arm,size=0x2c) addr:0x020c8170
-FldMenu_HowaDispOff kind:function(arm,size=0x2c) addr:0x020c819c
-FldMenu_HowaSetPosX kind:function(arm,size=0x24) addr:0x020c81c8
-FldMenu_HowaSetPosY kind:function(arm,size=0x24) addr:0x020c81ec
-FldMenu_HowaSetPos kind:function(arm,size=0x20) addr:0x020c8210
-FldMenu_HowaSetAnim kind:function(arm,size=0x30) addr:0x020c8230
-FldMenu_HowaSetPrio kind:function(arm,size=0x2c) addr:0x020c8260
-FldMenu_SprCreate kind:function(arm,size=0xac) addr:0x020c828c
-FldMenu_SprKill kind:function(arm,size=0x80) addr:0x020c8338
-FldMenu_SprCreateColorAnim kind:function(arm,size=0x94) addr:0x020c83b8
-FldMenu_SprKillColorAnim kind:function(arm,size=0x7c) addr:0x020c844c
-FldMenu_SprSetColor kind:function(arm,size=0x54) addr:0x020c84c8
-FldMenu_SprCreateColorAnim2 kind:function(arm,size=0x68) addr:0x020c851c
-FldMenu_SprKillColorAnim2 kind:function(arm,size=0x54) addr:0x020c8584
-FldMenu_SprDispOn kind:function(arm,size=0x2c) addr:0x020c85d8
-FldMenu_SprDispOff kind:function(arm,size=0x2c) addr:0x020c8604
-FldMenu_SprSetPosX kind:function(arm,size=0x24) addr:0x020c8630
-FldMenu_SprSetPosY kind:function(arm,size=0x24) addr:0x020c8654
-FldMenu_SprSetPos kind:function(arm,size=0x20) addr:0x020c8678
-FldMenu_SprMovePosX kind:function(arm,size=0x34) addr:0x020c8698
-FldMenu_SprMovePosY kind:function(arm,size=0x34) addr:0x020c86cc
-FldMenu_SprMovePos kind:function(arm,size=0x20) addr:0x020c8700
-FldMenu_SprSetAnim kind:function(arm,size=0x30) addr:0x020c8720
-FldMenu_SprSetPrio kind:function(arm,size=0x2c) addr:0x020c8750
-FldMenu_SprSetScale kind:function(arm,size=0x28) addr:0x020c877c
-FldMenu_HowaCreateBase kind:function(arm,size=0x38) addr:0x020c87a4
-FldMenu_HowaKillBase kind:function(arm,size=0x10) addr:0x020c87dc
-FldMenu_SetBackground kind:function(arm,size=0x118) addr:0x020c87ec
-FldMenu_DisableScreen kind:function(arm,size=0x34) addr:0x020c8904
-FldMenu_RestoreBG2 kind:function(arm,size=0x38) addr:0x020c8938
-FldMenu_FadeFastInExec kind:function(arm,size=0x6c) addr:0x020c8970
-FldMenu_FadeFastOutExec kind:function(arm,size=0x6c) addr:0x020c89dc
-FldMenu_FadeSlowInExec kind:function(arm,size=0x6c) addr:0x020c8a48
-FldMenu_FadeSlowOutExec kind:function(arm,size=0x6c) addr:0x020c8ab4
-FldMenu_PieceInit kind:function(arm,size=0x20c) addr:0x020c8b20
-FldMenu_PieceExec kind:function(arm,size=0x488) addr:0x020c8d2c
-FldMenu_PieceKill kind:function(arm,size=0x50) addr:0x020c91b4
+MapMenu_HowaCreate kind:function(arm,size=0xa8) addr:0x020c7f98
+MapMenu_HowaKill kind:function(arm,size=0x7c) addr:0x020c8040
+MapMenu_HowaCreateColorAnim kind:function(arm,size=0x64) addr:0x020c80bc
+MapMenu_HowaKillColorAnim kind:function(arm,size=0x50) addr:0x020c8120
+MapMenu_HowaDispOn kind:function(arm,size=0x2c) addr:0x020c8170
+MapMenu_HowaDispOff kind:function(arm,size=0x2c) addr:0x020c819c
+MapMenu_HowaSetPosX kind:function(arm,size=0x24) addr:0x020c81c8
+MapMenu_HowaSetPosY kind:function(arm,size=0x24) addr:0x020c81ec
+MapMenu_HowaSetPos kind:function(arm,size=0x20) addr:0x020c8210
+MapMenu_HowaSetAnim kind:function(arm,size=0x30) addr:0x020c8230
+MapMenu_HowaSetPrio kind:function(arm,size=0x2c) addr:0x020c8260
+MapMenu_SprCreate kind:function(arm,size=0xac) addr:0x020c828c
+MapMenu_SprKill kind:function(arm,size=0x80) addr:0x020c8338
+MapMenu_SprCreateColorAnim kind:function(arm,size=0x94) addr:0x020c83b8
+MapMenu_SprKillColorAnim kind:function(arm,size=0x7c) addr:0x020c844c
+MapMenu_SprSetColor kind:function(arm,size=0x54) addr:0x020c84c8
+MapMenu_SprCreateColorAnim2 kind:function(arm,size=0x68) addr:0x020c851c
+MapMenu_SprKillColorAnim2 kind:function(arm,size=0x54) addr:0x020c8584
+MapMenu_SprDispOn kind:function(arm,size=0x2c) addr:0x020c85d8
+MapMenu_SprDispOff kind:function(arm,size=0x2c) addr:0x020c8604
+MapMenu_SprSetPosX kind:function(arm,size=0x24) addr:0x020c8630
+MapMenu_SprSetPosY kind:function(arm,size=0x24) addr:0x020c8654
+MapMenu_SprSetPos kind:function(arm,size=0x20) addr:0x020c8678
+MapMenu_SprMovePosX kind:function(arm,size=0x34) addr:0x020c8698
+MapMenu_SprMovePosY kind:function(arm,size=0x34) addr:0x020c86cc
+MapMenu_SprMovePos kind:function(arm,size=0x20) addr:0x020c8700
+MapMenu_SprSetAnim kind:function(arm,size=0x30) addr:0x020c8720
+MapMenu_SprSetPrio kind:function(arm,size=0x2c) addr:0x020c8750
+MapMenu_SprSetScale kind:function(arm,size=0x28) addr:0x020c877c
+MapMenu_HowaCreateBase kind:function(arm,size=0x38) addr:0x020c87a4
+MapMenu_HowaKillBase kind:function(arm,size=0x10) addr:0x020c87dc
+MapMenu_SetBackground kind:function(arm,size=0x118) addr:0x020c87ec
+MapMenu_DisableScreen kind:function(arm,size=0x34) addr:0x020c8904
+MapMenu_RestoreBG2 kind:function(arm,size=0x38) addr:0x020c8938
+MapMenu_FadeFastInExec kind:function(arm,size=0x6c) addr:0x020c8970
+MapMenu_FadeFastOutExec kind:function(arm,size=0x6c) addr:0x020c89dc
+MapMenu_FadeSlowInExec kind:function(arm,size=0x6c) addr:0x020c8a48
+MapMenu_FadeSlowOutExec kind:function(arm,size=0x6c) addr:0x020c8ab4
+MapMenu_PieceInit kind:function(arm,size=0x20c) addr:0x020c8b20
+MapMenu_PieceExec kind:function(arm,size=0x488) addr:0x020c8d2c
+MapMenu_PieceKill kind:function(arm,size=0x50) addr:0x020c91b4
 LoadRes kind:function(arm,size=0x144) local addr:0x020c9204
 InitSpr kind:function(arm,size=0x7c) local addr:0x020c9348
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020c93c4
@@ -373,37 +373,37 @@ GetMenuClick kind:function(arm,size=0x64) local addr:0x020c93e4
 GetClick kind:function(arm,size=0x1e0) local addr:0x020c9448
 CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020c9628
 InitPieceAnim kind:function(arm,size=0x188) local addr:0x020c96b4
-FldMenu_PadInit kind:function(arm,size=0x218) addr:0x020c983c
-FldMenu_PadExec kind:function(arm,size=0x198) addr:0x020c9a54
-FldMenu_PadKill kind:function(arm,size=0x50) addr:0x020c9bec
+MapMenu_PadInit kind:function(arm,size=0x218) addr:0x020c983c
+MapMenu_PadExec kind:function(arm,size=0x198) addr:0x020c9a54
+MapMenu_PadKill kind:function(arm,size=0x50) addr:0x020c9bec
 LoadRes kind:function(arm,size=0x160) local addr:0x020c9c3c
 InitSpr kind:function(arm,size=0x70) local addr:0x020c9d9c
-FldMenu_PadDispOn kind:function(arm,size=0x30) addr:0x020c9e0c
+MapMenu_PadDispOn kind:function(arm,size=0x30) addr:0x020c9e0c
 GetMenuClick kind:function(arm,size=0x258) local addr:0x020c9e3c
 GetClick kind:function(arm,size=0x1dc) local addr:0x020ca094
 CheckNewMail kind:function(arm,size=0x94) local addr:0x020ca270
 CheckStampOver kind:function(arm,size=0x24) local addr:0x020ca304
 UpdateDisp kind:function(arm,size=0x3f4) local addr:0x020ca328
-FldMenu_PadSetPosIn kind:function(arm,size=0x6c) addr:0x020ca71c
-FldMenu_PadMoveOut kind:function(arm,size=0x84) addr:0x020ca788
-FldMenu_PadSetPosOut kind:function(arm,size=0x9c) addr:0x020ca80c
-FldMenu_PadMoveIn kind:function(arm,size=0xb0) addr:0x020ca8a8
-FldMenu_CreateTimer kind:function(arm,size=0x48) addr:0x020ca958
-FldMenu_SetTimerValue kind:function(arm,size=0x144) addr:0x020ca9a0
-FldMenu_KillTimer kind:function(arm,size=0x48) addr:0x020caae4
-FldScr_Init kind:function(arm,size=0x4) addr:0x020cab2c
-FldScr_StartAreaScript kind:function(arm,size=0x4a4) addr:0x020cab30
-FldScr_CallScript kind:function(arm,size=0x10) addr:0x020cafd4
-FldScr_CheckPieceFull kind:function(arm,size=0x448) addr:0x020cafe4
-FldScr_Create kind:function(arm,size=0xcc) addr:0x020cb42c
-FldScr_Exec kind:function(arm,size=0x1c4) addr:0x020cb4f8
-FldScr_Kill kind:function(arm,size=0x40) addr:0x020cb6bc
+MapMenu_PadSetPosIn kind:function(arm,size=0x6c) addr:0x020ca71c
+MapMenu_PadMoveOut kind:function(arm,size=0x84) addr:0x020ca788
+MapMenu_PadSetPosOut kind:function(arm,size=0x9c) addr:0x020ca80c
+MapMenu_PadMoveIn kind:function(arm,size=0xb0) addr:0x020ca8a8
+MapMenu_CreateTimer kind:function(arm,size=0x48) addr:0x020ca958
+MapMenu_SetTimerValue kind:function(arm,size=0x144) addr:0x020ca9a0
+MapMenu_KillTimer kind:function(arm,size=0x48) addr:0x020caae4
+MapScr_Init kind:function(arm,size=0x4) addr:0x020cab2c
+MapScr_StartAreaScript kind:function(arm,size=0x4a4) addr:0x020cab30
+MapScr_CallScript kind:function(arm,size=0x10) addr:0x020cafd4
+MapScr_CheckPieceFull kind:function(arm,size=0x448) addr:0x020cafe4
+MapScr_Create kind:function(arm,size=0xcc) addr:0x020cb42c
+MapScr_Exec kind:function(arm,size=0x1c4) addr:0x020cb4f8
+MapScr_Kill kind:function(arm,size=0x40) addr:0x020cb6bc
 KillBustup kind:function(arm,size=0x3c) local addr:0x020cb6fc
-FldScr_GotoScript kind:function(arm,size=0x38) addr:0x020cb738
+MapScr_GotoScript kind:function(arm,size=0x38) addr:0x020cb738
 ScrExec kind:function(arm,size=0x48) local addr:0x020cb770
 ScrExecOp kind:function(arm,size=0x1030) local addr:0x020cb7b8
 ScrSetChrAnim kind:function(arm,size=0x26c) local addr:0x020cc7e8
-FldScr_StopSELoop kind:function(arm,size=0x28) addr:0x020cca54
+MapScr_StopSELoop kind:function(arm,size=0x28) addr:0x020cca54
 ScrResetState kind:function(arm,size=0x34) local addr:0x020cca7c
 ScrExecMes kind:function(arm,size=0x43c) local addr:0x020ccab0
 ScrCheckBusy kind:function(arm,size=0x8c8) local addr:0x020cceec
@@ -411,39 +411,39 @@ ScrGetAltMes kind:function(arm,size=0x4) local addr:0x020cd7b4
 ScrCallMg kind:function(arm,size=0x1f4) local addr:0x020cd7b8
 ScrCallSpecial kind:function(arm,size=0x197c) local addr:0x020cd9ac
 ScrSetMgFlag kind:function(arm,size=0x228) local addr:0x020cf328
-FldScr_ExecMgRivalDefeat kind:function(arm,size=0x814) addr:0x020cf550
-FldMes_Init kind:function(arm,size=0x2c8) addr:0x020cfd64
+MapScr_ExecMgRivalDefeat kind:function(arm,size=0x814) addr:0x020cf550
+MapMes_Init kind:function(arm,size=0x2c8) addr:0x020cfd64
 SetEndSoundFlag kind:function(arm,size=0x34) local addr:0x020d002c
 ExecMes kind:function(arm,size=0x2d0) local addr:0x020d0060
 DestroyMes kind:function(arm,size=0x128) local addr:0x020d0330
-FldMes_Close kind:function(arm,size=0x20) addr:0x020d0458
+MapMes_Close kind:function(arm,size=0x20) addr:0x020d0458
 TransferImage kind:function(arm,size=0x54) local addr:0x020d0478
-FldMes_IsAdvance kind:function(arm,size=0x38) addr:0x020d04cc
-FldMes_EndSprOn kind:function(arm,size=0x28) addr:0x020d0504
-FldMes_EndSprOff kind:function(arm,size=0x2c) addr:0x020d052c
-FldMes_SetAdvanceIcon kind:function(arm,size=0x30) addr:0x020d0558
-FldMes_SetAdvanceAuto kind:function(arm,size=0x28) addr:0x020d0588
-FldMes_SetAdvanceManual kind:function(arm,size=0x28) addr:0x020d05b0
-FldMes_SetInsertNum kind:function(arm,size=0x28) addr:0x020d05d8
-FldMes_SetInsertNum1 kind:function(arm,size=0x1c) addr:0x020d0600
-FldMes_SetInsertNum2 kind:function(arm,size=0x1c) addr:0x020d061c
-FldMes_SetInsertNum3 kind:function(arm,size=0x1c) addr:0x020d0638
-FldMes_SetUnkFlag kind:function(arm,size=0x28) addr:0x020d0654
-FldMes_SetMessage kind:function(arm,size=0x10) addr:0x020d067c
-FldMes_SetMessageEx kind:function(arm,size=0x144) addr:0x020d068c
+MapMes_IsAdvance kind:function(arm,size=0x38) addr:0x020d04cc
+MapMes_EndSprOn kind:function(arm,size=0x28) addr:0x020d0504
+MapMes_EndSprOff kind:function(arm,size=0x2c) addr:0x020d052c
+MapMes_SetAdvanceIcon kind:function(arm,size=0x30) addr:0x020d0558
+MapMes_SetAdvanceAuto kind:function(arm,size=0x28) addr:0x020d0588
+MapMes_SetAdvanceManual kind:function(arm,size=0x28) addr:0x020d05b0
+MapMes_SetInsertNum kind:function(arm,size=0x28) addr:0x020d05d8
+MapMes_SetInsertNum1 kind:function(arm,size=0x1c) addr:0x020d0600
+MapMes_SetInsertNum2 kind:function(arm,size=0x1c) addr:0x020d061c
+MapMes_SetInsertNum3 kind:function(arm,size=0x1c) addr:0x020d0638
+MapMes_SetUnkFlag kind:function(arm,size=0x28) addr:0x020d0654
+MapMes_SetMessage kind:function(arm,size=0x10) addr:0x020d067c
+MapMes_SetMessageEx kind:function(arm,size=0x144) addr:0x020d068c
 WriteMessageInsert kind:function(arm,size=0x1d0) local addr:0x020d07d0
-FldMes_AdvanceOff kind:function(arm,size=0x3c) addr:0x020d09a0
+MapMes_AdvanceOff kind:function(arm,size=0x3c) addr:0x020d09a0
 WriteMessage kind:function(arm,size=0x78) local addr:0x020d09dc
 CheckTextTouch kind:function(arm,size=0x44) local addr:0x020d0a54
 SetSpecialTextCont kind:function(arm,size=0x8c) local addr:0x020d0a98
-FldMes_SetSaveMes kind:function(arm,size=0x3c) addr:0x020d0b24
+MapMes_SetSaveMes kind:function(arm,size=0x3c) addr:0x020d0b24
 CreateNameSpr kind:function(arm,size=0x128) local addr:0x020d0b60
 KillNameSpr kind:function(arm,size=0x80) local addr:0x020d0c88
-FldMes_SetName kind:function(arm,size=0x40) addr:0x020d0d08
-FldMes_SetNameDispOn kind:function(arm,size=0x2c) addr:0x020d0d48
-FldMes_SetNameDispOff kind:function(arm,size=0x2c) addr:0x020d0d74
-FldMes_StartShuryo kind:function(arm,size=0x5c) addr:0x020d0da0
-FldMes_GetShuryoResult kind:function(arm,size=0x48) addr:0x020d0dfc
+MapMes_SetName kind:function(arm,size=0x40) addr:0x020d0d08
+MapMes_SetNameDispOn kind:function(arm,size=0x2c) addr:0x020d0d48
+MapMes_SetNameDispOff kind:function(arm,size=0x2c) addr:0x020d0d74
+MapMes_StartShuryo kind:function(arm,size=0x5c) addr:0x020d0da0
+MapMes_GetShuryoResult kind:function(arm,size=0x48) addr:0x020d0dfc
 CreateShuryoSpr kind:function(arm,size=0x1bc) local addr:0x020d0e44
 KillShuryoSpr kind:function(arm,size=0xa0) local addr:0x020d1000
 CreateShuryoColorAnim kind:function(arm,size=0x68) local addr:0x020d10a0
@@ -451,8 +451,8 @@ KillShuryoColorAnim kind:function(arm,size=0x54) local addr:0x020d1108
 ShuryoDispOn kind:function(arm,size=0x38) local addr:0x020d115c
 ShuryoDispOff kind:function(arm,size=0x38) local addr:0x020d1194
 ShuryoIsDone kind:function(arm,size=0x180) local addr:0x020d11cc
-FldMes_StartHensinKao kind:function(arm,size=0x90) addr:0x020d134c
-FldMes_GetHensinKaoResult kind:function(arm,size=0x44) addr:0x020d13dc
+MapMes_StartHensinKao kind:function(arm,size=0x90) addr:0x020d134c
+MapMes_GetHensinKaoResult kind:function(arm,size=0x44) addr:0x020d13dc
 CreateHensinKaoSpr kind:function(arm,size=0x17c) local addr:0x020d1420
 KillHensinKaoSpr kind:function(arm,size=0xac) local addr:0x020d159c
 CreateHensinKaoColorAnim kind:function(arm,size=0x6c) local addr:0x020d1648
@@ -460,70 +460,70 @@ KillHensinKaoColorAnim kind:function(arm,size=0x58) local addr:0x020d16b4
 HensinKaoDispOn kind:function(arm,size=0x38) local addr:0x020d170c
 HensinKaoDispOff kind:function(arm,size=0x38) local addr:0x020d1744
 HensinKaoIsDone kind:function(arm,size=0x19c) local addr:0x020d177c
-FldEv_ScreenMaskCreate kind:function(arm,size=0x140) addr:0x020d1918
+MapEv_ScreenMaskCreate kind:function(arm,size=0x140) addr:0x020d1918
 ScreenMaskExec kind:function(arm,size=0x124) local addr:0x020d1a58
 ScreenMaskDestroy kind:function(arm,size=0x38) local addr:0x020d1b7c
-FldEv_ScreenMaskKill kind:function(arm,size=0x20) addr:0x020d1bb4
-FldEv_ScreenMaskOn kind:function(arm,size=0x4) addr:0x020d1bd4
-FldEv_ScreenMaskBG2SetOut kind:function(arm,size=0x2c) addr:0x020d1bd8
-FldEv_ScreenMaskBG2SetIn kind:function(arm,size=0x2c) addr:0x020d1c04
-FldEvChr_StartEscort kind:function(arm,size=0x30) addr:0x020d1c30
-FldEvChr_InitEscort kind:function(arm,size=0x24) addr:0x020d1c60
-FldEvChr_EndEscort kind:function(arm,size=0x40) addr:0x020d1c84
+MapEv_ScreenMaskKill kind:function(arm,size=0x20) addr:0x020d1bb4
+MapEv_ScreenMaskOn kind:function(arm,size=0x4) addr:0x020d1bd4
+MapEv_ScreenMaskBG2SetOut kind:function(arm,size=0x2c) addr:0x020d1bd8
+MapEv_ScreenMaskBG2SetIn kind:function(arm,size=0x2c) addr:0x020d1c04
+MapEvChr_StartEscort kind:function(arm,size=0x30) addr:0x020d1c30
+MapEvChr_InitEscort kind:function(arm,size=0x24) addr:0x020d1c60
+MapEvChr_EndEscort kind:function(arm,size=0x40) addr:0x020d1c84
 SpawnEscort kind:function(arm,size=0xac) local addr:0x020d1cc4
-FldEvChr_MoveEscort kind:function(arm,size=0x148) addr:0x020d1d70
+MapEvChr_MoveEscort kind:function(arm,size=0x148) addr:0x020d1d70
 EscortUpdate kind:function(arm,size=0x184) local addr:0x020d1eb8
 EscortSetSpeed kind:function(arm,size=0x3c) local addr:0x020d203c
-FldEvChr_InitEscortHis kind:function(arm,size=0xf8) addr:0x020d2078
-FldEvChr_AddEscortHis kind:function(arm,size=0xb4) addr:0x020d2170
-FldEvChr_Create kind:function(arm,size=0x30) addr:0x020d2224
-FldEvChr_Spawn kind:function(arm,size=0x80) addr:0x020d2254
-FldEvChr_SetPath kind:function(arm,size=0x3c) addr:0x020d22d4
+MapEvChr_InitEscortHis kind:function(arm,size=0xf8) addr:0x020d2078
+MapEvChr_AddEscortHis kind:function(arm,size=0xb4) addr:0x020d2170
+MapEvChr_Create kind:function(arm,size=0x30) addr:0x020d2224
+MapEvChr_Spawn kind:function(arm,size=0x80) addr:0x020d2254
+MapEvChr_SetPath kind:function(arm,size=0x3c) addr:0x020d22d4
 ResetEvChr kind:function(arm,size=0x3c) local addr:0x020d2310
 InitEvChr kind:function(arm,size=0x5c) local addr:0x020d234c
-FldMenu_StampInit kind:function(arm,size=0xfc) addr:0x020d23a8
-FldMenu_StampExec kind:function(arm,size=0x1cc) addr:0x020d24a4
-FldMenu_StampKill kind:function(arm,size=0x50) addr:0x020d2670
+MapMenu_StampInit kind:function(arm,size=0xfc) addr:0x020d23a8
+MapMenu_StampExec kind:function(arm,size=0x1cc) addr:0x020d24a4
+MapMenu_StampKill kind:function(arm,size=0x50) addr:0x020d2670
 LoadRes kind:function(arm,size=0xfc) local addr:0x020d26c0
 InitSpr kind:function(arm,size=0x70) local addr:0x020d27bc
 RemoveSpr kind:function(arm,size=0x20) local addr:0x020d282c
 GetMenuClick kind:function(arm,size=0x64) local addr:0x020d284c
 GetClick kind:function(arm,size=0xf0) local addr:0x020d28b0
 CheckCloseBompad kind:function(arm,size=0x8c) local addr:0x020d29a0
-FldMenu_StampOverInit kind:function(arm,size=0x140) addr:0x020d2a2c
-FldMenu_StampOverExec kind:function(arm,size=0x338) addr:0x020d2b6c
-FldMenu_StampOverKill kind:function(arm,size=0x50) addr:0x020d2ea4
+MapMenu_StampOverInit kind:function(arm,size=0x140) addr:0x020d2a2c
+MapMenu_StampOverExec kind:function(arm,size=0x338) addr:0x020d2b6c
+MapMenu_StampOverKill kind:function(arm,size=0x50) addr:0x020d2ea4
 LoadRes kind:function(arm,size=0xfc) local addr:0x020d2ef4
 InitSpr kind:function(arm,size=0x70) local addr:0x020d2ff0
 GetClick kind:function(arm,size=0x58) local addr:0x020d3060
 StartStampMes kind:function(arm,size=0xbc) local addr:0x020d30b8
-FldEvSpr_Init kind:function(arm,size=0x34) addr:0x020d3174
-FldEvSpr_Create kind:function(arm,size=0x20c) addr:0x020d31a8
+MapEvSpr_Init kind:function(arm,size=0x34) addr:0x020d3174
+MapEvSpr_Create kind:function(arm,size=0x20c) addr:0x020d31a8
 KillEvSpr kind:function(arm,size=0xa4) local addr:0x020d33b4
-FldEvSpr_Close kind:function(arm,size=0x2c) addr:0x020d3458
-FldEvSpr_Exec kind:function(arm,size=0x20) addr:0x020d3484
+MapEvSpr_Close kind:function(arm,size=0x2c) addr:0x020d3458
+MapEvSpr_Exec kind:function(arm,size=0x20) addr:0x020d3484
 UpdateEvSpr kind:function(arm,size=0x64) local addr:0x020d34a4
-FldEvSpr_DispOn kind:function(arm,size=0x28) addr:0x020d3508
-FldEvSpr_DispOff kind:function(arm,size=0x28) addr:0x020d3530
-FldEvSpr_SetPos kind:function(arm,size=0x24) addr:0x020d3558
-FldEvSpr_AddPos kind:function(arm,size=0x38) addr:0x020d357c
-FldEvSpr_SetLayer kind:function(arm,size=0x2c) addr:0x020d35b4
-FldEvSpr_SetPrio kind:function(arm,size=0x30) addr:0x020d35e0
-FldEvSpr_SetAnim kind:function(arm,size=0x48) addr:0x020d3610
-FldEvSpr_SetScaleX kind:function(arm,size=0x28) addr:0x020d3658
-FldEvSpr_SetScale kind:function(arm,size=0x24) addr:0x020d3680
-FldEvItem_Init kind:function(arm,size=0x34) addr:0x020d36a4
-FldEvItem_Create kind:function(arm,size=0x218) addr:0x020d36d8
-FldEvItem_StartJingle kind:function(arm,size=0x160) addr:0x020d38f0
+MapEvSpr_DispOn kind:function(arm,size=0x28) addr:0x020d3508
+MapEvSpr_DispOff kind:function(arm,size=0x28) addr:0x020d3530
+MapEvSpr_SetPos kind:function(arm,size=0x24) addr:0x020d3558
+MapEvSpr_AddPos kind:function(arm,size=0x38) addr:0x020d357c
+MapEvSpr_SetLayer kind:function(arm,size=0x2c) addr:0x020d35b4
+MapEvSpr_SetPrio kind:function(arm,size=0x30) addr:0x020d35e0
+MapEvSpr_SetAnim kind:function(arm,size=0x48) addr:0x020d3610
+MapEvSpr_SetScaleX kind:function(arm,size=0x28) addr:0x020d3658
+MapEvSpr_SetScale kind:function(arm,size=0x24) addr:0x020d3680
+MapEvItem_Init kind:function(arm,size=0x34) addr:0x020d36a4
+MapEvItem_Create kind:function(arm,size=0x218) addr:0x020d36d8
+MapEvItem_StartJingle kind:function(arm,size=0x160) addr:0x020d38f0
 KillEvItem kind:function(arm,size=0x8c) local addr:0x020d3a50
-FldEvItem_Close kind:function(arm,size=0x2c) addr:0x020d3adc
-FldEvItem_Exec kind:function(arm,size=0x20) addr:0x020d3b08
+MapEvItem_Close kind:function(arm,size=0x2c) addr:0x020d3adc
+MapEvItem_Exec kind:function(arm,size=0x20) addr:0x020d3b08
 UpdateEvItem kind:function(arm,size=0x64) local addr:0x020d3b28
-FldEvItem_DispOff kind:function(arm,size=0x28) addr:0x020d3b8c
-FldEvItem_SetPos kind:function(arm,size=0x24) addr:0x020d3bb4
-FldEvItem_AddPos kind:function(arm,size=0x38) addr:0x020d3bd8
-FldEvItem_SetAnim kind:function(arm,size=0x40) addr:0x020d3c10
-FldEvItem_SetScaleX kind:function(arm,size=0x28) addr:0x020d3c50
+MapEvItem_DispOff kind:function(arm,size=0x28) addr:0x020d3b8c
+MapEvItem_SetPos kind:function(arm,size=0x24) addr:0x020d3bb4
+MapEvItem_AddPos kind:function(arm,size=0x38) addr:0x020d3bd8
+MapEvItem_SetAnim kind:function(arm,size=0x40) addr:0x020d3c10
+MapEvItem_SetScaleX kind:function(arm,size=0x28) addr:0x020d3c50
 func_ov002_020d3c78 kind:function(arm,size=0xa4) addr:0x020d3c78
 func_ov002_020d3d1c kind:function(arm,size=0x120) addr:0x020d3d1c
 func_ov002_020d3e3c kind:function(arm,size=0x744) addr:0x020d3e3c
@@ -539,140 +539,140 @@ func_ov002_020d6864 kind:function(arm,size=0x6ac) addr:0x020d6864
 func_ov002_020d6f10 kind:function(arm,size=0xd0) addr:0x020d6f10
 func_ov002_020d6fe0 kind:function(arm,size=0x170) addr:0x020d6fe0
 func_ov002_020d7150 kind:function(arm,size=0x78) addr:0x020d7150
-FldEv_ExecBonus kind:function(arm,size=0x2fc) addr:0x020d71c8
-FldEv_ExecTreasureBoxOpen kind:function(arm,size=0x3f4) addr:0x020d74c4
-FldEv_ExecTreasureBoxSwimOpen kind:function(arm,size=0x310) addr:0x020d78b8
-FldEv_Exec3PieceBonus kind:function(arm,size=0x1e4) addr:0x020d7bc8
-FldEv_ExecCupOpen kind:function(arm,size=0x794) addr:0x020d7dac
+MapEv_ExecBonus kind:function(arm,size=0x2fc) addr:0x020d71c8
+MapEv_ExecTreasureBoxOpen kind:function(arm,size=0x3f4) addr:0x020d74c4
+MapEv_ExecTreasureBoxSwimOpen kind:function(arm,size=0x310) addr:0x020d78b8
+MapEv_Exec3PieceBonus kind:function(arm,size=0x1e4) addr:0x020d7bc8
+MapEv_ExecCupOpen kind:function(arm,size=0x794) addr:0x020d7dac
 func_ov002_020d8540 kind:function(arm,size=0x60) addr:0x020d8540
 func_ov002_020d85a0 kind:function(arm,size=0x60) addr:0x020d85a0
 func_ov002_020d8600 kind:function(arm,size=0x94) addr:0x020d8600
-FldEv_ExecStamp kind:function(arm,size=0x264) addr:0x020d8694
-FldEv_ExecBombExplode kind:function(arm,size=0x7b4) addr:0x020d88f8
-FldEv_ExecBombPedestal kind:function(arm,size=0x3b4) addr:0x020d90ac
-FldEv_ExecSandSweepStart kind:function(arm,size=0x34) addr:0x020d9460
-FldEv_ExecSandSweepLose kind:function(arm,size=0x14c) addr:0x020d9494
-FldEv_ExecSandSweepWin kind:function(arm,size=0xd8) addr:0x020d95e0
-FldEv_ExecTruck kind:function(arm,size=0x164) addr:0x020d96b8
-FldEv_ExecTruckDropOff kind:function(arm,size=0x1e4) addr:0x020d981c
-FldEv_ExecZoneWarp kind:function(arm,size=0x214) addr:0x020d9a00
-FldEv_ExecTreeShakeStart kind:function(arm,size=0x5c) addr:0x020d9c14
-FldEv_ExecTreeShakeFail kind:function(arm,size=0xb4) addr:0x020d9c70
-FldEv_ExecTBBMUp kind:function(arm,size=0x670) addr:0x020d9d24
-FldEv_ExecTBBMDown kind:function(arm,size=0x4b0) addr:0x020da394
-FldEv_ExecTBBMLongStart kind:function(arm,size=0x3c0) addr:0x020da844
-FldEv_ExecTBBMLongUp kind:function(arm,size=0x3f8) addr:0x020dac04
-FldEv_ExecTBBMLongDown kind:function(arm,size=0x3bc) addr:0x020daffc
-FldEv_ExecTightrope kind:function(arm,size=0x438) addr:0x020db3b8
-FldEv_ExecDisguiseEnd kind:function(arm,size=0x1dc) addr:0x020db7f0
-FldEv_ExecEvilOut kind:function(arm,size=0x1a4) addr:0x020db9cc
-FldEv_ExecEvilStart kind:function(arm,size=0x1f4) addr:0x020dbb70
-FldEv_InitEvent kind:function(arm,size=0x1ec) addr:0x020dbd64
-FldEv_CheckEvent kind:function(arm,size=0xcc) addr:0x020dbf50
-FldEv_CheckTowerEnter kind:function(arm,size=0x90) addr:0x020dc01c
-FldEv_ExecEvent kind:function(arm,size=0x32c) addr:0x020dc0ac
-FldEv_SetChrSpeed kind:function(arm,size=0x28) addr:0x020dc3d8
+MapEv_ExecStamp kind:function(arm,size=0x264) addr:0x020d8694
+MapEv_ExecBombExplode kind:function(arm,size=0x7b4) addr:0x020d88f8
+MapEv_ExecBombPedestal kind:function(arm,size=0x3b4) addr:0x020d90ac
+MapEv_ExecSandSweepStart kind:function(arm,size=0x34) addr:0x020d9460
+MapEv_ExecSandSweepLose kind:function(arm,size=0x14c) addr:0x020d9494
+MapEv_ExecSandSweepWin kind:function(arm,size=0xd8) addr:0x020d95e0
+MapEv_ExecTruck kind:function(arm,size=0x164) addr:0x020d96b8
+MapEv_ExecTruckDropOff kind:function(arm,size=0x1e4) addr:0x020d981c
+MapEv_ExecZoneWarp kind:function(arm,size=0x214) addr:0x020d9a00
+MapEv_ExecTreeShakeStart kind:function(arm,size=0x5c) addr:0x020d9c14
+MapEv_ExecTreeShakeFail kind:function(arm,size=0xb4) addr:0x020d9c70
+MapEv_ExecTBBMUp kind:function(arm,size=0x670) addr:0x020d9d24
+MapEv_ExecTBBMDown kind:function(arm,size=0x4b0) addr:0x020da394
+MapEv_ExecTBBMLongStart kind:function(arm,size=0x3c0) addr:0x020da844
+MapEv_ExecTBBMLongUp kind:function(arm,size=0x3f8) addr:0x020dac04
+MapEv_ExecTBBMLongDown kind:function(arm,size=0x3bc) addr:0x020daffc
+MapEv_ExecTightrope kind:function(arm,size=0x438) addr:0x020db3b8
+MapEv_ExecDisguiseEnd kind:function(arm,size=0x1dc) addr:0x020db7f0
+MapEv_ExecEvilOut kind:function(arm,size=0x1a4) addr:0x020db9cc
+MapEv_ExecEvilStart kind:function(arm,size=0x1f4) addr:0x020dbb70
+MapEv_InitEvent kind:function(arm,size=0x1ec) addr:0x020dbd64
+MapEv_CheckEvent kind:function(arm,size=0xcc) addr:0x020dbf50
+MapEv_CheckTowerEnter kind:function(arm,size=0x90) addr:0x020dc01c
+MapEv_ExecEvent kind:function(arm,size=0x32c) addr:0x020dc0ac
+MapEv_SetChrSpeed kind:function(arm,size=0x28) addr:0x020dc3d8
 func_ov002_020dc400 kind:function(arm,size=0x1b0) addr:0x020dc400
 func_ov002_020dc5b0 kind:function(arm,size=0x104) addr:0x020dc5b0
 func_ov002_020dc6b4 kind:function(arm,size=0x110) addr:0x020dc6b4
-FldEv_SetEscapePos kind:function(arm,size=0x20) addr:0x020dc7c4
-FldEv_UpdateEscape kind:function(arm,size=0x94) addr:0x020dc7e4
-FldEv_CheckEscape kind:function(arm,size=0x5c) addr:0x020dc878
-FldEv_SetEscortEscapePos kind:function(arm,size=0x20) addr:0x020dc8d4
-FldEv_UpdateEscortEscape kind:function(arm,size=0x94) addr:0x020dc8f4
-FldEv_CheckEscortEscape kind:function(arm,size=0x5c) addr:0x020dc988
-FldEv_CameraMoveTo kind:function(arm,size=0x44) addr:0x020dc9e4
-FldEv_ExecNull kind:function(arm,size=0x8) addr:0x020dca28
-FldEv_BustupCreate kind:function(arm,size=0x28c) addr:0x020dca30
-FldEv_BustupKill kind:function(arm,size=0x90) addr:0x020dccbc
-FldEv_BustupSetPos kind:function(arm,size=0x40) addr:0x020dcd4c
-FldEv_BustupSetPosIdx kind:function(arm,size=0x80) addr:0x020dcd8c
-FldEvStar_ExecSwimStart kind:function(arm,size=0x1ac) addr:0x020dce0c
-FldEvStar_ExecSwimEnd kind:function(arm,size=0x218) addr:0x020dcfb8
-FldEvStar_ExecHorseRunStart kind:function(arm,size=0x44c) addr:0x020dd1d0
-FldEvStar_ExecHorseRunEnd kind:function(arm,size=0x10c) addr:0x020dd61c
-FldEvStar_ExecFlyStart kind:function(arm,size=0x40c) addr:0x020dd728
-FldEvStar_ExecFly kind:function(arm,size=0x130) addr:0x020ddb34
-FldEvStar_ExecBallKick kind:function(arm,size=0x3c4) addr:0x020ddc64
-FldEvStar_ExecBallLose kind:function(arm,size=0x11c) addr:0x020de028
-FldEvStar_ExecAquaEscape kind:function(arm,size=0x270) addr:0x020de144
-FldEvStar_ExecNinjaSand kind:function(arm,size=0xdc) addr:0x020de3b4
-FldEvStar_ExecGateTutorialStart kind:function(arm,size=0x8c) addr:0x020de490
-FldEvStar_ExecGateTutorialEnd kind:function(arm,size=0xf8) addr:0x020de51c
-FldEvStar_ExecStarFocus kind:function(arm,size=0x134) addr:0x020de614
-FldEvStar_ExecPlayerReFocus kind:function(arm,size=0xec) addr:0x020de748
-FldEvStar_ExecPlayerMiniStart kind:function(arm,size=0x204) addr:0x020de834
-FldEvStar_ExecPlayerMiniEnd kind:function(arm,size=0x240) addr:0x020dea38
-FldEvStar_ExecRockKickStart kind:function(arm,size=0x194) addr:0x020dec78
-FldEvStar_ExecRockKick kind:function(arm,size=0x13c) addr:0x020dee0c
-FldEvStar_ExecRockMove kind:function(arm,size=0x424) addr:0x020def48
-FldEvStar_ExecPinkTileRoom kind:function(arm,size=0x1ec) addr:0x020df36c
-FldEvStar_ExecStarSageHint kind:function(arm,size=0x17c) addr:0x020df558
-FldEvStar_ExecCastleFocus kind:function(arm,size=0xc0) addr:0x020df6d4
-FldEvStar_ExecJetEnter kind:function(arm,size=0x32c) addr:0x020df794
-FldEvStar_ExecUzuDrown kind:function(arm,size=0x114) addr:0x020dfac0
-FldEvStar_ExecRockOpenEnter kind:function(arm,size=0xdc) addr:0x020dfbd4
-FldEv_EnterInit kind:function(arm,size=0xc64) addr:0x020dfcb0
-FldEv_EnterCheck kind:function(arm,size=0x4c8) addr:0x020e0914
-FldEv_EnterExec kind:function(arm,size=0x238) addr:0x020e0ddc
-FldEv_SetCycleKansei kind:function(arm,size=0xc0) addr:0x020e1014
-FldEv_SetDanceKansei kind:function(arm,size=0xa0) addr:0x020e10d4
-FldEv_SetCycleKanseiFlag kind:function(arm,size=0x74) addr:0x020e1174
-FldEv_SetDanceKanseiFlag kind:function(arm,size=0x28) addr:0x020e11e8
-FldEv_SetSumoLoseFlag kind:function(arm,size=0x28) addr:0x020e1210
-FldEv_SetSumoWinFlag kind:function(arm,size=0x28) addr:0x020e1238
-FldEv_SetDanceFlag kind:function(arm,size=0x58) addr:0x020e1260
-FldEv_EnterNull kind:function(arm,size=0x8) addr:0x020e12b8
-FldEv_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
-FldEv_SwimMove kind:function(arm,size=0xdc) addr:0x020e13f4
+MapEv_SetEscapePos kind:function(arm,size=0x20) addr:0x020dc7c4
+MapEv_UpdateEscape kind:function(arm,size=0x94) addr:0x020dc7e4
+MapEv_CheckEscape kind:function(arm,size=0x5c) addr:0x020dc878
+MapEv_SetEscortEscapePos kind:function(arm,size=0x20) addr:0x020dc8d4
+MapEv_UpdateEscortEscape kind:function(arm,size=0x94) addr:0x020dc8f4
+MapEv_CheckEscortEscape kind:function(arm,size=0x5c) addr:0x020dc988
+MapEv_CameraMoveTo kind:function(arm,size=0x44) addr:0x020dc9e4
+MapEv_ExecNull kind:function(arm,size=0x8) addr:0x020dca28
+MapEv_BustupCreate kind:function(arm,size=0x28c) addr:0x020dca30
+MapEv_BustupKill kind:function(arm,size=0x90) addr:0x020dccbc
+MapEv_BustupSetPos kind:function(arm,size=0x40) addr:0x020dcd4c
+MapEv_BustupSetPosIdx kind:function(arm,size=0x80) addr:0x020dcd8c
+MapEvStar_ExecSwimStart kind:function(arm,size=0x1ac) addr:0x020dce0c
+MapEvStar_ExecSwimEnd kind:function(arm,size=0x218) addr:0x020dcfb8
+MapEvStar_ExecHorseRunStart kind:function(arm,size=0x44c) addr:0x020dd1d0
+MapEvStar_ExecHorseRunEnd kind:function(arm,size=0x10c) addr:0x020dd61c
+MapEvStar_ExecFlyStart kind:function(arm,size=0x40c) addr:0x020dd728
+MapEvStar_ExecFly kind:function(arm,size=0x130) addr:0x020ddb34
+MapEvStar_ExecBallKick kind:function(arm,size=0x3c4) addr:0x020ddc64
+MapEvStar_ExecBallLose kind:function(arm,size=0x11c) addr:0x020de028
+MapEvStar_ExecAquaEscape kind:function(arm,size=0x270) addr:0x020de144
+MapEvStar_ExecNinjaSand kind:function(arm,size=0xdc) addr:0x020de3b4
+MapEvStar_ExecGateTutorialStart kind:function(arm,size=0x8c) addr:0x020de490
+MapEvStar_ExecGateTutorialEnd kind:function(arm,size=0xf8) addr:0x020de51c
+MapEvStar_ExecStarFocus kind:function(arm,size=0x134) addr:0x020de614
+MapEvStar_ExecPlayerReFocus kind:function(arm,size=0xec) addr:0x020de748
+MapEvStar_ExecPlayerMiniStart kind:function(arm,size=0x204) addr:0x020de834
+MapEvStar_ExecPlayerMiniEnd kind:function(arm,size=0x240) addr:0x020dea38
+MapEvStar_ExecRockKickStart kind:function(arm,size=0x194) addr:0x020dec78
+MapEvStar_ExecRockKick kind:function(arm,size=0x13c) addr:0x020dee0c
+MapEvStar_ExecRockMove kind:function(arm,size=0x424) addr:0x020def48
+MapEvStar_ExecPinkTileRoom kind:function(arm,size=0x1ec) addr:0x020df36c
+MapEvStar_ExecStarSageHint kind:function(arm,size=0x17c) addr:0x020df558
+MapEvStar_ExecCastleFocus kind:function(arm,size=0xc0) addr:0x020df6d4
+MapEvStar_ExecJetEnter kind:function(arm,size=0x32c) addr:0x020df794
+MapEvStar_ExecUzuDrown kind:function(arm,size=0x114) addr:0x020dfac0
+MapEvStar_ExecRockOpenEnter kind:function(arm,size=0xdc) addr:0x020dfbd4
+MapEv_EnterInit kind:function(arm,size=0xc64) addr:0x020dfcb0
+MapEv_EnterCheck kind:function(arm,size=0x4c8) addr:0x020e0914
+MapEv_EnterExec kind:function(arm,size=0x238) addr:0x020e0ddc
+MapEv_SetCycleKansei kind:function(arm,size=0xc0) addr:0x020e1014
+MapEv_SetDanceKansei kind:function(arm,size=0xa0) addr:0x020e10d4
+MapEv_SetCycleKanseiFlag kind:function(arm,size=0x74) addr:0x020e1174
+MapEv_SetDanceKanseiFlag kind:function(arm,size=0x28) addr:0x020e11e8
+MapEv_SetSumoLoseFlag kind:function(arm,size=0x28) addr:0x020e1210
+MapEv_SetSumoWinFlag kind:function(arm,size=0x28) addr:0x020e1238
+MapEv_SetDanceFlag kind:function(arm,size=0x58) addr:0x020e1260
+MapEv_EnterNull kind:function(arm,size=0x8) addr:0x020e12b8
+MapEv_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
+MapEv_SwimMove kind:function(arm,size=0xdc) addr:0x020e13f4
 func_ov002_020e14d0 kind:function(arm,size=0xd4) addr:0x020e14d0
 func_ov002_020e15a4 kind:function(arm,size=0x218) addr:0x020e15a4
-FldEvStar_ExecTileTouch kind:function(arm,size=0x2f8) addr:0x020e17bc
+MapEvStar_ExecTileTouch kind:function(arm,size=0x2f8) addr:0x020e17bc
 func_ov002_020e1ab4 kind:function(arm,size=0xf0) addr:0x020e1ab4
-FldEv_TouchInit kind:function(arm,size=0x28) addr:0x020e1ba4
-FldEv_TouchExec kind:function(arm,size=0x218) addr:0x020e1bcc
-FldEv_TouchClose kind:function(arm,size=0x2c) addr:0x020e1de4
+MapEv_TouchInit kind:function(arm,size=0x28) addr:0x020e1ba4
+MapEv_TouchExec kind:function(arm,size=0x218) addr:0x020e1bcc
+MapEv_TouchClose kind:function(arm,size=0x2c) addr:0x020e1de4
 func_ov002_020e1e10 kind:function(arm,size=0x3c) addr:0x020e1e10
-FldEv_TouchSwipeCreate kind:function(arm,size=0x28) addr:0x020e1e4c
-FldEv_TouchSwipeKill kind:function(arm,size=0x2c) addr:0x020e1e74
-FldEv_TouchSwipeExec kind:function(arm,size=0xe4) addr:0x020e1ea0
+MapEv_TouchSwipeCreate kind:function(arm,size=0x28) addr:0x020e1e4c
+MapEv_TouchSwipeKill kind:function(arm,size=0x2c) addr:0x020e1e74
+MapEv_TouchSwipeExec kind:function(arm,size=0xe4) addr:0x020e1ea0
 func_ov002_020e1f84 kind:function(arm,size=0x15c) addr:0x020e1f84
 func_ov002_020e20e0 kind:function(arm,size=0x8c) addr:0x020e20e0
-FldEv_TouchGetSwipe kind:function(arm,size=0x78) addr:0x020e216c
-FldEv_TouchSwipeIsDisable kind:function(arm,size=0x34) addr:0x020e21e4
-FldEv_TouchGetSwipeSpeed kind:function(arm,size=0x40) addr:0x020e2218
+MapEv_TouchGetSwipe kind:function(arm,size=0x78) addr:0x020e216c
+MapEv_TouchSwipeIsDisable kind:function(arm,size=0x34) addr:0x020e21e4
+MapEv_TouchGetSwipeSpeed kind:function(arm,size=0x40) addr:0x020e2218
 func_ov002_020e2258 kind:function(arm,size=0x124) addr:0x020e2258
 func_ov002_020e237c kind:function(arm,size=0x6c) addr:0x020e237c
-FldEvStar_ExecTreeShakeTouch kind:function(arm,size=0x44c) addr:0x020e23e8
-FldEvSun_ExecTreeShakeTouch kind:function(arm,size=0xb48) addr:0x020e2834
-FldEvMoon_ExecBasketballTouch kind:function(arm,size=0xe40) addr:0x020e337c
-FldEvMoon_ExecBasketballStart kind:function(arm,size=0xe0) addr:0x020e41bc
-FldEvMoon_ExecBasketballLose kind:function(arm,size=0x210) addr:0x020e429c
-FldEvMoon_ExecBasketballWin kind:function(arm,size=0xac) addr:0x020e44ac
-FldEvMoon_ExecTightropeWin kind:function(arm,size=0x17c) addr:0x020e4558
-FldEvMoon_ExecTightropeLose kind:function(arm,size=0xc0) addr:0x020e46d4
-FldEvMoon_ExecWaterBomb kind:function(arm,size=0x24c) addr:0x020e4794
-FldEvMoon_ExecFishingNinja kind:function(arm,size=0x1d4) addr:0x020e49e0
-FldEvMoon_ExecFishingNinjaEnd kind:function(arm,size=0x214) addr:0x020e4bb4
-FldEvMoon_ExecThrowPiece kind:function(arm,size=0x17c) addr:0x020e4dc8
-FldEvMoon_ExecFishing kind:function(arm,size=0x2ac) addr:0x020e4f44
-FldEvMoon_ExecPrettyGrabUp kind:function(arm,size=0x22c) addr:0x020e51f0
-FldEvMoon_ExecExpandDirect kind:function(arm,size=0x2a8) addr:0x020e541c
-FldEvMoon_ExecExpand kind:function(arm,size=0x2b0) addr:0x020e56c4
-FldEvMoon_ExecFlyUp kind:function(arm,size=0xe0) addr:0x020e5974
-FldEvMoon_ExecSlider kind:function(arm,size=0x1a4) addr:0x020e5a54
-FldEvMoon_ExecDiceRollFirst kind:function(arm,size=0x110) addr:0x020e5bf8
-FldEvMoon_ExecDiceRoll kind:function(arm,size=0x5c0) addr:0x020e5d08
+MapEvStar_ExecTreeShakeTouch kind:function(arm,size=0x44c) addr:0x020e23e8
+MapEvSun_ExecTreeShakeTouch kind:function(arm,size=0xb48) addr:0x020e2834
+MapEvMoon_ExecBasketballTouch kind:function(arm,size=0xe40) addr:0x020e337c
+MapEvMoon_ExecBasketballStart kind:function(arm,size=0xe0) addr:0x020e41bc
+MapEvMoon_ExecBasketballLose kind:function(arm,size=0x210) addr:0x020e429c
+MapEvMoon_ExecBasketballWin kind:function(arm,size=0xac) addr:0x020e44ac
+MapEvMoon_ExecTightropeWin kind:function(arm,size=0x17c) addr:0x020e4558
+MapEvMoon_ExecTightropeLose kind:function(arm,size=0xc0) addr:0x020e46d4
+MapEvMoon_ExecWaterBomb kind:function(arm,size=0x24c) addr:0x020e4794
+MapEvMoon_ExecFishingNinja kind:function(arm,size=0x1d4) addr:0x020e49e0
+MapEvMoon_ExecFishingNinjaEnd kind:function(arm,size=0x214) addr:0x020e4bb4
+MapEvMoon_ExecThrowPiece kind:function(arm,size=0x17c) addr:0x020e4dc8
+MapEvMoon_ExecFishing kind:function(arm,size=0x2ac) addr:0x020e4f44
+MapEvMoon_ExecPrettyGrabUp kind:function(arm,size=0x22c) addr:0x020e51f0
+MapEvMoon_ExecExpandDirect kind:function(arm,size=0x2a8) addr:0x020e541c
+MapEvMoon_ExecExpand kind:function(arm,size=0x2b0) addr:0x020e56c4
+MapEvMoon_ExecFlyUp kind:function(arm,size=0xe0) addr:0x020e5974
+MapEvMoon_ExecSlider kind:function(arm,size=0x1a4) addr:0x020e5a54
+MapEvMoon_ExecDiceRollFirst kind:function(arm,size=0x110) addr:0x020e5bf8
+MapEvMoon_ExecDiceRoll kind:function(arm,size=0x5c0) addr:0x020e5d08
 func_ov002_020e62c8 kind:function(arm,size=0xe8) addr:0x020e62c8
 func_ov002_020e63b0 kind:function(arm,size=0x54) addr:0x020e63b0
 func_ov002_020e6404 kind:function(arm,size=0xa0) addr:0x020e6404
 func_ov002_020e64a4 kind:function(arm,size=0x74) addr:0x020e64a4
-FldEvMoon_ExecBigBallMove kind:function(arm,size=0x1cc) addr:0x020e6518
-FldEvMoon_ExecTrampolineJumpStart kind:function(arm,size=0x1d0) addr:0x020e66e4
-FldEvMoon_ExecTrampolineJumpEnd kind:function(arm,size=0x8c) addr:0x020e68b4
-FldEvMoon_ExecTrampolineFall kind:function(arm,size=0x164) addr:0x020e6940
-FldEvMoon_ExecNinjaBalloon kind:function(arm,size=0x14c) addr:0x020e6aa4
-FldChr_PathExec kind:function(arm,size=0x10c) addr:0x020e6bf0
+MapEvMoon_ExecBigBallMove kind:function(arm,size=0x1cc) addr:0x020e6518
+MapEvMoon_ExecTrampolineJumpStart kind:function(arm,size=0x1d0) addr:0x020e66e4
+MapEvMoon_ExecTrampolineJumpEnd kind:function(arm,size=0x8c) addr:0x020e68b4
+MapEvMoon_ExecTrampolineFall kind:function(arm,size=0x164) addr:0x020e6940
+MapEvMoon_ExecNinjaBalloon kind:function(arm,size=0x14c) addr:0x020e6aa4
+MapChr_PathExec kind:function(arm,size=0x10c) addr:0x020e6bf0
 func_ov002_020e6cfc kind:function(arm,size=0x1d0) addr:0x020e6cfc
 func_ov002_020e6ecc kind:function(arm,size=0x98) addr:0x020e6ecc
 func_ov002_020e6f64 kind:function(arm,size=0x13c) addr:0x020e6f64
@@ -714,19 +714,19 @@ func_ov002_020ea4b8 kind:function(arm,size=0x70) addr:0x020ea4b8
 func_ov002_020ea528 kind:function(arm,size=0x6c) addr:0x020ea528
 func_ov002_020ea594 kind:function(arm,size=0x7c) addr:0x020ea594
 func_ov002_020ea610 kind:function(arm,size=0x78) addr:0x020ea610
-FldSub_SetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea688
-FldSub_ResetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea6a4
+MapSub_SetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea688
+MapSub_ResetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea6a4
 func_ov002_020ea6c0 kind:function(arm,size=0x1b8) addr:0x020ea6c0
 func_ov002_020ea878 kind:function(arm,size=0x1c) addr:0x020ea878
 func_ov002_020ea894 kind:function(arm,size=0xa4) addr:0x020ea894
 func_ov002_020ea938 kind:function(arm,size=0x5c) addr:0x020ea938
-FldSub_Create kind:function(arm,size=0x9c) addr:0x020ea994
+MapSub_Create kind:function(arm,size=0x9c) addr:0x020ea994
 func_ov002_020eaa30 kind:function(arm,size=0x4) addr:0x020eaa30
 func_ov002_020eaa34 kind:function(arm,size=0x1c) addr:0x020eaa34
-FldInforme_Create kind:function(arm,size=0xa4) addr:0x020eaa50
-FldInforme_Exec kind:function(arm,size=0x674) addr:0x020eaaf4
+MapInforme_Create kind:function(arm,size=0xa4) addr:0x020eaa50
+MapInforme_Exec kind:function(arm,size=0x674) addr:0x020eaaf4
 func_ov002_020eb168 kind:function(arm,size=0x760) addr:0x020eb168
-FldInforme_Kill kind:function(arm,size=0x3c) addr:0x020eb8c8
+MapInforme_Kill kind:function(arm,size=0x3c) addr:0x020eb8c8
 func_ov002_020eb904 kind:function(arm,size=0x708) addr:0x020eb904
 func_ov002_020ec00c kind:function(arm,size=0x7c) addr:0x020ec00c
 func_ov002_020ec088 kind:function(arm,size=0x168) addr:0x020ec088
@@ -747,13 +747,13 @@ func_ov002_020ed7d8 kind:function(arm,size=0x18c) addr:0x020ed7d8
 func_ov002_020ed964 kind:function(arm,size=0xfc) addr:0x020ed964
 func_ov002_020eda60 kind:function(arm,size=0x8c) addr:0x020eda60
 func_ov002_020edaec kind:function(arm,size=0x40) addr:0x020edaec
-FldEv_ExecSandSweepTouch kind:function(arm,size=0x448) addr:0x020edb2c
-FldEvMoon_ExecEnterSlide kind:function(arm,size=0x270) addr:0x020edf74
-FldEvMoon_ExecEnterDeflate kind:function(arm,size=0x354) addr:0x020ee1e4
-FldEvMoon_ExecTrampolineRecover kind:function(arm,size=0x180) addr:0x020ee538
-FldEvSun_TruckInit kind:function(arm,size=0x10c) addr:0x020ee6b8
-FldEvSun_TruckClose kind:function(arm,size=0x2c) addr:0x020ee7c4
-FldEvSun_TruckExec kind:function(arm,size=0x1fc) addr:0x020ee7f0
+MapEv_ExecSandSweepTouch kind:function(arm,size=0x448) addr:0x020edb2c
+MapEvMoon_ExecEnterSlide kind:function(arm,size=0x270) addr:0x020edf74
+MapEvMoon_ExecEnterDeflate kind:function(arm,size=0x354) addr:0x020ee1e4
+MapEvMoon_ExecTrampolineRecover kind:function(arm,size=0x180) addr:0x020ee538
+MapEvSun_TruckInit kind:function(arm,size=0x10c) addr:0x020ee6b8
+MapEvSun_TruckClose kind:function(arm,size=0x2c) addr:0x020ee7c4
+MapEvSun_TruckExec kind:function(arm,size=0x1fc) addr:0x020ee7f0
 func_ov002_020ee9ec kind:function(arm,size=0x1a8) addr:0x020ee9ec
 func_ov002_020eeb94 kind:function(arm,size=0x1f8) addr:0x020eeb94
 func_ov002_020eed8c kind:function(arm,size=0x20) addr:0x020eed8c
@@ -765,46 +765,46 @@ func_ov002_020ef350 kind:function(arm,size=0x118) addr:0x020ef350
 func_ov002_020ef468 kind:function(arm,size=0x74) addr:0x020ef468
 func_ov002_020ef4dc kind:function(arm,size=0x108) addr:0x020ef4dc
 func_ov002_020ef5e4 kind:function(arm,size=0x160) addr:0x020ef5e4
-FldEvChr_Exec kind:function(arm,size=0x94) addr:0x020ef744
+MapEvChr_Exec kind:function(arm,size=0x94) addr:0x020ef744
 func_ov002_020ef7d8 kind:function(arm,size=0x298) addr:0x020ef7d8
-FldEvChr_UpdateCol kind:function(arm,size=0x74) addr:0x020efa70
-FldEvSun_ExecTowerEnter kind:function(arm,size=0xa0) addr:0x020efae4
-FldEvSun_ExecTreeThief kind:function(arm,size=0x5c) addr:0x020efb84
-FldEvSun_ExecThiefHat kind:function(arm,size=0x5c) addr:0x020efbe0
-FldEvSun_ExecTreeNinja kind:function(arm,size=0x5c) addr:0x020efc3c
-FldEvSun_ExecNinjaFind kind:function(arm,size=0x5c) addr:0x020efc98
-FldEvSun_ExecDelayExit kind:function(arm,size=0x8c) addr:0x020efcf4
-FldEvSun_ExecRideJetStart kind:function(arm,size=0x244) addr:0x020efd80
-FldEvSun_ExecBasketball kind:function(arm,size=0x678) addr:0x020effc4
-FldEvSun_ExecPlayerExplode kind:function(arm,size=0x70) addr:0x020f063c
-FldEvSun_ExecSeesaw kind:function(arm,size=0x490) addr:0x020f06ac
-FldEvSun_ExecCannon kind:function(arm,size=0x238) addr:0x020f0b3c
-FldEvSun_ExecMagnetOn kind:function(arm,size=0x884) addr:0x020f0d74
+MapEvChr_UpdateCol kind:function(arm,size=0x74) addr:0x020efa70
+MapEvSun_ExecTowerEnter kind:function(arm,size=0xa0) addr:0x020efae4
+MapEvSun_ExecTreeThief kind:function(arm,size=0x5c) addr:0x020efb84
+MapEvSun_ExecThiefHat kind:function(arm,size=0x5c) addr:0x020efbe0
+MapEvSun_ExecTreeNinja kind:function(arm,size=0x5c) addr:0x020efc3c
+MapEvSun_ExecNinjaFind kind:function(arm,size=0x5c) addr:0x020efc98
+MapEvSun_ExecDelayExit kind:function(arm,size=0x8c) addr:0x020efcf4
+MapEvSun_ExecRideJetStart kind:function(arm,size=0x244) addr:0x020efd80
+MapEvSun_ExecBasketball kind:function(arm,size=0x678) addr:0x020effc4
+MapEvSun_ExecPlayerExplode kind:function(arm,size=0x70) addr:0x020f063c
+MapEvSun_ExecSeesaw kind:function(arm,size=0x490) addr:0x020f06ac
+MapEvSun_ExecCannon kind:function(arm,size=0x238) addr:0x020f0b3c
+MapEvSun_ExecMagnetOn kind:function(arm,size=0x884) addr:0x020f0d74
 func_ov002_020f15f8 kind:function(arm,size=0x4c) addr:0x020f15f8
-FldEvSun_ExecMagnetOff kind:function(arm,size=0x7b4) addr:0x020f1644
+MapEvSun_ExecMagnetOff kind:function(arm,size=0x7b4) addr:0x020f1644
 func_ov002_020f1df8 kind:function(arm,size=0x4c) addr:0x020f1df8
-FldEvSun_ExecJumpStart kind:function(arm,size=0x1c4) addr:0x020f1e44
-FldEvSun_ExecCharDisguise kind:function(arm,size=0x284) addr:0x020f2008
-FldEvSun_ExecCharDisguiseEnd kind:function(arm,size=0x2f4) addr:0x020f228c
-FldEvSun_ExecTruckEnter kind:function(arm,size=0x2a0) addr:0x020f2580
-FldEvSun_ExecFallEnterEnd kind:function(arm,size=0x2e4) addr:0x020f2820
-FldEvSun_ExecCannonEnter kind:function(arm,size=0xc4) addr:0x020f2b04
-FldEvSun_ExecFallEnter kind:function(arm,size=0xa4) addr:0x020f2bc8
-FldEvSun_ExecSeesawEnterEnd kind:function(arm,size=0x1c4) addr:0x020f2c6c
-FldEvSun_ExecCannonEnterEnd kind:function(arm,size=0x1a4) addr:0x020f2e30
-FldEv_ExecCountdown kind:function(arm,size=0x1d0) addr:0x020f2fd4
-FldEv_ExecFallImpact kind:function(arm,size=0x204) addr:0x020f31a4
-FldEvStar_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
-FldEvStar_ExecEvilRecover kind:function(arm,size=0x130) addr:0x020f35a0
-FldEv_ExecTouchTampoline kind:function(arm,size=0x6f4) addr:0x020f36d0
+MapEvSun_ExecJumpStart kind:function(arm,size=0x1c4) addr:0x020f1e44
+MapEvSun_ExecCharDisguise kind:function(arm,size=0x284) addr:0x020f2008
+MapEvSun_ExecCharDisguiseEnd kind:function(arm,size=0x2f4) addr:0x020f228c
+MapEvSun_ExecTruckEnter kind:function(arm,size=0x2a0) addr:0x020f2580
+MapEvSun_ExecFallEnterEnd kind:function(arm,size=0x2e4) addr:0x020f2820
+MapEvSun_ExecCannonEnter kind:function(arm,size=0xc4) addr:0x020f2b04
+MapEvSun_ExecFallEnter kind:function(arm,size=0xa4) addr:0x020f2bc8
+MapEvSun_ExecSeesawEnterEnd kind:function(arm,size=0x1c4) addr:0x020f2c6c
+MapEvSun_ExecCannonEnterEnd kind:function(arm,size=0x1a4) addr:0x020f2e30
+MapEv_ExecCountdown kind:function(arm,size=0x1d0) addr:0x020f2fd4
+MapEv_ExecFallImpact kind:function(arm,size=0x204) addr:0x020f31a4
+MapEvStar_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
+MapEvStar_ExecEvilRecover kind:function(arm,size=0x130) addr:0x020f35a0
+MapEv_ExecTouchTampoline kind:function(arm,size=0x6f4) addr:0x020f36d0
 func_ov002_020f3dc4 kind:function(arm,size=0x9c) addr:0x020f3dc4
 func_ov002_020f3e60 kind:function(arm,size=0x244) addr:0x020f3e60
 func_ov002_020f40a4 kind:function(arm,size=0x80) addr:0x020f40a4
-FldEvSun_RideJetCreate kind:function(arm,size=0x1f4) addr:0x020f4124
-FldEvSun_RideJetKill kind:function(arm,size=0x110) addr:0x020f4318
-FldEvSun_RideJetClose kind:function(arm,size=0x74) addr:0x020f4428
-FldEvSun_RideJetExec kind:function(arm,size=0x138) addr:0x020f449c
-FldEvSun_RideJetObjExec kind:function(arm,size=0x4) addr:0x020f45d4
+MapEvSun_RideJetCreate kind:function(arm,size=0x1f4) addr:0x020f4124
+MapEvSun_RideJetKill kind:function(arm,size=0x110) addr:0x020f4318
+MapEvSun_RideJetClose kind:function(arm,size=0x74) addr:0x020f4428
+MapEvSun_RideJetExec kind:function(arm,size=0x138) addr:0x020f449c
+MapEvSun_RideJetObjExec kind:function(arm,size=0x4) addr:0x020f45d4
 func_ov002_020f45d8 kind:function(arm,size=0x44) addr:0x020f45d8
 func_ov002_020f461c kind:function(arm,size=0x50) addr:0x020f461c
 func_ov002_020f466c kind:function(arm,size=0x20) addr:0x020f466c
@@ -871,8 +871,8 @@ func_ov002_020f6d70 kind:function(arm,size=0x40) addr:0x020f6d70
 func_ov002_020f6db0 kind:function(arm,size=0x22c) addr:0x020f6db0
 func_ov002_020f6fdc kind:function(arm,size=0x70) addr:0x020f6fdc
 func_ov002_020f704c kind:function(arm,size=0x78) addr:0x020f704c
-Fld_CheckMail kind:function(arm,size=0x1a4) addr:0x020f70c4
-Fld_ExecMailScript kind:function(arm,size=0x310) addr:0x020f7268
+Map_CheckMail kind:function(arm,size=0x1a4) addr:0x020f70c4
+Map_ExecMailScript kind:function(arm,size=0x310) addr:0x020f7268
 func_ov002_020f7578 kind:function(arm,size=0xec) addr:0x020f7578
 func_ov002_020f7664 kind:function(arm,size=0x278) addr:0x020f7664
 func_ov002_020f78dc kind:function(arm,size=0xb8) addr:0x020f78dc
@@ -898,7 +898,7 @@ func_ov002_020fa24c kind:function(arm,size=0x1b0) addr:0x020fa24c
 func_ov002_020fa3fc kind:function(arm,size=0x1f0) addr:0x020fa3fc
 func_ov002_020fa5ec kind:function(arm,size=0x18c) addr:0x020fa5ec
 func_ov002_020fa778 kind:function(arm,size=0x3c) addr:0x020fa778
-FldEvSun_ExecTouchFishing kind:function(arm,size=0x404) addr:0x020fa7b4
+MapEvSun_ExecTouchFishing kind:function(arm,size=0x404) addr:0x020fa7b4
 func_ov002_020fabb8 kind:function(arm,size=0x17c) addr:0x020fabb8
 func_ov002_020fad34 kind:function(arm,size=0x2c) addr:0x020fad34
 func_ov002_020fad60 kind:function(arm,size=0x2c) addr:0x020fad60
@@ -907,59 +907,59 @@ func_ov002_020faf38 kind:function(arm,size=0x194) addr:0x020faf38
 func_ov002_020fb0cc kind:function(arm,size=0xb8) addr:0x020fb0cc
 func_ov002_020fb184 kind:function(arm,size=0x104) addr:0x020fb184
 func_ov002_020fb288 kind:function(arm,size=0x9c) addr:0x020fb288
-FldEv_IsZoneEvil kind:function(arm,size=0x190) addr:0x020fb324
-FldEv_PlayZoneMusic kind:function(arm,size=0x40c) addr:0x020fb4b4
-FldEvMoon_ExecTouchTightrope kind:function(arm,size=0x350) addr:0x020fb8c0
-FldEvEarth_ExecBombPut kind:function(arm,size=0x518) addr:0x020fbc10
-FldEvEarth_ExecGrave kind:function(arm,size=0x1ec) addr:0x020fc128
-FldEvEarth_ExecGraveMummy kind:function(arm,size=0x28c) addr:0x020fc314
-FldEvEarth_ExecGraveMummyAttack kind:function(arm,size=0x264) addr:0x020fc5a0
-FldEvEarth_ExecGraveClose kind:function(arm,size=0x130) addr:0x020fc804
-FldEvEarth_ExecNinbombMulti kind:function(arm,size=0x134) addr:0x020fc934
-FldEvEarth_ExecTBBMFu kind:function(arm,size=0x198) addr:0x020fca68
-FldEvEarth_ExecShurikenSet kind:function(arm,size=0x230) addr:0x020fcc00
-FldEvEarth_ExecExpand kind:function(arm,size=0x290) addr:0x020fce30
-FldEvEarth_ExecJumpDown kind:function(arm,size=0x254) addr:0x020fd0c0
-FldEvEarth_ExecMiniBomReturn kind:function(arm,size=0x2d8) addr:0x020fd314
-FldEvEarth_ExecDraBomb kind:function(arm,size=0x128) addr:0x020fd5ec
-FldEvEarth_ExecDraBombWakeup kind:function(arm,size=0x330) addr:0x020fd714
-FldEvEarth_ExecEvilFocusStart kind:function(arm,size=0xb8) addr:0x020fda44
-FldEvEarth_ExecEvilFocusEnd kind:function(arm,size=0xcc) addr:0x020fdafc
-FldEvEarth_ExecHashiDown kind:function(arm,size=0x17c) addr:0x020fdbc8
+MapEv_IsZoneEvil kind:function(arm,size=0x190) addr:0x020fb324
+MapEv_PlayZoneMusic kind:function(arm,size=0x40c) addr:0x020fb4b4
+MapEvMoon_ExecTouchTightrope kind:function(arm,size=0x350) addr:0x020fb8c0
+MapEvEarth_ExecBombPut kind:function(arm,size=0x518) addr:0x020fbc10
+MapEvEarth_ExecGrave kind:function(arm,size=0x1ec) addr:0x020fc128
+MapEvEarth_ExecGraveMummy kind:function(arm,size=0x28c) addr:0x020fc314
+MapEvEarth_ExecGraveMummyAttack kind:function(arm,size=0x264) addr:0x020fc5a0
+MapEvEarth_ExecGraveClose kind:function(arm,size=0x130) addr:0x020fc804
+MapEvEarth_ExecNinbombMulti kind:function(arm,size=0x134) addr:0x020fc934
+MapEvEarth_ExecTBBMFu kind:function(arm,size=0x198) addr:0x020fca68
+MapEvEarth_ExecShurikenSet kind:function(arm,size=0x230) addr:0x020fcc00
+MapEvEarth_ExecExpand kind:function(arm,size=0x290) addr:0x020fce30
+MapEvEarth_ExecJumpDown kind:function(arm,size=0x254) addr:0x020fd0c0
+MapEvEarth_ExecMiniBomReturn kind:function(arm,size=0x2d8) addr:0x020fd314
+MapEvEarth_ExecDraBomb kind:function(arm,size=0x128) addr:0x020fd5ec
+MapEvEarth_ExecDraBombWakeup kind:function(arm,size=0x330) addr:0x020fd714
+MapEvEarth_ExecEvilFocusStart kind:function(arm,size=0xb8) addr:0x020fda44
+MapEvEarth_ExecEvilFocusEnd kind:function(arm,size=0xcc) addr:0x020fdafc
+MapEvEarth_ExecHashiDown kind:function(arm,size=0x17c) addr:0x020fdbc8
 func_ov002_020fdd44 kind:function(arm,size=0xd0) addr:0x020fdd44
-FldEvEarth_ExecEndingStart kind:function(arm,size=0xd8) addr:0x020fde14
-FldEvEarth_ExecEvilHatGuard kind:function(arm,size=0x1d4) addr:0x020fdeec
-FldEvEarth_ExecEvilHatScare kind:function(arm,size=0x204) addr:0x020fe0c0
-FldEvEarth_ExecDiceRollFirst kind:function(arm,size=0x164) addr:0x020fe2c4
-FldEvEarth_ExecDiceRoll kind:function(arm,size=0x68c) addr:0x020fe428
+MapEvEarth_ExecEndingStart kind:function(arm,size=0xd8) addr:0x020fde14
+MapEvEarth_ExecEvilHatGuard kind:function(arm,size=0x1d4) addr:0x020fdeec
+MapEvEarth_ExecEvilHatScare kind:function(arm,size=0x204) addr:0x020fe0c0
+MapEvEarth_ExecDiceRollFirst kind:function(arm,size=0x164) addr:0x020fe2c4
+MapEvEarth_ExecDiceRoll kind:function(arm,size=0x68c) addr:0x020fe428
 func_ov002_020feab4 kind:function(arm,size=0x11c) addr:0x020feab4
 func_ov002_020febd0 kind:function(arm,size=0x6c) addr:0x020febd0
 func_ov002_020fec3c kind:function(arm,size=0xbc) addr:0x020fec3c
 func_ov002_020fecf8 kind:function(arm,size=0x74) addr:0x020fecf8
-FldEvEarth_ExecBombWaterThrow kind:function(arm,size=0x534) addr:0x020fed6c
-FldEvEarth_ExecBombWaterDrop kind:function(arm,size=0x394) addr:0x020ff2a0
-FldEvMoon_InitCycle kind:function(arm,size=0xbc) addr:0x020ff634
-FldEvMoon_ExecCycle kind:function(arm,size=0x27c) addr:0x020ff6f0
-FldEvEarth_ExecEnterBounce kind:function(arm,size=0x2d0) addr:0x020ff96c
-FldEvEarth_ExecEnterDeflate kind:function(arm,size=0x2dc) addr:0x020ffc3c
-FldEvEarth_ExecDraBombRecover kind:function(arm,size=0x128) addr:0x020fff18
-FldEvEarth_ExecEnterFly kind:function(arm,size=0x198) addr:0x02100040
-FldEvEarth_ExecForceExit kind:function(arm,size=0x174) addr:0x021001d8
-FldEvEarth_ExecEnterFlyThrough kind:function(arm,size=0x288) addr:0x0210034c
-FldEvSun_InitAceSumoGold kind:function(arm,size=0xdc) addr:0x021005d4
-FldEvSun_InitAceSumoLose kind:function(arm,size=0xc0) addr:0x021006b0
-FldEvSun_InitAceSumoWin kind:function(arm,size=0xc0) addr:0x02100770
-FldEvSun_ExecAceSumoGold kind:function(arm,size=0xc4) addr:0x02100830
-FldEvSun_ExecAceSumoLose kind:function(arm,size=0xb8) addr:0x021008f4
-FldEvSun_ExecAceSumoWin kind:function(arm,size=0x16c) addr:0x021009ac
+MapEvEarth_ExecBombWaterThrow kind:function(arm,size=0x534) addr:0x020fed6c
+MapEvEarth_ExecBombWaterDrop kind:function(arm,size=0x394) addr:0x020ff2a0
+MapEvMoon_InitCycle kind:function(arm,size=0xbc) addr:0x020ff634
+MapEvMoon_ExecCycle kind:function(arm,size=0x27c) addr:0x020ff6f0
+MapEvEarth_ExecEnterBounce kind:function(arm,size=0x2d0) addr:0x020ff96c
+MapEvEarth_ExecEnterDeflate kind:function(arm,size=0x2dc) addr:0x020ffc3c
+MapEvEarth_ExecDraBombRecover kind:function(arm,size=0x128) addr:0x020fff18
+MapEvEarth_ExecEnterFly kind:function(arm,size=0x198) addr:0x02100040
+MapEvEarth_ExecForceExit kind:function(arm,size=0x174) addr:0x021001d8
+MapEvEarth_ExecEnterFlyThrough kind:function(arm,size=0x288) addr:0x0210034c
+MapEvSun_InitAceSumoGold kind:function(arm,size=0xdc) addr:0x021005d4
+MapEvSun_InitAceSumoLose kind:function(arm,size=0xc0) addr:0x021006b0
+MapEvSun_InitAceSumoWin kind:function(arm,size=0xc0) addr:0x02100770
+MapEvSun_ExecAceSumoGold kind:function(arm,size=0xc4) addr:0x02100830
+MapEvSun_ExecAceSumoLose kind:function(arm,size=0xb8) addr:0x021008f4
+MapEvSun_ExecAceSumoWin kind:function(arm,size=0x16c) addr:0x021009ac
 func_ov002_02100b18 kind:function(arm,size=0x130) addr:0x02100b18
-FldEvUranai_ExecEvent kind:function(arm,size=0x598) addr:0x02100c48
+MapEvUranai_ExecEvent kind:function(arm,size=0x598) addr:0x02100c48
 func_ov002_021011e0 kind:function(arm,size=0x64) addr:0x021011e0
-FldEvUranai_ExecStarAreaMes kind:function(arm,size=0x250) addr:0x02101244
+MapEvUranai_ExecStarAreaMes kind:function(arm,size=0x250) addr:0x02101244
 func_ov002_02101494 kind:function(arm,size=0x64) addr:0x02101494
-FldEvUranai_ExecMoonAreaMes kind:function(arm,size=0x268) addr:0x021014f8
+MapEvUranai_ExecMoonAreaMes kind:function(arm,size=0x268) addr:0x021014f8
 func_ov002_02101760 kind:function(arm,size=0x64) addr:0x02101760
-FldEvUranai_ExecSunAreaMes kind:function(arm,size=0x22c) addr:0x021017c4
+MapEvUranai_ExecSunAreaMes kind:function(arm,size=0x22c) addr:0x021017c4
 func_ov002_021019f0 kind:function(arm,size=0x30) addr:0x021019f0
 func_ov002_02101a20 kind:function(arm,size=0x58) addr:0x02101a20
 func_ov002_02101a78 kind:function(arm,size=0x128) addr:0x02101a78
@@ -991,11 +991,11 @@ func_ov002_021036f8 kind:function(arm,size=0x278) addr:0x021036f8
 func_ov002_02103970 kind:function(arm,size=0x108) addr:0x02103970
 func_ov002_02103a78 kind:function(arm,size=0x13c) addr:0x02103a78
 func_ov002_02103bb4 kind:function(arm,size=0xe8) addr:0x02103bb4
-FldZoneCut_Create kind:function(arm,size=0x64) addr:0x02103c9c
+MapZoneCut_Create kind:function(arm,size=0x64) addr:0x02103c9c
 func_ov002_02103d00 kind:function(arm,size=0x34) addr:0x02103d00
-FldZoneCut_NewGameCreate kind:function(arm,size=0x70) addr:0x02103d34
+MapZoneCut_NewGameCreate kind:function(arm,size=0x70) addr:0x02103d34
 func_ov002_02103da4 kind:function(arm,size=0x28) addr:0x02103da4
-FldZoneCut_Exec kind:function(arm,size=0xb8) addr:0x02103dcc
+MapZoneCut_Exec kind:function(arm,size=0xb8) addr:0x02103dcc
 func_ov002_02103e84 kind:function(arm,size=0x60) addr:0x02103e84
 func_ov002_02103ee4 kind:function(arm,size=0x20) addr:0x02103ee4
 func_ov002_02103f04 kind:function(arm,size=0x4c) addr:0x02103f04
@@ -1022,12 +1022,12 @@ func_ov002_02104e1c kind:function(arm,size=0x18) addr:0x02104e1c
 func_ov002_02104e34 kind:function(arm,size=0x18) addr:0x02104e34
 func_ov002_02104e4c kind:function(arm,size=0x18) addr:0x02104e4c
 func_ov002_02104e64 kind:function(arm,size=0x8) addr:0x02104e64
-FldEvStar_InitDance kind:function(arm,size=0xac) addr:0x02104e6c
-FldEvStar_ExecDance kind:function(arm,size=0x11c) addr:0x02104f18
-FldDemo_OpeningCreate kind:function(arm,size=0x10) addr:0x02105034
-FldDemo_EvilStartCreate kind:function(arm,size=0x10) addr:0x02105044
-FldDemo_EvilEndCreate kind:function(arm,size=0x54) addr:0x02105054
-FldDemo_ResultCreate kind:function(arm,size=0x10) addr:0x021050a8
+MapEvStar_InitDance kind:function(arm,size=0xac) addr:0x02104e6c
+MapEvStar_ExecDance kind:function(arm,size=0x11c) addr:0x02104f18
+MapDemo_OpeningCreate kind:function(arm,size=0x10) addr:0x02105034
+MapDemo_EvilStartCreate kind:function(arm,size=0x10) addr:0x02105044
+MapDemo_EvilEndCreate kind:function(arm,size=0x54) addr:0x02105054
+MapDemo_ResultCreate kind:function(arm,size=0x10) addr:0x021050a8
 func_ov002_021050b8 kind:function(arm,size=0x10) addr:0x021050b8
 func_ov002_021050c8 kind:function(arm,size=0x334) addr:0x021050c8
 func_ov002_021053fc kind:function(arm,size=0x2ec) addr:0x021053fc
@@ -1038,7 +1038,7 @@ func_ov002_02105768 kind:function(arm,size=0x4c) addr:0x02105768
 func_ov002_021057b4 kind:function(arm,size=0x48) addr:0x021057b4
 func_ov002_021057fc kind:function(arm,size=0x30) addr:0x021057fc
 func_ov002_0210582c kind:function(arm,size=0x38) addr:0x0210582c
-FldDemo_SetBG kind:function(arm,size=0x12c) addr:0x02105864
+MapDemo_SetBG kind:function(arm,size=0x12c) addr:0x02105864
 func_ov002_02105990 kind:function(arm,size=0x4c) addr:0x02105990
 func_ov002_021059dc kind:function(arm,size=0x64) addr:0x021059dc
 func_ov002_02105a40 kind:function(arm,size=0x124) addr:0x02105a40
@@ -1076,7 +1076,7 @@ AnimFile kind:data(any) local addr:0x02106034
 PalFile kind:data(any) local addr:0x02106044
 TouchRectTbl kind:data(any) local addr:0x021060d8
 PliconPalTbl kind:data(any) local addr:0x02106448
-Fld_PliconIdxTbl kind:data(any) addr:0x0210646c
+Map_PliconIdxTbl kind:data(any) addr:0x0210646c
 DummyScrMes_J kind:data(any) local addr:0x021064a4
 StampTestMes_J kind:data(any) local addr:0x021064c8
 data_ov002_021064dc kind:data(any) addr:0x021064dc
@@ -1122,8 +1122,8 @@ EvilHatPathTbl kind:data(any) local addr:0x021070e0
 FlagColZoneTbl kind:data(any) local addr:0x02107250
 MgColZoneTbl kind:data(any) local addr:0x021072d8
 ImageTbl kind:data(any) local addr:0x02107360
-FldGate_CheckPieceTbl kind:data(any) addr:0x02107368
-FldChr_BossFileTbl kind:data(any) addr:0x021073f0
+MapGate_CheckPieceTbl kind:data(any) addr:0x02107368
+MapChr_BossFileTbl kind:data(any) addr:0x021073f0
 MgK30File kind:data(any) local addr:0x02107400
 WaterBombFile kind:data(any) local addr:0x02107414
 KuroBonFile kind:data(any) local addr:0x02107428
@@ -1187,32 +1187,32 @@ AquaBonFile kind:data(any) local addr:0x0210789c
 MidoriBonFile kind:data(any) local addr:0x021078b0
 AoBonFile kind:data(any) local addr:0x021078c4
 GoldBonFile kind:data(any) local addr:0x021078d8
-FldChr_ZoneFileTbl kind:data(any) addr:0x021078ec
-FldChr_PlayerFileTbl kind:data(any) addr:0x02107914
-Fld_BGDataTbl kind:data(any) addr:0x02107948
-FldEvSpr_FileTbl kind:data(any) addr:0x021079d0
+MapChr_ZoneFileTbl kind:data(any) addr:0x021078ec
+MapChr_PlayerFileTbl kind:data(any) addr:0x02107914
+Map_BGDataTbl kind:data(any) addr:0x02107948
+MapEvSpr_FileTbl kind:data(any) addr:0x021079d0
 OnLoadTriggerFunc kind:data(any) local addr:0x02107a74
 OnSceneEndFunc kind:data(any) local addr:0x02107afc
 OnTouchFunc kind:data(any) local addr:0x02107b84
-Fld_GetTouchStatusFunc kind:data(any) addr:0x02107c0c
+Map_GetTouchStatusFunc kind:data(any) addr:0x02107c0c
 SceneExecFunc kind:data(any) local addr:0x02107c94
 SceneInitFunc kind:data(any) local addr:0x02107d1c
 SprUpdateFunc kind:data(any) local addr:0x02107da4
 SceneDestroyFunc kind:data(any) local addr:0x02107e2c
 data_ov002_02107eb4 kind:data(any) addr:0x02107eb4
-FldTouchSpr_OfsTbl kind:data(any) addr:0x02107eb8
-FldTouchSpr_OfsTbl2 kind:data(any) addr:0x02107ed0
-FldTouch_ObjTbl kind:data(any) addr:0x02107ee8
-FldTouch_AticonImageFileTbl kind:data(any) addr:0x02107f70
-FldTouch_AticonColorFileTbl kind:data(any) addr:0x02108028
-FldTouch_AticonAnimFileTbl kind:data(any) addr:0x021080e0
+MapTouchSpr_OfsTbl kind:data(any) addr:0x02107eb8
+MapTouchSpr_OfsTbl2 kind:data(any) addr:0x02107ed0
+MapTouch_ObjTbl kind:data(any) addr:0x02107ee8
+MapTouch_AticonImageFileTbl kind:data(any) addr:0x02107f70
+MapTouch_AticonColorFileTbl kind:data(any) addr:0x02108028
+MapTouch_AticonAnimFileTbl kind:data(any) addr:0x021080e0
 TouchSprOfsTbl kind:data(any) local addr:0x02108198
 ObjPosTbl kind:data(any) local addr:0x02108274
 ObjResIdxTbl kind:data(any) local addr:0x021082fc
 ObjResTbl kind:data(any) local addr:0x02108384
 ObjDynTbl kind:data(any) local addr:0x0210840c
 ObjBGTbl kind:data(any) local addr:0x02108494
-Fld_GateDataTbl kind:data(any) addr:0x0210851c
+Map_GateDataTbl kind:data(any) addr:0x0210851c
 MenuIdxTbl kind:data(any) local addr:0x021085a4
 FileTbl kind:data(any) local addr:0x021085ac
 MenuSprData kind:data(any) local addr:0x021085c0
@@ -1402,8 +1402,8 @@ data_ov002_0210a678 kind:data(any) addr:0x0210a678
 data_ov002_0210a688 kind:data(any) addr:0x0210a688
 data_ov002_0210a698 kind:data(any) addr:0x0210a698
 data_ov002_0210a6a8 kind:data(any) addr:0x0210a6a8
-FldMenu_MailChrTbl kind:data(any) addr:0x0210a6b8
-FldMenu_MesMailTbl kind:data(any) addr:0x0210a70c
+MapMenu_MailChrTbl kind:data(any) addr:0x0210a6b8
+MapMenu_MesMailTbl kind:data(any) addr:0x0210a70c
 data_ov002_0210a850 kind:data(any) addr:0x0210a850
 data_ov002_0210a852 kind:data(any) addr:0x0210a852
 data_ov002_0210a860 kind:data(any) addr:0x0210a860
@@ -1459,13 +1459,13 @@ data_ov002_0210ad84 kind:data(any) addr:0x0210ad84
 data_ov002_0210ad94 kind:data(any) addr:0x0210ad94
 data_ov002_0210ada4 kind:data(any) addr:0x0210ada4
 data_ov002_0210adb4 kind:data(any) addr:0x0210adb4
-FldScr_StarBomDisappear kind:data(any) addr:0x0210adc4
-FldScr_PinkQuestHelp kind:data(any) addr:0x0210addc
-FldScr_AquaQuestHelp kind:data(any) addr:0x0210adf4
-FldScr_PlayerTransformEnd kind:data(any) addr:0x0210ae0c
-FldScr_Ninja1Remain kind:data(any) addr:0x0210ae30
-FldScr_Ninja2Remain kind:data(any) addr:0x0210ae58
-FldScr_NinjaLast kind:data(any) addr:0x0210ae80
+MapScr_StarBomDisappear kind:data(any) addr:0x0210adc4
+MapScr_PinkQuestHelp kind:data(any) addr:0x0210addc
+MapScr_AquaQuestHelp kind:data(any) addr:0x0210adf4
+MapScr_PlayerTransformEnd kind:data(any) addr:0x0210ae0c
+MapScr_Ninja1Remain kind:data(any) addr:0x0210ae30
+MapScr_Ninja2Remain kind:data(any) addr:0x0210ae58
+MapScr_NinjaLast kind:data(any) addr:0x0210ae80
 data_ov002_0210aeac kind:data(any) addr:0x0210aeac
 data_ov002_0210aeb4 kind:data(any) addr:0x0210aeb4
 data_ov002_0210aec8 kind:data(any) addr:0x0210aec8
@@ -1486,9 +1486,9 @@ data_ov002_0210b090 kind:data(any) addr:0x0210b090
 data_ov002_0210b0c0 kind:data(any) addr:0x0210b0c0
 data_ov002_0210b0d4 kind:data(any) addr:0x0210b0d4
 data_ov002_0210b114 kind:data(any) addr:0x0210b114
-FldMenu_MailNameTbl kind:data(any) addr:0x0210b774
+MapMenu_MailNameTbl kind:data(any) addr:0x0210b774
 data_ov002_0210b784 kind:data(any) addr:0x0210b784
-FldScr_MgStart kind:data(any) addr:0x0210b78c
+MapScr_MgStart kind:data(any) addr:0x0210b78c
 data_ov002_0210b798 kind:data(any) addr:0x0210b798
 data_ov002_0210b7a8 kind:data(any) addr:0x0210b7a8
 data_ov002_0210b7b8 kind:data(any) addr:0x0210b7b8
@@ -1553,77 +1553,77 @@ data_ov002_0210bb58 kind:data(any) addr:0x0210bb58
 data_ov002_0210bb68 kind:data(any) addr:0x0210bb68
 data_ov002_0210bb78 kind:data(any) addr:0x0210bb78
 data_ov002_0210bb88 kind:data(any) addr:0x0210bb88
-FldScr_MgReplay kind:data(any) addr:0x0210bb98
-FldScr_EvilHatMgReplay kind:data(any) addr:0x0210bbb0
-FldScr_BHouseReplay kind:data(any) addr:0x0210bbc8
-FldScr_MgPlayToken kind:data(any) addr:0x0210bbe0
-FldScr_EvilHatMgPlayToken kind:data(any) addr:0x0210bbf8
-FldScrSun_MgHypnotize kind:data(any) addr:0x0210bc10
-FldScrEarth_MgHypnotizeEnd kind:data(any) addr:0x0210bc30
-FldScrEarth_MgHypnotize kind:data(any) addr:0x0210bc50
-FldScrMoon_MgHypnotizeEnd kind:data(any) addr:0x0210bc70
-FldScrStar_MgHypnotize kind:data(any) addr:0x0210bc90
-FldScrStar_MgHypnotizeEnd kind:data(any) addr:0x0210bcb0
-FldScrSun_MgHypnotizeEnd kind:data(any) addr:0x0210bcd0
-FldScrMoon_MgHypnotize kind:data(any) addr:0x0210bcf0
-FldScr_Mg21Blue kind:data(any) addr:0x0210bd10
-FldScr_Mg20 kind:data(any) addr:0x0210bd40
-FldScr_Mg41 kind:data(any) addr:0x0210bd70
-FldScr_Mg42 kind:data(any) addr:0x0210bda0
-FldScr_Mg43 kind:data(any) addr:0x0210bdd0
-FldScr_Mg44 kind:data(any) addr:0x0210be00
-FldScr_Mg45 kind:data(any) addr:0x0210be30
-FldScrStar_BHouse kind:data(any) addr:0x0210be60
-FldScrMoon_BHouse kind:data(any) addr:0x0210be90
-FldScrSun_BHouse kind:data(any) addr:0x0210bec0
-FldScr_MgNoBomPad kind:data(any) addr:0x0210bef0
-FldScr_Mg03 kind:data(any) addr:0x0210bf20
-FldScr_Mg05 kind:data(any) addr:0x0210bf50
-FldScr_Mg06 kind:data(any) addr:0x0210bf80
-FldScr_Mg08 kind:data(any) addr:0x0210bfb0
-FldScr_Mg40 kind:data(any) addr:0x0210bfe0
-FldScr_Mg01 kind:data(any) addr:0x0210c010
-FldScr_Mg09 kind:data(any) addr:0x0210c040
-FldScr_Mg07 kind:data(any) addr:0x0210c070
-FldScr_Mg11 kind:data(any) addr:0x0210c0a0
-FldScr_Mg10 kind:data(any) addr:0x0210c0d0
-FldScr_Mg39 kind:data(any) addr:0x0210c100
-FldScr_Mg23 kind:data(any) addr:0x0210c130
-FldScr_Mg04 kind:data(any) addr:0x0210c160
-FldScr_Mg37 kind:data(any) addr:0x0210c190
-FldScr_Mg12 kind:data(any) addr:0x0210c1c0
-FldScr_Mg24 kind:data(any) addr:0x0210c1f0
-FldScr_Mg13 kind:data(any) addr:0x0210c220
-FldScr_Mg14 kind:data(any) addr:0x0210c250
-FldScr_Mg38 kind:data(any) addr:0x0210c280
-FldScr_Mg16 kind:data(any) addr:0x0210c2b0
-FldScr_Mg15 kind:data(any) addr:0x0210c2e0
-FldScr_Mg36 kind:data(any) addr:0x0210c310
-FldScr_Mg17 kind:data(any) addr:0x0210c340
-FldScr_Mg27 kind:data(any) addr:0x0210c370
-FldScr_Mg34 kind:data(any) addr:0x0210c3a0
-FldScr_Mg29 kind:data(any) addr:0x0210c3d0
-FldScr_Mg35 kind:data(any) addr:0x0210c400
-FldScr_Mg18 kind:data(any) addr:0x0210c430
-FldScr_Mg19 kind:data(any) addr:0x0210c460
-FldScr_Mg26 kind:data(any) addr:0x0210c490
-FldScr_Mg21 kind:data(any) addr:0x0210c4c0
-FldScr_Mg31 kind:data(any) addr:0x0210c4f0
-FldScr_Mg33 kind:data(any) addr:0x0210c520
-FldScr_Mg02 kind:data(any) addr:0x0210c550
-FldScr_Mg28 kind:data(any) addr:0x0210c580
-FldScr_Mg32 kind:data(any) addr:0x0210c5b0
-FldScr_Mg25 kind:data(any) addr:0x0210c5e0
-FldScr_Mg30 kind:data(any) addr:0x0210c610
-FldScr_MgPlayerMini kind:data(any) addr:0x0210c640
-FldScr_PieceStarFirst kind:data(any) addr:0x0210c678
+MapScr_MgReplay kind:data(any) addr:0x0210bb98
+MapScr_EvilHatMgReplay kind:data(any) addr:0x0210bbb0
+MapScr_BHouseReplay kind:data(any) addr:0x0210bbc8
+MapScr_MgPlayToken kind:data(any) addr:0x0210bbe0
+MapScr_EvilHatMgPlayToken kind:data(any) addr:0x0210bbf8
+MapScrSun_MgHypnotize kind:data(any) addr:0x0210bc10
+MapScrEarth_MgHypnotizeEnd kind:data(any) addr:0x0210bc30
+MapScrEarth_MgHypnotize kind:data(any) addr:0x0210bc50
+MapScrMoon_MgHypnotizeEnd kind:data(any) addr:0x0210bc70
+MapScrStar_MgHypnotize kind:data(any) addr:0x0210bc90
+MapScrStar_MgHypnotizeEnd kind:data(any) addr:0x0210bcb0
+MapScrSun_MgHypnotizeEnd kind:data(any) addr:0x0210bcd0
+MapScrMoon_MgHypnotize kind:data(any) addr:0x0210bcf0
+MapScr_Mg21Blue kind:data(any) addr:0x0210bd10
+MapScr_Mg20 kind:data(any) addr:0x0210bd40
+MapScr_Mg41 kind:data(any) addr:0x0210bd70
+MapScr_Mg42 kind:data(any) addr:0x0210bda0
+MapScr_Mg43 kind:data(any) addr:0x0210bdd0
+MapScr_Mg44 kind:data(any) addr:0x0210be00
+MapScr_Mg45 kind:data(any) addr:0x0210be30
+MapScrStar_BHouse kind:data(any) addr:0x0210be60
+MapScrMoon_BHouse kind:data(any) addr:0x0210be90
+MapScrSun_BHouse kind:data(any) addr:0x0210bec0
+MapScr_MgNoBomPad kind:data(any) addr:0x0210bef0
+MapScr_Mg03 kind:data(any) addr:0x0210bf20
+MapScr_Mg05 kind:data(any) addr:0x0210bf50
+MapScr_Mg06 kind:data(any) addr:0x0210bf80
+MapScr_Mg08 kind:data(any) addr:0x0210bfb0
+MapScr_Mg40 kind:data(any) addr:0x0210bfe0
+MapScr_Mg01 kind:data(any) addr:0x0210c010
+MapScr_Mg09 kind:data(any) addr:0x0210c040
+MapScr_Mg07 kind:data(any) addr:0x0210c070
+MapScr_Mg11 kind:data(any) addr:0x0210c0a0
+MapScr_Mg10 kind:data(any) addr:0x0210c0d0
+MapScr_Mg39 kind:data(any) addr:0x0210c100
+MapScr_Mg23 kind:data(any) addr:0x0210c130
+MapScr_Mg04 kind:data(any) addr:0x0210c160
+MapScr_Mg37 kind:data(any) addr:0x0210c190
+MapScr_Mg12 kind:data(any) addr:0x0210c1c0
+MapScr_Mg24 kind:data(any) addr:0x0210c1f0
+MapScr_Mg13 kind:data(any) addr:0x0210c220
+MapScr_Mg14 kind:data(any) addr:0x0210c250
+MapScr_Mg38 kind:data(any) addr:0x0210c280
+MapScr_Mg16 kind:data(any) addr:0x0210c2b0
+MapScr_Mg15 kind:data(any) addr:0x0210c2e0
+MapScr_Mg36 kind:data(any) addr:0x0210c310
+MapScr_Mg17 kind:data(any) addr:0x0210c340
+MapScr_Mg27 kind:data(any) addr:0x0210c370
+MapScr_Mg34 kind:data(any) addr:0x0210c3a0
+MapScr_Mg29 kind:data(any) addr:0x0210c3d0
+MapScr_Mg35 kind:data(any) addr:0x0210c400
+MapScr_Mg18 kind:data(any) addr:0x0210c430
+MapScr_Mg19 kind:data(any) addr:0x0210c460
+MapScr_Mg26 kind:data(any) addr:0x0210c490
+MapScr_Mg21 kind:data(any) addr:0x0210c4c0
+MapScr_Mg31 kind:data(any) addr:0x0210c4f0
+MapScr_Mg33 kind:data(any) addr:0x0210c520
+MapScr_Mg02 kind:data(any) addr:0x0210c550
+MapScr_Mg28 kind:data(any) addr:0x0210c580
+MapScr_Mg32 kind:data(any) addr:0x0210c5b0
+MapScr_Mg25 kind:data(any) addr:0x0210c5e0
+MapScr_Mg30 kind:data(any) addr:0x0210c610
+MapScr_MgPlayerMini kind:data(any) addr:0x0210c640
+MapScr_PieceStarFirst kind:data(any) addr:0x0210c678
 data_ov002_0210c6b0 kind:data(any) addr:0x0210c6b0
-FldScr_PieceTokenFirstStar kind:data(any) addr:0x0210c6e8
-FldScr_PieceTokenFirstMoon kind:data(any) addr:0x0210c720
-FldScr_PieceTokenFirstSun kind:data(any) addr:0x0210c758
-FldScr_PieceTokenFirstEarth kind:data(any) addr:0x0210c790
-FldScr_Mg01First kind:data(any) addr:0x0210c7c8
-FldScr_Mg09First kind:data(any) addr:0x0210c808
+MapScr_PieceTokenFirstStar kind:data(any) addr:0x0210c6e8
+MapScr_PieceTokenFirstMoon kind:data(any) addr:0x0210c720
+MapScr_PieceTokenFirstSun kind:data(any) addr:0x0210c758
+MapScr_PieceTokenFirstEarth kind:data(any) addr:0x0210c790
+MapScr_Mg01First kind:data(any) addr:0x0210c7c8
+MapScr_Mg09First kind:data(any) addr:0x0210c808
 data_ov002_0210c848 kind:data(any) addr:0x0210c848
 data_ov002_0210c858 kind:data(any) addr:0x0210c858
 data_ov002_0210c868 kind:data(any) addr:0x0210c868
@@ -1691,76 +1691,76 @@ data_ov002_0210cc38 kind:data(any) addr:0x0210cc38
 data_ov002_0210cc48 kind:data(any) addr:0x0210cc48
 data_ov002_0210cc58 kind:data(any) addr:0x0210cc58
 data_ov002_0210cc68 kind:data(any) addr:0x0210cc68
-FldScr_PieceSun kind:data(any) addr:0x0210cc78
-FldScr_ItemEvilHat kind:data(any) addr:0x0210cc90
-FldScr_ItemFlute kind:data(any) addr:0x0210cca8
-FldScr_ItemPumpkinMask kind:data(any) addr:0x0210ccc0
-FldScr_WrestlingTicket kind:data(any) addr:0x0210ccd8
-FldScr_BasketballTicket kind:data(any) addr:0x0210ccf0
-FldScrEarth_PieceLightning kind:data(any) addr:0x0210cd08
-FldScr_ItemRubyBomb kind:data(any) addr:0x0210cd20
-FldScr_ItemWaterBomb kind:data(any) addr:0x0210cd38
-FldScr_PieceRainbow kind:data(any) addr:0x0210cd50
-FldScr_PieceHeart kind:data(any) addr:0x0210cd68
-FldScr_ItemStarCape kind:data(any) addr:0x0210cd80
-FldScr_FishingTicket kind:data(any) addr:0x0210cd98
-FldScr_ItemSoccerBomb kind:data(any) addr:0x0210cdb0
-FldScr_ItemShuriken kind:data(any) addr:0x0210cdc8
-FldScr_PieceSunMoonStarRival kind:data(any) addr:0x0210cde0
-FldScr_ItemFishingRod kind:data(any) addr:0x0210cdf8
-FldScr_ItemSwimRing kind:data(any) addr:0x0210ce10
-FldScr_PieceGreenKey kind:data(any) addr:0x0210ce28
-FldScr_ItemBroom kind:data(any) addr:0x0210ce40
-FldScr_ItemPotBomb kind:data(any) addr:0x0210ce58
-FldScr_ItemBomb kind:data(any) addr:0x0210ce70
-FldScr_PieceStarMoon kind:data(any) addr:0x0210ce88
-FldScr_PieceEarth kind:data(any) addr:0x0210cea0
-FldScr_TruckTicket kind:data(any) addr:0x0210ceb8
-FldScr_DanceTicket kind:data(any) addr:0x0210ced0
-FldScr_ItemMagnetBomb kind:data(any) addr:0x0210cee8
-FldScr_ItemRubyBombMiniBom kind:data(any) addr:0x0210cf00
-FldScr_PieceToken kind:data(any) addr:0x0210cf18
-FldScr_CycleTicket kind:data(any) addr:0x0210cf30
-FldScr_BoatTicket kind:data(any) addr:0x0210cf48
-FldScr_Piece3Token kind:data(any) addr:0x0210cf60
-FldScr_PieceStar kind:data(any) addr:0x0210cf78
-FldScr_SoccerTicket kind:data(any) addr:0x0210cf90
-FldScr_PieceMoon kind:data(any) addr:0x0210cfa8
-FldScr_PieceHeartCowboyHat kind:data(any) addr:0x0210cfc0
-FldScr_PieceHeartAllAqua kind:data(any) addr:0x0210cfdc
-FldScr_PieceDarkKeyAqua kind:data(any) addr:0x0210cff8
-FldScr_Piece2Token kind:data(any) addr:0x0210d014
-FldScr_ItemStarHat kind:data(any) addr:0x0210d030
-FldScrStar_PieceEarthSunRide kind:data(any) addr:0x0210d050
-FldScr_ItemCowboyHat kind:data(any) addr:0x0210d070
-FldScr_ItemSageHat kind:data(any) addr:0x0210d090
-FldScr_PieceRainbowAll kind:data(any) addr:0x0210d0b0
-FldScrEarth_PieceRainbowDraBomb kind:data(any) addr:0x0210d0d0
-FldScr_ItemBasketball kind:data(any) addr:0x0210d0f0
-FldScr_PieceRedKey kind:data(any) addr:0x0210d110
-FldScr_PieceYellowKey kind:data(any) addr:0x0210d130
-FldScr_ItemFossilBomb kind:data(any) addr:0x0210d150
-FldScr_PieceAquaKey kind:data(any) addr:0x0210d170
-FldScr_PieceDarkKeyPink kind:data(any) addr:0x0210d190
-FldScr_PieceTokenSunRide kind:data(any) addr:0x0210d1b0
-FldScr_ItemEvilCape kind:data(any) addr:0x0210d1d0
-FldScr_PieceHeartAllPink kind:data(any) addr:0x0210d1f4
-FldScr_Piece3Sun kind:data(any) addr:0x0210d218
-FldScr_PieceSunMoon kind:data(any) addr:0x0210d244
-FldScr_UranaiToken kind:data(any) addr:0x0210d270
-FldScr_Piece3Star kind:data(any) addr:0x0210d29c
-FldScrStar_PieceLightning kind:data(any) addr:0x0210d2c8
-FldScrMoon_PieceLightningPink kind:data(any) addr:0x0210d2f8
-FldScrMoon_PieceLightningAqua kind:data(any) addr:0x0210d328
-FldScrSun_PieceLightning kind:data(any) addr:0x0210d358
-FldScr_ItemWaterBombRecover kind:data(any) addr:0x0210d388
-FldScr_Piece3Moon kind:data(any) addr:0x0210d3b8
-FldScr_PieceSunMoonStar kind:data(any) addr:0x0210d3e8
-FldScr_PieceSage kind:data(any) addr:0x0210d420
-FldScr_PieceLightningEvilHat kind:data(any) addr:0x0210d458
-FldScr_PieceTokenEvilHat kind:data(any) addr:0x0210d490
-FldScr_ItemWaterBroom kind:data(any) addr:0x0210d4c8
-FldScr_ItemFireBroom kind:data(any) addr:0x0210d510
+MapScr_PieceSun kind:data(any) addr:0x0210cc78
+MapScr_ItemEvilHat kind:data(any) addr:0x0210cc90
+MapScr_ItemFlute kind:data(any) addr:0x0210cca8
+MapScr_ItemPumpkinMask kind:data(any) addr:0x0210ccc0
+MapScr_WrestlingTicket kind:data(any) addr:0x0210ccd8
+MapScr_BasketballTicket kind:data(any) addr:0x0210ccf0
+MapScrEarth_PieceLightning kind:data(any) addr:0x0210cd08
+MapScr_ItemRubyBomb kind:data(any) addr:0x0210cd20
+MapScr_ItemWaterBomb kind:data(any) addr:0x0210cd38
+MapScr_PieceRainbow kind:data(any) addr:0x0210cd50
+MapScr_PieceHeart kind:data(any) addr:0x0210cd68
+MapScr_ItemStarCape kind:data(any) addr:0x0210cd80
+MapScr_FishingTicket kind:data(any) addr:0x0210cd98
+MapScr_ItemSoccerBomb kind:data(any) addr:0x0210cdb0
+MapScr_ItemShuriken kind:data(any) addr:0x0210cdc8
+MapScr_PieceSunMoonStarRival kind:data(any) addr:0x0210cde0
+MapScr_ItemFishingRod kind:data(any) addr:0x0210cdf8
+MapScr_ItemSwimRing kind:data(any) addr:0x0210ce10
+MapScr_PieceGreenKey kind:data(any) addr:0x0210ce28
+MapScr_ItemBroom kind:data(any) addr:0x0210ce40
+MapScr_ItemPotBomb kind:data(any) addr:0x0210ce58
+MapScr_ItemBomb kind:data(any) addr:0x0210ce70
+MapScr_PieceStarMoon kind:data(any) addr:0x0210ce88
+MapScr_PieceEarth kind:data(any) addr:0x0210cea0
+MapScr_TruckTicket kind:data(any) addr:0x0210ceb8
+MapScr_DanceTicket kind:data(any) addr:0x0210ced0
+MapScr_ItemMagnetBomb kind:data(any) addr:0x0210cee8
+MapScr_ItemRubyBombMiniBom kind:data(any) addr:0x0210cf00
+MapScr_PieceToken kind:data(any) addr:0x0210cf18
+MapScr_CycleTicket kind:data(any) addr:0x0210cf30
+MapScr_BoatTicket kind:data(any) addr:0x0210cf48
+MapScr_Piece3Token kind:data(any) addr:0x0210cf60
+MapScr_PieceStar kind:data(any) addr:0x0210cf78
+MapScr_SoccerTicket kind:data(any) addr:0x0210cf90
+MapScr_PieceMoon kind:data(any) addr:0x0210cfa8
+MapScr_PieceHeartCowboyHat kind:data(any) addr:0x0210cfc0
+MapScr_PieceHeartAllAqua kind:data(any) addr:0x0210cfdc
+MapScr_PieceDarkKeyAqua kind:data(any) addr:0x0210cff8
+MapScr_Piece2Token kind:data(any) addr:0x0210d014
+MapScr_ItemStarHat kind:data(any) addr:0x0210d030
+MapScrStar_PieceEarthSunRide kind:data(any) addr:0x0210d050
+MapScr_ItemCowboyHat kind:data(any) addr:0x0210d070
+MapScr_ItemSageHat kind:data(any) addr:0x0210d090
+MapScr_PieceRainbowAll kind:data(any) addr:0x0210d0b0
+MapScrEarth_PieceRainbowDraBomb kind:data(any) addr:0x0210d0d0
+MapScr_ItemBasketball kind:data(any) addr:0x0210d0f0
+MapScr_PieceRedKey kind:data(any) addr:0x0210d110
+MapScr_PieceYellowKey kind:data(any) addr:0x0210d130
+MapScr_ItemFossilBomb kind:data(any) addr:0x0210d150
+MapScr_PieceAquaKey kind:data(any) addr:0x0210d170
+MapScr_PieceDarkKeyPink kind:data(any) addr:0x0210d190
+MapScr_PieceTokenSunRide kind:data(any) addr:0x0210d1b0
+MapScr_ItemEvilCape kind:data(any) addr:0x0210d1d0
+MapScr_PieceHeartAllPink kind:data(any) addr:0x0210d1f4
+MapScr_Piece3Sun kind:data(any) addr:0x0210d218
+MapScr_PieceSunMoon kind:data(any) addr:0x0210d244
+MapScr_UranaiToken kind:data(any) addr:0x0210d270
+MapScr_Piece3Star kind:data(any) addr:0x0210d29c
+MapScrStar_PieceLightning kind:data(any) addr:0x0210d2c8
+MapScrMoon_PieceLightningPink kind:data(any) addr:0x0210d2f8
+MapScrMoon_PieceLightningAqua kind:data(any) addr:0x0210d328
+MapScrSun_PieceLightning kind:data(any) addr:0x0210d358
+MapScr_ItemWaterBombRecover kind:data(any) addr:0x0210d388
+MapScr_Piece3Moon kind:data(any) addr:0x0210d3b8
+MapScr_PieceSunMoonStar kind:data(any) addr:0x0210d3e8
+MapScr_PieceSage kind:data(any) addr:0x0210d420
+MapScr_PieceLightningEvilHat kind:data(any) addr:0x0210d458
+MapScr_PieceTokenEvilHat kind:data(any) addr:0x0210d490
+MapScr_ItemWaterBroom kind:data(any) addr:0x0210d4c8
+MapScr_ItemFireBroom kind:data(any) addr:0x0210d510
 data_ov002_0210d558 kind:data(any) addr:0x0210d558
 data_ov002_0210d568 kind:data(any) addr:0x0210d568
 data_ov002_0210d578 kind:data(any) addr:0x0210d578
@@ -1801,44 +1801,44 @@ data_ov002_0210d798 kind:data(any) addr:0x0210d798
 data_ov002_0210d7a8 kind:data(any) addr:0x0210d7a8
 data_ov002_0210d7b8 kind:data(any) addr:0x0210d7b8
 data_ov002_0210d7c8 kind:data(any) addr:0x0210d7c8
-FldMes_MenuGuidePiece kind:data(any) addr:0x0210d7d8
-FldMes_MenuGuidePage kind:data(any) addr:0x0210d7e8
-FldMes_MenuGuideItem kind:data(any) addr:0x0210d7f8
-FldMes_MenuGuideMail kind:data(any) addr:0x0210d808
-FldMes_MenuLandExit kind:data(any) addr:0x0210d818
-FldMes_MenuLandExitChoice kind:data(any) addr:0x0210d828
-FldMes_MenuSaveEnd kind:data(any) addr:0x0210d838
-FldMes_MenuSaveBusy kind:data(any) addr:0x0210d848
-FldMes_MenuSaveOverwrite kind:data(any) addr:0x0210d858
-FldMes_MenuLoadBackupEnd kind:data(any) addr:0x0210d868
-FldMes_MenuLoadBackup kind:data(any) addr:0x0210d878
-FldMes_MenuStampNone kind:data(any) addr:0x0210d888
-FldMes_MenuItemNotUnlock kind:data(any) addr:0x0210d898
-FldMes_MenuPieceKeyDark kind:data(any) addr:0x0210d8a8
-FldMes_MenuPieceKeyAqua kind:data(any) addr:0x0210d8b8
-FldMes_MenuPieceKeyYellow kind:data(any) addr:0x0210d8c8
-FldMes_MenuPieceKeyRed kind:data(any) addr:0x0210d8d8
-FldMes_MenuPieceKeyGreen kind:data(any) addr:0x0210d8e8
-FldMes_MenuPieceHeart kind:data(any) addr:0x0210d8f8
-FldMes_MenuPieceRainbow kind:data(any) addr:0x0210d908
-FldMes_MenuPieceLightning kind:data(any) addr:0x0210d918
-FldMes_MenuPieceEarth kind:data(any) addr:0x0210d928
-FldMes_MenuPieceSun kind:data(any) addr:0x0210d938
-FldMes_MenuPieceMoon kind:data(any) addr:0x0210d948
-FldMes_MenuPieceStar kind:data(any) addr:0x0210d958
-FldMes_MenuItemNoUse kind:data(any) addr:0x0210d968
-FldMes_MenuItemWaterBomb kind:data(any) addr:0x0210d978
-FldMes_MenuItemFireBroom kind:data(any) addr:0x0210d988
-FldMes_MenuItemWaterBroom kind:data(any) addr:0x0210d998
-FldMes_MenuGuideOption kind:data(any) addr:0x0210d9a8
-FldMes_MenuGuideSave kind:data(any) addr:0x0210d9b8
-FldMes_MenuGuideLoad kind:data(any) addr:0x0210d9c8
-FldMes_MenuGuideStamp kind:data(any) addr:0x0210d9d8
-FldMes_MenuItemHatTbl kind:data(any) addr:0x0210d9e8
-FldMes_MenuItemBodyTbl kind:data(any) addr:0x0210da00
-FldMes_MenuItemBombTbl kind:data(any) addr:0x0210da18
-FldMes_MenuStampTbl kind:data(any) addr:0x0210da38
-FldMes_MenuStampBonusTbl kind:data(any) addr:0x0210da60
+MapMes_MenuGuidePiece kind:data(any) addr:0x0210d7d8
+MapMes_MenuGuidePage kind:data(any) addr:0x0210d7e8
+MapMes_MenuGuideItem kind:data(any) addr:0x0210d7f8
+MapMes_MenuGuideMail kind:data(any) addr:0x0210d808
+MapMes_MenuLandExit kind:data(any) addr:0x0210d818
+MapMes_MenuLandExitChoice kind:data(any) addr:0x0210d828
+MapMes_MenuSaveEnd kind:data(any) addr:0x0210d838
+MapMes_MenuSaveBusy kind:data(any) addr:0x0210d848
+MapMes_MenuSaveOverwrite kind:data(any) addr:0x0210d858
+MapMes_MenuLoadBackupEnd kind:data(any) addr:0x0210d868
+MapMes_MenuLoadBackup kind:data(any) addr:0x0210d878
+MapMes_MenuStampNone kind:data(any) addr:0x0210d888
+MapMes_MenuItemNotUnlock kind:data(any) addr:0x0210d898
+MapMes_MenuPieceKeyDark kind:data(any) addr:0x0210d8a8
+MapMes_MenuPieceKeyAqua kind:data(any) addr:0x0210d8b8
+MapMes_MenuPieceKeyYellow kind:data(any) addr:0x0210d8c8
+MapMes_MenuPieceKeyRed kind:data(any) addr:0x0210d8d8
+MapMes_MenuPieceKeyGreen kind:data(any) addr:0x0210d8e8
+MapMes_MenuPieceHeart kind:data(any) addr:0x0210d8f8
+MapMes_MenuPieceRainbow kind:data(any) addr:0x0210d908
+MapMes_MenuPieceLightning kind:data(any) addr:0x0210d918
+MapMes_MenuPieceEarth kind:data(any) addr:0x0210d928
+MapMes_MenuPieceSun kind:data(any) addr:0x0210d938
+MapMes_MenuPieceMoon kind:data(any) addr:0x0210d948
+MapMes_MenuPieceStar kind:data(any) addr:0x0210d958
+MapMes_MenuItemNoUse kind:data(any) addr:0x0210d968
+MapMes_MenuItemWaterBomb kind:data(any) addr:0x0210d978
+MapMes_MenuItemFireBroom kind:data(any) addr:0x0210d988
+MapMes_MenuItemWaterBroom kind:data(any) addr:0x0210d998
+MapMes_MenuGuideOption kind:data(any) addr:0x0210d9a8
+MapMes_MenuGuideSave kind:data(any) addr:0x0210d9b8
+MapMes_MenuGuideLoad kind:data(any) addr:0x0210d9c8
+MapMes_MenuGuideStamp kind:data(any) addr:0x0210d9d8
+MapMes_MenuItemHatTbl kind:data(any) addr:0x0210d9e8
+MapMes_MenuItemBodyTbl kind:data(any) addr:0x0210da00
+MapMes_MenuItemBombTbl kind:data(any) addr:0x0210da18
+MapMes_MenuStampTbl kind:data(any) addr:0x0210da38
+MapMes_MenuStampBonusTbl kind:data(any) addr:0x0210da60
 data_ov002_0210da88 kind:data(any) addr:0x0210da88
 data_ov002_0210da98 kind:data(any) addr:0x0210da98
 data_ov002_0210daa8 kind:data(any) addr:0x0210daa8
@@ -1855,37 +1855,37 @@ data_ov002_0210db48 kind:data(any) addr:0x0210db48
 data_ov002_0210db58 kind:data(any) addr:0x0210db58
 data_ov002_0210db68 kind:data(any) addr:0x0210db68
 data_ov002_0210db78 kind:data(any) addr:0x0210db78
-FldMes_InformeStampCheck kind:data(any) addr:0x0210db88
-FldMes_InformeWarpFirst kind:data(any) addr:0x0210db98
-FldMes_InformeWarpSelect kind:data(any) addr:0x0210dba8
-FldMes_InformeSelect kind:data(any) addr:0x0210dbb8
-FldMes_InformeHypnotize kind:data(any) addr:0x0210dbc8
-FldMes_InformeTokenCantBuy kind:data(any) addr:0x0210dbd8
-FldMes_InformeTicketGet kind:data(any) addr:0x0210dbe8
-FldMes_InformeTicketGetFirst kind:data(any) addr:0x0210dbf8
-FldMes_InformeHaveTicket kind:data(any) addr:0x0210dc08
-FldMes_InformeTokenTrade kind:data(any) addr:0x0210dc18
-FldMes_InformeTicketLimitedFail kind:data(any) addr:0x0210dc28
-FldMes_InformeTicketLimited kind:data(any) addr:0x0210dc38
-FldMes_InformeTokenExchange kind:data(any) addr:0x0210dc48
-FldMes_InformeTicketFishing kind:data(any) addr:0x0210dc58
-FldMes_InformeTicketBasketball kind:data(any) addr:0x0210dc68
-FldMes_InformeTicketSoccer kind:data(any) addr:0x0210dc78
-FldMes_InformeTicketSumo kind:data(any) addr:0x0210dc88
-FldMes_InformeTicketCycle kind:data(any) addr:0x0210dc98
-FldMes_InformeTicketDance kind:data(any) addr:0x0210dca8
-FldMes_InformeTicketSunRide kind:data(any) addr:0x0210dcb8
-FldMes_InformeTicketTruck kind:data(any) addr:0x0210dcc8
-FldMes_InformeHypnotizeEnd4 kind:data(any) addr:0x0210dcd8
-FldMes_InformeHypnotizeEnd3 kind:data(any) addr:0x0210dce8
-FldMes_InformeHypnotizeEnd2 kind:data(any) addr:0x0210dcf8
-FldMes_InformeHypnotizeEnd1 kind:data(any) addr:0x0210dd08
-FldMes_InformeEarthFirst kind:data(any) addr:0x0210dd18
-FldMes_InformeSunFirst kind:data(any) addr:0x0210dd28
-FldMes_InformeMoonFirst kind:data(any) addr:0x0210dd38
-FldMes_InformeStarFirst kind:data(any) addr:0x0210dd48
-FldMes_InformeFirst kind:data(any) addr:0x0210dd58
-FldMes_InformeNoBonus kind:data(any) addr:0x0210dd68
+MapMes_InformeStampCheck kind:data(any) addr:0x0210db88
+MapMes_InformeWarpFirst kind:data(any) addr:0x0210db98
+MapMes_InformeWarpSelect kind:data(any) addr:0x0210dba8
+MapMes_InformeSelect kind:data(any) addr:0x0210dbb8
+MapMes_InformeHypnotize kind:data(any) addr:0x0210dbc8
+MapMes_InformeTokenCantBuy kind:data(any) addr:0x0210dbd8
+MapMes_InformeTicketGet kind:data(any) addr:0x0210dbe8
+MapMes_InformeTicketGetFirst kind:data(any) addr:0x0210dbf8
+MapMes_InformeHaveTicket kind:data(any) addr:0x0210dc08
+MapMes_InformeTokenTrade kind:data(any) addr:0x0210dc18
+MapMes_InformeTicketLimitedFail kind:data(any) addr:0x0210dc28
+MapMes_InformeTicketLimited kind:data(any) addr:0x0210dc38
+MapMes_InformeTokenExchange kind:data(any) addr:0x0210dc48
+MapMes_InformeTicketFishing kind:data(any) addr:0x0210dc58
+MapMes_InformeTicketBasketball kind:data(any) addr:0x0210dc68
+MapMes_InformeTicketSoccer kind:data(any) addr:0x0210dc78
+MapMes_InformeTicketSumo kind:data(any) addr:0x0210dc88
+MapMes_InformeTicketCycle kind:data(any) addr:0x0210dc98
+MapMes_InformeTicketDance kind:data(any) addr:0x0210dca8
+MapMes_InformeTicketSunRide kind:data(any) addr:0x0210dcb8
+MapMes_InformeTicketTruck kind:data(any) addr:0x0210dcc8
+MapMes_InformeHypnotizeEnd4 kind:data(any) addr:0x0210dcd8
+MapMes_InformeHypnotizeEnd3 kind:data(any) addr:0x0210dce8
+MapMes_InformeHypnotizeEnd2 kind:data(any) addr:0x0210dcf8
+MapMes_InformeHypnotizeEnd1 kind:data(any) addr:0x0210dd08
+MapMes_InformeEarthFirst kind:data(any) addr:0x0210dd18
+MapMes_InformeSunFirst kind:data(any) addr:0x0210dd28
+MapMes_InformeMoonFirst kind:data(any) addr:0x0210dd38
+MapMes_InformeStarFirst kind:data(any) addr:0x0210dd48
+MapMes_InformeFirst kind:data(any) addr:0x0210dd58
+MapMes_InformeNoBonus kind:data(any) addr:0x0210dd68
 data_ov002_0210dd78 kind:data(any) addr:0x0210dd78
 data_ov002_0210dd88 kind:data(any) addr:0x0210dd88
 data_ov002_0210dd98 kind:data(any) addr:0x0210dd98
@@ -1936,44 +1936,44 @@ data_ov002_0210ed68 kind:data(any) addr:0x0210ed68
 data_ov002_0210ed78 kind:data(any) addr:0x0210ed78
 data_ov002_0210ed88 kind:data(any) addr:0x0210ed88
 data_ov002_0210ed98 kind:data(any) addr:0x0210ed98
-FldScr_CommentUranai kind:data(any) addr:0x0210eda8
-FldScrUranai_NextAreaMoonA1P3 kind:data(any) addr:0x0210edc0
-FldScrUranai_NextEarthCave kind:data(any) addr:0x0210ede4
-FldScrUranai_NextAreaSunA1P2 kind:data(any) addr:0x0210ee08
-FldScrUranai_NextAreaMoonA1P4 kind:data(any) addr:0x0210ee2c
-FldScrUranai_StarSecretHint kind:data(any) addr:0x0210ee50
-FldScrUranai_NextAreaSunA2P2 kind:data(any) addr:0x0210ee74
-FldScrUranai_NextAreaMoonA1P5 kind:data(any) addr:0x0210ee98
-FldScrUranai_NextAreaStarA1P2 kind:data(any) addr:0x0210eebc
-FldScrUranai_NextAreaSunA1P3 kind:data(any) addr:0x0210eee0
-FldScrUranai_NextAreaStarA1P3 kind:data(any) addr:0x0210ef04
-FldScrUranai_NextAreaMoonA2P1 kind:data(any) addr:0x0210ef28
-FldScrUranai_NextAreaStarA1P4 kind:data(any) addr:0x0210ef4c
-FldScrUranai_NextAreaSunA2P4 kind:data(any) addr:0x0210ef70
-FldScrUranai_NextAreaStarA2P1 kind:data(any) addr:0x0210ef94
-FldScrUranai_NextAreaStarA1P1 kind:data(any) addr:0x0210efb8
-FldScrUranai_NextAreaMoonA2P2 kind:data(any) addr:0x0210efdc
-FldScrUranai_NextAreaStarA2P2 kind:data(any) addr:0x0210f000
-FldScrUranai_NextAreaSunA1P4 kind:data(any) addr:0x0210f024
-FldScrUranai_DarkSky kind:data(any) addr:0x0210f048
-FldScrUranai_NextAreaStarA2P3 kind:data(any) addr:0x0210f06c
-FldScrUranai_NextAreaMoonA2P3 kind:data(any) addr:0x0210f090
-FldScrUranai_NextAreaStarA2P4 kind:data(any) addr:0x0210f0b4
-FldScrUranai_NextEarthGrave kind:data(any) addr:0x0210f0d8
-FldScrUranai_NextAreaSunA2P3 kind:data(any) addr:0x0210f0fc
-FldScrUranai_NextAreaStarA2P5 kind:data(any) addr:0x0210f120
-FldScrUranai_MoonProtect kind:data(any) addr:0x0210f144
-FldScrUranai_StarGuidance kind:data(any) addr:0x0210f168
-FldScrUranai_TokenBonus kind:data(any) addr:0x0210f18c
-FldScrUranai_NextAreaSunA2P1 kind:data(any) addr:0x0210f1b0
-FldScrUranai_TokenBonusFirst kind:data(any) addr:0x0210f1d4
-FldScrUranai_NextAreaMoonA1P1 kind:data(any) addr:0x0210f1f8
-FldScrUranai_PeaceToken kind:data(any) addr:0x0210f21c
-FldScrUranai_NextAreaSunA1P1 kind:data(any) addr:0x0210f240
-FldScrUranai_NextAreaMoonA1P2 kind:data(any) addr:0x0210f264
-FldScrUranai_OtherArea kind:data(any) addr:0x0210f288
-FldScrUranai_SunWarmth kind:data(any) addr:0x0210f2ac
-FldScrUranai_NextArea kind:data(any) addr:0x0210f2d0
+MapScr_CommentUranai kind:data(any) addr:0x0210eda8
+MapScrUranai_NextAreaMoonA1P3 kind:data(any) addr:0x0210edc0
+MapScrUranai_NextEarthCave kind:data(any) addr:0x0210ede4
+MapScrUranai_NextAreaSunA1P2 kind:data(any) addr:0x0210ee08
+MapScrUranai_NextAreaMoonA1P4 kind:data(any) addr:0x0210ee2c
+MapScrUranai_StarSecretHint kind:data(any) addr:0x0210ee50
+MapScrUranai_NextAreaSunA2P2 kind:data(any) addr:0x0210ee74
+MapScrUranai_NextAreaMoonA1P5 kind:data(any) addr:0x0210ee98
+MapScrUranai_NextAreaStarA1P2 kind:data(any) addr:0x0210eebc
+MapScrUranai_NextAreaSunA1P3 kind:data(any) addr:0x0210eee0
+MapScrUranai_NextAreaStarA1P3 kind:data(any) addr:0x0210ef04
+MapScrUranai_NextAreaMoonA2P1 kind:data(any) addr:0x0210ef28
+MapScrUranai_NextAreaStarA1P4 kind:data(any) addr:0x0210ef4c
+MapScrUranai_NextAreaSunA2P4 kind:data(any) addr:0x0210ef70
+MapScrUranai_NextAreaStarA2P1 kind:data(any) addr:0x0210ef94
+MapScrUranai_NextAreaStarA1P1 kind:data(any) addr:0x0210efb8
+MapScrUranai_NextAreaMoonA2P2 kind:data(any) addr:0x0210efdc
+MapScrUranai_NextAreaStarA2P2 kind:data(any) addr:0x0210f000
+MapScrUranai_NextAreaSunA1P4 kind:data(any) addr:0x0210f024
+MapScrUranai_DarkSky kind:data(any) addr:0x0210f048
+MapScrUranai_NextAreaStarA2P3 kind:data(any) addr:0x0210f06c
+MapScrUranai_NextAreaMoonA2P3 kind:data(any) addr:0x0210f090
+MapScrUranai_NextAreaStarA2P4 kind:data(any) addr:0x0210f0b4
+MapScrUranai_NextEarthGrave kind:data(any) addr:0x0210f0d8
+MapScrUranai_NextAreaSunA2P3 kind:data(any) addr:0x0210f0fc
+MapScrUranai_NextAreaStarA2P5 kind:data(any) addr:0x0210f120
+MapScrUranai_MoonProtect kind:data(any) addr:0x0210f144
+MapScrUranai_StarGuidance kind:data(any) addr:0x0210f168
+MapScrUranai_TokenBonus kind:data(any) addr:0x0210f18c
+MapScrUranai_NextAreaSunA2P1 kind:data(any) addr:0x0210f1b0
+MapScrUranai_TokenBonusFirst kind:data(any) addr:0x0210f1d4
+MapScrUranai_NextAreaMoonA1P1 kind:data(any) addr:0x0210f1f8
+MapScrUranai_PeaceToken kind:data(any) addr:0x0210f21c
+MapScrUranai_NextAreaSunA1P1 kind:data(any) addr:0x0210f240
+MapScrUranai_NextAreaMoonA1P2 kind:data(any) addr:0x0210f264
+MapScrUranai_OtherArea kind:data(any) addr:0x0210f288
+MapScrUranai_SunWarmth kind:data(any) addr:0x0210f2ac
+MapScrUranai_NextArea kind:data(any) addr:0x0210f2d0
 data_ov002_0210f2fc kind:data(any) addr:0x0210f2fc
 data_ov002_0210f31c kind:data(any) addr:0x0210f31c
 data_ov002_0210f33c kind:data(any) addr:0x0210f33c
@@ -2088,106 +2088,106 @@ data_ov002_0210fac0 kind:data(any) addr:0x0210fac0
 data_ov002_0210fad0 kind:data(any) addr:0x0210fad0
 data_ov002_0210fae0 kind:data(any) addr:0x0210fae0
 data_ov002_0210faf0 kind:data(any) addr:0x0210faf0
-FldScrSun_CommentFishing kind:data(any) addr:0x0210fb00
-FldScr_CommentBombPedestalGreen kind:data(any) addr:0x0210fb18
-FldScrEarth_CommentCombineBombBlue kind:data(any) addr:0x0210fb30
-FldScr_StampFirst kind:data(any) addr:0x0210fb48
-FldScrEarth_ShurikenSet kind:data(any) addr:0x0210fb60
-FldScrSun_CommentBasketballHelp kind:data(any) addr:0x0210fb78
-FldScrStar_CommentMiniArea kind:data(any) addr:0x0210fb90
-FldScrStar_CommentMiniAreaReturn kind:data(any) addr:0x0210fba8
-FldScrEarth_CommentHashi kind:data(any) addr:0x0210fbc0
-FldScr_BombPedestalResult kind:data(any) addr:0x0210fbd8
-FldScrStar_CommentStatue kind:data(any) addr:0x0210fbf0
-FldScrStar_CommentStatueEvil kind:data(any) addr:0x0210fc08
-FldScrStar_CommentStatueRestore kind:data(any) addr:0x0210fc20
-FldScrEarth_CommentCombineBombSign kind:data(any) addr:0x0210fc38
-FldScrSun_CommentItemDisguise kind:data(any) addr:0x0210fc50
-FldScr_CommentBombPedestalBlue kind:data(any) addr:0x0210fc68
-FldScr_GateUnknownOpen kind:data(any) addr:0x0210fc80
-FldScrStar_CommentCup kind:data(any) addr:0x0210fc98
-FldScrEarth_CommentJumpDown kind:data(any) addr:0x0210fcb0
-FldScr_EmptyCup kind:data(any) addr:0x0210fcc8
-FldScr_GateNeedKey kind:data(any) addr:0x0210fce0
-FldScrSun_CommentSeesaw kind:data(any) addr:0x0210fcf8
-FldScrEarth_Hashi1Down kind:data(any) addr:0x0210fd10
-FldScrMoon_CommentBasketball kind:data(any) addr:0x0210fd28
-FldScr_CommentHasStamp kind:data(any) addr:0x0210fd40
-FldScrMoon_CommentTotem kind:data(any) addr:0x0210fd58
-FldScr_TreasureBoxNoBomPad kind:data(any) addr:0x0210fd70
-FldScrMoon_CommentTotem2 kind:data(any) addr:0x0210fd88
-FldScr_TreasureBoxBombPedestal kind:data(any) addr:0x0210fda0
-FldScr_TreasureBoxOpenMini kind:data(any) addr:0x0210fdb8
-FldScrMoon_CommentTotemPray kind:data(any) addr:0x0210fdd0
-FldScrSun_MagnetOnAttract kind:data(any) addr:0x0210fde8
-FldScrEarth_CommentSageRope kind:data(any) addr:0x0210fe00
-FldScr_FallTruck kind:data(any) addr:0x0210fe18
-FldScr_GateKeyhole kind:data(any) addr:0x0210fe30
-FldScr_GateNeedPieces kind:data(any) addr:0x0210fe48
-FldScrSun_MagnetOnRepel kind:data(any) addr:0x0210fe60
-FldScr_WaterFailFirst kind:data(any) addr:0x0210fe78
-FldScr_WaterFail kind:data(any) addr:0x0210fe90
-FldScrSun_SunRideFail kind:data(any) addr:0x0210fea8
-FldScr_FallTightrope kind:data(any) addr:0x0210fec0
-FldScrMoon_CommentSlide kind:data(any) addr:0x0210fed8
-FldScr_UzuRecover kind:data(any) addr:0x0210fef0
-FldScrSun_CommentJumpDown kind:data(any) addr:0x0210ff08
-FldScrMoon_DiceRoll kind:data(any) addr:0x0210ff20
-FldScrStar_CommentBroomMark kind:data(any) addr:0x0210ff38
-FldScrStar_CommentHasWormBroom kind:data(any) addr:0x0210ff50
-FldScrStar_CommentHasBroom kind:data(any) addr:0x0210ff68
-FldScrMoon_CommentBigBall kind:data(any) addr:0x0210ff80
-FldScrMoon_CommentStarBomberMark kind:data(any) addr:0x0210ff98
-FldScrStar_FlyFail kind:data(any) addr:0x0210ffb0
-FldScrEarth_CommentGrave kind:data(any) addr:0x0210ffc8
-FldScrStar_CommentRockBomb kind:data(any) addr:0x0210ffe0
-FldScr_TreeShakeEmpty kind:data(any) addr:0x0210fff8
-FldScr_TreasureBoxOpenFirst kind:data(any) addr:0x02110010
-FldScrStar_CommentSoccerGoal kind:data(any) addr:0x02110028
-FldScrSun_CommentTreeItem kind:data(any) addr:0x02110040
-FldScrStar_CommentTreeShakeFirst kind:data(any) addr:0x02110058
-FldScrSun_CommentHiddenTreasureBox kind:data(any) addr:0x02110070
-FldScr_TreeShakeLose kind:data(any) addr:0x02110088
-FldScrEarth_CommentShurikenTower kind:data(any) addr:0x021100a0
-FldScrSun_CommentSweepSand kind:data(any) addr:0x021100b8
-FldScrEarth_CommentCombineBombRed kind:data(any) addr:0x021100d0
-FldScr_SandSweepLose kind:data(any) addr:0x021100e8
-FldScrEarth_CommentCombineBomb kind:data(any) addr:0x02110100
-FldScrEarth_EvilMansion kind:data(any) addr:0x02110118
-FldScr_GateOpenFirst kind:data(any) addr:0x02110134
-FldScrStar_ExitMini kind:data(any) addr:0x02110150
-FldScr_GateOpenFirst2 kind:data(any) addr:0x0211016c
-FldScr_MailFirst kind:data(any) addr:0x02110188
-FldScrEarth_Hashi2Down kind:data(any) addr:0x021101a4
-FldScrEarth_DiceRollFirst kind:data(any) addr:0x021101c0
-FldScrMoon_DiceRollFirst kind:data(any) addr:0x021101dc
-FldScrSun_EscapeDisguise kind:data(any) addr:0x021101f8
-FldScrStar_FlySucceed kind:data(any) addr:0x02110214
-FldScrSun_CommentTreeShake kind:data(any) addr:0x02110230
-FldScrStar_CommentRiverFirst kind:data(any) addr:0x0211024c
-FldScrStar_CommentTreeShake kind:data(any) addr:0x02110268
-FldScrStar_SandSweepFirst kind:data(any) addr:0x02110284
-FldScrSun_SandSweepFirst kind:data(any) addr:0x021102a0
-FldScr_CommentBombPedestalEmpty kind:data(any) addr:0x021102bc
-FldScr_CommentBombPedestalColor kind:data(any) addr:0x021102dc
-FldScrSun_CommentBasketball kind:data(any) addr:0x021102fc
-FldScrEarth_CommentPlaceBombRed kind:data(any) addr:0x0211031c
-FldScrEarth_CommentPlaceBombBlue kind:data(any) addr:0x0211033c
-FldScr_CommentWrongBomb kind:data(any) addr:0x0211035c
-FldScrSun_CommentMagnetRed kind:data(any) addr:0x0211037c
-FldScrSun_CommentMagnetBlue kind:data(any) addr:0x0211039c
-FldScr_CommentOtherTicket kind:data(any) addr:0x021103bc
-FldScrMoon_CommentPotBombAlP2 kind:data(any) addr:0x021103dc
-FldScrMoon_CommentPotBombFluteA1P2 kind:data(any) addr:0x021103fc
-FldScrMoon_CommentPotBombA1P5 kind:data(any) addr:0x0211041c
-FldScrMoon_CommentTBBMStart kind:data(any) addr:0x0211043c
-FldScrMoon_CommentPotBombFluteA1P5 kind:data(any) addr:0x0211045c
-FldScrStar_CommentSpecialBroom kind:data(any) addr:0x0211047c
-FldScrStar_CommentNoSwimRing kind:data(any) addr:0x0211049c
-FldScrStar_CommentSandTreasureBox kind:data(any) addr:0x021104bc
-FldScrEarth_CommentShuriken kind:data(any) addr:0x021104dc
-FldScrMoon_RideTruck kind:data(any) addr:0x021104fc
-FldScrSun_RideJet kind:data(any) addr:0x02110534
+MapScrSun_CommentFishing kind:data(any) addr:0x0210fb00
+MapScr_CommentBombPedestalGreen kind:data(any) addr:0x0210fb18
+MapScrEarth_CommentCombineBombBlue kind:data(any) addr:0x0210fb30
+MapScr_StampFirst kind:data(any) addr:0x0210fb48
+MapScrEarth_ShurikenSet kind:data(any) addr:0x0210fb60
+MapScrSun_CommentBasketballHelp kind:data(any) addr:0x0210fb78
+MapScrStar_CommentMiniArea kind:data(any) addr:0x0210fb90
+MapScrStar_CommentMiniAreaReturn kind:data(any) addr:0x0210fba8
+MapScrEarth_CommentHashi kind:data(any) addr:0x0210fbc0
+MapScr_BombPedestalResult kind:data(any) addr:0x0210fbd8
+MapScrStar_CommentStatue kind:data(any) addr:0x0210fbf0
+MapScrStar_CommentStatueEvil kind:data(any) addr:0x0210fc08
+MapScrStar_CommentStatueRestore kind:data(any) addr:0x0210fc20
+MapScrEarth_CommentCombineBombSign kind:data(any) addr:0x0210fc38
+MapScrSun_CommentItemDisguise kind:data(any) addr:0x0210fc50
+MapScr_CommentBombPedestalBlue kind:data(any) addr:0x0210fc68
+MapScr_GateUnknownOpen kind:data(any) addr:0x0210fc80
+MapScrStar_CommentCup kind:data(any) addr:0x0210fc98
+MapScrEarth_CommentJumpDown kind:data(any) addr:0x0210fcb0
+MapScr_EmptyCup kind:data(any) addr:0x0210fcc8
+MapScr_GateNeedKey kind:data(any) addr:0x0210fce0
+MapScrSun_CommentSeesaw kind:data(any) addr:0x0210fcf8
+MapScrEarth_Hashi1Down kind:data(any) addr:0x0210fd10
+MapScrMoon_CommentBasketball kind:data(any) addr:0x0210fd28
+MapScr_CommentHasStamp kind:data(any) addr:0x0210fd40
+MapScrMoon_CommentTotem kind:data(any) addr:0x0210fd58
+MapScr_TreasureBoxNoBomPad kind:data(any) addr:0x0210fd70
+MapScrMoon_CommentTotem2 kind:data(any) addr:0x0210fd88
+MapScr_TreasureBoxBombPedestal kind:data(any) addr:0x0210fda0
+MapScr_TreasureBoxOpenMini kind:data(any) addr:0x0210fdb8
+MapScrMoon_CommentTotemPray kind:data(any) addr:0x0210fdd0
+MapScrSun_MagnetOnAttract kind:data(any) addr:0x0210fde8
+MapScrEarth_CommentSageRope kind:data(any) addr:0x0210fe00
+MapScr_FallTruck kind:data(any) addr:0x0210fe18
+MapScr_GateKeyhole kind:data(any) addr:0x0210fe30
+MapScr_GateNeedPieces kind:data(any) addr:0x0210fe48
+MapScrSun_MagnetOnRepel kind:data(any) addr:0x0210fe60
+MapScr_WaterFailFirst kind:data(any) addr:0x0210fe78
+MapScr_WaterFail kind:data(any) addr:0x0210fe90
+MapScrSun_SunRideFail kind:data(any) addr:0x0210fea8
+MapScr_FallTightrope kind:data(any) addr:0x0210fec0
+MapScrMoon_CommentSlide kind:data(any) addr:0x0210fed8
+MapScr_UzuRecover kind:data(any) addr:0x0210fef0
+MapScrSun_CommentJumpDown kind:data(any) addr:0x0210ff08
+MapScrMoon_DiceRoll kind:data(any) addr:0x0210ff20
+MapScrStar_CommentBroomMark kind:data(any) addr:0x0210ff38
+MapScrStar_CommentHasWormBroom kind:data(any) addr:0x0210ff50
+MapScrStar_CommentHasBroom kind:data(any) addr:0x0210ff68
+MapScrMoon_CommentBigBall kind:data(any) addr:0x0210ff80
+MapScrMoon_CommentStarBomberMark kind:data(any) addr:0x0210ff98
+MapScrStar_FlyFail kind:data(any) addr:0x0210ffb0
+MapScrEarth_CommentGrave kind:data(any) addr:0x0210ffc8
+MapScrStar_CommentRockBomb kind:data(any) addr:0x0210ffe0
+MapScr_TreeShakeEmpty kind:data(any) addr:0x0210fff8
+MapScr_TreasureBoxOpenFirst kind:data(any) addr:0x02110010
+MapScrStar_CommentSoccerGoal kind:data(any) addr:0x02110028
+MapScrSun_CommentTreeItem kind:data(any) addr:0x02110040
+MapScrStar_CommentTreeShakeFirst kind:data(any) addr:0x02110058
+MapScrSun_CommentHiddenTreasureBox kind:data(any) addr:0x02110070
+MapScr_TreeShakeLose kind:data(any) addr:0x02110088
+MapScrEarth_CommentShurikenTower kind:data(any) addr:0x021100a0
+MapScrSun_CommentSweepSand kind:data(any) addr:0x021100b8
+MapScrEarth_CommentCombineBombRed kind:data(any) addr:0x021100d0
+MapScr_SandSweepLose kind:data(any) addr:0x021100e8
+MapScrEarth_CommentCombineBomb kind:data(any) addr:0x02110100
+MapScrEarth_EvilMansion kind:data(any) addr:0x02110118
+MapScr_GateOpenFirst kind:data(any) addr:0x02110134
+MapScrStar_ExitMini kind:data(any) addr:0x02110150
+MapScr_GateOpenFirst2 kind:data(any) addr:0x0211016c
+MapScr_MailFirst kind:data(any) addr:0x02110188
+MapScrEarth_Hashi2Down kind:data(any) addr:0x021101a4
+MapScrEarth_DiceRollFirst kind:data(any) addr:0x021101c0
+MapScrMoon_DiceRollFirst kind:data(any) addr:0x021101dc
+MapScrSun_EscapeDisguise kind:data(any) addr:0x021101f8
+MapScrStar_FlySucceed kind:data(any) addr:0x02110214
+MapScrSun_CommentTreeShake kind:data(any) addr:0x02110230
+MapScrStar_CommentRiverFirst kind:data(any) addr:0x0211024c
+MapScrStar_CommentTreeShake kind:data(any) addr:0x02110268
+MapScrStar_SandSweepFirst kind:data(any) addr:0x02110284
+MapScrSun_SandSweepFirst kind:data(any) addr:0x021102a0
+MapScr_CommentBombPedestalEmpty kind:data(any) addr:0x021102bc
+MapScr_CommentBombPedestalColor kind:data(any) addr:0x021102dc
+MapScrSun_CommentBasketball kind:data(any) addr:0x021102fc
+MapScrEarth_CommentPlaceBombRed kind:data(any) addr:0x0211031c
+MapScrEarth_CommentPlaceBombBlue kind:data(any) addr:0x0211033c
+MapScr_CommentWrongBomb kind:data(any) addr:0x0211035c
+MapScrSun_CommentMagnetRed kind:data(any) addr:0x0211037c
+MapScrSun_CommentMagnetBlue kind:data(any) addr:0x0211039c
+MapScr_CommentOtherTicket kind:data(any) addr:0x021103bc
+MapScrMoon_CommentPotBombAlP2 kind:data(any) addr:0x021103dc
+MapScrMoon_CommentPotBombFluteA1P2 kind:data(any) addr:0x021103fc
+MapScrMoon_CommentPotBombA1P5 kind:data(any) addr:0x0211041c
+MapScrMoon_CommentTBBMStart kind:data(any) addr:0x0211043c
+MapScrMoon_CommentPotBombFluteA1P5 kind:data(any) addr:0x0211045c
+MapScrStar_CommentSpecialBroom kind:data(any) addr:0x0211047c
+MapScrStar_CommentNoSwimRing kind:data(any) addr:0x0211049c
+MapScrStar_CommentSandTreasureBox kind:data(any) addr:0x021104bc
+MapScrEarth_CommentShuriken kind:data(any) addr:0x021104dc
+MapScrMoon_RideTruck kind:data(any) addr:0x021104fc
+MapScrSun_RideJet kind:data(any) addr:0x02110534
 data_ov002_0211056c kind:data(any) addr:0x0211056c
 data_ov002_021105a8 kind:data(any) addr:0x021105a8
 data_ov002_02110668 kind:data(any) addr:0x02110668
@@ -2318,25 +2318,25 @@ data_ov002_021110bc kind:data(any) addr:0x021110bc
 data_ov002_021110cc kind:data(any) addr:0x021110cc
 data_ov002_021110dc kind:data(any) addr:0x021110dc
 data_ov002_021110ec kind:data(any) addr:0x021110ec
-FldDemoScript_SkipProlog kind:data(any) addr:0x021110fc
-FldDemoScript_Epilog2Aqua kind:data(any) addr:0x02111114
-FldDemoScript_Epilog2Pink kind:data(any) addr:0x021111c8
-FldDemoScript_Result kind:data(any) addr:0x02111294
-FldDemoScript_Epilog1Pink kind:data(any) addr:0x02111458
-FldDemoScript_Epilog1Aqua kind:data(any) addr:0x02111658
-FldDemoScript_StartEvil kind:data(any) addr:0x02111858
-FldDemoScript_Prolog kind:data(any) addr:0x02111a7c
+MapScr_DemoSkipProlog kind:data(any) addr:0x021110fc
+MapScr_DemoEpilog2Aqua kind:data(any) addr:0x02111114
+MapScr_DemoEpilog2Pink kind:data(any) addr:0x021111c8
+MapScr_DemoResult kind:data(any) addr:0x02111294
+MapScr_DemoEpilog1Pink kind:data(any) addr:0x02111458
+MapScr_DemoEpilog1Aqua kind:data(any) addr:0x02111658
+MapScr_DemoStartEvil kind:data(any) addr:0x02111858
+MapScr_DemoProlog kind:data(any) addr:0x02111a7c
 ScreenTbl kind:bss local addr:0x02112040
 WindowWork kind:bss local addr:0x02112050
-Fld_AreaTempData kind:bss addr:0x02112054
-Fld_Touch kind:bss addr:0x0211205c
+Map_AreaTempData kind:bss addr:0x02112054
+Map_Touch kind:bss addr:0x0211205c
 ObjWork kind:bss local addr:0x02112060
 GateWork kind:bss local addr:0x02112064
-Fld_Menu kind:bss addr:0x02112068
-Fld_Script kind:bss addr:0x0211206c
+Map_Menu kind:bss addr:0x02112068
+Map_Script kind:bss addr:0x0211206c
 MesWork kind:bss local addr:0x02112070
 ScreenMaskWork kind:bss local addr:0x02112074
-FldEv_Touch kind:bss addr:0x02112078
+MapEv_Touch kind:bss addr:0x02112078
 data_ov002_0211207c kind:bss addr:0x0211207c
 data_ov002_02112080 kind:bss addr:0x02112080
 data_ov002_02112084 kind:bss addr:0x02112084

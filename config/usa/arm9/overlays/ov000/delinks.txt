@@ -416,7 +416,7 @@ src/bl/filetbl/bl_filetbl_mg26.c:
     .rodata     start:0x0207da40 end:0x0207dc5c
     .data       start:0x0209e13c end:0x0209f518
 
-src/field/field.c:
+src/map/map.c:
     .text       start:0x02068e80 end:0x02069f78
     .bss        start:0x020ad058 end:0x020b1220
 
@@ -426,7 +426,7 @@ src/bl/bl_download.c:
     .data       start:0x0209f518 end:0x0209f51c
     .bss        start:0x020b1220 end:0x020b1700
 
-src/field/field_save.c:
+src/map/map_save.c:
     .text       start:0x0206c0f8 end:0x02071aa8
     .data       start:0x0209f51c end:0x0209f554
 

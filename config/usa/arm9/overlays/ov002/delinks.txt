@@ -4,154 +4,154 @@
     .data       start:0x021070e0 end:0x02112040 kind:data align:32
     .bss        start:0x02112040 end:0x02112340 kind:bss align:32
 
-src/field/earth/earth_evilhat.c:
+src/map/earth/earth_evilhat.c:
     .text       start:0x020b26e0 end:0x020b3208
     .data       start:0x021070e0 end:0x02107250
 
-src/field/field_screen.c:
+src/map/map_screen.c:
     .text       start:0x020b3208 end:0x020b37d8
     .bss        start:0x02112040 end:0x02112050
 
-src/field/field_baseanim.c:
+src/map/map_baseanim.c:
     .text       start:0x020b37d8 end:0x020b4504
 
-src/field/field_col.c:
+src/map/map_col.c:
     .text       start:0x020b4504 end:0x020b4960
     .rodata     start:0x02105c0c end:0x02105d0c
     .data       start:0x02107250 end:0x02107360
 
-src/field/field_bg.c:
+src/map/map_bg.c:
     .text       start:0x020b4960 end:0x020b61a8
     .data       start:0x02107360 end:0x02107368
 
-src/field/field_chrcol.c:
+src/map/map_chrcol.c:
     .text       start:0x020b61a8 end:0x020b6c60
     .rodata     start:0x02105d0c end:0x02106004
 
-src/field/field_util.c:
+src/map/map_util.c:
     .text       start:0x020b6c60 end:0x020b6e94
     .rodata     start:0x02106004 end:0x02106014
 
-src/field/field_gatecheck.c:
+src/map/map_gatecheck.c:
     .text       start:0x020b6e94 end:0x020b74f8
     .data       start:0x02107368 end:0x021073f0
 
-src/field/field_pad.c:
+src/map/map_pad.c:
     .text       start:0x020b74f8 end:0x020b7714
 
-src/field/field_window.c:
+src/map/map_window.c:
     .text       start:0x020b7714 end:0x020b79dc
     .bss        start:0x02112050 end:0x02112054
 
-src/field/field_zonereject.c:
+src/map/map_zonereject.c:
     .text       start:0x020b79dc end:0x020b7b58
 
-src/field/field_chrmove.c:
+src/map/map_chrmove.c:
     .text       start:0x020b7b58 end:0x020b8a28
 
-src/field/field_filetbl.c:
+src/map/map_filetbl.c:
     .data       start:0x021073f0 end:0x02107a74
 
-src/field/field_gpu.c:
+src/map/map_gpu.c:
     .text       start:0x020b8a28 end:0x020b9270
 
-src/field/field_scene.c:
+src/map/map_scene.c:
     .text       start:0x020b9270 end:0x020bc050
     .data       start:0x02107a74 end:0x02107eb4
     .bss        start:0x02112054 end:0x0211205c
 
-src/field/field_touch.c:
+src/map/map_touch.c:
     .text       start:0x020bc050 end:0x020bd170
     .rodata     start:0x02106014 end:0x02106448
     .data       start:0x02107eb4 end:0x02108274
     .bss        start:0x0211205c end:0x02112060
 
-src/field/field_touchspr.c:
+src/map/map_touchspr.c:
     .text       start:0x020bd170 end:0x020be058
     .rodata     start:0x02106448 end:0x021064a4
 
-src/field/field_obj.c:
+src/map/map_obj.c:
     .text       start:0x020be058 end:0x020bf668
     .data       start:0x02108274 end:0x0210840c
     .bss        start:0x02112060 end:0x02112064
 
-src/field/field_dynobj.c:
+src/map/map_dynobj.c:
     .text       start:0x020bf668 end:0x020bfb24
     .data       start:0x0210840c end:0x02108494
 
-src/field/field_bgobj.c:
+src/map/map_bgobj.c:
     .text       start:0x020bfb24 end:0x020bfd44
     .data       start:0x02108494 end:0x0210851c
 
-src/field/field_chr.c:
+src/map/map_chr.c:
     .text       start:0x020bfd44 end:0x020c2748
 
-src/field/field_gate.c:
+src/map/map_gate.c:
     .text       start:0x020c2748 end:0x020c2f84
     .data       start:0x0210851c end:0x021085a4
     .bss        start:0x02112064 end:0x02112068
 
-src/field/menu/field_menu_padopt.c:
+src/map/menu/map_menu_padopt.c:
     .text       start:0x020c2f84 end:0x020c373c
     .data       start:0x021085a4 end:0x021086d0
 
-src/field/menu/field_menu_padsave.c:
+src/map/menu/map_menu_padsave.c:
     .text       start:0x020c373c end:0x020c4384
     .data       start:0x021086d0 end:0x02108858
 
-src/field/menu/field_menu_padsoubi.c:
+src/map/menu/map_menu_padsoubi.c:
     .text       start:0x020c4384 end:0x020c5c10
     .data       start:0x02108858 end:0x02108c50
 
-src/field/menu/field_menu_padmail.c:
+src/map/menu/map_menu_padmail.c:
     .text       start:0x020c5c10 end:0x020c7abc
     .data       start:0x02108c50 end:0x02109004
 
-src/field/menu/field_menu.c:
+src/map/menu/map_menu.c:
     .text       start:0x020c7abc end:0x020c8b20
     .data       start:0x02109004 end:0x021090fc
     .bss        start:0x02112068 end:0x0211206c
 
-src/field/menu/field_menu_padpiece.c:
+src/map/menu/map_menu_padpiece.c:
     .text       start:0x020c8b20 end:0x020c983c
     .data       start:0x021090fc end:0x0210938c
 
-src/field/menu/field_menu_pad.c:
+src/map/menu/map_menu_pad.c:
     .text       start:0x020c983c end:0x020cab2c
     .data       start:0x0210938c end:0x02109498
 
-src/field/field_script.c:
+src/map/map_script.c:
     .text       start:0x020cab2c end:0x020cfd64
     .rodata     start:0x021064a4 end:0x021064c8
     .data       start:0x02109498 end:0x021094e0
     .bss        start:0x0211206c end:0x02112070
 
-src/field/field_mes.c:
+src/map/map_mes.c:
     .text       start:0x020cfd64 end:0x020d1918
     .data       start:0x021094e0 end:0x0210956c
     .bss        start:0x02112070 end:0x02112074
 
-src/field/field_screenmask.c:
+src/map/map_screenmask.c:
     .text       start:0x020d1918 end:0x020d1c30
     .bss        start:0x02112074 end:0x02112078
 
-src/field/event/field_event_chr.c:
+src/map/event/map_event_chr.c:
     .text       start:0x020d1c30 end:0x020d23a8
     .data       start:0x0210956c end:0x02109614
 
-src/field/menu/field_menu_stamp.c:
+src/map/menu/map_menu_stamp.c:
     .text       start:0x020d23a8 end:0x020d2a2c
     .data       start:0x02109614 end:0x021097d0
 
-src/field/menu/field_menu_stamp_over.c:
+src/map/menu/map_menu_stamp_over.c:
     .text       start:0x020d2a2c end:0x020d3174
     .rodata     start:0x021064c8 end:0x021064dc
     .data       start:0x021097d0 end:0x0210992c
 
-src/field/event/field_event_spr.c:
+src/map/event/map_event_spr.c:
     .text       start:0x020d3174 end:0x020d36a4
     .data       start:0x0210992c end:0x0210997c
 
-src/field/event/field_event_item.c:
+src/map/event/map_event_item.c:
     .text       start:0x020d36a4 end:0x020d3c78
     .data       start:0x0210997c end:0x02109a38
