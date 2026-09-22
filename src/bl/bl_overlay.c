@@ -6,7 +6,7 @@
 #define OVERLAY_ID_NULL -1
 
 EXTERN_OVERLAY_ID(1); //mg
-EXTERN_OVERLAY_ID(2); //field
+EXTERN_OVERLAY_ID(2); //map
 EXTERN_OVERLAY_ID(3); //mg01
 EXTERN_OVERLAY_ID(4); //mg02
 EXTERN_OVERLAY_ID(5); //mg03
@@ -47,10 +47,10 @@ EXTERN_OVERLAY_ID(39); //mg37
 EXTERN_OVERLAY_ID(40); //mg38
 EXTERN_OVERLAY_ID(41); //mg39
 EXTERN_OVERLAY_ID(42); //mg40
-EXTERN_OVERLAY_ID(43); //field_star
-EXTERN_OVERLAY_ID(44); //field_moon
-EXTERN_OVERLAY_ID(45); //field_sun
-EXTERN_OVERLAY_ID(46); //field_earth
+EXTERN_OVERLAY_ID(43); //map_star
+EXTERN_OVERLAY_ID(44); //map_moon
+EXTERN_OVERLAY_ID(45); //map_sun
+EXTERN_OVERLAY_ID(46); //map_earth
 EXTERN_OVERLAY_ID(47); //mes_english
 
 static int LoadedOverlay[BL_OVERLAY_TYPE_MAX];
@@ -175,9 +175,9 @@ void BL_OverlayMgLoad(int no)
     LoadSceneOverlay(no);
 }
 
-void BL_OverlayFieldLoad(int no)
+void BL_OverlayMapLoad(int no)
 {
-    no += BL_OVERLAY_SCENE_FIELD_STAR;
+    no += BL_OVERLAY_SCENE_MAP_STAR;
     LoadSceneOverlay(no);
 }
 

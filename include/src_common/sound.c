@@ -39,10 +39,9 @@ typedef struct MusicWork_s {
     u16 tempoTarget;
     s16 time;
     s32 unkC;
-    
 } MusicWork;
 
-typedef struct SndWork_s {
+static struct {
     void *sndMem;
     #ifndef SYS_BBP
     NNSSndHeapHandle sndHeap;
@@ -58,9 +57,7 @@ typedef struct SndWork_s {
     #ifdef HAS_GROUP
     s16 lastGrp;
     #endif
-} SndWork_t;
-
-static SndWork_t *SndWork;
+} *SndWork;
 
 void BL_SndInit(void)
 {
@@ -69,7 +66,7 @@ void BL_SndInit(void)
     void *heap;
     int i;
     
-    SndWork = BL_MemCalloc(BL_MEM_TAG_SYSTEM, sizeof(SndWork_t));
+    SndWork = BL_MemCalloc(BL_MEM_TAG_SYSTEM, sizeof(*SndWork));
     if(!SndWork) {
         return;
     }
@@ -166,16 +163,40 @@ void BL_SndLoadGroup(int grp)
 void BL_SndLoadZoneGroup(u32 zone)
 {
     static const s8 grpTbl[34] = {
-        10, 10, 10, 10,
-        11, 11, 11, 11, 11,
-        14, 14, 14, 14, 14,
-        15, 15, 15,
-        19, 19,
-        21, 21,
-        20, 20, 20, 20,
-        23, 23, 23, 23,
-        24, 24, 24, 24,
-        26
+        GRP_ZONE_STAR_OUT, //Star A1-P1
+		GRP_ZONE_STAR_OUT, //Star A1-P2
+		GRP_ZONE_STAR_OUT, //Star A1-P3
+		GRP_ZONE_STAR_OUT, //Star A1-P4
+        GRP_ZONE_STAR_IN, //Star A2-P1
+		GRP_ZONE_STAR_IN, //Star A2-P2
+		GRP_ZONE_STAR_IN, //Star A2-P3
+		GRP_ZONE_STAR_IN, //Star A2-P4
+		GRP_ZONE_STAR_IN, //Star A2-P5
+        GRP_ZONE_MOON_OUT, //Moon A1-P1
+		GRP_ZONE_MOON_OUT, //Moon A1-P2
+		GRP_ZONE_MOON_OUT, //Moon A1-P3
+		GRP_ZONE_MOON_OUT, //Moon A1-P4
+		GRP_ZONE_MOON_OUT, //Moon A1-P5
+        GRP_ZONE_MOON_IN, //Moon A2-P1
+		GRP_ZONE_MOON_IN, //Moon A2-P2
+		GRP_ZONE_MOON_IN, //Moon A2-P3
+        GRP_ZONE_SUNNY_OUT, //Sun A1-P1
+		GRP_ZONE_SUNNY_OUT, //Sun A1-P2
+        GRP_ZONE_SUNNY_RIDE, //Sun A1-P3
+		GRP_ZONE_SUNNY_RIDE, //Sun A1-P4
+        GRP_ZONE_SUNNY_IN, //Sun A2-P1
+		GRP_ZONE_SUNNY_IN, //Sun A2-P2
+		GRP_ZONE_SUNNY_IN, //Sun A2-P3
+		GRP_ZONE_SUNNY_IN, //Sun A2-P4
+        GRP_ZONE_EARTH_OUT, //Earth A1-P1
+		GRP_ZONE_EARTH_OUT, //Earth A1-P2
+		GRP_ZONE_EARTH_OUT, //Earth A1-P3
+		GRP_ZONE_EARTH_OUT, //Earth A1-P4
+        GRP_ZONE_EARTH_IN, //Earth A2-P1
+		GRP_ZONE_EARTH_IN, //Earth A2-P2
+		GRP_ZONE_EARTH_IN, //Earth A2-P3
+		GRP_ZONE_EARTH_IN, //Earth A2-P4
+        GRP_ZONE_EARTH_RIDE //Earth A2-P5
     };
     int grp = -1;
     if(zone < 34) {
@@ -186,18 +207,42 @@ void BL_SndLoadZoneGroup(u32 zone)
 
 void BL_SndLoadZoneEvilGroup(u32 zone)
 {
-    static const s8 grpTbl[34] = {
-        27, 27, 27, 27,
-        28, 28, 28, 28, 28,
-        29, 29, 29, 29, 29,
-        30, 30, 30,
-        31, 31,
-        21, 21,
-        32, 32, 32, 32,
-        33, 33, 33, 33,
-        34, 34, 34, 34,
-        26
-    };
+	static const s8 grpTbl[34] = {
+		GRP_ZONE_STAR_OUT_EVL, //Star A1-P1
+		GRP_ZONE_STAR_OUT_EVL, //Star A1-P2
+		GRP_ZONE_STAR_OUT_EVL, //Star A1-P3
+		GRP_ZONE_STAR_OUT_EVL, //Star A1-P4
+		GRP_ZONE_STAR_IN_EVL, //Star A2-P1
+		GRP_ZONE_STAR_IN_EVL, //Star A2-P2
+		GRP_ZONE_STAR_IN_EVL, //Star A2-P3
+		GRP_ZONE_STAR_IN_EVL, //Star A2-P4
+		GRP_ZONE_STAR_IN_EVL, //Star A2-P5
+		GRP_ZONE_MOON_OUT_EVL, //Moon A1-P1
+		GRP_ZONE_MOON_OUT_EVL, //Moon A1-P2
+		GRP_ZONE_MOON_OUT_EVL, //Moon A1-P3
+		GRP_ZONE_MOON_OUT_EVL, //Moon A1-P4
+		GRP_ZONE_MOON_OUT_EVL, //Moon A1-P5
+		GRP_ZONE_MOON_IN_EVL, //Moon A2-P1
+		GRP_ZONE_MOON_IN_EVL, //Moon A2-P2
+		GRP_ZONE_MOON_IN_EVL, //Moon A2-P3
+		GRP_ZONE_SUNNY_OUT_EVL, //Sun A1-P1
+		GRP_ZONE_SUNNY_OUT_EVL, //Sun A1-P2
+		GRP_ZONE_SUNNY_RIDE, //Sun A1-P3
+		GRP_ZONE_SUNNY_RIDE, //Sun A1-P4
+		GRP_ZONE_SUNNY_IN_EVL, //Sun A2-P1
+		GRP_ZONE_SUNNY_IN_EVL, //Sun A2-P2
+		GRP_ZONE_SUNNY_IN_EVL, //Sun A2-P3
+		GRP_ZONE_SUNNY_IN_EVL, //Sun A2-P4
+		GRP_ZONE_EARTH_OUT_EVL, //Earth A1-P1
+		GRP_ZONE_EARTH_OUT_EVL, //Earth A1-P2
+		GRP_ZONE_EARTH_OUT_EVL, //Earth A1-P3
+		GRP_ZONE_EARTH_OUT_EVL, //Earth A1-P4
+		GRP_ZONE_EARTH_IN_EVL, //Earth A2-P1
+		GRP_ZONE_EARTH_IN_EVL, //Earth A2-P2
+		GRP_ZONE_EARTH_IN_EVL, //Earth A2-P3
+		GRP_ZONE_EARTH_IN_EVL, //Earth A2-P4
+		GRP_ZONE_EARTH_RIDE //Earth A2-P5
+	};
     int grp = -1;
     if(zone < 34) {
         grp = grpTbl[zone];
@@ -208,15 +253,15 @@ void BL_SndLoadZoneEvilGroup(u32 zone)
 void BL_SndLoadMgGroup(u32 mgNo)
 {
     static const s8 grpTbl[45] = {
-        35, 36, 37, 38, 39,
-        40, 41, 42, 43, 44,
-        45, 46, 47, 48, 49,
-        50, 51, 52, 53, 54,
-        55, 56, 57, 58, 59,
-        60, 61, 62, 63, 64,
-        65, 66, 67, 68, 69,
-        70, 71, 72, 73, 74,
-        45, 46, 66, 48, 63
+        GRP_MG01, GRP_MG02, GRP_MG03, GRP_MG04, GRP_MG05,
+        GRP_MG06, GRP_MG07, GRP_MG08, GRP_MG09, GRP_MG10,
+        GRP_MG11, GRP_MG12, GRP_MG13, GRP_MG14, GRP_MG15,
+        GRP_MG16, GRP_MG17, GRP_MG18, GRP_MG19, GRP_MG20,
+        GRP_MG21, GRP_MG22, GRP_MG23, GRP_MG24, GRP_MG25,
+        GRP_MG26, GRP_MG27, GRP_MG28, GRP_MG29, GRP_MG30,
+        GRP_MG31, GRP_MG32, GRP_MG33, GRP_MG34, GRP_MG35,
+        GRP_MG36, GRP_MG37, GRP_MG38, GRP_MG39, GRP_MG40,
+        GRP_MG11, GRP_MG12, GRP_MG32, GRP_MG14, GRP_MG29
     };
     int grp = -1;
     if(mgNo < 45) {
@@ -339,17 +384,17 @@ BOOL BL_SndTempoFadeMusic(s32 tempo, s32 speed)
 void BL_SndPlayMgMusic(int mgNo)
 {
     static const u8 musTbl[45] = {
-        21, 23, 22, 22, 27,
-        23, 0, 21, 23, 27,
-        26, 24, 21, 25, 21,
-        26, 22, 25, 27, 25,
-        25, 26, 24, 22, 26,
-        25, 28, 21, 24, 27,
-        23, 0, 23, 22, 22,
-        23, 21, 24, 24, 24,
-        26, 24, 0, 25, 24
+        SEQ_MU_MG_ACT, SEQ_MU_MG_TECH, SEQ_MU_MG_RACE, SEQ_MU_MG_RACE, SEQ_MU_MG_VARIETY,
+        SEQ_MU_MG_TECH, SEQ_MU_SYS_TITLE, SEQ_MU_MG_ACT, SEQ_MU_MG_TECH, SEQ_MU_MG_VARIETY,
+        SEQ_MU_MG_SEARCH, SEQ_MU_MG_SPORTS, SEQ_MU_MG_ACT, SEQ_MU_MG_PUZZLE, SEQ_MU_MG_ACT,
+        SEQ_MU_MG_SEARCH, SEQ_MU_MG_RACE, SEQ_MU_MG_PUZZLE, SEQ_MU_MG_VARIETY, SEQ_MU_MG_PUZZLE,
+        SEQ_MU_MG_PUZZLE, SEQ_MU_MG_SEARCH, SEQ_MU_MG_SPORTS, SEQ_MU_MG_RACE, SEQ_MU_MG_SEARCH,
+        SEQ_MU_MG_PUZZLE, SEQ_MU_MG_DANCE, SEQ_MU_MG_ACT, SEQ_MU_MG_SPORTS, SEQ_MU_MG_VARIETY,
+        SEQ_MU_MG_TECH, SEQ_MU_SYS_TITLE, SEQ_MU_MG_TECH, SEQ_MU_MG_RACE, SEQ_MU_MG_RACE,
+        SEQ_MU_MG_TECH, SEQ_MU_MG_ACT, SEQ_MU_MG_SPORTS, SEQ_MU_MG_SPORTS, SEQ_MU_MG_SPORTS,
+        SEQ_MU_MG_SEARCH, SEQ_MU_MG_SPORTS, SEQ_MU_SYS_TITLE, SEQ_MU_MG_PUZZLE, SEQ_MU_MG_SPORTS
     };
-    if(musTbl[mgNo] == 0) {
+    if(musTbl[mgNo] == SEQ_MU_SYS_TITLE) {
         return;
     }
     BL_SndPlayMusic(musTbl[mgNo], 0);
