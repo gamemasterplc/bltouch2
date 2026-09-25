@@ -1,7 +1,7 @@
 #ifndef BL_SORTLIST_H
 #define BL_SORTLIST_H
 
-#include <nitro/types.h>
+#include "bl_types.h"
 
 #define BL_SORTLIST_CMP_GREATER 0
 #define BL_SORTLIST_CMP_LESS 1
@@ -13,7 +13,7 @@ typedef void (*BLSortListFunc)(BLSortListNode *node);
 
 typedef struct BLSortList_s {
     u8 cmp;
-    u8 preserveOrder;
+    BLBool preserveOrder;
     BLSortListNode *head;
     BLSortListNode *tail;
     BLSortListNode *unk1;
@@ -34,7 +34,7 @@ struct BLSortListNode_s {
 #define BL_SortListForEach BBP_SortListForEach
 #endif
 
-void BL_SortListCreate(BLSortList *list, u8 cmp, u8 preserveOrder);
+void BL_SortListCreate(BLSortList *list, u8 cmp, BLBool preserveOrder);
 void BL_SortListNodeInsert(BLSortList *list, BLSortListNode *node, int order);
 void BL_SortListNodeSetOrder(BLSortList *list, BLSortListNode *node, int order);
 void BL_SortListNodeRemove(BLSortList *list, BLSortListNode *node);

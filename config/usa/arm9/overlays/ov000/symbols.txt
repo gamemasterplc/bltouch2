@@ -350,17 +350,17 @@ Mg_ObjCreate kind:function(arm,size=0x38) addr:0x0205a804
 Mg_IsSinglePlayer kind:function(arm,size=0x20) addr:0x0205a83c
 Mg_IsVs kind:function(arm,size=0x24) addr:0x0205a85c
 Mg_IsMultiPlay kind:function(arm,size=0x1c) addr:0x0205a880
-Mg_IsFieldVs kind:function(arm,size=0x1c) addr:0x0205a89c
+Mg_IsMapVs kind:function(arm,size=0x1c) addr:0x0205a89c
 Mg_GetPlayerNum kind:function(arm,size=0x10) addr:0x0205a8b8
 Mg_GetPlayerChar kind:function(arm,size=0x10) addr:0x0205a8c8
 Mg_GetLocalPlayer kind:function(arm,size=0x10) addr:0x0205a8d8
-Mg_IsFieldEasy kind:function(arm,size=0x18) addr:0x0205a8e8
-Mg_IsFieldToken kind:function(arm,size=0x24) addr:0x0205a900
-Mg_IsFieldHighScore kind:function(arm,size=0x24) addr:0x0205a924
+Mg_IsMapEasy kind:function(arm,size=0x18) addr:0x0205a8e8
+Mg_IsMapToken kind:function(arm,size=0x24) addr:0x0205a900
+Mg_IsMapHighScore kind:function(arm,size=0x24) addr:0x0205a924
 Mg_GetComDiff kind:function(arm,size=0x10) addr:0x0205a948
-Mg_GetCurFieldWinScore kind:function(arm,size=0x18) addr:0x0205a958
+Mg_GetCurMapWinScore kind:function(arm,size=0x18) addr:0x0205a958
 Mg_GetCurStaffRecord kind:function(arm,size=0x18) addr:0x0205a970
-Mg_GetFieldWinScore kind:function(arm,size=0x38) addr:0x0205a988
+Mg_GetMapWinScore kind:function(arm,size=0x38) addr:0x0205a988
 Mg_GetStaffRecord kind:function(arm,size=0x10) addr:0x0205a9c0
 Mg_GetScoreType kind:function(arm,size=0x14) addr:0x0205a9d0
 Mg_GetScoreCompareType kind:function(arm,size=0x14) addr:0x0205a9e4
@@ -393,10 +393,10 @@ MgPhasePauseStart kind:function(arm,size=0x7c) local addr:0x0205b70c
 MgPhasePauseExec kind:function(arm,size=0x88) local addr:0x0205b788
 MgPhasePauseCheck kind:function(arm,size=0x8c) local addr:0x0205b810
 MgPhaseExit kind:function(arm,size=0x80) local addr:0x0205b89c
-UpdateFieldAtrcRecord kind:function(arm,size=0x6c) local addr:0x0205b91c
-Mg_GetCurFieldAtrcRecord kind:function(arm,size=0x1c) addr:0x0205b988
-SetFieldAtrcRecord kind:function(arm,size=0x994) local addr:0x0205b9a4
-GetFieldAtrcRecord kind:function(arm,size=0x4e8) local addr:0x0205c338
+UpdateMapAtrcRecord kind:function(arm,size=0x6c) local addr:0x0205b91c
+Mg_GetCurMapAtrcRecord kind:function(arm,size=0x1c) addr:0x0205b988
+SetMapAtrcRecord kind:function(arm,size=0x994) local addr:0x0205b9a4
+GetMapAtrcRecord kind:function(arm,size=0x4e8) local addr:0x0205c338
 BL_TextWriteInit kind:function(arm,size=0xa8) addr:0x0205c820
 BL_TextWriteCreate kind:function(arm,size=0xac) addr:0x0205c8c8
 BL_TextWriteKill kind:function(arm,size=0x1c) addr:0x0205c974
@@ -451,7 +451,7 @@ BLMenu_GetContinueMes kind:function(arm,size=0x14) addr:0x0205def0
 BLMenu_SetBGAddr kind:function(arm,size=0x18c) addr:0x0205df04
 BLMenu_MessageCreateBottom kind:function(arm,size=0x40) addr:0x0205e090
 BLMenu_MessageCreateCenter kind:function(arm,size=0x44) addr:0x0205e0d0
-BLMenu_MessageWriteFieldSave kind:function(arm,size=0x41c) addr:0x0205e114
+BLMenu_MessageWriteMapSave kind:function(arm,size=0x41c) addr:0x0205e114
 GetZoneNameWidth kind:function(arm,size=0x6c) local addr:0x0205e530
 WriteText kind:function(arm,size=0x44) local addr:0x0205e59c
 BLMenu_StartMusic kind:function(arm,size=0x38) addr:0x0205e5e0
@@ -521,7 +521,7 @@ ReturnTouch kind:function(arm,size=0x94) local addr:0x020616b4
 ReturnTouchEnd kind:function(arm,size=0x34) local addr:0x02061748
 CreateMes kind:function(arm,size=0x84) local addr:0x0206177c
 UpdateHelpMes kind:function(arm,size=0x44) local addr:0x02061800
-UpdateFieldSaveMes kind:function(arm,size=0x38) local addr:0x02061844
+UpdateMapSaveMes kind:function(arm,size=0x38) local addr:0x02061844
 BLMenu_AtrcModeCreate kind:function(arm,size=0x1b8) addr:0x0206187c
 AtrcModeExec kind:function(arm,size=0x1a8) local addr:0x02061a34
 CheckAnyMgUnlock kind:function(arm,size=0x30) local addr:0x02061bdc
@@ -693,7 +693,7 @@ HitExec kind:function(arm,size=0x44) local addr:0x02068e1c
 HitKill kind:function(arm,size=0x20) local addr:0x02068e60
 Map_SaveInit kind:function(arm,size=0x274) addr:0x02068e80
 Map_SaveFlagInit kind:function(arm,size=0x208) addr:0x020690f4
-Map_InitAreaState kind:function(arm,size=0x11c) addr:0x020692fc
+Map_SaveUpdate kind:function(arm,size=0x11c) addr:0x020692fc
 Map_BackupPlayerPos kind:function(arm,size=0x2c) addr:0x02069418
 Map_MovePlayerMgBonus kind:function(arm,size=0x180) addr:0x02069444
 Map_SpawnChar kind:function(arm,size=0x160) addr:0x020695c4
@@ -708,8 +708,8 @@ Map_GetZoneArea kind:function(arm,size=0x110) addr:0x02069ae8
 Map_GetCurZone kind:function(arm,size=0xf4) addr:0x02069bf8
 Map_GetZone kind:function(arm,size=0xdc) addr:0x02069cec
 Map_GetChrPosInt kind:function(arm,size=0x54) addr:0x02069dc8
-Map_AddMgWinNum kind:function(arm,size=0x34) addr:0x02069e1c
-Map_GetMgWinNum kind:function(arm,size=0x10) addr:0x02069e50
+Map_AddAtrcWinNum kind:function(arm,size=0x34) addr:0x02069e1c
+Map_GetAtrcWinNum kind:function(arm,size=0x10) addr:0x02069e50
 Map_IsPieceFull kind:function(arm,size=0x118) addr:0x02069e60
 BL_DownloadMgStart kind:function(arm,size=0x34) addr:0x02069f78
 BL_DownloadSceneStart kind:function(arm,size=0x28) addr:0x02069fac
@@ -757,7 +757,7 @@ func_ov000_0206beac kind:function(arm,size=0xa8) addr:0x0206beac
 func_ov000_0206bf54 kind:function(arm,size=0x15c) addr:0x0206bf54
 func_ov000_0206c0b0 kind:function(arm,size=0x1c) addr:0x0206c0b0
 func_ov000_0206c0cc kind:function(arm,size=0x2c) addr:0x0206c0cc
-MapSave_SetNewGame_ kind:function(arm,size=0x38) addr:0x0206c0f8
+MapSave_SetNewGame kind:function(arm,size=0x38) addr:0x0206c0f8
 MapSave_GetFlagArea kind:function(arm,size=0x1d4) addr:0x0206c130
 MapSave_SetFlag_ kind:function(arm,size=0x824) addr:0x0206c304
 MapSave_ResetFlag_ kind:function(arm,size=0x96c) addr:0x0206cb28
@@ -772,13 +772,13 @@ MapSave_GetNumStamps_ kind:function(arm,size=0x3c) addr:0x0206e194
 MapSave_SetAtrcFlag_ kind:function(arm,size=0xd0) addr:0x0206e1d0
 MapSave_GetAtrcFlag_ kind:function(arm,size=0x74) addr:0x0206e2a0
 MapSave_GetNumAtrcFlag_ kind:function(arm,size=0x9c) addr:0x0206e314
-MapSave_SetAtrcLastChar_ kind:function(arm,size=0x60) addr:0x0206e3b0
-MapSave_GetAtrcLastChar_ kind:function(arm,size=0x28) addr:0x0206e410
+MapSave_AddAtrcPlayNum_ kind:function(arm,size=0x60) addr:0x0206e3b0
+MapSave_GetAtrcPlayNum_ kind:function(arm,size=0x28) addr:0x0206e410
 MapSave_GetAtrcRecord_ kind:function(arm,size=0x18) addr:0x0206e438
 MapSave_SetBHouseFlag_ kind:function(arm,size=0xb4) addr:0x0206e450
 MapSave_GetBHouseFlag_ kind:function(arm,size=0x58) addr:0x0206e504
-MapSave_SetBHouseLastChar_ kind:function(arm,size=0x64) addr:0x0206e55c
-MapSave_GetBHouseLastChar_ kind:function(arm,size=0x28) addr:0x0206e5c0
+MapSave_AddBHousePlayNum_ kind:function(arm,size=0x64) addr:0x0206e55c
+MapSave_GetBHousePlayNum_ kind:function(arm,size=0x28) addr:0x0206e5c0
 MapSave_SetItemFlag_ kind:function(arm,size=0x15c) addr:0x0206e5e8
 MapSave_GetItemFlag_ kind:function(arm,size=0x8c) addr:0x0206e744
 MapSave_GetNumItem_ kind:function(arm,size=0x120) addr:0x0206e7d0
@@ -795,10 +795,10 @@ MapSave_SetMenuShortcut_ kind:function(arm,size=0x2c) addr:0x0206eb68
 MapSave_GetMenuShortcut_ kind:function(arm,size=0x28) addr:0x0206eb94
 MapSave_SetMailReadFlag_ kind:function(arm,size=0x44) addr:0x0206ebbc
 MapSave_GetMailReadFlag_ kind:function(arm,size=0x48) addr:0x0206ec00
-MapSave_SetWarpUnlock_ kind:function(arm,size=0x84) addr:0x0206ec48
-MapSave_GetWarpUnlock_ kind:function(arm,size=0x88) addr:0x0206eccc
-MapSave_IncEventProgress_ kind:function(arm,size=0x2b4) addr:0x0206ed54
-MapSave_GetEventProgress_ kind:function(arm,size=0x178) addr:0x0206f008
+MapSave_SetZoneVisitFlag_ kind:function(arm,size=0x84) addr:0x0206ec48
+MapSave_GetZoneVisitFlag_ kind:function(arm,size=0x88) addr:0x0206eccc
+MapSave_IncQuestProgress_ kind:function(arm,size=0x2b4) addr:0x0206ed54
+MapSave_GetQuestProgress_ kind:function(arm,size=0x178) addr:0x0206f008
 MapSave_SetUranai_ kind:function(arm,size=0x4c) addr:0x0206f180
 MapSave_GetUranaiIndex_ kind:function(arm,size=0x5c) addr:0x0206f1cc
 MapSave_GetUranaiParam_ kind:function(arm,size=0x5c) addr:0x0206f228
@@ -814,7 +814,7 @@ MapSave_IsCommonMgRivalExist_ kind:function(arm,size=0x58) addr:0x0206fe50
 MapSave_SetNewZoneMgRival_ kind:function(arm,size=0x130) addr:0x0206fea8
 MapSave_GetNewZoneMgRival_ kind:function(arm,size=0xe8) addr:0x0206ffd8
 MapSave_IsAquaComplete_ kind:function(arm,size=0x80) addr:0x020700c0
-MapSave_UpdateProgress_ kind:function(arm,size=0x78) addr:0x02070140
+MapSave_UpdateQuest_ kind:function(arm,size=0x78) addr:0x02070140
 func_ov000_020701b8 kind:function(arm,size=0x4c) addr:0x020701b8
 func_ov000_02070204 kind:function(arm,size=0x344) addr:0x02070204
 func_ov000_02070548 kind:function(arm,size=0x80) addr:0x02070548
@@ -4576,12 +4576,12 @@ data_ov000_0209f494 kind:data(any) addr:0x0209f494
 data_ov000_0209f4c0 kind:data(any) addr:0x0209f4c0
 data_ov000_0209f4ec kind:data(any) addr:0x0209f4ec
 data_ov000_0209f518 kind:data(any) addr:0x0209f518
-MapSave_ItemAtamaBitTbl kind:data(any) addr:0x0209f51c
-MapSave_ItemAtamaOrderTbl kind:data(any) addr:0x0209f524
-MapSave_ItemSitajiOrderTbl kind:data(any) addr:0x0209f52c
-MapSave_ItemUnkBitTbl kind:data(any) addr:0x0209f534
+MapSave_ItemHeadBitTbl kind:data(any) addr:0x0209f51c
+MapSave_ItemHeadOrderTbl kind:data(any) addr:0x0209f524
+MapSave_ItemBodyOrderTbl kind:data(any) addr:0x0209f52c
+MapSave_ItemTicketBitTbl kind:data(any) addr:0x0209f534
 MapSave_ItemBombBitTbl kind:data(any) addr:0x0209f53c
-MapSave_ItemSitajiBitTbl kind:data(any) addr:0x0209f544
+MapSave_ItemBodyBitTbl kind:data(any) addr:0x0209f544
 MapSave_ItemBombOrderTbl kind:data(any) addr:0x0209f54c
 BustupImageFileTbl kind:data(any) local addr:0x0209f554
 BustupAnimeFileTbl kind:data(any) local addr:0x0209f570
@@ -5788,7 +5788,7 @@ BHouse_Result kind:bss addr:0x020aca34
 data_ov000_020aca38 kind:bss addr:0x020aca38
 BHouse_Work kind:bss addr:0x020aca3c
 Map_ChrSpawn kind:bss addr:0x020ad058
-Map_Save kind:bss addr:0x020ad15c
+Map_Backup kind:bss addr:0x020ad15c
 Map_Work kind:bss addr:0x020ad480
 BackupData kind:bss local addr:0x020b0efc
 data_ov000_020b1220 kind:bss addr:0x020b1220

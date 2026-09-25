@@ -3,7 +3,7 @@
 static void InsertNode(BLSortList *list, BLSortListNode *node);
 static void RemoveNode(BLSortList *list, BLSortListNode *node);
 
-void BL_SortListCreate(BLSortList *list, u8 cmp, u8 preserveOrder)
+void BL_SortListCreate(BLSortList *list, u8 cmp, BLBool preserveOrder)
 {
     list->cmp = cmp;
     list->preserveOrder = preserveOrder;

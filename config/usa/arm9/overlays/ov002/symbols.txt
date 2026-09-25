@@ -1834,7 +1834,7 @@ MapMes_MenuGuideOption kind:data(any) addr:0x0210d9a8
 MapMes_MenuGuideSave kind:data(any) addr:0x0210d9b8
 MapMes_MenuGuideLoad kind:data(any) addr:0x0210d9c8
 MapMes_MenuGuideStamp kind:data(any) addr:0x0210d9d8
-MapMes_MenuItemHatTbl kind:data(any) addr:0x0210d9e8
+MapMes_MenuItemHeadTbl kind:data(any) addr:0x0210d9e8
 MapMes_MenuItemBodyTbl kind:data(any) addr:0x0210da00
 MapMes_MenuItemBombTbl kind:data(any) addr:0x0210da18
 MapMes_MenuStampTbl kind:data(any) addr:0x0210da38
