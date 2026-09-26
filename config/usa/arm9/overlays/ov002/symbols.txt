@@ -34,16 +34,16 @@ RemoveCollision kind:function(arm,size=0xfc) local addr:0x020b4758
 Map_ColGetType kind:function(arm,size=0x58) addr:0x020b4854
 Map_ColIsExit kind:function(arm,size=0x1c) addr:0x020b48ac
 Map_ColSetTreasureBox kind:function(arm,size=0x98) addr:0x020b48c8
-MapBG_Init kind:function(arm,size=0x6a8) addr:0x020b4960
-MapBG_CreateColorAnim kind:function(arm,size=0x68) addr:0x020b5008
-MapBG_Close kind:function(arm,size=0x11c) addr:0x020b5070
-MapBG_CameraUpdate kind:function(arm,size=0x51c) addr:0x020b518c
-MapBG_LoadImage kind:function(arm,size=0x374) addr:0x020b56a8
-MapBG_KillImage kind:function(arm,size=0xb0) addr:0x020b5a1c
-MapBG_RestorePrio kind:function(arm,size=0x7c) addr:0x020b5acc
-MapBG_SetCameraLock kind:function(arm,size=0x10) addr:0x020b5b48
-MapBG_SetCameraPos kind:function(arm,size=0x1d4) addr:0x020b5b58
-MapBG_SetCameraLockPos kind:function(arm,size=0x30) addr:0x020b5d2c
+Map_BGInit kind:function(arm,size=0x6a8) addr:0x020b4960
+Map_BGCreateColorAnim kind:function(arm,size=0x68) addr:0x020b5008
+Map_BGClose kind:function(arm,size=0x11c) addr:0x020b5070
+Map_BGCameraUpdate kind:function(arm,size=0x51c) addr:0x020b518c
+Map_BGLoadImage kind:function(arm,size=0x374) addr:0x020b56a8
+Map_BGKillImage kind:function(arm,size=0xb0) addr:0x020b5a1c
+Map_BGRestorePrio kind:function(arm,size=0x7c) addr:0x020b5acc
+Map_BGSetCameraLock kind:function(arm,size=0x10) addr:0x020b5b48
+Map_BGSetCameraPos kind:function(arm,size=0x1d4) addr:0x020b5b58
+Map_BGSetCameraLockPos kind:function(arm,size=0x30) addr:0x020b5d2c
 SetBGOfs kind:function(arm,size=0xdc) local addr:0x020b5d5c
 SetSunRideBGOfs kind:function(arm,size=0x78) local addr:0x020b5e38
 SetEarthRideBGOfs kind:function(arm,size=0xa0) local addr:0x020b5eb0
@@ -52,7 +52,7 @@ UpdateBGMoonA1P5 kind:function(arm,size=0x4c) local addr:0x020b5fb4
 UpdateBGMoonA1P3 kind:function(arm,size=0x88) local addr:0x020b6000
 UpdateBGSunA1P1 kind:function(arm,size=0x38) local addr:0x020b6088
 UpdateBGSunRide kind:function(arm,size=0x74) local addr:0x020b60c0
-MapBG_UpdateBGTruck kind:function(arm,size=0x74) addr:0x020b6134
+Map_BGUpdateTruck kind:function(arm,size=0x74) addr:0x020b6134
 MapChr_CheckColAtr kind:function(arm,size=0x18c) addr:0x020b61a8
 MapChr_WriteColPos kind:function(arm,size=0x30) addr:0x020b6334
 FixChrCol kind:function(arm,size=0x2a8) local addr:0x020b6364
@@ -524,29 +524,29 @@ MapEvItem_SetPos kind:function(arm,size=0x24) addr:0x020d3bb4
 MapEvItem_AddPos kind:function(arm,size=0x38) addr:0x020d3bd8
 MapEvItem_SetAnim kind:function(arm,size=0x40) addr:0x020d3c10
 MapEvItem_SetScaleX kind:function(arm,size=0x28) addr:0x020d3c50
-func_ov002_020d3c78 kind:function(arm,size=0xa4) addr:0x020d3c78
-func_ov002_020d3d1c kind:function(arm,size=0x120) addr:0x020d3d1c
-func_ov002_020d3e3c kind:function(arm,size=0x744) addr:0x020d3e3c
-func_ov002_020d4580 kind:function(arm,size=0x854) addr:0x020d4580
-func_ov002_020d4dd4 kind:function(arm,size=0x21c) addr:0x020d4dd4
-func_ov002_020d4ff0 kind:function(arm,size=0x6ec) addr:0x020d4ff0
-func_ov002_020d56dc kind:function(arm,size=0x360) addr:0x020d56dc
-func_ov002_020d5a3c kind:function(arm,size=0x4ac) addr:0x020d5a3c
-func_ov002_020d5ee8 kind:function(arm,size=0x10c) addr:0x020d5ee8
-func_ov002_020d5ff4 kind:function(arm,size=0x2c8) addr:0x020d5ff4
-func_ov002_020d62bc kind:function(arm,size=0x5a8) addr:0x020d62bc
-func_ov002_020d6864 kind:function(arm,size=0x6ac) addr:0x020d6864
-func_ov002_020d6f10 kind:function(arm,size=0xd0) addr:0x020d6f10
-func_ov002_020d6fe0 kind:function(arm,size=0x170) addr:0x020d6fe0
-func_ov002_020d7150 kind:function(arm,size=0x78) addr:0x020d7150
+CreateBonus kind:function(arm,size=0xa4) local addr:0x020d3c78
+ExecBonus kind:function(arm,size=0x120) local addr:0x020d3d1c
+CreateItemBonus kind:function(arm,size=0x744) local addr:0x020d3e3c
+ExecItemBonus kind:function(arm,size=0x854) local addr:0x020d4580
+CreatePieceBonus kind:function(arm,size=0x21c) local addr:0x020d4dd4
+ExecPieceBonus kind:function(arm,size=0x6ec) local addr:0x020d4ff0
+CreateRivalBonus kind:function(arm,size=0x360) local addr:0x020d56dc
+ExecRivalBonus kind:function(arm,size=0x4ac) local addr:0x020d5a3c
+CreateInfoBOnus kind:function(arm,size=0x10c) local addr:0x020d5ee8
+ExecInfoBonus kind:function(arm,size=0x2c8) local addr:0x020d5ff4
+CreateTreasureBoxBonus kind:function(arm,size=0x5a8) local addr:0x020d62bc
+ExecTreasureBoxBonus kind:function(arm,size=0x6ac) local addr:0x020d6864
+Create3PieceBonus kind:function(arm,size=0xd0) local addr:0x020d6f10
+Exec3PieceBonus kind:function(arm,size=0x170) local addr:0x020d6fe0
+ExecCupBonus kind:function(arm,size=0x78) local addr:0x020d7150
 MapEv_ExecBonus kind:function(arm,size=0x2fc) addr:0x020d71c8
 MapEv_ExecTreasureBoxOpen kind:function(arm,size=0x3f4) addr:0x020d74c4
 MapEv_ExecTreasureBoxSwimOpen kind:function(arm,size=0x310) addr:0x020d78b8
 MapEv_Exec3PieceBonus kind:function(arm,size=0x1e4) addr:0x020d7bc8
 MapEv_ExecCupOpen kind:function(arm,size=0x794) addr:0x020d7dac
-func_ov002_020d8540 kind:function(arm,size=0x60) addr:0x020d8540
-func_ov002_020d85a0 kind:function(arm,size=0x60) addr:0x020d85a0
-func_ov002_020d8600 kind:function(arm,size=0x94) addr:0x020d8600
+MapEv_ExecEvent1 kind:function(arm,size=0x60) addr:0x020d8540
+MapEv_ExecEvent2 kind:function(arm,size=0x60) addr:0x020d85a0
+MapEv_ExecEvent3 kind:function(arm,size=0x94) addr:0x020d8600
 MapEv_ExecStamp kind:function(arm,size=0x264) addr:0x020d8694
 MapEv_ExecBombExplode kind:function(arm,size=0x7b4) addr:0x020d88f8
 MapEv_ExecBombPedestal kind:function(arm,size=0x3b4) addr:0x020d90ac
@@ -569,12 +569,12 @@ MapEv_ExecEvilOut kind:function(arm,size=0x1a4) addr:0x020db9cc
 MapEv_ExecEvilStart kind:function(arm,size=0x1f4) addr:0x020dbb70
 MapEv_InitEvent kind:function(arm,size=0x1ec) addr:0x020dbd64
 MapEv_CheckEvent kind:function(arm,size=0xcc) addr:0x020dbf50
-MapEv_CheckTowerEnter kind:function(arm,size=0x90) addr:0x020dc01c
+MapEv_CheckSunTowerEnter kind:function(arm,size=0x90) addr:0x020dc01c
 MapEv_ExecEvent kind:function(arm,size=0x32c) addr:0x020dc0ac
 MapEv_SetChrSpeed kind:function(arm,size=0x28) addr:0x020dc3d8
-func_ov002_020dc400 kind:function(arm,size=0x1b0) addr:0x020dc400
-func_ov002_020dc5b0 kind:function(arm,size=0x104) addr:0x020dc5b0
-func_ov002_020dc6b4 kind:function(arm,size=0x110) addr:0x020dc6b4
+MovePlayer kind:function(arm,size=0x1b0) local addr:0x020dc400
+CheckPlayer kind:function(arm,size=0x104) local addr:0x020dc5b0
+CheckEscort kind:function(arm,size=0x110) local addr:0x020dc6b4
 MapEv_SetEscapePos kind:function(arm,size=0x20) addr:0x020dc7c4
 MapEv_UpdateEscape kind:function(arm,size=0x94) addr:0x020dc7e4
 MapEv_CheckEscape kind:function(arm,size=0x5c) addr:0x020dc878
@@ -623,26 +623,26 @@ MapEv_SetSumoLoseFlag kind:function(arm,size=0x28) addr:0x020e1210
 MapEv_SetSumoWinFlag kind:function(arm,size=0x28) addr:0x020e1238
 MapEv_SetDanceFlag kind:function(arm,size=0x58) addr:0x020e1260
 MapEv_EnterNull kind:function(arm,size=0x8) addr:0x020e12b8
-MapEv_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
-MapEv_SwimMove kind:function(arm,size=0xdc) addr:0x020e13f4
-func_ov002_020e14d0 kind:function(arm,size=0xd4) addr:0x020e14d0
-func_ov002_020e15a4 kind:function(arm,size=0x218) addr:0x020e15a4
-MapEvStar_ExecTileTouch kind:function(arm,size=0x2f8) addr:0x020e17bc
-func_ov002_020e1ab4 kind:function(arm,size=0xf0) addr:0x020e1ab4
+Map_SwimTouchRead kind:function(arm,size=0x134) addr:0x020e12c0
+Map_SwimMove kind:function(arm,size=0xdc) addr:0x020e13f4
+DecelSwim kind:function(arm,size=0xd4) local addr:0x020e14d0
+UpdateVel kind:function(arm,size=0x218) local addr:0x020e15a4
+MapEv_TouchTileExec kind:function(arm,size=0x2f8) addr:0x020e17bc
+CreateCursorSpr kind:function(arm,size=0xf0) local addr:0x020e1ab4
 MapEv_TouchInit kind:function(arm,size=0x28) addr:0x020e1ba4
 MapEv_TouchExec kind:function(arm,size=0x218) addr:0x020e1bcc
 MapEv_TouchClose kind:function(arm,size=0x2c) addr:0x020e1de4
-func_ov002_020e1e10 kind:function(arm,size=0x3c) addr:0x020e1e10
+MapEv_TouchSetCameraPos kind:function(arm,size=0x3c) addr:0x020e1e10
 MapEv_TouchSwipeCreate kind:function(arm,size=0x28) addr:0x020e1e4c
 MapEv_TouchSwipeKill kind:function(arm,size=0x2c) addr:0x020e1e74
 MapEv_TouchSwipeExec kind:function(arm,size=0xe4) addr:0x020e1ea0
-func_ov002_020e1f84 kind:function(arm,size=0x15c) addr:0x020e1f84
-func_ov002_020e20e0 kind:function(arm,size=0x8c) addr:0x020e20e0
+ExecSwipe kind:function(arm,size=0x15c) local addr:0x020e1f84
+GetSwipeVel kind:function(arm,size=0x8c) local addr:0x020e20e0
 MapEv_TouchGetSwipe kind:function(arm,size=0x78) addr:0x020e216c
 MapEv_TouchSwipeIsDisable kind:function(arm,size=0x34) addr:0x020e21e4
 MapEv_TouchGetSwipeSpeed kind:function(arm,size=0x40) addr:0x020e2218
-func_ov002_020e2258 kind:function(arm,size=0x124) addr:0x020e2258
-func_ov002_020e237c kind:function(arm,size=0x6c) addr:0x020e237c
+ExecRepeatSwipe kind:function(arm,size=0x124) local addr:0x020e2258
+MapEv_TouchGetRepeatSwipe kind:function(arm,size=0x6c) addr:0x020e237c
 MapEvStar_ExecTreeShakeTouch kind:function(arm,size=0x44c) addr:0x020e23e8
 MapEvSun_ExecTreeShakeTouch kind:function(arm,size=0xb48) addr:0x020e2834
 MapEvMoon_ExecBasketballTouch kind:function(arm,size=0xe40) addr:0x020e337c
@@ -663,10 +663,10 @@ MapEvMoon_ExecFlyUp kind:function(arm,size=0xe0) addr:0x020e5974
 MapEvMoon_ExecSlider kind:function(arm,size=0x1a4) addr:0x020e5a54
 MapEvMoon_ExecDiceRollFirst kind:function(arm,size=0x110) addr:0x020e5bf8
 MapEvMoon_ExecDiceRoll kind:function(arm,size=0x5c0) addr:0x020e5d08
-func_ov002_020e62c8 kind:function(arm,size=0xe8) addr:0x020e62c8
-func_ov002_020e63b0 kind:function(arm,size=0x54) addr:0x020e63b0
-func_ov002_020e6404 kind:function(arm,size=0xa0) addr:0x020e6404
-func_ov002_020e64a4 kind:function(arm,size=0x74) addr:0x020e64a4
+AddObjCol kind:function(arm,size=0xe8) local addr:0x020e62c8
+GotoNextObj kind:function(arm,size=0x54) local addr:0x020e63b0
+FixObjCol kind:function(arm,size=0xa0) local addr:0x020e6404
+SetObjAnim kind:function(arm,size=0x74) local addr:0x020e64a4
 MapEvMoon_ExecBigBallMove kind:function(arm,size=0x1cc) addr:0x020e6518
 MapEvMoon_ExecTrampolineJumpStart kind:function(arm,size=0x1d0) addr:0x020e66e4
 MapEvMoon_ExecTrampolineJumpEnd kind:function(arm,size=0x8c) addr:0x020e68b4
@@ -679,95 +679,95 @@ func_ov002_020e6f64 kind:function(arm,size=0x13c) addr:0x020e6f64
 func_ov002_020e70a0 kind:function(arm,size=0x17c) addr:0x020e70a0
 func_ov002_020e721c kind:function(arm,size=0xc8) addr:0x020e721c
 func_ov002_020e72e4 kind:function(arm,size=0x204) addr:0x020e72e4
-func_ov002_020e74e8 kind:function(arm,size=0x224) addr:0x020e74e8
-func_ov002_020e770c kind:function(arm,size=0x90) addr:0x020e770c
-func_ov002_020e779c kind:function(arm,size=0xa8) addr:0x020e779c
-func_ov002_020e7844 kind:function(arm,size=0x190) addr:0x020e7844
-func_ov002_020e79d4 kind:function(arm,size=0xf0) addr:0x020e79d4
-func_ov002_020e7ac4 kind:function(arm,size=0xa8) addr:0x020e7ac4
-func_ov002_020e7b6c kind:function(arm,size=0x210) addr:0x020e7b6c
-func_ov002_020e7d7c kind:function(arm,size=0x168) addr:0x020e7d7c
-func_ov002_020e7ee4 kind:function(arm,size=0x2c) addr:0x020e7ee4
-func_ov002_020e7f10 kind:function(arm,size=0x314) addr:0x020e7f10
-func_ov002_020e8224 kind:function(arm,size=0x220) addr:0x020e8224
-func_ov002_020e8444 kind:function(arm,size=0x1fc) addr:0x020e8444
-func_ov002_020e8640 kind:function(arm,size=0xc8) addr:0x020e8640
-func_ov002_020e8708 kind:function(arm,size=0x1dc) addr:0x020e8708
-func_ov002_020e88e4 kind:function(arm,size=0x28) addr:0x020e88e4
-func_ov002_020e890c kind:function(arm,size=0x1cc) addr:0x020e890c
-func_ov002_020e8ad8 kind:function(arm,size=0x3d0) addr:0x020e8ad8
-func_ov002_020e8ea8 kind:function(arm,size=0x4f8) addr:0x020e8ea8
-func_ov002_020e93a0 kind:function(arm,size=0x38) addr:0x020e93a0
-func_ov002_020e93d8 kind:function(arm,size=0x10c) addr:0x020e93d8
-func_ov002_020e94e4 kind:function(arm,size=0x74) addr:0x020e94e4
-func_ov002_020e9558 kind:function(arm,size=0x8c) addr:0x020e9558
-func_ov002_020e95e4 kind:function(arm,size=0x260) addr:0x020e95e4
-func_ov002_020e9844 kind:function(arm,size=0x394) addr:0x020e9844
-func_ov002_020e9bd8 kind:function(arm,size=0xe4) addr:0x020e9bd8
-func_ov002_020e9cbc kind:function(arm,size=0x20c) addr:0x020e9cbc
-func_ov002_020e9ec8 kind:function(arm,size=0x120) addr:0x020e9ec8
-func_ov002_020e9fe8 kind:function(arm,size=0xb8) addr:0x020e9fe8
-func_ov002_020ea0a0 kind:function(arm,size=0x2d0) addr:0x020ea0a0
-func_ov002_020ea370 kind:function(arm,size=0xa4) addr:0x020ea370
-func_ov002_020ea414 kind:function(arm,size=0xa4) addr:0x020ea414
-func_ov002_020ea4b8 kind:function(arm,size=0x70) addr:0x020ea4b8
-func_ov002_020ea528 kind:function(arm,size=0x6c) addr:0x020ea528
-func_ov002_020ea594 kind:function(arm,size=0x7c) addr:0x020ea594
-func_ov002_020ea610 kind:function(arm,size=0x78) addr:0x020ea610
+SubPieceCreate kind:function(arm,size=0x224) local addr:0x020e74e8
+SubPieceExec kind:function(arm,size=0x90) local addr:0x020e770c
+SubPieceDestroy kind:function(arm,size=0xa8) local addr:0x020e779c
+SubPieceNumCreate kind:function(arm,size=0x190) local addr:0x020e7844
+SubPieceNumUpdate kind:function(arm,size=0xf0) local addr:0x020e79d4
+SubPieceNumDestroy kind:function(arm,size=0xa8) local addr:0x020e7ac4
+SubPiecePlayColorAnim kind:function(arm,size=0x210) local addr:0x020e7b6c
+SubGetPieceNum kind:function(arm,size=0x168) local addr:0x020e7d7c
+SubReadPieceNum kind:function(arm,size=0x2c) local addr:0x020e7ee4
+SubMapSprCreate kind:function(arm,size=0x314) local addr:0x020e7f10
+SubMapChrSprCreate kind:function(arm,size=0x220) local addr:0x020e8224
+SubMapObjSprCreate kind:function(arm,size=0x1fc) local addr:0x020e8444
+SubMapWakuSprCreate kind:function(arm,size=0xc8) local addr:0x020e8640
+SubMapMaskSprCreate kind:function(arm,size=0x1dc) local addr:0x020e8708
+SubMapSprExec kind:function(arm,size=0x28) local addr:0x020e88e4
+SubMapChrSprExec kind:function(arm,size=0x1cc) local addr:0x020e890c
+SubMapChrSetAnim kind:function(arm,size=0x3d0) local addr:0x020e8ad8
+SubMapObjSprExec kind:function(arm,size=0x4f8) local addr:0x020e8ea8
+SubMapSprDestroy kind:function(arm,size=0x38) local addr:0x020e93a0
+SubMapObjSprDestroy kind:function(arm,size=0x10c) local addr:0x020e93d8
+SubMapWakuSprDestroy kind:function(arm,size=0x74) local addr:0x020e94e4
+SubMapMaskSprDestroy kind:function(arm,size=0x8c) local addr:0x020e9558
+SubKisekaeCreate kind:function(arm,size=0x260) local addr:0x020e95e4
+SubKisekaeExec kind:function(arm,size=0x394) local addr:0x020e9844
+SubKisekaeDestroy kind:function(arm,size=0xe4) local addr:0x020e9bd8
+SubKisekaeCreateSpr kind:function(arm,size=0x20c) local addr:0x020e9cbc
+SubKisekaeKillSpr kind:function(arm,size=0x120) local addr:0x020e9ec8
+SubKisekaeSetDisp kind:function(arm,size=0xb8) local addr:0x020e9fe8
+SubLeftBGCreate kind:function(arm,size=0x2d0) local addr:0x020ea0a0
+SubLeftBGExec kind:function(arm,size=0xa4) local addr:0x020ea370
+SubLeftBGDestroy kind:function(arm,size=0xa4) local addr:0x020ea414
+SubLeftBGCreateColorAnim kind:function(arm,size=0x70) local addr:0x020ea4b8
+SubLeftBGKill kind:function(arm,size=0x6c) local addr:0x020ea528
+SubBGPieceCreateColorAnim kind:function(arm,size=0x7c) local addr:0x020ea594
+SubBGPieceKillColorAnim kind:function(arm,size=0x78) local addr:0x020ea610
 MapSub_SetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea688
 MapSub_ResetPlayerFlash kind:function(arm,size=0x1c) addr:0x020ea6a4
-func_ov002_020ea6c0 kind:function(arm,size=0x1b8) addr:0x020ea6c0
-func_ov002_020ea878 kind:function(arm,size=0x1c) addr:0x020ea878
-func_ov002_020ea894 kind:function(arm,size=0xa4) addr:0x020ea894
-func_ov002_020ea938 kind:function(arm,size=0x5c) addr:0x020ea938
+SubZoneBGCreate kind:function(arm,size=0x1b8) local addr:0x020ea6c0
+SubZoneBGExec kind:function(arm,size=0x1c) local addr:0x020ea878
+SubZoneBGDestroy kind:function(arm,size=0xa4) local addr:0x020ea894
+SubUpdateZoneBGScroll kind:function(arm,size=0x5c) local addr:0x020ea938
 MapSub_Create kind:function(arm,size=0x9c) addr:0x020ea994
-func_ov002_020eaa30 kind:function(arm,size=0x4) addr:0x020eaa30
-func_ov002_020eaa34 kind:function(arm,size=0x1c) addr:0x020eaa34
-MapInforme_Create kind:function(arm,size=0xa4) addr:0x020eaa50
-MapInforme_Exec kind:function(arm,size=0x674) addr:0x020eaaf4
-func_ov002_020eb168 kind:function(arm,size=0x760) addr:0x020eb168
-MapInforme_Kill kind:function(arm,size=0x3c) addr:0x020eb8c8
-func_ov002_020eb904 kind:function(arm,size=0x708) addr:0x020eb904
-func_ov002_020ec00c kind:function(arm,size=0x7c) addr:0x020ec00c
-func_ov002_020ec088 kind:function(arm,size=0x168) addr:0x020ec088
-func_ov002_020ec1f0 kind:function(arm,size=0xfc) addr:0x020ec1f0
-func_ov002_020ec2ec kind:function(arm,size=0x2c) addr:0x020ec2ec
-func_ov002_020ec318 kind:function(arm,size=0x2c) addr:0x020ec318
-func_ov002_020ec344 kind:function(arm,size=0x20) addr:0x020ec344
-func_ov002_020ec364 kind:function(arm,size=0x30) addr:0x020ec364
-func_ov002_020ec394 kind:function(arm,size=0x760) addr:0x020ec394
-func_ov002_020ecaf4 kind:function(arm,size=0x188) addr:0x020ecaf4
-func_ov002_020ecc7c kind:function(arm,size=0x174) addr:0x020ecc7c
-func_ov002_020ecdf0 kind:function(arm,size=0x64) addr:0x020ecdf0
-func_ov002_020ece54 kind:function(arm,size=0x50) addr:0x020ece54
-func_ov002_020ecea4 kind:function(arm,size=0x1d8) addr:0x020ecea4
-func_ov002_020ed07c kind:function(arm,size=0x508) addr:0x020ed07c
-func_ov002_020ed584 kind:function(arm,size=0x254) addr:0x020ed584
-func_ov002_020ed7d8 kind:function(arm,size=0x18c) addr:0x020ed7d8
-func_ov002_020ed964 kind:function(arm,size=0xfc) addr:0x020ed964
-func_ov002_020eda60 kind:function(arm,size=0x8c) addr:0x020eda60
-func_ov002_020edaec kind:function(arm,size=0x40) addr:0x020edaec
+SubExec kind:function(arm,size=0x4) local addr:0x020eaa30
+SubDestroy kind:function(arm,size=0x1c) local addr:0x020eaa34
+MapInfo_Create kind:function(arm,size=0xa4) addr:0x020eaa50
+MapInfo_Exec kind:function(arm,size=0x674) addr:0x020eaaf4
+InfoSetStampBroomMsg kind:function(arm,size=0x760) local addr:0x020eb168
+MapInfo_Kill kind:function(arm,size=0x3c) addr:0x020eb8c8
+InfoSetStartMsg kind:function(arm,size=0x708) local addr:0x020eb904
+InfoSetTicketMsg kind:function(arm,size=0x7c) local addr:0x020ec00c
+InfoSprCreate kind:function(arm,size=0x168) local addr:0x020ec088
+InfoSprKill kind:function(arm,size=0xfc) local addr:0x020ec1f0
+InfoSprDispOn kind:function(arm,size=0x2c) local addr:0x020ec2ec
+InfoSprDispOff kind:function(arm,size=0x2c) local addr:0x020ec318
+InfoSprDispOffAll kind:function(arm,size=0x20) local addr:0x020ec344
+InfoSprSetAnim kind:function(arm,size=0x30) local addr:0x020ec364
+InfoSprSetPage kind:function(arm,size=0x760) local addr:0x020ec394
+InfoIsTicketLimited kind:function(arm,size=0x188) local addr:0x020ecaf4
+InfoIsNoBonus kind:function(arm,size=0x174) local addr:0x020ecc7c
+InfoCreateSelectColorAnim kind:function(arm,size=0x64) local addr:0x020ecdf0
+InfoKillSelectColorAnim kind:function(arm,size=0x50) local addr:0x020ece54
+InfoCheckTouchStart kind:function(arm,size=0x1d8) local addr:0x020ecea4
+InfoCheckTouchClick kind:function(arm,size=0x508) local addr:0x020ed07c
+InfoUpdatePlayer kind:function(arm,size=0x254) local addr:0x020ed584
+InfoCreateStampSpr kind:function(arm,size=0x18c) local addr:0x020ed7d8
+InfoKillStampSpr kind:function(arm,size=0xfc) local addr:0x020ed964
+InfoUpdateStampDisp kind:function(arm,size=0x8c) local addr:0x020eda60
+InfoHideStamp kind:function(arm,size=0x40) local addr:0x020edaec
 MapEv_ExecSandSweepTouch kind:function(arm,size=0x448) addr:0x020edb2c
 MapEvMoon_ExecEnterSlide kind:function(arm,size=0x270) addr:0x020edf74
 MapEvMoon_ExecEnterDeflate kind:function(arm,size=0x354) addr:0x020ee1e4
 MapEvMoon_ExecTrampolineRecover kind:function(arm,size=0x180) addr:0x020ee538
-MapEvSun_TruckInit kind:function(arm,size=0x10c) addr:0x020ee6b8
-MapEvSun_TruckClose kind:function(arm,size=0x2c) addr:0x020ee7c4
-MapEvSun_TruckExec kind:function(arm,size=0x1fc) addr:0x020ee7f0
-func_ov002_020ee9ec kind:function(arm,size=0x1a8) addr:0x020ee9ec
-func_ov002_020eeb94 kind:function(arm,size=0x1f8) addr:0x020eeb94
-func_ov002_020eed8c kind:function(arm,size=0x20) addr:0x020eed8c
-func_ov002_020eedac kind:function(arm,size=0x90) addr:0x020eedac
-func_ov002_020eee3c kind:function(arm,size=0x158) addr:0x020eee3c
-func_ov002_020eef94 kind:function(arm,size=0x348) addr:0x020eef94
-func_ov002_020ef2dc kind:function(arm,size=0x74) addr:0x020ef2dc
-func_ov002_020ef350 kind:function(arm,size=0x118) addr:0x020ef350
-func_ov002_020ef468 kind:function(arm,size=0x74) addr:0x020ef468
-func_ov002_020ef4dc kind:function(arm,size=0x108) addr:0x020ef4dc
-func_ov002_020ef5e4 kind:function(arm,size=0x160) addr:0x020ef5e4
-MapEvChr_Exec kind:function(arm,size=0x94) addr:0x020ef744
-func_ov002_020ef7d8 kind:function(arm,size=0x298) addr:0x020ef7d8
-MapEvChr_UpdateCol kind:function(arm,size=0x74) addr:0x020efa70
+MapEvSun_RideTruckInit kind:function(arm,size=0x10c) addr:0x020ee6b8
+MapEvSun_RideTruckClose kind:function(arm,size=0x2c) addr:0x020ee7c4
+MapEvSun_RideTruckExec kind:function(arm,size=0x1fc) addr:0x020ee7f0
+CheckSwipe kind:function(arm,size=0x1a8) local addr:0x020ee9ec
+UpdatePlayer kind:function(arm,size=0x1f8) local addr:0x020eeb94
+MoveTruck kind:function(arm,size=0x20) local addr:0x020eed8c
+MoveTruckEx kind:function(arm,size=0x90) local addr:0x020eedac
+CheckTruckBox kind:function(arm,size=0x158) local addr:0x020eee3c
+ExecTruckBox kind:function(arm,size=0x348) local addr:0x020eef94
+CheckTruckBomb kind:function(arm,size=0x74) local addr:0x020ef2dc
+ExecExplode kind:function(arm,size=0x118) local addr:0x020ef350
+UpdateObjAnim kind:function(arm,size=0x74) local addr:0x020ef468
+UpdateArrowObj kind:function(arm,size=0x108) local addr:0x020ef4dc
+MapEvStar_ExecSoccerTimer kind:function(arm,size=0x160) addr:0x020ef5e4
+MapEv_ZakoMoveExec kind:function(arm,size=0x94) addr:0x020ef744
+ZakoMoveExec kind:function(arm,size=0x298) local addr:0x020ef7d8
+MapEv_ZakoMoveCheckStop kind:function(arm,size=0x74) addr:0x020efa70
 MapEvSun_ExecTowerEnter kind:function(arm,size=0xa0) addr:0x020efae4
 MapEvSun_ExecTreeThief kind:function(arm,size=0x5c) addr:0x020efb84
 MapEvSun_ExecThiefHat kind:function(arm,size=0x5c) addr:0x020efbe0
@@ -780,9 +780,9 @@ MapEvSun_ExecPlayerExplode kind:function(arm,size=0x70) addr:0x020f063c
 MapEvSun_ExecSeesaw kind:function(arm,size=0x490) addr:0x020f06ac
 MapEvSun_ExecCannon kind:function(arm,size=0x238) addr:0x020f0b3c
 MapEvSun_ExecMagnetOn kind:function(arm,size=0x884) addr:0x020f0d74
-func_ov002_020f15f8 kind:function(arm,size=0x4c) addr:0x020f15f8
+MagnetOnFocus kind:function(arm,size=0x4c) local addr:0x020f15f8
 MapEvSun_ExecMagnetOff kind:function(arm,size=0x7b4) addr:0x020f1644
-func_ov002_020f1df8 kind:function(arm,size=0x4c) addr:0x020f1df8
+MagnetOffFocus kind:function(arm,size=0x4c) local addr:0x020f1df8
 MapEvSun_ExecJumpStart kind:function(arm,size=0x1c4) addr:0x020f1e44
 MapEvSun_ExecCharDisguise kind:function(arm,size=0x284) addr:0x020f2008
 MapEvSun_ExecCharDisguiseEnd kind:function(arm,size=0x2f4) addr:0x020f228c
@@ -794,119 +794,119 @@ MapEvSun_ExecSeesawEnterEnd kind:function(arm,size=0x1c4) addr:0x020f2c6c
 MapEvSun_ExecCannonEnterEnd kind:function(arm,size=0x1a4) addr:0x020f2e30
 MapEv_ExecCountdown kind:function(arm,size=0x1d0) addr:0x020f2fd4
 MapEv_ExecFallImpact kind:function(arm,size=0x204) addr:0x020f31a4
-MapEvStar_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
-MapEvStar_ExecEvilRecover kind:function(arm,size=0x130) addr:0x020f35a0
+MapEv_ExecWaterRecover kind:function(arm,size=0x1f8) addr:0x020f33a8
+MapEv_ExecEvilRecover kind:function(arm,size=0x130) addr:0x020f35a0
 MapEv_ExecTouchTampoline kind:function(arm,size=0x6f4) addr:0x020f36d0
-func_ov002_020f3dc4 kind:function(arm,size=0x9c) addr:0x020f3dc4
-func_ov002_020f3e60 kind:function(arm,size=0x244) addr:0x020f3e60
-func_ov002_020f40a4 kind:function(arm,size=0x80) addr:0x020f40a4
+InExitPoint kind:function(arm,size=0x9c) local addr:0x020f3dc4
+UpdateTouch kind:function(arm,size=0x244) local addr:0x020f3e60
+MoveTrampolineFocus kind:function(arm,size=0x80) local addr:0x020f40a4
 MapEvSun_RideJetCreate kind:function(arm,size=0x1f4) addr:0x020f4124
-MapEvSun_RideJetKill kind:function(arm,size=0x110) addr:0x020f4318
-MapEvSun_RideJetClose kind:function(arm,size=0x74) addr:0x020f4428
+JetKill kind:function(arm,size=0x110) local addr:0x020f4318
+MapEvSun_RideJetKill kind:function(arm,size=0x74) addr:0x020f4428
 MapEvSun_RideJetExec kind:function(arm,size=0x138) addr:0x020f449c
-MapEvSun_RideJetObjExec kind:function(arm,size=0x4) addr:0x020f45d4
-func_ov002_020f45d8 kind:function(arm,size=0x44) addr:0x020f45d8
-func_ov002_020f461c kind:function(arm,size=0x50) addr:0x020f461c
-func_ov002_020f466c kind:function(arm,size=0x20) addr:0x020f466c
-func_ov002_020f468c kind:function(arm,size=0x80) addr:0x020f468c
-func_ov002_020f470c kind:function(arm,size=0x54) addr:0x020f470c
-func_ov002_020f4760 kind:function(arm,size=0x174) addr:0x020f4760
-func_ov002_020f48d4 kind:function(arm,size=0x40) addr:0x020f48d4
-func_ov002_020f4914 kind:function(arm,size=0x90) addr:0x020f4914
-func_ov002_020f49a4 kind:function(arm,size=0x8c) addr:0x020f49a4
-func_ov002_020f4a30 kind:function(arm,size=0xd0) addr:0x020f4a30
-func_ov002_020f4b00 kind:function(arm,size=0x10) addr:0x020f4b00
-func_ov002_020f4b10 kind:function(arm,size=0x14) addr:0x020f4b10
-func_ov002_020f4b24 kind:function(arm,size=0x24) addr:0x020f4b24
-func_ov002_020f4b48 kind:function(arm,size=0x14) addr:0x020f4b48
-func_ov002_020f4b5c kind:function(arm,size=0xa8) addr:0x020f4b5c
-func_ov002_020f4c04 kind:function(arm,size=0xac) addr:0x020f4c04
-func_ov002_020f4cb0 kind:function(arm,size=0x12c) addr:0x020f4cb0
-func_ov002_020f4ddc kind:function(arm,size=0x44) addr:0x020f4ddc
-func_ov002_020f4e20 kind:function(arm,size=0x5c) addr:0x020f4e20
-func_ov002_020f4e7c kind:function(arm,size=0x3c) addr:0x020f4e7c
-func_ov002_020f4eb8 kind:function(arm,size=0x40) addr:0x020f4eb8
-func_ov002_020f4ef8 kind:function(arm,size=0x160) addr:0x020f4ef8
-func_ov002_020f5058 kind:function(arm,size=0x48) addr:0x020f5058
-func_ov002_020f50a0 kind:function(arm,size=0x2c) addr:0x020f50a0
-func_ov002_020f50cc kind:function(arm,size=0x14c) addr:0x020f50cc
-func_ov002_020f5218 kind:function(arm,size=0xc8) addr:0x020f5218
-func_ov002_020f52e0 kind:function(arm,size=0x230) addr:0x020f52e0
-func_ov002_020f5510 kind:function(arm,size=0x278) addr:0x020f5510
-func_ov002_020f5788 kind:function(arm,size=0x84) addr:0x020f5788
-func_ov002_020f580c kind:function(arm,size=0xf4) addr:0x020f580c
-func_ov002_020f5900 kind:function(arm,size=0x34) addr:0x020f5900
-func_ov002_020f5934 kind:function(arm,size=0xf8) addr:0x020f5934
-func_ov002_020f5a2c kind:function(arm,size=0x3c) addr:0x020f5a2c
-func_ov002_020f5a68 kind:function(arm,size=0x2c) addr:0x020f5a68
-func_ov002_020f5a94 kind:function(arm,size=0x1a0) addr:0x020f5a94
-func_ov002_020f5c34 kind:function(arm,size=0x3c) addr:0x020f5c34
-func_ov002_020f5c70 kind:function(arm,size=0xac) addr:0x020f5c70
-func_ov002_020f5d1c kind:function(arm,size=0xb8) addr:0x020f5d1c
-func_ov002_020f5dd4 kind:function(arm,size=0x3c) addr:0x020f5dd4
-func_ov002_020f5e10 kind:function(arm,size=0x50) addr:0x020f5e10
-func_ov002_020f5e60 kind:function(arm,size=0x180) addr:0x020f5e60
-func_ov002_020f5fe0 kind:function(arm,size=0x3c) addr:0x020f5fe0
-func_ov002_020f601c kind:function(arm,size=0xd4) addr:0x020f601c
-func_ov002_020f60f0 kind:function(arm,size=0x180) addr:0x020f60f0
-func_ov002_020f6270 kind:function(arm,size=0x3c) addr:0x020f6270
-func_ov002_020f62ac kind:function(arm,size=0xdc) addr:0x020f62ac
-func_ov002_020f6388 kind:function(arm,size=0x180) addr:0x020f6388
-func_ov002_020f6508 kind:function(arm,size=0x3c) addr:0x020f6508
-func_ov002_020f6544 kind:function(arm,size=0xa4) addr:0x020f6544
-func_ov002_020f65e8 kind:function(arm,size=0x14c) addr:0x020f65e8
-func_ov002_020f6734 kind:function(arm,size=0x180) addr:0x020f6734
-func_ov002_020f68b4 kind:function(arm,size=0x3c) addr:0x020f68b4
-func_ov002_020f68f0 kind:function(arm,size=0x50) addr:0x020f68f0
-func_ov002_020f6940 kind:function(arm,size=0x4c) addr:0x020f6940
-func_ov002_020f698c kind:function(arm,size=0x1c) addr:0x020f698c
-func_ov002_020f69a8 kind:function(arm,size=0x1f4) addr:0x020f69a8
-func_ov002_020f6b9c kind:function(arm,size=0x10) addr:0x020f6b9c
-func_ov002_020f6bac kind:function(arm,size=0xb8) addr:0x020f6bac
-func_ov002_020f6c64 kind:function(arm,size=0x4) addr:0x020f6c64
-func_ov002_020f6c68 kind:function(arm,size=0x40) addr:0x020f6c68
-func_ov002_020f6ca8 kind:function(arm,size=0xac) addr:0x020f6ca8
-func_ov002_020f6d54 kind:function(arm,size=0x1c) addr:0x020f6d54
-func_ov002_020f6d70 kind:function(arm,size=0x40) addr:0x020f6d70
-func_ov002_020f6db0 kind:function(arm,size=0x22c) addr:0x020f6db0
-func_ov002_020f6fdc kind:function(arm,size=0x70) addr:0x020f6fdc
-func_ov002_020f704c kind:function(arm,size=0x78) addr:0x020f704c
+MainObjExec kind:function(arm,size=0x4) local addr:0x020f45d4
+CreateObj kind:function(arm,size=0x44) local addr:0x020f45d8
+CreateObjList kind:function(arm,size=0x50) local addr:0x020f461c
+KillObjList kind:function(arm,size=0x20) local addr:0x020f466c
+AddObjList kind:function(arm,size=0x80) local addr:0x020f468c
+RemoveObjList kind:function(arm,size=0x54) local addr:0x020f470c
+DoBorderCol kind:function(arm,size=0x174) local addr:0x020f4760
+CheckBorderCol kind:function(arm,size=0x40) local addr:0x020f48d4
+CheckLeftBorderCol kind:function(arm,size=0x90) local addr:0x020f4914
+CheckRightBorderCol kind:function(arm,size=0x8c) local addr:0x020f49a4
+GetBorderColVel kind:function(arm,size=0xd0) local addr:0x020f4a30
+SetJumpStage kind:function(arm,size=0x10) local addr:0x020f4b00
+SetNextJumpStage kind:function(arm,size=0x14) local addr:0x020f4b10
+SetDelayNextJumpStage kind:function(arm,size=0x24) local addr:0x020f4b24
+SetPlayerState kind:function(arm,size=0x14) local addr:0x020f4b48
+CheckPlayerCol kind:function(arm,size=0xa8) local addr:0x020f4b5c
+SprUpdatePos kind:function(arm,size=0xac) local addr:0x020f4c04
+SprSetOfs kind:function(arm,size=0x12c) local addr:0x020f4cb0
+SprSetAnim kind:function(arm,size=0x44) local addr:0x020f4ddc
+SprCheckScreenExit kind:function(arm,size=0x5c) local addr:0x020f4e20
+SprKill kind:function(arm,size=0x3c) local addr:0x020f4e7c
+GetDistance kind:function(arm,size=0x40) local addr:0x020f4eb8
+CreatePlayerObj kind:function(arm,size=0x160) local addr:0x020f4ef8
+DestroyPlayerObj kind:function(arm,size=0x48) local addr:0x020f5058
+ExecPlayerObj kind:function(arm,size=0x2c) local addr:0x020f50a0
+ExecCamera kind:function(arm,size=0x14c) local addr:0x020f50cc
+ExecPlayerEnter kind:function(arm,size=0xc8) local addr:0x020f5218
+ExecPlayerMove kind:function(arm,size=0x230) local addr:0x020f52e0
+ExecPlayerJump kind:function(arm,size=0x278) local addr:0x020f5510
+ExecPlayerDie kind:function(arm,size=0x84) local addr:0x020f5788
+ExecPlayerExit kind:function(arm,size=0xf4) local addr:0x020f580c
+SetPlayerAnim kind:function(arm,size=0x34) local addr:0x020f5900
+StartPlayerRamp kind:function(arm,size=0xf8) local addr:0x020f5934
+StartPlayerDie kind:function(arm,size=0x3c) local addr:0x020f5a2c
+StartPlayerExit kind:function(arm,size=0x2c) local addr:0x020f5a68
+CreateStarObj kind:function(arm,size=0x1a0) local addr:0x020f5a94
+DestroyStarObj kind:function(arm,size=0x3c) local addr:0x020f5c34
+ExecStarObj kind:function(arm,size=0xac) local addr:0x020f5c70
+CreateShadowObj kind:function(arm,size=0xb8) local addr:0x020f5d1c
+DestroyShadowObj kind:function(arm,size=0x3c) local addr:0x020f5dd4
+ExecShadowObj kind:function(arm,size=0x50) local addr:0x020f5e10
+CreateSpiny kind:function(arm,size=0x180) local addr:0x020f5e60
+DestroySpiny kind:function(arm,size=0x3c) local addr:0x020f5fe0
+ExecSpiny kind:function(arm,size=0xd4) local addr:0x020f601c
+CreateBomb kind:function(arm,size=0x180) local addr:0x020f60f0
+DestroyBomb kind:function(arm,size=0x3c) local addr:0x020f6270
+ExecBomb kind:function(arm,size=0xdc) local addr:0x020f62ac
+CreateRamp kind:function(arm,size=0x180) local addr:0x020f6388
+DestroyRamp kind:function(arm,size=0x3c) local addr:0x020f6508
+ExecRamp kind:function(arm,size=0xa4) local addr:0x020f6544
+CheckRamp kind:function(arm,size=0x14c) local addr:0x020f65e8
+CreateFlag kind:function(arm,size=0x180) local addr:0x020f6734
+DestroyFlag kind:function(arm,size=0x3c) local addr:0x020f68b4
+ExecFlag kind:function(arm,size=0x50) local addr:0x020f68f0
+CreateSpawner kind:function(arm,size=0x4c) local addr:0x020f6940
+KillSpawner kind:function(arm,size=0x1c) local addr:0x020f698c
+ExecSpawner kind:function(arm,size=0x1f4) local addr:0x020f69a8
+GetSpawnerDist kind:function(arm,size=0x10) local addr:0x020f6b9c
+CreateColorAnim kind:function(arm,size=0xb8) local addr:0x020f6bac
+ExecColorAnim kind:function(arm,size=0x4) local addr:0x020f6c64
+DestroyColorAnim kind:function(arm,size=0x40) local addr:0x020f6c68
+CreateExplode kind:function(arm,size=0xac) local addr:0x020f6ca8
+DestroyExplode kind:function(arm,size=0x1c) local addr:0x020f6d54
+ExecExplode kind:function(arm,size=0x40) local addr:0x020f6d70
+CreateScore kind:function(arm,size=0x22c) local addr:0x020f6db0
+DestroyScore kind:function(arm,size=0x70) local addr:0x020f6fdc
+ExecScore kind:function(arm,size=0x78) local addr:0x020f704c
 Map_CheckMail kind:function(arm,size=0x1a4) addr:0x020f70c4
 Map_ExecMailScript kind:function(arm,size=0x310) addr:0x020f7268
-func_ov002_020f7578 kind:function(arm,size=0xec) addr:0x020f7578
-func_ov002_020f7664 kind:function(arm,size=0x278) addr:0x020f7664
-func_ov002_020f78dc kind:function(arm,size=0xb8) addr:0x020f78dc
-func_ov002_020f7994 kind:function(arm,size=0x29c) addr:0x020f7994
-func_ov002_020f7c30 kind:function(arm,size=0x374) addr:0x020f7c30
-func_ov002_020f7fa4 kind:function(arm,size=0x400) addr:0x020f7fa4
-func_ov002_020f83a4 kind:function(arm,size=0x134) addr:0x020f83a4
-func_ov002_020f84d8 kind:function(arm,size=0x194) addr:0x020f84d8
-func_ov002_020f866c kind:function(arm,size=0x9c) addr:0x020f866c
-func_ov002_020f8708 kind:function(arm,size=0x338) addr:0x020f8708
-func_ov002_020f8a40 kind:function(arm,size=0x124) addr:0x020f8a40
-func_ov002_020f8b64 kind:function(arm,size=0x454) addr:0x020f8b64
-func_ov002_020f8fb8 kind:function(arm,size=0x114) addr:0x020f8fb8
-func_ov002_020f90cc kind:function(arm,size=0x23c) addr:0x020f90cc
-func_ov002_020f9308 kind:function(arm,size=0x2fc) addr:0x020f9308
-func_ov002_020f9604 kind:function(arm,size=0x114) addr:0x020f9604
-func_ov002_020f9718 kind:function(arm,size=0x244) addr:0x020f9718
-func_ov002_020f995c kind:function(arm,size=0x470) addr:0x020f995c
-func_ov002_020f9dcc kind:function(arm,size=0xcc) addr:0x020f9dcc
-func_ov002_020f9e98 kind:function(arm,size=0x1ac) addr:0x020f9e98
-func_ov002_020fa044 kind:function(arm,size=0x208) addr:0x020fa044
-func_ov002_020fa24c kind:function(arm,size=0x1b0) addr:0x020fa24c
-func_ov002_020fa3fc kind:function(arm,size=0x1f0) addr:0x020fa3fc
-func_ov002_020fa5ec kind:function(arm,size=0x18c) addr:0x020fa5ec
-func_ov002_020fa778 kind:function(arm,size=0x3c) addr:0x020fa778
+GetMailCheckState kind:function(arm,size=0xec) local addr:0x020f7578
+CheckMailStar kind:function(arm,size=0x278) local addr:0x020f7664
+CheckMailEvil kind:function(arm,size=0xb8) local addr:0x020f78dc
+CheckMailJack kind:function(arm,size=0x29c) local addr:0x020f7994
+CheckMailQueen kind:function(arm,size=0x374) local addr:0x020f7c30
+CheckMailAce kind:function(arm,size=0x400) local addr:0x020f7fa4
+CheckMailZako kind:function(arm,size=0x134) local addr:0x020f83a4
+CheckMailThief kind:function(arm,size=0x194) local addr:0x020f84d8
+CheckMailNinja kind:function(arm,size=0x9c) local addr:0x020f866c
+CheckMailKuro kind:function(arm,size=0x338) local addr:0x020f8708
+CheckMailKuroQuest kind:function(arm,size=0x124) local addr:0x020f8a40
+CheckMailPretty kind:function(arm,size=0x454) local addr:0x020f8b64
+CheckMailPrettyDragon kind:function(arm,size=0x114) local addr:0x020f8fb8
+CheckMailPrettyQuest kind:function(arm,size=0x23c) local addr:0x020f90cc
+CheckMailAqua kind:function(arm,size=0x2fc) local addr:0x020f9308
+CheckMailAquaDragon kind:function(arm,size=0x114) local addr:0x020f9604
+CheckMailAquaQuest kind:function(arm,size=0x244) local addr:0x020f9718
+CheckMailGold kind:function(arm,size=0x470) local addr:0x020f995c
+CheckMailGoldSun kind:function(arm,size=0xcc) local addr:0x020f9dcc
+CheckMailGoldQuest kind:function(arm,size=0x1ac) local addr:0x020f9e98
+CheckMailAo kind:function(arm,size=0x208) local addr:0x020fa044
+CheckMailAoQuest kind:function(arm,size=0x1b0) local addr:0x020fa24c
+CheckMailMidori kind:function(arm,size=0x1f0) local addr:0x020fa3fc
+CheckMailMidoriQuest kind:function(arm,size=0x18c) local addr:0x020fa5ec
+AddNewMail kind:function(arm,size=0x3c) local addr:0x020fa778
 MapEvSun_ExecTouchFishing kind:function(arm,size=0x404) addr:0x020fa7b4
-func_ov002_020fabb8 kind:function(arm,size=0x17c) addr:0x020fabb8
-func_ov002_020fad34 kind:function(arm,size=0x2c) addr:0x020fad34
-func_ov002_020fad60 kind:function(arm,size=0x2c) addr:0x020fad60
-func_ov002_020fad8c kind:function(arm,size=0x1ac) addr:0x020fad8c
-func_ov002_020faf38 kind:function(arm,size=0x194) addr:0x020faf38
-func_ov002_020fb0cc kind:function(arm,size=0xb8) addr:0x020fb0cc
-func_ov002_020fb184 kind:function(arm,size=0x104) addr:0x020fb184
-func_ov002_020fb288 kind:function(arm,size=0x9c) addr:0x020fb288
+CheckFishingRod kind:function(arm,size=0x17c) local addr:0x020fabb8
+GetNumFish kind:function(arm,size=0x2c) local addr:0x020fad34
+HasAllFish kind:function(arm,size=0x2c) local addr:0x020fad60
+MoveFishHit kind:function(arm,size=0x1ac) local addr:0x020fad8c
+ExecFish kind:function(arm,size=0x194) local addr:0x020faf38
+ExecFishDiagonal kind:function(arm,size=0xb8) local addr:0x020fb0cc
+ExecFishCircle kind:function(arm,size=0x104) local addr:0x020fb184
+ExecFishCollect kind:function(arm,size=0x9c) local addr:0x020fb288
 MapEv_IsZoneEvil kind:function(arm,size=0x190) addr:0x020fb324
 MapEv_PlayZoneMusic kind:function(arm,size=0x40c) addr:0x020fb4b4
 MapEvMoon_ExecTouchTightrope kind:function(arm,size=0x350) addr:0x020fb8c0
@@ -952,7 +952,7 @@ MapEvSun_InitAceSumoWin kind:function(arm,size=0xc0) addr:0x02100770
 MapEvSun_ExecAceSumoGold kind:function(arm,size=0xc4) addr:0x02100830
 MapEvSun_ExecAceSumoLose kind:function(arm,size=0xb8) addr:0x021008f4
 MapEvSun_ExecAceSumoWin kind:function(arm,size=0x16c) addr:0x021009ac
-func_ov002_02100b18 kind:function(arm,size=0x130) addr:0x02100b18
+ExecWater kind:function(arm,size=0x130) local addr:0x02100b18
 MapEvUranai_ExecEvent kind:function(arm,size=0x598) addr:0x02100c48
 func_ov002_021011e0 kind:function(arm,size=0x64) addr:0x021011e0
 MapEvUranai_ExecStarAreaMes kind:function(arm,size=0x250) addr:0x02101244
@@ -992,59 +992,59 @@ func_ov002_02103970 kind:function(arm,size=0x108) addr:0x02103970
 func_ov002_02103a78 kind:function(arm,size=0x13c) addr:0x02103a78
 func_ov002_02103bb4 kind:function(arm,size=0xe8) addr:0x02103bb4
 MapZoneCut_Create kind:function(arm,size=0x64) addr:0x02103c9c
-func_ov002_02103d00 kind:function(arm,size=0x34) addr:0x02103d00
+CreateBG kind:function(arm,size=0x34) local addr:0x02103d00
 MapZoneCut_NewGameCreate kind:function(arm,size=0x70) addr:0x02103d34
-func_ov002_02103da4 kind:function(arm,size=0x28) addr:0x02103da4
-MapZoneCut_Exec kind:function(arm,size=0xb8) addr:0x02103dcc
-func_ov002_02103e84 kind:function(arm,size=0x60) addr:0x02103e84
-func_ov002_02103ee4 kind:function(arm,size=0x20) addr:0x02103ee4
-func_ov002_02103f04 kind:function(arm,size=0x4c) addr:0x02103f04
-func_ov002_02103f50 kind:function(arm,size=0x48) addr:0x02103f50
-func_ov002_02103f98 kind:function(arm,size=0x100) addr:0x02103f98
-func_ov002_02104098 kind:function(arm,size=0x108) addr:0x02104098
-func_ov002_021041a0 kind:function(arm,size=0x104) addr:0x021041a0
-func_ov002_021042a4 kind:function(arm,size=0x50) addr:0x021042a4
-func_ov002_021042f4 kind:function(arm,size=0x164) addr:0x021042f4
-func_ov002_02104458 kind:function(arm,size=0xc) addr:0x02104458
-func_ov002_02104464 kind:function(arm,size=0x8) addr:0x02104464
+CreateNewGameBG kind:function(arm,size=0x28) local addr:0x02103da4
+ZoneCutExec kind:function(arm,size=0xb8) local addr:0x02103dcc
+ZoneCutDestroy kind:function(arm,size=0x60) local addr:0x02103e84
+FadeOutStart kind:function(arm,size=0x20) local addr:0x02103ee4
+FadeOutExec kind:function(arm,size=0x4c) local addr:0x02103f04
+FadeInExec kind:function(arm,size=0x48) local addr:0x02103f50
+LoadMainBG kind:function(arm,size=0x100) local addr:0x02103f98
+LoadSubBG kind:function(arm,size=0x108) local addr:0x02104098
+LoadEriBG kind:function(arm,size=0x104) local addr:0x021041a0
+MapEv_CreateChrMove kind:function(arm,size=0x50) addr:0x021042a4
+MapEv_ExecChrMove kind:function(arm,size=0x164) addr:0x021042f4
+MapEv_GetChrMoveAnim kind:function(arm,size=0xc) addr:0x02104458
+MapEv_SetChrMoveSeqArc kind:function(arm,size=0x8) addr:0x02104464
 func_ov002_0210446c kind:function(arm,size=0x18) addr:0x0210446c
 func_ov002_02104484 kind:function(arm,size=0x18) addr:0x02104484
-func_ov002_0210449c kind:function(arm,size=0x44) addr:0x0210449c
-func_ov002_021044e0 kind:function(arm,size=0x10) addr:0x021044e0
+ChrMoveSetAnim kind:function(arm,size=0x44) local addr:0x0210449c
+ChrMoveSetFlip kind:function(arm,size=0x10) local addr:0x021044e0
 func_ov002_021044f0 kind:function(arm,size=0x70) addr:0x021044f0
 func_ov002_02104560 kind:function(arm,size=0x114) addr:0x02104560
 func_ov002_02104674 kind:function(arm,size=0x1c0) addr:0x02104674
 func_ov002_02104834 kind:function(arm,size=0x1f8) addr:0x02104834
 func_ov002_02104a2c kind:function(arm,size=0x188) addr:0x02104a2c
 func_ov002_02104bb4 kind:function(arm,size=0x240) addr:0x02104bb4
-func_ov002_02104df4 kind:function(arm,size=0x28) addr:0x02104df4
-func_ov002_02104e1c kind:function(arm,size=0x18) addr:0x02104e1c
-func_ov002_02104e34 kind:function(arm,size=0x18) addr:0x02104e34
-func_ov002_02104e4c kind:function(arm,size=0x18) addr:0x02104e4c
-func_ov002_02104e64 kind:function(arm,size=0x8) addr:0x02104e64
+ChrMoveWaitDelay kind:function(arm,size=0x28) local addr:0x02104df4
+ChrMovePlaySE kind:function(arm,size=0x18) local addr:0x02104e1c
+ChrMoveStartSELoop kind:function(arm,size=0x18) local addr:0x02104e34
+ChrMoveStopSELoop kind:function(arm,size=0x18) local addr:0x02104e4c
+ChrMoveYield kind:function(arm,size=0x8) local addr:0x02104e64
 MapEvStar_InitDance kind:function(arm,size=0xac) addr:0x02104e6c
 MapEvStar_ExecDance kind:function(arm,size=0x11c) addr:0x02104f18
 MapDemo_OpeningCreate kind:function(arm,size=0x10) addr:0x02105034
 MapDemo_EvilStartCreate kind:function(arm,size=0x10) addr:0x02105044
 MapDemo_EvilEndCreate kind:function(arm,size=0x54) addr:0x02105054
 MapDemo_ResultCreate kind:function(arm,size=0x10) addr:0x021050a8
-func_ov002_021050b8 kind:function(arm,size=0x10) addr:0x021050b8
-func_ov002_021050c8 kind:function(arm,size=0x334) addr:0x021050c8
-func_ov002_021053fc kind:function(arm,size=0x2ec) addr:0x021053fc
-func_ov002_021056e8 kind:function(arm,size=0x40) addr:0x021056e8
-func_ov002_02105728 kind:function(arm,size=0x20) addr:0x02105728
-func_ov002_02105748 kind:function(arm,size=0x20) addr:0x02105748
-func_ov002_02105768 kind:function(arm,size=0x4c) addr:0x02105768
-func_ov002_021057b4 kind:function(arm,size=0x48) addr:0x021057b4
-func_ov002_021057fc kind:function(arm,size=0x30) addr:0x021057fc
-func_ov002_0210582c kind:function(arm,size=0x38) addr:0x0210582c
-MapDemo_SetBG kind:function(arm,size=0x12c) addr:0x02105864
-func_ov002_02105990 kind:function(arm,size=0x4c) addr:0x02105990
-func_ov002_021059dc kind:function(arm,size=0x64) addr:0x021059dc
-func_ov002_02105a40 kind:function(arm,size=0x124) addr:0x02105a40
-func_ov002_02105b64 kind:function(arm,size=0x38) addr:0x02105b64
-func_ov002_02105b9c kind:function(arm,size=0x38) addr:0x02105b9c
-func_ov002_02105bd4 kind:function(arm,size=0x38) addr:0x02105bd4
+DemoGpuInit kind:function(arm,size=0x10) local addr:0x021050b8
+DemoCreate kind:function(arm,size=0x334) local addr:0x021050c8
+DemoExec kind:function(arm,size=0x2ec) local addr:0x021053fc
+DemoDestroy kind:function(arm,size=0x40) local addr:0x021056e8
+FadeOutStart kind:function(arm,size=0x20) local addr:0x02105728
+FadeInStart kind:function(arm,size=0x20) local addr:0x02105748
+FadeOutExec kind:function(arm,size=0x4c) local addr:0x02105768
+FadeInExec kind:function(arm,size=0x48) local addr:0x021057b4
+SlowFadeStart kind:function(arm,size=0x30) local addr:0x021057fc
+SlowFadeExec kind:function(arm,size=0x38) local addr:0x0210582c
+MapDemo_CreateBG kind:function(arm,size=0x12c) addr:0x02105864
+DemoDestroyBG kind:function(arm,size=0x4c) local addr:0x02105990
+DemoDestroyColorAnim kind:function(arm,size=0x64) local addr:0x021059dc
+DemoCreateSubBG kind:function(arm,size=0x124) local addr:0x02105a40
+DemoDestroySubBG kind:function(arm,size=0x38) local addr:0x02105b64
+MapDemo_BGDispOn kind:function(arm,size=0x38) addr:0x02105b9c
+MapDemo_BGDispOff kind:function(arm,size=0x38) addr:0x02105bd4
 ColDataAddWallLeft kind:data(any) local addr:0x02105c0c
 ColDataRemoveRock kind:data(any) local addr:0x02105c1c
 ColDataAddRock kind:data(any) local addr:0x02105c2c
@@ -1079,44 +1079,44 @@ PliconPalTbl kind:data(any) local addr:0x02106448
 Map_PliconIdxTbl kind:data(any) addr:0x0210646c
 DummyScrMes_J kind:data(any) local addr:0x021064a4
 StampTestMes_J kind:data(any) local addr:0x021064c8
-data_ov002_021064dc kind:data(any) addr:0x021064dc
-data_ov002_021064e0 kind:data(any) addr:0x021064e0
-data_ov002_021064e6 kind:data(any) addr:0x021064e6
-data_ov002_021064ee kind:data(any) addr:0x021064ee
-data_ov002_021064f6 kind:data(any) addr:0x021064f6
-data_ov002_021064fe kind:data(any) addr:0x021064fe
-data_ov002_02106506 kind:data(any) addr:0x02106506
-data_ov002_02106510 kind:data(any) addr:0x02106510
-data_ov002_0210651a kind:data(any) addr:0x0210651a
-data_ov002_02106524 kind:data(any) addr:0x02106524
-data_ov002_02106530 kind:data(any) addr:0x02106530
-data_ov002_02106540 kind:data(any) addr:0x02106540
-data_ov002_02106550 kind:data(any) addr:0x02106550
-data_ov002_02106560 kind:data(any) addr:0x02106560
-data_ov002_02106570 kind:data(any) addr:0x02106570
-data_ov002_02106580 kind:data(any) addr:0x02106580
-data_ov002_02106590 kind:data(any) addr:0x02106590
-data_ov002_021065a0 kind:data(any) addr:0x021065a0
-data_ov002_021065b0 kind:data(any) addr:0x021065b0
-data_ov002_021065c0 kind:data(any) addr:0x021065c0
-data_ov002_021065d0 kind:data(any) addr:0x021065d0
-data_ov002_021065e4 kind:data(any) addr:0x021065e4
-data_ov002_021065f8 kind:data(any) addr:0x021065f8
-data_ov002_0210660c kind:data(any) addr:0x0210660c
-data_ov002_02106660 kind:data(any) addr:0x02106660
-data_ov002_021066cc kind:data(any) addr:0x021066cc
-data_ov002_0210676c kind:data(any) addr:0x0210676c
-data_ov002_0210682c kind:data(any) addr:0x0210682c
-data_ov002_0210692c kind:data(any) addr:0x0210692c
-data_ov002_02106a2c kind:data(any) addr:0x02106a2c
-data_ov002_02106b4c kind:data(any) addr:0x02106b4c
-data_ov002_02106c6c kind:data(any) addr:0x02106c6c
-data_ov002_02106d9c kind:data(any) addr:0x02106d9c
-data_ov002_02106efc kind:data(any) addr:0x02106efc
-data_ov002_0210705c kind:data(any) addr:0x0210705c
-data_ov002_0210706c kind:data(any) addr:0x0210706c
+KisekaeSprPrioTbl kind:data(any) local addr:0x021064dc
+VisitFlagMoonIn kind:data(any) local addr:0x021064e0
+VisitFlagSunOut kind:data(any) local addr:0x021064e6
+VisitFlagEarthOut kind:data(any) local addr:0x021064ee
+VisitFlagSunIn kind:data(any) local addr:0x021064f6
+VisitFlagStarOut kind:data(any) local addr:0x021064fe
+VisitFlagMoonOut kind:data(any) local addr:0x02106506
+VisitFlagEarthIn kind:data(any) local addr:0x02106510
+VisitFlagStarIn kind:data(any) local addr:0x0210651a
+AreaPosMoonIn kind:data(any) local addr:0x02106524
+ZonemapMaskAnimFileTbl kind:data(any) local addr:0x02106530
+AreaPosStarOut kind:data(any) local addr:0x02106540
+AreaPosSunIn kind:data(any) local addr:0x02106550
+ZonemapMaskImageFileTbl kind:data(any) local addr:0x02106560
+AreaPosSunOut kind:data(any) local addr:0x02106570
+ZonemapWakuColorFileTbl kind:data(any) local addr:0x02106580
+ZonemapWakuImageFileTbl kind:data(any) local addr:0x02106590
+ZonemapWakuAnimFileTbl kind:data(any) local addr:0x021065a0
+AreaPosEarthOut kind:data(any) local addr:0x021065b0
+ZonemapMaskColorFileTbl kind:data(any) local addr:0x021065c0
+AreaPosStarIn kind:data(any) local addr:0x021065d0
+AreaPosMoonOut kind:data(any) local addr:0x021065e4
+AreaPosEarthIn kind:data(any) local addr:0x021065f8
+KisekaeHeadFileTbl kind:data(any) local addr:0x0210660c
+KisekaeBombFileTbl kind:data(any) local addr:0x02106660
+ObjSprDataMoonIn kind:data(any) local addr:0x021066cc
+KisekaeBodyFileTbl kind:data(any) local addr:0x0210676c
+ObjSprDataEarthIn kind:data(any) local addr:0x0210682c
+ObjSprDataStarIn kind:data(any) local addr:0x0210692c
+ObjSprDataSunOut kind:data(any) local addr:0x02106a2c
+ObjSprDataEarthOut kind:data(any) local addr:0x02106b4c
+ObjSprDataSunIn kind:data(any) local addr:0x02106c6c
+ObjSprDataStarOut kind:data(any) local addr:0x02106d9c
+ObjSprDataMoonOut kind:data(any) local addr:0x02106efc
+ObjChrPrioTbl kind:data(any) local addr:0x0210705c
+ObjChrAnimPrioTbl kind:data(any) local addr:0x0210706c
 data_ov002_0210707c kind:data(any) addr:0x0210707c
-data_ov002_02107088 kind:data(any) addr:0x02107088
+SpawnerPosTbl kind:data(any) local addr:0x02107088
 data_ov002_021070b0 kind:data(any) addr:0x021070b0
 EvilHatPathTbl kind:data(any) local addr:0x021070e0
 FlagColZoneTbl kind:data(any) local addr:0x02107250
@@ -1294,34 +1294,31 @@ SprPos kind:data(any) local addr:0x0210982c
 ClickRectTbl kind:data(any) local addr:0x0210988c
 SprData kind:data(any) local addr:0x0210992c
 ItemSprData kind:data(any) local addr:0x0210997c
-data_ov002_02109a38 kind:data(any) addr:0x02109a38
-data_ov002_02109a3a kind:data(any) addr:0x02109a3a
-data_ov002_02109a48 kind:data(any) addr:0x02109a48
-data_ov002_02109a4a kind:data(any) addr:0x02109a4a
-data_ov002_02109a58 kind:data(any) addr:0x02109a58
-data_ov002_02109a5a kind:data(any) addr:0x02109a5a
-data_ov002_02109a68 kind:data(any) addr:0x02109a68
-data_ov002_02109a6a kind:data(any) addr:0x02109a6a
-data_ov002_02109a78 kind:data(any) addr:0x02109a78
-data_ov002_02109a7a kind:data(any) addr:0x02109a7a
-data_ov002_02109a88 kind:data(any) addr:0x02109a88
-data_ov002_02109a8a kind:data(any) addr:0x02109a8a
-data_ov002_02109a98 kind:data(any) addr:0x02109a98
-data_ov002_02109a9a kind:data(any) addr:0x02109a9a
-data_ov002_02109aa8 kind:data(any) addr:0x02109aa8
-data_ov002_02109ac8 kind:data(any) addr:0x02109ac8
-data_ov002_02109aca kind:data(any) addr:0x02109aca
-data_ov002_02109ae8 kind:data(any) addr:0x02109ae8
-data_ov002_02109cc4 kind:data(any) addr:0x02109cc4
-data_ov002_02109cc8 kind:data(any) addr:0x02109cc8
-data_ov002_02109ccc kind:data(any) addr:0x02109ccc
-data_ov002_0210a0d8 kind:data(any) addr:0x0210a0d8
-data_ov002_0210a0f8 kind:data(any) addr:0x0210a0f8
-data_ov002_0210a100 kind:data(any) addr:0x0210a100
-data_ov002_0210a108 kind:data(any) addr:0x0210a108
-data_ov002_0210a180 kind:data(any) addr:0x0210a180
-data_ov002_0210a188 kind:data(any) addr:0x0210a188
-data_ov002_0210a1a8 kind:data(any) addr:0x0210a1a8
+BombOfs kind:data(any) local addr:0x02109a38
+EsortEscapeOfs kind:data(any) local addr:0x02109a48
+EscapeOfs kind:data(any) local addr:0x02109a58
+EndOfs kind:data(any) local addr:0x02109a68
+Explode1Ofs kind:data(any) local addr:0x02109a78
+Explode2Ofs kind:data(any) local addr:0x02109a88
+Explode3Ofs kind:data(any) local addr:0x02109a98
+EvilDispTbl kind:data(any) local addr:0x02109aa8
+EscortPlayerOfs kind:data(any) local addr:0x02109ac8
+EvFuncTbl kind:data(any) local addr:0x02109ae8
+BustupFileTbl kind:data(any) local addr:0x02109cc4
+PinkTileEscapePos kind:data(any) local addr:0x0210a0d8
+PinkTileEscortEscapePos kind:data(any) local addr:0x0210a0dc
+RockMoveStartEscapePos kind:data(any) local addr:0x0210a0e0
+RockMoveEscortStartEscapePos kind:data(any) local addr:0x0210a0e4
+RockKickEscapePos kind:data(any) local addr:0x0210a0e8
+RockKickEscortEscapePos kind:data(any) local addr:0x0210a0ec
+RockMoveEndEscapePos kind:data(any) local addr:0x0210a0f0
+RockMoveEscortEndEscapePos kind:data(any) local addr:0x0210a0f4
+SoccerGoalMaxPos kind:data(any) local addr:0x0210a0f8
+SoccerGoalMinPos kind:data(any) local addr:0x0210a100
+EnterFuncTbl kind:data(any) local addr:0x0210a108
+SwimOfs kind:data(any) local addr:0x0210a180
+SwimRect kind:data(any) local addr:0x0210a188
+CharRect kind:data(any) local addr:0x0210a1a8
 data_ov002_0210a1b8 kind:data(any) addr:0x0210a1b8
 data_ov002_0210a1c8 kind:data(any) addr:0x0210a1c8
 data_ov002_0210a1d8 kind:data(any) addr:0x0210a1d8
@@ -1404,61 +1401,52 @@ data_ov002_0210a698 kind:data(any) addr:0x0210a698
 data_ov002_0210a6a8 kind:data(any) addr:0x0210a6a8
 MapMenu_MailChrTbl kind:data(any) addr:0x0210a6b8
 MapMenu_MesMailTbl kind:data(any) addr:0x0210a70c
-data_ov002_0210a850 kind:data(any) addr:0x0210a850
-data_ov002_0210a852 kind:data(any) addr:0x0210a852
-data_ov002_0210a860 kind:data(any) addr:0x0210a860
-data_ov002_0210a868 kind:data(any) addr:0x0210a868
-data_ov002_0210a870 kind:data(any) addr:0x0210a870
-data_ov002_0210a874 kind:data(any) addr:0x0210a874
-data_ov002_0210a890 kind:data(any) addr:0x0210a890
-data_ov002_0210a918 kind:data(any) addr:0x0210a918
-data_ov002_0210a924 kind:data(any) addr:0x0210a924
-data_ov002_0210a944 kind:data(any) addr:0x0210a944
-data_ov002_0210a964 kind:data(any) addr:0x0210a964
-data_ov002_0210a984 kind:data(any) addr:0x0210a984
-data_ov002_0210a9a4 kind:data(any) addr:0x0210a9a4
-data_ov002_0210a9ec kind:data(any) addr:0x0210a9ec
-data_ov002_0210a9f0 kind:data(any) addr:0x0210a9f0
-data_ov002_0210aa4c kind:data(any) addr:0x0210aa4c
-data_ov002_0210aa5c kind:data(any) addr:0x0210aa5c
-data_ov002_0210aa6c kind:data(any) addr:0x0210aa6c
-data_ov002_0210aa7c kind:data(any) addr:0x0210aa7c
-data_ov002_0210aa8c kind:data(any) addr:0x0210aa8c
-data_ov002_0210aaac kind:data(any) addr:0x0210aaac
-data_ov002_0210aacc kind:data(any) addr:0x0210aacc
-data_ov002_0210aaec kind:data(any) addr:0x0210aaec
-data_ov002_0210ab0c kind:data(any) addr:0x0210ab0c
-data_ov002_0210ab2c kind:data(any) addr:0x0210ab2c
-data_ov002_0210ab4c kind:data(any) addr:0x0210ab4c
-data_ov002_0210ab54 kind:data(any) addr:0x0210ab54
-data_ov002_0210ab55 kind:data(any) addr:0x0210ab55
-data_ov002_0210ab56 kind:data(any) addr:0x0210ab56
-data_ov002_0210ab60 kind:data(any) addr:0x0210ab60
-data_ov002_0210ab6c kind:data(any) addr:0x0210ab6c
-data_ov002_0210ab7c kind:data(any) addr:0x0210ab7c
-data_ov002_0210ab8c kind:data(any) addr:0x0210ab8c
+ObjVel kind:data(any) local addr:0x0210a850
+BasketballVelY kind:data(any) local addr:0x0210a860
+BasketballVelX kind:data(any) local addr:0x0210a868
+BasketballTargetPos kind:data(any) local addr:0x0210a870
+PathDataTbl kind:data(any) local addr:0x0210a890
+KisekaeFileTbl kind:data(any) local addr:0x0210a918
+ObjSprDataTbl kind:data(any) local addr:0x0210a924
+VisitFlagTbl kind:data(any) local addr:0x0210a944
+AreaPosTbl kind:data(any) local addr:0x0210a964
+PieceNumPosTbl kind:data(any) local addr:0x0210a984
+PieceMaskPosTbl kind:data(any) local addr:0x0210a9a4
+PieceColorAnimFileTbl kind:data(any) local addr:0x0210a9ec
+WakuT01ColorAnimFileTbl kind:data(any) local addr:0x0210aa4c
+WakuT02ColorAnimFileTbl kind:data(any) local addr:0x0210aa5c
+LeftBGFileTbl kind:data(any) local addr:0x0210aa6c
+ShitaColorAnimFileTbl kind:data(any) local addr:0x0210aa7c
+ZonePlateFileColorTbl kind:data(any) local addr:0x0210aa8c
+ZonemapFileImageTbl kind:data(any) local addr:0x0210aaac
+ZonePlateFileImageTbl kind:data(any) local addr:0x0210aacc
+ZonemapFileColorTbl kind:data(any) local addr:0x0210aaec
+ZonemapFileBG0Tbl kind:data(any) local addr:0x0210ab0c
+ZonemapFileBGTbl kind:data(any) local addr:0x0210ab2c
+WarpZoneAnimTbl kind:data(any) local addr:0x0210ab4c
+TicketAnimTbl kind:data(any) local addr:0x0210ab54
+TicketCostTbl kind:data(any) local addr:0x0210ab60
+BtnColorAnimReleaseFile kind:data(any) local addr:0x0210ab6c
+BtnColorAnimPressFile kind:data(any) local addr:0x0210ab7c
+SprPosTbl kind:data(any) local addr:0x0210ab8c
 data_ov002_0210ab9c kind:data(any) addr:0x0210ab9c
 data_ov002_0210abac kind:data(any) addr:0x0210abac
-data_ov002_0210abc0 kind:data(any) addr:0x0210abc0
-data_ov002_0210abd4 kind:data(any) addr:0x0210abd4
-data_ov002_0210abe8 kind:data(any) addr:0x0210abe8
-data_ov002_0210abfc kind:data(any) addr:0x0210abfc
-data_ov002_0210ac00 kind:data(any) addr:0x0210ac00
-data_ov002_0210ac04 kind:data(any) addr:0x0210ac04
-data_ov002_0210ac2c kind:data(any) addr:0x0210ac2c
-data_ov002_0210ac5c kind:data(any) addr:0x0210ac5c
-data_ov002_0210ac8c kind:data(any) addr:0x0210ac8c
-data_ov002_0210ac90 kind:data(any) addr:0x0210ac90
-data_ov002_0210ac94 kind:data(any) addr:0x0210ac94
-data_ov002_0210acbc kind:data(any) addr:0x0210acbc
-data_ov002_0210acfc kind:data(any) addr:0x0210acfc
-data_ov002_0210ad54 kind:data(any) addr:0x0210ad54
-data_ov002_0210ad64 kind:data(any) addr:0x0210ad64
-data_ov002_0210ad74 kind:data(any) addr:0x0210ad74
-data_ov002_0210ad84 kind:data(any) addr:0x0210ad84
-data_ov002_0210ad94 kind:data(any) addr:0x0210ad94
-data_ov002_0210ada4 kind:data(any) addr:0x0210ada4
-data_ov002_0210adb4 kind:data(any) addr:0x0210adb4
+WarpColorAnimReleaseFile kind:data(any) local addr:0x0210abc0
+WarpColorAnimPressFile kind:data(any) local addr:0x0210abd4
+StampFlagTbl kind:data(any) local addr:0x0210abe8
+TicketColorAvailFile kind:data(any) local addr:0x0210abfc
+TicketColorAnimReleaseFile kind:data(any) local addr:0x0210ac2c
+TicketColorAnimPressFile kind:data(any) local addr:0x0210ac5c
+TicketColorUnavailFile kind:data(any) local addr:0x0210ac8c
+TouchRectTbl kind:data(any) local addr:0x0210acbc
+StampSprPosTbl kind:data(any) local addr:0x0210acfc
+MesNinjaLast kind:data(any) local addr:0x0210ad54
+MesStarBomDisappear kind:data(any) local addr:0x0210ad64
+MesPinkQuestHelp kind:data(any) local addr:0x0210ad74
+MesAquaQuestHelp kind:data(any) local addr:0x0210ad84
+MesNinja2Remain kind:data(any) local addr:0x0210ad94
+MesPlayerTransformEnd kind:data(any) local addr:0x0210ada4
+MesNinja1Remain kind:data(any) local addr:0x0210adb4
 MapScr_StarBomDisappear kind:data(any) addr:0x0210adc4
 MapScr_PinkQuestHelp kind:data(any) addr:0x0210addc
 MapScr_AquaQuestHelp kind:data(any) addr:0x0210adf4
@@ -1466,28 +1454,24 @@ MapScr_PlayerTransformEnd kind:data(any) addr:0x0210ae0c
 MapScr_Ninja1Remain kind:data(any) addr:0x0210ae30
 MapScr_Ninja2Remain kind:data(any) addr:0x0210ae58
 MapScr_NinjaLast kind:data(any) addr:0x0210ae80
-data_ov002_0210aeac kind:data(any) addr:0x0210aeac
-data_ov002_0210aeb4 kind:data(any) addr:0x0210aeb4
-data_ov002_0210aec8 kind:data(any) addr:0x0210aec8
-data_ov002_0210aeca kind:data(any) addr:0x0210aeca
-data_ov002_0210aee8 kind:data(any) addr:0x0210aee8
-data_ov002_0210af08 kind:data(any) addr:0x0210af08
-data_ov002_0210af38 kind:data(any) addr:0x0210af38
-data_ov002_0210afc2 kind:data(any) addr:0x0210afc2
-data_ov002_0210afc4 kind:data(any) addr:0x0210afc4
-data_ov002_0210b04c kind:data(any) addr:0x0210b04c
-data_ov002_0210b04e kind:data(any) addr:0x0210b04e
-data_ov002_0210b058 kind:data(any) addr:0x0210b058
-data_ov002_0210b060 kind:data(any) addr:0x0210b060
-data_ov002_0210b064 kind:data(any) addr:0x0210b064
-data_ov002_0210b078 kind:data(any) addr:0x0210b078
-data_ov002_0210b07c kind:data(any) addr:0x0210b07c
-data_ov002_0210b090 kind:data(any) addr:0x0210b090
-data_ov002_0210b0c0 kind:data(any) addr:0x0210b0c0
-data_ov002_0210b0d4 kind:data(any) addr:0x0210b0d4
-data_ov002_0210b114 kind:data(any) addr:0x0210b114
-MapMenu_MailNameTbl kind:data(any) addr:0x0210b774
-data_ov002_0210b784 kind:data(any) addr:0x0210b784
+DefaultDirTbl kind:data(any) local addr:0x0210aeac
+BoxPosTbl kind:data(any) local addr:0x0210aeb4
+FocusOfsTbl kind:data(any) local addr:0x0210aec8
+ArrowStartPosTbl kind:data(any) local addr:0x0210aee8
+TruckPointTbl kind:data(any) local addr:0x0210af08
+TruckPointTbl2 kind:data(any) local addr:0x0210af38
+TruckBombPosTbl kind:data(any) local addr:0x0210afc2
+ZakoMovePoint kind:data(any) local addr:0x0210b04c
+EscapePos kind:data(any) local addr:0x0210b058
+EscapePosEscort kind:data(any) local addr:0x0210b05C
+EnterPosTbl kind:data(any) local addr:0x0210b060
+TrampolineFocusPosTbl kind:data(any) local addr:0x0210b078
+ExitRectTbl kind:data(any) local addr:0x0210b090
+PlayerFuncTbl kind:data(any) local addr:0x0210b0c0
+BorderColFixup kind:data(any) local addr:0x0210b0d4
+SpawnData kind:data(any) local addr:0x0210b114
+Map_MailNameTbl kind:data(any) addr:0x0210b774
+CenterPos kind:data(any) local addr:0x0210b784
 MapScr_MgStart kind:data(any) addr:0x0210b78c
 data_ov002_0210b798 kind:data(any) addr:0x0210b798
 data_ov002_0210b7a8 kind:data(any) addr:0x0210b7a8
@@ -1624,78 +1608,78 @@ MapScr_PieceTokenFirstSun kind:data(any) addr:0x0210c758
 MapScr_PieceTokenFirstEarth kind:data(any) addr:0x0210c790
 MapScr_Mg01First kind:data(any) addr:0x0210c7c8
 MapScr_Mg09First kind:data(any) addr:0x0210c808
-data_ov002_0210c848 kind:data(any) addr:0x0210c848
-data_ov002_0210c858 kind:data(any) addr:0x0210c858
-data_ov002_0210c868 kind:data(any) addr:0x0210c868
-data_ov002_0210c878 kind:data(any) addr:0x0210c878
-data_ov002_0210c888 kind:data(any) addr:0x0210c888
-data_ov002_0210c898 kind:data(any) addr:0x0210c898
-data_ov002_0210c8a8 kind:data(any) addr:0x0210c8a8
-data_ov002_0210c8b8 kind:data(any) addr:0x0210c8b8
-data_ov002_0210c8c8 kind:data(any) addr:0x0210c8c8
-data_ov002_0210c8d8 kind:data(any) addr:0x0210c8d8
-data_ov002_0210c8e8 kind:data(any) addr:0x0210c8e8
-data_ov002_0210c8f8 kind:data(any) addr:0x0210c8f8
-data_ov002_0210c908 kind:data(any) addr:0x0210c908
-data_ov002_0210c918 kind:data(any) addr:0x0210c918
-data_ov002_0210c928 kind:data(any) addr:0x0210c928
-data_ov002_0210c938 kind:data(any) addr:0x0210c938
-data_ov002_0210c948 kind:data(any) addr:0x0210c948
-data_ov002_0210c958 kind:data(any) addr:0x0210c958
-data_ov002_0210c968 kind:data(any) addr:0x0210c968
-data_ov002_0210c978 kind:data(any) addr:0x0210c978
-data_ov002_0210c988 kind:data(any) addr:0x0210c988
-data_ov002_0210c998 kind:data(any) addr:0x0210c998
-data_ov002_0210c9a8 kind:data(any) addr:0x0210c9a8
-data_ov002_0210c9b8 kind:data(any) addr:0x0210c9b8
-data_ov002_0210c9c8 kind:data(any) addr:0x0210c9c8
-data_ov002_0210c9d8 kind:data(any) addr:0x0210c9d8
-data_ov002_0210c9e8 kind:data(any) addr:0x0210c9e8
-data_ov002_0210c9f8 kind:data(any) addr:0x0210c9f8
-data_ov002_0210ca08 kind:data(any) addr:0x0210ca08
-data_ov002_0210ca18 kind:data(any) addr:0x0210ca18
-data_ov002_0210ca28 kind:data(any) addr:0x0210ca28
-data_ov002_0210ca38 kind:data(any) addr:0x0210ca38
-data_ov002_0210ca48 kind:data(any) addr:0x0210ca48
-data_ov002_0210ca58 kind:data(any) addr:0x0210ca58
-data_ov002_0210ca68 kind:data(any) addr:0x0210ca68
-data_ov002_0210ca78 kind:data(any) addr:0x0210ca78
-data_ov002_0210ca88 kind:data(any) addr:0x0210ca88
-data_ov002_0210ca98 kind:data(any) addr:0x0210ca98
-data_ov002_0210caa8 kind:data(any) addr:0x0210caa8
-data_ov002_0210cab8 kind:data(any) addr:0x0210cab8
-data_ov002_0210cac8 kind:data(any) addr:0x0210cac8
-data_ov002_0210cad8 kind:data(any) addr:0x0210cad8
-data_ov002_0210cae8 kind:data(any) addr:0x0210cae8
-data_ov002_0210caf8 kind:data(any) addr:0x0210caf8
-data_ov002_0210cb08 kind:data(any) addr:0x0210cb08
-data_ov002_0210cb18 kind:data(any) addr:0x0210cb18
-data_ov002_0210cb28 kind:data(any) addr:0x0210cb28
-data_ov002_0210cb38 kind:data(any) addr:0x0210cb38
-data_ov002_0210cb48 kind:data(any) addr:0x0210cb48
-data_ov002_0210cb58 kind:data(any) addr:0x0210cb58
-data_ov002_0210cb68 kind:data(any) addr:0x0210cb68
-data_ov002_0210cb78 kind:data(any) addr:0x0210cb78
-data_ov002_0210cb88 kind:data(any) addr:0x0210cb88
-data_ov002_0210cb98 kind:data(any) addr:0x0210cb98
-data_ov002_0210cba8 kind:data(any) addr:0x0210cba8
-data_ov002_0210cbb8 kind:data(any) addr:0x0210cbb8
-data_ov002_0210cbc8 kind:data(any) addr:0x0210cbc8
-data_ov002_0210cbd8 kind:data(any) addr:0x0210cbd8
-data_ov002_0210cbe8 kind:data(any) addr:0x0210cbe8
-data_ov002_0210cbf8 kind:data(any) addr:0x0210cbf8
-data_ov002_0210cc08 kind:data(any) addr:0x0210cc08
-data_ov002_0210cc18 kind:data(any) addr:0x0210cc18
-data_ov002_0210cc28 kind:data(any) addr:0x0210cc28
-data_ov002_0210cc38 kind:data(any) addr:0x0210cc38
-data_ov002_0210cc48 kind:data(any) addr:0x0210cc48
-data_ov002_0210cc58 kind:data(any) addr:0x0210cc58
-data_ov002_0210cc68 kind:data(any) addr:0x0210cc68
+MapMes_StampView kind:data(any) addr:0x0210c848
+MesItemStarHat kind:data(any) local addr:0x0210c858
+MesMgEvilHatClear kind:data(any) local addr:0x0210c868
+MesPieceAquaKey kind:data(any) local addr:0x0210c878
+MesPieceTokenMulti kind:data(any) local addr:0x0210c888
+MesItemBasketball kind:data(any) local addr:0x0210c898
+MesItemWaterBroomStart kind:data(any) local addr:0x0210c8a8
+MesSunHypnotizeEnd kind:data(any) local addr:0x0210c8b8
+MesPieceSunMoonStar kind:data(any) local addr:0x0210c8c8
+MesItemSpecialBroomEnd kind:data(any) local addr:0x0210c8d8
+MesPieceSunNum kind:data(any) local addr:0x0210c8e8
+MesPieceToken kind:data(any) local addr:0x0210c8f8
+MesPiece3Sun kind:data(any) local addr:0x0210c908
+MesBoatTicket kind:data(any) local addr:0x0210c918
+MesItemSwimRing kind:data(any) local addr:0x0210c928
+MesPieceRainbow kind:data(any) local addr:0x0210c938
+MesItemFireBroomStart kind:data(any) local addr:0x0210c948
+MesPieceHeart kind:data(any) local addr:0x0210c958
+MesItemRubyBomb kind:data(any) local addr:0x0210c968
+MesSumoTicket kind:data(any) local addr:0x0210c978
+MesPieceYellowKey kind:data(any) local addr:0x0210c988
+MesPieceDarkKey kind:data(any) local addr:0x0210c998
+MesPieceSage kind:data(any) local addr:0x0210c9a8
+MesItemPumpkinMask kind:data(any) local addr:0x0210c9b8
+MesItemMagnetBomb kind:data(any) local addr:0x0210c9c8
+MesMoonHypnotizeEndPink kind:data(any) local addr:0x0210c9d8
+MesUranaiToken kind:data(any) local addr:0x0210c9e8
+MesItemWaterBombRecover kind:data(any) local addr:0x0210c9f8
+MesTruckTicket kind:data(any) local addr:0x0210ca08
+MesPieceStar kind:data(any) local addr:0x0210ca18
+MesItemStarCape kind:data(any) local addr:0x0210ca28
+MesItemPotBomb kind:data(any) local addr:0x0210ca38
+MesPiece3Star kind:data(any) local addr:0x0210ca48
+MesPieceMoon kind:data(any) local addr:0x0210ca58
+MesCycleTicket kind:data(any) local addr:0x0210ca68
+MesItemWaterBomb kind:data(any) local addr:0x0210ca78
+MesItemBomb kind:data(any) local addr:0x0210ca88
+MesPieceLightning kind:data(any) local addr:0x0210ca98
+MesMoonHypnotizeEndAqua kind:data(any) local addr:0x0210caa8
+MesPieceEarth kind:data(any) local addr:0x0210cab8
+MesPieceSun kind:data(any) local addr:0x0210cac8
+MesPieceStarMoon kind:data(any) local addr:0x0210cad8
+MesPieceGreenKey kind:data(any) local addr:0x0210cae8
+MesPieceRedKey kind:data(any) local addr:0x0210caf8
+MesItemSpecialBroomStart kind:data(any) local addr:0x0210cb08
+MesItemFishingRod kind:data(any) local addr:0x0210cb18
+MesItemBroom kind:data(any) local addr:0x0210cb28
+MesItemSageHat kind:data(any) local addr:0x0210cb38
+MesBasketballTicket kind:data(any) local addr:0x0210cb48
+MesItemWaterBombRecoverEnd kind:data(any) local addr:0x0210cb58
+MesDanceTicket kind:data(any) local addr:0x0210cb68
+MesPiece3Moon kind:data(any) local addr:0x0210cb78
+MesPiece3MoonNum kind:data(any) local addr:0x0210cb88
+MesFishingTicket kind:data(any) local addr:0x0210cb98
+MesStarHypnotizeEnd kind:data(any) local addr:0x0210cba8
+MesItemEvilCape kind:data(any) local addr:0x0210cbb8
+MesTokenEvilHatEnd kind:data(any) local addr:0x0210cbc8
+MesItemFlute kind:data(any) local addr:0x0210cbd8
+MesItemShuriken kind:data(any) local addr:0x0210cbe8
+MesItemSoccerBomb kind:data(any) local addr:0x0210cbf8
+MesItemRubyBombMiniBom kind:data(any) local addr:0x0210cc08
+MesSoccerTicket kind:data(any) local addr:0x0210cc18
+MesItemCowboyHat kind:data(any) local addr:0x0210cc28
+MesItemFossilBomb kind:data(any) local addr:0x0210cc38
+MesPiece3StarNum kind:data(any) local addr:0x0210cc48
+MesItemEvilHat kind:data(any) local addr:0x0210cc58
+MapMes_StampAll kind:data(any) addr:0x0210cc68
 MapScr_PieceSun kind:data(any) addr:0x0210cc78
 MapScr_ItemEvilHat kind:data(any) addr:0x0210cc90
 MapScr_ItemFlute kind:data(any) addr:0x0210cca8
 MapScr_ItemPumpkinMask kind:data(any) addr:0x0210ccc0
-MapScr_WrestlingTicket kind:data(any) addr:0x0210ccd8
+MapScr_SumoTicket kind:data(any) addr:0x0210ccd8
 MapScr_BasketballTicket kind:data(any) addr:0x0210ccf0
 MapScrEarth_PieceLightning kind:data(any) addr:0x0210cd08
 MapScr_ItemRubyBomb kind:data(any) addr:0x0210cd20
@@ -1746,7 +1730,7 @@ MapScr_PieceTokenSunRide kind:data(any) addr:0x0210d1b0
 MapScr_ItemEvilCape kind:data(any) addr:0x0210d1d0
 MapScr_PieceHeartAllPink kind:data(any) addr:0x0210d1f4
 MapScr_Piece3Sun kind:data(any) addr:0x0210d218
-MapScr_PieceSunMoon kind:data(any) addr:0x0210d244
+MapScr_PieceStarMoonSeq kind:data(any) addr:0x0210d244
 MapScr_UranaiToken kind:data(any) addr:0x0210d270
 MapScr_Piece3Star kind:data(any) addr:0x0210d29c
 MapScrStar_PieceLightning kind:data(any) addr:0x0210d2c8
@@ -1839,64 +1823,67 @@ MapMes_MenuItemBodyTbl kind:data(any) addr:0x0210da00
 MapMes_MenuItemBombTbl kind:data(any) addr:0x0210da18
 MapMes_MenuStampTbl kind:data(any) addr:0x0210da38
 MapMes_MenuStampBonusTbl kind:data(any) addr:0x0210da60
-data_ov002_0210da88 kind:data(any) addr:0x0210da88
-data_ov002_0210da98 kind:data(any) addr:0x0210da98
-data_ov002_0210daa8 kind:data(any) addr:0x0210daa8
-data_ov002_0210dab8 kind:data(any) addr:0x0210dab8
-data_ov002_0210dac8 kind:data(any) addr:0x0210dac8
-data_ov002_0210dad8 kind:data(any) addr:0x0210dad8
-data_ov002_0210dae8 kind:data(any) addr:0x0210dae8
-data_ov002_0210daf8 kind:data(any) addr:0x0210daf8
-data_ov002_0210db08 kind:data(any) addr:0x0210db08
-data_ov002_0210db18 kind:data(any) addr:0x0210db18
-data_ov002_0210db28 kind:data(any) addr:0x0210db28
-data_ov002_0210db38 kind:data(any) addr:0x0210db38
-data_ov002_0210db48 kind:data(any) addr:0x0210db48
-data_ov002_0210db58 kind:data(any) addr:0x0210db58
-data_ov002_0210db68 kind:data(any) addr:0x0210db68
-data_ov002_0210db78 kind:data(any) addr:0x0210db78
-MapMes_InformeStampCheck kind:data(any) addr:0x0210db88
-MapMes_InformeWarpFirst kind:data(any) addr:0x0210db98
-MapMes_InformeWarpSelect kind:data(any) addr:0x0210dba8
-MapMes_InformeSelect kind:data(any) addr:0x0210dbb8
-MapMes_InformeHypnotize kind:data(any) addr:0x0210dbc8
-MapMes_InformeTokenCantBuy kind:data(any) addr:0x0210dbd8
-MapMes_InformeTicketGet kind:data(any) addr:0x0210dbe8
-MapMes_InformeTicketGetFirst kind:data(any) addr:0x0210dbf8
-MapMes_InformeHaveTicket kind:data(any) addr:0x0210dc08
-MapMes_InformeTokenTrade kind:data(any) addr:0x0210dc18
-MapMes_InformeTicketLimitedFail kind:data(any) addr:0x0210dc28
-MapMes_InformeTicketLimited kind:data(any) addr:0x0210dc38
-MapMes_InformeTokenExchange kind:data(any) addr:0x0210dc48
-MapMes_InformeTicketFishing kind:data(any) addr:0x0210dc58
-MapMes_InformeTicketBasketball kind:data(any) addr:0x0210dc68
-MapMes_InformeTicketSoccer kind:data(any) addr:0x0210dc78
-MapMes_InformeTicketSumo kind:data(any) addr:0x0210dc88
-MapMes_InformeTicketCycle kind:data(any) addr:0x0210dc98
-MapMes_InformeTicketDance kind:data(any) addr:0x0210dca8
-MapMes_InformeTicketSunRide kind:data(any) addr:0x0210dcb8
-MapMes_InformeTicketTruck kind:data(any) addr:0x0210dcc8
-MapMes_InformeHypnotizeEnd4 kind:data(any) addr:0x0210dcd8
-MapMes_InformeHypnotizeEnd3 kind:data(any) addr:0x0210dce8
-MapMes_InformeHypnotizeEnd2 kind:data(any) addr:0x0210dcf8
-MapMes_InformeHypnotizeEnd1 kind:data(any) addr:0x0210dd08
-MapMes_InformeEarthFirst kind:data(any) addr:0x0210dd18
-MapMes_InformeSunFirst kind:data(any) addr:0x0210dd28
-MapMes_InformeMoonFirst kind:data(any) addr:0x0210dd38
-MapMes_InformeStarFirst kind:data(any) addr:0x0210dd48
-MapMes_InformeFirst kind:data(any) addr:0x0210dd58
-MapMes_InformeNoBonus kind:data(any) addr:0x0210dd68
-data_ov002_0210dd78 kind:data(any) addr:0x0210dd78
-data_ov002_0210dd88 kind:data(any) addr:0x0210dd88
-data_ov002_0210dd98 kind:data(any) addr:0x0210dd98
-data_ov002_0210e020 kind:data(any) addr:0x0210e020
-data_ov002_0210e2a8 kind:data(any) addr:0x0210e2a8
-data_ov002_0210e530 kind:data(any) addr:0x0210e530
-data_ov002_0210e590 kind:data(any) addr:0x0210e590
-data_ov002_0210e5f0 kind:data(any) addr:0x0210e5f0
-data_ov002_0210e650 kind:data(any) addr:0x0210e650
-data_ov002_0210e710 kind:data(any) addr:0x0210e710
-data_ov002_0210e7e8 kind:data(any) addr:0x0210e7e8
+MapMes_InfoBroomPost kind:data(any) addr:0x0210da88
+MapMes_InfoBroomEnd kind:data(any) addr:0x0210da98
+MapMes_InfoBroomGlow kind:data(any) addr:0x0210daa8
+MapMes_InfoBroomBonusTransform kind:data(any) addr:0x0210dab8
+MapMes_InfoBroomBonusStart kind:data(any) addr:0x0210dac8
+MapMes_InfoStampBroomWaterHint kind:data(any) addr:0x0210dad8
+MapMes_InfoStampBroomPower kind:data(any) addr:0x0210dae8
+MapMes_InfoStampBroomFireHint kind:data(any) addr:0x0210daf8
+MapMes_InfoStampBroomWater kind:data(any) addr:0x0210db08
+MapMes_InfoStampBroomWaterStart kind:data(any) addr:0x0210db18
+MapMes_InfoStampBroomFire kind:data(any) addr:0x0210db28
+MapMes_InfoStampBroomFireStart kind:data(any) addr:0x0210db38
+MapMes_InfoStampBonusItem kind:data(any) addr:0x0210db48
+MapMes_InfoStampBonusStart kind:data(any) addr:0x0210db58
+MapMes_InfoStampMore kind:data(any) addr:0x0210db68
+MapMes_InfoStampCheck kind:data(any) addr:0x0210db78
+MapMes_InfoStampCheckstart kind:data(any) addr:0x0210db88
+MapMes_InfoWarpFirst kind:data(any) addr:0x0210db98
+MapMes_InfoWarpSelect kind:data(any) addr:0x0210dba8
+MapMes_InfoSelect kind:data(any) addr:0x0210dbb8
+MapMes_InfoHypnotize kind:data(any) addr:0x0210dbc8
+MapMes_InfoTokenCantBuy kind:data(any) addr:0x0210dbd8
+MapMes_InfoTicketGet kind:data(any) addr:0x0210dbe8
+MapMes_InfoTicketGetFirst kind:data(any) addr:0x0210dbf8
+MapMes_InfoHaveTicket kind:data(any) addr:0x0210dc08
+MapMes_InfoTicketSelect kind:data(any) addr:0x0210dc18
+MapMes_InfoTicketLimitedFail kind:data(any) addr:0x0210dc28
+MapMes_InfoTicketLimited kind:data(any) addr:0x0210dc38
+MapMes_InfoTokenExchange kind:data(any) addr:0x0210dc48
+MapMes_InfoTicketFishing kind:data(any) addr:0x0210dc58
+MapMes_InfoTicketBasketball kind:data(any) addr:0x0210dc68
+MapMes_InfoTicketSoccer kind:data(any) addr:0x0210dc78
+MapMes_InfoTicketSumo kind:data(any) addr:0x0210dc88
+MapMes_InfoTicketCycle kind:data(any) addr:0x0210dc98
+MapMes_InfoTicketDance kind:data(any) addr:0x0210dca8
+MapMes_InfoTicketSunRide kind:data(any) addr:0x0210dcb8
+MapMes_InfoTicketTruck kind:data(any) addr:0x0210dcc8
+MapMes_InfoHypnotizeEnd4 kind:data(any) addr:0x0210dcd8
+MapMes_InfoHypnotizeEnd3 kind:data(any) addr:0x0210dce8
+MapMes_InfoHypnotizeEnd2 kind:data(any) addr:0x0210dcf8
+MapMes_InfoHypnotizeEnd1 kind:data(any) addr:0x0210dd08
+MapMes_InfoEarthFirst kind:data(any) addr:0x0210dd18
+MapMes_InfoSunFirst kind:data(any) addr:0x0210dd28
+MapMes_InfoMoonFirst kind:data(any) addr:0x0210dd38
+MapMes_InfoStarFirst kind:data(any) addr:0x0210dd48
+MapMes_InfoFirst kind:data(any) addr:0x0210dd58
+MapMes_InfoNoBonus kind:data(any) addr:0x0210dd68
+EndRect kind:data(any) local addr:0x0210dd78
+ThrowEscapePos kind:data(any) local addr:0x0210dd88
+ThrowEscortEscapePos kind:data(any) local addr:0x0210dd8C
+DropEscapePos kind:data(any) local addr:0x0210dd90
+DropEscortEscapePos kind:data(any) local addr:0x0210dd94
+Zako1MoveData kind:data(any) local addr:0x0210dd98
+AquaMoveData kind:data(any) local addr:0x0210e020
+Zako2MoveData kind:data(any) local addr:0x0210e2a8
+ShiroMoveData kind:data(any) local addr:0x0210e530
+AceWinMoveData kind:data(any) local addr:0x0210e590
+ShiroEscapeMoveData kind:data(any) local addr:0x0210e5f0
+AceGoldMoveData kind:data(any) local addr:0x0210e650
+AceWaterMoveData kind:data(any) local addr:0x0210e710
+GoldMoveData kind:data(any) local addr:0x0210e7e8
 data_ov002_0210e998 kind:data(any) addr:0x0210e998
 data_ov002_0210eb48 kind:data(any) addr:0x0210eb48
 data_ov002_0210eb58 kind:data(any) addr:0x0210eb58
@@ -1977,15 +1964,9 @@ MapScrUranai_NextArea kind:data(any) addr:0x0210f2d0
 data_ov002_0210f2fc kind:data(any) addr:0x0210f2fc
 data_ov002_0210f31c kind:data(any) addr:0x0210f31c
 data_ov002_0210f33c kind:data(any) addr:0x0210f33c
-data_ov002_0210f360 kind:data(any) addr:0x0210f360
-data_ov002_0210f364 kind:data(any) addr:0x0210f364
-data_ov002_0210f368 kind:data(any) addr:0x0210f368
-data_ov002_0210f390 kind:data(any) addr:0x0210f390
-data_ov002_0210f394 kind:data(any) addr:0x0210f394
-data_ov002_0210f398 kind:data(any) addr:0x0210f398
-data_ov002_0210f3f0 kind:data(any) addr:0x0210f3f0
-data_ov002_0210f3f4 kind:data(any) addr:0x0210f3f4
-data_ov002_0210f3f8 kind:data(any) addr:0x0210f3f8
+EriBGFile kind:data(any) local addr:0x0210f360
+MainBGFile kind:data(any) local addr:0x0210f390
+SubBGFile kind:data(any) local addr:0x0210f3f0
 data_ov002_0210f450 kind:data(any) addr:0x0210f450
 data_ov002_0210f460 kind:data(any) addr:0x0210f460
 data_ov002_0210f470 kind:data(any) addr:0x0210f470
@@ -2188,16 +2169,12 @@ MapScrStar_CommentSandTreasureBox kind:data(any) addr:0x021104bc
 MapScrEarth_CommentShuriken kind:data(any) addr:0x021104dc
 MapScrMoon_RideTruck kind:data(any) addr:0x021104fc
 MapScrSun_RideJet kind:data(any) addr:0x02110534
-data_ov002_0211056c kind:data(any) addr:0x0211056c
-data_ov002_021105a8 kind:data(any) addr:0x021105a8
-data_ov002_02110668 kind:data(any) addr:0x02110668
-data_ov002_02110728 kind:data(any) addr:0x02110728
-data_ov002_02110800 kind:data(any) addr:0x02110800
-data_ov002_02110804 kind:data(any) addr:0x02110804
-data_ov002_02110808 kind:data(any) addr:0x02110808
-data_ov002_021108cc kind:data(any) addr:0x021108cc
-data_ov002_021108d0 kind:data(any) addr:0x021108d0
-data_ov002_021108d4 kind:data(any) addr:0x021108d4
+MoveFuncTbl kind:data(any) local addr:0x0211056c
+PrettyMoveData kind:data(any) local addr:0x021105a8
+Zako2MoveData kind:data(any) local addr:0x02110668
+Zako3MoveData kind:data(any) local addr:0x02110728
+SubBGFile kind:data(any) local addr:0x02110800
+MainBGFile kind:data(any) local addr:0x021108cc
 data_ov002_02110998 kind:data(any) addr:0x02110998
 data_ov002_0211099c kind:data(any) addr:0x0211099c
 data_ov002_021109ac kind:data(any) addr:0x021109ac
@@ -2337,18 +2314,14 @@ Map_Script kind:bss addr:0x0211206c
 MesWork kind:bss local addr:0x02112070
 ScreenMaskWork kind:bss local addr:0x02112074
 MapEv_Touch kind:bss addr:0x02112078
-data_ov002_0211207c kind:bss addr:0x0211207c
-data_ov002_02112080 kind:bss addr:0x02112080
-data_ov002_02112084 kind:bss addr:0x02112084
-data_ov002_02112088 kind:bss addr:0x02112088
-data_ov002_0211209c kind:bss addr:0x0211209c
-data_ov002_021120a0 kind:bss addr:0x021120a0
-data_ov002_021120f0 kind:bss addr:0x021120f0
-data_ov002_02112140 kind:bss addr:0x02112140
-data_ov002_02112190 kind:bss addr:0x02112190
-data_ov002_021121e0 kind:bss addr:0x021121e0
-data_ov002_02112230 kind:bss addr:0x02112230
-data_ov002_02112234 kind:bss addr:0x02112234
-data_ov002_02112284 kind:bss addr:0x02112284
-data_ov002_021122d4 kind:bss addr:0x021122d4
-data_ov002_02112324 kind:bss addr:0x02112324
+TouchSwipeWork kind:bss local addr:0x0211207c
+InfoWork kind:bss local addr:0x02112080
+TruckWork kind:bss local addr:0x02112084
+SunJetWork kind:bss local addr:0x02112088
+SEHandle kind:bss local addr:0x0211209c
+CycleMove kind:bss local addr:0x021120a0
+AceSumoMove kind:bss local addr:0x02112190
+ZoneCutWork kind:bss local addr:0x02112230
+DanceMove kind:bss local addr:0x02112234
+DemoWork kind:bss local addr:0x02112324
+data_ov002_02112328 kind:bss addr:0x02112328

@@ -155,3 +155,174 @@ src/map/event/map_event_spr.c:
 src/map/event/map_event_item.c:
     .text       start:0x020d36a4 end:0x020d3c78
     .data       start:0x0210997c end:0x02109a38
+
+src/map/event/map_event_bonus.c:
+    .text       start:0x020d3c78 end:0x020d8540
+
+src/map/event/map_event.c:
+    .text       start:0x020d8540 end:0x020dce0c
+    .data       start:0x02109a38 end:0x0210a0d8
+
+src/map/event/map_event_star.c:
+    .text       start:0x020dce0c end:0x020dfcb0
+    .data       start:0x0210a0d8 end:0x0210a108
+
+src/map/event/map_event_enter.c:
+    .text       start:0x020dfcb0 end:0x020e12c0
+    .data       start:0x0210a108 end:0x0210a180
+
+src/map/map_swim.c:
+    .text       start:0x020e12c0 end:0x020e17bc
+    .data       start:0x0210a180 end:0x0210a1a8
+
+src/map/event/map_event_tile_touch.c:
+    .text       start:0x020e17bc end:0x020e1ba4
+    .data       start:0x0210a1a8 end:0x0210a1b8
+
+src/map/map_mailtbl.c:
+    .data       start:0x0210a1b8 end:0x0210a850
+
+src/map/event/map_event_touch.c:
+    .text       start:0x020e1ba4 end:0x020e1e4c
+    .bss        start:0x02112078 end:0x0211207c
+
+src/map/event/map_event_touch_swipe.c:
+    .text       start:0x020e1e4c end:0x020e23e8
+    .bss        start:0x0211207c end:0x02112080
+    
+src/map/event/map_event_tree_touch.c:
+    .text       start:0x020e23e8 end:0x020e337c
+    .data       start:0x0210a850 end:0x0210a860
+
+src/map/event/map_event_moon.c:
+    .text       start:0x020e337c end:0x020e6bf0
+    .data       start:0x0210a860 end:0x0210a890
+
+src/map/map_chrpath.c:
+    .text       start:0x020e6bf0 end:0x020e74e8
+    .data       start:0x0210a890 end:0x0210a918
+
+src/map/map_sub.c:
+    .text       start:0x020e74e8 end:0x020eaa50
+    .rodata     start:0x021064dc end:0x0210707c
+    .data       start:0x0210a918 end:0x0210ab4c
+
+src/map/map_info.c:
+    .text       start:0x020eaa50 end:0x020edb2c
+    .data       start:0x0210ab4c end:0x0210ad54
+    .bss        start:0x02112080 end:0x02112084
+
+src/map/event/map_event_script.c:
+    .data       start:0x0210ad54 end:0x0210aeac
+
+src/map/event/map_event_sandsweep.c:
+    .text       start:0x020edb2c end:0x020edf74
+
+src/map/event/map_event_moonenter.c:
+    .text       start:0x020edf74 end:0x020ee6b8
+
+src/map/event/map_event_truck.c:
+    .text       start:0x020ee6b8 end:0x020ef5e4
+    .data       start:0x0210aeac end:0x0210b04c
+    .bss        start:0x02112084 end:0x02112088
+
+src/map/event/map_event_soccertimer.c:
+    .text       start:0x020ef5e4 end:0x020ef744
+
+src/map/event/map_event_zakomove.c:
+    .text       start:0x020ef744 end:0x020efae4
+    .data       start:0x0210b04c end:0x0210b058
+
+src/map/event/map_event_sun.c:
+    .text       start:0x020efae4 end:0x020f2fd4
+    .data       start:0x0210b058 end:0x0210b060
+
+src/map/event/map_event_recover.c:
+    .text       start:0x020f2fd4 end:0x020f36d0
+
+src/map/event/map_event_touch_trampoline.c:
+    .text       start:0x020f36d0 end:0x020f4124
+    .data       start:0x0210b060 end:0x0210b0c0
+
+src/map/event/map_event_sunride.c:
+    .text       start:0x020f4124 end:0x020f70c4
+    .rodata     start:0x0210707c end:0x021070b0
+    .data       start:0x0210b0c0 end:0x0210b774
+    .bss        start:0x02112088 end:0x0211209c
+
+src/map/map_mail.c:
+    .text       start:0x020f70c4 end:0x020fa7b4
+    .data       start:0x0210b774 end:0x0210b784
+
+src/map/event/map_event_sunfishing.c:
+    .text       start:0x020fa7b4 end:0x020fb324
+    .data       start:0x0210b784 end:0x0210b78c
+
+src/map/event/map_event_music.c:
+    .text       start:0x020fb324 end:0x020fb8c0
+
+src/map/script/map_script_mgstart.c:
+    .data       start:0x0210b78c end:0x0210b798
+
+src/map/script/map_script_mg.c:
+    .data       start:0x0210b798 end:0x0210c848
+
+src/map/script/map_script_bonus.c:
+    .data       start:0x0210c848 end:0x0210d558
+
+src/map/script/map_mes_menu.c:
+    .data       start:0x0210d558 end:0x0210da88
+
+src/map/script/map_mes_info.c:
+    .data       start:0x0210da88 end:0x0210dd78
+
+src/map/event/map_event_touch_tightrope.c:
+    .text       start:0x020fb8c0 end:0x020fbc10
+    .data       start:0x0210dd78 end:0x0210dd88
+
+src/map/event/map_event_earth.c:
+    .text       start:0x020fbc10 end:0x020ff634
+    .data       start:0x0210dd88 end:0x0210dd98
+
+src/map/event/map_event_cycle.c:
+    .text       start:0x020ff634 end:0x020ff96c
+    .data       start:0x0210dd98 end:0x0210e530
+    .bss        start:0x0211209c end:0x02112190
+
+src/map/event/map_event_earthenter.c:
+    .text       start:0x020ff96c end:0x021005d4
+
+src/map/event/map_event_sumo.c:
+    .text       start:0x021005d4 end:0x02100c48
+    .data       start:0x0210e530 end:0x0210eb48
+    .bss        start:0x02112190 end:0x02112230
+
+src/map/event/map_event_uranai.c:
+    .text       start:0x02100c48 end:0x02103c9c
+    .data       start:0x0210eb48 end:0x0210f360
+
+src/map/map_zonecut.c:
+    .text       start:0x02103c9c end:0x021042a4
+    .data       start:0x0210f360 end:0x0210f450
+    .bss        start:0x02112230 end:0x02112234
+
+src/map/script/map_script_comment.c:
+    .data       start:0x0210f450 end:0x0211056c
+
+src/map/event/map_event_chrmove.c:
+    .text       start:0x021042a4 end:0x02104e6c
+    .data       start:0x0211056c end:0x021105a8
+
+src/map/event/map_event_dance.c:
+    .text       start:0x02104e6c end:0x02105034
+    .data       start:0x021105a8 end:0x02110800
+    .bss        start:0x02112234 end:0x02112324
+
+src/map/map_demo.c:
+    .text       start:0x02105034 end:0x02105c0c
+    .data       start:0x02110800 end:0x02110998
+    .bss        start:0x02112324 end:0x02112340
+
+src/map/script/map_script_demo.c:
+    .rodata     start:0x021070b0 end:0x021070c8
+    .data       start:0x02110998 end:0x02112040
