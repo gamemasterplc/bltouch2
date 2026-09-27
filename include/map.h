@@ -39,7 +39,7 @@ typedef struct {
 	u32 sceneParam; //0x318
 	u8 mgCall; //0x31C
 	u16 unk31E;
-	u16 atrcWinNum;
+	u16 atrcWinNum; //0x320
 } MapBackup; //size=0x324
 
 typedef struct {
@@ -53,8 +53,8 @@ typedef struct {
 	BLSprite *mainSpr; //0x18
 	BLVramImageKey imageKey; //0x1C
 	BLColorKey colorKey; //0x24
-	//TODO: Fix type once coloranim.c decompiled
-	u16 colorAnim; //0x28
+	//TODO: Fix type once tone.c decompiled
+	u16 tone; //0x28
 } MapSprite;
 
 typedef struct {

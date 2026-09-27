@@ -124,7 +124,7 @@ src/bl/bl_windowmask.c:
     .text       start:0x02059128 end:0x02059660
     .rodata     start:0x020786a4 end:0x0207a7d0
 
-src/bl/bl_coloranim.c:
+src/bl/bl_tone.c:
     .text       start:0x02059660 end:0x0205a124
     .bss        start:0x020ac940 end:0x020ac950
 

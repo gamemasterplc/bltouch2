@@ -295,20 +295,20 @@ BL_WinMaskDestroy kind:function(arm,size=0x84) addr:0x020592e4
 BL_WinMaskExec kind:function(arm,size=0x1c8) addr:0x02059368
 StartDmaMain kind:function(arm,size=0x98) local addr:0x02059530
 StartDmaSub kind:function(arm,size=0x98) local addr:0x020595c8
-BL_ColorAnimInit kind:function(arm,size=0x7c) addr:0x02059660
-BL_ColorAnimClose kind:function(arm,size=0x64) addr:0x020596dc
-BL_ColorAnimSetPauseFlag kind:function(arm,size=0x18) addr:0x02059740
-BL_ColorAnimResetPauseFlag kind:function(arm,size=0x1c) addr:0x02059758
-BL_ColorAnimCreate kind:function(arm,size=0x14) addr:0x02059774
-BL_ColorAnimCreateFlag kind:function(arm,size=0x1c0) addr:0x02059788
-BL_ColorAnimKill kind:function(arm,size=0x18) addr:0x02059948
-BL_ColorAnimGetData kind:function(arm,size=0x3c) addr:0x02059960
-BL_ColorAnimSetSpeed kind:function(arm,size=0x18) addr:0x0205999c
-BL_ColorAnimExec kind:function(arm,size=0x54) addr:0x020599b4
-InsertColorAnim kind:function(arm,size=0x48) local addr:0x02059a08
-UnlinkColorAnim kind:function(arm,size=0x18) local addr:0x02059a50
-RemoveColorAnim kind:function(arm,size=0x50) local addr:0x02059a68
-GetNextColorAnim kind:function(arm,size=0x198) local addr:0x02059ab8
+BL_ToneInit kind:function(arm,size=0x7c) addr:0x02059660
+BL_ToneClose kind:function(arm,size=0x64) addr:0x020596dc
+BL_ToneSetPauseFlag kind:function(arm,size=0x18) addr:0x02059740
+BL_ToneResetPauseFlag kind:function(arm,size=0x1c) addr:0x02059758
+BL_ToneCreate kind:function(arm,size=0x14) addr:0x02059774
+BL_ToneCreateFlag kind:function(arm,size=0x1c0) addr:0x02059788
+BL_ToneKill kind:function(arm,size=0x18) addr:0x02059948
+BL_ToneGetData kind:function(arm,size=0x3c) addr:0x02059960
+BL_ToneSetSpeed kind:function(arm,size=0x18) addr:0x0205999c
+BL_ToneExec kind:function(arm,size=0x54) addr:0x020599b4
+InsertTone kind:function(arm,size=0x48) local addr:0x02059a08
+UnlinkTone kind:function(arm,size=0x18) local addr:0x02059a50
+RemoveTone kind:function(arm,size=0x50) local addr:0x02059a68
+GetNextTone kind:function(arm,size=0x198) local addr:0x02059ab8
 SetPlttTransfer kind:function(arm,size=0x1e8) local addr:0x02059c50
 AddTransferQueue kind:function(arm,size=0x24) local addr:0x02059e38
 TransferPlttOBJ kind:function(arm,size=0x30) local addr:0x02059e5c
@@ -562,7 +562,7 @@ ReturnTouch kind:function(arm,size=0x9c) local addr:0x02062d50
 ReturnTouchEnd kind:function(arm,size=0x64) local addr:0x02062dec
 BombFuseDispOn kind:function(arm,size=0x48) local addr:0x02062e50
 BombFuseDispOff kind:function(arm,size=0x24) local addr:0x02062e98
-UpdateCharaSelColorAnim kind:function(arm,size=0xe0) local addr:0x02062ebc
+UpdateCharaSelTone kind:function(arm,size=0xe0) local addr:0x02062ebc
 InitPlayerCharSel kind:function(arm,size=0x8c) local addr:0x02062f9c
 CreatePlayerSelectSpr kind:function(arm,size=0x7c) local addr:0x02063028
 UpdateSelectSprPos kind:function(arm,size=0x64) local addr:0x020630a4
@@ -665,7 +665,7 @@ UpdateCardIdle kind:function(arm,size=0x24) local addr:0x0206687c
 CardCreate kind:function(arm,size=0x58) local addr:0x020668a0
 CardUpdate kind:function(arm,size=0x18c) local addr:0x020668f8
 CardSelect kind:function(arm,size=0x100) local addr:0x02066a84
-CardCreateColorAnim kind:function(arm,size=0x58) local addr:0x02066b84
+CardCreateTone kind:function(arm,size=0x58) local addr:0x02066b84
 CreateAllKao kind:function(arm,size=0x28) local addr:0x02066bdc
 CreateKao kind:function(arm,size=0x124) local addr:0x02066c04
 CardTouch kind:function(arm,size=0xb8) local addr:0x02066d28
@@ -5768,7 +5768,7 @@ SprList kind:bss local addr:0x020ac804
 CurSprTile kind:bss local addr:0x020ac82c
 BL_ObjCur kind:bss addr:0x020ac930
 ObjList kind:bss local addr:0x020ac934
-ColorAnimList kind:bss local addr:0x020ac940
+ToneList kind:bss local addr:0x020ac940
 VBlankCur kind:bss local addr:0x020ac950
 VBlankQueue kind:bss local addr:0x020ac954
 WinMask kind:bss local addr:0x020ac964

@@ -118,7 +118,7 @@ src/bbp/bbp_windowmask.c:
     .rodata     start:0x020d1684 end:0x020d1988
     .bss        start:0x020e3e10 end:0x020e3e14
 
-src/bbp/bbp_coloranim.c:
+src/bbp/bbp_tone.c:
     .text       start:0x020c0680 end:0x020c10f8
     .bss        start:0x020e3e14 end:0x020e3e24
 

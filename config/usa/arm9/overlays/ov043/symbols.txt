@@ -99,11 +99,11 @@ MapStar_ChrDataTbl_A1P4 kind:data(any) addr:0x02119e8c
 MapStar_ColFlagTbl_A1P2 kind:data(any) addr:0x02119e94
 MapStar_ObjResIdxTbl_A1P4 kind:data(any) addr:0x02119e9e
 MapStar_MgColPosTbl_A1P3 kind:data(any) addr:0x02119ea8
-ColorAnimFileA1P3 kind:data(any) local addr:0x02119eb4
+ToneFileA1P3 kind:data(any) local addr:0x02119eb4
 MapStar_ObjResTbl_A2P4 kind:data(any) addr:0x02119ec0
-ColorAnimFileA1P2 kind:data(any) local addr:0x02119ecc
-ColorAnimFileA1P4 kind:data(any) local addr:0x02119ed8
-ColorAnimFileA1P1 kind:data(any) local addr:0x02119ee4
+ToneFileA1P2 kind:data(any) local addr:0x02119ecc
+ToneFileA1P4 kind:data(any) local addr:0x02119ed8
+ToneFileA1P1 kind:data(any) local addr:0x02119ee4
 MapStar_ChrDataTbl_A2P2 kind:data(any) addr:0x02119ef0
 MapStar_GateDataTbl_A2P3 kind:data(any) addr:0x02119f00
 MapStar_FlagColPosTbl_A2P3 kind:data(any) addr:0x02119f10
@@ -250,7 +250,7 @@ MapStar_ColFlagTbl_A2P4 kind:data(any) addr:0x0211b6d4
 A2P1ExitRect kind:data(any) local addr:0x0211b6e0
 A2P3TilePos kind:data(any) local addr:0x0211b6f0
 A2P5ExitRect kind:data(any) local addr:0x0211b700
-A2P1ColorAnimFile kind:data(any) local addr:0x0211b710
+A2P1ToneFile kind:data(any) local addr:0x0211b710
 A1P4DrownRect kind:data(any) local addr:0x0211b728
 DoReMiPosTbl kind:data(any) local addr:0x0211b748
 MesTextDisplayTestTbl kind:data(any) local addr:0x0211b778

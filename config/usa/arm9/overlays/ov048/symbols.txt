@@ -2968,17 +2968,17 @@ BBP_WinMaskDestroy kind:function(arm,size=0x94) addr:0x020c0268
 BBP_WinMaskExec kind:function(arm,size=0x234) addr:0x020c02fc
 StartDmaMain kind:function(arm,size=0xa8) local addr:0x020c0530
 StartDmaSub kind:function(arm,size=0xa8) local addr:0x020c05d8
-BBP_ColorAnimInit kind:function(arm,size=0x7c) addr:0x020c0680
-BBP_ColorAnimClose kind:function(arm,size=0x64) addr:0x020c06fc
-BBP_ColorAnimCreate kind:function(arm,size=0x14) addr:0x020c0760
-BBP_ColorAnimCreateFlag kind:function(arm,size=0x1c0) addr:0x020c0774
-BBP_ColorAnimKill kind:function(arm,size=0x18) addr:0x020c0934
-BBP_ColorAnimGetData kind:function(arm,size=0x3c) addr:0x020c094c
-BBP_ColorAnimExec kind:function(arm,size=0x54) addr:0x020c0988
-InsertColorAnim kind:function(arm,size=0x48) local addr:0x020c09dc
-UnlinkColorAnim kind:function(arm,size=0x18) local addr:0x020c0a24
-RemoveColorAnim kind:function(arm,size=0x50) local addr:0x020c0a3c
-GetNextColorAnim kind:function(arm,size=0x198) local addr:0x020c0a8c
+BBP_ToneInit kind:function(arm,size=0x7c) addr:0x020c0680
+BBP_ToneClose kind:function(arm,size=0x64) addr:0x020c06fc
+BBP_ToneCreate kind:function(arm,size=0x14) addr:0x020c0760
+BBP_ToneCreateFlag kind:function(arm,size=0x1c0) addr:0x020c0774
+BBP_ToneKill kind:function(arm,size=0x18) addr:0x020c0934
+BBP_ToneGetData kind:function(arm,size=0x3c) addr:0x020c094c
+BBP_ToneExec kind:function(arm,size=0x54) addr:0x020c0988
+InsertTone kind:function(arm,size=0x48) local addr:0x020c09dc
+UnlinkTone kind:function(arm,size=0x18) local addr:0x020c0a24
+RemoveTone kind:function(arm,size=0x50) local addr:0x020c0a3c
+GetNextTone kind:function(arm,size=0x198) local addr:0x020c0a8c
 SetPlttTransfer kind:function(arm,size=0x1e8) local addr:0x020c0c24
 AddTransferQueue kind:function(arm,size=0x24) local addr:0x020c0e0c
 TransferPlttOBJ kind:function(arm,size=0x30) local addr:0x020c0e30
@@ -5683,7 +5683,7 @@ CurSprTile kind:bss local addr:0x020e3cfc
 BBP_ObjCur kind:bss addr:0x020e3e00
 ObjList kind:bss local addr:0x020e3e04
 data_ov048_020e3e10 kind:bss addr:0x020e3e10
-ColorAnimList kind:bss local addr:0x020e3e14
+ToneList kind:bss local addr:0x020e3e14
 VBlankCur kind:bss local addr:0x020e3e24
 VBlankQueue kind:bss local addr:0x020e3e28
 OldVBlankIrq kind:bss local addr:0x020e3e38

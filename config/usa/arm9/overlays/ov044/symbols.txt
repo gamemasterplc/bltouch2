@@ -442,8 +442,8 @@ MapMoon_MgColPosTbl_A1P3 kind:data(any) addr:0x0211b638
 MapMoon_FlagColPosTbl_A1P3 kind:data(any) addr:0x0211b640
 MapMoon_ColFlagTbl_A2P2 kind:data(any) addr:0x0211b648
 MapMoon_MgColPosTbl_A1P2 kind:data(any) addr:0x0211b652
-ColorAnimFileA1P3 kind:data(any) local addr:0x0211b660
-ColorAnimFileA2P3 kind:data(any) local addr:0x0211b66c
+ToneFileA1P3 kind:data(any) local addr:0x0211b660
+ToneFileA2P3 kind:data(any) local addr:0x0211b66c
 MapMoon_ObjResIdxTbl_A2P3 kind:data(any) addr:0x0211b678
 MapMoon_ChrDataTbl_A1P5 kind:data(any) addr:0x0211b688
 MapMoon_ObjDynTbl_A2P2 kind:data(any) addr:0x0211b698
