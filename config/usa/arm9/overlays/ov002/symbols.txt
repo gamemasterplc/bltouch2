@@ -1119,8 +1119,8 @@ data_ov002_0210707c kind:data(any) addr:0x0210707c
 SpawnerPosTbl kind:data(any) local addr:0x02107088
 data_ov002_021070b0 kind:data(any) addr:0x021070b0
 EvilHatPathTbl kind:data(any) local addr:0x021070e0
-FlagColZoneTbl kind:data(any) local addr:0x02107250
-MgColZoneTbl kind:data(any) local addr:0x021072d8
+FlagColPosTbl kind:data(any) local addr:0x02107250
+MgColPosTbl kind:data(any) local addr:0x021072d8
 ImageTbl kind:data(any) local addr:0x02107360
 MapGate_CheckPieceTbl kind:data(any) addr:0x02107368
 MapChr_BossFileTbl kind:data(any) addr:0x021073f0
@@ -2158,8 +2158,8 @@ MapScr_CommentWrongBomb kind:data(any) addr:0x0211035c
 MapScrSun_CommentMagnetRed kind:data(any) addr:0x0211037c
 MapScrSun_CommentMagnetBlue kind:data(any) addr:0x0211039c
 MapScr_CommentOtherTicket kind:data(any) addr:0x021103bc
-MapScrMoon_CommentPotBombAlP2 kind:data(any) addr:0x021103dc
-MapScrMoon_CommentPotBombFluteA1P2 kind:data(any) addr:0x021103fc
+MapScrMoon_CommentPotBombAlP3 kind:data(any) addr:0x021103dc
+MapScrMoon_CommentPotBombFluteA1P3 kind:data(any) addr:0x021103fc
 MapScrMoon_CommentPotBombA1P5 kind:data(any) addr:0x0211041c
 MapScrMoon_CommentTBBMStart kind:data(any) addr:0x0211043c
 MapScrMoon_CommentPotBombFluteA1P5 kind:data(any) addr:0x0211045c

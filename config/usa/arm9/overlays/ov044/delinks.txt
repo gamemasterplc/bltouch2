@@ -2,3 +2,16 @@
     .ctor       start:0x02118d04 end:0x02118d04 kind:rodata align:4
     .data       start:0x02118d20 end:0x0211c840 kind:data align:32
     .bss        start:0x0211c840 end:0x0211c840 kind:bss align:32
+
+src/map/moon/map_moon_script.c:
+    .data       start:0x02118d20 end:0x0211b5a0
+
+src/map/moon/map_moon_data.c:
+    .data       start:0x0211b5a0 end:0x0211c468
+
+src/map/moon/map_moon_datatbl.c:
+    .data       start:0x0211c468 end:0x0211c800
+
+src/map/moon/map_moon.c:
+    .text       start:0x02112340 end:0x02118d04
+    .data       start:0x0211c800 end:0x0211c840
