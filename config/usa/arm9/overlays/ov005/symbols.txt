@@ -1,6 +1,6 @@
-func_ov005_02112340 kind:function(arm,size=0x138) addr:0x02112340
-func_ov005_02112478 kind:function(arm,size=0x20) addr:0x02112478
-func_ov005_02112498 kind:function(arm,size=0x20) addr:0x02112498
+Mg03_Create kind:function(arm,size=0x138) addr:0x02112340
+Mg03_PauseStart kind:function(arm,size=0x20) addr:0x02112478
+Mg03_PauseStop kind:function(arm,size=0x20) addr:0x02112498
 func_ov005_021124b8 kind:function(arm,size=0x18) addr:0x021124b8
 func_ov005_021124d0 kind:function(arm,size=0xdc) addr:0x021124d0
 func_ov005_021125ac kind:function(arm,size=0xe0) addr:0x021125ac
@@ -91,7 +91,6 @@ func_ov005_02115e44 kind:function(arm,size=0xe8) addr:0x02115e44
 func_ov005_02115f2c kind:function(arm,size=0x108) addr:0x02115f2c
 func_ov005_02116034 kind:function(arm,size=0xc0) addr:0x02116034
 data_ov005_021160f4 kind:data(any) addr:0x021160f4
-data_ov005_021160fc kind:data(any) addr:0x021160fc ambiguous
 data_ov005_02116104 kind:data(any) addr:0x02116104
 data_ov005_0211612c kind:data(any) addr:0x0211612c
 data_ov005_0211613c kind:data(any) addr:0x0211613c

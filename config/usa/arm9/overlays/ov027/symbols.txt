@@ -1,7 +1,7 @@
-func_ov027_02112340 kind:function(arm,size=0xe8) addr:0x02112340
-func_ov027_02112428 kind:function(arm,size=0x44) addr:0x02112428
-func_ov027_0211246c kind:function(arm,size=0x4c) addr:0x0211246c
-func_ov027_021124b8 kind:function(arm,size=0x4c) addr:0x021124b8
+Mg25_Create kind:function(arm,size=0xe8) addr:0x02112340
+Mg25_PostCreate kind:function(arm,size=0x44) addr:0x02112428
+Mg25_PauseStart kind:function(arm,size=0x4c) addr:0x0211246c
+Mg25_PauseStop kind:function(arm,size=0x4c) addr:0x021124b8
 func_ov027_02112504 kind:function(arm,size=0x1c) addr:0x02112504
 func_ov027_02112520 kind:function(arm,size=0x194) addr:0x02112520
 func_ov027_021126b4 kind:function(arm,size=0x20) addr:0x021126b4

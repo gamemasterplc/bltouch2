@@ -1,10 +1,10 @@
 func_ov019_02112340 kind:function(arm,size=0x3fc) addr:0x02112340
 func_ov019_0211273c kind:function(arm,size=0x4) addr:0x0211273c
 func_ov019_02112740 kind:function(arm,size=0x104) addr:0x02112740
-func_ov019_02112844 kind:function(arm,size=0x19c) addr:0x02112844
+Mg17_Create kind:function(arm,size=0x19c) addr:0x02112844
 func_ov019_021129e0 kind:function(arm,size=0x10) addr:0x021129e0
-func_ov019_021129f0 kind:function(arm,size=0x20) addr:0x021129f0
-func_ov019_02112a10 kind:function(arm,size=0x20) addr:0x02112a10
+Mg17_PauseStart kind:function(arm,size=0x20) addr:0x021129f0
+Mg17_PauseStop kind:function(arm,size=0x20) addr:0x02112a10
 func_ov019_02112a30 kind:function(arm,size=0x48) addr:0x02112a30
 func_ov019_02112a78 kind:function(arm,size=0x40) addr:0x02112a78
 func_ov019_02112ab8 kind:function(arm,size=0x8c0) addr:0x02112ab8

@@ -1,6 +1,6 @@
-func_ov014_02112340 kind:function(arm,size=0x164) addr:0x02112340
-func_ov014_021124a4 kind:function(arm,size=0x20) addr:0x021124a4
-func_ov014_021124c4 kind:function(arm,size=0x20) addr:0x021124c4
+Mg12_Create kind:function(arm,size=0x164) addr:0x02112340
+Mg12_PauseStart kind:function(arm,size=0x20) addr:0x021124a4
+Mg12_PauseStop kind:function(arm,size=0x20) addr:0x021124c4
 func_ov014_021124e4 kind:function(arm,size=0x14) addr:0x021124e4
 func_ov014_021124f8 kind:function(arm,size=0x38) addr:0x021124f8
 func_ov014_02112530 kind:function(arm,size=0x90) addr:0x02112530
