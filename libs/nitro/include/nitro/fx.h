@@ -19,7 +19,7 @@ extern "C" {
 #define FX32_ONE (fx32)(1 << FX32_SHIFT)
 #define FX16_ONE (fx16)(1 << FX16_SHIFT)
 
-#define FX32_CONVERT(x) (fx32)(((x) > 0) ? (((x) << 12)+0.5f) : (((x) << 12)-0.5f))
+#define FX32_CONVERT(x) (fx32)(((x) > 0) ? (((x)*4096)+0.5f) : (((x)*4096)-0.5f))
 
 
 typedef s32 fx32;
@@ -32,16 +32,48 @@ static inline fx32 FX_Mul(fx32 x, fx32 y)
     return (((s64)x*(s64)y)+0x800) >> FX32_SHIFT;
 }
 
-static inline fx32 FX_SinIdx(u16 angle)
+static inline fx16 FX_SinIdx(u16 angle)
 {
     return FX_SinCosTable_[(angle >> 4)*2];
 }
 
-static inline fx32 FX_CosIdx(u16 angle)
+static inline fx16 FX_CosIdx(u16 angle)
 {
     return FX_SinCosTable_[((angle >> 4)*2)+1];
 }
 
+static inline fx16 FX_Sin(s16 angle)
+{
+	if(angle < 0) {
+		while(angle < 0) {
+			angle += 0x1000;
+		}
+	} else {
+		while(angle > 0x1000) {
+			angle -= 0x1000;
+		}
+	}
+	return FX_SinCosTable_[angle*2];
+}
+
+static inline fx16 FX_Cos(s16 angle)
+{
+	if(angle < 0) {
+		while(angle < 0) {
+			angle += 0x1000;
+		}
+	} else {
+		while(angle > 0x1000) {
+			angle -= 0x1000;
+		}
+	}
+	return FX_SinCosTable_[(angle*2)+1];
+}
+
+static inline int FX_Whole(fx32 val)
+{
+    return val >> 12;
+}
 
 typedef union VecFx32 {
     struct {

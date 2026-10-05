@@ -2,6 +2,7 @@
 #define MAP_SAVE_H
 
 #include "bl_types.h"
+#include "map_defs.h"
 
 #define MAP_SAVE_WORK 0
 #define MAP_SAVE_BACKUP 1
@@ -26,7 +27,7 @@ typedef struct {
 } MapSaveAtrcFlag;
 
 typedef struct {
-	s8 index; //0x00
+	s8 area; //0x00
 	s8 param; //0x01
 } MapSaveUranai;
 
@@ -217,7 +218,7 @@ typedef struct {
 	//Flags at 0x144
 	u32 messSpeed : 2; //Bits 0-1
 	u32 shortcut : 1; //Bit 2
-	MapSaveUranai uranai[3]; //0x148
+	MapSaveUranai uranai[MAP_URANAI_MAX]; //0x148
 	MapSaveZoneVisit visit; //0x14E
 	MapSaveZoneVisit visitInforme; //0x14F
 	//Quest progress fields at 0x150
@@ -258,7 +259,7 @@ void MapSave_SetFlag_(int flag, int saveType);
 void MapSave_ResetFlag_(int flag, int saveType);
 void MapSave_SetPieceFlag_(int type, int piece, int saveType);
 u32 MapSave_GetPieceFlag_(int type, int saveType);
-int MapSave_GetPieceNum_(int type, int saveType);
+u32 MapSave_GetPieceNum_(int type, int saveType);
 void MapSave_CollectToken_(int type, int token, int saveType);
 void MapSave_AddToken_(s16 num, int saveType);
 s16 MapSave_GetNumTokens_(int saveType);
@@ -292,7 +293,10 @@ void MapSave_SetZoneVisitFlag_(int type, int zoneType, int saveType);
 BLBool MapSave_GetZoneVisitFlag_(int type, int zoneType, int saveType);
 void MapSave_IncQuestProgress_(int questType, int saveType);
 u8 MapSave_GetQuestProgress_(int questType, int saveType);
- 
+void MapSave_SetUranai_(int type, int area, int param, int saveType);
+int MapSave_GetUranaiArea_(int type, int saveType);
+int MapSave_GetUranaiParam_(int type, int saveType);
+
 static inline MapSaveAtrcRecord *MapSave_GetAtrcRecordBackup(void)
 {
 	return MapSave_GetAtrcRecord_(MAP_SAVE_BACKUP);
@@ -326,6 +330,76 @@ static inline void MapSave_ResetFlag(int flag)
 static inline void MapSave_ResetFlagBackup(int flag)
 {
 	MapSave_SetFlag_(flag, MAP_SAVE_BACKUP);
+}
+
+static inline u32 MapSave_GetPieceNum(int type)
+{
+	return MapSave_GetPieceNum_(type, MAP_SAVE_WORK);
+}
+
+static inline u32 MapSave_GetPieceNumBackup(int type)
+{
+	return MapSave_GetPieceNum_(type, MAP_SAVE_BACKUP);
+}
+
+static inline void MapSave_SetMenuPage(u8 page)
+{
+	MapSave_SetMenuPage_(page, MAP_SAVE_WORK);
+}
+
+static inline void MapSave_SetMenuPageBackup(u8 page)
+{
+	MapSave_SetMenuPage_(page, MAP_SAVE_BACKUP);
+}
+
+static inline void MapSave_SetMessSpeed(u8 speed)
+{
+	MapSave_SetMessSpeed_(speed, MAP_SAVE_WORK);
+}
+
+static inline void MapSave_SetMessSpeedBackup(u8 speed)
+{
+	MapSave_SetMessSpeed_(speed, MAP_SAVE_BACKUP);
+}
+
+static inline void MapSave_SetMenuShortcut(u8 shortcut)
+{
+	MapSave_SetMenuShortcut_(shortcut, MAP_SAVE_WORK);
+}
+
+static inline void MapSave_SetMenuShortcutBackup(u8 shortcut)
+{
+	MapSave_SetMenuShortcut_(shortcut, MAP_SAVE_BACKUP);
+}
+
+static inline void MapSave_SetUranai(int type, int area, int param)
+{
+	MapSave_SetUranai_(type, area, param, MAP_SAVE_WORK);
+}
+
+static inline void MapSave_SetUranaiBackup(int type, int area, int param)
+{
+	MapSave_SetUranai_(type, area, param, MAP_SAVE_BACKUP);
+}
+
+static inline int MapSave_GetUranaiArea(int type)
+{
+	return MapSave_GetUranaiArea_(type, MAP_SAVE_WORK);
+}
+
+static inline int MapSave_GetUranaiAreaBackup(int type)
+{
+	return MapSave_GetUranaiArea_(type, MAP_SAVE_BACKUP);
+}
+
+static inline int MapSave_GetUranaiParam(int type)
+{
+	return MapSave_GetUranaiParam_(type, MAP_SAVE_WORK);
+}
+
+static inline int MapSave_GetUranaiParamBackup(int type)
+{
+	return MapSave_GetUranaiParam_(type, MAP_SAVE_BACKUP);
 }
 
 

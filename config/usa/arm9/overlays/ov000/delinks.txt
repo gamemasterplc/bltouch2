@@ -416,9 +416,19 @@ src/bl/filetbl/bl_filetbl_mg26.c:
     .rodata     start:0x0207da40 end:0x0207dc5c
     .data       start:0x0209e13c end:0x0209f518
 
+src/map/map_backup.c:
+    complete
+    .text       start:0x02068e80 end:0x020698fc
+    .bss        start:0x020ad058 end:0x020ad15c
+
 src/map/map.c:
-    .text       start:0x02068e80 end:0x02069f78
-    .bss        start:0x020ad058 end:0x020b1220
+    complete
+    .text       start:0x020698fc end:0x02069f78
+    .bss        start:0x020ad15c end:0x020b0efc
+
+src/map/map_backupcopy.c:
+    complete
+    .bss        start:0x020b0efc end:0x020b1220
 
 src/bl/bl_download.c:
     .text       start:0x02069f78 end:0x0206c0f8

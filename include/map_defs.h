@@ -4,8 +4,20 @@
 #define MAPFLAG(type, no) (((type) << 8)|(no))
 
 #define MAP_ITEM_NONE 0
+#define MAP_ESCORT_HIS_MAX 20
+#define MAP_OBJ_MAX 52
+#define MAP_DYNOBJ_MAX 44
+#define MAP_BGOBJ_MAX 4
+#define MAP_GATE_MAX 8
+#define MAP_TOUCH_MAX 8
+#define MAP_TOUCH_SPR_MAX 8
+#define MAP_EVSPR_MAX 8
+#define MAP_EVITEM_MAX 8
 
 #define MAP_ITEM_BIT(no) (1 << ((no)-1))
+
+#define MAP_URANAI_AREA_NULL -1
+#define MAP_URANAI_PARAM_NULL -1
 
 enum {
 	MAP_QUEST_JACK_BOSS, //0
@@ -25,10 +37,28 @@ enum {
 };
 
 enum {
+	MAP_URANAI_STAR, //0
+	MAP_URANAI_MOON, //1
+	MAP_URANAI_SUN, //2
+	MAP_URANAI_MAX, //3
+};
+
+enum {
 	MAP_ZONE_TYPE_STAR, //0
 	MAP_ZONE_TYPE_MOON, //1
 	MAP_ZONE_TYPE_SUN, //2
 	MAP_ZONE_TYPE_EARTH //3
+};
+
+enum {
+	MAP_ZONE_STAR_OUT, //0
+	MAP_ZONE_STAR_IN, //1
+	MAP_ZONE_MOON_OUT, //2
+	MAP_ZONE_MOON_IN, //3
+	MAP_ZONE_SUN_OUT, //4
+	MAP_ZONE_SUN_IN, //5
+	MAP_ZONE_EARTH_OUT, //6
+	MAP_ZONE_EARTH_IN, //7
 };
 
 enum {

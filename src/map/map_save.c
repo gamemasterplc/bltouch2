@@ -85,7 +85,7 @@ static inline MapSave *GetMapSave(int saveType)
 
 void MapSave_SetNewGame(void)
 {
-    if(MapSave_GetFlagBackup(MAPFLAG(MAP_FLAG_CHR_PRETTY, 0)) || Map_GetCurZoneType(TRUE) == MAP_ZONE_TYPE_STAR) {
+    if(MapSave_GetFlagBackup(MAPFLAG(MAP_FLAG_CHR_PRETTY, 0)) || Map_GetCurZoneTypeBackup() == MAP_ZONE_TYPE_STAR) {
         return;
     }
     MapSave_SetFlagBackup(MAPFLAG(MAP_FLAG_CHR_PRETTY, 0));
@@ -319,7 +319,7 @@ u32 MapSave_GetPieceFlag_(int type, int saveType)
     }
 }
 
-int MapSave_GetPieceNum_(int type, int saveType)
+u32 MapSave_GetPieceNum_(int type, int saveType)
 {
     MapSave *save = GetMapSave(saveType);
     int i, num;
@@ -883,5 +883,62 @@ u8 MapSave_GetQuestProgress_(int questType, int saveType)
         #undef QUEST_ENTRY
         default:
             return 0;
+    }
+}
+
+void MapSave_SetUranai_(int type, int area, int param, int saveType)
+{
+    MapSave *save = GetMapSave(saveType);
+    switch(type) {
+        case MAP_URANAI_STAR:
+            save->uranai[MAP_URANAI_STAR].area = area;
+            save->uranai[MAP_URANAI_STAR].param = param;
+            break;
+        
+        case MAP_URANAI_MOON:
+            save->uranai[MAP_URANAI_MOON].area = area;
+            save->uranai[MAP_URANAI_MOON].param = param;
+            break;
+        
+        case MAP_URANAI_SUN:
+            save->uranai[MAP_URANAI_SUN].area = area;
+            save->uranai[MAP_URANAI_SUN].param = param;
+            break;
+    }
+}
+
+int MapSave_GetUranaiArea_(int type, int saveType)
+{
+    MapSave *save = GetMapSave(saveType);
+    switch(type) {
+        case MAP_URANAI_STAR:
+            return save->uranai[MAP_URANAI_STAR].area;
+        
+        case MAP_URANAI_MOON:
+            return save->uranai[MAP_URANAI_MOON].area;
+        
+        case MAP_URANAI_SUN:
+            return save->uranai[MAP_URANAI_SUN].area;
+        
+        default:
+            return MAP_URANAI_AREA_NULL;
+    }
+}
+
+int MapSave_GetUranaiParam_(int type, int saveType)
+{
+    MapSave *save = GetMapSave(saveType);
+    switch(type) {
+        case MAP_URANAI_STAR:
+            return save->uranai[MAP_URANAI_STAR].param;
+        
+        case MAP_URANAI_MOON:
+            return save->uranai[MAP_URANAI_MOON].param;
+        
+        case MAP_URANAI_SUN:
+            return save->uranai[MAP_URANAI_SUN].param;
+        
+        default:
+            return MAP_URANAI_PARAM_NULL;
     }
 }

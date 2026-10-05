@@ -11,6 +11,11 @@ typedef struct {
     fx32 y;
 } BLVec2;
 
+typedef struct {
+    s16 x;
+    s16 y;
+} BLIVec2;
+
 typedef u8 BLBool;
 
 #endif
