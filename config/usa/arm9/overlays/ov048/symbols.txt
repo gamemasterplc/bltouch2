@@ -2990,13 +2990,13 @@ TransferPlttBGSub kind:function(arm,size=0x30) local addr:0x020c0f68
 TransferPlttBGExt kind:function(arm,size=0x98) local addr:0x020c0f98
 TransferPlttBGExtSub kind:function(arm,size=0x44) local addr:0x020c1030
 TransferPlttTex kind:function(arm,size=0x84) local addr:0x020c1074
-BBP_VBlankQueueInit kind:function(arm,size=0x3c) addr:0x020c10f8
-BBP_VBlankQueueCreate kind:function(arm,size=0xb8) addr:0x020c1134
-BBP_VBlankQueueExec kind:function(arm,size=0x74) addr:0x020c11ec
-BBP_VBlankQueueClose kind:function(arm,size=0xa0) addr:0x020c1260
-BBP_VBlankQueueAdd kind:function(arm,size=0x84) addr:0x020c1300
-BBP_VBlankQueueRemove kind:function(arm,size=0x40) addr:0x020c1384
-BBP_VBlankQueueRemoveCur kind:function(arm,size=0x18) addr:0x020c13c4
+BBP_GfxQueueInit kind:function(arm,size=0x3c) addr:0x020c10f8
+BBP_GfxQueueCreate kind:function(arm,size=0xb8) addr:0x020c1134
+BBP_GfxQueueExec kind:function(arm,size=0x74) addr:0x020c11ec
+BBP_GfxQueueClose kind:function(arm,size=0xa0) addr:0x020c1260
+BBP_GfxQueueAdd kind:function(arm,size=0x84) addr:0x020c1300
+BBP_GfxQueueRemove kind:function(arm,size=0x40) addr:0x020c1384
+BBP_GfxQueueRemoveCur kind:function(arm,size=0x18) addr:0x020c13c4
 GetQueueInsertPos kind:function(arm,size=0x48) local addr:0x020c13dc
 BBP_TextWriteInit kind:function(arm,size=0xa8) addr:0x020c1424
 BBP_TextWriteCreate kind:function(arm,size=0xac) addr:0x020c14cc
@@ -5684,8 +5684,8 @@ BBP_ObjCur kind:bss addr:0x020e3e00
 ObjList kind:bss local addr:0x020e3e04
 data_ov048_020e3e10 kind:bss addr:0x020e3e10
 ToneList kind:bss local addr:0x020e3e14
-VBlankCur kind:bss local addr:0x020e3e24
-VBlankQueue kind:bss local addr:0x020e3e28
+CurGfxEntry kind:bss local addr:0x020e3e24
+GfxQueue kind:bss local addr:0x020e3e28
 OldVBlankIrq kind:bss local addr:0x020e3e38
 SysWork kind:bss local addr:0x020e3e3c
 SndWork kind:bss local addr:0x020e3e60

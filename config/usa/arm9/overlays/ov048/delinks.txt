@@ -122,7 +122,8 @@ src/bbp/bbp_tone.c:
     .text       start:0x020c0680 end:0x020c10f8
     .bss        start:0x020e3e14 end:0x020e3e24
 
-src/bbp/bbp_vblankqueue.c:
+src/bbp/bbp_gfxqueue.c:
+    complete
     .text       start:0x020c10f8 end:0x020c1424
     .bss        start:0x020e3e24 end:0x020e3e38
 

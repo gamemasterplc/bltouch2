@@ -320,13 +320,13 @@ TransferPlttBGSub kind:function(arm,size=0x30) local addr:0x02059f94
 TransferPlttBGExt kind:function(arm,size=0x98) local addr:0x02059fc4
 TransferPlttBGExtSub kind:function(arm,size=0x44) local addr:0x0205a05c
 TransferPlttTex kind:function(arm,size=0x84) local addr:0x0205a0a0
-BL_VBlankQueueInit kind:function(arm,size=0x3c) addr:0x0205a124
-BL_VBlankQueueCreate kind:function(arm,size=0xa8) addr:0x0205a160
-BL_VBlankQueueExec kind:function(arm,size=0x74) addr:0x0205a208
-BL_VBlankQueueClose kind:function(arm,size=0x90) addr:0x0205a27c
-BL_VBlankQueueAdd kind:function(arm,size=0x88) addr:0x0205a30c
-BL_VBlankQueueRemove kind:function(arm,size=0x40) addr:0x0205a394
-BL_VBlankQueueRemoveCur kind:function(arm,size=0x18) addr:0x0205a3d4
+BL_GfxQueueInit kind:function(arm,size=0x3c) addr:0x0205a124
+BL_GfxQueueCreate kind:function(arm,size=0xa8) addr:0x0205a160
+BL_GfxQueueExec kind:function(arm,size=0x74) addr:0x0205a208
+BL_GfxQueueClose kind:function(arm,size=0x90) addr:0x0205a27c
+BL_GfxQueueAdd kind:function(arm,size=0x88) addr:0x0205a30c
+BL_GfxQueueRemove kind:function(arm,size=0x40) addr:0x0205a394
+BL_GfxQueueRemoveCur kind:function(arm,size=0x18) addr:0x0205a3d4
 GetQueueInsertPos kind:function(arm,size=0x48) local addr:0x0205a3ec
 BL_FadeShapeCreate kind:function(arm,size=0x80) addr:0x0205a434
 BL_FadeShapeKill kind:function(arm,size=0x44) addr:0x0205a4b4
@@ -5769,8 +5769,8 @@ CurSprTile kind:bss local addr:0x020ac82c
 BL_ObjCur kind:bss addr:0x020ac930
 ObjList kind:bss local addr:0x020ac934
 ToneList kind:bss local addr:0x020ac940
-VBlankCur kind:bss local addr:0x020ac950
-VBlankQueue kind:bss local addr:0x020ac954
+CurGfxEntry kind:bss local addr:0x020ac950
+GfxQueue kind:bss local addr:0x020ac954
 WinMask kind:bss local addr:0x020ac964
 FadeType kind:bss local addr:0x020ac96c
 TargetRadius kind:bss local addr:0x020ac974

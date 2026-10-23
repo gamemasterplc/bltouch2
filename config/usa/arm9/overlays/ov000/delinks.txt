@@ -128,7 +128,8 @@ src/bl/bl_tone.c:
     .text       start:0x02059660 end:0x0205a124
     .bss        start:0x020ac940 end:0x020ac950
 
-src/bl/bl_vblankqueue.c:
+src/bl/bl_gfxqueue.c:
+    complete
     .text       start:0x0205a124 end:0x0205a434
     .bss        start:0x020ac950 end:0x020ac964
 

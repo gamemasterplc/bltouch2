@@ -1,7 +1,7 @@
 #include "sys_mode.h"
 #include <nitro.h>
 
-EXTERN_OVERLAY_ID(0); 
+EXTERN_OVERLAY_ID(0);
 EXTERN_OVERLAY_ID(48);
 EXTERN_OVERLAY_ID(49);
 EXTERN_OVERLAY_ID(50);
