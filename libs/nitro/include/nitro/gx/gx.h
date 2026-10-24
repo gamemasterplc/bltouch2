@@ -3,6 +3,7 @@
 
 #include <nitro/reg.h>
 #include <nitro/types.h>
+#include <nitro/gx/gx_state.h>
 
 /// MARK: Typedefs
 
