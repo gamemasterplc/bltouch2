@@ -1497,9 +1497,9 @@ func_020364ac kind:function(arm,size=0x28) addr:0x020364ac
 func_020364d4 kind:function(arm,size=0x44) addr:0x020364d4
 func_02036518 kind:function(arm,size=0x74) addr:0x02036518
 func_0203658c kind:function(arm,size=0xdc) addr:0x0203658c
-BL_SaveWarningCreate kind:function(arm,size=0x1b8) addr:0x02036668
-BL_SaveWarningExec kind:function(arm,size=0x11c) addr:0x02036820
-BL_SaveWarningDestroy kind:function(arm,size=0x1c) addr:0x0203693c
+BL_SceneSaveWarning kind:function(arm,size=0x1b8) addr:0x02036668
+BL_SceneSaveWarningExec kind:function(arm,size=0x11c) addr:0x02036820
+BL_SceneSaveWarningDestroy kind:function(arm,size=0x1c) addr:0x0203693c
 FX_SinCosTable_ kind:data(short[8192]) addr:0x02036958
 data_0203a958 kind:data(any) addr:0x0203a958
 FX_AtanIdxTable_ kind:data(any) addr:0x0203aa5c

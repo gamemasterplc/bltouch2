@@ -213,6 +213,11 @@ inline OSTime OS_TicksToMilliSeconds(OSTime ticks) {
     return (ticks * 64) / 33514;
 }
 
+static inline u32 OS_GetResetCode()
+{
+	return REG_SYSTEM_RESET;
+}
+
 inline BOOL OS_IsRunOnTwl(void) {
 #ifndef IS_TWL
     return false;

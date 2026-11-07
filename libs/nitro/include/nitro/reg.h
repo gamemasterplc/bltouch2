@@ -82,7 +82,7 @@ extern u32 __DTCM_LO;
 #define _MAIN_REG_BASE 0x04000000
 #define _SUB_REG_BASE  0x04001000
 
-#define _REG_DISPCNT(base)       (*(u32*)((base) | 0x0))
+#define _REG_DISPCNT(base)       (*(vu32*)((base) | 0x0))
 #define _REG_BG0CNT(base)        (*(vu16*)((base) | 0x8))
 #define _REG_BG1CNT(base)        (*(vu16*)((base) | 0xa))
 #define _REG_BG2CNT(base)        (*(vu16*)((base) | 0xc))

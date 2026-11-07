@@ -99,6 +99,7 @@ src/bbp/bbp_color.c:
     .bss        start:0x020e3c94 end:0x020e3c98
 
 src/bbp/bbp_scene.c:
+    complete
     .text       start:0x020bd8d8 end:0x020be174
     .bss        start:0x020e3c98 end:0x020e3cd0
 
@@ -144,4 +145,5 @@ src/bbp/bbp_sound.c:
     .bss        start:0x020e3e60 end:0x020e3e64
 
 src/bbp/bbp_scenetbl.c:
+    complete
     .data       start:0x020de464 end:0x020de4f4

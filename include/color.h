@@ -31,7 +31,7 @@ typedef u32 BLColorKey;
 
 void BL_ColorInit(void);
 void BL_ColorClose(void);
-BLColorKey BL_ColorAlloc(u16 *data, BLFile *file, u32 display, u32 pltt, u32 idx, u8 num, int isTex);
+BLColorKey BL_ColorAlloc(u16 *data, BLFile *file, u8 display, u32 pltt, u32 idx, u8 num, int isTex);
 void BL_ColorFree(BLColorKey key);
 u8 BL_ColorGetOfs(BLColorKey key);
 #ifndef SYS_BBP

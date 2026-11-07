@@ -72,7 +72,7 @@ void BL_SprClose(void)
     BL_SortListForEach(&SprList[BL_DISPLAY_SUB], SprDelete);
 }
 
-BLSprite *BL_SprCreate(int display, u8 layer, u16 prio, u32 imageAddr, u8 palette, BLResAnim *animRes, BLResImage *imageRes)
+BLSprite *BL_SprCreate(u8 display, u8 layer, u16 prio, u32 imageAddr, u8 palette, void *animRes, void *imageRes)
 {
     SpriteData *sprData;
     u16 prioValue;
@@ -198,7 +198,7 @@ u16 BL_SprGetPrio(BLSprite *spr)
 
 #ifndef SYS_BBP
 
-BLSprTex *BL_SprTexCreate(u16 prio, u32 imageAddr, u32 colorAddr, BLResAnim *animRes)
+BLSprTex *BL_SprTexCreate(u16 prio, u32 imageAddr, u32 colorAddr, void *animRes)
 {
     SpriteData *sprData;
     u16 prioValue;

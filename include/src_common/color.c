@@ -111,7 +111,7 @@ typedef union {
     u32 raw;
 } ColorKey;
 
-BLColorKey BL_ColorAlloc(u16 *data, BLFile *file, u32 display, u32 pltt, u32 idx, u8 num, int isTex)
+BLColorKey BL_ColorAlloc(u16 *data, BLFile *file, u8 display, u32 pltt, u32 idx, u8 num, int isTex)
 {
     ColorAlloc *newAlloc;
     int i;

@@ -7,7 +7,7 @@ EXTERN_OVERLAY_ID(49);
 EXTERN_OVERLAY_ID(50);
 
 extern void BL_Main(void *heapPtr, u32 heapSize);
-extern BOOL BBP_Main(SysBBPParam *param);
+extern BOOL BBP_Main(BBPSysBootParam *param);
 
 void NitroMain(void)
 {

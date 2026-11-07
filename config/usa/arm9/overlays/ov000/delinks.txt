@@ -8,6 +8,7 @@ src/bl/menu/bl_menu_logo.c:
     .text       start:0x0204d760 end:0x0204d9e8
 
 src/bl/bl_scenetbl.c:
+    complete
     .data       start:0x0207dd60 end:0x0207def0
     .bss        start:0x020ac660 end:0x020ac664
 
@@ -99,6 +100,7 @@ src/bl/bl_color.c:
     .bss        start:0x020ac7d8 end:0x020ac7dc
 
 src/bl/bl_scene.c:
+    complete
     .text       start:0x02055dc0 end:0x020565a8
     .bss        start:0x020ac7dc end:0x020ac7fc
 

@@ -423,12 +423,12 @@ inline void GXS_SetOBJVRamModeChar(u32 value) {
 
 static inline u32 GX_GetOBJVRamCharShift(void)
 {
-    return ((REG_DISPCNT & 0x300000) >> 20)+5;
+    return ((REG_DISPCNT & 0x300000) >> 20);
 }
 
 static inline u32 GXS_GetOBJVRamCharShift(void)
 {
-    return ((REG_DISPCNT_SUB & 0x300000) >> 20)+5;
+    return ((REG_DISPCNT_SUB & 0x300000) >> 20);
 }
 
 

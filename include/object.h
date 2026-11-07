@@ -2,6 +2,12 @@
 #define OBJECT_H
 
 #include <nitro/types.h>
+#include "memory.h"
+
+#define BLOBJ_PAUSEFLAG_ALL 0xFFFFFFFF
+#define BLOBJ_PAUSEFLAG_NONE 0
+
+#define BLOBJ_PRIO_MAX 0xFFFF
 
 #ifdef SYS_BBP
 #define BL_ObjInit BBP_ObjInit
@@ -21,6 +27,7 @@
 typedef struct BLObj_s BLObj;
 
 typedef void (*BLObjFunc)(void);
+
 
 struct BLObj_s {
     BLObj *prev; //0x00

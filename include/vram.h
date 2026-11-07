@@ -32,7 +32,7 @@ void BL_VramClear(void);
 void BL_VramKillMain(void);
 void BL_VramKillSub(void);
 void BL_VramImageInit(void);
-BOOL BL_VramImageAlloc(BLVramImageKey *key, int screen, u32 size);
+BOOL BL_VramImageAlloc(BLVramImageKey *key, u8 screen, u32 size);
 void BL_VramImageFree(BLVramImageKey key);
 #ifndef SYS_BBP
 BOOL BL_VramTexAlloc(BLVramTexKey *key, u32 size);

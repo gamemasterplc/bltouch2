@@ -114,7 +114,7 @@ void BL_VramImageInit(void)
     }
 }
 
-BOOL BL_VramImageAlloc(BLVramImageKey *key, int display, u32 size)
+BOOL BL_VramImageAlloc(BLVramImageKey *key, u8 display, u32 size)
 {
     key->alloc = BL_GfxHeapAlloc(&VramWork->heap[display], size);
     if(!key->alloc) {
