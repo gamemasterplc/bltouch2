@@ -5106,9 +5106,9 @@ data_ov048_020daa64 kind:data(any) addr:0x020daa64
 data_ov048_020daaa0 kind:data(any) addr:0x020daaa0
 BBP_Battle_FileTbl kind:data(any) addr:0x020daadc
 BBP_LinkIcon_FileTbl kind:data(any) addr:0x020dad34
-data_ov048_020dad40 kind:data(any) addr:0x020dad40
-data_ov048_020dad68 kind:data(any) addr:0x020dad68
-data_ov048_020dad90 kind:data(any) addr:0x020dad90
+@2 kind:data(any) local addr:0x020dad40
+@1 kind:data(any) local addr:0x020dad68
+@3 kind:data(any) local addr:0x020dad90
 data_ov048_020dadb8 kind:data(any) addr:0x020dadb8
 data_ov048_020daddc kind:data(any) addr:0x020daddc
 data_ov048_020dae04 kind:data(any) addr:0x020dae04
